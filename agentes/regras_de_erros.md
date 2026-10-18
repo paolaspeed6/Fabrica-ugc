@@ -71,6 +71,7 @@ Em 57 cenas: a câmera avança rápido (em 3-4 s já corta o produto) e o LLM do
 10. **Nunca recolorir o produto por máscara de cor** (HSV + ffmpeg): a poltrona verde→laranja saiu com pixels bugados, reprovada. Trocar cor só editando a imagem a partir da foto do anúncio na cor certa (custo dito antes).
 11. **Só qualidades de verdade nos ganchos, listas e narração** (a dona, 2026-10-18: "fala sobre linhas retas, mas isso não é uma qualidade exatamente"). Característica neutra não é benefício: "linhas retas", "formato quadrado", "cor bege", "tem 4 pés" etc. NÃO entram como qualidade. Use só o que o comprador percebe como vantagem e o anúncio comprova (conforto, material, acabamento, medida útil, facilidade de montar/limpar, versatilidade de uso). Na dúvida, troque por onde usar ou pelo efeito no ambiente. O roteirista e o QC conferem item por item antes de gerar a voz.
 12. **Rodízio do take inicial** (a dona, 2026-10-18): as 3 opções de um mesmo produto começam cada uma com um take DIFERENTE (outra cena/ângulo no 1º quadro). Conferir na timeline antes de renderizar.
+13. **Produto inteiro no 1º take (capa/thumb)** (a dona, 2026-10-18): o primeiro quadro de TODO vídeo mostra o produto inteiro (sem cortar topo, pés ou laterais) e sem mão/pessoa. Close só depois. Conferir na prévia do t=0 antes de renderizar; vale junto com a regra 12 (cada opção abre com um take diferente, mas sempre com o produto inteiro).
 
 ## 4. Edição
 1. Take 1: produto inteiro, limpo, nada cobrindo.

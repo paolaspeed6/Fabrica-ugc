@@ -18,6 +18,6 @@ opcao_b_faixas('p01_b_faixas', dict(kicker='Cabideiro de madeira', accent=MEL, c
 opcao_d('p01_c_direto', dict(eyebrow='Para a sua entrada', gancho=['Falta *um lugar*', 'para os casacos.'], tem='*ele tem:*',
   itens=['Ganchos em vários níveis', 'Madeira torneada', 'Ocupa pouco espaço'], itens_t=[3.45, 4.7, 5.6],
   onde=['Entrada, sala', '*ou quarto.*'], accent=MEL, shiftx=310, esq=True, item_size=44, escala=0.74),
-  [seg('C', 2.6, 2.5, (1.0, 1.06)), seg('B', 0.0, 2.0, (1.0, 1.02)), seg('A', 0.0, 1.95, (1.0, 1.02)),
-   seg('C', 6.0, 1.85, (1.0, 1.04)), seg('A', 1.3, 6.7, (1.05, 1.0))],
+  [seg('C', 0.0, 0.7, (1.0, 1.02), shiftx=40), seg('C', 2.6, 1.8, (1.0, 1.06), shiftx=330), seg('B', 0.0, 2.0, (1.0, 1.02)), seg('A', 0.0, 1.95, (1.0, 1.02)),
+   seg('C', 6.0, 1.85, (1.0, 1.04), shiftx=120), seg('A', 1.3, 6.7, (1.05, 1.0))],
   N + 'c_t.wav', narr_at=0.35, bed=[TRILHA], cuts=(0, 2.5, 6.45, 8.3, 15))

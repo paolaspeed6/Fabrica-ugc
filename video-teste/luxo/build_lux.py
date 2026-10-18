@@ -256,10 +256,11 @@ SHIFTX = spec.get('shiftx', 0)
 LIFT = spec.get('lift', 0)  # sobe o vídeo N px; a faixa de baixo vira o próprio vídeo desfocado (fica atrás do cartão)
 
 
-def render_src(frame, z, cx, cy):
+def render_src(frame, z, cx, cy, sx=None):
     w, h = SW / z, SH / z
     x0 = min(max(cx - w / 2, 0), SW - w); y0 = min(max(cy - h / 2, 0), SH - h)
     img = Image.fromarray(frame).resize((W, H), Image.LANCZOS, box=(x0, y0, x0 + w, y0 + h))
+    SHIFTX = globals()['SHIFTX'] if sx is None else sx
     if SHIFTX:  # produto alto no meio: empurra o vídeo para o lado; a sobra vira a borda desfocada (parede)
         out = Image.new('RGB', (W, H)); out.paste(img, (SHIFTX, 0))
         faixa = abs(SHIFTX)
@@ -396,6 +397,27 @@ def compose(base, t):
         base.alpha_composite(im, (int(x), int(el['y'] + YT - pad + dy)))
 
 
+MARCA = spec.get('marca', 'Aguiiar Lar')  # marca d'água da conta da dona (2026-10-18); '' desliga
+_marca_cache = {}
+
+
+def marca_on(base, t):
+    """assinatura sofisticada pequena (Playfair itálico translúcido) que passeia devagar pelo meio do quadro,
+    num caminho contínuo: não dá para cortar nem borrar um ponto fixo (a dona, 2026-10-18)."""
+    if not MARCA:
+        return
+    if 'p' not in _marca_cache:
+        f = font('play_it', 40)
+        tw = int(f.getlength(MARCA)) + 40
+        pq = Image.new('RGBA', (tw, 70), (0, 0, 0, 0)); d = ImageDraw.Draw(pq)
+        d.text((20, 35), MARCA, font=f, fill=(255, 255, 255, 135), anchor='lm')
+        _marca_cache['p'] = soft_shadow(pq, 6, 60, 2)
+    m = _marca_cache['p']
+    x0, x1 = spec.get('marca_x', (70, W - 70 - m.width)); y0, y1 = spec.get('marca_y', (700, 1240))
+    u = 0.5 + 0.5 * math.sin(t * 0.37 + 0.6); v = 0.5 + 0.5 * math.sin(t * 0.23 + 2.1)  # Lissajous lento
+    base.alpha_composite(m, (int(x0 + (x1 - x0) * u), int(y0 + (y1 - y0) * v)))
+
+
 def preview(tempos):
     """prévias paradas (regra: aprovar com imagem antes de renderizar): PREVIEW=0,4.5,12 salva PNGs."""
     for t in tempos:
@@ -406,8 +428,8 @@ def preview(tempos):
                 fr = read_seg(sg['src'], sg['ss'] + k / FPS, 1)[0]
                 u = ease_io(k / max(1, n - 1)) * 0.6 + (k / max(1, n - 1)) * 0.4
                 z0, z1 = sg.get('z', [1.0, 1.06]); c0 = sg.get('c0', [SW / 2, SH / 2]); c1 = sg.get('c1', c0)
-                base = grade(render_src(fr, lerp(z0, z1, u), lerp(c0[0], c1[0], u), lerp(c0[1], c1[1], u)), t).convert('RGBA')
-                compose(base, t)
+                base = grade(render_src(fr, lerp(z0, z1, u), lerp(c0[0], c1[0], u), lerp(c0[1], c1[1], u), sg.get('shiftx')), t).convert('RGBA')
+                compose(base, t); marca_on(base, t)
                 base.convert('RGB').save(f"{spec['out']}_t{t:05.2f}.jpg", quality=88)
                 break
             t0 += sg['dur']
@@ -427,8 +449,8 @@ for sg in ([] if AUDIO_ONLY else segs):
     for k in range(n):
         u = ease_io(k / max(1, n - 1)) * 0.6 + (k / max(1, n - 1)) * 0.4
         t = fi / FPS
-        base = grade(render_src(frames[k], lerp(z0, z1, u), lerp(c0[0], c1[0], u), lerp(c0[1], c1[1], u)), t).convert('RGBA')
-        compose(base, t)
+        base = grade(render_src(frames[k], lerp(z0, z1, u), lerp(c0[0], c1[0], u), lerp(c0[1], c1[1], u), sg.get('shiftx')), t).convert('RGBA')
+        compose(base, t); marca_on(base, t)
         enc.stdin.write(base.convert('RGB').tobytes())
         fi += 1
     t_cur += sg['dur']

@@ -27,6 +27,10 @@ PDF para mostrar a alguém: referencias/modelos-layout/Modelos_de_layout_Fabrica
 Produto alto e central (cabideiro, luminária): `shiftx` ~300 empurra o vídeo para a direita e o texto vai à esquerda (`esq=True`, `escala`, `item_size` no C). Sempre conferir prévias.
 Voz: Kore (a "primeira de todas", preferida). Grátis = 10 narrações/dia POR modelo de voz (2.5-flash-preview, 3.1-flash-preview, 3.8-flash, 3.8-flash-lite): alternar modelos com a mesma voz Kore. 3.8 lê instrução em voz alta: mandar só o texto (tts_lux.py sem PREFIXO/ESTILO). Amostras "sedutoras" (Aoede, Leda, Despina, Vindemiatrix, Sulafat, Algieba) foram REPROVADAS. Trilha padrão: video-teste/luxo/trilha_piano.wav.
 
+**Marca d'água (a dona, 2026-10-18):** assinatura "Aguiiar Lar" em Playfair itálico pequeno e translúcido que passeia devagar pelo meio do quadro (Lissajous), automática em todo vídeo do build_lux.py (`marca` no spec; '' desliga). O nome grande na diagonal foi descartado ("melhor uma assinatura sofisticada, pequena, se movendo").
+**Produto inteiro no 1º take** (regra 13). Produto alto: `shiftx` também por cena (`seg(..., shiftx=N)`).
+**Voz grátis sem limite:** Kokoro local (kokoro-onnx; modelo em /home/user/modelos-voz, baixar de github.com/thewh1teagle/kokoro-onnx/releases model-files-v1.0; precisa `*.hf.co`/GitHub). Só 1 voz feminina pt-BR (pf_dora); misturas com vozes suaves (af_heart, af_bella, af_kore...) em speed 0,9. Naturalidade medida pelo Gemini: ~6/10 (soa sintética), Gemini Kore é melhor mas tem cota diária. Aguardando a escolha da dona.
+
 **Ajustes da dona (2026-10-18, depois da 1ª entrega das 3 opções):**
 - Textos e escritas: "perfeitos". Layouts 2 e 3 ainda vão mudar; mostrar JPEG de exemplo antes de editar o vídeo.
 - Opção 2: o cartão com selo já é um dos modelos do Kevin; ela quer a OUTRA opção do modelo Kevin (letras grandes no topo ou faixas), modernizada.
