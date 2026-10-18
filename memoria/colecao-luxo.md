@@ -8,6 +8,11 @@ metadata:
 
 A dona pediu (2026-10-18): "conceito zara home, regras de design que já aprendemos, fonte do layout 3 mas sem moldura e sem a parte de carrinho, sofisticado, elaborado, 3 opções de vídeo com layout e ganchos diferentes, todos luxuosos e elegantes, um no estilo Zara Home, os outros com criatividade". Feito na sessão "Poltrona laranja" para a cadeira trançada e a poltrona capitonê bege; ela aprovou e mandou absorver o conceito. Vídeos e página: `trabalhos/cadeira-poltrona-bege/` (`*_lux1_zarahome`, `*_lux2_galeria`, `*_lux3_umdia`).
 
+**PADRÃO NOVO (a dona, 2026-10-18): 3 opções de vídeo para CADA produto.**
+- Opção A = "Um dia com ela" (conceito 3 abaixo): "ficou perfeita, salve como modelo padrão dos próximos". Sempre presente.
+- Opção B = shopee3 do Kevin (cartão escuro embaixo, gancho com palavra de destaque, CTA cheio) com toque modernizado. Substitui o Zara Home ("ficou boa, porém quero outra versão, também moderna").
+- Opção C = conceito NOVO a cada coleção, com outro layout, outras fontes e outro conceito, sofisticado e elegante. A Galeria foi DESCARTADA.
+
 **Tipografia:** serifa Caladea Regular (título ~118 px, corpo ~88 px); destaque em *itálico* (Caladea Italic), NÃO em cor. Rótulo "eyebrow" em sans (Liberation Sans) CAIXA ALTA 34 px, espaçamento ~11 px. Texto branco com sombra suave (blur 14, alpha 120). Alinhado à esquerda em x=84, faixa do topo y≈200–620, nunca sobre o produto. Sem moldura, sem pílula, sem ícone de carrinho, sem emoji.
 
 **Animação:** linha fina de 3 px que se desenha (0,9 s); textos entram com fade + subida de 26 px (0,55 s) ou wipe da esquerda com borda suave (CTA). Gancho JÁ visível no 1º quadro (sem animação em t=0).
