@@ -1,0 +1,110 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Poltrona Laranja 15s</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;600&display=swap">
+<style>
+/* Layout: one phone column, video first, button right under it, script below as a timeline */
+:root{
+  --bg:#fbf6f1; --fg:#2a1d14; --muted:#7a6656; --line:#ead9ca; --card:#fff;
+  --accent:#e8621a; --on-accent:#fff;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Figtree",ui-sans-serif,system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1a1410; --fg:#f6ebe1; --muted:#b39c8a; --line:#3a2c22; --card:#241b15; --accent:#f27a33; --on-accent:#1a1410; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1a1410; --fg:#f6ebe1; --muted:#b39c8a; --line:#3a2c22; --card:#241b15; --accent:#f27a33; --on-accent:#1a1410; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.5}
+.wrap{max-width:460px;margin:0 auto;padding-block:20px 48px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:22px}
+h1{font-family:var(--display);font-weight:800;font-size:1.9rem;line-height:1.05;margin:0;text-wrap:balance}
+h1 span{color:var(--accent)}
+.meta{color:var(--muted);font-size:.9rem;margin:6px 0 0}
+video{width:100%;max-width:100%;aspect-ratio:9/16;border-radius:18px;background:#000;display:block}
+button{font:inherit}
+.dl{width:100%;padding:16px;border:0;border-radius:14px;background:var(--accent);color:var(--on-accent);
+  font-family:var(--display);font-weight:800;font-size:1.15rem;cursor:pointer}
+.dl:focus-visible,.copy:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+.dl[disabled]{opacity:.6;cursor:default}
+.msg{min-height:1.2em;font-size:.9rem;color:var(--muted);margin:-12px 0 0;text-align:center}
+h2{font-family:var(--display);font-weight:700;font-size:1.2rem;margin:0 0 10px}
+.tl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-left:2px solid var(--line)}
+.tl li{display:grid;grid-template-columns:64px 1fr;gap:10px;padding:8px 0 8px 12px}
+.t{font-variant-numeric:tabular-nums;color:var(--accent);font-weight:600;font-size:.9rem}
+.tl b{display:block}
+.tl small{color:var(--muted)}
+.cap{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;white-space:pre-wrap;font-size:.95rem}
+.copy{margin-top:10px;padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer;font-weight:600}
+ul.notes{margin:0;padding-left:20px;color:var(--fg)}
+ul.notes li{margin-bottom:6px}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Poltrona curva, agora <span>laranja</span></h1>
+    <p class="meta">15 s · 9:16 · 1080×1920 · com narração · pronto para Shopee Vídeos, TikTok e Reels</p>
+  </header>
+
+  <video id="v" src="poltrona_laranja.mp4" poster="capa.jpg" controls playsinline preload="metadata"></video>
+
+  <button class="dl" id="dl">Baixar vídeo</button>
+  <p class="msg" id="msg" aria-live="polite"></p>
+
+  <section>
+    <h2>Roteiro do diretor</h2>
+    <ol class="tl">
+      <li><span class="t">0–2,4s</span><div><b>Gancho (capa)</b>"A poltrona que todo mundo quer · AGORA EM LARANJA"<br><small>Gatilho: desejo e novidade. Texto já no 1º quadro.</small></div></li>
+      <li><span class="t">2,4–4,1s</span><div><b>Cor nova</b>Gota laranja vira o selo "Cor nova: laranja"<br><small>Detalhe criativo do vídeo.</small></div></li>
+      <li><span class="t">4,1–6,2s</span><div><b>Benefício</b>"Formato curvo que abraça o corpo"<br><small>Gatilho: conforto. Câmera se aproximando.</small></div></li>
+      <li><span class="t">6,2–8,1s</span><div><b>Prova visual</b>"Estofado capitonê fofinho"<br><small>Close da textura.</small></div></li>
+      <li><span class="t">8,1–10,2s</span><div><b>Uso</b>"Sala, quarto ou leitura"<br><small>Gatilho: imaginar a poltrona na própria casa.</small></div></li>
+      <li><span class="t">10,2–15s</span><div><b>CTA</b>"Clica no carrinho · e garante a sua"<br><small>Plano aberto da sala, cena final.</small></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Legenda para postar</h2>
+    <div class="cap" id="cap">A poltrona curva que todo mundo quer, agora em LARANJA 🧡
+Estofado capitonê fofinho e formato que abraça o corpo. Fica linda na sala, no quarto ou no cantinho de leitura.
+👉 Toque no carrinho e garanta a sua!
+#poltrona #decoração #casa #achadosshopee #shopee</div>
+    <button class="copy" id="copy">Copiar legenda</button>
+  </section>
+
+  <section>
+    <h2>Observações</h2>
+    <ul class="notes">
+      <li>A cor foi trocada de verde para laranja aqui mesmo, de graça, quadro a quadro.</li>
+      <li>Duas cenas foram cortadas porque tinham mão inventada pela IA.</li>
+      <li>Confira se o tom de laranja bate com o do anúncio.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+const btn=document.getElementById('dl'), msg=document.getElementById('msg');
+let dl=null;
+(async()=>{ try{ dl=await window.claude?.use?.("downloads"); }catch(e){} if(!dl){ btn.textContent="Download indisponível aqui"; btn.disabled=true; msg.textContent="Abra esta página no app do Claude ou em claude.ai para baixar."; } })();
+btn.addEventListener('click',async()=>{
+  if(!dl) return;
+  btn.disabled=true; msg.textContent="Preparando o arquivo…";
+  try{
+    const blob=await (await fetch('poltrona_laranja.mp4')).blob();
+    msg.textContent="Confirme o download na janela que abriu.";
+    await dl.save({filename:'poltrona_laranja_15s.mp4',data:blob});
+    msg.textContent="Vídeo salvo.";
+  }catch(e){
+    const c=e&&e.code;
+    msg.textContent = c==="declined" ? "Download cancelado." : c==="rate_limited" ? "Aguarde um instante e toque de novo." : "Não deu para baixar agora. Tente de novo.";
+  }finally{ btn.disabled=false; }
+});
+document.getElementById('copy').addEventListener('click',async()=>{
+  const t=document.getElementById('cap').innerText, b=document.getElementById('copy');
+  try{ await navigator.clipboard.writeText(t); b.textContent="Legenda copiada"; }
+  catch(e){ const r=document.createRange(); r.selectNodeContents(document.getElementById('cap')); const s=getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent="Selecionada: copie"; }
+});
+</script>
+
+</body></html>
