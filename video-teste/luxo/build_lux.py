@@ -459,6 +459,13 @@ if enc:
 
 # ---------- áudio: narração + trilha (piano das cenas) ----------
 bed = spec['bed']
+if not spec.get('narr'):  # sem voz (a dona, 2026-10-18): só a música calma, mais alta, com fade
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', spec['out'] + '.video.mp4', '-i', SRC.get(bed[0], bed[0]), '-filter_complex',
+                    f'[1:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=in:d=0.8,afade=t=out:st={spec["dur"] - 1.8}:d=1.8,'
+                    f'apad,atrim=0:{spec["dur"]},loudnorm=I=-16:TP=-1.5:LRA=11[aout]', '-map', '0:v', '-map', '[aout]',
+                    '-c:v', 'libx264', '-b:v', '5M', '-maxrate', '6.5M', '-bufsize', '9M', '-preset', 'slow', '-pix_fmt', 'yuv420p',
+                    '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-t', str(spec['dur']), spec['out']], check=True)
+    print('ok', spec['out']); sys.exit(0)
 inputs = ['-i', spec['out'] + '.video.mp4', '-i', spec['narr']]
 for b in bed:  # cena do próprio produto (letra) ou arquivo de trilha (caminho)
     inputs += ['-i', SRC.get(b, b)]

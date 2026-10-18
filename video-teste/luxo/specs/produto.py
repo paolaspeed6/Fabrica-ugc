@@ -62,7 +62,32 @@ def _segs(cuts, tomadas, clips, sx=None):
     return out
 
 
+MUSICA = os.environ.get('MUSICA', TRILHA)  # música calma de fundo quando não há voz
+COM_VOZ = os.environ.get('COM_VOZ') == '1'  # a dona, 2026-10-18: SEM voz por enquanto (a Kokoro soou estrangeira); só música
+
+
+def sem_voz(cfg):
+    """3 vídeos só com música: textos em ritmo fixo e calmo (sem narração)."""
+    pid = cfg['id']
+    comum = dict(accent=cfg['accent'], **({'shiftx': cfg['shiftx']} if cfg.get('shiftx') else {}))
+    A, B, C = cfg['a'], cfg['b'], cfg['c']
+    cuts = (0, 3.0, 5.6, 8.2, 10.8)
+    opcao_a(f'{pid}_a_umdia', dict(eyebrow=A['eyebrow'], gancho=A['gancho'], momentos=A['momentos'], **comum),
+            _segs(cuts + (15,), cfg['tomadas']['a'], cfg['clips']), None, bed=[MUSICA], cuts=cuts)
+    cuts = (0, 5.0, 10.0, 15)
+    opcao_b_faixas(f'{pid}_b_faixas', dict(kicker=B['kicker'], cenas=B['cenas'], cta='Toque no carrinho', lift=cfg.get('lift', 300), **comum),
+                   _segs(cuts, cfg['tomadas']['b'], cfg['clips']), None, bed=[MUSICA], cuts=cuts)
+    cuts = (0, 3.2, 9.0, 11.6, 15)
+    opcao_d(f'{pid}_c_direto', dict(eyebrow=C['eyebrow'], gancho=C['gancho'], itens=C['itens'], onde=C['onde'],
+            tem=cfg.get('tem', '*ela tem:*'), itens_t=[4.3, 5.9, 7.5], esq=cfg.get('esq', False),
+            **({'escala': cfg['escala'], 'item_size': cfg['item_size']} if cfg.get('esq') else {}), **comum),
+            _segs(cuts, cfg['tomadas']['c'], cfg['clips']), None, bed=[MUSICA], cuts=cuts)
+    return [f'{pid}_a_umdia', f'{pid}_b_faixas', f'{pid}_c_direto']
+
+
 def fazer_produto(cfg):
+    if not COM_VOZ:
+        return sem_voz(cfg)
     pid, pasta = cfg['id'], f"{S}/tts"
     comum = dict(accent=cfg['accent'], **({'shiftx': cfg['shiftx']} if cfg.get('shiftx') else {}))
     at = 0.6  # a voz começa 0,6 s depois do 1º quadro

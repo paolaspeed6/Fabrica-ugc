@@ -2,6 +2,7 @@ __pycache__/
 *.pyc
 video-teste/saida/
 *.zip
+!pacote-modelo-aguiiar-lar.zip
 .env
 *.video.mp4
 *.pcm

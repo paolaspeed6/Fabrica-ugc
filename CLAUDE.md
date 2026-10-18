@@ -3,6 +3,7 @@
 Responda sempre em português do Brasil, curto e simples (a dona usa o celular).
 
 Antes de qualquer roteiro, prompt, geração ou edição, leia:
+- `MODELO_DE_CRIACAO.md` (O PADRÃO ATUAL: 3 layouts, regras, processo, sem voz + música calma)
 - `INSTRUCOES_DO_PROJETO.md` (regras gerais, custos, padrões de vídeo)
 - `agentes/LEIA.md`, `agentes/orquestrador.md`, `agentes/principios.md`, `agentes/regras_de_erros.md`
 - `agentes/prompts_da_dona.md` (prompts dela e régua de qualidade Gemini/Veo)
