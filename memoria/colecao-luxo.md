@@ -19,6 +19,13 @@ A dona pediu (2026-10-18): "conceito zara home, regras de design que já aprende
 - Narração: gemini-2.5-flash-preview-tts só dá 10 por dia grátis; usar `MODELO=gemini-3.1-flash-tts-preview PREFIXO=1` (lê só o texto, testado por transcrição).
 - Sempre gerar prévias paradas (`PREVIEW=0,6,13`) e conferir texto cortado e texto sobre o produto antes de renderizar.
 
+**Ajustes da dona (2026-10-18, depois da 1ª entrega das 3 opções):**
+- Textos e escritas: "perfeitos". Layouts 2 e 3 ainda vão mudar; mostrar JPEG de exemplo antes de editar o vídeo.
+- Opção 2: o cartão com selo já é um dos modelos do Kevin; ela quer a OUTRA opção do modelo Kevin (letras grandes no topo ou faixas), modernizada.
+- Voz: estava agressiva; quer calma, sedutora, suave.
+- CTA de carrinho no fim estava "brega" (pílula cheia colorida com seta): fazer algo moderno e discreto.
+- "Linhas retas" não é qualidade: ver regra 11 em agentes/regras_de_erros.md. Rodízio do take inicial: regra 12.
+
 **Tipografia:** serifa Caladea Regular (título ~118 px, corpo ~88 px); destaque em *itálico* (Caladea Italic), NÃO em cor. Rótulo "eyebrow" em sans (Liberation Sans) CAIXA ALTA 34 px, espaçamento ~11 px. Texto branco com sombra suave (blur 14, alpha 120). Alinhado à esquerda em x=84, faixa do topo y≈200–620, nunca sobre o produto. Sem moldura, sem pílula, sem ícone de carrinho, sem emoji.
 
 **Animação:** linha fina de 3 px que se desenha (0,9 s); textos entram com fade + subida de 26 px (0,55 s) ou wipe da esquerda com borda suave (CTA). Gancho JÁ visível no 1º quadro (sem animação em t=0).

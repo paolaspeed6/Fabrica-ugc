@@ -19,6 +19,9 @@ FONTS = {
     'pop': FD + 'Poppins-Medium.ttf', 'pop_sb': FD + 'Poppins-SemiBold.ttf', 'pop_b': FD + 'Poppins-Bold.ttf',
     'pop_r': FD + 'Poppins-Regular.ttf',
     'dms': FD + 'DMSerifDisplay-Regular.ttf', 'dms_it': FD + 'DMSerifDisplay-Italic.ttf',
+    'dm_md': (FD + 'DMSans.ttf', 'Medium'), 'dm_sb': (FD + 'DMSans.ttf', 'SemiBold'), 'dm_b': (FD + 'DMSans.ttf', 'Bold'),
+    'mont_md': (FD + 'Montserrat.ttf', 'Medium'), 'mont_sb': (FD + 'Montserrat.ttf', 'SemiBold'), 'mont_b': (FD + 'Montserrat.ttf', 'Bold'), 'mont_xb': (FD + 'Montserrat.ttf', 'ExtraBold'),
+    'bebas': FD + 'BebasNeue-Regular.ttf',
     'play': FD + 'PlayfairDisplay.ttf', 'play_it': FD + 'PlayfairDisplay-Italic.ttf', 'dm': FD + 'DMSans.ttf',
 }
 spec = json.load(open(sys.argv[1]))
@@ -28,8 +31,19 @@ ACC = tuple(spec.get('accent', (214, 168, 120)))  # cor de destaque das palavras
 AUDIO_ONLY = os.environ.get('AUDIO_ONLY') == '1'
 
 
+_fcache = {}
+
+
 def font(n, s):
-    return ImageFont.truetype(FONTS[n], s)
+    """nome -> fonte; entradas (arquivo, 'Peso') escolhem o peso de uma fonte variável."""
+    if (n, s) not in _fcache:
+        v = FONTS[n]
+        if isinstance(v, tuple):
+            f = ImageFont.truetype(v[0], s); f.set_variation_by_name(v[1])
+        else:
+            f = ImageFont.truetype(v, s)
+        _fcache[(n, s)] = f
+    return _fcache[(n, s)]
 
 
 def ease(x):
@@ -103,22 +117,59 @@ def make(el):
     if k == 'eyebrow':
         f = el.get('base', 'sans')
         return text_block([l.upper() for l in el['lines']], el.get('size', 34), al, 1.6, cor, f, f, el.get('track', 11), sh)
-    if k == 'button':  # pílula cheia com texto e seta (CTA do shopee3 moderno)
+    if k == 'button':  # CTA: 'solid' (cheio), 'outline' (contorno fino) ou 'link' (só texto sublinhado); ícone 'cart'/'arrow'
         f = font(el.get('base', 'pop_sb'), el.get('size', 46))
-        txt = el['text']; w = el.get('w', 820); h = el.get('h', 116)
+        txt = el['text']; h = el.get('h', 116); estilo = el.get('style', 'solid'); icon = el.get('icon', 'arrow')
+        tc = tuple(el.get('text_color', (22, 20, 18)))
+        tw = f.getlength(txt); iw = 0 if not icon else (int(h * 0.42) + 22)
+        w = el.get('w') or int(tw + iw + (0 if estilo == 'link' else h))
         img = Image.new('RGBA', (w + 80, h + 80), (0, 0, 0, 0))
         b = Image.new('RGBA', (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(b)
-        d.rounded_rectangle([0, 0, w - 1, h - 1], radius=h // 2, fill=tuple(el.get('fill', ACC)) + (255,))
-        tc = tuple(el.get('text_color', (22, 20, 18)))
-        tw = f.getlength(txt); arrow = el.get('arrow', True)
-        x0 = (w - tw - (64 if arrow else 0)) / 2
+        if estilo == 'solid':
+            d.rounded_rectangle([0, 0, w - 1, h - 1], radius=el.get('r', h // 2), fill=tuple(el.get('fill', ACC)) + (255,))
+        elif estilo == 'outline':
+            if el.get('fill'):
+                d.rounded_rectangle([0, 0, w - 1, h - 1], radius=el.get('r', h // 2), fill=tuple(el['fill']))
+            d.rounded_rectangle([1, 1, w - 2, h - 2], radius=el.get('r', h // 2), outline=tc, width=el.get('lw', 3))
+        x0 = (w - tw - iw) / 2 if estilo != 'link' else 0
+        if icon == 'cart':  # carrinho em traço fino, desenhado (sem emoji)
+            s_ = int(h * 0.42); cx, cy = x0, h / 2 - s_ / 2; lw = max(3, s_ // 9)
+            d.line([(cx, cy + s_ * .08), (cx + s_ * .2, cy + s_ * .08), (cx + s_ * .34, cy + s_ * .66), (cx + s_ * .9, cy + s_ * .66),
+                    (cx + s_, cy + s_ * .24), (cx + s_ * .27, cy + s_ * .24)], fill=tc, width=lw, joint='curve')
+            for wx in (.42, .82):
+                r_ = s_ * .07; d.ellipse([cx + s_ * wx - r_, cy + s_ * .86 - r_, cx + s_ * wx + r_, cy + s_ * .86 + r_], fill=tc)
+            x0 += iw
         d.text((x0, h / 2), txt, font=f, fill=tc, anchor='lm')
-        if arrow:  # seta desenhada (sem emoji)
-            ax = x0 + tw + 26; ay = h / 2
-            d.line([(ax, ay), (ax + 36, ay)], fill=tc, width=5)
-            d.line([(ax + 22, ay - 14), (ax + 36, ay), (ax + 22, ay + 14)], fill=tc, width=5, joint='curve')
+        if icon == 'arrow':
+            ax = x0 + tw + 22; ay = h / 2; lw = max(3, h // 30)
+            d.line([(ax, ay), (ax + 30, ay)], fill=tc, width=lw)
+            d.line([(ax + 18, ay - 11), (ax + 30, ay), (ax + 18, ay + 11)], fill=tc, width=lw, joint='curve')
+        if estilo == 'link':  # sublinhado fino
+            d.line([(0, h / 2 + el.get('size', 46) * .72), (w - (0 if icon != 'arrow' else 0), h / 2 + el.get('size', 46) * .72)], fill=tc, width=2)
         img.alpha_composite(b, (40, 40))
-        return soft_shadow(img, 18, 90, 8), 40
+        return (soft_shadow(img, 18, 90, 8) if el.get('shadow', True) else img), 40
+    if k == 'band':  # faixa: texto sobre fundo colorido, cantos levemente arredondados (gira com 'rotate')
+        f = font(el.get('base', 'pop_b'), el.get('size', 76)); txt = el['text']
+        px, py = el.get('px', 30), el.get('py', 14)
+        bb = f.getbbox(txt); tw, th = bb[2] - bb[0], bb[3] - bb[1]
+        w, h = tw + 2 * px, th + 2 * py
+        img = Image.new('RGBA', (w + 80, h + 80), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+        d.rounded_rectangle([40, 40, 40 + w, 40 + h], radius=el.get('r', 10), fill=tuple(el.get('fill', ACC)))
+        d.text((40 + px - bb[0], 40 + py - bb[1]), txt, font=f, fill=tuple(el.get('color', (255, 255, 255))))
+        return soft_shadow(img, 16, 80, 6), 40
+    if k == 'rect':  # painel/faixa sólida (cor com alfa), cantos 'all'/'top'/'none'; aceita 'rotate'
+        w, h, r = el['w'], el['h'], el.get('r', 0)
+        img = Image.new('RGBA', (w + 80, h + 80), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+        fill = tuple(el.get('fill', (20, 18, 16, 235)))
+        cantos = el.get('corners', 'all')
+        if r and cantos == 'top':
+            d.rounded_rectangle([40, 40, 40 + w - 1, 40 + h + r], radius=r, fill=fill)
+            img = img.crop((0, 0, w + 80, h + 80))
+        elif r:
+            d.rounded_rectangle([40, 40, 40 + w - 1, 40 + h - 1], radius=r, fill=fill)
+        else:
+            d.rectangle([40, 40, 40 + w - 1, 40 + h - 1], fill=fill)
+        return (soft_shadow(img, el.get('blur', 24), el.get('sh', 70), 6) if el.get('shadow', False) else img), 40
     if k == 'check':  # item de lista com ✓ desenhado num círculo (opção "Direto ao ponto")
         f = font(el.get('base', 'dm'), el.get('size', 52)); txt = el['text']
         r = int(el.get('size', 52) * 0.62); w = int(2 * r + 28 + f.getlength(txt)) + 80
@@ -161,12 +212,13 @@ def bars_on(base, el, t):
     cuts = el['cuts']; n = len(cuts) - 1; x0, y, gap = 60, el.get('y', 96), 12
     w = (W - 2 * x0 - gap * (n - 1)) / n
     ov = Image.new('RGBA', (W, y + 20), (0, 0, 0, 0)); d = ImageDraw.Draw(ov)  # camada à parte: o branco translúcido mistura com o vídeo
+    c = tuple(el.get('color', (255, 255, 255)))
     for i in range(n):
         a, b = cuts[i], cuts[i + 1]; fill = min(1, max(0, (t - a) / (b - a)))
         xa = x0 + i * (w + gap)
-        d.rounded_rectangle([xa, y, xa + w, y + 6], radius=3, fill=(255, 255, 255, 90))
+        d.rounded_rectangle([xa, y, xa + w, y + 6], radius=3, fill=c + (70,))
         if fill > 0:
-            d.rounded_rectangle([xa, y, xa + max(6, w * fill), y + 6], radius=3, fill=(255, 255, 255, 235))
+            d.rounded_rectangle([xa, y, xa + max(6, w * fill), y + 6], radius=3, fill=c + (235,))
     base.alpha_composite(ov)
 
 
@@ -321,6 +373,8 @@ def compose(base, t):
             im = im.copy(); im.putalpha(a)
         if alpha < 0.999:
             a = im.getchannel('A').point(lambda v: int(v * alpha)); im = im.copy(); im.putalpha(a)
+        if el.get('rotate'):  # faixas inclinadas (modelo Kevin 'faixas')
+            im = im.rotate(el['rotate'], resample=Image.BICUBIC, expand=True)
         x = el.get('x', 84)
         x = (W - im.width) // 2 if x == 'c' else x - pad
         base.alpha_composite(im, (int(x), int(el['y'] + YT - pad + dy)))

@@ -65,21 +65,73 @@ def save2(name, **sp):
 FMT_D = dict(sat=0.9, warm=0.025, contrast=1.02, lift=0.03, vign=0.18, grain=0.014, top=0.40)
 
 
-def opcao_d(nome, p, segs, narr, narr_at=0.3, bed=None, tempo=1.0, cuts=(0, 3.2, 9.4, 12.0, 15)):
+def _sem_italico(linhas):
+    """fontes sem itálico: *palavra* vira [palavra] (destaque na cor)."""
+    return [l.replace('*', '\x00').replace('\x00', '[', 1).replace('\x00', ']', 1) if l.count('*') >= 2 else l for l in linhas]
+
+
+CTA_MODERNO = dict(style='outline', icon='cart', text_color=(255, 255, 255), fill=(20, 18, 16, 70), lw=2,
+                   base='dm_md', size=46, h=110)
+
+
+def opcao_d(nome, p, segs, narr, narr_at=0.3, bed=None, tempo=1.0, cuts=(0, 3.2, 9.4, 12.0, 15), fonte=None):
     """"Direto ao ponto" (substitui a Revista, 2026-10-18: persuasivo e fácil para o público leigo).
     p: eyebrow, gancho=[linhas], itens=[3 textos], onde=[linhas], accent. Barrinhas tipo Stories no topo;
-    frase simples -> "Olha o que ela tem:" + lista com ✓ -> onde usar -> "Toque no carrinho e veja o preço"."""
+    frase simples -> "Olha o que ela tem:" + lista com ✓ -> onde usar -> "Toque no carrinho e veja o preço".
+    fonte: None = DM Serif (1ª versão); 'dm' = DM Sans SemiBold (padrão aprovado: diferente da serifa da opção A).
+    ITENS: só qualidades de verdade (regra 11 em agentes/regras_de_erros.md): nada de 'linhas retas' e afins."""
     a, b, c, d, e = cuts
-    big = dict(base='dms', it='dms_it', align='center', x='c', spacing=1.04)
+    if fonte:
+        big = dict(base=fonte + '_sb', it=fonte + '_sb', align='center', x='c', spacing=1.08)
+        conv, tam = _sem_italico, 0.84
+    else:
+        big = dict(base='dms', it='dms_it', align='center', x='c', spacing=1.04)
+        conv, tam = (lambda l: l), 1.0
     tx = [dict(kind='bars', cuts=list(cuts), t0=0, t1=15, y=96, out=False),
-          _txt('eyebrow', p['eyebrow'], a, b, 150, base='dm', size=30, track=7, align='center', x='c'),
-          _txt('title', p['gancho'], a, b, 206, size=108, **big),
-          _txt('title', ['Olha o que', '*ela tem:*'], b, c, 150, size=100, **big)]
+          _txt('eyebrow', p['eyebrow'], a, b, 150, base=(fonte + '_md') if fonte else 'dm', size=30, track=7, align='center', x='c'),
+          _txt('title', conv(p['gancho']), a, b, 206, size=int(108 * tam), **big),
+          _txt('title', conv(['Olha o que', '*ela tem:*']), b, c, 150, size=int(100 * tam), **big)]
     for i, item in enumerate(p['itens']):
         tx.append(dict(kind='check', text=item, t0=b + 1.2 + i * 1.5, t1=c, y=392 + i * 124, x=90, size=58,
-                       fill=p['accent']))
-    tx += [_txt('title', p['onde'], c, d, 206, size=104, **big),
-           _txt('title', ['Toque no carrinho', '*e veja o preço.*'], d, e, 170, size=96, out=False, **big),
-           dict(kind='button', text='Ver o preço', t0=d + 0.4, t1=e, y=400, x='c', w=600, h=112, size=44,
-                fill=p['accent'], text_color=(255, 255, 255), anim='rise', out=False)]
+                       fill=p['accent'], base=(fonte + '_md') if fonte else 'dm'))
+    tx += [_txt('title', conv(p['onde']), c, d, 206, size=int(104 * tam), **big),
+           _txt('title', conv(['Toque no carrinho', '*e veja o preço.*']), d, e, 170, size=int(96 * tam), out=False, **big)]
+    if fonte:
+        tx.append(dict(kind='button', text='Ver o preço', t0=d + 0.4, t1=e, y=392, x='c', anim='fade', out=False, **CTA_MODERNO))
+    else:
+        tx.append(dict(kind='button', text='Ver o preço', t0=d + 0.4, t1=e, y=400, x='c', w=600, h=112, size=44,
+                       fill=p['accent'], text_color=(255, 255, 255), anim='rise', out=False))
     save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_D, accent=p['accent'], segs=segs, texts=tx)
+
+
+def opcao_b_faixas(nome, p, segs, narr, narr_at=0.4, bed=None, cuts=(0, 5, 10, 15), tempo=1.0):
+    """Opção 2, candidata "Faixas" do modelo Kevin, modernizada: 2 faixas levemente inclinadas (escura + cor do
+    produto) com Poppins Bold, rótulo espaçado acima, subtítulo leve, CTA em contorno fino com carrinho em traço."""
+    tx = []
+    Y = 1300
+    for i, (l1, l2, sub) in enumerate(p['cenas']):
+        a, b = cuts[i], cuts[i + 1]; fim = i == 2
+        tx += [_txt('eyebrow', p['kicker'], a, b, Y, base='pop_sb', size=28, track=7, x=78, out=not fim),
+               dict(kind='band', text=l1, t0=a, t1=b, y=Y + 62, x=70, rotate=2, size=66, fill=(22, 20, 18, 238), out=not fim),
+               dict(kind='band', text=l2, t0=a + (0 if i == 0 else 0.12), t1=b, y=Y + 166, x=70, rotate=2, size=66,
+                    fill=tuple(p['accent']) + (255,), color=(26, 22, 18), out=not fim)]
+        if sub and not fim:
+            tx.append(_txt('body', sub, a + (0 if i == 0 else 0.3), b, Y + 300, base='pop_r', it='pop_r', size=38, x=82))
+    tx.append(dict(kind='button', text=p['cta'], t0=cuts[2] + 0.4, t1=15, y=Y + 304, x=70, anim='fade', out=False, **CTA_MODERNO))
+    save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_B, lift=300, accent=p['accent'], segs=segs, texts=tx)
+
+
+def opcao_b_topo(nome, p, segs, narr, narr_at=0.4, bed=None, cuts=(0, 5, 10, 15), tempo=1.0):
+    """Opção 2, candidata "Letras grandes no topo" do modelo Kevin, modernizada: Bebas Neue grande centralizada
+    (linha 2 na cor do produto), linha fina, subtítulo DM Sans espaçado, CTA em link sublinhado com carrinho em traço."""
+    tx = []
+    for i, (l1, l2, sub) in enumerate(p['cenas']):
+        a, b = cuts[i], cuts[i + 1]; fim = i == 2
+        tx += [_txt('title', [l1.upper(), '[' + l2.upper() + ']'], a, b, 150, base='bebas', it='bebas', size=128, spacing=0.94,
+                    align='center', x='c', out=not fim),
+               dict(kind='line', len=120, t0=a, t1=b, y=412, x='c', out=not fim)]
+        if sub and not fim:
+            tx.append(_txt('eyebrow', sub, a + (0 if i == 0 else 0.25), b, 450, base='dm_md', size=30, track=6, align='center', x='c'))
+    tx.append(dict(kind='button', text=p['cta'], t0=cuts[2] + 0.4, t1=15, y=440, x='c', anim='fade', out=False,
+                   style='link', icon='cart', text_color=(255, 255, 255), base='dm_md', size=48, h=100, shadow=True))
+    save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_B, accent=p['accent'], segs=segs, texts=tx)
