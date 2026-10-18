@@ -1,0 +1,218 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/p04-piano-digital/tts/a_t.wav",
+ "narr_at": 0.6,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "dips": [
+  4.708625,
+  6.955916666666666
+ ],
+ "grade": {
+  "sat": 0.86,
+  "contrast": 0.98,
+  "lift": 0.035,
+  "vign": 0.25,
+  "grain": 0.022,
+  "top": 0.3,
+  "warm_ramp": [
+   [
+    0,
+    -0.02,
+    1.03
+   ],
+   [
+    4.508624999999999,
+    -0.02,
+    1.03
+   ],
+   [
+    4.908625,
+    0.05,
+    1.0
+   ],
+   [
+    6.755916666666666,
+    0.05,
+    1.0
+   ],
+   [
+    7.155916666666666,
+    0.11,
+    0.86
+   ],
+   [
+    15,
+    0.11,
+    0.86
+   ]
+  ]
+ },
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 2.3744,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 3.0,
+   "dur": 2.3342,
+   "z": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 2.0,
+   "dur": 2.2473,
+   "z": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 1.0,
+   "dur": 2.1428,
+   "z": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 4.999,
+   "dur": 2.9506,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 4.999,
+   "dur": 2.9507,
+   "z": [
+    1.06,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Das 8h às 21h"
+   ],
+   "t0": 0,
+   "t1": 2.274375,
+   "y": 250
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Música",
+    "*o dia inteiro.*"
+   ],
+   "t0": 0,
+   "t1": 2.274375,
+   "y": 300
+  },
+  {
+   "kind": "clock",
+   "keys": [
+    [
+     2.374375,
+     "08:00"
+    ],
+    [
+     4.708625,
+     "18:00"
+    ],
+    [
+     6.955916666666666,
+     "21:00"
+    ]
+   ],
+   "t0": 2.374375,
+   "t1": 8.99875,
+   "y": 230,
+   "size": 200,
+   "anim": "fade"
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Antes do trabalho"
+   ],
+   "t0": 2.5743750000000003,
+   "t1": 4.608625,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Depois da aula"
+   ],
+   "t0": 4.808624999999999,
+   "t1": 6.855916666666666,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Para relaxar"
+   ],
+   "t0": 7.055916666666666,
+   "t1": 8.99875,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 9.198749999999999,
+   "t1": 15,
+   "y": 250,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Leve pra casa."
+   ],
+   "t0": 9.448749999999999,
+   "t1": 15,
+   "y": 300,
+   "out": false,
+   "anim": "wipe"
+  },
+  {
+   "kind": "line",
+   "len": 220,
+   "t0": 9.798749999999998,
+   "t1": 15,
+   "y": 452,
+   "anim": "draw",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p04-piano-digital/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p04-piano-digital/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p04-piano-digital/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p04-piano-digital/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p04-piano-digital/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p04-piano-digital/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p04-piano-digital/out2/p04_a_umdia.mp4",
+ "dur": 15.0
+}

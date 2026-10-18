@@ -6,18 +6,18 @@ TRILHA = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'trilha_
 MEL = (196, 132, 82)  # tom da madeira
 opcao_a('p01_a_umdia', dict(eyebrow='Das 7h às 22h', gancho=['Um dia inteiro', '*organizado.*'], shiftx=310,
   momentos=[('07:30', 'Na saída'), ('15:00', 'Na sala'), ('22:00', 'No quarto')]),
-  [seg('A', 0.0, 2.85, (1.0, 1.06)), seg('A', 3.0, 2.25, (1.0, 1.05)), seg('C', 2.6, 2.05, (1.0, 1.05)),
-   seg('B', 0.0, 2.35, (1.0, 1.06)), seg('B', 2.4, 3.0, (1.0, 1.05)), seg('A', 5.0, 2.5, (1.04, 1.0))],
-  N + 'a_t.wav', narr_at=0.4, bed=[TRILHA], cuts=(0, 2.85, 5.1, 7.15, 9.5))
+  [seg('A', 0.0, 2.65, (1.0, 1.06)), seg('A', 3.0, 2.1, (1.0, 1.05)), seg('C', 2.6, 1.75, (1.0, 1.05)),
+   seg('B', 0.0, 2.25, (1.0, 1.06)), seg('B', 2.4, 3.25, (1.0, 1.05)), seg('A', 5.0, 3.0, (1.04, 1.0))],
+  N + 'a_t.wav', narr_at=0.8, bed=[TRILHA], cuts=(0, 2.65, 4.75, 6.5, 8.75))
 opcao_b_faixas('p01_b_faixas', dict(kicker='Cabideiro de madeira', accent=MEL, cta='Toque no carrinho', shiftx=310, lift=0,
   cenas=[('Chega de casaco', 'jogado na cadeira', 'Casacos, bolsas e chapéus'),
          ('Ganchos em', 'vários níveis', 'Madeira torneada'),
          ('Entrada, sala', 'ou quarto', None)]),
-  [seg('B', 0.0, 5.0, (1.0, 1.08)), seg('A', 4.0, 3.3, (1.0, 1.06)), seg('C', 3.0, 3.5, (1.0, 1.05)), seg('A', 0.5, 3.2, (1.0, 1.05))],
-  N + 'b_t.wav', narr_at=0.4, bed=[TRILHA], cuts=(0, 5.0, 8.3, 15))
+  [seg('B', 0.0, 3.1, (1.0, 1.08)), seg('A', 4.0, 3.75, (1.0, 1.06)), seg('C', 3.0, 3.5, (1.0, 1.05)), seg('A', 0.5, 4.65, (1.0, 1.05))],
+  N + 'b_t.wav', narr_at=0.8, bed=[TRILHA], cuts=(0, 3.1, 6.85, 15))
 opcao_d('p01_c_direto', dict(eyebrow='Para a sua entrada', gancho=['Falta *um lugar*', 'para os casacos.'], tem='*ele tem:*',
-  itens=['Ganchos em vários níveis', 'Madeira torneada', 'Ocupa pouco espaço'], itens_t=[3.45, 4.7, 5.6],
+  itens=['Ganchos em vários níveis', 'Madeira torneada', 'Ocupa pouco espaço'], itens_t=[3.9, 5.2, 6.5],
   onde=['Entrada, sala', '*ou quarto.*'], accent=MEL, shiftx=310, esq=True, item_size=44, escala=0.74),
-  [seg('C', 0.0, 0.7, (1.0, 1.02), shiftx=40), seg('C', 2.6, 1.8, (1.0, 1.06), shiftx=330), seg('B', 0.0, 2.0, (1.0, 1.02)), seg('A', 0.0, 1.95, (1.0, 1.02)),
-   seg('C', 6.0, 1.85, (1.0, 1.04), shiftx=120), seg('A', 1.3, 6.7, (1.05, 1.0))],
-  N + 'c_t.wav', narr_at=0.35, bed=[TRILHA], cuts=(0, 2.5, 6.45, 8.3, 15))
+  [seg('C', 0.0, 0.7, (1.0, 1.02), shiftx=40), seg('C', 2.6, 1.9, (1.0, 1.06), shiftx=330), seg('B', 0.0, 2.7, (1.0, 1.02)),
+   seg('A', 0.0, 2.7, (1.0, 1.02)), seg('C', 6.0, 2.05, (1.0, 1.04), shiftx=120), seg('A', 1.3, 4.95, (1.05, 1.0))],
+  N + 'c_t.wav', narr_at=0.6, bed=[TRILHA], cuts=(0, 2.6, 8.0, 10.05, 15))

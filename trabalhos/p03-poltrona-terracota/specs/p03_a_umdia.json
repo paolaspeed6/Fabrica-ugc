@@ -1,0 +1,218 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/p03-poltrona-terracota/tts/a_t.wav",
+ "narr_at": 0.6,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "dips": [
+  4.401249999999999,
+  6.671458333333332
+ ],
+ "grade": {
+  "sat": 0.86,
+  "contrast": 0.98,
+  "lift": 0.035,
+  "vign": 0.25,
+  "grain": 0.022,
+  "top": 0.3,
+  "warm_ramp": [
+   [
+    0,
+    -0.02,
+    1.03
+   ],
+   [
+    4.201249999999999,
+    -0.02,
+    1.03
+   ],
+   [
+    4.601249999999999,
+    0.05,
+    1.0
+   ],
+   [
+    6.471458333333332,
+    0.05,
+    1.0
+   ],
+   [
+    6.871458333333332,
+    0.11,
+    0.86
+   ],
+   [
+    15,
+    0.11,
+    0.86
+   ]
+  ]
+ },
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 2.3786,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 2.5,
+   "dur": 2.0227,
+   "z": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 1.0,
+   "dur": 2.2702,
+   "z": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.5,
+   "dur": 2.3443,
+   "z": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 2.958,
+   "dur": 2.9921,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 2.958,
+   "dur": 2.9921,
+   "z": [
+    1.06,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Das 9h às 21h"
+   ],
+   "t0": 0,
+   "t1": 2.278583333333333,
+   "y": 250
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "O seu canto",
+    "*preferido.*"
+   ],
+   "t0": 0,
+   "t1": 2.278583333333333,
+   "y": 300
+  },
+  {
+   "kind": "clock",
+   "keys": [
+    [
+     2.3785833333333333,
+     "09:00"
+    ],
+    [
+     4.401249999999999,
+     "15:00"
+    ],
+    [
+     6.671458333333332,
+     "21:00"
+    ]
+   ],
+   "t0": 2.3785833333333333,
+   "t1": 8.915708333333333,
+   "y": 230,
+   "size": 200,
+   "anim": "fade"
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Café com calma"
+   ],
+   "t0": 2.5785833333333334,
+   "t1": 4.30125,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Hora da leitura"
+   ],
+   "t0": 4.501249999999999,
+   "t1": 6.571458333333332,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Noite de filme"
+   ],
+   "t0": 6.771458333333332,
+   "t1": 8.915708333333333,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 9.115708333333332,
+   "t1": 15,
+   "y": 250,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Leve pra casa."
+   ],
+   "t0": 9.365708333333332,
+   "t1": 15,
+   "y": 300,
+   "out": false,
+   "anim": "wipe"
+  },
+  {
+   "kind": "line",
+   "len": 220,
+   "t0": 9.715708333333332,
+   "t1": 15,
+   "y": 452,
+   "anim": "draw",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p03-poltrona-terracota/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p03-poltrona-terracota/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p03-poltrona-terracota/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p03-poltrona-terracota/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p03-poltrona-terracota/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p03-poltrona-terracota/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p03-poltrona-terracota/out2/p03_a_umdia.mp4",
+ "dur": 15.0
+}

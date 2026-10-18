@@ -1,0 +1,219 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/p09-luminaria/tts/a_t.wav",
+ "narr_at": 0.6,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "dips": [
+  4.309791666666666,
+  5.924708333333332
+ ],
+ "grade": {
+  "sat": 0.86,
+  "contrast": 0.98,
+  "lift": 0.035,
+  "vign": 0.25,
+  "grain": 0.022,
+  "top": 0.3,
+  "warm_ramp": [
+   [
+    0,
+    -0.02,
+    1.03
+   ],
+   [
+    4.109791666666665,
+    -0.02,
+    1.03
+   ],
+   [
+    4.509791666666666,
+    0.05,
+    1.0
+   ],
+   [
+    5.724708333333332,
+    0.05,
+    1.0
+   ],
+   [
+    6.1247083333333325,
+    0.11,
+    0.86
+   ],
+   [
+    15,
+    0.11,
+    0.86
+   ]
+  ]
+ },
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 2.5196,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 1.5,
+   "dur": 1.7902,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 1.0,
+   "dur": 1.6149,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 5.976,
+   "dur": 1.9737,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 4.399,
+   "dur": 3.5508,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 4.399,
+   "dur": 3.5508,
+   "z": [
+    1.04,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Das 18h às 23h"
+   ],
+   "t0": 0,
+   "t1": 2.419625,
+   "y": 250
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "A luz certa",
+    "*para cada hora.*"
+   ],
+   "t0": 0,
+   "t1": 2.419625,
+   "y": 300
+  },
+  {
+   "kind": "clock",
+   "keys": [
+    [
+     2.519625,
+     "18:00"
+    ],
+    [
+     4.309791666666666,
+     "20:00"
+    ],
+    [
+     5.924708333333332,
+     "22:00"
+    ]
+   ],
+   "t0": 2.519625,
+   "t1": 7.798375,
+   "y": 230,
+   "size": 200,
+   "anim": "fade"
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Fim de tarde"
+   ],
+   "t0": 2.719625,
+   "t1": 4.209791666666666,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Leitura"
+   ],
+   "t0": 4.409791666666665,
+   "t1": 5.824708333333333,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Filme"
+   ],
+   "t0": 6.024708333333332,
+   "t1": 7.798375,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 7.998374999999999,
+   "t1": 15,
+   "y": 250,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Leve pra casa."
+   ],
+   "t0": 8.248375,
+   "t1": 15,
+   "y": 300,
+   "out": false,
+   "anim": "wipe"
+  },
+  {
+   "kind": "line",
+   "len": 220,
+   "t0": 8.598374999999999,
+   "t1": 15,
+   "y": 452,
+   "anim": "draw",
+   "out": false
+  }
+ ],
+ "shiftx": 380,
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p09-luminaria/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p09-luminaria/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p09-luminaria/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p09-luminaria/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p09-luminaria/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p09-luminaria/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p09-luminaria/out2/p09_a_umdia.mp4",
+ "dur": 15.0
+}

@@ -1,0 +1,340 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/tts/b_t.wav",
+ "narr_at": 0.6,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "warm": 0.015,
+  "contrast": 1.04,
+  "lift": 0.02,
+  "vign": 0.1,
+  "grain": 0.01,
+  "top": 0.1
+ },
+ "lift": 300,
+ "accent": [
+  196,
+  146,
+  92
+ ],
+ "segs": [
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 0.55,
+   "z": [
+    1.0,
+    1.02
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 2.8,
+   "dur": 2.4534,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 1.0,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 2.2,
+   "dur": 2.2801,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 3.5,
+   "dur": 1.5,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 5.3,
+   "dur": 0.65,
+   "z": [
+    1.0,
+    1.02
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 1.0,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 2.6,
+   "dur": 2.2,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 4.8,
+   "dur": 1.15,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 3.0,
+   "dur": 2.2165,
+   "z": [
+    1.04,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Banqueta de madeira"
+   ],
+   "t0": 0,
+   "t1": 3.003416666666667,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "Seu balcão",
+   "t0": 0,
+   "t1": 3.003416666666667,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "pede essa banqueta",
+   "t0": 0,
+   "t1": 3.003416666666667,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    196,
+    146,
+    92,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Com apoio para os pés"
+   ],
+   "t0": 0,
+   "t1": 3.003416666666667,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Banqueta de madeira"
+   ],
+   "t0": 3.003416666666667,
+   "t1": 6.283541666666666,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "Madeira de",
+   "t0": 3.003416666666667,
+   "t1": 6.283541666666666,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "tom natural",
+   "t0": 3.123416666666667,
+   "t1": 6.283541666666666,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    196,
+    146,
+    92,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Na altura do balcão"
+   ],
+   "t0": 3.3034166666666667,
+   "t1": 6.283541666666666,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Banqueta de madeira"
+   ],
+   "t0": 6.283541666666666,
+   "t1": 15,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "Cozinha, ilha",
+   "t0": 6.283541666666666,
+   "t1": 15,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "ou bancada",
+   "t0": 6.4035416666666665,
+   "t1": 15,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    196,
+    146,
+    92,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": false
+  },
+  {
+   "kind": "button",
+   "text": "Toque no carrinho",
+   "t0": 6.683541666666667,
+   "t1": 15,
+   "y": 1604,
+   "x": 70,
+   "anim": "fade",
+   "out": false,
+   "style": "outline",
+   "icon": "cart",
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "fill": [
+    20,
+    18,
+    16,
+    70
+   ],
+   "lw": 2,
+   "base": "dm_md",
+   "size": 46,
+   "h": 110
+  }
+ ],
+ "shiftx": 260,
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/out2/p02_b_faixas.mp4",
+ "dur": 15.0
+}

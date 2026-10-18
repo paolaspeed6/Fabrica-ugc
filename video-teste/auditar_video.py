@@ -87,7 +87,8 @@ def auditar(v):
         fantasma = sum(1 for x in janela if x > base + 3) / 10
         info[f"fusao_{int(corte)}s"] = fantasma
         # passou pelo preto (brilho < 35) = mergulho ao preto proposital, não dupla exposição
-        if min(luz[int((corte - 1) * 10):int((corte + 1) * 10)] or [255]) < 35:
+        jl = luz[int((corte - 1) * 10):int((corte + 1) * 10)] or [255]
+        if min(jl) < 35 or min(jl) < 0.5 * sorted(jl)[len(jl) // 2]:  # escureceu de repente = mergulho ao preto
             info[f"fusao_{int(corte)}s"] = "preto"
         elif fantasma > FANTASMA_MAX:
             falhas.append(f"transição em {corte:.0f}s com {fantasma:.1f}s de dupla exposição")

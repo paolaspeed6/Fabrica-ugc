@@ -1,0 +1,255 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/tts/a_t.wav",
+ "narr_at": 0.6,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "dips": [
+  4.517166666666665,
+  6.454749999999999
+ ],
+ "grade": {
+  "sat": 0.86,
+  "contrast": 0.98,
+  "lift": 0.035,
+  "vign": 0.25,
+  "grain": 0.022,
+  "top": 0.3,
+  "warm_ramp": [
+   [
+    0,
+    -0.02,
+    1.03
+   ],
+   [
+    4.317166666666665,
+    -0.02,
+    1.03
+   ],
+   [
+    4.717166666666666,
+    0.05,
+    1.0
+   ],
+   [
+    6.254749999999999,
+    0.05,
+    1.0
+   ],
+   [
+    6.654749999999999,
+    0.11,
+    0.86
+   ],
+   [
+    15,
+    0.11,
+    0.86
+   ]
+  ]
+ },
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 1.0,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 2.2,
+   "dur": 1.3233,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 2.8,
+   "dur": 2.1938,
+   "z": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 1.0,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 3.6,
+   "dur": 0.9376,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 3.0,
+   "dur": 2.6871,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 3.6,
+   "dur": 1.2,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 5.3,
+   "dur": 0.65,
+   "z": [
+    1.0,
+    1.02
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 4.4,
+   "dur": 1.5,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 2.9,
+   "dur": 2.5082,
+   "z": [
+    1.04,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Das 8h às 21h"
+   ],
+   "t0": 0,
+   "t1": 2.223333333333333,
+   "y": 250
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Do café",
+    "*ao jantar.*"
+   ],
+   "t0": 0,
+   "t1": 2.223333333333333,
+   "y": 300
+  },
+  {
+   "kind": "clock",
+   "keys": [
+    [
+     2.3233333333333333,
+     "08:00"
+    ],
+    [
+     4.517166666666665,
+     "13:00"
+    ],
+    [
+     6.454749999999999,
+     "20:00"
+    ]
+   ],
+   "t0": 2.3233333333333333,
+   "t1": 9.041833333333333,
+   "y": 230,
+   "size": 200,
+   "anim": "fade"
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "No café da manhã"
+   ],
+   "t0": 2.5233333333333334,
+   "t1": 4.417166666666666,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "No almoço"
+   ],
+   "t0": 4.617166666666665,
+   "t1": 6.354749999999999,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "No jantar"
+   ],
+   "t0": 6.5547499999999985,
+   "t1": 9.041833333333333,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 9.241833333333332,
+   "t1": 15,
+   "y": 250,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Leve pra casa."
+   ],
+   "t0": 9.491833333333332,
+   "t1": 15,
+   "y": 300,
+   "out": false,
+   "anim": "wipe"
+  },
+  {
+   "kind": "line",
+   "len": 220,
+   "t0": 9.841833333333332,
+   "t1": 15,
+   "y": 452,
+   "anim": "draw",
+   "out": false
+  }
+ ],
+ "shiftx": 260,
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p02-banqueta/out2/p02_a_umdia.mp4",
+ "dur": 15.0
+}

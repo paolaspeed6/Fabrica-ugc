@@ -1,0 +1,218 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/p10-mesa-redonda/tts/a_t.wav",
+ "narr_at": 0.6,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "dips": [
+  4.840791666666666,
+  6.765416666666666
+ ],
+ "grade": {
+  "sat": 0.86,
+  "contrast": 0.98,
+  "lift": 0.035,
+  "vign": 0.25,
+  "grain": 0.022,
+  "top": 0.3,
+  "warm_ramp": [
+   [
+    0,
+    -0.02,
+    1.03
+   ],
+   [
+    4.640791666666666,
+    -0.02,
+    1.03
+   ],
+   [
+    5.040791666666666,
+    0.05,
+    1.0
+   ],
+   [
+    6.565416666666666,
+    0.05,
+    1.0
+   ],
+   [
+    6.965416666666666,
+    0.11,
+    0.86
+   ],
+   [
+    15,
+    0.11,
+    0.86
+   ]
+  ]
+ },
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.1156,
+   "z": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 1.5,
+   "dur": 1.7252,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 1.0,
+   "dur": 1.9246,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 1.0,
+   "dur": 2.0226,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 3.106,
+   "z": [
+    1.06,
+    1.0
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 3.106,
+   "z": [
+    1.06,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Das 8h às 20h"
+   ],
+   "t0": 0,
+   "t1": 3.0155833333333333,
+   "y": 250
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "A mesa",
+    "*de todas as refeições.*"
+   ],
+   "t0": 0,
+   "t1": 3.0155833333333333,
+   "y": 300
+  },
+  {
+   "kind": "clock",
+   "keys": [
+    [
+     3.1155833333333334,
+     "08:00"
+    ],
+    [
+     4.840791666666666,
+     "12:30"
+    ],
+    [
+     6.765416666666666,
+     "20:00"
+    ]
+   ],
+   "t0": 3.1155833333333334,
+   "t1": 8.688041666666667,
+   "y": 230,
+   "size": 200,
+   "anim": "fade"
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "No café"
+   ],
+   "t0": 3.3155833333333335,
+   "t1": 4.7407916666666665,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "No almoço"
+   ],
+   "t0": 4.940791666666666,
+   "t1": 6.665416666666666,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "No jantar"
+   ],
+   "t0": 6.865416666666666,
+   "t1": 8.688041666666667,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 8.888041666666666,
+   "t1": 15,
+   "y": 250,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Leve pra casa."
+   ],
+   "t0": 9.138041666666666,
+   "t1": 15,
+   "y": 300,
+   "out": false,
+   "anim": "wipe"
+  },
+  {
+   "kind": "line",
+   "len": 220,
+   "t0": 9.488041666666666,
+   "t1": 15,
+   "y": 452,
+   "anim": "draw",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p10-mesa-redonda/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p10-mesa-redonda/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p10-mesa-redonda/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p10-mesa-redonda/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p10-mesa-redonda/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p10-mesa-redonda/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p10-mesa-redonda/out2/p10_a_umdia.mp4",
+ "dur": 15.0
+}
