@@ -1,0 +1,147 @@
+{
+ "nome": "s24_cortina_wave_gaze_linho",
+ "titulo_produto": "Cortina Wave Trilho Suíço Gaze de Linho com Forro Microfibra",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r24-fotos/01.jpg",
+  "../lista1016/r24-fotos/03.jpg"
+ ],
+ "cor_destaque": "A8844F",
+ "contagem": {},
+ "diretor": {
+  "angulo": "A cortina de ondas iguais de projeto de arquiteto: o cordão wave faz o caimento, e a gaze de linho com forro dá privacidade sem apagar a luz.",
+  "palavra": "ondas",
+  "prova": "Cordão wave incluso para formar as ondas; rodízios tipo Maxi e terminais de travamento; voil gaze de linho com forro em microfibra; altura personalizada; bem avaliada.",
+  "errc": "E: 'achadinho' e infográfico com ícones. R: promessas de escurecer (não é blackout). E: as ondas em close real e a dica dos 3x a largura do trilho. C: a cortina para quem tem janela de frente para o vizinho e não quer viver no escuro.",
+  "publico_nao_obvio": "Quem mora de frente para o vizinho (prédio colado, térreo) e quer privacidade sem fechar a luz natural.",
+  "por_que_converte": "Hopkins: a especificidade útil (3x a largura do trilho) quebra a objeção 'qual tamanho compro'; Ries/Trout: uma palavra só, ondas, no gancho e no CTA; Schwartz: o Reels abre na dor do vizinho.",
+  "visual": "Parede inteira de ondas brancas acesas por trás, com as linhas de LED do teto brilhando: luz quente em quadro simétrico para o dedo no feed escuro."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    140,
+    1024,
+    1024
+   ],
+   "pruna": "Photorealistic commercial product cinematography. Very slow push-in toward a floor-to-ceiling ivory linen-texture sheer curtain with even wave folds hanging from a ceiling track, softly backlit by daylight, in a warm modern living room with glowing LED ceiling lines and a light wood floor. The whole curtain stays fully in frame. The curtain stays perfectly still and unchanged, every fold identical to the photo. Daylight behind it brightens slowly. Shallow depth of field, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s24-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.0,
+   "fiscal": "2.0"
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    262,
+    240,
+    862,
+    840
+   ],
+   "pruna": null,
+   "codigo": "desce",
+   "zoom": 1.1,
+   "clipe": "s24-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "recorte": [
+    400,
+    60,
+    1024,
+    1024
+   ],
+   "pruna": "Photorealistic commercial product cinematography. Slow lateral dolly right in a calm modern room with an off-white linen-texture sheer curtain in even wave folds hanging from a ceiling track, a gray desk and wall shelves on the right and a light wood floor. The curtain stays perfectly still and unchanged, every fold identical to the photo. Soft daylight glows through the curtain and drifts across the floor. Shallow depth of field, subtle film grain, neutral white balance.",
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "s24-cenas/cena3.mp4",
+   "lento": 1.0,
+   "fiscal": "ok"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Prega wave, trilho suíço",
+     "titulo": "Cortina que cai em [ondas]",
+     "abertura": {
+      "grande": "3x",
+      "texto": "a largura do trilho"
+     }
+    },
+    {
+     "rotulo": "O segredo é o cordão wave",
+     "titulo": "Cada onda no [lugar] certo"
+    },
+    {
+     "rotulo": "Gaze de linho com forro",
+     "titulo": "Luz natural, [privacidade] suave",
+     "fichas": [
+      "Rodízios tipo Maxi",
+      "Altura personalizada",
+      "Forro microfibra"
+     ],
+     "cta": "Peça e avise o trilho no chat"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Prega [wave] em trilho suíço",
+     "sub": "Voil gaze de linho com forro"
+    },
+    {
+     "titulo": "Rodízios e [terminais] inclusos",
+     "sub": "Cordão wave já acompanha"
+    },
+    {
+     "titulo": "Leve a sua no [carrinho]",
+     "sub": "Altura personalizada para você"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Privacidade com luz",
+     "titulo": "Janela de frente pro [vizinho]?",
+     "sub": "Privacidade suave e luz natural"
+    },
+    {
+     "rotulo": "Voil gaze de linho",
+     "titulo": "Toque leve, textura [elegante]",
+     "sub": "Forro em microfibra leve"
+    },
+    {
+     "rotulo": "Para salas e quartos",
+     "titulo": "Casa clara e [reservada]",
+     "sub": "Não bloqueia totalmente a luz",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliada"
+ },
+ "legendas": {
+  "shopee": "Cortina wave para trilho suíço em gaze de linho com forro microfibra\n#cortinawave #trilhosuico #cortinasala #cortinadelinho",
+  "shopee2": "Cortina prega wave com cordão wave, rodízios Maxi e terminais inclusos\n#pregawave #cortinasobmedida #decoracaosala #cortinaquarto",
+  "shopee3": "Cortina de voil gaze de linho com altura personalizada e luz natural\n#cortinavoil #cortinalinho #cortinaparasala #salaclara",
+  "reels": "Janela de frente pro vizinho e você não quer viver no escuro? Essa cortina wave de gaze de linho com forro dá privacidade suave e deixa a luz natural entrar ☀️\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinawave #trilhosuico #cortinadelinho #decoracaoapartamento"
+ },
+ "notas": "Só 01 e 03 (mesma sala e mesma cortina); 03 recortada para tirar o infográfico da esquerda, 01 recortada para tirar a faixa 'Prega Wave' do topo. 07/08/06/09 parecem outras cores, 02/04/05 são tabelas. Riscos: Pruna pode balançar o tecido ou mudar o número de ondas (fiscal confere 4 quadros); não é blackout (nada de 'escurece'); 'duas folhas' fica fora da tela porque a 01 fechada não mostra as 2 folhas."
+}

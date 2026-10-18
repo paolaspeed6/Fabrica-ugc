@@ -1,0 +1,153 @@
+{
+ "nome": "t19_tapete_organico_feijao",
+ "titulo_produto": "Tapete Macio Oval Orgânico Formato Feijão 2,0 x 1,50 m",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r19-fotos/01.jpg",
+  "../lista1016/r19-fotos/03.jpg",
+  "../lista1016/r19-fotos/02.jpg",
+  "t19-cenas/cena1.png",
+  "t19-cenas/cena2.png",
+  "t19-cenas/cena3.png"
+ ],
+ "cor_destaque": "A47C4E",
+ "contagem": {},
+ "diretor": {
+  "angulo": "A curva orgânica tira a sala do retângulo de sempre e deixa cara de projeto de decoração, com um chão macio para o pé descalço.",
+  "palavra": "curva",
+  "prova": "formato orgânico geométrico oval (tendência), 2,0 x 1,50 m, textura macia para caminhar descalço, fácil de limpar; nota alta",
+  "errc": "E: 'achadinho' e o zoom reto no tapete. R: adjetivo vazio de conforto. E: a luz da janela rasante revelando a textura do pelo. C: a troca 'sai o retângulo, entra a curva' e o home office como lugar do tapete.",
+  "publico_nao_obvio": "quem trabalha em casa e quer o escritório ou o closet com chão macio (o anúncio indica escritórios e closets)",
+  "por_que_converte": "Sutherland: reenquadra tapete como peça de design ('a curva'), justificando o preço. Schwartz: o Reels abre na dor física do piso gelado e a Shopee na forma.",
+  "visual": "1º segundo: sala clara com o feijão bege inteiro no chão e o sol da janela deslizando sobre o pelo; a forma curva contra o piso reto quebra o padrão do feed."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, square 1:1. High three-quarter view from a room corner, the whole rug fully visible with floor around it. The exact rug, a wide bean shape almost as wide as it is long, from the reference images, identical shape, color, material and every part: one large beige straw-colored bean-shaped organic oval rug, soft short pile, one gentle inward curve on a long side, slim rounded edge, plain solid color. Flat on a light oak floor of a living room, off-white boucle sofa, low round travertine coffee table on the rug, plain warm white walls. Golden hour side window sun across the floor. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Very slow lateral dolly right across the room. The rug stays perfectly still and unchanged, its shape, pattern, color and edges identical to the photo; the whole rug stays fully in frame. Soft window light drifts slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t19-cenas/cena1.mp4",
+   "lento": 1.0,
+   "tamanho": "1440*1440",
+   "foto": 3,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low raking-angle close-up at floor level of the curved edge. The exact rug from the reference images, identical shape, color, material and every part: soft short beige straw-colored pile in sharp detail, slim rounded edge along the inward curve, light oak floor. Real size, keep the scale true against the room and furniture: the rug measures 2.00 m by 1.50 m. Warm grazing window light reveals the pile. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Slow lateral dolly right low along the curved edge. The rug lies perfectly still and unchanged, its pile and outline identical. Warm grazing light moves slowly across the pile, revealing its soft texture. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_dir",
+   "zoom": 1.06,
+   "clipe": "t19-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 4
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, square 1:1. Low angle shot at floor level. The exact rug, a wide bean shape almost as wide as it is long, from the reference images, identical shape, color, material and every part: one large beige straw-colored bean-shaped organic oval rug, soft short pile, one gentle inward curve on a long side, slim rounded edge, plain solid color. Bare feet of a woman, cropped at the knees, step softly onto the plush rug next to a sofa; the rug is wide and roomy, much larger than the feet, its bean shape almost as wide as it is long. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "The bare feet slowly sink into the soft pile while the camera drifts gently along the floor. The rug keeps its exact shape and color. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t19-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Top-down overhead shot from directly above, the whole rug fully visible inside the frame with floor around it, its long side running vertically in the frame and its true width-to-length proportion kept exactly as in the reference photo. The exact rug from the reference images, identical shape, color, material and every part: one large beige straw-colored bean-shaped organic oval rug, soft short pile, one gentle inward curve on a long side, slim rounded edge, plain solid color. Real size, keep the scale true against the room and furniture: the rug measures 2.00 m by 1.50 m. On a light oak floor beside a low white linen bed and a wooden nightstand with a glowing ceramic lamp. Plain sand walls, blue dusk window, warm lamplight on the rug. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Very slow top-down descent from directly above the rug, the camera lowering gently toward the floor. The rug stays perfectly still and unchanged, its shape, pattern, color and edges identical to the photo; the whole rug stays fully in frame. Soft window light drifts slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": false,
+   "tamanho": "1440*1440",
+   "origem_foto": "recorte de cena1 (0, 250, 1440, 1440)",
+   "foto": 5
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Tapete orgânico 2,0 x 1,50 m",
+     "titulo": "A curva que a sala [pedia]",
+     "abertura": {
+      "grande": "2,0m",
+      "texto": "de tapete em curva orgânica"
+     }
+    },
+    {
+     "rotulo": "Feito pra pé descalço",
+     "titulo": "Maciez que o pé [sente]"
+    },
+    {
+     "rotulo": "Bege neutro, combina fácil",
+     "titulo": "Formato [feijão] é tendência",
+     "fichas": [
+      "2,0 x 1,50 m",
+      "Fácil de limpar",
+      "Formato orgânico"
+     ],
+     "cta": "Toque no carrinho e leve a curva"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Home office pede [chão] macio",
+     "sub": "Indicado até para escritório"
+    },
+    {
+     "titulo": "Oval [orgânico] tipo feijão",
+     "sub": "Textura macia e fácil de limpar"
+    },
+    {
+     "titulo": "Seu canto macio no [carrinho]",
+     "sub": "Cobre bem: 2,0 x 1,50 m"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Tapete formato feijão",
+     "titulo": "Piso gelado no pé [descalço]?",
+     "sub": "Textura macia de 2,0 x 1,50 m"
+    },
+    {
+     "rotulo": "Tendência na decoração",
+     "titulo": "Sai o retângulo, entra a [curva]",
+     "sub": "Formato orgânico geométrico oval"
+    },
+    {
+     "rotulo": "Nota alta de quem comprou",
+     "titulo": "Sala, quarto ou [closet]",
+     "sub": "Bege neutro, fácil de limpar",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Tapete orgânico formato feijão 2,0 x 1,50 m, textura macia e cor bege\n#tapeteorganico #tapetefeijao #tapetesala #tapetebege",
+  "shopee2": "Tapete oval orgânico macio para sala, quarto, closet ou escritório\n#tapetemacio #tapeteoval #tapetequarto #decoracaominimalista",
+  "shopee3": "Tapete feijão bem avaliado, fácil de limpar e tamanho 2,0 x 1,50 m\n#tapetemoderno #tapeteformatoorganico #salamoderna #tapetegrande",
+  "reels": "Piso gelado no pé descalço? Esse tapete orgânico tem textura macia e 2,0 x 1,50 m em formato feijão 🛋️\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapeteorganico #tapetefeijao #tapetemacio #decoracaosala"
+ },
+ "notas": "01 (sala) inteira e recorte rasante do pelo; 03 sem as faixas brancas laterais. Descartadas 04 (foto real mais clara/acinzentada que a 01, risco de cor) e 02 (fundo branco, mesma forma da 01). Riscos: sem estampa nem letras; Pruna pode mexer o contorno do feijão; a 03 tem o feijão um pouco mais oval e claro. Cor só 'bege' (descrição também diz 'cinza')."
+}

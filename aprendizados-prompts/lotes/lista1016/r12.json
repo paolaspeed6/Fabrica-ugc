@@ -1,0 +1,120 @@
+{
+ "nome": "r12_manucrillic_prata",
+ "titulo_produto": "Lustre Cristal Acrílico Manucrillic",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r12-fotos/01.jpg",
+  "r12-fotos/03.jpg",
+  "r12-fotos/02.jpg"
+ ],
+ "cor_destaque": "A8832B",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r12-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "codigo": "pull",
+   "zoom": 1.08,
+   "clipe": "r12-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_esq",
+   "zoom": 1.07,
+   "recorte": [
+    100,
+    380,
+    924,
+    1024
+   ],
+   "clipe": "r12-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre Manucrillic",
+     "titulo": "[1.852] avaliações, nota 4,82",
+     "abertura": {
+      "grande": "4,82",
+      "texto": "nota em 1.852 avaliações"
+     }
+    },
+    {
+     "rotulo": "Alumínio espelhado",
+     "titulo": "[73] pirulitos + 375 castanhas"
+    },
+    {
+     "rotulo": "Pré-montado, é só fixar",
+     "titulo": "Acende com só [1] lâmpada",
+     "fichas": [
+      "1 lâmpada E-27",
+      "25 x 30 cm",
+      "Pré-montado"
+     ],
+     "cta": "Clique e leve o seu agora"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Luxo no teto com [1] lâmpada",
+     "sub": "Manucrillic, cristal acrílico"
+    },
+    {
+     "titulo": "[448] cristais de alto brilho",
+     "sub": "Alumínio polido espelhado"
+    },
+    {
+     "titulo": "Garanta o seu no [carrinho]",
+     "sub": "Bivolt, uso interno"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Manucrillic cristal",
+     "titulo": "Sua sala merece [brilho]",
+     "sub": "Plafon 25 x 30 cm"
+    },
+    {
+     "rotulo": "Brilho de cristal",
+     "titulo": "Efeito luminoso [lindo]",
+     "sub": "Alumínio polido e acrílico"
+    },
+    {
+     "rotulo": "Casa toda",
+     "titulo": "Quarto, sala ou [corredor]",
+     "sub": "Uso interno, bivolt",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "1852",
+  "t": "avaliações"
+ },
+ "legendas": {
+  "shopee": "Lustre Manucrillic de cristal acrílico, nota 4,82 e 448 cristais\n#lustremanucrillic #plafoncristal #decoracaocorredor #lustresala",
+  "shopee2": "Plafon Manucrillic 25 x 30 cm, 1 lâmpada E-27, bivolt\n#lustredecristal #iluminacaoquarto #plafonteto #decoracaodecasa",
+  "shopee3": "Lustre de alumínio espelhado com 73 pirulitos, pré-montado\n#lustreacrilico #lustredeteto #cristalsala #decoracaodeinteriores",
+  "reels": "Sala, quarto ou corredor com cara de lustre de cristal, e com 1 lâmpada só. Manucrillic, nota 4,82 ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrecristal #plafoncristal #decoracaocorredor #iluminacaosala"
+ },
+ "notas": "Fotos 01 (disco prateado), 03 (lateral redonda), recorte inferior da 02 (pirulitos, 824x644). Gancho nota+avaliações. Risco: sem letras. Prata/cromado nao nomeado na cor_destaque (dourado quente por ser produto cinza)."
+}

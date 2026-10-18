@@ -1,0 +1,101 @@
+{
+  "nome": "q10_fogao_industrial_6_bocas",
+  "titulo_produto": "Fogão Industrial 6 Bocas Alta Pressão Drakar",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q10-fotos/01.jpg",
+    "q10-fotos/03.jpg"
+  ],
+  "cor_destaque": "E8761C",
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "slow push-in",
+      "clipe": "fogao_industrial_6_bocas-cenas/cena1.mp4"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. A six-burner black steel industrial gas stove exactly like reference photo 1: two rows of three square cast-iron grates, six round burners with blue flames, a silver horizontal bar below the burners with brass valves, black frame legs with a lower crossbar. Clean commercial kitchen with stainless steel walls, grey floor, only the objects described. 50 mm, shallow depth of field, warm kitchen light, neutral white balance. The whole product fills 25-60% of the image height, centered, empty floor below.",
+      "movimento": "gentle lateral dolly",
+      "clipe": "fogao_industrial_6_bocas-cenas/cena2.mp4"
+    },
+    {
+      "foto": 0,
+      "movimento": "crane up reveal",
+      "clipe": "fogao_industrial_6_bocas-cenas/cena3.mp4"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Drakar · Alta Pressão",
+          "titulo": "[6 bocas] pra cozinha pesada",
+          "abertura": {
+            "grande": "6",
+            "texto": "bocas de alta pressão"
+          }
+        },
+        {
+          "rotulo": "Queimadores 130 mm",
+          "titulo": "Chama [forte] e regulável"
+        },
+        {
+          "rotulo": "Nota 4,72",
+          "titulo": "Grelhas aguentam [40 kg] cada",
+          "fichas": [
+            "6 queimadores",
+            "40 kg/grelha",
+            "Nota 4,72"
+          ],
+          "cta": "Toque no carrinho e leve o seu"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "[Fila no fogão]? Acabou",
+          "sub": "Fogão industrial Drakar"
+        },
+        {
+          "titulo": "Grelha que aguenta [40 kg]",
+          "sub": "Aço carbono reforçado"
+        },
+        {
+          "titulo": "Leve o seu no [carrinho]",
+          "sub": "Nota 4,72 · registro e mangueira"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Cozinha de uso intenso",
+          "titulo": "Cozinha que [não para] precisa disso"
+        },
+        {
+          "rotulo": "Alta pressão",
+          "titulo": "Queimadores de [130 mm], chama forte",
+          "sub": "Aço carbono, pintura epóxi"
+        },
+        {
+          "rotulo": "Nota 4,72 · 169 avaliações",
+          "titulo": "Fogão de [restaurante] no seu espaço",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Fogão industrial Drakar 6 bocas alta pressão, com registro e mangueira. Aço carbono.\n#fogaoindustrial #restaurante #cozinha #achadinhosshopee",
+    "shopee2": "Fogão 6 bocas alta pressão Drakar, queimadores de 130 mm, grelhas de 30 x 30 cm.\n#fogao #lanchonete #cozinhaindustrial #achadinhosshopee",
+    "reels": "6 bocas de alta pressão, queimadores de 130 mm e grelhas de 40 kg cada: fogão industrial Drakar com registro e mangueira. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#fogaoindustrial #restaurante #lanchonete #cozinhaprofissional"
+  },
+  "comentario": "🛒 Fogão Industrial 6 Bocas Alta Pressão Drakar aqui: {link}",
+  "imagens_conferidas": true
+}

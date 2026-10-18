@@ -1,0 +1,106 @@
+{
+ "nome": "bike",
+ "link": "https://shopee.com.br/product/901067314/58253674993",
+ "fotos": [
+  "../bike-fotos/A_principal.png"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Use only the bicycle from the reference image and keep it exactly identical, every part, color, decal and letter. Exact bicycle: a 29-inch hardtail mountain bike seen in a perfect side view, facing right (front wheel on the right), with a glossy black steel frame and a rigid black fork (no suspension). Down tube: the large italic word KROW in capital letters, reading upward from the pedals toward the handlebar, with a color gradient: the K is cyan blue and the letters shift through purple to bright magenta pink on R, O, W, with thin parallel speed lines. Top tube: a long magenta pink speed-stripe decal fading to cyan, ending near the front with the small cyan italic word BLAZE. Right chainstay: the small cyan italic word KROW followed by magenta slash marks. Thin cyan and magenta stripes on the seat tube, seat stays and fork. Both wheels: black rims with cyan and magenta rim decals with slash marks, thin black spokes, black knobby off-road tires, silver disc brake rotors with black mechanical disc brake calipers front and rear. Drivetrain: black triple front chainring with black crank arms and black platform pedals, bronze 7-speed rear cassette, black rear derailleur with a small red part, black chain. Cockpit: black seat post with a black saddle, short black stem, straight black handlebar with black grips, black brake levers and shifters, black cables. Do not change the spelling, font, size, position or colors of KROW and BLAZE. Do not redesign, recolor, add or remove any part. No kickstand, no bottle cage, no lights, no fenders, no extra logos. Scene: the bicycle is parked on a clean gray urban bike lane, leaning lightly against a low light-gray concrete wall that runs parallel behind it; warm golden hour sunlight from the left, blurred modern city buildings and trees in the background, soft warm sky. The whole bicycle is fully visible, sharp, at the same side angle as the reference, spanning most of the frame width and placed in the middle of the frame. No people, no riders. Photorealistic full-frame photo, vertical 9:16. No phone frame, no device bezel, no borders, no added text or watermarks.",
+   "movimento": "Very slow camera push-in, a soft warm lens flare drifts slightly. The bicycle stays completely still and keeps exactly the same shape, colors and lettering; the wheels do not turn.",
+   "clipe": "../bike-cenas/cena1_cidade.mp4"
+  },
+  {
+   "editar": "Use only the bicycle from the reference image and keep it exactly identical, every part, color, decal and letter. Exact bicycle: a 29-inch hardtail mountain bike seen in a perfect side view, facing right (front wheel on the right), with a glossy black steel frame and a rigid black fork (no suspension). Down tube: the large italic word KROW in capital letters, reading upward from the pedals toward the handlebar, with a color gradient: the K is cyan blue and the letters shift through purple to bright magenta pink on R, O, W, with thin parallel speed lines. Top tube: a long magenta pink speed-stripe decal fading to cyan, ending near the front with the small cyan italic word BLAZE. Right chainstay: the small cyan italic word KROW followed by magenta slash marks. Thin cyan and magenta stripes on the seat tube, seat stays and fork. Both wheels: black rims with cyan and magenta rim decals with slash marks, thin black spokes, black knobby off-road tires, silver disc brake rotors with black mechanical disc brake calipers front and rear. Drivetrain: black triple front chainring with black crank arms and black platform pedals, bronze 7-speed rear cassette, black rear derailleur with a small red part, black chain. Cockpit: black seat post with a black saddle, short black stem, straight black handlebar with black grips, black brake levers and shifters, black cables. Do not change the spelling, font, size, position or colors of KROW and BLAZE. Do not redesign, recolor, add or remove any part. No kickstand, no bottle cage, no lights, no fenders, no extra logos. Scene: the bicycle is parked on a packed light-brown dirt path in a green park, leaning lightly against a low wooden fence rail that runs parallel behind it; tall green trees and grass softly blurred in the background, soft morning sunlight with light haze. The whole bicycle is fully visible, sharp, at the same side angle as the reference, spanning most of the frame width and placed in the middle of the frame. No people, no riders. Photorealistic full-frame photo, vertical 9:16. No phone frame, no device bezel, no borders, no added text or watermarks.",
+   "movimento": "Slow sideways camera move with gentle parallax, leaves sway in the background. The bicycle stays completely still and keeps exactly the same shape, colors and lettering; the wheels do not turn.",
+   "clipe": "../bike-cenas/cena2_parque.mp4"
+  },
+  {
+   "foto": 0,
+   "movimento": "Very slow camera push-in toward the bicycle frame, soft studio light. The bicycle does not move or change shape, colors or lettering; the wheels do not turn.",
+   "clipe": "../bike-cenas/cena3_principal.mp4"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Dia a dia",
+     "titulo": "Pedale pela cidade com [estilo]",
+     "ate": 4.8
+    },
+    {
+     "rotulo": "Passeio",
+     "titulo": "[21 marchas] para qualquer subida",
+     "ate": 4.8
+    },
+    {
+     "rotulo": "Krow Blaze",
+     "titulo": "Aro 29 com [freio a disco]",
+     "fichas": [
+      "Aro 29",
+      "21 marchas",
+      "Aço carbono"
+     ],
+     "cta": "Toque no carrinho",
+     "ate": 5.0
+    }
+   ]
+  },
+  "tiktok": {
+   "cenas": [
+    {
+     "titulo": "Essa bike chama [atenção]",
+     "ate": 4.6
+    },
+    {
+     "titulo": "[Aro 29] e 21 marchas",
+     "sub": "Pra cidade e pra trilha leve",
+     "ate": 4.6
+    },
+    {
+     "titulo": "Freio a [disco] na frente e atrás",
+     "sub": "Krow Blaze",
+     "cta": "Link no perfil",
+     "ate": 5.0
+    }
+   ]
+  },
+  "reels": {
+   "ordem": [
+    1,
+    0,
+    2
+   ],
+   "cenas": [
+    {
+     "rotulo": "Fim de semana",
+     "titulo": "Seu passeio merece [mais]",
+     "ate": 4.8
+    },
+    {
+     "rotulo": "Rotina",
+     "titulo": "Do trabalho ao [parque]",
+     "sub": "Aro 29, aço carbono e 21 marchas",
+     "ate": 4.8
+    },
+    {
+     "rotulo": "Freios a disco",
+     "titulo": "Pedale com [segurança]",
+     "cta": "Compre pelo link",
+     "ate": 5.0
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Bicicleta Krow Blaze aro 29 em aço carbono, 21 marchas e freios a disco. Para o dia a dia e para passeios. Toque no carrinho e confira.",
+  "tiktok": "Preto com degradê azul e rosa 🔥 Krow Blaze aro 29, 21 marchas e freio a disco. Link no perfil!",
+  "reels": "Do trabalho ao parque com a Krow Blaze 🚲 Aro 29, aço carbono, 21 marchas e freios a disco. Compre pelo link: {link}"
+ },
+ "hashtags": {
+  "tiktok": "#bike #ciclismo #aro29 #achadinhosshopee",
+  "reels": "#bike #pedal #aro29 #mtb"
+ }
+}

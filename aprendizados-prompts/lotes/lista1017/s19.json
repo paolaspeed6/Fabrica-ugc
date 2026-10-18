@@ -1,0 +1,144 @@
+{
+ "nome": "s19_tapete_organico_feijao",
+ "titulo_produto": "Tapete Macio Oval Orgânico Formato Feijão 2,0 x 1,50 m",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r19-fotos/01.jpg",
+  "../lista1016/r19-fotos/03.jpg"
+ ],
+ "cor_destaque": "A47C4E",
+ "contagem": {},
+ "diretor": {
+  "angulo": "A curva orgânica tira a sala do retângulo de sempre e deixa cara de projeto de decoração, com um chão macio para o pé descalço.",
+  "palavra": "curva",
+  "prova": "formato orgânico geométrico oval (tendência), 2,0 x 1,50 m, textura macia para caminhar descalço, fácil de limpar; nota alta",
+  "errc": "E: 'achadinho' e o zoom reto no tapete. R: adjetivo vazio de conforto. E: a luz da janela rasante revelando a textura do pelo. C: a troca 'sai o retângulo, entra a curva' e o home office como lugar do tapete.",
+  "publico_nao_obvio": "quem trabalha em casa e quer o escritório ou o closet com chão macio (o anúncio indica escritórios e closets)",
+  "por_que_converte": "Sutherland: reenquadra tapete como peça de design ('a curva'), justificando o preço. Schwartz: o Reels abre na dor física do piso gelado e a Shopee na forma.",
+  "visual": "1º segundo: sala clara com o feijão bege inteiro no chão e o sol da janela deslizando sobre o pelo; a forma curva contra o piso reto quebra o padrão do feed."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": null,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s19-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Very slow push-in on a minimalist living room: a large beige bean-shaped organic oval rug with soft short pile on a light grey tile floor, a light grey sofa, a round black coffee table and a tall window. The whole rug stays fully in frame, perfectly still and unchanged, identical to the photo. Soft morning sunlight slowly sweeps across the rug. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "fiscal": "codigo"
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    60,
+    420,
+    960,
+    1024
+   ],
+   "pruna": "Slow lateral dolly right low over a beige bean-shaped rug with soft short pile on a grey tile floor, the base of a round black coffee table resting on it. The rug stays perfectly still and unchanged, its curved edge identical to the photo. Warm window light grazes slowly across the pile, revealing its soft texture. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "s19-cenas/cena2.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.0,
+   "fiscal": "2.0"
+  },
+  {
+   "foto": 1,
+   "recorte": [
+    172,
+    0,
+    850,
+    1024
+   ],
+   "pruna": null,
+   "codigo": "desce",
+   "zoom": 1.07,
+   "clipe": "s19-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Slow crane down in a bright living room: a beige shaggy bean-shaped rug on a light wooden floor, a light grey sofa with mustard and checked cushions, a round wooden coffee table, a brass arc floor lamp glowing softly. The rug stays perfectly still and unchanged, identical to the photo. Soft daylight drifts across the room with golden dust in the beam. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "fiscal": "codigo"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Tapete orgânico 2,0 x 1,50 m",
+     "titulo": "A curva que a sala [pedia]",
+     "abertura": {
+      "grande": "2,0m",
+      "texto": "de tapete em curva orgânica"
+     }
+    },
+    {
+     "rotulo": "Feito pra pé descalço",
+     "titulo": "Maciez que o pé [sente]"
+    },
+    {
+     "rotulo": "Bege neutro, combina fácil",
+     "titulo": "Formato [feijão] é tendência",
+     "fichas": [
+      "2,0 x 1,50 m",
+      "Fácil de limpar",
+      "Formato orgânico"
+     ],
+     "cta": "Toque no carrinho e leve a curva"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Home office pede [chão] macio",
+     "sub": "Indicado até para escritório"
+    },
+    {
+     "titulo": "Oval [orgânico] tipo feijão",
+     "sub": "Textura macia e fácil de limpar"
+    },
+    {
+     "titulo": "Seu canto macio no [carrinho]",
+     "sub": "Cobre bem: 2,0 x 1,50 m"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Tapete formato feijão",
+     "titulo": "Piso gelado no pé [descalço]?",
+     "sub": "Textura macia de 2,0 x 1,50 m"
+    },
+    {
+     "rotulo": "Tendência na decoração",
+     "titulo": "Sai o retângulo, entra a [curva]",
+     "sub": "Formato orgânico geométrico oval"
+    },
+    {
+     "rotulo": "Nota alta de quem comprou",
+     "titulo": "Sala, quarto ou [closet]",
+     "sub": "Bege neutro, fácil de limpar",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Tapete orgânico formato feijão 2,0 x 1,50 m, textura macia e cor bege\n#tapeteorganico #tapetefeijao #tapetesala #tapetebege",
+  "shopee2": "Tapete oval orgânico macio para sala, quarto, closet ou escritório\n#tapetemacio #tapeteoval #tapetequarto #decoracaominimalista",
+  "shopee3": "Tapete feijão bem avaliado, fácil de limpar e tamanho 2,0 x 1,50 m\n#tapetemoderno #tapeteformatoorganico #salamoderna #tapetegrande",
+  "reels": "Piso gelado no pé descalço? Esse tapete orgânico tem textura macia e 2,0 x 1,50 m em formato feijão 🛋️\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapeteorganico #tapetefeijao #tapetemacio #decoracaosala"
+ },
+ "notas": "01 (sala) inteira e recorte rasante do pelo; 03 sem as faixas brancas laterais. Descartadas 04 (foto real mais clara/acinzentada que a 01, risco de cor) e 02 (fundo branco, mesma forma da 01). Riscos: sem estampa nem letras; Pruna pode mexer o contorno do feijão; a 03 tem o feijão um pouco mais oval e claro. Cor só 'bege' (descrição também diz 'cinza')."
+}

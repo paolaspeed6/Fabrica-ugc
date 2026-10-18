@@ -1,0 +1,12 @@
+---
+name: one-command-pipeline
+description: produzir.py - one command turns product.json files into 3 platform videos, captions and an approval sheet; tested 2026-10-13 with existing stool clips
+metadata:
+  type: project
+---
+
+video-teste/produzir.py lote/<produto>.json [...] (built 2026-10-13 while waiting for the Shopee API key). Claude writes one product.json per product: listing photos, scene recipe (Seedream edit or animate listing photo, per [[product-fidelity-rule]]), per-platform texts for the approved templates ([[edit-templates]]), captions with {link} and hashtags. It skips generation when a scene's clip already exists, otherwise calls WaveSpeed via gerar_video.py functions; renders shopee/tiktok/reels with montar_video_pro.py; writes saida/<nome>/legendas.txt; and makes saida/aprovacao.jpg (listing photo vs one frame per scene, one row per video) so the owner approves a batch in one image.
+
+Tested with the stool clips (lote/banqueta.json): 3 videos plus sheet in ~3.5 min, US$ 0. At 50 products/day that's ~3 h of render time sequentially; speed-ups if needed: render versions in parallel, or use preset medium in the final encode. Live WaveSpeed generation works (2026-10-13): key is a project network secret (Bearer, api.wavespeed.ai), and the output host d2h7xmz5gqybh9.cloudfront.net is allowed. gerar_video.api() logs each request id to video-teste/pedidos.log. Bike run: ~3 min generation per product (parallel calls) + ~2.5 min to render 3 versions; per-scene "ate" 4.8/4.8/5.0 gives 13.6-14 s videos (defaults give 9-11 s). The composite recipe ([[product-fidelity-rule]]) was wired by hand via lote/bike.json; produzir.py doesn't run it on its own yet.
+
+**Production recipe wired (2026-10-14):** gerar_video.py now uses Seedance 1.5 Pro Fast 720p (generate_audio false, 9:16, US$0.10/clip). produzir.py: `--preparar <link> <nome>` runs buscar_fotos into lote/<nome>-fotos/ plus a contact sheet; each "editar" prompt gets the centered-composition rule appended (opt out with "composicao": false); defaults give exactly 15 s (ate shopee 5.27 / tiktok 5.08 / reels 5.33, lento 1.1); all missing scenes of the batch generate in parallel (12 at a time) after a balance check against the worst case; a failed product is skipped, not the batch; 2 products render at once. Measured: 2 products rendered in 6 min (4 CPUs), so about 3 min per product; 20 products ≈ 1 h render, 2-3 h total end to end. Backups of the old scripts were only in a scratchpad.

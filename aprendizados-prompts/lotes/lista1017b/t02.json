@@ -1,0 +1,157 @@
+{
+ "nome": "t02_kit_4_cadeiras_eames",
+ "titulo_produto": "Kit 4 Cadeiras Eames Eiffel em Polipropileno",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r02-fotos/01.jpg",
+  "../lista1016/r02-fotos/02.jpg",
+  "t02-cenas/cena1.png",
+  "t02-cenas/cena2.png",
+  "t02-cenas/cena3.png"
+ ],
+ "cor_destaque": "B07A45",
+ "contagem": {
+  "cadeiras": 4,
+  "pes_por_cadeira": 4
+ },
+ "diretor": {
+  "angulo": "A mesa fica completa num pedido só: 4 cadeiras iguais, leves por fora e com metal dentro dos pés.",
+  "palavra": "kit 4",
+  "prova": "Suporta até 110 kg, assento a 44 cm, pés de polipropileno com estrutura metálica interna",
+  "errc": "E: 'cadeira linda' e preço. R: lista de medidas. E: o mecanismo escondido (metal dentro do pé) e os 110 kg. C: a dor das cadeiras desiguais na mesa e a área gourmet/escritório.",
+  "publico_nao_obvio": "Quem monta área gourmet ou escritório pequeno (a descrição cita área gourmet, home office e ambientes corporativos).",
+  "por_que_converte": "Schwartz (mecanismo único): mostrar que o pé tem metal por dentro quebra a objeção 'plástico quebra'. Hormozi: kit de 4 reduz o esforço de achar cadeiras iguais.",
+  "visual": "1º segundo: as 4 cadeiras ao redor da mesa com sol da janela entrando; cena limpa, simétrica, cara de revista."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Slightly high three-quarter front view, 35mm lens. The exact chairs from the reference images, identical shape, color, material and every part: exactly 4 identical black polypropylene shell chairs, each with exactly 4 black legs joined by thin black wire cross bracing, evenly around a round white table. Real size, keep the scale true against the room and furniture: each chair is a standard dining chair 53 cm wide, 46.5 cm deep and 82 cm tall, seat 44 cm above the floor. Kitchen nook, plain sage-green wall, pale terrazzo floor. Soft morning sunlight from a side window. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Very slow push-in. Exactly 4 identical black shell chairs with black Eiffel legs and thin wire bracing stay perfectly still and unchanged, every part identical; the whole set stays fully in frame. Soft morning sunlight drifts slowly across the terrazzo floor, faint dust floats in the beam. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t02-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.0,
+   "fiscal": "3.0",
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up three-quarter side view at seat height, 85mm lens. The exact chair from the reference images, identical shape, color, material and every part: exactly 1 black polypropylene shell chair with exactly 4 black legs joined by thin black wire cross bracing. Real size, keep the scale true against the room and furniture: each chair is a standard dining chair 53 cm wide, 46.5 cm deep and 82 cm tall, seat 44 cm above the floor. It stands on a light oak floor against a plain warm-gray wall. Soft afternoon window light grazes the matte shell. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Slow lateral dolly left. The black shell chair with exactly 4 black legs and thin wire cross bracing stays perfectly still and unchanged, every part identical. Soft window light glides slowly along the matte shell and the oak floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t02-cenas/cena2.mp4",
+   "lento": 1.0,
+   "fiscal": "ok",
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Eye-level medium shot from behind. The exact chairs from the reference images, identical shape, color, material and every part: exactly 4 identical black polypropylene shell chairs, each with exactly 4 black legs joined by thin black wire cross bracing, evenly around a round travertine table with two white plates and a bowl of green apples. Two friends seen from behind sit on two of the chairs at the round table sharing coffee, the other 2 chairs empty and fully visible; a real adult sits comfortably on a normal-height dining chair. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "One friend slowly leans back in the chair while the camera drifts gently to the right. The chairs keep their exact shape. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t02-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Eye-level wide shot, 35mm lens. The exact chairs from the reference images, identical shape, color, material and every part: exactly 4 identical black polypropylene shell chairs, each with exactly 4 black legs joined by thin black wire cross bracing, evenly around a round travertine table with two white plates and a bowl of green apples. Real size, keep the scale true against the room and furniture: each chair is a standard dining chair 53 cm wide, 46.5 cm deep and 82 cm tall, seat 44 cm above the floor. Plain warm-white walls, dark wood floor. Golden-hour window sunlight. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow pull-back. Exactly 4 identical black shell chairs with black Eiffel legs and thin wire bracing stay perfectly still and unchanged, every part identical. Golden sunlight slowly stretches across the floor, fine dust glows in the beam. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "pruna_t": 1.8,
+   "fiscal": "1.8",
+   "foto": 4,
+   "escala": 0.62,
+   "subir": 330
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Kit com 4 cadeiras Eames",
+     "titulo": "4 lugares num [só pedido]",
+     "abertura": {
+      "grande": "110",
+      "texto": "kg de carga suportada"
+     }
+    },
+    {
+     "rotulo": "Pés com estrutura metálica",
+     "titulo": "[Metal] por dentro dos pés"
+    },
+    {
+     "rotulo": "Polipropileno reciclável",
+     "titulo": "Sua sala de jantar, [pronta]",
+     "fichas": [
+      "Concha polipropileno",
+      "Assento a 44 cm",
+      "Até 110 kg"
+     ],
+     "cta": "Toque no carrinho e garanta o kit"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Área gourmet com [4 lugares]",
+     "sub": "Para jantar, escritório e gourmet"
+    },
+    {
+     "titulo": "Assento [ergonômico] a 44 cm",
+     "sub": "Concha de polipropileno reciclável"
+    },
+    {
+     "titulo": "Leve as 4 no [carrinho]",
+     "sub": "Kit bem avaliado por quem comprou"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Cadeira Eames Eiffel",
+     "titulo": "Cadeiras [desiguais] na mesa?",
+     "sub": "Kit com 4 iguais resolve isso"
+    },
+    {
+     "rotulo": "Pés com metal por dentro",
+     "titulo": "Leve de mover, [firme] de sentar",
+     "sub": "Suporta até 110 kg"
+    },
+    {
+     "rotulo": "Jantar, cozinha, home office",
+     "titulo": "Design que [não envelhece]",
+     "sub": "Clássico e atemporal, kit com 4",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "110",
+  "t": "kg suportados"
+ },
+ "legendas": {
+  "shopee": "Kit 4 cadeiras Eames Eiffel em polipropileno, suportam até 110 kg\n#cadeiraeames #cadeiraeiffel #mesadejantar #saladejantar",
+  "shopee2": "Cadeira Eames com assento a 44 cm e pés com estrutura metálica interna\n#eamesdsw #cadeiradejantar #areagourmet #cadeiraescritorio",
+  "shopee3": "Kit com 4 cadeiras Eames leves, recicláveis e bem avaliadas\n#kitcadeiras #cadeiradesign #decoracaocozinha #homeoffice",
+  "reels": "Cadeiras desiguais na mesa? Kit com 4 cadeiras Eames iguais, leves e que suportam até 110 kg 🪑\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cadeiraeames #mesadejantar #areagourmet #decoracaocozinha"
+ },
+ "notas": "Só a foto 01 (ambiente com as 4 cadeiras pretas); 02-08 são fundo branco e 03/04/06/07/08 são outras cores. Cena 2 é close dos pés por código (a IA inventaria varetas). A mesa não faz parte do kit: nenhum texto fala de mesa inclusa. Cor 'preta' fora do texto (o anúncio diz 'cores variadas'). Peso 3,7 kg omitido (ambíguo). Risco Pruna: somar ou tirar cadeira/pé e mexer nas varetas da base Eiffel."
+}

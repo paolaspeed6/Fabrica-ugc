@@ -1,0 +1,117 @@
+{
+  "nome": "q07_maca_bluehell_diamante",
+  "titulo_produto": "Maca 3 Posições Compact One Diamante Blue Hell",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q07-fotos/01.jpg",
+    "q07-fotos/04.jpg"
+  ],
+  "cor_destaque": "auto",
+  "cenas": [
+    {
+      "foto": 0,
+      "recorte": [
+        0,
+        154,
+        870,
+        1024
+      ],
+      "movimento": "slow push-in"
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        0,
+        300,
+        870,
+        1024
+      ],
+      "movimento": "crane up reveal"
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        150,
+        220,
+        780,
+        900
+      ],
+      "movimento": "gentle lateral dolly"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Blue Hell · Compact One",
+          "titulo": "Maca que suporta [190 kg]",
+          "abertura": {
+            "grande": "190",
+            "texto": "kg de carga suportada"
+          }
+        },
+        {
+          "rotulo": "Encosto regulável",
+          "titulo": "Encosto em [3 posições]"
+        },
+        {
+          "rotulo": "Nota 4,95",
+          "titulo": "Acabamento [Diamante] preto",
+          "fichas": [
+            "Até 190 kg",
+            "Aço carbono",
+            "Nota 4,95"
+          ],
+          "cta": "Toque no carrinho e leve a sua"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Maca para [estúdio] de verdade",
+          "sub": "Suporta até 190 kg"
+        },
+        {
+          "titulo": "Encosto em [3 posições]",
+          "sub": "Estofado com espuma D28"
+        },
+        {
+          "titulo": "Leve a sua no [carrinho]",
+          "sub": "Nota 4,95 · 347 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Estúdio, estética, massagem",
+          "titulo": "Aguenta até [190 kg]",
+          "sub": "Estrutura em aço carbono"
+        },
+        {
+          "rotulo": "Conforto",
+          "titulo": "Encosto em [3 posições] e almofada",
+          "sub": "Espuma D28, acabamento Diamante"
+        },
+        {
+          "rotulo": "Nota 4,95 · 347 avaliações",
+          "titulo": "Blue Hell [Compact One]",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Maca 3 posições Compact One Diamante Blue Hell, suporta até 190 kg.\n#maca #estudio #estetica #achadinhosshopee",
+    "shopee2": "Maca Blue Hell com estrutura em aço carbono e encosto em 3 posições.\n#maca #tatuagem #estetica #achadinhosshopee",
+    "reels": "Maca que suporta até 190 kg, com encosto em 3 posições e acabamento Diamante 🖤 Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#maca #estetica #tatuagem #massoterapia"
+  },
+  "comentario": "🛒 Maca Blue Hell Compact One aqui: {link}",
+  "imagens_conferidas": true
+}

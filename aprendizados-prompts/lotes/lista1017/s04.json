@@ -1,0 +1,138 @@
+{
+ "nome": "s04_quadro_marmore_2_telas",
+ "titulo_produto": "Quadro Abstrato Mármore Moderno 2 Telas com Moldura Preta",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r04-fotos/01.jpg",
+  "../lista1016/r04-fotos/10.jpg",
+  "../lista1016/r04-fotos/09.jpg"
+ ],
+ "cor_destaque": "A8823A",
+ "contagem": {
+  "telas": 2
+ },
+ "diretor": {
+  "angulo": "Parede vazia entrega casa inacabada; um par de telas mármore com moldura preta vira o ponto de galeria da sala.",
+  "palavra": "mármore",
+  "prova": "2 telas em papel fotográfico premium, moldura de madeira de reflorestamento revestida em preto com certificado FSC, suporte de serrilha que acompanha",
+  "errc": "E: 'quadro lindo' e lista de medidas confusas. R: adjetivos de sofisticação. E: o veio da arte e a moldura de madeira certificada em close. C: falar com quem quer o escritório com cara de projeto.",
+  "publico_nao_obvio": "Quem trabalha em escritório ou home office e quer uma parede com arte (a descrição cita escritório).",
+  "por_que_converte": "Heath (Concreto): 'parede branca demais' é uma imagem que todo mundo vê em casa. Cialdini (autoridade): moldura com certificado FSC é prova que ninguém da categoria mostra.",
+  "visual": "1º segundo: as 2 telas em parede bege com luz de sol e poltrona boucle; contraste preto e branco com brilho quente prende o dedo."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": "Very slow push-in on a calm beige living room. Exactly 2 tall abstract marble artworks, white with black and gold veins, in thin black frames hang on the wall and stay perfectly still and unchanged, every vein identical to the photo; both frames stay fully in frame. Soft sunlight drifts slowly across the wall and the shelf lights glow warmly. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s04-cenas/cena1.mp4",
+   "lento": 1.0,
+   "fiscal": "ok"
+  },
+  {
+   "foto": 1,
+   "recorte": [
+    170,
+    260,
+    830,
+    920
+   ],
+   "pruna": null,
+   "codigo": "pan_esq",
+   "zoom": 1.08,
+   "clipe": "s04-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "pruna": null,
+   "codigo": "pull",
+   "zoom": 1.08,
+   "clipe": "s04-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Slow lateral dolly right in front of a cream sofa with dark cushions. Exactly 2 tall abstract marble artworks, white with black and gold veins, in thin black frames hang above it and stay perfectly still and unchanged, every vein identical to the photo. Soft warm daylight glows on the wall and on the dried pampas stems on the table. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "fiscal": "codigo"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Quadro mármore em 2 telas",
+     "titulo": "Parede vazia vira [galeria]",
+     "abertura": {
+      "grande": "FSC",
+      "texto": "moldura de madeira certificada"
+     }
+    },
+    {
+     "rotulo": "Moldura revestida em preto",
+     "titulo": "Veios de [mármore] em detalhe"
+    },
+    {
+     "rotulo": "Acompanha suporte de serrilha",
+     "titulo": "Pendurou, a sala [mudou]",
+     "fichas": [
+      "2 telas",
+      "Papel premium",
+      "Moldura em preto"
+     ],
+     "cta": "Toque no carrinho e vista a parede"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Arte [contemporânea] no escritório",
+     "sub": "Duas telas que se completam"
+    },
+    {
+     "titulo": "Moldura de madeira [certificada]",
+     "sub": "Madeira de reflorestamento FSC"
+    },
+    {
+     "titulo": "Garanta o par no [carrinho]",
+     "sub": "Bem avaliado por quem já pendurou"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Composição de 2 telas",
+     "titulo": "Parede [branca] demais na sala?",
+     "sub": "Duas telas mármore resolvem"
+    },
+    {
+     "rotulo": "Arte em papel fotográfico",
+     "titulo": "Cada veio [nítido] de perto",
+     "sub": "Alta qualidade de imagem e moldura"
+    },
+    {
+     "rotulo": "Design atemporal",
+     "titulo": "Não sai de [moda] na parede",
+     "sub": "Para sala, quarto e escritório",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "2",
+  "t": "telas"
+ },
+ "legendas": {
+  "shopee": "Quadro abstrato mármore 2 telas em papel fotográfico premium e moldura preta\n#quadrodecorativo #quadroabstrato #quadromarmore #decoracaosala",
+  "shopee2": "Conjunto 2 telas com moldura de madeira FSC e suporte de serrilha\n#quadrosparede #decoracaoescritorio #arteabstrata #quadromoderno",
+  "shopee3": "Quadro decorativo mármore moderno para sala, quarto e escritório, bem avaliado\n#quadrosdecorativos #decoracaoquarto #paredesala #artecontemporanea",
+  "reels": "Parede branca demais na sala? Duas telas em mármore abstrato com moldura preta mudam o ambiente 🖼️\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#quadrodecorativo #quadroabstrato #decoracaosala #paredesala"
+ },
+ "notas": "Só fotos de moldura preta: 01 (sala com poltrona), 10 (estúdio, recorte do canto da moldura e dos veios) e 09 (sobre o sofá). 02/03/05/06/07/08/12/13/14/16 têm moldura de outra cor. Close dos veios só por código (a IA redesenharia a arte). Medida omitida (duas medidas no anúncio, sem saber qual é a da foto). 'Dourado' fora do texto: não está escrito no anúncio. Risco Pruna: redesenhar os veios da arte ou mexer nas sombras sobre a tela; livro com letras pequenas na mesa da 09."
+}

@@ -1,0 +1,116 @@
+{
+  "nome": "q05_tapete_durapads_30",
+  "titulo_produto": "Tapete Higiênico Durapads 80x60 cm 30 un",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q05-fotos/01.jpg",
+    "q05-fotos/02.jpg"
+  ],
+  "cor_destaque": "auto",
+  "embalagem_com_letras": true,
+  "cenas": [
+    {
+      "foto": 0,
+      "recorte": [
+        0,
+        0,
+        1024,
+        1024
+      ],
+      "movimento": "slow push-in"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical. No phone frame, no device bezel, no borders, no added text. Top-down DSLR photo filling the entire frame edge to edge: one open plain white quilted dog training pad with a thin pale blue border lying flat on a light wood floor, centered between 30% and 60% of the image height, with blue liquid being absorbed in its center. No bag or packaging anywhere, no text, no letters, no logos, no printing on the pad or anywhere in the image.",
+      "movimento": "Very slow overhead push-in; the blue liquid sinks into the pad and the stain shrinks until the surface looks dry."
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        20,
+        30,
+        780,
+        790
+      ],
+      "movimento": "gentle lateral dolly"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Durapads · pacote com 30",
+          "titulo": "[30] tapetes de uma vez",
+          "abertura": {
+            "grande": "30",
+            "texto": "tapetes grandes 80 x 60 cm"
+          }
+        },
+        {
+          "rotulo": "Barreira antivazamento",
+          "titulo": "A urina não [escorre] pelas laterais"
+        },
+        {
+          "rotulo": "Nota 4,89",
+          "titulo": "[Menos de R$ 2] cada tapete",
+          "fichas": [
+            "80 x 60 cm",
+            "Antivazamento",
+            "Nota 4,89"
+          ],
+          "cta": "Toque no carrinho e leve o seu"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Cão grande? Tapete [80 x 60]",
+          "sub": "Durapads, pacote com 30"
+        },
+        {
+          "titulo": "Absorve e [segura] o odor",
+          "sub": "Barreiras antivazamento"
+        },
+        {
+          "titulo": "Leve o seu no [carrinho]",
+          "sub": "Nota 4,89 · 1.506 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_cartao",
+      "cenas": [
+        {
+          "rotulo": "Quem tem cão grande",
+          "titulo": "Conta rápida: [30] tapetes grandes",
+          "sub": "80 x 60 cm cada"
+        },
+        {
+          "rotulo": "Mecanismo",
+          "titulo": "Absorve e tem barreira [antivazamento]",
+          "sub": "Atrativo canino ajuda no treino"
+        },
+        {
+          "rotulo": "Nota 4,89 · 1.506 avaliações",
+          "titulo": "[Menos de R$ 2] cada tapete",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "80x60",
+    "t": "cm"
+  },
+  "legendas": {
+    "shopee": "Tapete higiênico Durapads 80 x 60 cm, pacote com 30 unidades. Antivazamento.\n#tapetehigienico #cachorro #pet #achadinhosshopee",
+    "shopee2": "Durapads 80 x 60 cm, pacote com 30 tapetes para cães, com atrativo canino.\n#tapetehigienico #cachorro #petshop #achadinhosshopee",
+    "reels": "30 tapetes grandes por menos de R$ 2 cada 🐶 Durapads 80 x 60 cm com barreira antivazamento. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#cachorro #pet #tapetehigienico #dogsofinstagram"
+  },
+  "comentario": "🛒 Tapete Durapads 30 un aqui: {link}",
+  "imagens_conferidas": true
+}

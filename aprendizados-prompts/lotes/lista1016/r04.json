@@ -1,0 +1,119 @@
+{
+ "nome": "r04_quadro_marmore_2telas",
+ "titulo_produto": "Quadro Abstrato Mármore 2 Telas",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r04-fotos/01.jpg",
+  "r04-fotos/10.jpg"
+ ],
+ "cor_destaque": "A8812B",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r04-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_dir",
+   "zoom": 1.07,
+   "clipe": "r04-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    250,
+    100,
+    850,
+    700
+   ],
+   "codigo": "pull",
+   "zoom": 1.1,
+   "clipe": "r04-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Quadro abstrato mármore",
+     "titulo": "Sua parede pede [arte]",
+     "abertura": {
+      "grande": "2",
+      "texto": "telas, moldura preta"
+     }
+    },
+    {
+     "rotulo": "Papel fotográfico premium",
+     "titulo": "Mármore com [dourado]"
+    },
+    {
+     "rotulo": "Moldura de madeira, preta",
+     "titulo": "Já vem pra [pendurar]",
+     "fichas": [
+      "2 telas abstratas",
+      "Moldura preta",
+      "Suporte incluso"
+     ],
+     "cta": "Toque no carrinho e escolha o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Decoração que [impressiona]",
+     "sub": "Quadro abstrato em 2 telas"
+    },
+    {
+     "titulo": "Detalhes em [dourado]",
+     "sub": "Impressão em papel premium"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Nota 4,82 em 374 avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Quadro abstrato 2 telas",
+     "titulo": "Conjunto que [transforma] a sala",
+     "sub": "Sala, quarto ou escritório"
+    },
+    {
+     "rotulo": "Madeira de reflorestamento",
+     "titulo": "Moldura com [certificado] FSC",
+     "sub": "Acabamento em fita kraft"
+    },
+    {
+     "rotulo": "Nota 4,82, 374 avaliações",
+     "titulo": "Arte [contemporânea] na parede",
+     "sub": "Duas medidas disponíveis",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,82",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Quadro decorativo abstrato mármore 2 telas com moldura preta, nota 4,82\n#quadrodecorativo #quadroabstrato #decoracaosala #quadrosparede",
+  "shopee2": "Conjunto de 2 telas em papel fotográfico premium e moldura de madeira FSC\n#quadromarmore #decoracaoquarto #arteparede #quadromoderno",
+  "shopee3": "Quadro com suporte de serrilha incluso para sala ou escritório, 374 avaliações\n#decoracaoescritorio #quadrosdecorativos #paredesala #decoracaomoderna",
+  "reels": "Parede sem graça? 🖼️ Conjunto de 2 telas abstratas em mármore com moldura preta e nota 4,82.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#quadrodecorativo #quadroabstrato #decoracaosala #quadromarmore"
+ },
+ "notas": "Foto 01 (2 telas moldura preta na sala), 10 (mesmo conjunto, moldura preta, fundo branco, sem texto) e recorte 600x600 da arte na 01. Só moldura preta (descrição); outras fotos têm moldura branca/madeira, descartadas. Tamanho não citado (60x90 e 50x75 e descrição confusa 'largura/comprimento'); só 'duas medidas'. Sem letras."
+}

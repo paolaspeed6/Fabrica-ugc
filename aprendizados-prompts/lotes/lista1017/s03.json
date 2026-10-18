@@ -1,0 +1,145 @@
+{
+ "nome": "s03_luminaria_piso_tripe",
+ "titulo_produto": "Luminária de Piso Tripé em Madeira Maciça com Cúpula Cor Palha",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r03-fotos/01.jpg",
+  "../lista1016/r03-fotos/04.jpg"
+ ],
+ "cor_destaque": "B5733A",
+ "contagem": {
+  "pes": 3,
+  "cupula": 1
+ },
+ "diretor": {
+  "angulo": "Luz de teto é dura à noite; 160 cm de tripé de madeira com luz difusa transformam o canto da sala sem reforma.",
+  "palavra": "luz difusa",
+  "prova": "Base de 3 pés em madeira maciça, 160 cm, cúpula 40 x 25 em tecido Brugges com estrutura de aço carbono, nota alta",
+  "errc": "E: 'abajur lindo' e foto parada. R: adjetivos de luxo da descrição. E: a madeira maciça em close e a medida de 160 cm. C: a pergunta 'luz de teto cansa à noite?' e o quarto de hóspedes.",
+  "publico_nao_obvio": "Quem recebe visita e quer o quarto de hóspedes acolhedor (a descrição cita quartos de hóspedes e escritórios).",
+  "por_que_converte": "Sutherland (Alquimia): não vende luminária, vende desligar o lustre e mudar o clima. Hopkins: madeira maciça e 160 cm são provas concretas.",
+  "visual": "1º segundo: canto escuro com a cúpula acesa e a cidade na janela; um ponto de luz quente no escuro prende o olho."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    0,
+    505,
+    1024
+   ],
+   "pruna": "Very slow push-in on a living room corner at night. A floor lamp with a light straw-beige fabric drum shade on exactly 3 straight natural wood tripod legs stays perfectly still and unchanged, every part identical to the photo; the whole lamp stays fully in frame. Warm light glows from the shade onto the wall and city lights twinkle in the window. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s03-cenas/cena1.mp4",
+   "lento": 1.0,
+   "fiscal": "ok"
+  },
+  {
+   "foto": 1,
+   "pruna": "Slow lateral dolly left across exactly 3 straight solid wood tripod legs standing on a polished cream stone floor. The legs stay perfectly still and unchanged, wood grain identical to the photo. Soft warm reflections glide slowly across the glossy floor, the sofa behind stays softly blurred. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.07,
+   "clipe": "s03-cenas/cena2.mp4",
+   "lento": 1.0,
+   "pruna_t": 1.8,
+   "fiscal": "1.8"
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    40,
+    0,
+    640,
+    600
+   ],
+   "pruna": "Slow lateral dolly right beside the glowing shade of a floor lamp in a warm living room at night. The light straw-beige fabric drum shade on its natural wood tripod stays perfectly still and unchanged, identical to the photo. Warm light blooms softly on the paneled wall and a faint golden haze hangs in the air. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "s03-cenas/cena3.mp4",
+   "lento": 1.0,
+   "fiscal": "ok"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Abajur de chão de 160 cm",
+     "titulo": "Tripé maciço de [160 cm]",
+     "abertura": {
+      "grande": "160",
+      "texto": "cm de altura total"
+     }
+    },
+    {
+     "rotulo": "3 pés de madeira maciça",
+     "titulo": "Firme em [3 pés] maciços"
+    },
+    {
+     "rotulo": "Cúpula de tecido Brugges",
+     "titulo": "Luz [difusa] no fim do dia",
+     "fichas": [
+      "Altura 160 cm",
+      "Cúpula 40 x 25 cm",
+      "Fio de 2 m, bivolt"
+     ],
+     "cta": "Toque no carrinho e acenda o canto"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Hóspede chega, [quarto] acolhe",
+     "sub": "Abajur de chão para quarto e sala"
+    },
+    {
+     "titulo": "Montagem [descomplicada] e rápida",
+     "sub": "Base de três pés em madeira maciça"
+    },
+    {
+     "titulo": "Peça a sua no [carrinho]",
+     "sub": "Nota alta de quem já comprou"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Luminária de piso Paris",
+     "titulo": "Luz de teto [cansa] à noite?",
+     "sub": "Uma luz difusa no canto resolve"
+    },
+    {
+     "rotulo": "Pés em madeira maciça",
+     "titulo": "Madeira maciça e [aço carbono]",
+     "sub": "Pés maciços e cúpula estruturada"
+    },
+    {
+     "rotulo": "Soquete E27, bivolt",
+     "titulo": "Seu livro pede [essa luz]",
+     "sub": "Leitura, sala ou escritório",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "160",
+  "t": "cm de altura"
+ },
+ "legendas": {
+  "shopee": "Luminária de piso tripé em madeira maciça com 160 cm e cúpula cor palha\n#luminariadepiso #abajurdechao #luminariatripe #decoracaosala",
+  "shopee2": "Abajur de chão com cúpula 40 x 25 cm em tecido e fio de 2 m, bivolt\n#abajurdecorativo #quartodehospedes #luminariamadeira #cantodeleitura",
+  "shopee3": "Luminária de chão com soquete E27, montagem rápida e nota alta\n#luminariamoderna #iluminacaoaconchegante #saladeestar #decoracaoquarto",
+  "reels": "Luz de teto cansa à noite? Uma luminária de piso em madeira maciça com luz difusa muda o clima da sala 💡\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#luminariadepiso #abajurdechao #cantodeleitura #decoracaosala"
+ },
+ "notas": "01 recortada em 505x1024 na cena 1 (produto inteiro, vertical; tira o copo com líquido âmbar da mesinha, que pode ser lido como bebida alcoólica; lado menor abaixo de 600 de propósito), 04 (close dos 3 pés, sem texto) e recorte 600x600 da cúpula na 01, também sem o copo. 02 é colagem com texto e 03 infográfico. Risco Pruna: somar um 4º pé ou redesenhar a trama do tecido da cúpula. Lâmpada não inclusa: nenhum texto promete lâmpada."
+}

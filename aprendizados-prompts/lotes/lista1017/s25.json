@@ -1,0 +1,149 @@
+{
+ "nome": "s25_cortina_voil_bordada",
+ "titulo_produto": "Cortina Voil Bordada com Forro",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r25-fotos/01.jpg"
+ ],
+ "cor_destaque": "9C6B30",
+ "contagem": {
+  "faixas_largas_de_bordado": 2
+ },
+ "diretor": {
+  "angulo": "A janela vira peça de decoração: voil bordado de fabricante, com forro, em fotos reais do estúdio.",
+  "palavra": "bordado",
+  "prova": "Fabricante especializado em cortina bordada com forro; 'todas as fotos são reais, tiradas em nosso estúdio'; voil bordado + forro de microfibra; bem avaliada.",
+  "errc": "E: 'achadinho' e foto de catálogo parada. R: medidas (título e descrição se contradizem, ficam fora). E: o bordado em close real e a luz da sanca acesa. C: a cortina como item do enxoval de quem monta a casa nova.",
+  "publico_nao_obvio": "Noivos e quem está montando a casa nova (enxoval), que querem a sala pronta para receber visita.",
+  "por_que_converte": "Cialdini (autoridade): 'feita por fabricante' e 'fotos reais do estúdio' derrubam o medo de receber diferente; Berger (moeda social): a visita repara; Ries/Trout: a palavra bordado no gancho e no CTA.",
+  "visual": "Parede inteira de voil branco com a luz quente da sanca acendendo as dobras de cima: brilho dourado no topo do quadro que para o dedo."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "recorte": [
+    100,
+    0,
+    700,
+    800
+   ],
+   "pruna": "Photorealistic commercial product cinematography. Extremely slow, subtle push-in toward a wide white sheer voile curtain with rows of fine beige floral embroidery, hanging in soft vertical folds under a dark wood valance with a warm LED strip, above a shaggy beige rug. The whole curtain stays fully in frame. The curtain stays perfectly still and unchanged, every embroidered motif identical to the photo. The warm LED glow softly brightens. Shallow depth of field, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s25-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 1.8,
+   "fiscal": "1.8"
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    100,
+    200,
+    700,
+    800
+   ],
+   "pruna": null,
+   "codigo": "sobe",
+   "zoom": 1.12,
+   "clipe": "s25-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    100,
+    0,
+    700,
+    600
+   ],
+   "pruna": "Photorealistic commercial product cinematography. Very slow push-in toward the top of a white sheer voile curtain in soft vertical folds, lit from above by a warm LED strip under a dark wood valance, with a row of fine beige floral embroidery across the middle. The curtain stays perfectly still and unchanged, every fold and embroidered motif identical to the photo. Warm golden light glows gently down the folds. Shallow depth of field, subtle film grain, neutral white balance.",
+   "codigo": "pull",
+   "zoom": 1.08,
+   "clipe": "s25-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_t": 1.8,
+   "fiscal": "1.8"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Voil bordado com forro",
+     "titulo": "Bordado de [fábrica] na janela",
+     "abertura": {
+      "grande": "REAL",
+      "texto": "fotos do estúdio do fabricante"
+     }
+    },
+    {
+     "rotulo": "Excelente acabamento",
+     "titulo": "O [bordado] é o protagonista"
+    },
+    {
+     "rotulo": "Privacidade com claridade",
+     "titulo": "A sala inteira [muda]",
+     "fichas": [
+      "Forro de microfibra",
+      "Ilhós cromado",
+      "Ótimo caimento"
+     ],
+     "cta": "Escolha a sua no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Cortina [bordada] de fabricante",
+     "sub": "Fotos reais tiradas no estúdio"
+    },
+    {
+     "titulo": "Privacidade sem perder a [luz]",
+     "sub": "Voil leve com forro de microfibra"
+    },
+    {
+     "titulo": "Garanta a sua no [carrinho]",
+     "sub": "Excelente acabamento e caimento"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Casa nova?",
+     "titulo": "Sua janela ainda está [pelada]?",
+     "sub": "Voil bordado e forro de microfibra"
+    },
+    {
+     "rotulo": "Para o enxoval da casa nova",
+     "titulo": "Delicada até no [caimento]",
+     "sub": "Excelente acabamento de fábrica"
+    },
+    {
+     "rotulo": "Feita por fabricante",
+     "titulo": "A visita vai [reparar]",
+     "sub": "Privacidade sem escurecer a sala",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliada"
+ },
+ "legendas": {
+  "shopee": "Cortina voil bordada com forro de microfibra e ilhós cromado\n#cortinabordada #cortinavoil #cortinasala #decoracaoclassica",
+  "shopee2": "Cortina bordada de fabricante, fotos reais do estúdio e ótimo caimento\n#cortinadevoil #cortinacomforro #janeladecorada #salaelegante",
+  "shopee3": "Cortina de voil bordado que dá privacidade sem bloquear a claridade\n#cortinaquarto #cortinabordada #enxovalcasa #casanova",
+  "reels": "Sua janela ainda está pelada? Essa cortina de voil bordado com forro dá privacidade sem bloquear totalmente a claridade, e as fotos são reais do estúdio do fabricante ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinabordada #enxovalcasa #casanova #decoracaosala"
+ },
+ "notas": "Só a foto 01 (recortada sem as tarjas brancas laterais) em 3 enquadramentos: a 06 é o mesmo produto mas mostra uma cortina cor de ferrugem ao lado que não sai com recorte de 600 px; demais fotos são outras cores/bordados. Medidas fora (título 6,00x2,70 x descrição 4,00x2,60). Riscos: bordado fino no Pruna (cenas 1 e 3) pode ser redesenhado ou ganhar faixas: conferir 2 faixas largas de bordado; ilhós cromado não aparece na 01 (só nas fichas/legenda)."
+}

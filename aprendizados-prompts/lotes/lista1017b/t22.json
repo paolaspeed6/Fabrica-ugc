@@ -1,0 +1,151 @@
+{
+ "nome": "t22_tapete_persa_tabriz",
+ "titulo_produto": "Tapete de Luxo Estilo Persa Clássico Oriental",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r22-fotos/01.jpg",
+  "../lista1016/r22-fotos/02.jpg",
+  "../lista1016/r22-fotos/08.jpg",
+  "t22-cenas/cena1.png",
+  "t22-cenas/cena2.png",
+  "t22-cenas/cena3.png"
+ ],
+ "cor_destaque": "A11D2E",
+ "contagem": {},
+ "diretor": {
+  "angulo": "Não é um tapete: é o desenho persa de Tabriz que dá à sala comum (até a alugada) cara de alto padrão sem obra.",
+  "palavra": "Tabriz",
+  "prova": "Origem Índia, Tabriz; antiácaro e antialérgico; base antiderrapante; 3 tamanhos até 300x250 cm; bem avaliado.",
+  "errc": "E: 'achadinho', zoom parado e lista de specs. R: adjetivos de luxo vazios. E: o canto real do tapete (borda marfim, debrum) em close de foto. C: o persa como reforma sem obra para quem mora de aluguel.",
+  "publico_nao_obvio": "Quem mora de aluguel e não pode reformar: o tapete muda a sala e vai junto na mudança.",
+  "por_que_converte": "Ries/Trout: uma palavra só (Tabriz) que nenhum vendedor da categoria usa; Sutherland reenquadra tapete como reforma sem obra; Schwartz: o Reels abre na dor da sala sem graça.",
+  "visual": "Sala clara e simétrica com um bloco vermelho saturado no centro e a luz da janela andando no piso: o vermelho contra o cinza-claro quebra o feed bege de decoração."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. High three-quarter wide shot from a raised corner: the rug lies with its long side running left to right across the full width of the frame, room visible above and below it, so its real width-to-length proportion shows clearly; it is never a narrow runner. The exact rug from the reference images, identical shape, color, material and every part: one rectangular Persian-style rug, deep red field with ivory, beige and navy floral vines, wide ivory floral border, short cream fringe on exactly 2 opposite ends. Real size, keep the scale true against the room and furniture: the rug measures 3.00 m by 2.50 m. Classic living room, plain sage-green walls, dark walnut herringbone floor, a cognac leather sofa. Late-afternoon golden sun from a tall window lays a warm diagonal beam across the rug. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1,
+    2
+   ],
+   "pruna": "Very slow lateral dolly right across the room. The rug stays perfectly still and unchanged, its shape, pattern, color and edges identical to the photo; the whole rug stays fully in frame. Soft window light drifts slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t22-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low-angle close-up of one rug corner, border and fringe in focus. The exact rug from the reference images, identical shape, color, material and every part: one rectangular Persian-style rug, deep red field with ivory, beige and navy floral vines, wide ivory floral border, short cream fringe on exactly 2 opposite ends. Real size, keep the scale true against the room and furniture: the rug measures 3.00 m by 2.50 m. Dark walnut herringbone floor. Soft raking window light reveals the fine pile, macro 100 mm look. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Slow lateral dolly right along the rug corner. The red Persian-style rug stays perfectly still and unchanged, every flower, border and fringe strand identical. Soft window light glides slowly across the pile. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_dir",
+   "zoom": 1.06,
+   "clipe": "t22-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 4
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, square 1:1. Low angle shot at floor level. The exact rug, a wide rectangle almost as wide as it is long, from the reference images, identical shape, color, material and every part: one rectangular Persian-style rug, deep red field with ivory, beige and navy floral vines, wide ivory floral border, short cream fringe on exactly 2 opposite ends. Bare feet of a child and an adult, cropped at the knees, step across the rug between a sofa and a coffee table; the rug is large, wider than the sofa. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "The feet slowly step across the rug while the camera drifts gently. The rug keeps its exact pattern, border and fringe. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t22-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Top-down overhead shot from directly above, the whole rug fully visible inside the frame with floor around it, its long side running vertically in the frame and its true width-to-length proportion kept exactly as in the reference photo. The exact rug from the reference images, identical shape, color, material and every part: one rectangular Persian-style rug, deep red field with ivory, beige and navy floral vines, wide ivory floral border, short cream fringe on exactly 2 opposite ends. Real size, keep the scale true against the room and furniture: the rug measures 3.00 m by 2.50 m. Cosy evening living room: the rug under a low walnut coffee table with one ceramic vase, before a cream linen sofa, plain warm white walls. Warm table lamp glow and soft blue dusk in a window. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Very slow top-down descent from directly above the rug, the camera lowering gently toward the floor. The rug stays perfectly still and unchanged, its shape, pattern, color and edges identical to the photo; the whole rug stays fully in frame. Soft window light drifts slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": false,
+   "tamanho": "1440*1440",
+   "origem_foto": "cena3_sem_uso",
+   "foto": 5
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Estampa persa, origem Tabriz",
+     "titulo": "Tabriz no [chão] da sua sala",
+     "abertura": {
+      "grande": "3m",
+      "texto": "no maior dos 3 tamanhos"
+     }
+    },
+    {
+     "rotulo": "Acabamento em debrum",
+     "titulo": "Olhe o [canto] de perto"
+    },
+    {
+     "rotulo": "Sala de alto padrão",
+     "titulo": "Sua sala em [outro nível]",
+     "fichas": [
+      "Origem Índia, Tabriz",
+      "Antiácaro",
+      "Altura de 4 mm"
+     ],
+     "cta": "Escolha o tamanho no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Um persa de [Tabriz] em casa",
+     "sub": "Estampa persa, origem Índia"
+    },
+    {
+     "titulo": "Antiácaro e [antialérgico]",
+     "sub": "Base antiderrapante, altura 4 mm"
+    },
+    {
+     "titulo": "Garanta o seu no [carrinho]",
+     "sub": "200x140, 200x250 ou 300x250 cm"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Para quem mora de aluguel",
+     "titulo": "Sala [sem graça] e sem reforma?",
+     "sub": "Um persa de Tabriz resolve"
+    },
+    {
+     "rotulo": "Detalhes refinados",
+     "titulo": "Paleta de cores [elegante]",
+     "sub": "Estilo clássico, design persa"
+    },
+    {
+     "rotulo": "Vai junto na mudança",
+     "titulo": "Sua sala com cara de [nova]",
+     "sub": "3 tamanhos, até 300x250 cm",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Tapete estilo persa de origem Tabriz, antiácaro e com base antiderrapante\n#tapetepersa #tapeteoriental #tapetesala #salaclassica",
+  "shopee2": "Tapete clássico oriental em poliéster, 4 mm de altura e 3 tamanhos\n#tapeteclassico #tapeteindiano #decoracaoclassica #saladeestar",
+  "shopee3": "Tapete persa antialérgico com acabamento em debrum, até 300x250 cm\n#tapetegrande #tapeteantiacaro #salasofisticada #tapeteluxo",
+  "reels": "Mora de aluguel e quer a sala com cara de nova sem reforma? Esse tapete estilo persa de Tabriz é antiácaro e tem base antiderrapante 🏠\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapetepersa #decoracaoaluguel #tapetesala #salaclassica"
+ },
+ "notas": "Só fotos do mesmo tapete vermelho floral (01, 02, 08); 02 recortada para tirar as faixas brancas; cena 2 é close da 01 (canto com borda e franja), por código porque estampa persa em close a IA redesenha. Riscos: Pruna nas cenas 1 e 3 (planos abertos) pode mexer no desenho ou na franja: fiscal compara a estampa com a foto; 'vermelho' e 'franja' não estão escritos no anúncio, então não aparecem na tela."
+}

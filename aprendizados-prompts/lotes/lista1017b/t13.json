@@ -1,0 +1,160 @@
+{
+ "nome": "t13_spark_do_seu_jeito",
+ "titulo_produto": "Lustre Plafon Cristal Acrílico Spark",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r13-fotos/01.jpg",
+  "../lista1016/r13-fotos/02.jpg",
+  "../lista1016/r13-fotos/03.jpg",
+  "t13-cenas/cena1.png",
+  "t13-cenas/cena2.png",
+  "t13-cenas/cena3.png"
+ ],
+ "cor_destaque": "2F7F86",
+ "contagem": {
+  "plafon": 1,
+  "niveis_de_cristais": 2,
+  "soquetes_E27": 1
+ },
+ "diretor": {
+  "angulo": "O lustre que você mesmo desenha: os cristais vêm pré-montados e dá para remontar do seu jeito, como o anúncio mostra.",
+  "palavra": "do seu jeito",
+  "prova": "O anúncio manda montar os cristais da forma que mais agrada e mostra montagens nas fotos; inox espelhado, 14 x 14 x 27 cm, 1 lâmpada E-27 de até 20w, bivolt; milhares de avaliações.",
+  "errc": "E: 'lustre maravilhoso' e o zoom parado. R: lista de medidas. E: a mesma peça em duas montagens lado a lado. C: lustre como presente de casa nova que quem ganha personaliza.",
+  "publico_nao_obvio": "Quem procura presente de casa nova ou chá de casa nova com cara de luxo.",
+  "por_que_converte": "Godin (Vaca Roxa): o lustre que muda de desenho é o elemento comentável. Cialdini: milhares de avaliações como prova sem número exato. O Reels abre com comparação ('igual ao de todo mundo?').",
+  "visual": "Cascata de gotas de cristal sob base quadrada espelhada, câmera chegando devagar com reflexos de arco-íris; na cena 2 a mesma peça aparece com outro desenho, quebra de expectativa."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle hero shot from below at the corner, as in reference image 1. The exact chandelier from the reference images, identical shape, color, material and every part: small square mirror-polished stainless steel base, central steel socket cylinder, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 2 tiers, the inner one lower. Real size, keep the scale true against the room and furniture: a very small fixture only 14 cm by 14 cm and 27 cm tall, small against the ceiling. It is mounted flush directly against the ceiling by its square plate, exactly as in the reference photo, with no rod, stem or cable. On the white ceiling of a bedroom, plain sage green wall. Golden hour side window light grazing the crystals. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Very slow push-in, the whole chandelier stays fully in frame. The small square steel chandelier with exactly 2 tiers of clear acrylic crystal strands stays perfectly still and unchanged, every part identical. Golden window light drifts slowly on the sage wall, tiny sparkles glint in the crystals. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t13-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 3,
+   "pruna_t": 2.5,
+   "fiscal": "2.5"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Macro 100mm eye-level close-up of one side, as in reference image 2. The exact chandelier from the reference images, identical shape, color, material and every part: mirror-polished stainless steel rim, clear octagonal acrylic bead strands hooked on small silver rings, each ending in a faceted teardrop pendant. Real size, keep the scale true against the room and furniture: a very small fixture only 14 cm by 14 cm and 27 cm tall, small against the ceiling. Plain taupe wall, out of focus. Soft left window light, sparkling facets. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Slow lateral dolly right across the crystal strands. The steel rim and the clear acrylic bead strands with teardrop pendants stay perfectly still and unchanged, every bead and ring identical. Soft glints travel slowly across the facets. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_dir",
+   "zoom": 1.06,
+   "clipe": "t13-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 4,
+   "pruna_t": 1.8,
+   "fiscal": "1.8"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium shot of a cozy reading corner at night. The exact chandelier from the reference images, identical shape, color, material and every part: small square mirror-polished stainless steel base, central steel socket cylinder, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 2 tiers, the inner one lower. A woman seen from behind sits in an armchair with a book under the small lit chandelier mounted flush directly against the ceiling, with no rod, stem or cable; the chandelier is very small, about the size of a hat. It is mounted flush directly against the ceiling by its square plate, with no rod, stem or cable. The person is seen from directly behind, only the back of the head visible; no face and no profile. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Extremely slow push-in toward the square crystal ceiling light mounted flush on the ceiling. The quiet corner of the room stays bare and unchanged; only soft daylight shifts slightly on the wall. The ceiling light stays perfectly still, every crystal strand identical. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.06,
+   "clipe": "t13-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle medium shot of a living room corner at night. The exact chandelier from the reference images, identical shape, color, material and every part: small square mirror-polished stainless steel base, central steel socket cylinder, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 2 tiers, the inner one lower. Real size, keep the scale true against the room and furniture: a very small fixture only 14 cm by 14 cm and 27 cm tall, small against the ceiling. Lit warm on the white ceiling above a linen armchair. Plain warm white walls, deep blue night at the window, small sparkles on the ceiling. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the ceiling. The small square steel chandelier with exactly 2 tiers of clear acrylic crystal strands stays perfectly still and unchanged, every part identical; the armchair stays in place. Small sparkle reflections shimmer gently on the ceiling. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": false,
+   "origem_foto": "recorte de cena1 (120, 150, 960, 1643)",
+   "foto": 5,
+   "refeito": "r1",
+   "pruna_t": 3.0,
+   "fiscal": "3.0"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Plafon Spark inox espelhado",
+     "titulo": "Lustre que você [desenha]",
+     "abertura": {
+      "grande": "Você",
+      "texto": "decide o desenho dos cristais"
+     }
+    },
+    {
+     "rotulo": "Cristais de alto brilho",
+     "titulo": "Cada fio do [seu] jeito"
+    },
+    {
+     "rotulo": "14 x 14 x 27 cm",
+     "titulo": "Só [14 cm] e muito brilho",
+     "fichas": [
+      "Inox espelhado",
+      "1 lâmpada E-27",
+      "Bivolt"
+     ],
+     "cta": "Toque no carrinho e monte o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Presente de [casa nova] que brilha",
+     "sub": "Plafon Spark de cristal acrílico"
+    },
+    {
+     "titulo": "Quem ganha [monta] do seu jeito",
+     "sub": "Vem pré-montado e dá pra mudar"
+    },
+    {
+     "titulo": "Presenteie pelo [carrinho]",
+     "sub": "Milhares de avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre pequeno",
+     "titulo": "Lustre igual ao de [todo mundo]?",
+     "sub": "Esse aqui você mesmo monta"
+    },
+    {
+     "rotulo": "Ideias do anúncio",
+     "titulo": "Fios retos ou em [cascata]",
+     "sub": "Você escolhe o desenho"
+    },
+    {
+     "rotulo": "Inox polido, bivolt",
+     "titulo": "Seu teto, seu [desenho]",
+     "sub": "Lâmpada E-27 de até 20w",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Lustre plafon Spark de cristal acrílico e inox espelhado, 14 x 14 x 27 cm\n#lustrepequeno #plafondecristal #lustreinox #lustreacrilico",
+  "shopee2": "Plafon Spark para presente de casa nova, cristais que você monta do seu jeito\n#presentecasanova #chadecasanova #lustredecristal #decoracaodiy",
+  "shopee3": "Lustre de cristal com milhares de avaliações, bivolt e 1 lâmpada E-27\n#lustrespark #lustrequarto #lustrevaranda #iluminacaodecorativa",
+  "reels": "Lustre igual ao de todo mundo? No Spark você monta os cristais do jeito que quiser ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustredecristal #lustrepequeno #presentecasanova #decoracaodiy"
+ },
+ "notas": "01 e 03 mostram a mesma montagem (2 níveis); 02 é outra montagem do próprio anúncio ('monte você mesmo os cristais'), usada só na cena 2 por código e com texto dizendo que é outra montagem. Risco: Pruna somar nível ou redesenhar as gotas, balançar os fios; conferir 2 níveis nas cenas 1 e 3 contra a 01. Lâmpada não inclusa."
+}

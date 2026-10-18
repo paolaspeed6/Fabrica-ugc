@@ -1,0 +1,131 @@
+{
+ "nome": "r25_cortina_voil_bordada",
+ "titulo_produto": "Cortina Voil Bordada com Forro",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r25-fotos/01.jpg",
+  "r25-fotos/06.jpg"
+ ],
+ "cor_destaque": "9C6B30",
+ "cenas": [
+  {
+   "foto": 0,
+   "recorte": [
+    100,
+    0,
+    700,
+    800
+   ],
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r25-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "recorte": [
+    100,
+    100,
+    700,
+    800
+   ],
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "r25-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    100,
+    200,
+    700,
+    800
+   ],
+   "codigo": "sobe",
+   "zoom": 1.1,
+   "clipe": "r25-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Cortina voil bordada",
+     "titulo": "Nota [4,89] em 242 avaliações",
+     "abertura": {
+      "grande": "4,89",
+      "texto": "nota em 242 avaliações"
+     }
+    },
+    {
+     "rotulo": "Bordado que chama atenção",
+     "titulo": "Voil [bordado] cheio de detalhe"
+    },
+    {
+     "rotulo": "Leve e com ótimo caimento",
+     "titulo": "Privacidade e [claridade]",
+     "fichas": [
+      "Voil bordado",
+      "Ilhós cromado",
+      "100% poliéster"
+     ],
+     "cta": "Toque no carrinho e escolha a sua"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Cortina que [vira] decoração",
+     "sub": "Voil bordado de fabricante"
+    },
+    {
+     "titulo": "Olha esse [bordado] de perto",
+     "sub": "Flores e arabescos bordados"
+    },
+    {
+     "titulo": "Leve a sua no [carrinho]",
+     "sub": "Nota 4,89 · 242 avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Voil bordado, ótimo caimento",
+     "titulo": "Sua sala pede [bordado]",
+     "sub": "Voil leve que cai bem"
+    },
+    {
+     "rotulo": "Detalhe do acabamento",
+     "titulo": "Voil com [bordado] delicado",
+     "sub": "Feita por fabricante"
+    },
+    {
+     "rotulo": "Nota 4,89 · 242 avaliações",
+     "titulo": "Janela [vestida] sem escurecer",
+     "sub": "Deixa a claridade passar",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,89",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Cortina voil bordada com ilhós cromado, nota 4,89 em 242 avaliações\n#cortinavoil #cortinabordada #decoracaosala #cortinasala",
+  "shopee2": "Cortina bordada de fabricante em voil 100% poliéster, leve e com ótimo caimento\n#cortinasbordadas #decoracaodesala #cortinaluxo #voilbordado",
+  "shopee3": "Voil bordado que dá privacidade sem escurecer a sala, 242 avaliações\n#cortinaparasala #decoracaodecasa #cortinaschiques #cortinaparaquarto",
+  "reels": "Sua sala merece um voil bordado assim. 😍 Privacidade sem tirar a claridade, nota 4,89 em 242 avaliações.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinavoil #cortinabordada #decoracaosala #cortinaparasala"
+ },
+ "notas": "Fotos 01 e 06 (mesmo bordado bege em voil branco, mesmo ambiente); recorte tira as tarjas brancas laterais das fotos (miolo x100-700). Sem medidas: título (6,00x2,70) e descrição (4,00x2,60) se contradizem. Gancho: nota 4,89/242 aval. Risco: foto 01 mostra só o voil, não afirmo forro (pode ser outra variação); iluminação de LED quente na foto."
+}

@@ -1,0 +1,135 @@
+{
+ "nome": "s23_tapete_sisal_sintetico",
+ "titulo_produto": "Tapete Sisal Sintético 1,50 x 2,00 m",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r23-fotos/01.jpg",
+  "../lista1016/r23-fotos/11.jpg"
+ ],
+ "cor_destaque": "6B7A3A",
+ "contagem": {},
+ "diretor": {
+  "angulo": "O visual caro do sisal sem o trabalho: sintético, leve, antialérgico e fácil de limpar, para o apê novo e até o escritório.",
+  "palavra": "sisal",
+  "prova": "Sisal sintético 1,50 x 2,00 m; leve e resistente; fácil limpeza; material antialérgico; bem avaliado.",
+  "errc": "E: 'achadinho' e zoom parado no tapete. R: adjetivos (luxo, premium) e medida gritada sobre foto que parece maior. E: a borda real e a trama em close de foto. C: o sisal como solução de limpeza e de quem trabalha em casa (escritório).",
+  "publico_nao_obvio": "Quem trabalha em casa e quer o escritório com cara de sala de revista (o anúncio indica para escritório e varanda coberta).",
+  "por_que_converte": "Schwartz: Reels abre na dor (tapete difícil de limpar) e o mecanismo é o sintético; Hormozi: reduz esforço (fácil limpeza, leve) mantendo o resultado sonhado (visual de sisal).",
+  "visual": "Sala de pé-direito alto com parede de vidro e jardim, a luz do dia andando sobre o listrado: parece cena de revista, não foto de anúncio."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": null,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s23-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Photorealistic commercial product cinematography. Slow pull-back reveal of a bright modern living room where a large beige synthetic sisal rug with thin sage-green stripes and a dark green bound edge lies flat on a warm wood floor. The whole rug stays fully in frame. The rug stays perfectly still and unchanged, every part identical to the photo. Soft daylight from the glass wall shifts slowly across the floor. Shallow depth of field, subtle film grain, neutral white balance.",
+   "fiscal": "codigo"
+  },
+  {
+   "foto": 1,
+   "recorte": [
+    0,
+    424,
+    760,
+    1024
+   ],
+   "pruna": null,
+   "codigo": "pan_esq",
+   "zoom": 1.08,
+   "clipe": "s23-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "pruna": "Photorealistic commercial product cinematography. Slow lateral dolly left across a calm living room with two light gray armchairs with wooden frames, a small round side table and a beige synthetic sisal rug with thin gray-green stripes and a dark green bound edge on a wood floor. The rug stays perfectly still and unchanged, every part identical to the photo. Soft window light slowly brightens the room. Shallow depth of field, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.08,
+   "clipe": "s23-cenas/cena3.mp4",
+   "lento": 1.0,
+   "fiscal": "ok"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Sisal sintético",
+     "titulo": "Visual de sisal, limpeza [fácil]",
+     "abertura": {
+      "grande": "LEVE",
+      "texto": "e resistente, sisal sintético"
+     }
+    },
+    {
+     "rotulo": "Excelente acabamento",
+     "titulo": "Olha a [borda] de perto"
+    },
+    {
+     "rotulo": "Pensado para apê novo",
+     "titulo": "Apê novo, sala [pronta]",
+     "fichas": [
+      "1,50 m x 2,00 m",
+      "Leve e resistente",
+      "Fácil de limpar"
+     ],
+     "cta": "Leve o seu sisal no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Sisal [confortável] ao toque",
+     "sub": "Sintético, leve e resistente"
+    },
+    {
+     "titulo": "Sujou? [Fácil] de limpar",
+     "sub": "Antialérgico, fácil conservação"
+    },
+    {
+     "titulo": "Escolha o seu no [carrinho]",
+     "sub": "Medida de 1,50 m x 2,00 m"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Pergunta sincera",
+     "titulo": "Seu tapete é difícil de [limpar]?",
+     "sub": "Este é sisal sintético"
+    },
+    {
+     "rotulo": "Sala, quarto ou escritório",
+     "titulo": "Até o [escritório] fica elegante",
+     "sub": "Visual moderno e elegante"
+    },
+    {
+     "rotulo": "Também na varanda coberta",
+     "titulo": "Leve, resistente e [bonito]",
+     "sub": "1,50 m x 2,00 m, antialérgico",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Tapete sisal sintético 1,50 x 2,00 m, leve, resistente e antialérgico\n#tapetesisal #tapetesala #decoracaoapartamento #salamoderna",
+  "shopee2": "Tapete de sisal sintético fácil de limpar, ótimo caimento no piso\n#sisalsintetico #tapetemoderno #apartamentonovo #decoracaoclean",
+  "shopee3": "Tapete sisal para sala, quarto, escritório e varanda coberta\n#tapeteescritorio #tapetesisal #homeoffice #tapetevaranda",
+  "reels": "Seu tapete é difícil de limpar? Esse sisal sintético é leve, resistente, antialérgico e fica elegante até no escritório ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapetesisal #sisalsintetico #homeoffice #decoracaoapartamento"
+ },
+ "notas": "Fotos 01 (único quadro com o tapete inteiro) e 11 (mesmo listrado com borda verde); 02-10 e 12-16 são outras cores/tramas. Close da trama por código (Pruna redesenharia a trama). Riscos: na 01 o tapete parece maior que 1,50 x 2,00 m, por isso a medida não vai na abertura nem na cena 1; listras finas podem dar moiré ou mudar no Pruna; 'listrado' e cores não estão escritos no anúncio e não vão na tela."
+}

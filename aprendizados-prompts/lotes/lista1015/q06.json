@@ -1,0 +1,120 @@
+{
+  "nome": "q06_tapete_shopito_150",
+  "titulo_produto": "Tapete Higiênico Shopito 150 un",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q06-fotos/01.jpg",
+    "q06-fotos/04.jpg"
+  ],
+  "cor_destaque": "auto",
+  "embalagem_com_letras": true,
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "slow push-in",
+      "clipe": "q06-cenas/cena1.mp4"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. Top-down DSLR photo filling the entire frame edge to edge, not a screen: one open plain white quilted dog training pad with a thin border lying flat and smooth on a light wood floor, centered between 30% and 60% of the image height. No bag or packaging anywhere, no text, no letters, no logos, no printing on the pad or anywhere in the image.",
+      "movimento": "Very slow overhead push-in toward the border of the pad; the pad stays flat and still.",
+      "clipe": "q06-cenas/cena2.mp4"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. Bright laundry corner with a light floor and a plain pale wall, soft window light, minimalist, only the objects described. Empty floor, no bag or packaging, no text, no letters, no logos anywhere. 85 mm, shallow depth of field, neutral white balance.",
+      "composicao": false,
+      "sobrepor": {
+        "foto": "q06-fotos/01.jpg",
+        "recorte": [
+          100,
+          200,
+          520,
+          900
+        ],
+        "x": 0.5,
+        "base": 0.62,
+        "altura": 0.34
+      },
+      "movimento": "Static camera on a tripod, the camera does not move.",
+      "clipe": "q06-cenas/cena3.mp4"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Shopito · 3 pacotes de 50",
+          "titulo": "[150] tapetes que grudam",
+          "abertura": {
+            "grande": "150",
+            "texto": "tapetes que grudam no chão"
+          }
+        },
+        {
+          "rotulo": "Adesivos de fixação",
+          "titulo": "Não sai do [lugar]"
+        },
+        {
+          "rotulo": "Nota 4,90",
+          "titulo": "[60 x 60] cm para cães pequenos",
+          "fichas": [
+            "6 camadas",
+            "Adesivos de fixação",
+            "Nota 4,90"
+          ],
+          "cta": "Toque no carrinho e leve os 150"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Tapete que [gruda] no chão",
+          "sub": "150 unidades · 60 x 60 cm"
+        },
+        {
+          "titulo": "[6 camadas] protetoras",
+          "sub": "Barreira anti-vazamento"
+        },
+        {
+          "titulo": "Leve os [150] no carrinho",
+          "sub": "Nota 4,90 · 765 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_cartao",
+      "cenas": [
+        {
+          "rotulo": "Tutor de cão pequeno",
+          "titulo": "Tapete que [sai do lugar] de novo?",
+          "sub": "Esse tem adesivo de fixação"
+        },
+        {
+          "rotulo": "Shopito · Espaço de Bicho",
+          "titulo": "[6 camadas] e barreira anti-vazamento",
+          "sub": "60 x 60 cm, absorção 50 x 50"
+        },
+        {
+          "rotulo": "Nota 4,90 · 765 avaliações",
+          "titulo": "[150] tapetes em 3 pacotes",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "4,90",
+    "t": "765 avaliações"
+  },
+  "legendas": {
+    "shopee": "Tapete higiênico Shopito Espaço de Bicho, 150 unidades 60 x 60 cm, com adesivos de fixação.\n#tapetehigienico #cachorro #pet #achadinhosshopee",
+    "shopee2": "Tapete higiênico Shopito, 3 pacotes de 50, 6 camadas e atrativo canino.\n#tapetehigienico #cachorro #petshop #achadinhosshopee",
+    "reels": "O tapete que gruda no chão 🐶 Shopito Espaço de Bicho, 150 unidades, 6 camadas e barreira anti-vazamento, ideal para cães pequenos. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#cachorro #pet #tapetehigienico #caopequeno"
+  },
+  "comentario": "🛒 Tapete Shopito 150 un aqui: {link}",
+  "imagens_conferidas": true
+}

@@ -1,0 +1,119 @@
+{
+ "nome": "r26_cortina_voil_forro_blackout",
+ "titulo_produto": "Cortina Voil com Forro Blackout Grosso",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r26-fotos/01.jpg",
+  "r26-fotos/02.jpg"
+ ],
+ "cor_destaque": "A5683A",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r26-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "r26-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "recorte": [
+    424,
+    20,
+    1024,
+    820
+   ],
+   "codigo": "desce",
+   "zoom": 1.1,
+   "clipe": "r26-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Voil com forro blackout",
+     "titulo": "Voil de dia, [blackout] à noite",
+     "abertura": {
+      "grande": "2",
+      "texto": "camadas em uma cortina"
+     }
+    },
+    {
+     "rotulo": "Voil leve na frente",
+     "titulo": "Camada de [voil] que balança"
+    },
+    {
+     "rotulo": "Forro blackout grosso",
+     "titulo": "Vedação de luz até [80%]",
+     "fichas": [
+      "Voil + forro",
+      "Ilhós cromados",
+      "Varão de 28 mm"
+     ],
+     "cta": "Confira a altura e leve a sua"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Sol forte? [Fecha] o forro",
+     "sub": "Voil + blackout grosso"
+    },
+    {
+     "titulo": "Abre o [voil], luz suave",
+     "sub": "Tecido leve para o dia"
+    },
+    {
+     "titulo": "Garanta a sua no [carrinho]",
+     "sub": "Nota 4,72 · 74 avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Cortina voil com forro",
+     "titulo": "Uma cortina, [duas] funções",
+     "sub": "Voil leve + forro blackout"
+    },
+    {
+     "rotulo": "Dois tecidos",
+     "titulo": "Veja o [voil] se mexendo",
+     "sub": "Tecido leve e delicado"
+    },
+    {
+     "rotulo": "Nota 4,72 · 74 avaliações",
+     "titulo": "Bainha [lateral] bem acabada",
+     "sub": "Ilhós cromados, 100% poliéster",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "2",
+  "t": "em 1"
+ },
+ "legendas": {
+  "shopee": "Cortina voil com forro blackout grosso, vedação de luz até 80% e ilhós cromados\n#cortinablackout #cortinavoil #decoracaoquarto #cortinasala",
+  "shopee2": "Cortina 2 em 1 com voil e forro blackout, nota 4,72 em 74 avaliações\n#cortinaforrada #cortinaparaquarto #cortinaparasala #blackout",
+  "shopee3": "Voil de dia e blackout à noite na mesma cortina, 100% poliéster\n#cortinasquarto #cortinavoilforro #decoracaodecasa #cortinailhos",
+  "reels": "Voil de dia, blackout à noite: duas camadas numa cortina só. 🌙 Vedação de luz até 80%.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinablackout #cortinavoil #cortinaquarto #decoracaoquarto"
+ },
+ "notas": "Fotos 01 e 02 (voil + forro branco/gelo, ilhós cromados, mesmo conceito). Sem medidas: título 8,00 x e descrição 'largura de 4 m' se contradizem. Gancho: 2 camadas voil/blackout. Riscos: foto 01 é só 554 px (ampliada fica mole) e não permite recorte >=600; foto 02 tem tom um pouco mais gelo/cinza que a 01; cena 3 é recorte da 02 com mesa/abajur na borda."
+}

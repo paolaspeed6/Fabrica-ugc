@@ -1,0 +1,159 @@
+{
+ "nome": "t04_quadro_marmore_2_telas",
+ "titulo_produto": "Quadro Abstrato Mármore Moderno 2 Telas com Moldura Preta",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r04-fotos/01.jpg",
+  "../lista1016/r04-fotos/10.jpg",
+  "../lista1016/r04-fotos/09.jpg",
+  "t04-cenas/cena1.png",
+  "t04-cenas/cena2.png",
+  "t04-cenas/cena3.png"
+ ],
+ "cor_destaque": "A8823A",
+ "contagem": {
+  "telas": 2
+ },
+ "diretor": {
+  "angulo": "Parede vazia entrega casa inacabada; um par de telas mármore com moldura preta vira o ponto de galeria da sala.",
+  "palavra": "mármore",
+  "prova": "2 telas em papel fotográfico premium, moldura de madeira de reflorestamento revestida em preto com certificado FSC, suporte de serrilha que acompanha",
+  "errc": "E: 'quadro lindo' e lista de medidas confusas. R: adjetivos de sofisticação. E: o veio da arte e a moldura de madeira certificada em close. C: falar com quem quer o escritório com cara de projeto.",
+  "publico_nao_obvio": "Quem trabalha em escritório ou home office e quer uma parede com arte (a descrição cita escritório).",
+  "por_que_converte": "Heath (Concreto): 'parede branca demais' é uma imagem que todo mundo vê em casa. Cialdini (autoridade): moldura com certificado FSC é prova que ninguém da categoria mostra.",
+  "visual": "1º segundo: as 2 telas em parede bege com luz de sol e poltrona boucle; contraste preto e branco com brilho quente prende o dedo."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Straight-on eye-level medium shot, 35mm lens. The exact artwork from the reference images, identical shape, color, material and every part: exactly 2 tall canvases side by side, each in a thin black frame, white and gray abstract marble art with black and gold veins. Real size, keep the scale true against the room and furniture: each of the 2 canvases is 60 cm wide and 90 cm tall, the pair spanning about 1.25 m, clearly narrower than the sofa below. Above a low walnut desk with one white vase, home office, plain soft gray-blue wall. Soft morning daylight from a side window. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1,
+    2
+   ],
+   "pruna": "Very slow push-in. Exactly 2 framed marble artworks in thin black frames stay perfectly still and unchanged, every vein identical; both frames stay fully in frame. Soft morning daylight drifts slowly across the wall. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t04-cenas/cena1.mp4",
+   "lento": 1.0,
+   "fiscal": "ok",
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up at a slight side angle on the inner edges, 85mm lens. The exact artwork from the reference images, identical shape, color, material and every part: exactly 2 tall canvases side by side, each in a thin black frame, white and gray abstract marble art with black and gold veins. Real size, keep the scale true against the room and furniture: each of the 2 canvases is 60 cm wide and 90 cm tall, the pair spanning about 1.25 m, clearly narrower than the sofa below. Plain gray-blue wall. Raking soft side light on the frame edges. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1,
+    2
+   ],
+   "pruna": "Slow lateral dolly right along the frames. Exactly 2 framed marble artworks in thin black frames stay perfectly still and unchanged, every vein identical. Soft side light glides slowly across the black frame edges. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t04-cenas/cena2.mp4",
+   "lento": 1.0,
+   "fiscal": "ok",
+   "foto": 4
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot from behind the sofa. The exact artwork from the reference images, identical shape, color, material and every part: exactly 2 tall canvases side by side, each in a thin black frame, white and gray abstract marble art with black and gold veins. A man seen from behind relaxes on a sofa below the 2 canvases, his arm on the backrest, looking at the art; the pair of canvases is clearly narrower than the sofa. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1,
+    2
+   ],
+   "pruna": "He slowly settles back into the sofa while the camera drifts gently to the left. The canvases stay perfectly still and unchanged. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t04-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Eye-level wide shot, 35mm lens. The exact artwork from the reference images, identical shape, color, material and every part: exactly 2 tall canvases side by side, each in a thin black frame, white and gray abstract marble art with black and gold veins. Real size, keep the scale true against the room and furniture: each of the 2 canvases is 60 cm wide and 90 cm tall, the pair spanning about 1.25 m, clearly narrower than the sofa below. Centered above a deep olive velvet sofa, plain warm-white wall. Warm evening light washes the wall from the side. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow pull-back. Exactly 2 framed marble artworks in thin black frames stay perfectly still and unchanged, every vein identical. Warm evening light rests on the wall, faint dust drifts in the glow. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "pruna_t": 1.8,
+   "fiscal": "1.8",
+   "foto": 5,
+   "escala": 0.62,
+   "subir": 330
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Quadro mármore em 2 telas",
+     "titulo": "Parede vazia vira [galeria]",
+     "abertura": {
+      "grande": "FSC",
+      "texto": "moldura de madeira certificada"
+     }
+    },
+    {
+     "rotulo": "Moldura revestida em preto",
+     "titulo": "Veios de [mármore] em detalhe"
+    },
+    {
+     "rotulo": "Acompanha suporte de serrilha",
+     "titulo": "Pendurou, a sala [mudou]",
+     "fichas": [
+      "2 telas",
+      "Papel premium",
+      "Moldura em preto"
+     ],
+     "cta": "Toque no carrinho e vista a parede"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Arte [contemporânea] no escritório",
+     "sub": "Duas telas que se completam"
+    },
+    {
+     "titulo": "Moldura de madeira [certificada]",
+     "sub": "Madeira de reflorestamento FSC"
+    },
+    {
+     "titulo": "Garanta o par no [carrinho]",
+     "sub": "Bem avaliado por quem já pendurou"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Composição de 2 telas",
+     "titulo": "Parede [branca] demais na sala?",
+     "sub": "Duas telas mármore resolvem"
+    },
+    {
+     "rotulo": "Arte em papel fotográfico",
+     "titulo": "Cada veio [nítido] de perto",
+     "sub": "Alta qualidade de imagem e moldura"
+    },
+    {
+     "rotulo": "Design atemporal",
+     "titulo": "Não sai de [moda] na parede",
+     "sub": "Para sala, quarto e escritório",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "2",
+  "t": "telas"
+ },
+ "legendas": {
+  "shopee": "Quadro abstrato mármore 2 telas em papel fotográfico premium e moldura preta\n#quadrodecorativo #quadroabstrato #quadromarmore #decoracaosala",
+  "shopee2": "Conjunto 2 telas com moldura de madeira FSC e suporte de serrilha\n#quadrosparede #decoracaoescritorio #arteabstrata #quadromoderno",
+  "shopee3": "Quadro decorativo mármore moderno para sala, quarto e escritório, bem avaliado\n#quadrosdecorativos #decoracaoquarto #paredesala #artecontemporanea",
+  "reels": "Parede branca demais na sala? Duas telas em mármore abstrato com moldura preta mudam o ambiente 🖼️\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#quadrodecorativo #quadroabstrato #decoracaosala #paredesala"
+ },
+ "notas": "Só fotos de moldura preta: 01 (sala com poltrona), 10 (estúdio, recorte do canto da moldura e dos veios) e 09 (sobre o sofá). 02/03/05/06/07/08/12/13/14/16 têm moldura de outra cor. Close dos veios só por código (a IA redesenharia a arte). Medida omitida (duas medidas no anúncio, sem saber qual é a da foto). 'Dourado' fora do texto: não está escrito no anúncio. Risco Pruna: redesenhar os veios da arte ou mexer nas sombras sobre a tela; livro com letras pequenas na mesa da 09."
+}

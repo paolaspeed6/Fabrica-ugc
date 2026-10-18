@@ -1,0 +1,31 @@
+{
+ "nome": "escova",
+ "link": "https://shopee.com.br/product/1524383764/58220091550",
+ "fotos": ["../escova-fotos/A_kit_completo.png", "../escova-fotos/B_medidas.png", "../escova-fotos/C2_pia_escova.png"],
+ "cor_destaque": "auto",
+ "cenas": [
+  {"editar": "Use only the electric cleaning brush from the reference images, keeping it exactly identical: a white handheld electric spin scrubber shaped like an L, vertical white cylindrical handle with one round gray power button with a power symbol on the front and a ribbed white ring at the bottom, a horizontal white cylindrical motor head with a ribbed light-gray ring at the back, and a round white bristle brush head at the front. Same proportions as the reference, about 17 cm wide and 23 cm tall. The brush stands upright on its handle base on a light marble kitchen countertop next to a stainless steel sink with a few pans, soft morning window light, shallow depth of field, the brush sharp and centered in the lower half of the frame. No people, no hands. Photorealistic full-frame photo, vertical 9:16. No phone frame, no device bezel, no borders, no text. Do not redesign, recolor, add or remove any part of the product. No logos added.", "movimento": "Very slow camera push-in toward the brush, soft light, a few water droplets glisten on the counter. The brush stays still and keeps exactly the same shape, color and button; it does not move, rotate or deform.", "clipe": "../escova-cenas/cena1_cozinha.mp4"},
+  {"editar": "Use only the electric cleaning brush from the reference images, keeping it exactly identical: a white handheld electric spin scrubber shaped like an L, vertical white cylindrical handle with one round gray power button with a power symbol on the front and a ribbed white ring at the bottom, a horizontal white cylindrical motor head with a ribbed light-gray ring at the back, and a round white bristle brush head at the front. Same proportions as the reference, about 17 cm wide and 23 cm tall. The brush stands upright on its handle base on a clean white bathroom vanity in front of glossy light-gray wall tiles, a folded towel and a small plant blurred in the background, bright soft daylight, the brush sharp and centered in the lower half of the frame. No people, no hands. Photorealistic full-frame photo, vertical 9:16. No phone frame, no device bezel, no borders, no text. Do not redesign, recolor, add or remove any part of the product. No logos added.", "movimento": "Slow sideways camera move with gentle parallax, soft daylight. The brush stays still and keeps exactly the same shape, color and button; it does not move, rotate or deform.", "clipe": "../escova-cenas/cena2_banheiro.mp4"},
+  {"foto": 0, "movimento": "Very slow camera push-in toward the brush and its accessory heads, soft studio light, the water splash shimmers slightly. The brush and the heads do not move or change shape.", "clipe": "../escova-cenas/cena3_kit.mp4", "lento": 1.4}
+ ],
+ "versoes": {
+  "shopee": {"cenas": [
+   {"rotulo": "Cozinha", "titulo": "Louça limpa [sem esforço]"},
+   {"rotulo": "Banheiro", "titulo": "A mesma escova no [banheiro]"},
+   {"rotulo": "Kit completo", "titulo": "[5 cabeças] + cabo USB", "fichas": ["Recarregável", "5 em 1", "23,5 cm"], "cta": "Toque no carrinho"}]},
+  "tiktok": {"cenas": [
+   {"titulo": "Esfregar panela [cansa]"},
+   {"titulo": "Ela gira [por você]", "sub": "Cozinha, banheiro e até tênis"},
+   {"titulo": "[5 em 1] recarregável", "sub": "Kit completo com cabo USB", "cta": "Link no perfil"}]},
+  "reels": {"ordem": [1, 0, 2], "cenas": [
+   {"rotulo": "Banheiro", "titulo": "Limpeza com [menos esforço]"},
+   {"rotulo": "Cozinha", "titulo": "Uma escova, [cinco] funções", "sub": "Cerdas, esponjas e palha de aço"},
+   {"rotulo": "Recarregável por USB", "titulo": "Sem fio, [sem complicação]", "cta": "Compre pelo link"}]}
+ },
+ "legendas": {
+  "shopee": "Escova elétrica 5 em 1 recarregável por USB. Kit completo com 5 cabeças (cerdas, esponjas, palha de aço e microfibra) para louça, fogão, banheiro e tênis. Toque no carrinho e confira.",
+  "tiktok": "Para de esfregar panela no braço 😮‍💨 Essa escova gira sozinha e vem com 5 cabeças pra cozinha, banheiro e tênis. Link no perfil!",
+  "reels": "Limpeza mais leve na cozinha e no banheiro ✨ Escova elétrica sem fio, recarregável por USB, com 5 cabeças trocáveis. Compre pelo link: {link}"
+ },
+ "hashtags": {"tiktok": "#achadinhosshopee #limpeza #casa #utilidadesdomesticas", "reels": "#limpezadecasa #organizacao #casa #achadinhos"}
+}

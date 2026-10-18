@@ -1,0 +1,119 @@
+{
+ "nome": "r07_aparador_cantinho_cafe",
+ "titulo_produto": "Aparador Buffet Cantinho do Café Linus",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r07-fotos/01.jpg",
+  "r07-fotos/05.jpg"
+ ],
+ "cor_destaque": "A96A24",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r07-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    400,
+    230,
+    1000,
+    830
+   ],
+   "codigo": "pan_esq",
+   "zoom": 1.08,
+   "clipe": "r07-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pull",
+   "zoom": 1.08,
+   "clipe": "r07-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Aparador buffet Linus",
+     "titulo": "Cantinho do [café] pronto",
+     "abertura": {
+      "grande": "4,77",
+      "texto": "de nota, 1.201 avaliações"
+     }
+    },
+    {
+     "rotulo": "Porta ripada com nicho aberto",
+     "titulo": "Guarda e [exibe] tudo"
+    },
+    {
+     "rotulo": "Pés palito retrô, 79 cm",
+     "titulo": "Só [67,5 cm] de largura",
+     "fichas": [
+      "79 x 67,5 x 33 cm",
+      "Porta com puxador",
+      "Pés elevados ABS"
+     ],
+     "cta": "Toque no carrinho e escolha o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "[1.201] avaliações, nota 4,77",
+     "sub": "Aparador buffet retrô"
+    },
+    {
+     "titulo": "Tampo pra [cafeteira]",
+     "sub": "Nicho aberto e porta embaixo"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Chega desmontado, com manual"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Cantinho do café Linus",
+     "titulo": "Aquele [canto] que faltava",
+     "sub": "Aparador compacto e retrô"
+    },
+    {
+     "rotulo": "Nicho e porta com puxador",
+     "titulo": "Organiza louças e [utensílios]",
+     "sub": "Espaço interno e nicho aberto"
+    },
+    {
+     "rotulo": "Sala, jantar ou cozinha",
+     "titulo": "Cabe em [qualquer] ambiente",
+     "sub": "79 cm de altura, 33 de fundo",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,77",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Aparador buffet Linus pé palito retrô, nota 4,77 em 1.201 avaliações\n#aparadorbuffet #cantinhodocafe #moveisretro #decoracaosala",
+  "shopee2": "Aparador cantinho do café com nicho aberto e porta, 79 x 67,5 x 33 cm\n#cantinhodocafe #aparadorcompacto #moveissala #decoracaocozinha",
+  "shopee3": "Buffet com pés elevados que facilitam a limpeza e manual de montagem\n#buffetretro #moveiscompactos #salajantar #cafeteiraeletrica",
+  "reels": "Quer um cantinho do café só seu? ☕ Aparador buffet retrô com nicho, porta e nota 4,77.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#aparadorbuffet #cantinhodocafe #moveisretro #decoracaosala"
+ },
+ "notas": "Foto 01 (branco com porta ripada, pés palito) + recorte 600x600 da porta/pés da 01 + 05 (mesmo modelo em fundo branco). Risco: a 01 tem garrafa de vinho na prateleira (cena 1 inteira, inevitável) e a 05 tem garrafa transparente (provável água, ambíguo); recortes evitam o vinho. Fotos 02/04/06/07/09 são outras cores, 03/08 porta lisa. Produto chega desmontado (citado só 'manual'). Sem letras."
+}

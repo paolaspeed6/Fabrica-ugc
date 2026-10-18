@@ -1,0 +1,144 @@
+{
+ "nome": "s10_plafon_ceu_estrelado_3_tons",
+ "titulo_produto": "Plafon LED Céu Estrelado 2 Andares 3 Tons",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r10-fotos/01.jpg",
+  "../lista1016/r10-fotos/06.jpg"
+ ],
+ "cor_destaque": "C98B3A",
+ "contagem": {
+  "plafon": 1,
+  "andares": 2
+ },
+ "diretor": {
+  "angulo": "Um interruptor, três climas: a luz do quarto muda de 3.500K a 6.500K a cada toque.",
+  "palavra": "toque",
+  "prova": "3 tonalidades (3.500K, 4.500K e 6.500K) que trocam a cada toque no interruptor, LED integrado, bivolt, 2 andares; bem avaliado.",
+  "errc": "E: a arte de propaganda da foto 01 e o 'olha que lindo'. R: adjetivos de sofisticação. E: os 3 números de temperatura de cor e o gesto do toque. C: um plafon que é luz de trabalho de dia e luz de descanso à noite.",
+  "publico_nao_obvio": "Quem trabalha ou estuda no quarto e precisa de luz fria de dia e quente à noite no mesmo teto.",
+  "por_que_converte": "Hopkins: especificidade (3.500K, 4.500K, 6.500K) vence 'luz linda'. Heath: o Reels abre com a comparação fria ou quente e fecha a lacuna com 'as duas'.",
+  "visual": "Plafon quadrado de 2 andares brilhando com o painel estrelado ocupando metade da tela, câmera deslizando com o brilho espalhando no teto: luz quente em quarto de hotel para o dedo."
+ },
+ "cenas": [
+  {
+   "foto": 1,
+   "recorte": [
+    40,
+    0,
+    760,
+    720
+   ],
+   "pruna": "Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance. Slow lateral dolly right. A square two-tier white LED ceiling light with two clear crystal-pattern borders and a glowing star-speckled center panel, mounted flat on a white ceiling, stays perfectly still and unchanged, every part identical to the photo; the whole ceiling light stays fully in frame. Its warm glow spreads softly across the ceiling.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s10-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "foto": 1,
+   "recorte": [
+    100,
+    30,
+    700,
+    630
+   ],
+   "pruna": null,
+   "codigo": "pan_dir",
+   "zoom": 1.09,
+   "clipe": "s10-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "pruna": "Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance. Slow crane up. A square two-tier white LED ceiling light with two clear crystal-pattern borders and a glowing star-speckled center panel, mounted flat on the ceiling of a calm bedroom, stays perfectly still and unchanged, every part identical to the photo. Warm evening glow from the bedside lamps, soft reflections on the gold wall mirror.",
+   "codigo": "sobe",
+   "zoom": 1.07,
+   "clipe": "s10-cenas/cena3.mp4",
+   "lento": 1.0,
+   "fiscal": "ok"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Plafon LED de 2 andares",
+     "titulo": "Um toque, [outro] quarto",
+     "abertura": {
+      "grande": "3",
+      "texto": "tons, um interruptor"
+     }
+    },
+    {
+     "rotulo": "3.500K, 4.500K e 6.500K",
+     "titulo": "Do [quente] ao frio no toque"
+    },
+    {
+     "rotulo": "LED integrado e bivolt",
+     "titulo": "Teto de [céu] estrelado",
+     "fichas": [
+      "3 tons de luz",
+      "Bivolt",
+      "Plafon de 2 andares"
+     ],
+     "cta": "Toque no carrinho e acenda o céu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Trabalha no [quarto]? Olha isso",
+     "sub": "6.500K pro dia, 3.500K pra noite"
+    },
+    {
+     "titulo": "[3] tons no mesmo interruptor",
+     "sub": "O tom muda a cada toque"
+    },
+    {
+     "titulo": "Pegue o seu no [carrinho]",
+     "sub": "Bivolt, LED integrado, 2 andares"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Quarto ou sala",
+     "titulo": "Luz [fria] ou quente? As duas",
+     "sub": "Plafon céu estrelado de LED"
+    },
+    {
+     "rotulo": "Troca no interruptor",
+     "titulo": "[3.500K] até 6.500K",
+     "sub": "Passando pelos 4.500K"
+    },
+    {
+     "rotulo": "Céu estrelado no teto",
+     "titulo": "Escolha o [clima] da noite",
+     "sub": "Plafon de 2 andares, bivolt",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "3",
+  "t": "tons de luz"
+ },
+ "legendas": {
+  "shopee": "Plafon LED céu estrelado de 2 andares com 3 tons de luz, bivolt\n#plafonled #plafonceuestrelado #luminariadeteto #iluminacaoquarto",
+  "shopee2": "Plafon quadrado que vai de 3.500K a 6.500K no interruptor, LED integrado\n#plafonquadrado #luzdequarto #homeofficenoquarto #luminariaquarto",
+  "shopee3": "Plafon céu estrelado bem avaliado, 3 tonalidades e bivolt 110v ou 220v\n#plafonsala #decoracaoquarto #ledintegrado #tetoestrelado",
+  "reels": "Luz fria ou quente? Este plafon céu estrelado troca entre 3 tons a cada toque no interruptor 💡\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#plafonled #plafonceuestrelado #iluminacaoquarto #luminariadeteto"
+ },
+ "notas": "A 01 é arte com texto grande e fica fora das cenas (só em fotos[0] por formato); as 3 cenas usam a 06, limpa e do mesmo modelo quadrado de 2 andares. 02-05 têm logo ou marca d'água, 07 é redonda. Cena 2 por código (close nas bordas de cristal, padrão fino que a IA redesenharia). Watt fora do texto (24W/36W, variação não confirmada). Risco: Pruna redesenhar o padrão das bordas, virar 1 ou 3 andares, ou fazer as estrelas piscarem; conferir 2 andares contra a 06."
+}

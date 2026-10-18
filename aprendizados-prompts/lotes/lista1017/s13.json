@@ -1,0 +1,134 @@
+{
+ "nome": "s13_spark_do_seu_jeito",
+ "titulo_produto": "Lustre Plafon Cristal Acrílico Spark",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r13-fotos/01.jpg",
+  "../lista1016/r13-fotos/02.jpg",
+  "../lista1016/r13-fotos/03.jpg"
+ ],
+ "cor_destaque": "2F7F86",
+ "contagem": {
+  "plafon": 1,
+  "niveis_de_cristais": 2,
+  "soquetes_E27": 1
+ },
+ "diretor": {
+  "angulo": "O lustre que você mesmo desenha: os cristais vêm pré-montados e dá para remontar do seu jeito, como o anúncio mostra.",
+  "palavra": "do seu jeito",
+  "prova": "O anúncio manda montar os cristais da forma que mais agrada e mostra montagens nas fotos; inox espelhado, 14 x 14 x 27 cm, 1 lâmpada E-27 de até 20w, bivolt; milhares de avaliações.",
+  "errc": "E: 'lustre maravilhoso' e o zoom parado. R: lista de medidas. E: a mesma peça em duas montagens lado a lado. C: lustre como presente de casa nova que quem ganha personaliza.",
+  "publico_nao_obvio": "Quem procura presente de casa nova ou chá de casa nova com cara de luxo.",
+  "por_que_converte": "Godin (Vaca Roxa): o lustre que muda de desenho é o elemento comentável. Cialdini: milhares de avaliações como prova sem número exato. O Reels abre com comparação ('igual ao de todo mundo?').",
+  "visual": "Cascata de gotas de cristal sob base quadrada espelhada, câmera chegando devagar com reflexos de arco-íris; na cena 2 a mesma peça aparece com outro desenho, quebra de expectativa."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": "Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance. Very slow push-in on a clean white background. A small square mirror-polished stainless steel ceiling fixture with exactly 2 tiers of hanging clear acrylic crystal strands stays perfectly still and unchanged, every strand identical to the photo; the whole fixture stays fully in frame. Soft rainbow glints travel slowly across the crystals.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s13-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 1.8,
+   "fiscal": "1.8"
+  },
+  {
+   "foto": 1,
+   "pruna": null,
+   "codigo": "sobe",
+   "zoom": 1.08,
+   "clipe": "s13-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "pruna": "Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance. Slow lateral dolly left on a clean white background. A small square mirror-polished stainless steel ceiling fixture with exactly 2 tiers of hanging clear acrylic crystal strands stays perfectly still and unchanged, every strand identical to the photo. Cool reflections glide slowly along the polished steel edge, tiny sparkles glint in the crystals.",
+   "codigo": "pan_esq",
+   "zoom": 1.07,
+   "clipe": "s13-cenas/cena3.mp4",
+   "lento": 1.0,
+   "fiscal": "ok"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Plafon Spark inox espelhado",
+     "titulo": "Lustre que você [desenha]",
+     "abertura": {
+      "grande": "Você",
+      "texto": "decide o desenho dos cristais"
+     }
+    },
+    {
+     "rotulo": "Outra montagem possível",
+     "titulo": "Mesmos cristais, [outro] lustre"
+    },
+    {
+     "rotulo": "14 x 14 x 27 cm",
+     "titulo": "Só [14 cm] e muito brilho",
+     "fichas": [
+      "Inox espelhado",
+      "1 lâmpada E-27",
+      "Bivolt"
+     ],
+     "cta": "Toque no carrinho e monte o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Presente de [casa nova] que brilha",
+     "sub": "Plafon Spark de cristal acrílico"
+    },
+    {
+     "titulo": "Quem ganha [monta] do seu jeito",
+     "sub": "Vem pré-montado e dá pra mudar"
+    },
+    {
+     "titulo": "Presenteie pelo [carrinho]",
+     "sub": "Milhares de avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre pequeno",
+     "titulo": "Lustre igual ao de [todo mundo]?",
+     "sub": "Esse aqui você mesmo monta"
+    },
+    {
+     "rotulo": "Ideias do anúncio",
+     "titulo": "Fios retos ou em [cascata]",
+     "sub": "Você escolhe o desenho"
+    },
+    {
+     "rotulo": "Inox polido, bivolt",
+     "titulo": "Seu teto, seu [desenho]",
+     "sub": "Lâmpada E-27 de até 20w",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Lustre plafon Spark de cristal acrílico e inox espelhado, 14 x 14 x 27 cm\n#lustrepequeno #plafondecristal #lustreinox #lustreacrilico",
+  "shopee2": "Plafon Spark para presente de casa nova, cristais que você monta do seu jeito\n#presentecasanova #chadecasanova #lustredecristal #decoracaodiy",
+  "shopee3": "Lustre de cristal com milhares de avaliações, bivolt e 1 lâmpada E-27\n#lustrespark #lustrequarto #lustrevaranda #iluminacaodecorativa",
+  "reels": "Lustre igual ao de todo mundo? No Spark você monta os cristais do jeito que quiser ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustredecristal #lustrepequeno #presentecasanova #decoracaodiy"
+ },
+ "notas": "01 e 03 mostram a mesma montagem (2 níveis); 02 é outra montagem do próprio anúncio ('monte você mesmo os cristais'), usada só na cena 2 por código e com texto dizendo que é outra montagem. Risco: Pruna somar nível ou redesenhar as gotas, balançar os fios; conferir 2 níveis nas cenas 1 e 3 contra a 01. Lâmpada não inclusa."
+}

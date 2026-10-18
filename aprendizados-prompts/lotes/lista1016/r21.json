@@ -1,0 +1,113 @@
+{
+  "nome": "r21_tapete_sisal_3x2_listrado",
+  "titulo_produto": "Tapete de Sisal Sintético 3,00 x 2,00 m Soft Dream",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "r21-fotos/01.jpg",
+    "r21-fotos/02.jpg",
+    "r21-fotos/06.jpg"
+  ],
+  "cor_destaque": "7A8B5A",
+  "cenas": [
+    {
+      "foto": 0,
+      "codigo": "push",
+      "zoom": 1.05,
+      "clipe": "r21-cenas/cena1.mp4",
+      "lento": 1.0
+    },
+    {
+      "foto": 1,
+      "codigo": "pan_esq",
+      "zoom": 1.08,
+      "clipe": "r21-cenas/cena2.mp4",
+      "lento": 1.0
+    },
+    {
+      "foto": 2,
+      "codigo": "sobe",
+      "zoom": 1.08,
+      "clipe": "r21-cenas/cena3.mp4",
+      "lento": 1.0
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Sisal sintético 3 x 2 m",
+          "titulo": "Tapete [3x2] pra sala toda",
+          "abertura": {
+            "grande": "3x2",
+            "texto": "metros de sisal sintético"
+          }
+        },
+        {
+          "rotulo": "Baixa trama",
+          "titulo": "Não [levanta] pelos"
+        },
+        {
+          "rotulo": "Nota 4,90 · 793 avaliações",
+          "titulo": "Não [risca] o piso",
+          "fichas": [
+            "3,00 x 2,00 m",
+            "Antiácaro",
+            "Nota 4,90"
+          ],
+          "cta": "Toque no carrinho e escolha o seu"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Sala grande? Tapete [3x2]",
+          "sub": "Visual de sisal natural"
+        },
+        {
+          "titulo": "Trama baixa, [zero] pelo",
+          "sub": "Fácil de limpar"
+        },
+        {
+          "titulo": "Leve o seu no [carrinho]",
+          "sub": "Nota 4,90 · 793 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Sala ampla pede tapete grande",
+          "titulo": "[3x2 m] de elegância",
+          "sub": "Sisal sintético listrado"
+        },
+        {
+          "rotulo": "Dia a dia",
+          "titulo": "Alto tráfego sem [estresse]",
+          "sub": "Base de polipropileno"
+        },
+        {
+          "rotulo": "Nota 4,90 · 793 avaliações",
+          "titulo": "Antiácaro e [antialérgico]",
+          "cta": "Link na legenda"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "3x2",
+    "t": "metros"
+  },
+  "legendas": {
+    "shopee": "Tapete de sisal sintético 3,00 x 2,00 m, baixa trama e não risca o piso.\n#tapetesisal #tapetesala #decoracaosala #tapetegrande",
+    "shopee2": "Tapete Soft Dream com nota 4,90 em 793 avaliações, antiácaro e antialérgico.\n#tapetesintetico #tapetemoderno #salaestar #decoracaodecasa",
+    "shopee3": "Tapete 3x2 m de poliéster com base de polipropileno, para alto tráfego.\n#tapetesisalsintetico #tapetesaladejantar #tapetequarto #casadecorada",
+    "reels": "Sala grande merece tapete à altura 🛋️ Sisal sintético 3 x 2 m, de baixa trama, que não levanta pelos e não risca o piso.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+  },
+  "hashtags": {
+    "reels": "#tapetesisal #tapetegrande #decoracaosala #tapetesala"
+  },
+  "notas": "Fotos 01 (vista de cima), 02 (detalhe do tecido listrado) e 06 (ambiente), as três com o mesmo listrado bege e verde; 19 tem borda diferente, 03-05 etc. são outras cores. Gancho 3x2 m. RISCO: listras finas podem dar moiré no vídeo; tamanho 3x2 vs r23 (2x1,5) bem separado; borda verde fina na 01, na 02 aparece mais grossa."
+}

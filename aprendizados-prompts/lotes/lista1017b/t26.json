@@ -1,0 +1,149 @@
+{
+ "nome": "t26_cortina_voil_forro_blackout",
+ "titulo_produto": "Cortina Voil com Forro Blackout Grosso",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r26-fotos/01.jpg",
+  "../lista1016/r26-fotos/02.jpg",
+  "t26-cenas/cena1.png",
+  "t26-cenas/cena2.png",
+  "t26-cenas/cena3.png"
+ ],
+ "cor_destaque": "A5683A",
+ "contagem": {
+  "partes": 2
+ },
+ "diretor": {
+  "angulo": "Duas cortinas num varão só: voil leve para a claridade do dia e forro blackout grosso por trás para quem quer dormir sem o sol na cara.",
+  "palavra": "forro grosso",
+  "prova": "Voil com forro blackout grosso; vedação de luz (até 80 no anúncio, sem símbolo na tela); bainha nas laterais; ilhoses cromados; varão simples de 28 mm indicado.",
+  "errc": "E: 'achadinho' e o voil voando como único truque. R: promessa de escuro total (veda até 80, não 100). E: a prova das 2 camadas (voil amarrado mostrando o forro) e a dica do dobro da largura do varão. C: a cortina de quem trabalha de noite e dorme de dia.",
+  "publico_nao_obvio": "Quem trabalha de noite ou em plantão e precisa dormir de dia.",
+  "por_que_converte": "Schwartz: Reels abre na dor (o sol te acorda cedo) para público consciente do problema; Whitman (Cashvertising): conforto e descanso; Hormozi: dica do dobro da largura reduz o medo de errar a compra.",
+  "visual": "Cortina inteira com as 2 camadas abertas no varão e a porta de vidro acesa ao fundo: o contraste claro/escuro do forro contra o voil prende o olho."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide shot slightly from the left, both panels rod to floor. The exact curtain from the reference images, identical shape, color, material and every part: exactly 2 floor-length off-white lined panels on a silver rod with round chrome grommets, each with a white sheer voile layer in front, the right voile tied back at mid-height, wide white hems. Real size, keep the scale true against the room and furniture: 2 panels, each 4.00 m wide, floor-length, covering a whole wide window wall. The blackout panels are very light off-white, almost white, never beige, cream or gray. They frame a tall window in a calm bedroom, plain warm white walls, light oak floor. Soft sunrise light glows through the window between them. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Very slow push-in toward the window, the whole curtain staying fully in frame. The 2 off-white panels stay perfectly still and unchanged, every fold, grommet and tie identical. Soft sunrise light glows steadily through the window and fine dust floats in the beam. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t26-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up of the right panel at tie height. The exact curtain from the reference image, identical color, material and every part: a white sheer voile layer gathered by a white fabric tie in front of a thicker off-white lined panel, soft vertical folds, a wide white hem band below. Real size, keep the scale true against the room and furniture: 2 panels, each 4.00 m wide, floor-length, covering a whole wide window wall. The blackout panels are very light off-white, almost white, never beige, cream or gray. Plain warm white wall, light oak floor. Soft daylight from the window beside it reveals both fabric layers, 85 mm lens. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Slow crane down from the tie to the hem. The voile, the tie and the lined panel stay perfectly still and unchanged, every fold identical. Soft window daylight glows steadily and a few dust specks float in the light. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "desce",
+   "zoom": 1.06,
+   "clipe": "t26-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium shot of a bedroom window at sunrise. The exact curtain from the reference images, identical color, material and every part: exactly 2 floor-length off-white lined panels on a silver rod with round chrome grommets, drawn closed and meeting at the center, white voile hanging straight in front, wide white hems. A woman seen from behind, cropped at the shoulders, gently opens the very light off-white, almost white blackout panels with both hands, letting the sunrise in through the white voile; the curtain is floor-length and very wide. The panels are very light off-white, almost white. The person is seen from directly behind, only the back of the head visible; no face and no profile. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Her hands slowly part the panels a little while the camera drifts slightly. The panels keep their exact color and hems. The person is seen from directly behind, only the back of the head visible; no face and no profile. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t26-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot from the foot of a bed. The exact curtain from the reference images, identical color, material and every part: exactly 2 floor-length off-white lined panels on a silver rod with round chrome grommets, drawn closed and meeting at the center, white voile hanging straight in front, wide white hems. Real size, keep the scale true against the room and furniture: 2 panels, each 4.00 m wide, floor-length, covering a whole wide window wall. Calm bedroom, plain warm white walls, a bed in white linen. Only a thin soft line of morning light at the curtain edges, the room in cool shade. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Very slow push-in toward the closed curtain. The 2 off-white panels stay perfectly still and unchanged, every fold and grommet identical. The thin line of light at the edges stays steady while the room rests in soft cool shade. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": false,
+   "origem_foto": "cena3_sem_uso",
+   "foto": 4
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Voil com forro blackout",
+     "titulo": "Duas [camadas], um só varão",
+     "abertura": {
+      "grande": "NOVO",
+      "texto": "lançamento com forro grosso"
+     }
+    },
+    {
+     "rotulo": "Voil na frente, forro atrás",
+     "titulo": "O [forro] grosso por trás"
+    },
+    {
+     "rotulo": "Acabamento em bainha",
+     "titulo": "Luz do dia sob [controle]",
+     "fichas": [
+      "Ilhoses cromados",
+      "Para varão de 28 mm",
+      "Várias alturas"
+     ],
+     "cta": "Escolha a altura no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Voil leve, forro [grosso]",
+     "sub": "Ótimo caimento e acabamento"
+    },
+    {
+     "titulo": "Bainha nas [laterais] também",
+     "sub": "Acabamento impecável"
+    },
+    {
+     "titulo": "Peça a sua no [carrinho]",
+     "sub": "Dica: o dobro da largura do varão"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Para quem dorme de dia",
+     "titulo": "O sol te acorda [cedo]?",
+     "sub": "Ela tem um forro que veda a luz"
+    },
+    {
+     "rotulo": "De dia, só o voil",
+     "titulo": "Claridade [suave] na sala",
+     "sub": "Tecido de alta qualidade"
+    },
+    {
+     "rotulo": "Ilhoses cromados",
+     "titulo": "Quarto [pronto] pra descansar",
+     "sub": "Vedação de luz com forro grosso",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "2",
+  "t": "camadas"
+ },
+ "legendas": {
+  "shopee": "Cortina voil com forro blackout grosso, ilhoses cromados e bainha nas laterais\n#cortinablackout #cortinavoil #cortinaquarto #cortinasala",
+  "shopee2": "Cortina de voil e forro blackout para varão simples de 28 mm\n#cortinacomforro #blackoutquarto #decoracaoquarto #cortinadupla",
+  "shopee3": "Cortina com forro blackout grosso em várias alturas e ótimo caimento\n#cortinagrossa #cortinablackoutvoil #quartoaconchegante #janeladecorada",
+  "reels": "O sol te acorda cedo? Essa cortina tem voil leve na frente e forro blackout grosso por trás, com vedação de luz e ilhoses cromados 😴\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinablackout #dormirbem #cortinaquarto #plantonista"
+ },
+ "notas": "Fotos 01 (554 px, só código; voil amarrado prova as 2 camadas) e 02 (mesmo conceito, tom um pouco mais gelo); 03-08 são outras cores. Cenas 1 e 2 por código: ilhoses são partes repetidas (regra 1.1) e o voil voando da 02 viraria tecido balançando no Pruna; só a cena 3 (recorte sem ilhós e sem voil) vai ao Pruna. Riscos: largura se contradiz (8,00 x 4 m) e fica fora; vedação é \"até 80\" sem o símbolo, nunca 'escuro total'; cor não está escrita no anúncio."
+}

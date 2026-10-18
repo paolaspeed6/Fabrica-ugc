@@ -1,0 +1,76 @@
+{
+ "nome": "churrasqueira_desmontavel",
+ "titulo_produto": "Churrasqueira desmontável de aço",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p07-fotos/01.jpg",
+  "p07-fotos/02.jpg",
+  "p07-fotos/04.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. This exact black steel portable grill with the mesh grate and wooden handles in a backyard at golden hour, glowing charcoal and juicy steaks sizzling on the grate, light smoke rising.",
+   "movimento": "Very slow push-in toward the product, smoke drifting, embers glowing, meat sizzling. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. This exact portable grill set up at a lakeside campsite, tent softly blurred, warm golden light, a few skewers on the grate.",
+   "movimento": "Slow dolly forward toward the grill, water shimmering behind. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. This exact portable grill on an apartment balcony at night with city lights in the background, glowing coals, skewers on the grate.",
+   "movimento": "Slow push-in toward the grill, city lights twinkling. The product does not change shape, color or lettering. No people."
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Churrasqueira desmontável",
+     "titulo": "Churrasco em [qualquer lugar]"
+    },
+    {
+     "rotulo": "Camping, praia, quintal",
+     "titulo": "Monta e desmonta [fácil]"
+    },
+    {
+     "rotulo": "Aço com pintura a pó",
+     "titulo": "Grelha [ajustável]",
+     "fichas": [
+      "68 cm altura",
+      "Grelha 50 x 34,5",
+      "Desmontável"
+     ],
+     "cta": "Toque no carrinho"
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "Churrasqueira portátil",
+     "titulo": "Mora em [apartamento]?"
+    },
+    {
+     "rotulo": "Leva pro camping",
+     "titulo": "Churrasco onde [quiser]",
+     "sub": "Desmonta e cabe no carro"
+    },
+    {
+     "rotulo": "Aço resistente",
+     "titulo": "Isso aqui [resolve]",
+     "cta": "Link no comentário"
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Churrasqueira desmontável de aço com pintura eletrostática e grelha ajustável de 50 x 34,5 cm. Para casa, camping e praia, monta e desmonta fácil. Toque no carrinho.",
+  "reels": "Mora em apartamento? Isso aqui resolve 🔥 Churrasqueira desmontável de aço com grelha. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#churrasco #camping #churrasqueira #achadinhos"
+ },
+ "comentario": "🛒 Churrasqueira desmontável aqui: {link}",
+ "angulos_reais": true
+}

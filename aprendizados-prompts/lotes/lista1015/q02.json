@@ -1,0 +1,107 @@
+{
+  "nome": "q02_churrasqueira_desmontavel",
+  "titulo_produto": "Churrasqueira Desmontável de Aço",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q02-fotos/01.jpg",
+    "q02-fotos/04.jpg"
+  ],
+  "cor_destaque": "E8A23A",
+  "angulos_reais": false,
+  "cenas": [
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. A freestanding black matte steel barbecue grill exactly from reference photo 1: four slim black square-tube legs, a black trapezoidal coal tray hanging below, a silver galvanized perforated grill grate with round holes on top, two light natural-wood handles on the grate and one light-wood double-knob handle on the left side of the tray. Placed on a flat stone patio of a sunny backyard with a green lawn and a wooden fence softly blurred behind, unlit and empty, minimalist, only the objects described. 50 mm, soft golden daylight, neutral white balance. The whole product fills 40-60% of the image height, centered, empty floor below.",
+      "movimento": "gentle lateral dolly",
+      "clipe": "q02-cenas/cena1.mp4"
+    },
+    {
+      "foto": 1,
+      "movimento": "slow push-in",
+      "clipe": "q02-cenas/cena2.mp4"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. A freestanding black matte steel barbecue grill exactly from reference photo 1: four slim black square-tube legs, a black trapezoidal coal tray hanging below, a silver galvanized perforated grill grate with round holes on top, two light natural-wood handles on the grate and one light-wood double-knob handle on the left side of the tray. Placed on pale sand at a calm beach at golden hour, soft sea blurred far behind, unlit and empty, minimalist, only the objects described. 50 mm, warm soft light, neutral white balance. The whole product fills 35-55% of the image height, centered, empty sand below.",
+      "movimento": "crane up reveal",
+      "clipe": "q02-cenas/cena3.mp4"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Churrasqueira de aço",
+          "titulo": "Grelha de [50 cm] que desmonta",
+          "abertura": {
+            "grande": "50cm",
+            "texto": "de grelha, desmontável"
+          }
+        },
+        {
+          "rotulo": "Aço · pintura eletrostática",
+          "titulo": "Resiste ao [uso] de fim de semana"
+        },
+        {
+          "rotulo": "Nota 4,72",
+          "titulo": "Monta, usa e [guarda]",
+          "fichas": [
+            "68 cm de altura",
+            "Aço eletrostático",
+            "Nota 4,72"
+          ],
+          "cta": "Toque no carrinho e confira as medidas"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Churrasco sem [obra]",
+          "sub": "Churrasqueira de aço desmontável"
+        },
+        {
+          "titulo": "Aço com [pintura] a pó",
+          "sub": "Grelha de 50 x 34,5 cm"
+        },
+        {
+          "titulo": "Leve a sua no [carrinho]",
+          "sub": "Nota 4,72 · 318 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Sem espaço pra churrasqueira?",
+          "titulo": "O churrasco vai pra [onde] você for",
+          "sub": "Quintal, camping ou praia"
+        },
+        {
+          "rotulo": "Aço · 68 cm de altura",
+          "titulo": "Grelha de [50 cm] e cabos de madeira",
+          "sub": "Pintura eletrostática"
+        },
+        {
+          "rotulo": "Nota 4,72 · 318 avaliações",
+          "titulo": "Desmontável: monta e [guarda]",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "4,7",
+    "t": "318 avaliações"
+  },
+  "legendas": {
+    "shopee": "Churrasqueira desmontável de aço com grelha 50 x 34,5 cm. Pintura eletrostática.\n#churrasqueira #churrasco #camping #achadinhosshopee",
+    "shopee2": "Churrasqueira de aço desmontável, 68 cm de altura, grelha inclusa.\n#churrasco #churrasqueira #quintal #achadinhosshopee",
+    "reels": "Quer churrasco sem fazer obra? 🔥 Churrasqueira de aço desmontável, grelha de 50 cm e pintura eletrostática. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#churrasco #churrasqueira #camping #fimdesemana"
+  },
+  "comentario": "🛒 Churrasqueira desmontável aqui: {link}",
+  "imagens_conferidas": true
+}

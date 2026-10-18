@@ -1,0 +1,142 @@
+{
+ "nome": "s08_banquetas_altura_certa",
+ "titulo_produto": "Kit 2 Banquetas Baixas Quadradas Aço Reforçado",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r08-fotos/01.jpg",
+  "../lista1016/r08-fotos/09.jpg"
+ ],
+ "cor_destaque": "7A4A28",
+ "contagem": {
+  "banquetas": 2,
+  "pes_por_banqueta": 4,
+  "travessas_no_encosto": 2
+ },
+ "diretor": {
+  "angulo": "A banqueta que responde a dúvida que trava a compra: qual altura serve no meu balcão.",
+  "palavra": "altura certa",
+  "prova": "Aço reforçado com pintura epóxi que suporta até 125 kg; modelo baixo com assento a 47 cm do chão e a regra 25 a 30 cm escrita no anúncio.",
+  "errc": "E: o clichê do produto parado e o desfile de cores. R: lista de especificações. E: a regra 25-30 cm e os 125 kg grandes na tela. C: vender a banqueta como resposta à dúvida de altura.",
+  "publico_nao_obvio": "Dono de lanchonete, padaria ou bar (o anúncio cita uso comercial).",
+  "por_que_converte": "Valor prático (Berger) e lacuna de curiosidade (Heath): quem tem balcão tem medo de errar a altura. Hormozi: a regra do anúncio e os 125 kg sobem a certeza.",
+  "visual": "Par de banquetas pretas sobre gramado verde ao lado da piscina, câmera entrando devagar com sol andando: contraste verde, preto e marrom de revista que destoa do fundo branco da categoria."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": "Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance. Very slow push-in. Exactly 2 low square stools, black steel tube frames, two-bar backrests, dark brown faux-leather seats, on green turf by a pool deck stay perfectly still and unchanged, every part identical to the photo; the whole pair stays fully in frame. Soft sunlight drifts across the turf.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s08-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.2,
+   "fiscal": "2.2"
+  },
+  {
+   "foto": 1,
+   "pruna": "Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance. Slow crane up. Exactly 2 low square stools with black steel tube frames, two-bar backrests and smooth dark brown faux-leather seats stand on green turf; they stay perfectly still and unchanged, every part identical to the photo. Soft daylight glides slowly over the seat surfaces, subtle highlights travel along the black steel tubes.",
+   "codigo": "sobe",
+   "zoom": 1.08,
+   "clipe": "s08-cenas/cena2.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.5,
+   "fiscal": "2.5"
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    120,
+    640,
+    760
+   ],
+   "pruna": "Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance. Slow lateral dolly right. Exactly 1 low square stool, black steel tube frame, two-bar backrest, dark brown faux-leather seat, on green turf beside a rustic wooden table stays perfectly still and unchanged, every part identical to the photo. Warm golden afternoon light slowly brightens the turf.",
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "s08-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.0,
+   "fiscal": "2.0"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Kit com 2 banquetas baixas",
+     "titulo": "Aço que segura [125 kg]",
+     "abertura": {
+      "grande": "125",
+      "texto": "kg em cada banqueta"
+     }
+    },
+    {
+     "rotulo": "Aço com pintura epóxi",
+     "titulo": "Aguenta [uso intenso]"
+    },
+    {
+     "rotulo": "Acerte a altura do balcão",
+     "titulo": "Assento a [47 cm] do chão",
+     "fichas": [
+      "Kit com 2 unidades",
+      "Assento em courino",
+      "Suporta até 125 kg"
+     ],
+     "cta": "Toque no carrinho e leve o par"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Pra [lanchonete] que não para",
+     "sub": "Aço reforçado que aguenta 125 kg"
+    },
+    {
+     "titulo": "Courino que [limpa] fácil",
+     "sub": "Revestimento resistente no assento"
+    },
+    {
+     "titulo": "Leve o [par] no carrinho",
+     "sub": "Uso em casa ou no comércio"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "A dúvida de todo balcão",
+     "titulo": "Qual [altura] de banqueta?",
+     "sub": "A conta que quase ninguém faz"
+    },
+    {
+     "rotulo": "Regra do conforto",
+     "titulo": "Balcão [25 a 30 cm] acima",
+     "sub": "Entre o assento e o tampo"
+    },
+    {
+     "rotulo": "Modelo baixo do kit",
+     "titulo": "Acertou? Leve o [par]",
+     "sub": "47 cm do assento até o chão",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "125",
+  "t": "kg cada"
+ },
+ "legendas": {
+  "shopee": "Kit 2 banquetas baixas de aço reforçado, assento a 47 cm e suporta 125 kg\n#banquetabaixa #balcaodecozinha #ilhagourmet #cozinhaamericana",
+  "shopee2": "Banqueta quadrada para lanchonete e bar, aço com pintura epóxi e courino\n#banquetalanchonete #moveiscomerciais #banquetaparabalcao #banquetaparabar",
+  "shopee3": "Par de banquetas com espuma e courino fácil de limpar, bem avaliado\n#banquetaquadrada #areadechurrasqueira #varandagourmet #banquetadeaco",
+  "reels": "Qual altura de banqueta serve no seu balcão? A regra do anúncio: 25 a 30 cm entre o assento e o tampo. Kit com 2, aço reforçado que suporta 125 kg 👇\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#banquetabaixa #balcaodecozinha #areagourmet #cozinhaamericana"
+ },
+ "notas": "Fotos 01 e 09 (mesma cor e modelo baixo); 02 é modelo alto, 03/04 têm texto, 05-08/10/11 outras cores. Cor não vai no texto. Risco: Pruna somar/tirar banqueta ou travessa do encosto (conferir 2 banquetas, 4 pés, 2 travessas); cena 3 mostra só 1 banqueta de propósito (recorte); medida 47 cm vale só para o modelo baixo da foto 01."
+}

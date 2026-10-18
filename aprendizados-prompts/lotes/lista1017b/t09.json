@@ -1,0 +1,155 @@
+{
+ "nome": "t09_lustre_caracol_dourado",
+ "titulo_produto": "Lustre Caracol Cristal Acrílico Dourado",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r09-fotos/01.jpg",
+  "../lista1016/r09-fotos/02.jpg",
+  "t09-cenas/cena1.png",
+  "t09-cenas/cena2.png",
+  "t09-cenas/cena3.png"
+ ],
+ "cor_destaque": "B8892E",
+ "contagem": {
+  "lustre": 1,
+  "corrente": 1
+ },
+ "diretor": {
+  "angulo": "Brilho de lustre de cristal com a praticidade de lâmpada comum: soquete E27, bivolt e corrente ajustável.",
+  "palavra": "caracol",
+  "prova": "Metal dourado, pedrarias em acrílico, soquete E27 em porcelana, bivolt, corrente ajustável (45 cm no total) e 6 meses de garantia; bem avaliado.",
+  "errc": "E: foto parada com zoom e o 'olha que lindo'. R: adjetivo de luxo. E: o E27 e o bivolt que tiram o medo de instalar e o brilho real das pedrarias. C: o antes e depois do teto (teto apagado vs a sala da foto 02).",
+  "publico_nao_obvio": "Dona de salão de beleza, estúdio de unhas ou loja que quer uma vitrine que pare quem passa.",
+  "por_que_converte": "Hormozi: reduz o esforço percebido (lâmpada comum, bivolt). Schwartz: o Reels abre no problema (teto apagado). Sutherland: não é um lustre, é a sala de revista da foto 02.",
+  "visual": "Espiral dourada sobre preto total, câmera chegando devagar com pontos de luz correndo nas pedrarias: contraste máximo que destoa do feed claro."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle view from below, 50mm lens. The exact chandelier from the reference images, identical shape, color, material and every part: gold metal round drum chandelier, curving gold scroll bands draped with strands of clear faceted acrylic beads ending in teardrops, on a thin gold chain. Its shape is a short round drum, about as wide as it is tall, small, about as wide as a dinner plate. Hanging from a white ceiling over a round marble entry table, foyer, plain deep charcoal wall. Evening, chandelier lit warm. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text. No measurement lines, no dimension labels.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Very slow push-in from below. The gold spiral chandelier with strands of clear faceted acrylic beads on its gold chain stays perfectly still and unchanged, every strand identical; the whole chandelier stays fully in frame. Tiny glints of warm light travel across the beads. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t09-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 2,
+   "pruna_t": 2.0,
+   "fiscal": "2.0"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up from slightly below on the gold bands and bead strands, 85mm lens. The exact chandelier from the reference images, identical shape, color, material and every part: gold metal round drum chandelier, curving gold scroll bands draped with strands of clear faceted acrylic beads ending in teardrops, on a thin gold chain. Its shape is a short round drum, about as wide as it is tall, small, about as wide as a dinner plate. Plain dark charcoal background. Warm sparkles on the faceted beads. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text. No measurement lines, no dimension labels.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Slow lateral dolly left. The gold spiral chandelier with strands of clear faceted acrylic beads on its gold chain stays perfectly still and unchanged, every strand identical. Soft warm highlights glide slowly along the gold bands, tiny glints on the beads. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t09-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 3,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot of an entrance hall at dusk. The exact chandelier from the reference images, identical shape, color, material and every part: gold metal round drum chandelier, curving gold scroll bands around its top draped with strands of clear faceted acrylic beads ending in teardrops, on a thin gold chain. A woman seen from behind walks into the hall carrying a handbag under the lit chandelier; the chandelier is small, about as wide as a dinner plate, hanging on its thin chain. Its shape is a short round drum, about as wide as it is tall: never a spiral or a tower. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "She slowly walks forward while the camera drifts gently. The chandelier stays perfectly still and unchanged. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t09-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide shot from a slightly low angle, 35mm lens. The exact chandelier from the reference images, identical shape, color, material and every part: gold metal spiral chandelier, curving gold scroll bands draped with strands of clear faceted acrylic beads ending in teardrops, on a thin gold chain. Real size, keep the scale true against the room and furniture: a small pendant: 25 cm gold base, 20 cm tall body hanging on a 25 cm chain. Hanging above a round travertine coffee table and a low cream sofa, plain warm-white walls. Blue-hour dusk in the window, chandelier glowing warm. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the chandelier. The gold spiral chandelier with strands of clear faceted acrylic beads on its gold chain stays perfectly still and unchanged, every strand identical. Warm light rests on the walls, blue dusk light glows softly in the window. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "foto": 4,
+   "fiscal": "ok"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre caracol dourado",
+     "titulo": "Brilho de [cristal] no teto",
+     "abertura": {
+      "grande": "E27",
+      "texto": "soquete comum, bivolt"
+     }
+    },
+    {
+     "rotulo": "Pedrarias em acrílico",
+     "titulo": "Corrente [ajustável] até 45 cm"
+    },
+    {
+     "rotulo": "Metal dourado",
+     "titulo": "Acende e a sala [muda]",
+     "fichas": [
+      "Bivolt 110v ou 220v",
+      "Aceita lâmpada LED",
+      "Garantia de 6 meses"
+     ],
+     "cta": "Toque no carrinho e acenda o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Seu [salão] merece esse teto",
+     "sub": "Lustre caracol em metal dourado"
+    },
+    {
+     "titulo": "Cada fio em [pedrarias]",
+     "sub": "Acrílico sobre metal dourado"
+    },
+    {
+     "titulo": "Acenda o seu pelo [carrinho]",
+     "sub": "Bivolt, LED ou incandescente"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Olhe para cima",
+     "titulo": "Sala bonita, teto [apagado]?",
+     "sub": "Falta uma peça lá em cima"
+    },
+    {
+     "rotulo": "Lustre caracol dourado",
+     "titulo": "Soquete [E27] de porcelana",
+     "sub": "LED, fluorescente ou incandescente"
+    },
+    {
+     "rotulo": "Bivolt, 110v ou 220v",
+     "titulo": "Agora o teto [brilha]",
+     "sub": "Base de metal dourado",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Lustre caracol em metal dourado com pedrarias em acrílico, bivolt e soquete E27\n#lustredourado #lustredecristal #lustresala #decoracaodesala",
+  "shopee2": "Lustre dourado para salão ou loja, corrente ajustável e soquete de porcelana\n#lustreparasalao #decoracaodeloja #lustrependente #iluminacaodecorativa",
+  "shopee3": "Lustre de pedrarias bem avaliado, aceita lâmpada LED e tem 6 meses de garantia\n#lustrecaracol #pendentedourado #lustrequarto #luminariadeteto",
+  "reels": "Sala bonita e teto apagado? Este lustre caracol dourado usa soquete E27 comum e é bivolt ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustredourado #lustredecristal #decoracaodesala #iluminacaodecorativa"
+ },
+ "notas": "Cenas 1-2 da 01 sem as faixas brancas laterais; cena 3 é a sala da 02 por código (só 534 px úteis de largura, pequena para Pruna). 03/04 descartadas (banner com letras). Diâmetro fora do texto (título 30 x descrição 25 cm). Risco: Pruna redesenhar fios e pedrarias ou o número de voltas do caracol, e fazer os pendentes balançarem; conferir contra a 01. Pedrarias são acrílico; lâmpada não inclusa."
+}

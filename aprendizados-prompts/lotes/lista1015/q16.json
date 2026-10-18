@@ -1,0 +1,108 @@
+{
+  "nome": "q16_mesa_quadrada_80",
+  "titulo_produto": "Mesa Quadrada Sofia 80 cm 4 Lugares",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q16-fotos/01.jpg"
+  ],
+  "cor_destaque": "C88A4A",
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "Slow push-in, the table and objects stay still, soft shadows from the plants shift slightly."
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical. A square light oak wood-look MDF dining table 80 cm wide from reference photo 1: thin 15 mm top with softly rounded corners, four slim tapered varnished solid wood legs splayed outward. Small bright kitchen corner with white walls and a light wood floor, one green plant in a grey pot beside it, only one plain grey mug on the table. 50 mm, soft window light, neutral white balance. The whole product fills 25-60% of the image height, centered, empty floor around. No text, no letters, no logos, no printing anywhere in the image.",
+      "movimento": "Gentle lateral dolly, steam-free, nothing else moves."
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        100,
+        100,
+        900,
+        900
+      ],
+      "movimento": "slow push-in"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Mesa Sofia · 80 x 80 cm",
+          "titulo": "[4 lugares] em cozinha pequena",
+          "abertura": {
+            "grande": "80",
+            "texto": "cm e cabem 4 lugares"
+          }
+        },
+        {
+          "rotulo": "Pé de madeira maciça",
+          "titulo": "Só [rosquear] os pés"
+        },
+        {
+          "rotulo": "Nota 4,88",
+          "titulo": "Tampo fácil de [limpar]",
+          "fichas": [
+            "80 x 80 cm",
+            "Até 60 kg",
+            "Nota 4,88"
+          ],
+          "cta": "Toque no carrinho e monte a sua"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Cozinha [pequena]? Resolveu",
+          "sub": "Mesa quadrada 80 cm"
+        },
+        {
+          "titulo": "Vem [pré-montada]",
+          "sub": "É só rosquear os pés"
+        },
+        {
+          "titulo": "Leve a sua no [carrinho]",
+          "sub": "Nota 4,88 · 254 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_cartao",
+      "cenas": [
+        {
+          "rotulo": "254 avaliações · nota 4,88",
+          "titulo": "A mesa que [cabe] em qualquer canto"
+        },
+        {
+          "rotulo": "Mesa Sofia · MDF",
+          "titulo": "[4 lugares] em 80 cm",
+          "sub": "Tampo limpa com pano úmido"
+        },
+        {
+          "rotulo": "Pés de madeira maciça",
+          "titulo": "Chega [pré-montada]",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Mesa quadrada Sofia 80 cm, 4 lugares, tampo MDF e pés de madeira maciça. Vem pré-montada.\n#mesa #cozinha #decoracao #achadinhosshopee",
+    "shopee2": "Mesa quadrada de 80 cm para 4 pessoas, pés de madeira maciça. Só rosquear os pés.\n#mesa #cozinhapequena #casa #achadinhosshopee",
+    "reels": "A mesa que cabe em qualquer canto 🪑 80 cm, 4 lugares, tampo MDF fácil de limpar e pés de madeira maciça. Nota 4,88. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#mesa #cozinhapequena #decoracao #casa"
+  },
+  "comentario": "🛒 Mesa Quadrada Sofia 80 cm 4 Lugares aqui: {link}",
+  "selo": {
+    "n": "4,88",
+    "t": "254 avaliações"
+  },
+  "angulos_reais": false,
+  "imagens_conferidas": true
+}

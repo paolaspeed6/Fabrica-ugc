@@ -1,0 +1,108 @@
+{
+ "nome": "tapete_espacodebicho",
+ "titulo_produto": "Tapete Espaço de Bicho",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p11-fotos/01.jpg",
+  "p11-fotos/03.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. No people, no hands. No phone frame, no device bezel, no borders, no added text. Bright modern living room with a light wood floor and soft neutral daylight, sofa softly blurred in the background. An open plain white dog training pad (quilted absorbent center, thin border, like the pad under the dog in reference photo 2) lies flat on the floor, centered slightly LEFT, between 45% and 62% of the image height, with a small blue liquid stain in its center. The RIGHT third of the floor is empty. No bag or packaging anywhere, no text, no letters, no logos, no printing on the pad or anywhere in the image.",
+   "composicao": false,
+   "sobrepor": {
+    "foto": "p11-fotos/04.jpg",
+    "recorte": [
+     440,
+     170,
+     945,
+     870
+    ],
+    "x": 0.72,
+    "base": 0.6,
+    "altura": 0.27
+   },
+   "movimento": "Static camera on a tripod, the camera does not move. The blue liquid soaks into the pad and disappears, the surface turns dry."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. No people, no hands. No phone frame, no device bezel, no borders, no added text. Top-down DSLR photo filling the entire frame edge to edge, not a screen: one open plain white dog training pad (quilted absorbent center, thin border) lying flat on a light wood floor, centered between 30% and 60% of the image height, with blue liquid being absorbed in its center. No bag or packaging anywhere, no text, no letters, no logos, no printing on the pad or anywhere in the image.",
+   "movimento": "Very slow overhead push-in; the blue liquid sinks into the pad quickly and the stain shrinks until the surface looks dry."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. No people, no hands. No phone frame, no device bezel, no borders, no added text. A grey and white miniature schnauzer exactly like the dog in reference photos 1 and 2 sits calmly on an open plain white training pad in a bright living room with a light wood floor and soft daylight, dog and pad centered slightly LEFT between 30% and 62% of the image height. The RIGHT third of the floor is empty. No bag or packaging anywhere, no text, no letters, no logos, no printing on the pad or anywhere in the image.",
+   "composicao": false,
+   "sobrepor": {
+    "foto": "p11-fotos/04.jpg",
+    "recorte": [
+     440,
+     170,
+     945,
+     870
+    ],
+    "x": 0.77,
+    "base": 0.6,
+    "altura": 0.22
+   },
+   "movimento": "Static camera on a tripod, the camera does not move. The dog breathes, blinks and wags its tail gently, staying on the pad."
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Espaço de Bicho · 60 x 50 cm",
+     "titulo": "[200 TAPETES] num pedido só",
+     "subir": 310
+    },
+    {
+     "rotulo": "Absorção instantânea",
+     "titulo": "Seca [na hora], sem poça",
+     "escala": 0.72
+    },
+    {
+     "rotulo": "Mais grosso que o comum",
+     "titulo": "Chão limpo e [sem cheiro]",
+     "fichas": [
+      "200 unidades",
+      "60 x 50 cm",
+      "Atrativo canino"
+     ],
+     "cta": "Garanta os 200 no carrinho",
+     "subir": 540
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "Quem tem cachorro sabe",
+     "titulo": "Chega de comprar tapete [toda semana]",
+     "subir": 470
+    },
+    {
+     "rotulo": "200 unidades · 60 x 50 cm",
+     "titulo": "Absorve [na hora]",
+     "sub": "Mais grosso e com controle de vazamento",
+     "escala": 0.64
+    },
+    {
+     "rotulo": "Atrativo canino",
+     "titulo": "Ele aprende o [lugar certo]",
+     "cta": "Link no comentário",
+     "subir": 700
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Tapete higiênico Espaço de Bicho 60 x 50 cm, 200 unidades. Mais grosso, com atrativo canino.\n#tapetehigienico #pet #cachorro #achadinhosshopee",
+  "reels": "Chega de comprar tapete toda semana 🐶 200 tapetes Espaço de Bicho, mais grossos, que absorvem na hora e ajudam seu cão a acertar o lugar. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#cachorro #pet #dogsofinstagram #tapetehigienico"
+ },
+ "comentario": "🛒 Tapete Espaço de Bicho aqui: {link}",
+ "embalagem_com_letras": true,
+ "imagens_conferidas": true
+}

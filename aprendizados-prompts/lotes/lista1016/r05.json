@@ -1,0 +1,124 @@
+{
+ "nome": "r05_lustre_led_quadrado_24w",
+ "titulo_produto": "Lustre LED 24W quadrado (Castelo de Luz)",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r05-fotos/01.jpg"
+ ],
+ "cor_destaque": "B8741A",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r05-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "recorte": [
+    90,
+    10,
+    690,
+    610
+   ],
+   "clipe": "r05-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "codigo": "sobe",
+   "zoom": 1.07,
+   "recorte": [
+    0,
+    100,
+    800,
+    700
+   ],
+   "clipe": "r05-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre LED quadrado 24W",
+     "titulo": "Nota [4,91] em 3.075 avaliações",
+     "abertura": {
+      "grande": "4,91",
+      "texto": "de nota em 3.075 avaliações"
+     }
+    },
+    {
+     "rotulo": "Acrílico com alumínio",
+     "titulo": "Borda [trabalhada] no acrílico"
+    },
+    {
+     "rotulo": "Cor fixa, quadrado e bivolt",
+     "titulo": "Quadrado de [34 cm] de lado",
+     "fichas": [
+      "24W",
+      "Bivolt",
+      "34 x 34 x 10 cm"
+     ],
+     "cta": "Toque no carrinho e escolha a sua"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Seu teto [merece] esse brilho",
+     "sub": "Lustre LED quadrado de 24W"
+    },
+    {
+     "titulo": "Acabamento de [acrílico]",
+     "sub": "Acrílico com base de alumínio"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Bivolt, 24W e cor fixa"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre quadrado LED",
+     "titulo": "Por que ele tem [4,91]?",
+     "sub": "3.075 avaliações na Shopee"
+    },
+    {
+     "rotulo": "Detalhe da borda",
+     "titulo": "Olha esse [acabamento]",
+     "sub": "Acrílico sobre base de alumínio"
+    },
+    {
+     "rotulo": "Altura",
+     "titulo": "Só [10 cm] de altura",
+     "sub": "Quadrado, 24W e bivolt",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,91",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Lustre LED 24W quadrado, nota 4,91 em 3.075 avaliações\n#lustreled #plafonled #decoracaoquarto #iluminacaoteto",
+  "shopee2": "Plafon de acrílico e alumínio, 34 x 34 cm e bivolt\n#lustreteto #luminariadeteto #decoracaosala #casadecorada",
+  "shopee3": "Lustre quadrado 24W com borda trabalhada, bivolt, cor fixa\n#lustrequadrado #iluminacaoled #reformaquarto #decoracaointeriores",
+  "reels": "Quem diria que um lustre de 24W leva 4,91 de nota? 😍 Quadrado, bivolt e com borda de acrílico.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrequadradoled #plafonquadrado #quartomoderno #tetodecorado"
+ },
+ "notas": "Só a foto 01 (quadrado, cenário de quarto) e recortes dela; fotos redondas, 03 (colagem) e 05 (texto) descartadas por serem outro modelo ou terem texto. Gancho: prova social 4,91 / 3.075. Anúncio irmão do r14 (mesma foto 01, mesma loja, mesmo preço): este foca em cor fixa/nota, o r14 em troca de 3 cores. Risco: luz da foto é branca fria, não prometer cor; 'cor fixa' = variação escolhida na compra."
+}

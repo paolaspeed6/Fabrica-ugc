@@ -1,0 +1,129 @@
+{
+  "nome": "q21_tapete_petcharm_200",
+  "titulo_produto": "Tapete Higiênico PetCharm Slim 200 un",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q21-fotos/01.jpg",
+    "q21-fotos/02.jpg"
+  ],
+  "cor_destaque": "AD95C8",
+  "embalagem_com_letras": true,
+  "cenas": [
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text, no letters, no logos anywhere in the image. Bright modern living room with a light wood floor and soft neutral daylight, sofa softly blurred in the background. An open plain white dog training pad (flat, thin, thin border) lies flat on the floor, centered slightly LEFT, between 40% and 55% of the image height. The RIGHT third of the floor is empty. No bag or packaging anywhere, no printing on the pad.",
+      "composicao": false,
+      "sobrepor": {
+        "foto": "q21-fotos/02.jpg",
+        "recorte": [
+          235,
+          250,
+          700,
+          885
+        ],
+        "x": 0.74,
+        "base": 0.6,
+        "altura": 0.3
+      },
+      "movimento": "Static camera on a tripod, the camera does not move. Very subtle light shift only."
+    },
+    {
+      "foto": 1,
+      "movimento": "slow push-in, minimal motion so the package lettering stays intact"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text, no letters, no logos anywhere in the image. Top-down DSLR photo filling the entire frame edge to edge: one open plain white dog training pad lying flat on a light wood floor, centered slightly LEFT between 30% and 55% of the image height. The RIGHT third of the floor is empty. No bag or packaging anywhere, no printing on the pad.",
+      "composicao": false,
+      "sobrepor": {
+        "foto": "q21-fotos/02.jpg",
+        "recorte": [
+          235,
+          250,
+          700,
+          885
+        ],
+        "x": 0.75,
+        "base": 0.6,
+        "altura": 0.3
+      },
+      "movimento": "Very slow overhead push-in, otherwise static."
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "PetCharm Slim · 50 x 60 cm",
+          "titulo": "[200 tapetes] a menos de R$ 1",
+          "abertura": {
+            "grande": "200",
+            "texto": "tapetes a menos de R$ 1"
+          }
+        },
+        {
+          "rotulo": "6 camadas de absorção",
+          "titulo": "Borda [segura] o xixi no lugar"
+        },
+        {
+          "rotulo": "Nota 4,91",
+          "titulo": "Com eliminador de [odores]",
+          "fichas": [
+            "200 unidades",
+            "50 x 60 cm",
+            "Nota 4,91"
+          ],
+          "cta": "Toque no carrinho e leve os 200"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "200 tapetes por [menos de R$ 1]",
+          "sub": "PetCharm Slim 50 x 60 cm"
+        },
+        {
+          "titulo": "[6 camadas] de absorção",
+          "sub": "Com eliminador de odores"
+        },
+        {
+          "titulo": "Leve os [200] no carrinho",
+          "sub": "Nota 4,91 · 2.324 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_cartao",
+      "cenas": [
+        {
+          "rotulo": "2.324 avaliações",
+          "titulo": "Nota [4,91] em tapete higiênico?"
+        },
+        {
+          "rotulo": "4 pacotes de 50",
+          "titulo": "[200 tapetes] por menos de R$ 1 cada",
+          "sub": "Para cães de pequeno porte"
+        },
+        {
+          "rotulo": "PetCharm Slim",
+          "titulo": "Barreira nas bordas, chão [limpo]",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "4,91",
+    "t": "2.324 avaliações"
+  },
+  "legendas": {
+    "shopee": "Tapete higiênico PetCharm Slim 50 x 60 cm, 200 unidades, menos de R$ 1 cada. #tapetehigienico #cachorro #pet #achadinhosshopee",
+    "shopee2": "Kit com 200 tapetes higiênicos PetCharm Slim, 6 camadas e eliminador de odores. #tapetehigienico #pet #cachorro #achadinhosshopee",
+    "reels": "Nota 4,91 com 2.324 avaliações. 200 tapetes PetCharm por menos de R$ 1 cada, com bordas antivazamento. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#cachorro #pet #tapetehigienico #petshop"
+  },
+  "comentario": "🛒 Tapete PetCharm Slim 200 un aqui: {link}",
+  "imagens_conferidas": true
+}

@@ -1,0 +1,102 @@
+{
+  "nome": "q19_estante_aco_198",
+  "titulo_produto": "Estante de Aço 5 Prateleiras 198 cm",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q19-fotos/01.jpg",
+    "q19-fotos/02.jpg"
+  ],
+  "cor_destaque": "F5A623",
+  "cenas": [
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text, no letters, no logos anywhere in the image. Clean modern garage with a light grey concrete floor and a plain white wall. Inside it stands a tall black steel boltless shelving unit with 5 plain flat black shelves and perforated vertical posts, exactly as in reference photo 1 (black matte, same proportions), no text, no labels, loaded with identical plain brown cardboard boxes without printing and a few plain plastic storage bins. 35 mm, soft daylight from a side window, neutral white balance. The whole product fills 55-60% of the image height, centered, empty floor below.",
+      "movimento": "slow push-in"
+    },
+    {
+      "foto": 0,
+      "movimento": "slow push-in, minimal motion, the photo stays sharp so the numbers stay readable"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text, no letters, no logos anywhere in the image. Tidy storage room with a pale wall and light tile floor. Against the wall stands a tall black steel boltless shelving unit with 5 plain flat black shelves and perforated vertical posts, exactly as in reference photo 1 (black matte, same proportions), no text, no labels, shelves neatly filled with plain unprinted cardboard boxes and folded blankets. 50 mm, shallow depth of field, soft even light, neutral white balance. The whole product fills 55-60% of the image height, centered, empty floor below.",
+      "movimento": "gentle lateral dolly"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Estante de aço · 198 x 90 cm",
+          "titulo": "[150 kg] de carga na estante",
+          "abertura": {
+            "grande": "150",
+            "texto": "kg de carga na estante"
+          }
+        },
+        {
+          "rotulo": "5 prateleiras ajustáveis",
+          "titulo": "Cada nível [segura] 25 kg"
+        },
+        {
+          "rotulo": "Nota 4,73 · 2.104 avaliações",
+          "titulo": "Montagem [simples] com parafusos",
+          "fichas": [
+            "198 x 90 cm",
+            "5 prateleiras",
+            "Nota 4,73"
+          ],
+          "cta": "Toque no carrinho e organize"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Estante de [150 kg] por menos de R$ 36 o nível",
+          "sub": "5 prateleiras de aço"
+        },
+        {
+          "titulo": "Altura de [198 cm] organizada",
+          "sub": "Prateleiras ajustáveis"
+        },
+        {
+          "titulo": "Leve a sua no [carrinho]",
+          "sub": "Nota 4,73 · 2.104 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_cartao",
+      "cenas": [
+        {
+          "rotulo": "2.104 avaliações",
+          "titulo": "A estante que [2 mil] pessoas aprovaram"
+        },
+        {
+          "rotulo": "Aço · 198 x 90 cm",
+          "titulo": "5 prateleiras até [150 kg]",
+          "sub": "Ajustáveis, montagem simples"
+        },
+        {
+          "rotulo": "Nota 4,73",
+          "titulo": "Garagem, loja ou [estoque]",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "4,73",
+    "t": "2.104 avaliações"
+  },
+  "legendas": {
+    "shopee": "Estante de aço 198 x 90 cm, 5 prateleiras, até 150 kg. #estante #organizacao #garagem #achadinhosshopee",
+    "shopee2": "Estante industrial de aço com 5 prateleiras ajustáveis, 25 kg por nível. #estanteaco #organizacao #casa #achadinhosshopee",
+    "reels": "2 mil avaliações, nota 4,73. Estante de aço 198 cm, 5 prateleiras ajustáveis e até 150 kg. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#estante #organizacao #garagem #casa"
+  },
+  "comentario": "🛒 Estante de Aço 5 Prateleiras aqui: {link}",
+  "imagens_conferidas": true
+}

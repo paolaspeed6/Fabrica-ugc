@@ -1,0 +1,73 @@
+{
+ "camada": "camada_historia.html",
+ "legenda_chars": 30,
+ "legenda_no_fim": true,
+ "tempo_voz": 1.05,
+ "camada_dados": {
+  "gancho": "50 anos no fundo do rio",
+  "fim_txt": "HISTÓRIAS DE PESCADOR TODOS OS DIAS",
+  "fim_cta": "SEGUE O SEU BARRANCO"
+ },
+ "cenas": [
+  {
+   "clipe": "cenas/v6code/m1b.mp4",
+   "voz": "cenas/v6_n1.mp3",
+   "texto": "Isso no fundo do rio... são cinquenta anos do meu avô.",
+   "flex": true,
+   "desloc": 0.15,
+   "zoom": 0.02
+  },
+  {
+   "clipe": "cenas/v6code/m2.mp4",
+   "voz": "cenas/v6_n2.mp3",
+   "texto": "Todo dia, antes de pescar, ele jogava uma moeda na água. <#0.2#> Dizia que era pra pagar o rio.",
+   "flex": true,
+   "zoom": 0.02
+  },
+  {
+   "clipe": "cenas/v6_v3.mp4",
+   "voz": "cenas/v6_n3.mp3",
+   "texto": "Eu achava besteira.",
+   "flex": true,
+   "zoom": 0.03,
+   "folga": 0.5
+  },
+  {
+   "clipe": "cenas/v6code/v4mix.mp4",
+   "voz": "cenas/v6_n4.mp3",
+   "texto": "Quando ele morreu, fui pescar sem pagar. <#0.2#> Três dias, nenhum peixe. <#0.2#> No terceiro, a canoa quase virou.",
+   "zoom": 0.03,
+   "vol_amb": 0.6
+  },
+  {
+   "clipe": "cenas/pruna/m5_pruna.mp4",
+   "voz": "cenas/v6_n5.mp3",
+   "texto": "No quarto dia, peguei uma moeda da lata dele... e joguei.",
+   "zoom": 0.0
+  },
+  {
+   "clipe": "cenas/v6code/m1b.mp4",
+   "voz": "cenas/v6_n6.mp3",
+   "texto": "Ela caiu em cima das outras.",
+   "flex": true,
+   "zoom": 0.03,
+   "folga": 0.2
+  },
+  {
+   "clipe": "cenas/v6_peixe_vid.mp4",
+   "voz": "cenas/v6_n7.mp3",
+   "texto": "E a linha puxou na hora.",
+   "desloc": 0.05,
+   "zoom": 0.0,
+   "vol_amb": 0.9
+  }
+ ],
+ "fim": {
+  "dur": 4.2,
+  "voz": "cenas/v6_n8.mp3",
+  "texto": "Até hoje... eu pago o rio.",
+  "clipe": "cenas/v6code/m1b.mp4",
+  "desloc": 0.3
+ },
+ "carimbos": []
+}

@@ -1,0 +1,142 @@
+{
+ "nome": "s15_plafon_cristal_quadrado",
+ "titulo_produto": "Lustre Plafon Cristal Acrílico Quadrado 2 Camadas",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r15-fotos/01.jpg",
+  "../lista1016/r15-fotos/06.jpg",
+  "../lista1016/r15-fotos/04.jpg"
+ ],
+ "cor_destaque": "B07D3A",
+ "contagem": {
+  "camadas": 2,
+  "soquetes_e27": 1
+ },
+ "diretor": {
+  "angulo": "Um só plafon de 416 castanhas troca a lâmpada pelada do teto por brilho, usando uma lâmpada E27 comum.",
+  "palavra": "brilho",
+  "prova": "416 castanhas de cristal acrílico de alto brilho presas por argolas de aço inox que não enferrujam; milhares de avaliações",
+  "errc": "E: colagem de 3 cores e 'achadinho'. R: lista de especificações. E: macro real das castanhas e argolas inox com a luz correndo nas facetas. C: a dor da lâmpada pelada e o lavabo como palco.",
+  "publico_nao_obvio": "quem monta lavabo, closet ou cantinho de beleza e quer brilho com soquete E27 comum",
+  "por_que_converte": "Hopkins: número exato (416) e material (inox, acrílico 3 mm) dão certeza. Schwartz: o Reels abre no problema visível (lâmpada pelada) e a Shopee abre na prova.",
+  "visual": "1º segundo: plafon prateado inteiro com brilhos correndo pelas facetas enquanto a câmera avança; o faiscar em movimento quebra o feed de fotos paradas de lustre."
+ },
+ "cenas": [
+  {
+   "foto": 1,
+   "pruna": null,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s15-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Very slow push-in on a square two-tier ceiling chandelier: silver aluminum base, silver rods and socket, clear acrylic plate, hanging strands of clear faceted acrylic crystals on small steel rings, white studio background. The whole chandelier stays fully in frame, perfectly still and unchanged, exactly 2 square tiers, identical to the photo. Soft highlights glide across the facets. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "fiscal": "codigo"
+  },
+  {
+   "foto": 1,
+   "recorte": [
+    130,
+    360,
+    890,
+    980
+   ],
+   "pruna": null,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "s15-cenas/cena2.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Slow lateral dolly right across close-up hanging strands of clear faceted acrylic crystals joined by small stainless steel rings, below a clear acrylic plate, white studio background. The crystal strands stay perfectly still and unchanged, every ring and crystal identical to the photo. Tiny sparkling highlights travel slowly across the facets as the soft light shifts. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "fiscal": "codigo"
+  },
+  {
+   "foto": 2,
+   "pruna": null,
+   "codigo": "pull",
+   "zoom": 1.07,
+   "clipe": "s15-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Very slow pull-back reveal of a square ceiling chandelier seen from below: polished silver base, clear acrylic plate, dense strands of clear faceted acrylic crystals on small steel rings, white studio background. The whole chandelier stays fully in frame, perfectly still and unchanged, exactly 2 square tiers, identical to the photo. Soft glints shimmer through the crystals. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "fiscal": "codigo"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Plafon quadrado prateado",
+     "titulo": "[416] castanhas de alto brilho",
+     "abertura": {
+      "grande": "416",
+      "texto": "castanhas de cristal acrílico"
+     }
+    },
+    {
+     "rotulo": "Argolas de aço inox",
+     "titulo": "Cada castanha presa em [inox]"
+    },
+    {
+     "rotulo": "Base de alumínio prateado",
+     "titulo": "Brilha com [1] lâmpada E27",
+     "fichas": [
+      "2 camadas",
+      "Altura 25 cm",
+      "Placa acrílica 3 mm"
+     ],
+     "cta": "Toque no carrinho e leve o brilho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "O lavabo vai [brilhar]",
+     "sub": "Se encaixa em vários ambientes"
+    },
+    {
+     "titulo": "Placas [encaixam] na base",
+     "sub": "Vem com manual de montagem"
+    },
+    {
+     "titulo": "Leve o brilho no [carrinho]",
+     "sub": "Usa lâmpada E27 comum ou LED"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Plafon de cristal acrílico",
+     "titulo": "Lâmpada [pelada] no teto ainda?",
+     "sub": "Esse plafon resolve em 2 camadas"
+    },
+    {
+     "rotulo": "Castanhas de alto brilho",
+     "titulo": "[416] peças de cristal acrílico",
+     "sub": "Argolas de aço inox, sem ferrugem"
+    },
+    {
+     "rotulo": "Decoração clássica e moderna",
+     "titulo": "Ilumina com [uma] lâmpada só",
+     "sub": "Milhares de avaliações",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Plafon quadrado de cristal acrílico com 416 castanhas e argolas de aço inox\n#plafoncristal #lustrequadrado #lustreprateado #lustrelavabo",
+  "shopee2": "Lustre plafon 2 camadas com base de alumínio prateado e lâmpada E27\n#lustredeteto #plafonquadrado #decoracaolavabo #lustrecloset",
+  "shopee3": "Plafon de cristal acrílico bem avaliado, 25 cm de altura e manual de montagem\n#lustreacrilico #plafonsala #lustrequarto #iluminacaodecorativa",
+  "reels": "Lâmpada pelada no teto? Esse plafon de 416 castanhas de cristal acrílico ilumina com uma lâmpada E27 só ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrecristal #plafondeteto #lustreacrilico #iluminacaosala"
+ },
+ "notas": "Foto 01 é colagem de 3 acabamentos; uso só a variação prata (06 lateral, 04 de baixo), que bate com 'base em alumínio prateado' da descrição. Riscos: Pruna pode redesenhar ou balançar os fios de castanhas (contar 2 camadas por cena); no close da cena 2 conferir argolas."
+}

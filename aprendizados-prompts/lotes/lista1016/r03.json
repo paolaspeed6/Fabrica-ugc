@@ -1,0 +1,119 @@
+{
+ "nome": "r03_luminaria_piso_paris",
+ "titulo_produto": "Luminária de Piso Paris Tripé Madeira",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r03-fotos/01.jpg",
+  "r03-fotos/04.jpg"
+ ],
+ "cor_destaque": "A8672E",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r03-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "sobe",
+   "zoom": 1.07,
+   "clipe": "r03-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    60,
+    40,
+    660,
+    640
+   ],
+   "codigo": "pan_dir",
+   "zoom": 1.1,
+   "clipe": "r03-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Luminária de piso tripé",
+     "titulo": "Nota [4,96] na luminária",
+     "abertura": {
+      "grande": "4,96",
+      "texto": "de nota, 418 avaliações"
+     }
+    },
+    {
+     "rotulo": "Cúpula em tecido cor palha",
+     "titulo": "Luz suave e [acolhedora]"
+    },
+    {
+     "rotulo": "Base de madeira maciça",
+     "titulo": "Altura total de [160 cm]",
+     "fichas": [
+      "Madeira maciça",
+      "Cúpula 40 x 25 cm",
+      "Soquete E27, bivolt"
+     ],
+     "cta": "Toque no carrinho e leve a sua"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Canto de leitura [aconchegante]",
+     "sub": "Abajur de chão com tripé"
+    },
+    {
+     "titulo": "Tripé de [madeira] maciça",
+     "sub": "Três pés firmes e elegantes"
+    },
+    {
+     "titulo": "Leve a sua no [carrinho]",
+     "sub": "418 avaliações, nota 4,96"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Abajur de chão Paris",
+     "titulo": "Sala com [luz] acolhedora",
+     "sub": "Cúpula em tecido cor palha"
+    },
+    {
+     "rotulo": "Montagem descomplicada",
+     "titulo": "Monta rápido, sem [drama]",
+     "sub": "Fiação de 2 metros"
+    },
+    {
+     "rotulo": "Sala, quarto ou escritório",
+     "titulo": "Combina com [qualquer] canto",
+     "sub": "Bivolt, soquete E27",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,96",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Luminária de piso tripé em madeira, nota 4,96 e 160 cm de altura\n#luminariadepiso #abajurdechao #decoracaosala #luminariamadeira",
+  "shopee2": "Abajur de chão Paris com cúpula em tecido palha e base de madeira maciça\n#abajurdecorativo #luminariatripe #cantodeleitura #decoracaoquarto",
+  "shopee3": "Luminária de chão com 2 metros de fiação, bivolt e 418 avaliações\n#luminariamoderna #iluminacaoambiente #saladeestar #decoracaointeriores",
+  "reels": "Quer um canto de leitura mais aconchegante? 💡 Luminária de piso de madeira com cúpula palha e nota 4,96.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#luminariadepiso #abajurdechao #decoracaosala #cantodeleitura"
+ },
+ "notas": "Foto 01 (hero limpo) e 04 (close dos pés de madeira, sem texto) + recorte 600x600 da cúpula na 01. Descartadas 02 (colagem com texto) e 03 (infográfico com texto grande). Risco: fotos parecem renders; lâmpada não inclusa (não citei). Nota 4,96 é a prova mais forte."
+}

@@ -1,0 +1,151 @@
+{
+ "nome": "t21_tapete_sisal_3x2",
+ "titulo_produto": "Tapete de Sisal Sintético 3,00 x 2,00 m Sem Pelo",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r21-fotos/01.jpg",
+  "../lista1016/r21-fotos/02.jpg",
+  "../lista1016/r21-fotos/06.jpg",
+  "t21-cenas/cena1.png",
+  "t21-cenas/cena2.png",
+  "t21-cenas/cena3.png"
+ ],
+ "cor_destaque": "6E7F4E",
+ "contagem": {},
+ "diretor": {
+  "angulo": "O visual de sisal natural sem o problema do tapete que solta pelo: trama baixa, antiácaro e antialérgico, em 3 x 2 m.",
+  "palavra": "sem pelo",
+  "prova": "3,00 x 2,00 m, não levanta pelos (baixa trama), antiácaro e antialérgico, alta resistência para alto tráfego, não risca o piso, acabamento reforçado; bem avaliado",
+  "errc": "E: 'achadinho' e o zoom reto na sala. R: a lista de 7 destaques. E: o close real da trama baixa com o acabamento reforçado. C: a dor 'tapete soltando pelo pela casa?' e o consultório como cliente.",
+  "publico_nao_obvio": "dono de clínica ou consultório (o título cita os dois) que precisa de tapete sem pelo, antiácaro e de alto tráfego",
+  "por_que_converte": "Ries/Trout: dono da palavra 'sem pelo', repetida no gancho e no CTA. Schwartz: o Reels abre na dor do pelo espalhado e o close da trama é a demonstração (Hopkins).",
+  "visual": "1º segundo: a sala vista de cima com o tapete listrado inteiro e o sol da janela andando sobre ele; o plano aéreo é raro em vídeo de tapete e prende o dedo."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, square 1:1. High three-quarter view from a room corner, the whole rug fully visible with floor around it. The exact rug, a wide rectangle almost as wide as it is long, from the reference images, identical color, material and weave: one large wide rectangular low flat-weave sisal-look rug, beige with thin sage-green stripes along its length, narrow olive-green bound edge. It covers most of the floor of a bright living room: plain white walls, pale microcement floor, a low sand linen sofa with its front feet on the rug and a round travertine coffee table on the rug. Early morning sun draws long soft shadows across the weave. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text. Many thin evenly spaced pinstripes across the whole rug, no wide central band.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Very slow lateral dolly right across the room. The rug stays perfectly still and unchanged, its shape, pattern, color and edges identical to the photo; the whole rug stays fully in frame. Soft window light drifts slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t21-cenas/cena1.mp4",
+   "lento": 1.0,
+   "tamanho": "1440*1440",
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low-angle close-up of one rug corner, the low weave and reinforced bound edge in focus. The exact rug from the reference images, identical shape, color, material and every part: one large rectangular low flat-weave sisal-look rug, beige with thin sage-green stripes along its length, narrow olive-green bound edge. Real size, keep the scale true against the room and furniture: the rug measures 3.00 m by 2.00 m. Light oak floor. Warm raking side light from a window, macro 100 mm look. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Very slow push-in on the rug corner and its bound edge. The sisal rug stays perfectly still and unchanged, every stripe and stitch identical. Warm side light glides slowly across the weave and a few dust specks float in the beam. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t21-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 4
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, square 1:1. Low angle shot at floor level in a home office. The exact rug, a wide rectangle almost as wide as it is long, from the reference images, identical color, material and weave: one large wide rectangular low flat-weave sisal-look rug, beige with thin sage-green stripes along its length, narrow olive-green bound edge. A desk chair's wheels and a person's feet in slippers, cropped at the knees, rest on the large rug under a desk; the rug is wide, extending well beyond both sides of the desk. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text. Many thin evenly spaced pinstripes across the whole rug, no wide central band.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "The chair slowly rolls a little across the rug while the camera drifts gently. The rug keeps its exact weave, stripes and edges. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t21-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Top-down overhead shot from directly above, the whole rug fully visible inside the frame with floor around it, its long side running vertically in the frame and its true width-to-length proportion kept exactly as in the reference photo. The exact rug from the reference images, identical color, material and weave: one large wide rectangular low flat-weave sisal-look rug measuring 3.00 m by 2.00 m (proportion 3:2, almost as wide as it is long, never a narrow runner), beige with thin sage-green stripes along its 3 m length, narrow olive-green bound edge. Real size, keep the scale true against the room and furniture: the rug measures 3.00 m by 2.00 m. Calm home consultation room: the rug fills most of the floor, a light oak desk and one cream upholstered chair stand fully on it with wide rug margins around them, plain warm white walls. Dusk: a ceramic desk lamp glows warm, soft blue light from a window. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Very slow top-down descent from directly above the rug, the camera lowering gently toward the floor. The rug stays perfectly still and unchanged, its shape, pattern, color and edges identical to the photo; the whole rug stays fully in frame. Soft window light drifts slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": false,
+   "tamanho": "1440*1440",
+   "origem_foto": "recorte de cena1 (0, 300, 1440, 1440)",
+   "foto": 5
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Sisal sintético 3,00 x 2,00 m",
+     "titulo": "O sisal [sem pelo] da sala",
+     "abertura": {
+      "grande": "3x2",
+      "texto": "metros, fácil de limpar"
+     }
+    },
+    {
+     "rotulo": "Acabamento reforçado",
+     "titulo": "Feito pra [alto tráfego]"
+    },
+    {
+     "rotulo": "Não risca o piso",
+     "titulo": "Limpa [rápido], dura muito",
+     "fichas": [
+      "3,00 x 2,00 m",
+      "Antiácaro",
+      "Não levanta pelos"
+     ],
+     "cta": "Toque no carrinho e leve o seu 3x2"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Consultório pede tapete [sem pelo]",
+     "sub": "Antiácaro e antialérgico"
+    },
+    {
+     "titulo": "Aguenta [alto tráfego]",
+     "sub": "Superfície de poliéster"
+    },
+    {
+     "titulo": "Seu 3x2 está no [carrinho]",
+     "sub": "Clínica, sala ou escritório"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Tapete estilo sisal",
+     "titulo": "Tapete soltando [pelo] pela casa?",
+     "sub": "Trama baixa: não levanta pelos"
+    },
+    {
+     "rotulo": "Base de polipropileno",
+     "titulo": "Seu piso [sem riscos]",
+     "sub": "Estrutura leve e prática"
+    },
+    {
+     "rotulo": "Bem avaliado por quem comprou",
+     "titulo": "Visual de sisal [natural]",
+     "sub": "3,00 x 2,00 m, fácil de limpar",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Tapete sisal sintético 3,00 x 2,00 m que não levanta pelos e não risca o piso\n#tapetesisal #tapetesala #tapetesempelo #tapetegrande",
+  "shopee2": "Tapete estilo sisal para consultório e clínica, antiácaro e antialérgico\n#tapeteconsultorio #tapeteclinica #tapeteantialergico #sisalsintetico",
+  "shopee3": "Tapete sisal sintético bem avaliado, acabamento reforçado e fácil limpeza\n#tapetesisalsintetico #tapetequarto #tapeteescritorio #tapetemoderno",
+  "reels": "Tapete soltando pelo pela casa? Esse sisal sintético de 3,00 x 2,00 m tem trama baixa, é antiácaro e não risca o piso 🏡\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapetesisal #tapetesempelo #tapeteantialergico #decoracaosala"
+ },
+ "notas": "01 (render de cima, tapete inteiro), 02 (foto real da trama e do acabamento, por código: trama fina que a IA redesenharia) e 06 (foto real na sala, sem a faixa branca do topo). Riscos: listras finas podem gerar moiré e o Pruna pode mudar largura/quantidade de listras; 01 é mais bege-sálvia que as fotos reais 02/06 (cinza-esverdeado). Cor não citada na tela."
+}

@@ -1,0 +1,118 @@
+{
+  "nome": "r23_tapete_sisal_luxo_2x150",
+  "titulo_produto": "Tapete Sisal Sintético Luxo 2,00 x 1,50 m Ciadecor",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "r23-fotos/01.jpg",
+    "r23-fotos/11.jpg"
+  ],
+  "cor_destaque": "6F7F4F",
+  "cenas": [
+    {
+      "foto": 0,
+      "codigo": "push",
+      "zoom": 1.05,
+      "clipe": "r23-cenas/cena1.mp4",
+      "lento": 1.0
+    },
+    {
+      "foto": 1,
+      "codigo": "pan_dir",
+      "zoom": 1.08,
+      "clipe": "r23-cenas/cena2.mp4",
+      "lento": 1.0
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        100,
+        420,
+        900,
+        1024
+      ],
+      "codigo": "pull",
+      "zoom": 1.1,
+      "clipe": "r23-cenas/cena3.mp4",
+      "lento": 1.0
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Tapete sisal luxo",
+          "titulo": "Cara de [apê] de revista",
+          "abertura": {
+            "grande": "4,86",
+            "texto": "de nota, sisal sintético"
+          }
+        },
+        {
+          "rotulo": "Leve e resistente",
+          "titulo": "Caimento [liso] no piso"
+        },
+        {
+          "rotulo": "2,00 x 1,50 m",
+          "titulo": "Sala, quarto ou [varanda]",
+          "fichas": [
+            "2,00 x 1,50 m",
+            "Antialérgico",
+            "Leve e resistente"
+          ],
+          "cta": "Toque no carrinho e escolha o seu"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Apê novo pede [tapete] assim",
+          "sub": "Sisal sintético elegante"
+        },
+        {
+          "titulo": "Leve, firme e [fácil] de limpar",
+          "sub": "Material antialérgico"
+        },
+        {
+          "titulo": "Garanta o seu no [carrinho]",
+          "sub": "Nota 4,86 · 141 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Decoração sem erro",
+          "titulo": "O [tapete] que arruma a sala",
+          "sub": "Listrado discreto e elegante"
+        },
+        {
+          "rotulo": "Proteção",
+          "titulo": "Ajuda a [proteger] o piso",
+          "sub": "Uso diário sem drama"
+        },
+        {
+          "rotulo": "Nota 4,86 · 141 avaliações",
+          "titulo": "2 x 1,5 m de [sofisticação]",
+          "cta": "Link na legenda"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "4,86",
+    "t": "de nota"
+  },
+  "legendas": {
+    "shopee": "Tapete sisal sintético luxo 2,00 x 1,50 m, antialérgico, nota 4,86.\n#tapetesisal #tapetesala #decoracaoapartamento #tapeteluxo",
+    "shopee2": "Tapete Ciadecor leve, resistente e fácil de limpar, com 141 avaliações.\n#tapetemoderno #tapetesintetico #salaestar #decoracaoelegante",
+    "shopee3": "Tapete 1,50 x 2,00 m para sala, quarto, escritório e varanda coberta.\n#tapetequarto #tapeteescritorio #apartamentonovo #casadecorada",
+    "reels": "Apê novo merece um tapete que complete a decoração ✨ Sisal sintético 2 x 1,5 m, leve, antialérgico e fácil de limpar.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+  },
+  "hashtags": {
+    "reels": "#tapetesisal #decoracaoapartamento #tapetesala #tapeteluxo"
+  },
+  "notas": "Fotos 01 (sala ampla) e 11 (mesmo listrado em ambiente, planta cobre um canto) mais recorte de detalhe da 01; 02-10 e 16 são outras cores. Gancho nota 4,86 + 'apê novo' para separar do r21 (3x2, base técnica). RISCO: na 01 o tapete parece maior que 2x1,5 m (foto de ambiente, não prometo escala); título 'luxo' é do anúncio; listras finas podem dar moiré."
+}

@@ -1,0 +1,118 @@
+{
+  "nome": "r17_cortina_blackout_voil_xadrez",
+  "titulo_produto": "Cortina Blackout com Voil Xadrez 2,80 x 1,60 m EDDI Casa",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "r17-fotos/01.jpg",
+    "r17-fotos/02.jpg"
+  ],
+  "cor_destaque": "B07A3E",
+  "cenas": [
+    {
+      "foto": 0,
+      "codigo": "push",
+      "zoom": 1.05,
+      "clipe": "r17-cenas/cena1.mp4",
+      "lento": 1.0
+    },
+    {
+      "foto": 1,
+      "codigo": "pan_dir",
+      "zoom": 1.08,
+      "clipe": "r17-cenas/cena2.mp4",
+      "lento": 1.0
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        380,
+        10,
+        980,
+        640
+      ],
+      "codigo": "pull",
+      "zoom": 1.1,
+      "clipe": "r17-cenas/cena3.mp4",
+      "lento": 1.0
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Blackout com voil xadrez",
+          "titulo": "Duas cortinas em [uma]",
+          "abertura": {
+            "grande": "2,8m",
+            "texto": "de largura, blackout e voil"
+          }
+        },
+        {
+          "rotulo": "12 ilhoses de 28 mm",
+          "titulo": "Voil [xadrez] por cima"
+        },
+        {
+          "rotulo": "Nota 4,73 na Shopee",
+          "titulo": "Você escolhe a [luz]",
+          "fichas": [
+            "2 partes de 1,40 m",
+            "12 ilhoses",
+            "Nota 4,73"
+          ],
+          "cta": "Toque no carrinho e escolha a sua"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Blackout e voil [juntos]",
+          "sub": "Cortina xadrez 2,80 x 1,60 m"
+        },
+        {
+          "titulo": "Voil de dia, [blackout] à noite",
+          "sub": "Duas camadas na mesma cortina"
+        },
+        {
+          "titulo": "Leve a sua no [carrinho]",
+          "sub": "Nota 4,73 · 3.667 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Janela de sala ou quarto",
+          "titulo": "Cortina com [dois] tecidos",
+          "sub": "Voil xadrez e blackout PVC"
+        },
+        {
+          "rotulo": "Ilhós",
+          "titulo": "[12 ilhoses] de 28 mm",
+          "sub": "Serve varão de 28 ou 19 mm"
+        },
+        {
+          "rotulo": "Nota 4,73 · 3.667 avaliações",
+          "titulo": "2,80 x 1,60 m de [charme]",
+          "cta": "Link na legenda"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "4,73",
+    "t": "de nota"
+  },
+  "legendas": {
+    "shopee": "Cortina blackout com voil xadrez 2,80 x 1,60 m, 12 ilhoses e nota 4,73.\n#cortinablackout #cortinavoil #decoracaosala #cortinaquarto",
+    "shopee2": "Cortina EDDI Casa com voil xadrez e blackout PVC, 3.667 avaliações.\n#cortinaxadrez #cortinailhos #decoracaodejanela #cortinasala",
+    "shopee3": "Cortina em 2 partes de 1,40 x 1,60 m para varão de 28 ou 19 mm.\n#cortinablackoutvoil #janeladasala #casadecorada #cortinasparaquarto",
+    "reels": "Blackout e voil na mesma cortina? 😍 Voil xadrez de dia, blackout quando precisar, com 12 ilhoses prontos pro varão.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+  },
+  "hashtags": {
+    "reels": "#cortinablackout #cortinavoil #decoracaosala #cortinaquarto"
+  },
+  "notas": "Fotos 01 e 02 (sem mão; 04 tem mão, 05-12 são outras cores). Gancho 2,8m/blackout+voil. RISCO: título do anúncio diz 'prata' mas a foto 01 é voil creme com blackout grafite: não citei cor; varão não incluso (não prometido); estampa xadrez só por código."
+}

@@ -1,0 +1,114 @@
+{
+  "nome": "q14_nicho_zig_preto",
+  "titulo_produto": "Nicho ZIG Minimalista Preto MDF 15 cm",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q14-fotos/01.jpg"
+  ],
+  "cor_destaque": "B0B0B0",
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "Very slow push-in, objects and shelf stay perfectly still."
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        0,
+        100,
+        780,
+        880
+      ],
+      "movimento": "gentle lateral dolly"
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        180,
+        60,
+        1000,
+        880
+      ],
+      "movimento": "crane up reveal"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Nicho ZIG · MDF preto",
+          "titulo": "[507] avaliações, nota 4,87",
+          "abertura": {
+            "grande": "4,87",
+            "texto": "nota em 507 avaliações"
+          }
+        },
+        {
+          "rotulo": "MDF 15 mm",
+          "titulo": "Bordas com fita de [PVC]"
+        },
+        {
+          "rotulo": "15 cm de altura interna",
+          "titulo": "Vaso, vela e [miniaturas]",
+          "fichas": [
+            "MDF preto 15 mm",
+            "Pré-furo pronto",
+            "Suporte incluso"
+          ],
+          "cta": "Toque no carrinho e decore"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Esse [zigue-zague] decora tudo",
+          "sub": "Nicho ZIG preto minimalista"
+        },
+        {
+          "titulo": "Já vem com [pré-furo]",
+          "sub": "Suporte incluso no kit"
+        },
+        {
+          "titulo": "Leve o seu no [carrinho]",
+          "sub": "Nota 4,87 · 507 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_cartao",
+      "cenas": [
+        {
+          "rotulo": "Mais de 500 clientes avaliaram",
+          "titulo": "O nicho que [todo mundo] elogia"
+        },
+        {
+          "rotulo": "Nicho ZIG · MDF preto TX",
+          "titulo": "Design [zigue-zague] minimalista",
+          "sub": "Bordas com fita de PVC"
+        },
+        {
+          "rotulo": "Para vasos, velas e porta-retratos",
+          "titulo": "Parede [vazia] nunca mais",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Nicho ZIG preto minimalista em MDF 15 mm, pré-furo pronto e suporte incluso.\n#nicho #decoracao #parede #achadinhosshopee",
+    "shopee2": "Nicho ZIG minimalista preto MDF para vasos, velas e porta-retratos. Nota 4,87.\n#nicho #decoracao #quarto #achadinhosshopee",
+    "reels": "O nicho que todo mundo elogia 🖤 Nota 4,87 em mais de 500 avaliações: MDF preto 15 mm, bordas com fita de PVC e pré-furo pronto. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#nicho #decoracao #minimalista #parede"
+  },
+  "comentario": "🛒 Nicho ZIG Minimalista Preto MDF 15 cm aqui: {link}",
+  "selo": {
+    "n": "4,87",
+    "t": "507 avaliações"
+  },
+  "letras_na_foto01": "lombadas de livros e relogio: foto com movimento minimo",
+  "imagens_conferidas": true
+}

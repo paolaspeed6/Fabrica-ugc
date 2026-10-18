@@ -1,0 +1,137 @@
+{
+ "nome": "s21_tapete_sisal_3x2",
+ "titulo_produto": "Tapete de Sisal Sintético 3,00 x 2,00 m Sem Pelo",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r21-fotos/01.jpg",
+  "../lista1016/r21-fotos/02.jpg",
+  "../lista1016/r21-fotos/06.jpg"
+ ],
+ "cor_destaque": "6E7F4E",
+ "contagem": {},
+ "diretor": {
+  "angulo": "O visual de sisal natural sem o problema do tapete que solta pelo: trama baixa, antiácaro e antialérgico, em 3 x 2 m.",
+  "palavra": "sem pelo",
+  "prova": "3,00 x 2,00 m, não levanta pelos (baixa trama), antiácaro e antialérgico, alta resistência para alto tráfego, não risca o piso, acabamento reforçado; bem avaliado",
+  "errc": "E: 'achadinho' e o zoom reto na sala. R: a lista de 7 destaques. E: o close real da trama baixa com o acabamento reforçado. C: a dor 'tapete soltando pelo pela casa?' e o consultório como cliente.",
+  "publico_nao_obvio": "dono de clínica ou consultório (o título cita os dois) que precisa de tapete sem pelo, antiácaro e de alto tráfego",
+  "por_que_converte": "Ries/Trout: dono da palavra 'sem pelo', repetida no gancho e no CTA. Schwartz: o Reels abre na dor do pelo espalhado e o close da trama é a demonstração (Hopkins).",
+  "visual": "1º segundo: a sala vista de cima com o tapete listrado inteiro e o sol da janela andando sobre ele; o plano aéreo é raro em vídeo de tapete e prende o dedo."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": "Very slow push-in from above on a cozy living room: a large rectangular sisal-look flat-weave rug with fine beige and sage stripes and a thin sage border on a dark wood floor, a wooden coffee table, a cream sofa and two armchairs. The whole rug stays fully in frame, perfectly still and unchanged, every stripe identical to the photo. Warm window sunlight slowly drifts across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s21-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "foto": 1,
+   "pruna": null,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "s21-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "recorte": [
+    0,
+    16,
+    1024,
+    1024
+   ],
+   "pruna": null,
+   "codigo": "pan_esq",
+   "zoom": 1.07,
+   "clipe": "s21-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Slow lateral dolly right in a bright sitting room: a sisal-look flat-weave rug with beige and grey-green stripes on a wood floor, two cream armchairs with curved wooden arms, a small round wooden side table and a green plant. The rug stays perfectly still and unchanged, every stripe identical to the photo. Soft daylight slowly brightens across the weave. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "fiscal": "codigo"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Sisal sintético 3,00 x 2,00 m",
+     "titulo": "O sisal [sem pelo] da sala",
+     "abertura": {
+      "grande": "3x2",
+      "texto": "metros, fácil de limpar"
+     }
+    },
+    {
+     "rotulo": "Acabamento reforçado",
+     "titulo": "Feito pra [alto tráfego]"
+    },
+    {
+     "rotulo": "Não risca o piso",
+     "titulo": "Limpa [rápido], dura muito",
+     "fichas": [
+      "3,00 x 2,00 m",
+      "Antiácaro",
+      "Não levanta pelos"
+     ],
+     "cta": "Toque no carrinho e leve o seu 3x2"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Consultório pede tapete [sem pelo]",
+     "sub": "Antiácaro e antialérgico"
+    },
+    {
+     "titulo": "Aguenta [alto tráfego]",
+     "sub": "Superfície de poliéster"
+    },
+    {
+     "titulo": "Seu 3x2 está no [carrinho]",
+     "sub": "Clínica, sala ou escritório"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Tapete estilo sisal",
+     "titulo": "Tapete soltando [pelo] pela casa?",
+     "sub": "Trama baixa: não levanta pelos"
+    },
+    {
+     "rotulo": "Base de polipropileno",
+     "titulo": "Seu piso [sem riscos]",
+     "sub": "Estrutura leve e prática"
+    },
+    {
+     "rotulo": "Bem avaliado por quem comprou",
+     "titulo": "Visual de sisal [natural]",
+     "sub": "3,00 x 2,00 m, fácil de limpar",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Tapete sisal sintético 3,00 x 2,00 m que não levanta pelos e não risca o piso\n#tapetesisal #tapetesala #tapetesempelo #tapetegrande",
+  "shopee2": "Tapete estilo sisal para consultório e clínica, antiácaro e antialérgico\n#tapeteconsultorio #tapeteclinica #tapeteantialergico #sisalsintetico",
+  "shopee3": "Tapete sisal sintético bem avaliado, acabamento reforçado e fácil limpeza\n#tapetesisalsintetico #tapetequarto #tapeteescritorio #tapetemoderno",
+  "reels": "Tapete soltando pelo pela casa? Esse sisal sintético de 3,00 x 2,00 m tem trama baixa, é antiácaro e não risca o piso 🏡\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapetesisal #tapetesempelo #tapeteantialergico #decoracaosala"
+ },
+ "notas": "01 (render de cima, tapete inteiro), 02 (foto real da trama e do acabamento, por código: trama fina que a IA redesenharia) e 06 (foto real na sala, sem a faixa branca do topo). Riscos: listras finas podem gerar moiré e o Pruna pode mudar largura/quantidade de listras; 01 é mais bege-sálvia que as fotos reais 02/06 (cinza-esverdeado). Cor não citada na tela."
+}

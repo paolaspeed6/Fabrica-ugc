@@ -1,0 +1,114 @@
+{
+ "nome": "r16_spark_kit2_cobre",
+ "titulo_produto": "Kit 2 Lustres Plafon Spark Cobre",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r16-fotos/01.jpg",
+  "r16-fotos/02.jpg",
+  "r16-fotos/04.jpg"
+ ],
+ "cor_destaque": "B87333",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r16-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "desce",
+   "zoom": 1.08,
+   "clipe": "r16-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "codigo": "sobe",
+   "zoom": 1.07,
+   "clipe": "r16-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Kit 2 Spark cobre",
+     "titulo": "Kit com [2] lustres cobre",
+     "abertura": {
+      "grande": "2",
+      "texto": "lustres Spark cobre no kit"
+     }
+    },
+    {
+     "rotulo": "Cobre com cristal",
+     "titulo": "Cristais [pré-montados]"
+    },
+    {
+     "rotulo": "Um pra cada ambiente",
+     "titulo": "Dois [ambientes] iluminados",
+     "fichas": [
+      "2 plafons Spark",
+      "14 x 14 x 27 cm",
+      "1 lâmpada E-27 cada"
+     ],
+     "cta": "Escolha o kit no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Quarto e [sala] de uma vez",
+     "sub": "Kit 2 plafons de cristal"
+    },
+    {
+     "titulo": "Cobre com [cristal] de brilho",
+     "sub": "Monte do seu jeito"
+    },
+    {
+     "titulo": "Peça o kit no [carrinho]",
+     "sub": "Nota 4,77, 541 avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Kit 2 Spark cobre",
+     "titulo": "Dois lustres, [um] pedido",
+     "sub": "Plafon de cristal acrílico"
+    },
+    {
+     "rotulo": "Monte como quiser",
+     "titulo": "Cristais do seu [jeito]",
+     "sub": "Ideias de montagem nas fotos"
+    },
+    {
+     "rotulo": "Nota 4,77",
+     "titulo": "[541] avaliações no kit",
+     "sub": "Uso interno, bivolt",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "2",
+  "t": "lustres"
+ },
+ "legendas": {
+  "shopee": "Kit 2 plafons Spark cobre de cristal acrílico, 14 x 14 x 27 cm\n#kitlustre #plafoncobre #lustrecristal #lustrespark",
+  "shopee2": "Kit com 2 lustres Spark, nota 4,77 em 541 avaliações\n#lustrequarto #lustresala #plafondecristal #decoracaocobre",
+  "shopee3": "Dois plafons Spark pré-montados, 1 lâmpada E-27 cada\n#lustrecorredor #iluminacaoteto #cristalacrilico #kit2lustres",
+  "reels": "Dois lustres de cristal cobre em um pedido só: quarto e sala brilhando. Kit Spark, 14 x 14 x 27 cm ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#kitlustre #plafoncobre #lustrecristal #decoracaosala"
+ },
+ "notas": "Fotos 01 (2 unidades cobre), 02 (unidade grande), 04 (detalhe tiras; topo levemente cortado na foto original). Foto 05 descartada (cotas/texto). Risco: sem letras; inox/cobre — usei só 'cobre' do título. Mesmo produto base do r13, ganchos e fotos diferentes (kit)."
+}

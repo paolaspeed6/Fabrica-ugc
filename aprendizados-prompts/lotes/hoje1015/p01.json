@@ -1,0 +1,74 @@
+{
+ "nome": "cuecas_polofit",
+ "titulo_produto": "Kit 10 cuecas boxer Polo Fit",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p01-fotos/01.jpg",
+  "p01-fotos/05.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. An open light-wood dresser drawer seen from above, holding these 10 folded boxer briefs neatly arranged in rows by color (black, grey, navy), the POLO FIT waistband lettering visible, soft morning window light, clean bedroom. Ignore the stamps, badges and 'ENVIO RÁPIDO' graphics of reference 1: use only the boxer briefs themselves, with the same colors.",
+   "movimento": "The drawer slides open toward the camera revealing the neatly folded boxers, slow smooth motion. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. Macro close-up of one folded boxer brief from this kit lying on crisp white bed sheets, the elastic waistband with POLO FIT lettering sharp and legible, soft microfiber texture visible, warm natural light. Ignore the stamps, badges and 'ENVIO RÁPIDO' graphics of reference 1: use only the boxer briefs themselves, with the same colors.",
+   "movimento": "Slow push-in toward the POLO FIT waistband, shallow depth of field. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. The 10 boxer briefs of this kit fanned out neatly on a made bed with white linen, morning sunlight, minimal Scandinavian bedroom. Ignore the stamps, badges and 'ENVIO RÁPIDO' graphics of reference 1: use only the boxer briefs themselves, with the same colors.",
+   "movimento": "Very slow push-in toward the product, gentle light flicker from the window. The product does not change shape, color or lettering. No people."
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Kit Polo Fit",
+     "titulo": "[10 cuecas] boxer microfibra"
+    },
+    {
+     "rotulo": "Menos de R$ 8 cada",
+     "titulo": "Cós [POLO FIT] que não aperta"
+    },
+    {
+     "rotulo": "Kit 10 cuecas",
+     "titulo": "Renove a [gaveta] inteira",
+     "fichas": [
+      "Microfibra",
+      "10 peças",
+      "Cós elástico"
+     ],
+     "cta": "Escolha o tamanho"
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "Kit 10 cuecas Polo Fit",
+     "titulo": "Quando você trocou suas [cuecas]?"
+    },
+    {
+     "rotulo": "Microfibra macia",
+     "titulo": "Conforto o [dia todo]",
+     "sub": "Cós elástico que não aperta"
+    },
+    {
+     "rotulo": "10 peças por menos de R$ 8 cada",
+     "titulo": "Gaveta [nova] de uma vez",
+     "cta": "Link no comentário"
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Kit com 10 cuecas boxer Polo Fit em microfibra, cós elástico personalizado que sustenta sem apertar. Sai por menos de R$ 8 cada. Toque no carrinho e escolha o tamanho.",
+  "reels": "Quando foi a última vez que você renovou a gaveta? 👀 Kit 10 cuecas boxer Polo Fit em microfibra. Kit no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#modamasculina #cueca #achadinhosshopee #kitcueca"
+ },
+ "comentario": "🛒 Kit 10 cuecas Polo Fit aqui: {link}"
+}

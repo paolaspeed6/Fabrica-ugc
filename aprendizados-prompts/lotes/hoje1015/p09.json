@@ -1,0 +1,76 @@
+{
+ "nome": "tapete_durapads",
+ "titulo_produto": "Tapete Durapads",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p09-fotos/01.jpg",
+  "p09-fotos/02.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. One unopened package of these dog training pads (blue and orange durapads package) standing on a clean light wood floor next to one open white training pad, a drop of blue liquid on the pad being absorbed instantly, bright modern living room, soft daylight. Package lettering exactly as in the reference.",
+   "movimento": "Slow push-in; the blue liquid soaks into the pad and disappears quickly, the surface stays dry. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. Top-down close-up of one open white training pad from this package on a light wood floor, blue liquid being absorbed into the center, leak-proof edges visible.",
+   "movimento": "Slow overhead descent; the blue stain shrinks into the pad, satisfying absorption. The product does not change shape, color or lettering. No people.",
+   "composicao": false
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. A happy bernese mountain dog sitting calmly next to the open training pad and the package of these pads, bright clean living room, soft daylight. Package lettering exactly as in the reference.",
+   "movimento": "Very slow push-in; the dog wags its tail and looks at the camera. The product does not change shape, color or lettering. No people."
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Tapete Durapads",
+     "titulo": "Ultra [absorção]"
+    },
+    {
+     "rotulo": "Gel superabsorvente",
+     "titulo": "Seca [na hora]"
+    },
+    {
+     "rotulo": "Pacote com 30",
+     "titulo": "Combate o [mau cheiro]",
+     "fichas": [
+      "30 un.",
+      "Antivazamento",
+      "Atrativo canino"
+     ],
+     "cta": "Toque no carrinho"
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "Tapete Durapads",
+     "titulo": "Quem inventou isso foi um [gênio]"
+    },
+    {
+     "rotulo": "Gel superabsorvente",
+     "titulo": "Absorve [na hora]",
+     "sub": "Barreira antivazamento"
+    },
+    {
+     "rotulo": "Pacote com 30",
+     "titulo": "Bom pra [testar]",
+     "cta": "Link no comentário"
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Tapete higiênico Durapads com 30 unidades: gel superabsorvente, barreiras antivazamento, atrativo canino e controle de odor. Toque no carrinho.",
+  "reels": "Quem inventou isso foi um gênio 🐶 Tapete Durapads com gel superabsorvente. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#cachorro #pet #dogsofinstagram #tapetehigienico"
+ },
+ "comentario": "🛒 Tapete Durapads aqui: {link}",
+ "embalagem_com_letras": true
+}

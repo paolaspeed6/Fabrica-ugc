@@ -1,0 +1,98 @@
+{
+  "nome": "q23_solda_centurion_mig200pro",
+  "titulo_produto": "Solda 3 em 1 MIG 200A Centurion Sem Gás",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q23-fotos/01.jpg",
+    "q23-fotos/02.jpg"
+  ],
+  "cor_destaque": "F2C200",
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "slow push-in, minimal motion, the display, logos and lettering stay exactly as in the photo"
+    },
+    {
+      "foto": 1,
+      "movimento": "gentle lateral dolly, very slight, all text and the machine stay unchanged"
+    },
+    {
+      "foto": 0,
+      "movimento": "rack focus, very slight, nothing on the machine changes"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Centurion · MIG 200 A",
+          "titulo": "Solda [sem gás], sem cilindro",
+          "abertura": {
+            "grande": "4 kg",
+            "texto": "de solda MIG, TIG e MMA"
+          }
+        },
+        {
+          "rotulo": "Tensão automática",
+          "titulo": "Ajuste [simples] até p/ iniciante"
+        },
+        {
+          "rotulo": "Bivolt 127 / 220 V",
+          "titulo": "Compacta para [qualquer] serviço",
+          "fichas": [
+            "MIG 200 A",
+            "3 em 1",
+            "Bivolt"
+          ],
+          "cta": "Toque no carrinho e solde"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Solda sem [cilindro de gás]",
+          "sub": "Centurion MIG 200 A"
+        },
+        {
+          "titulo": "[3 em 1]: MIG, TIG e MMA",
+          "sub": "Bivolt automático"
+        },
+        {
+          "titulo": "Leve a sua no [carrinho]",
+          "sub": "Nota 4,76 · 106 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Serralheria em casa",
+          "titulo": "Dá pra soldar [sem cilindro] de gás?"
+        },
+        {
+          "rotulo": "Centurion MIG 200 A",
+          "titulo": "[4 kg] que fazem MIG, TIG e MMA",
+          "sub": "Fio de 0,8 e 1,0 mm"
+        },
+        {
+          "rotulo": "Nota 4,76",
+          "titulo": "Proteção contra [superaquecimento]",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Máquina de solda Centurion MIG 200A 3 em 1, sem gás, bivolt, portátil. #solda #serralheria #mig #achadinhosshopee",
+    "shopee2": "Solda inversora 3 em 1 MIG, TIG Lift e MMA, sem gás e com cerca de 4 kg. #solda #oficina #ferramentas #achadinhosshopee",
+    "reels": "Solda MIG sem gás, TIG Lift e eletrodo numa máquina de cerca de 4 kg, bivolt. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#solda #serralheria #ferramentas #oficina"
+  },
+  "comentario": "🛒 Solda Centurion MIG 200A aqui: {link}",
+  "imagens_conferidas": true
+}

@@ -1,0 +1,158 @@
+{
+ "nome": "t15_plafon_cristal_quadrado",
+ "titulo_produto": "Lustre Plafon Cristal Acrílico Quadrado 2 Camadas",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r15-fotos/01.jpg",
+  "../lista1016/r15-fotos/06.jpg",
+  "../lista1016/r15-fotos/04.jpg",
+  "t15-cenas/cena1.png",
+  "t15-cenas/cena2.png",
+  "t15-cenas/cena3.png"
+ ],
+ "cor_destaque": "B07D3A",
+ "contagem": {
+  "camadas": 2,
+  "soquetes_e27": 1
+ },
+ "diretor": {
+  "angulo": "Um só plafon de 416 castanhas troca a lâmpada pelada do teto por brilho, usando uma lâmpada E27 comum.",
+  "palavra": "brilho",
+  "prova": "416 castanhas de cristal acrílico de alto brilho presas por argolas de aço inox que não enferrujam; milhares de avaliações",
+  "errc": "E: colagem de 3 cores e 'achadinho'. R: lista de especificações. E: macro real das castanhas e argolas inox com a luz correndo nas facetas. C: a dor da lâmpada pelada e o lavabo como palco.",
+  "publico_nao_obvio": "quem monta lavabo, closet ou cantinho de beleza e quer brilho com soquete E27 comum",
+  "por_que_converte": "Hopkins: número exato (416) e material (inox, acrílico 3 mm) dão certeza. Schwartz: o Reels abre no problema visível (lâmpada pelada) e a Shopee abre na prova.",
+  "visual": "1º segundo: plafon prateado inteiro com brilhos correndo pelas facetas enquanto a câmera avança; o faiscar em movimento quebra o feed de fotos paradas de lustre."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Slightly low front shot, as in reference image 2. Only the exact silver chandelier of reference image 2 (top silver one in image 1), identical shape, color, material and every part: square polished silver aluminum base plate, exactly 2 slim silver rods, 1 central silver socket, clear square acrylic plate, clear octagonal acrylic beads on small steel rings in exactly 2 square tiers, inner tier lower. Only ONE single chandelier appears in the whole image. On the white ceiling of a powder room, plain sage green walls, pale stone vanity. Golden hour side window light. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Very slow push-in, the whole chandelier stays fully in frame. The silver square chandelier with exactly 2 tiers of clear acrylic bead strands stays perfectly still and unchanged, every part identical. Golden window light rests on the sage wall, small sparkles glint in the beads. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t15-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 3,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Macro 100mm eye-level close-up of the outer tier, as in reference image 2. The exact silver chandelier of reference image 2, identical shape, color, material and every part: clear acrylic plate edge, vertical strands of clear octagonal acrylic beads joined by small stainless steel rings. Only ONE single chandelier; its crystal strands are short, the whole fixture only slightly taller than wide, exactly as in reference image 2. Plain dark warm grey background, out of focus. Warm side light, sparkling facets. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Slow lateral dolly left across the bead strands. The clear acrylic beads and small steel rings stay perfectly still and unchanged, every bead and ring identical. Warm sparkling glints travel slowly across the facets. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_esq",
+   "zoom": 1.06,
+   "clipe": "t15-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 4,
+   "pruna_t": 2.5,
+   "fiscal": "2.5"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium shot of a walk-in closet at night. Only the exact silver chandelier of reference image 2 (top silver one in image 1), identical shape, color, material and every part: square polished silver aluminum base plate, exactly 2 slim silver rods, 1 central silver socket, clear square acrylic plate, clear octagonal acrylic beads on small steel rings in exactly 2 square tiers, inner tier lower. A woman seen from behind picks a jacket from the rail under the lit chandelier; only ONE single small chandelier is mounted flush on the ceiling, narrower than her shoulders. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1,
+    2
+   ],
+   "pruna": "She slowly takes the jacket while the camera drifts gently. The chandelier stays perfectly still and unchanged. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.06,
+   "clipe": "t15-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle shot of a dressing room at night. Only the exact silver chandelier of reference image 2 (top silver one in image 1), identical shape, color, material and every part: square polished silver aluminum base plate, exactly 2 slim silver rods, 1 central silver socket, clear square acrylic plate, clear octagonal acrylic beads on small steel rings in exactly 2 square tiers, inner tier lower. Lit warm on the white ceiling, closed light oak wardrobe doors, plain walls, small sparkles. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the ceiling. The silver square chandelier with exactly 2 tiers of clear acrylic bead strands stays perfectly still and unchanged, every part identical; the bench and wardrobe stay in place. Small sparkle reflections shimmer gently on the ceiling. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "foto": 5,
+   "pruna_t": 1.8,
+   "fiscal": "1.8"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Plafon quadrado prateado",
+     "titulo": "[416] castanhas de alto brilho",
+     "abertura": {
+      "grande": "416",
+      "texto": "castanhas de cristal acrílico"
+     }
+    },
+    {
+     "rotulo": "Argolas de aço inox",
+     "titulo": "Cada castanha presa em [inox]"
+    },
+    {
+     "rotulo": "Base de alumínio prateado",
+     "titulo": "Brilha com [1] lâmpada E27",
+     "fichas": [
+      "2 camadas",
+      "Altura 25 cm",
+      "Placa acrílica 3 mm"
+     ],
+     "cta": "Toque no carrinho e leve o brilho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "O lavabo vai [brilhar]",
+     "sub": "Se encaixa em vários ambientes"
+    },
+    {
+     "titulo": "Placas [encaixam] na base",
+     "sub": "Vem com manual de montagem"
+    },
+    {
+     "titulo": "Leve o brilho no [carrinho]",
+     "sub": "Usa lâmpada E27 comum ou LED"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Plafon de cristal acrílico",
+     "titulo": "Lâmpada [pelada] no teto ainda?",
+     "sub": "Esse plafon resolve em 2 camadas"
+    },
+    {
+     "rotulo": "Castanhas de alto brilho",
+     "titulo": "[416] peças de cristal acrílico",
+     "sub": "Argolas de aço inox, sem ferrugem"
+    },
+    {
+     "rotulo": "Decoração clássica e moderna",
+     "titulo": "Ilumina com [uma] lâmpada só",
+     "sub": "Milhares de avaliações",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Plafon quadrado de cristal acrílico com 416 castanhas e argolas de aço inox\n#plafoncristal #lustrequadrado #lustreprateado #lustrelavabo",
+  "shopee2": "Lustre plafon 2 camadas com base de alumínio prateado e lâmpada E27\n#lustredeteto #plafonquadrado #decoracaolavabo #lustrecloset",
+  "shopee3": "Plafon de cristal acrílico bem avaliado, 25 cm de altura e manual de montagem\n#lustreacrilico #plafonsala #lustrequarto #iluminacaodecorativa",
+  "reels": "Lâmpada pelada no teto? Esse plafon de 416 castanhas de cristal acrílico ilumina com uma lâmpada E27 só ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrecristal #plafondeteto #lustreacrilico #iluminacaosala"
+ },
+ "notas": "Foto 01 é colagem de 3 acabamentos; uso só a variação prata (06 lateral, 04 de baixo), que bate com 'base em alumínio prateado' da descrição. Riscos: Pruna pode redesenhar ou balançar os fios de castanhas (contar 2 camadas por cena); no close da cena 2 conferir argolas."
+}

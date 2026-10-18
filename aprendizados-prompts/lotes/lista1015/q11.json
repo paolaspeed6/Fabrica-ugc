@@ -1,0 +1,103 @@
+{
+  "nome": "q11_prateleira_industrial_kit",
+  "titulo_produto": "Kit Prateleira Industrial Suspensa",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q11-fotos/01.jpg"
+  ],
+  "cor_destaque": "auto",
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "slow push-in",
+      "clipe": "prateleira_industrial_kit-cenas/cena1.mp4"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. A wall-mounted industrial shelf set exactly like reference photo 1: three light natural wood shelves held by black rectangular steel tube frames, staggered at different heights on a white painted brick wall. Only a single small green plant in a black pot on the top shelf and one small black vase on the lowest shelf, otherwise empty shelves, only the objects described. 50 mm, shallow depth of field, soft window light, neutral white balance. The whole product fills 25-60% of the image height, centered, empty floor below.",
+      "movimento": "gentle lateral dolly",
+      "clipe": "prateleira_industrial_kit-cenas/cena2.mp4"
+    },
+    {
+      "foto": 0,
+      "movimento": "rack focus",
+      "clipe": "prateleira_industrial_kit-cenas/cena3.mp4"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Kit · 3 prateleiras + 4 suportes",
+          "titulo": "[3] prateleiras industriais no kit",
+          "abertura": {
+            "grande": "3",
+            "texto": "prateleiras e 4 suportes"
+          }
+        },
+        {
+          "rotulo": "Metalon preto",
+          "titulo": "Suportes de [metalon] com pintura preta"
+        },
+        {
+          "rotulo": "Nota 4,81",
+          "titulo": "Parede [decorada], com fixação inclusa",
+          "fichas": [
+            "2 de 120 cm",
+            "1 de 100 cm",
+            "Nota 4,81"
+          ],
+          "cta": "Toque no carrinho e leve o kit"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Parede [vazia] vira estante",
+          "sub": "Com 4 suportes de metalon"
+        },
+        {
+          "titulo": "Duas de [120 cm] e uma de 100",
+          "sub": "Prof. 19,5 cm"
+        },
+        {
+          "titulo": "Decore sua [parede]",
+          "sub": "Nota 4,81 · 415 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_cartao",
+      "cenas": [
+        {
+          "rotulo": "Decoração industrial",
+          "titulo": "Visual [industrial] sem furar a cabeça"
+        },
+        {
+          "rotulo": "Metalon preto",
+          "titulo": "Duas de [120 cm] e uma de 100 cm"
+        },
+        {
+          "rotulo": "415 avaliações",
+          "titulo": "Nota [4,81] na parede de casa",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Kit de 3 prateleiras industriais suspensas com 4 suportes de metalon preto e fixação inclusa.\n#prateleira #decoracao #industrial #achadinhosshopee",
+    "shopee2": "Prateleiras suspensas estilo industrial: 2 de 120 cm, 1 de 100 cm e 4 suportes.\n#prateleiras #decoracao #casa #achadinhosshopee",
+    "reels": "Nota 4,81 em 415 avaliações: kit com 3 prateleiras industriais e 4 suportes de metalon preto. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#decoracao #prateleira #estiloindustrial #casa"
+  },
+  "comentario": "🛒 Kit Prateleira Industrial Suspensa aqui: {link}",
+  "selo": {
+    "n": "4,81",
+    "t": "415 avaliações"
+  },
+  "imagens_conferidas": true
+}

@@ -1,0 +1,119 @@
+{
+ "nome": "r08_kit2_banquetas",
+ "titulo_produto": "Kit 2 Banquetas Baixas Quadradas Aço Reforçado",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r08-fotos/01.jpg",
+  "r08-fotos/09.jpg"
+ ],
+ "cor_destaque": "8A5A2B",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r08-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "r08-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    330,
+    260,
+    1000,
+    930
+   ],
+   "codigo": "pull",
+   "zoom": 1.1,
+   "clipe": "r08-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Kit com 2 banquetas",
+     "titulo": "Kit com [2] banquetas",
+     "abertura": {
+      "grande": "125",
+      "texto": "kg de peso suportado"
+     }
+    },
+    {
+     "rotulo": "Estrutura reforçada",
+     "titulo": "Suporta até [125] kg"
+    },
+    {
+     "rotulo": "Assento acolchoado",
+     "titulo": "Courino fácil de limpar",
+     "fichas": [
+      "Kit com 2 unidades",
+      "Aço com epóxi",
+      "Assento em courino"
+     ],
+     "cta": "Toque no carrinho e escolha a sua"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Banqueta que [aguenta] 125 kg",
+     "sub": "Kit com 2 pra sua bancada"
+    },
+    {
+     "titulo": "Aço com pintura [epóxi]",
+     "sub": "Não enferruja fácil"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Escolha altura e cor"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Kit com 2 banquetas",
+     "titulo": "Bancada vazia? [2] banquetas",
+     "sub": "Assento 47 cm do chão"
+    },
+    {
+     "rotulo": "Estrutura de aço",
+     "titulo": "Reforçada de [verdade]",
+     "sub": "Pintura epóxi eletrostática"
+    },
+    {
+     "rotulo": "Ideal pra bancada",
+     "titulo": "Escolha a [altura]",
+     "sub": "Baixa 47 cm, alta 69 cm",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "125",
+  "t": "kg suportados"
+ },
+ "legendas": {
+  "shopee": "Kit 2 banquetas quadradas aço reforçado, suporta 125 kg\n#banquetabaixa #banquetacozinha #bancadagourmet #cozinhaamericana",
+  "shopee2": "Banqueta baixa para cozinha com assento em courino, kit com 2\n#banquetaindustrial #ilhagourmet #moveisdecozinha #areagourmet",
+  "shopee3": "Kit 2 banquetas com pintura epóxi, nota 4,85 em 153 avaliações\n#banquetasquadradas #cozinhamoderna #balcaodecozinha #mobiliariogourmet",
+  "reels": "Sua bancada merece banquetas que aguentam o dia a dia. Kit com 2, aço reforçado e assento em courino fácil de limpar.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#banquetabaixa #cozinhaamericana #areagourmet #bancadagourmet"
+ },
+ "notas": "Foto 01 (cinza escuro, modelo baixo) e 09 (mesma cor, mais perto); cena 3 recorte da 01 na banqueta da direita. Descartadas 02-04 (cor/modelo diferente, texto) e 05-11 (outras cores). Risco: anúncio tem alta e baixa e várias cores, as fotos mostram só a baixa; medida 47 cm só vale p/ modelo baixo; nota 4,85/153 aval. fora do título por limite."
+}

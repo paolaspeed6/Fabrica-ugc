@@ -1,0 +1,75 @@
+{
+ "nome": "capacete_spike2",
+ "titulo_produto": "Capacete Peels Spike II",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p02-fotos/01.jpg",
+  "p02-fotos/03.jpg",
+  "p02-fotos/04.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. This exact helmet resting on the seat of a parked motorcycle on an urban street at dusk, blurred city lights bokeh, cinematic blue hour light reflecting on the pink, blue and white star graphics and the SPIKE II lettering.",
+   "movimento": "Very slow push-in toward the product, city lights twinkling in the background. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. Side profile of this exact helmet with the clear visor raised, on a dark studio background, dramatic rim light outlining the shell, star graphic and SPIKE II lettering sharp.",
+   "movimento": "Slow push-in along the side of the helmet toward the raised visor. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. This exact helmet on a shelf in a bright modern garage with a motorcycle softly blurred behind, natural daylight from a large door.",
+   "movimento": "Slow dolly forward toward the helmet, subtle parallax. The product does not change shape, color or lettering. No people."
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Peels Spike II",
+     "titulo": "Capacete [só 1.270 g]"
+    },
+    {
+     "rotulo": "Troca rápida",
+     "titulo": "Viseira que troca [em segundos]"
+    },
+    {
+     "rotulo": "Nota 4,97",
+     "titulo": "Forro [removível] e lavável",
+     "fichas": [
+      "1.270 g",
+      "ABS",
+      "Antialérgico"
+     ],
+     "cta": "Confira seu tamanho"
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "Peels Spike II",
+     "titulo": "Capacete também é [estilo]"
+    },
+    {
+     "rotulo": "Rosa, azul e branco",
+     "titulo": "Feito pra [chamar atenção]",
+     "sub": "Leve: 1.270 g"
+    },
+    {
+     "rotulo": "Viseira de troca rápida",
+     "titulo": "Segurança com [atitude]",
+     "cta": "Link no comentário"
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Capacete Peels Spike II preto com rosa: só 1.270 g, viseira cristal antirrisco de troca rápida e forro antialérgico removível e lavável. Nota 4,97. Toque no carrinho e confira seu tamanho.",
+  "reels": "Capacete também é estilo 💗 Peels Spike II, leve e com viseira de troca rápida. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#motociclista #capacete #motogirl #moto"
+ },
+ "comentario": "🛒 Capacete Peels Spike II aqui: {link}"
+}

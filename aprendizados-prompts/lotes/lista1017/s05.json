@@ -1,0 +1,143 @@
+{
+ "nome": "s05_lustre_quadrado_24w",
+ "titulo_produto": "Lustre LED Quadrado 24W Cor Fixa em Acrílico com Alumínio",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r05-fotos/01.jpg"
+ ],
+ "cor_destaque": "6E7FA6",
+ "contagem": {
+  "bordas_quadradas_de_acrilico": 2
+ },
+ "diretor": {
+  "angulo": "A lâmpada pelada no teto do quarto é a vergonha que ninguém fotografa; um lustre de 10 cm de altura resolve sem reforma.",
+  "palavra": "lâmpada pelada",
+  "prova": "Milhares de avaliações com nota alta, 24W, bivolt, 34 x 34 x 10 cm, acrílico com alumínio",
+  "errc": "E: 'olha esse brilho' e foto parada. R: lista de specs. E: a prova social (milhares) e a borda de acrílico em close. C: falar com quem tem teto baixo (só 10 cm de altura).",
+  "publico_nao_obvio": "Quem tem teto baixo e acha que lustre não cabe (o anúncio dá 10 cm de altura).",
+  "por_que_converte": "Schwartz: o feed está consciente do problema (lâmpada pelada), então abrimos pela dor. Cialdini: milhares de avaliações dão a certeza que Hormozi pede no CTA.",
+  "visual": "1º segundo: o quadrado aceso com halo branco no teto escuro do quarto; forma geométrica limpa contra parede escura para o dedo."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": "Very slow push-in toward a glowing square LED ceiling light in a modern bedroom. The flush square fixture with exactly 2 nested faceted clear acrylic borders around a flat white center panel stays perfectly still and unchanged, every part identical to the photo; the whole fixture stays fully in frame. A soft white halo glows on the gray ceiling. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s05-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    90,
+    10,
+    690,
+    610
+   ],
+   "pruna": null,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "s05-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    40,
+    800,
+    800
+   ],
+   "pruna": "Slow lateral dolly left beneath a glowing square LED ceiling light in a modern bedroom. The flush square fixture with exactly 2 nested faceted clear acrylic borders stays perfectly still and unchanged, identical to the photo. Soft white light washes down the dark wall panels, the small bedside lamp glows warm. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.07,
+   "clipe": "s05-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_t": 1.8,
+   "fiscal": "1.8"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre quadrado de 24W",
+     "titulo": "Adeus, [lâmpada pelada]",
+     "abertura": {
+      "grande": "10cm",
+      "texto": "de altura no teto"
+     }
+    },
+    {
+     "rotulo": "Acrílico sobre alumínio",
+     "titulo": "Duas bordas de [acrílico]"
+    },
+    {
+     "rotulo": "Bivolt e 24W de potência",
+     "titulo": "Seu quarto, [outro] quarto",
+     "fichas": [
+      "Potência 24W",
+      "Tensão bivolt",
+      "34 x 34 cm"
+     ],
+     "cta": "Toque no carrinho e escolha a cor"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Teto baixo? [10 cm] resolvem",
+     "sub": "Só 10 cm de altura no teto"
+    },
+    {
+     "titulo": "Três tons, [você] escolhe um",
+     "sub": "Frio, neutro ou quente na compra"
+    },
+    {
+     "titulo": "Garanta já no [carrinho]",
+     "sub": "Milhares de avaliações, nota alta"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre LED de 24W",
+     "titulo": "Teto do quarto [sem graça]?",
+     "sub": "24W de LED em acrílico e alumínio"
+    },
+    {
+     "rotulo": "Visto de perto",
+     "titulo": "A [borda] que brilha junto",
+     "sub": "Acrílico com alumínio, 34 x 34 cm"
+    },
+    {
+     "rotulo": "Milhares de avaliações",
+     "titulo": "Aprovado por [milhares]",
+     "sub": "Bivolt, cor fixa à sua escolha",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Lustre LED quadrado 24W em acrílico com alumínio, bivolt\n#lustreled #lustrequadrado #iluminacaoquarto #lustredeteto",
+  "shopee2": "Lustre de 34 x 34 cm com só 10 cm de altura, cor fixa à escolha\n#plafonled #tetobaixo #luminariadeteto #decoracaoquarto",
+  "shopee3": "Lustre quadrado com milhares de avaliações, 24W e bivolt\n#lustreacrilico #iluminacaoled #quartodecasal #reformaquarto",
+  "reels": "Teto do quarto sem graça? Lustre quadrado de 24W em acrílico, bivolt e com milhares de avaliações 💡\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustreled #lustrequadrado #decoracaoquarto #iluminacaoled"
+ },
+ "notas": "Só a 01 serve (06 é cópia; 02/03/04/07 são o modelo redondo; 05 tem texto e é redondo). Cena 2 é close da borda por código (a IA redesenharia o facetado). Cor da luz: o anúncio vende cor fixa em 3 tons; nenhum texto diz que a foto é um tom específico. Anúncio irmão do r14 (mesma foto). Risco Pruna: redesenhar o facetado do acrílico ou somar uma 3ª borda."
+}

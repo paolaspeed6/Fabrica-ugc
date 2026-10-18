@@ -1,0 +1,155 @@
+{
+ "nome": "t06_pendente_3_aros_led",
+ "titulo_produto": "Lustre Pendente LED Nórdico de 3 Aros, 3 Cores em 1 Luz",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r06-fotos/01.jpg",
+  "../lista1016/r06-fotos/03.jpg",
+  "../lista1016/r06-fotos/04.jpg",
+  "t06-cenas/cena1.png",
+  "t06-cenas/cena2.png",
+  "t06-cenas/cena3.png"
+ ],
+ "cor_destaque": "B08A3E",
+ "contagem": {
+  "aros": 3
+ },
+ "diretor": {
+  "angulo": "Lustre comum some no teto; 3 aros de LED em degraus de 60, 40 e 20 cm viram o centro da mesa de jantar.",
+  "palavra": "3 aros",
+  "prova": "Aros de 60, 40 e 20 cm (foto com medidas), LED de 64W, cabo de aço ajustável de 1 m, bivolt 110/220V, foto real em apartamento",
+  "errc": "E: 'lustre luxuoso' genérico. R: specs empilhadas. E: as medidas dos 3 aros desenhadas na foto e a foto real de casa. C: comparação 'lustre comum ou três aros?' e a ilha de cozinha.",
+  "publico_nao_obvio": "Quem tem ilha ou bancada na cozinha (o título cita cozinha e a descrição, ilha de cozinha).",
+  "por_que_converte": "Manual do vencedor: comparação abre lacuna de curiosidade (Heath). Hopkins: 60, 40 e 20 cm e 64W são específicos e críveis; a foto real de sala de jantar é a demonstração.",
+  "visual": "1º segundo: 3 aros acesos em diagonal contra cortina escura; linhas de luz curvas cortam o feed reto."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle view from below at a diagonal, 35mm lens. The exact pendant light from the reference images, identical shape, color, material and every part: round gold ceiling plate, fine steel wires, exactly 3 thin gold rings of 3 sizes at staggered tilted heights, glowing warm white. Real size, keep the scale true against the room and furniture: the three rings measure 60 cm, 40 cm and 20 cm across, hanging about 1 m below the ceiling: the largest ring is clearly narrower than the table. Above a white kitchen island with a pale stone top, plain warm-white walls. Blue-hour dusk through a large window. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Very slow push-in from below. The pendant with exactly 3 thin gold rings of 3 sizes glowing warm white, hanging on fine wires from a round gold plate, stays perfectly still and unchanged, every part identical; the whole pendant stays fully in frame. Blue dusk light rests on the walls, warm light glows on the stone top. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t06-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.6,
+   "fiscal": "3.6",
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up from below, 85mm lens, all 3 rings from large to small. The exact pendant light from the reference images, identical shape, color, material and every part: round gold ceiling plate, fine steel wires, exactly 3 thin gold rings of 3 sizes at staggered tilted heights, glowing warm white. Real size, keep the scale true against the room and furniture: the three rings measure 60 cm, 40 cm and 20 cm across, hanging about 1 m below the ceiling: the largest ring is clearly narrower than the table. Smooth plain white ceiling behind. Warm light from the rings, crisp highlights on the gold edges. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Slow lateral dolly left beneath the rings. The pendant with exactly 3 thin gold rings of 3 sizes glowing warm white, hanging on fine wires from a round gold plate, stays perfectly still and unchanged, every part identical. Soft highlights glide slowly along the gold ring edges. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t06-cenas/cena2.mp4",
+   "lento": 1.0,
+   "fiscal": "ok",
+   "foto": 4
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium shot from behind a kitchen island at night. The exact pendant light from the reference images, identical shape, color, material and every part: round gold ceiling plate, fine steel wires, exactly 3 thin gold rings of 3 sizes at staggered tilted heights, glowing warm white. A woman seen from behind places a fruit bowl on the island under the lit pendant; the largest ring is clearly narrower than the island. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "She slowly places the bowl while the camera pushes in very slowly. The pendant stays perfectly still and unchanged. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t06-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide eye-level shot, 35mm lens. The exact pendant light from the reference images, identical shape, color, material and every part: round gold ceiling plate, fine steel wires, exactly 3 thin gold rings of 3 sizes at staggered tilted heights, glowing warm white. Real size, keep the scale true against the room and furniture: the three rings measure 60 cm, 40 cm and 20 cm across, hanging about 1 m below the ceiling: the largest ring is clearly narrower than the table. Above a round walnut dining table with two white plates and a bowl of lemons, plain deep blue wall. Night, the rings as the only light. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the pendant. The pendant with exactly 3 thin gold rings of 3 sizes glowing warm white, hanging on fine wires from a round gold plate, stays perfectly still and unchanged, every part identical. Warm light rests on the table, gentle reflections on the plates. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "pruna_t": 2.0,
+   "fiscal": "2.0",
+   "foto": 5
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Pendente LED nórdico",
+     "titulo": "Três aros, [três cores] de luz",
+     "abertura": {
+      "grande": "1m",
+      "texto": "de cabo de aço ajustável"
+     }
+    },
+    {
+     "rotulo": "Aros de 60, 40 e 20 cm",
+     "titulo": "[60 cm] no aro maior"
+    },
+    {
+     "rotulo": "Sala, quarto ou cozinha",
+     "titulo": "Teto [em destaque] na sala",
+     "fichas": [
+      "LED de 64W",
+      "Bivolt 110/220V",
+      "Cabo de aço 1 m"
+     ],
+     "cta": "Toque no carrinho e acenda a sala"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Sua [ilha de cozinha] pede isso",
+     "sub": "Para ilha de cozinha e sala"
+    },
+    {
+     "titulo": "Altura [no ponto] da bancada",
+     "sub": "Cabo de aço ajustável de até 1 m"
+    },
+    {
+     "titulo": "Pede o seu no [carrinho]",
+     "sub": "Nota alta e bivolt 110/220V"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre pendente de LED",
+     "titulo": "Lustre [comum] ou três aros?",
+     "sub": "3 aros de LED, 3 cores em 1 luz"
+    },
+    {
+     "rotulo": "Medida real dos aros",
+     "titulo": "Feito para [15 a 25 m²]",
+     "sub": "Aros de 60, 40 e 20 cm de diâmetro"
+    },
+    {
+     "rotulo": "Sala, cozinha ou corredor",
+     "titulo": "Seu jantar, [outro clima]",
+     "sub": "LED de 64W, bivolt 110/220V",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "64W",
+  "t": "de LED"
+ },
+ "legendas": {
+  "shopee": "Lustre pendente LED de 3 aros, 60, 40 e 20 cm, 3 cores em 1 luz\n#lustrependente #lustreled #lustresaladejantar #pendentenordico",
+  "shopee2": "Pendente LED nórdico com cabo de aço ajustável de 1 m e bivolt\n#lustrecozinha #ilhadecozinha #luminariapendente #decoracaocozinha",
+  "shopee3": "Lustre de aros com LED de 64W para sala de 15 a 25 m², nota alta\n#lustremoderno #lustredearos #iluminacaosala #saladejantar",
+  "reels": "Lustre comum ou três aros de LED? 3 cores em 1 luz, aros de 60, 40 e 20 cm e bivolt ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrependente #lustreled #ilhadecozinha #saladejantar"
+ },
+ "notas": "01 recortada em 750x540 (lado menor abaixo de 600: os quadrinhos com texto começam em y=545 e a foto só tem 750 px; 540 é o máximo limpo). 03 recortada nos aros com as cotas 60/40/20 cm (tira título, miniaturas e interruptor com dedo), só código. 04 é foto real de apartamento, recortada em 600x600 nos aros e na janela (tira a mesa com caixa vermelha com letras); sobram 2 adesivos com ideogramas na janela, por isso a câmera sobe para os aros. Descartadas 02 (textos), 05/07 (tabela, logos; 07 é outro modelo), 06 (selo 'leve outro grátis'). 'Dourado' e controle/interruptor fora do texto (anúncio contraditório). Risco Pruna: somar um 4º aro ou mexer nos fios."
+}

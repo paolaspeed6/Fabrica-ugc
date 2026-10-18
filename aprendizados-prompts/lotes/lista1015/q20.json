@@ -1,0 +1,102 @@
+{
+  "nome": "q20_prateleira_suspensa_industrial",
+  "titulo_produto": "Prateleira Suspensa Industrial Metal Decore",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q20-fotos/01.jpg",
+    "q20-fotos/02.jpg"
+  ],
+  "cor_destaque": "auto",
+  "cenas": [
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text, no letters, no logos anywhere in the image. Minimalist living room with a smooth grey microcement wall, warm side light, a green potted plant at the lower left. On the wall hangs a wall-mounted industrial shelf kit exactly as in reference photo 1: three light natural-wood plank shelves of different lengths held by black square-tube metal brackets, mounted on the wall at staggered heights, decorated with a few plain ceramic vases and unprinted books. 50 mm, shallow depth of field, soft window light, neutral white balance. The whole product fills 25-60% of the image height, centered, empty floor below.",
+      "movimento": "gentle lateral dolly"
+    },
+    {
+      "foto": 0,
+      "movimento": "slow push-in"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text, no letters, no logos anywhere in the image. Bright home office with a pale grey wall and light wood desk below. On the wall hangs a wall-mounted industrial shelf kit exactly as in reference photo 1: three light natural-wood plank shelves of different lengths held by black square-tube metal brackets, mounted on the wall at staggered heights, holding a small plant and plain unprinted books. 85 mm, shallow depth of field, soft window light, neutral white balance. The whole product fills 25-60% of the image height, centered, empty floor below.",
+      "movimento": "rack focus"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Metal e madeira · 3 prateleiras",
+          "titulo": "Parede [vazia]? Veja isso",
+          "abertura": {
+            "grande": "3",
+            "texto": "prateleiras no mesmo kit"
+          }
+        },
+        {
+          "rotulo": "120, 100 e 60 cm",
+          "titulo": "Kit [escalonado] com 3 tamanhos"
+        },
+        {
+          "rotulo": "Nota 4,93",
+          "titulo": "Metalon com pintura [eletrostática]",
+          "fichas": [
+            "3 prateleiras",
+            "Metal e madeira",
+            "Nota 4,93"
+          ],
+          "cta": "Toque no carrinho e decore"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Sua parede [pelada] precisa disso",
+          "sub": "Kit com 3 prateleiras"
+        },
+        {
+          "titulo": "Ferro preto e [madeira] clara",
+          "sub": "120, 100 e 60 cm"
+        },
+        {
+          "titulo": "Decore já pelo [carrinho]",
+          "sub": "Nota 4,93"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_cartao",
+      "cenas": [
+        {
+          "rotulo": "Decoração industrial",
+          "titulo": "Por que [ninguém] decora assim?"
+        },
+        {
+          "rotulo": "Kit com 3 prateleiras",
+          "titulo": "[Metal e madeira] na parede",
+          "sub": "120 x 19,5, 100 x 19,5 e 60 x 19,5 cm"
+        },
+        {
+          "rotulo": "Nota 4,93",
+          "titulo": "Menos de R$ 83 por [prateleira]",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "4,93",
+    "t": "nota no anúncio"
+  },
+  "legendas": {
+    "shopee": "Kit de 3 prateleiras suspensas, metal preto e madeira. #prateleira #decoracao #industrial #achadinhosshopee",
+    "shopee2": "Prateleira suspensa industrial Metal Decore, kit com 3 tamanhos. #decoracao #prateleira #sala #achadinhosshopee",
+    "reels": "Parede vazia? Kit com 3 prateleiras de metal e madeira, nota 4,93. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#decoracao #prateleira #industrial #casa"
+  },
+  "comentario": "🛒 Prateleira Suspensa Industrial aqui: {link}",
+  "imagens_conferidas": true
+}

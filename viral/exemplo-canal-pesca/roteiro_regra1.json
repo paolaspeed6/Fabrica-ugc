@@ -1,0 +1,86 @@
+{
+ "cenas": [
+  {
+   "clipe": "cenas/v4_v1.mp4",
+   "voz": "cenas/v4_n1.mp3",
+   "texto": "Peixe vindo fácil demais? <#0.3#> Recolhe tudo... e vai embora.",
+   "desloc": 0.15,
+   "zoom": 0.05
+  },
+  {
+   "clipe": "cenas/v4_v2.mp4",
+   "voz": "cenas/v4_n2.mp3",
+   "texto": "Meu pai pescou sessenta anos no Rio Negro. <#0.2#> Nunca explicou o porquê.",
+   "zoom": 0.04
+  },
+  {
+   "clipe": "cenas/v4_v3.mp4",
+   "voz": "cenas/v4_n3.mp3",
+   "texto": "Em oitenta e sete, o compadre Tião tava enchendo a canoa. <#0.2#> Riu da regra... <#0.6#> e ficou.",
+   "zoom": 0.07
+  },
+  {
+   "clipe": "cenas/v4_v4.mp4",
+   "voz": "cenas/v4_n4.mp3",
+   "texto": "Acharam a canoa de manhã. <#0.2#> Lampião aceso. <#0.2#> Isopor cheio. <#0.5#> O Tião... nunca acharam.",
+   "zoom": 0.08
+  }
+ ],
+ "fim": {
+  "dur": 3.6,
+  "voz": "cenas/v4_n5.mp3",
+  "texto": "O rio cobra. <#0.4#> A regra dois é pior.",
+  "prox_em": "regra",
+  "desloc": 0.4
+ },
+ "carimbos": [
+  {
+   "em": "sessenta",
+   "linhas": [
+    {
+     "cls": "grande",
+     "txt": "60 ANOS"
+    },
+    {
+     "cls": "medio",
+     "txt": "DE RIO NEGRO"
+    }
+   ]
+  },
+  {
+   "em": "oitenta",
+   "linhas": [
+    {
+     "cls": "ano",
+     "txt": "1987"
+    }
+   ],
+   "tremer": true,
+   "ate": "Riu"
+  },
+  {
+   "em": "ficou",
+   "linhas": [
+    {
+     "cls": "stamp",
+     "txt": "ELE <em>FICOU.</em>"
+    }
+   ]
+  },
+  {
+   "em": "Lampião",
+   "passo_em": "Isopor",
+   "linhas": [
+    {
+     "cls": "stamp",
+     "txt": "LAMPIÃO ACESO."
+    },
+    {
+     "cls": "stamp",
+     "txt": "ISOPOR <em>CHEIO.</em>"
+    }
+   ],
+   "ate": "Tião"
+  }
+ ]
+}

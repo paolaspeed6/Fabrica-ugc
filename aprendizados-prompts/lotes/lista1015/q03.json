@@ -1,0 +1,113 @@
+{
+  "nome": "q03_escrivaninha_pe_palito",
+  "titulo_produto": "Escrivaninha Pé Palito Beto Móveis",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q03-fotos/01.jpg",
+    "q03-fotos/04.jpg",
+    "q03-fotos/05.jpg"
+  ],
+  "cor_destaque": "auto",
+  "angulos_reais": false,
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "slow push-in",
+      "clipe": "q03-cenas/cena1.mp4"
+    },
+    {
+      "foto": 1,
+      "movimento": "slow push-in",
+      "clipe": "q03-cenas/cena2.mp4"
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        0,
+        140,
+        884,
+        1024
+      ],
+      "movimento": "slow push-in"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Escrivaninha pé palito",
+          "titulo": "[89 cm] que viram home office",
+          "abertura": {
+            "grande": "89cm",
+            "texto": "de largura, tampo preto"
+          }
+        },
+        {
+          "rotulo": "Pé palito que não balança",
+          "titulo": "Sapata [niveladora] nos pés"
+        },
+        {
+          "rotulo": "Nota 4,59",
+          "titulo": "Cabe no [quarto] pequeno",
+          "fichas": [
+            "89 x 45 x 77 cm",
+            "Hastes de reforço",
+            "Nota 4,59"
+          ],
+          "cta": "Toque no carrinho e escolha o tampo preto"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Home office em [89 cm]",
+          "sub": "Tampo preto, pés de madeira"
+        },
+        {
+          "titulo": "Pé palito que [não] balança",
+          "sub": "Sapatas niveladoras"
+        },
+        {
+          "titulo": "Leve a sua no [carrinho]",
+          "sub": "Nota 4,59 · 302 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Seu quarto cabe um home office",
+          "titulo": "Mesa de [pé palito] balança?",
+          "sub": "Olha o detalhe nos pés"
+        },
+        {
+          "rotulo": "Mecanismo",
+          "titulo": "Sapata [niveladora] e haste de aço",
+          "sub": "Tampo de 15 mm"
+        },
+        {
+          "rotulo": "Nota 4,59 · 302 avaliações",
+          "titulo": "89 x 45 cm de [cantinho] só seu",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "89",
+    "t": "cm"
+  },
+  "legendas": {
+    "shopee": "Escrivaninha pé palito Beto Móveis 89 x 45 cm, tampo preto, sapatas niveladoras.\n#escrivaninha #homeoffice #mesa #achadinhosshopee",
+    "shopee2": "Escrivaninha retrô de 89 cm com hastes de reforço e sapatas niveladoras.\n#escrivaninha #homeoffice #quarto #achadinhosshopee",
+    "reels": "Seu quarto cabe um home office 💻 Escrivaninha pé palito 89 x 45 cm com sapatas niveladoras e hastes de reforço. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#homeoffice #escrivaninha #quarto #decoracao"
+  },
+  "comentario": "🛒 Escrivaninha pé palito aqui: {link}",
+  "imagens_conferidas": true
+}

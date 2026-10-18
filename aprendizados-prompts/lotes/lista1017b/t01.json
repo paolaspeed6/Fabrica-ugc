@@ -1,0 +1,152 @@
+{
+ "nome": "t01_lustre_tres_aneis",
+ "titulo_produto": "Lustre Nórdico de 3 Anéis com LED e 3 Cores de Luz",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r01-fotos/01.jpg",
+  "../lista1016/r01-fotos/02.jpg",
+  "t01-cenas/cena1.png",
+  "t01-cenas/cena2.png",
+  "t01-cenas/cena3.png"
+ ],
+ "cor_destaque": "B8892E",
+ "contagem": {
+  "aneis": 3,
+  "globos": 3
+ },
+ "diretor": {
+  "angulo": "O teto é a parede esquecida da casa: 3 anéis de LED fazem dele o centro da sala de jantar.",
+  "palavra": "3 cores",
+  "prova": "Mesmo lustre em 3 cores de luz (foto 02) + anéis de 60, 40 e 20 cm, LED de 64W, bem avaliado",
+  "errc": "E: 'achadinho' e lista de specs. R: adjetivos de luxo. E: prova das 3 cores lado a lado e medida dos anéis. C: falar com dono de café/loja, que a descrição cita.",
+  "publico_nao_obvio": "Dono de café ou loja pequena (a descrição cita sala de café e loja) que quer um teto que vira foto de Instagram.",
+  "por_que_converte": "Schwartz: quem já procura lustre está consciente da solução, então abrimos com o quadro mais bonito e a medida (Hopkins, especificidade). Sutherland: não é luminária, é o clima da sala.",
+  "visual": "1º segundo: anéis acesos com o teto pontilhado de luz e a cidade à noite na janela; contraste quente contra azul para o dedo."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle hero shot from below, 35mm lens. The exact chandelier from the reference images, identical shape, color, material and every part: gold round ceiling plate, thin cables, exactly 3 thin gold rings of 3 sizes, tilted and crossing, and exactly 3 small gold-capped glass globes below, rings glowing warm white. Real size, keep the scale true against the room and furniture: the three rings measure 60 cm, 40 cm and 20 cm across, hanging about 1 m below the ceiling: the largest ring is clearly narrower than a dining table. Minimalist living room, white ceiling, plain sand-colored walls. Blue dusk light from a tall window. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Very slow push-in from below. The chandelier with exactly 3 thin gold rings and exactly 3 small gold-capped glass globes stays perfectly still and unchanged, every part identical, rings glowing warm white; the whole chandelier stays fully in frame. Deep blue dusk light rests on the walls, faint dust drifts in the window light. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t01-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.6,
+   "fiscal": "2.6",
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up from below, 85mm lens, framing the crossing rings and the globes. The exact chandelier from the reference images, identical shape, color, material and every part: gold round ceiling plate, thin cables, exactly 3 thin gold rings of 3 sizes, tilted and crossing, and exactly 3 small gold-capped glass globes below, rings glowing bright neutral white. Real size, keep the scale true against the room and furniture: the three rings measure 60 cm, 40 cm and 20 cm across, hanging about 1 m below the ceiling: the largest ring is clearly narrower than a dining table. Smooth plain white ceiling behind. Crisp bright light from the rings, soft highlights on the gold edges. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Slow lateral dolly left beneath the chandelier. The chandelier with exactly 3 thin gold rings and exactly 3 small gold-capped glass globes stays perfectly still and unchanged, every part identical, rings glowing bright neutral white. Soft highlights glide slowly along the gold ring edges. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t01-cenas/cena2.mp4",
+   "lento": 1.0,
+   "fiscal": "ok",
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium shot from behind a dining table at night. The exact chandelier from the reference images, identical shape, color, material and every part: gold round ceiling plate, thin cables, exactly 3 thin gold rings of 3 sizes, tilted and crossing, and exactly 3 small gold-capped glass globes below, rings glowing warm white, above an oak dining table with two white plates and a bowl of lemons. A woman seen from behind sits at the table under the lit chandelier, setting down a bowl of salad; the chandelier hangs well above the table, clearly narrower than the table. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "She slowly sets the bowl on the table while the camera drifts gently forward. The chandelier stays perfectly still and unchanged. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t01-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide eye-level shot, 35mm lens. The exact chandelier from the reference images, identical shape, color, material and every part: gold round ceiling plate, thin cables, exactly 3 thin gold rings of 3 sizes, tilted and crossing, and exactly 3 small gold-capped glass globes below, rings glowing warm white, above an oak dining table with two white plates and a bowl of lemons. Real size, keep the scale true against the room and furniture: the three rings measure 60 cm, 40 cm and 20 cm across, hanging about 1 m below the ceiling: the largest ring is clearly narrower than a dining table. Plain warm-white walls. Night, the chandelier as the main light. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the chandelier. The chandelier with exactly 3 thin gold rings and exactly 3 small gold-capped glass globes stays perfectly still and unchanged, every part identical, rings glowing warm white. Warm light rests softly on the table, gentle reflections on the plates. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "pruna_t": 2.6,
+   "fiscal": "2.6",
+   "foto": 4
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre nórdico de 3 anéis",
+     "titulo": "Três anéis acesos no [seu teto]",
+     "abertura": {
+      "grande": "60cm",
+      "texto": "de anel no teto"
+     }
+    },
+    {
+     "rotulo": "Mesmo lustre, 3 cores de luz",
+     "titulo": "Escolha entre [3 cores] de luz"
+    },
+    {
+     "rotulo": "Anéis de 60, 40 e 20 cm",
+     "titulo": "Ilumina [15 a 25 m²]",
+     "fichas": [
+      "Anéis 60/40/20 cm",
+      "LED de 64W",
+      "Cabo ajustável 1 m"
+     ],
+     "cta": "Toque no carrinho e ilumine a sala"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Seu [café] merece esse teto",
+     "sub": "Lustre para sala de café e loja"
+    },
+    {
+     "titulo": "Romântica ou [alto brilho]",
+     "sub": "3 cores de luz no mesmo lustre"
+    },
+    {
+     "titulo": "Garanta o seu no [carrinho]",
+     "sub": "Bem avaliado por quem comprou"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre nórdico de luxo",
+     "titulo": "Teto [sem vida] na sala?",
+     "sub": "Três anéis de LED resolvem"
+    },
+    {
+     "rotulo": "Um lustre, três climas",
+     "titulo": "Muda o [clima] da sala",
+     "sub": "São 3 cores de luz para escolher"
+    },
+    {
+     "rotulo": "Cabo de aço ajustável",
+     "titulo": "Altura certa pro [seu teto]",
+     "sub": "Cabo ajustável de até 1 m",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "3",
+  "t": "cores de luz"
+ },
+ "legendas": {
+  "shopee": "Lustre nórdico de 3 anéis com LED de 64W e 3 cores de luz\n#lustredeteto #lustrenordico #lustrependente #saladejantar",
+  "shopee2": "Lustre de anéis 60, 40 e 20 cm com cabo de aço ajustável de 1 m\n#lustremoderno #iluminacaosala #decoracaocafe #lustredeaneis",
+  "shopee3": "Lustre romântico para sala de 15 a 25 m², bem avaliado por quem comprou\n#luminariadeteto #saladeestar #lustreled #decoracaoquarto",
+  "reels": "Teto sem vida na sala de jantar? 3 anéis de LED com 3 cores de luz mudam o clima da casa ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustredeteto #lustrenordico #saladejantar #lustreled"
+ },
+ "notas": "Fotos: 01 (produto inteiro em ambiente real, Pruna) e 02 (3 cores lado a lado, tem legendas escritas, por isso só código). 04/05/07 têm tabela e diagrama (recorte limpo ficaria < 600 px), 03 tem mão e celular, 06 colagem, 08/09 outro modelo. Cor 'dourado' e 'estrelas' fora do texto: não estão escritas no título/descrição. Risco: Pruna somar/tirar anel ou globo (contagem 3+3 no prompt) e redesenhar os pontos de luz do teto."
+}

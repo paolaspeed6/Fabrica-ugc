@@ -1,0 +1,148 @@
+{
+ "nome": "s28_cortina_blackout_tecido",
+ "titulo_produto": "Cortina Blackout Tecido Grosso 2,80 x 2,30 m",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r28-fotos/01.jpg"
+ ],
+ "cor_destaque": "8B6B4F",
+ "contagem": {
+  "partes": 2,
+  "ilhoses_por_parte": 8
+ },
+ "diretor": {
+  "angulo": "O blackout de tecido grosso que segura o sol da tarde e ainda vai para a lavagem sem encolher.",
+  "palavra": "tecido",
+  "prova": "Blackout em tecido grosso 100 por cento poliéster (sem símbolo na tela), lavável e não encolhe, isolamento térmico (preserva a temperatura), antialérgico, 2 partes de 1,40 x 2,30 m; bem avaliada.",
+  "errc": "E: 'achadinho' e o infográfico com selo de lupa. R: número de bloqueio de luz (o anúncio diz 80 e 90, fica fora). E: o tecido grosso contra a janela clara e o isolamento térmico. C: falar com quem tem sala virada para o sol da tarde.",
+  "publico_nao_obvio": "Quem tem sala ou home office virado para o poente, com o sol da tarde esquentando o sofá.",
+  "por_que_converte": "Schwartz (sofisticação de mercado): em blackout saturado, o mecanismo novo é o tecido lavável que não encolhe; Whitman: conforto e livrar-se do calor; Ries/Trout: a palavra tecido no gancho e no CTA.",
+  "visual": "Faixas verticais pesadas de tecido emoldurando uma janela branca estourada de luz: o contraste escuro/claro mostra o bloqueio sem texto."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "recorte": [
+    444,
+    0,
+    1024,
+    1024
+   ],
+   "pruna": null,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s28-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    424,
+    416,
+    1024,
+    1024
+   ],
+   "pruna": null,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "s28-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    130,
+    420,
+    1024,
+    1024
+   ],
+   "pruna": "Photorealistic commercial product cinematography. Very slow push-in in a modern gray living room where floor-length taupe blackout curtains hang in heavy straight folds beside a tall bright window, with a gray sofa, a glass coffee table with a dark vase and a cream rug. The curtains stay perfectly still and unchanged, every fold identical to the photo. The window daylight slowly softens into a warm, cozy glow. Shallow depth of field, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.08,
+   "clipe": "s28-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Blackout de tecido grosso",
+     "titulo": "Sol da tarde [fora] da sala",
+     "abertura": {
+      "grande": "2,80",
+      "texto": "m de largura, 2 partes"
+     }
+    },
+    {
+     "rotulo": "Acabamento premium em bainha",
+     "titulo": "Tecido [grosso] contra a luz"
+    },
+    {
+     "rotulo": "Preserva a temperatura",
+     "titulo": "Sala [aconchegante] o dia todo",
+     "fichas": [
+      "2 partes de 1,40 m",
+      "Não encolhe",
+      "Antialérgico"
+     ],
+     "cta": "Escolha a sua cor no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Blackout feito de [tecido]",
+     "sub": "Lavável e não encolhe"
+    },
+    {
+     "titulo": "Isolamento [térmico] na janela",
+     "sub": "Preserva a temperatura do ambiente"
+    },
+    {
+     "titulo": "Feche o pedido no [carrinho]",
+     "sub": "Para varão de 2 m, 18 a 28 mm"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Sala virada pro sol da tarde?",
+     "titulo": "Sofá [quente] às 4 da tarde?",
+     "sub": "Cortina de tecido que bloqueia luz"
+    },
+    {
+     "rotulo": "Isolamento térmico",
+     "titulo": "Segura o sol [lá fora]",
+     "sub": "Tecido antialérgico e lavável"
+    },
+    {
+     "rotulo": "Privacidade para sala e quarto",
+     "titulo": "Sua sala, sua [penumbra]",
+     "sub": "2 partes de 1,40 x 2,30 m",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliada"
+ },
+ "legendas": {
+  "shopee": "Cortina blackout de tecido grosso 2,80 x 2,30 m, lavável e antialérgica\n#cortinablackout #cortinaquarto #cortinasala #blackouttecido",
+  "shopee2": "Cortina blackout com isolamento térmico e 16 ilhós cromados, não encolhe\n#cortinatermica #cortinacomilhos #decoracaoquarto #janelasol",
+  "shopee3": "Cortina blackout em 2 partes de 1,40 m com acabamento premium em bainha\n#cortinagrossa #blackoutlavavel #salaaconchegante #cortinamoderna",
+  "reels": "Sol da tarde esquentando a sala? Essa cortina blackout de tecido grosso tem isolamento térmico, é lavável e não encolhe ☀️\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinablackout #cortinatermica #soldatarde #decoracaosala"
+ },
+ "notas": "Só a 01, recortada para tirar o texto 'Valoriza qualquer ambiente.' (vai até x=442) e a linha branca vertical; 02/03/04 têm texto/medidas, 05 tem lupa de colagem e tom mais bege que a 01, 06-10 são outras cores. Riscos: a 01 nunca mostra o produto inteiro (painel direito sai do quadro) e o recorte da cena 1 tem 580 px de largura (20 px abaixo do mínimo, mas já em 9:16); ilhoses só por código e sem número na tela (vê-se ~6-7 por parte, as pontas dobram); bloqueio 80 x 90 se contradiz e fica fora."
+}

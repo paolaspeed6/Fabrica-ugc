@@ -1,0 +1,74 @@
+{
+ "nome": "escrivaninha_palito",
+ "titulo_produto": "Escrivaninha pés palito Beto Móveis",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p06-fotos/01.jpg",
+  "p06-fotos/07.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "foto": 1,
+   "movimento": "Slow lateral slide along the black desk with the laptop and mug, gentle parallax, soft daylight. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. This exact black desk with tapered wooden legs placed in the corner of a small cozy bedroom next to a window, bed partly visible at the edge, laptop on top, soft morning light. The desk fits the small corner perfectly.",
+   "movimento": "Slow pull-back revealing how the desk fits the small bedroom corner. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "foto": 0,
+   "movimento": "Slow push-in toward the desk from the side angle, laptop screen softly lit. The product does not change shape, color or lettering. No people."
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Escrivaninha Beto Móveis",
+     "titulo": "Cabe em [89 cm]"
+    },
+    {
+     "rotulo": "Pés palito de madeira",
+     "titulo": "Estilo [retrô] moderno"
+    },
+    {
+     "rotulo": "89 x 45 x 77 cm",
+     "titulo": "Sapata [niveladora]: não balança",
+     "fichas": [
+      "89 x 45 cm",
+      "Tampo 15 mm",
+      "Hastes de reforço"
+     ],
+     "cta": "Toque no carrinho"
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "Escrivaninha pés palito",
+     "titulo": "Home office no [quarto pequeno]"
+    },
+    {
+     "rotulo": "Só 89 cm de largura",
+     "titulo": "Cabe em [qualquer canto]",
+     "sub": "Pés de madeira maciça"
+    },
+    {
+     "rotulo": "Estilo retrô",
+     "titulo": "Seu canto de [foco]",
+     "cta": "Link no comentário"
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Escrivaninha com pés palito Beto Móveis: 89 x 45 cm e 77 cm de altura, tampo de 15 mm, pés de madeira maciça, hastes metálicas de reforço e sapatas niveladoras. Toque no carrinho.",
+  "reels": "Home office pra quem mora em quarto pequeno 💻 Escrivaninha pés palito com 89 cm. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#homeoffice #decoracao #quarto #setup"
+ },
+ "comentario": "🛒 Escrivaninha pés palito aqui: {link}"
+}

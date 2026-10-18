@@ -1,0 +1,131 @@
+{
+ "nome": "r09_lustre_caracol_cristal_dourado",
+ "titulo_produto": "Lustre Caracol Cristal Acrílico Dourado",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r09-fotos/01.jpg",
+  "r09-fotos/02.jpg"
+ ],
+ "cor_destaque": "B8892E",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "recorte": [
+    74,
+    0,
+    726,
+    652
+   ],
+   "clipe": "r09-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "codigo": "pull",
+   "zoom": 1.1,
+   "recorte": [
+    120,
+    40,
+    720,
+    640
+   ],
+   "clipe": "r09-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "sobe",
+   "zoom": 1.07,
+   "recorte": [
+    133,
+    0,
+    667,
+    800
+   ],
+   "clipe": "r09-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre caracol cristal dourado",
+     "titulo": "Nota [4,91] em 539 avaliações",
+     "abertura": {
+      "grande": "4,91",
+      "texto": "de nota, 539 avaliações"
+     }
+    },
+    {
+     "rotulo": "Pedrarias em acrílico",
+     "titulo": "Cascata de [pedrarias] no teto"
+    },
+    {
+     "rotulo": "Base em metal dourado",
+     "titulo": "Ajusta a [corrente] do teto",
+     "fichas": [
+      "Bivolt",
+      "Garantia de 6 meses",
+      "Soquete E27"
+     ],
+     "cta": "Garanta o seu no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Seu teto [dourado] e brilhante",
+     "sub": "Lustre caracol de pedrarias"
+    },
+    {
+     "titulo": "Combina com a sua [sala]",
+     "sub": "Metal dourado e acrílico"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Bivolt e 6 meses de garantia"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre caracol dourado",
+     "titulo": "O lustre [caracol] da sala",
+     "sub": "Pedrarias em acrílico"
+    },
+    {
+     "rotulo": "No ambiente",
+     "titulo": "Olha ele na [decoração]",
+     "sub": "Metal dourado e pedrarias"
+    },
+    {
+     "rotulo": "Dados rápidos",
+     "titulo": "Bivolt e [E27] comum",
+     "sub": "Lâmpada não inclusa",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,91",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Lustre caracol de cristal acrílico dourado, nota 4,91 em 539 avaliações\n#lustrecristal #lustredourado #decoracaosala #lustrependente",
+  "shopee2": "Lustre dourado com pedrarias de acrílico, bivolt e garantia de 6 meses\n#lustrecaracol #luminariadourada #salaelegante #decoracaoclassica",
+  "shopee3": "Lustre de metal dourado com corrente ajustável, soquete E27\n#lustresala #iluminacaodecor #decoracaochique #lustreteto",
+  "reels": "Cristal acrílico dourado que muda a cara da sala ✨ Bivolt, soquete E27 e nota 4,91.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustredecristal #lustrecaracol #salachique #decoracaodourada"
+ },
+ "notas": "Foto 01 (fundo preto com faixas brancas laterais, recortadas pelo crop x74-726) e 02 (sala real; faixas brancas laterais, crop de 534 px de largura, levemente abaixo de 600). Fotos 03/04 descartadas (banner 'Reis Lustres' grande). Gancho: nota 4,91/539. Medida não citada: título diz 30/20, descrição 25 cm. Pedrarias são ACRÍLICO (não falar vidro/cristal legítimo); lâmpada não inclusa."
+}

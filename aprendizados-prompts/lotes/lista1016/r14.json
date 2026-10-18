@@ -1,0 +1,125 @@
+{
+ "nome": "r14_lustre_tres_cores",
+ "titulo_produto": "Lustre LED Três Cores quadrado (Castelo de Luz)",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r14-fotos/01.jpg",
+  "r14-fotos/06.jpg"
+ ],
+ "cor_destaque": "C9651B",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.04,
+   "clipe": "r14-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "codigo": "pan_esq",
+   "zoom": 1.1,
+   "recorte": [
+    200,
+    40,
+    800,
+    640
+   ],
+   "clipe": "r14-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pull",
+   "zoom": 1.08,
+   "recorte": [
+    0,
+    20,
+    600,
+    620
+   ],
+   "clipe": "r14-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre LED três cores",
+     "titulo": "[3] cores em um só lustre",
+     "abertura": {
+      "grande": "3",
+      "texto": "cores no mesmo lustre"
+     }
+    },
+    {
+     "rotulo": "Troca de cor no interruptor",
+     "titulo": "Apagou e acendeu, [mudou]"
+    },
+    {
+     "rotulo": "Quadrado, acrílico e alumínio",
+     "titulo": "[1.084] avaliações, nota 4,93",
+     "fichas": [
+      "Bivolt",
+      "3 cores",
+      "Acrílico + alumínio"
+     ],
+     "cta": "Escolha o seu tamanho no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Um lustre, [3] climas",
+     "sub": "Troca de cor ao acender"
+    },
+    {
+     "titulo": "Do frio ao [quente] num clique",
+     "sub": "Apague e acenda para trocar"
+    },
+    {
+     "titulo": "Garanta o seu no [carrinho]",
+     "sub": "Modelo quadrado, nota 4,93"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre que muda de cor",
+     "titulo": "Esse lustre muda de [cor]",
+     "sub": "É só apagar e acender a luz"
+    },
+    {
+     "rotulo": "Acabamento",
+     "titulo": "Borda de [acrílico] trabalhada",
+     "sub": "Com base em alumínio"
+    },
+    {
+     "rotulo": "Avaliação",
+     "titulo": "Nota [4,93] na Shopee",
+     "sub": "1.084 avaliações de clientes",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "3",
+  "t": "cores de luz"
+ },
+ "legendas": {
+  "shopee": "Lustre LED três cores que troca ao apagar e acender, nota 4,93\n#lustretrescores #luminarialed #iluminacaosala #lustrequadrado",
+  "shopee2": "Lustre quadrado de acrílico com alumínio, bivolt, 1.084 avaliações\n#lustre3cores #lustredeteto #quartodecorado #plafonmoderno",
+  "shopee3": "Lustre de teto que muda de cor a cada vez que você acende\n#lustremulticor #decoracaoteto #lampadaled #casaorganizada",
+  "reels": "Esse lustre muda de cor só de apagar e acender 💡 Quadrado, bivolt e com 4,93 de nota.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustremudacor #lustreled3cores #plafonquadrado #decoracaodeteto"
+ },
+ "notas": "Mesma foto 01 do r05 (anúncio irmão), por isso cena 1 só difere no zoom; cenas 2 e 3 em recortes e movimentos diferentes (r05 usa pan_dir/sobe, este pan_esq/pull com a 06). Fotos 03, 04, 05 descartadas (texto/selo/colagem). Gancho: 3 cores por apagar/acender (OBS do anúncio). Risco: a foto 01 só mostra luz branca fria, a troca de cor é só afirmada no texto; tamanho da foto 01 não confirmado, por isso nenhuma medida citada."
+}

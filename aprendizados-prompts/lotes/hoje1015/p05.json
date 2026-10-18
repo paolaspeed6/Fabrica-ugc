@@ -1,0 +1,82 @@
+{
+ "nome": "poltrona_lara",
+ "titulo_produto": "Poltrona Lara Sanna Decor",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p05-fotos/01.jpg",
+  "p05-fotos/06.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. No people, no hands. No phone frame, no device bezel, no borders, no added text. The armchair placed in a bright, elegant living room with a large window, light linen curtains, a light woven rug and a green plant, plain off-white walls, soft daylight. The armchair faces the camera at a slight three-quarter angle like reference photo 1. The backrest shows clear diamond tufting with sunken buttons in a grid, exactly as in reference photo 1, plainly visible from this angle. EXACT armchair from reference photos 1 and 2: upholstery in a matte, flat-woven MEDIUM NAVY BLUE fabric (same blue as reference photo 1, not dark, not black, not velvet sheen, not teal), diamond quilting ONLY on the backrest, plain smooth seat cushion; honey-varnished bent wood arms that curve from the top of the backrest forward and down into the front legs in one continuous band, straight wooden rear legs. Neutral white daylight with no orange or yellow cast, so the fabric color stays identical to reference photo 1. Wide shot from a little farther away: the WHOLE armchair, legs included, fits between 25% and 60% of the image height, with empty floor below it down to the bottom edge.",
+   "movimento": "Slow push-in toward the armchair with a slight handheld feel."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. No people, no hands. No phone frame, no device bezel, no borders, no added text. Closer three-quarter view of the armchair against a plain warm-white wall on a light wood floor, showing the backrest quilting and the curved wooden arm, soft side daylight. EXACT armchair from reference photos 1 and 2: upholstery in a matte, flat-woven MEDIUM NAVY BLUE fabric (same blue as reference photo 1, not dark, not black, not velvet sheen, not teal), diamond quilting ONLY on the backrest, plain smooth seat cushion; honey-varnished bent wood arms that curve from the top of the backrest forward and down into the front legs in one continuous band, straight wooden rear legs. Neutral white daylight with no orange or yellow cast, so the fabric color stays identical to reference photo 1. Wide shot from a little farther away: the WHOLE armchair, legs included, fits between 25% and 60% of the image height, with empty floor below it down to the bottom edge.",
+   "movimento": "Slow lateral slide along the curved wooden arm, small arc."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. No people, no hands. No phone frame, no device bezel, no borders, no added text. The armchair in a calm reading corner: plain off-white wall with one framed abstract painting, a slim floor lamp beside it, a small green plant in a ceramic pot on the floor, soft daylight. The armchair faces the camera at a slight three-quarter angle like reference photo 1. The backrest shows clear diamond tufting with sunken buttons in a grid, exactly as in reference photo 1, plainly visible from this angle. EXACT armchair from reference photos 1 and 2: upholstery in a matte, flat-woven MEDIUM NAVY BLUE fabric (same blue as reference photo 1, not dark, not black, not velvet sheen, not teal), diamond quilting ONLY on the backrest, plain smooth seat cushion; honey-varnished bent wood arms that curve from the top of the backrest forward and down into the front legs in one continuous band, straight wooden rear legs. Neutral white daylight with no orange or yellow cast, so the fabric color stays identical to reference photo 1. Wide shot from a little farther away: the WHOLE armchair, legs included, fits between 25% and 60% of the image height, with empty floor below it down to the bottom edge.",
+   "movimento": "Slow push-in toward the armchair."
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Poltrona Lara · Sanna Decor",
+     "titulo": "Cara de [loja de decoração]",
+     "subir": 480
+    },
+    {
+     "rotulo": "Capitonê + madeira mel",
+     "titulo": "Braço de [madeira] curvada",
+     "subir": 230
+    },
+    {
+     "rotulo": "Espuma D26",
+     "titulo": "Conforto que [não afunda]",
+     "fichas": [
+      "Espuma D26",
+      "Madeira maciça",
+      "Várias cores"
+     ],
+     "cta": "Escolha sua cor no carrinho",
+     "escala": 0.62
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "Poltrona Lara",
+     "titulo": "Ninguém acredita no [preço] dela",
+     "subir": 520,
+     "escala": 0.85
+    },
+    {
+     "rotulo": "Encosto capitonê",
+     "titulo": "Parece de [loja cara]",
+     "sub": "Madeira curvada com verniz mel",
+     "subir": 350
+    },
+    {
+     "rotulo": "Espuma D26",
+     "titulo": "O canto que sua sala [pedia]",
+     "cta": "Link no comentário",
+     "escala": 0.58
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Poltrona Lara azul com braço de madeira curvada, encosto capitonê e espuma D26 que não afunda.\n#poltrona #decoracao #sala #achadinhosshopee",
+  "reels": "Ninguém acredita no preço dessa poltrona 😱 Encosto capitonê, madeira curvada e espuma D26: cara de loja de decoração. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#decoracao #sala #poltrona #casadecorada"
+ },
+ "comentario": "🛒 Poltrona Lara aqui: {link}",
+ "imagens_conferidas": true
+}

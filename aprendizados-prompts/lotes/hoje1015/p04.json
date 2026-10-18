@@ -1,0 +1,80 @@
+{
+ "nome": "capacete_dragon",
+ "titulo_produto": "Capacete EBF Spark Dragon + viseira camaleão",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p04-fotos/01.jpg",
+  "p04-fotos/03.jpg",
+  "p04-fotos/04.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. Three-quarter side view of this exact helmet with the iridescent chameleon visor closed, resting on a low concrete wall beside an empty road at sunset, golden low sun making the visor glow purple, green and blue, pink and cyan dragon graphics, SPARK and DRAGON lettering sharp. The visor reflects only sky and road. All lettering on the helmet reads correctly left to right exactly as in the reference photos, never mirrored or altered; the helmet faces to the right, the same side view as reference photo 1.",
+   "movimento": "Very slow cinematic push-in toward the helmet; only the sunset light shifts across the chameleon visor, making its colors shimmer from purple to green. The helmet stays perfectly still in the same side profile view for the whole shot: it does NOT rotate or turn toward the camera, its front is never shown. The visor reflects only sky and light. No people, no reflections of people. The product does not change shape, color or lettering.",
+   "subir": 230
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. This exact helmet with the iridescent chameleon visor installed, resting on a black motorcycle seat, and the second visor of the kit, a fully CLEAR transparent crystal visor, lying flat beside it on the seat, soft daylight, clean garage background. All lettering on the helmet reads correctly left to right exactly as in the reference photos, never mirrored or altered; the helmet faces to the right, the same side view as reference photo 1.",
+   "movimento": "Very slow lateral dolly from left to right a short distance; both visors stay where they are, nothing floats or moves. The helmet stays perfectly still in the same side profile view for the whole shot: it does NOT rotate or turn toward the camera, its front is never shown. The visor reflects only sky and light. No people, no reflections of people. The product does not change shape, color or lettering.",
+   "subir": 150
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. This exact helmet on a white shelf with soft pink ambient light, clean modern room, clear crystal visor installed as in reference photo 3. All lettering on the helmet reads correctly left to right exactly as in the reference photos, never mirrored or altered; the helmet faces to the right, the same side view as reference photo 1.",
+   "movimento": "Very slow push-in toward the helmet on the shelf, pink light glowing softly. The helmet stays perfectly still in the same side profile view for the whole shot: it does NOT rotate or turn toward the camera, its front is never shown. The visor reflects only sky and light. No people, no reflections of people. The product does not change shape, color or lettering.",
+   "subir": 190
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "EBF Spark Dragon",
+     "titulo": "Vem com [2 viseiras]"
+    },
+    {
+     "rotulo": "Cristal + camaleão",
+     "titulo": "Troca [rápida] de viseira"
+    },
+    {
+     "rotulo": "Nota 4,89",
+     "titulo": "Policarbonato [antirrisco]",
+     "fichas": [
+      "2 viseiras",
+      "Forro lavável",
+      "Engate rápido"
+     ],
+     "cta": "Leve as duas"
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "EBF Spark Dragon",
+     "titulo": "Olha o que essa [viseira] faz"
+    },
+    {
+     "rotulo": "Viseira camaleão",
+     "titulo": "Muda de [cor] na luz",
+     "sub": "E ainda vem a cristal"
+    },
+    {
+     "rotulo": "Preto e rosa",
+     "titulo": "Impossível [não notar]",
+     "cta": "Link no comentário",
+     "subir": 40,
+     "escala": 0.8
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Capacete EBF Spark Dragon com 2 viseiras, cristal e camaleão. Forro removível e lavável.\n#capacete #moto #motogirl #achadinhosshopee",
+  "reels": "Olha o que essa viseira faz 👀 EBF Spark Dragon com viseira camaleão extra. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#moto #capacete #motogirl #viseiracamaleao"
+ },
+ "comentario": "🛒 Capacete Spark Dragon + viseira camaleão: {link}"
+}

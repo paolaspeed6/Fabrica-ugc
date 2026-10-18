@@ -1,0 +1,155 @@
+{
+ "nome": "t10_plafon_ceu_estrelado_3_tons",
+ "titulo_produto": "Plafon LED Céu Estrelado 2 Andares 3 Tons",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r10-fotos/01.jpg",
+  "../lista1016/r10-fotos/06.jpg",
+  "t10-cenas/cena1.png",
+  "t10-cenas/cena2.png",
+  "t10-cenas/cena3.png"
+ ],
+ "cor_destaque": "C98B3A",
+ "contagem": {
+  "plafon": 1,
+  "andares": 2
+ },
+ "diretor": {
+  "angulo": "Um interruptor, três climas: a luz do quarto muda de 3.500K a 6.500K a cada toque.",
+  "palavra": "toque",
+  "prova": "3 tonalidades (3.500K, 4.500K e 6.500K) que trocam a cada toque no interruptor, LED integrado, bivolt, 2 andares; bem avaliado.",
+  "errc": "E: a arte de propaganda da foto 01 e o 'olha que lindo'. R: adjetivos de sofisticação. E: os 3 números de temperatura de cor e o gesto do toque. C: um plafon que é luz de trabalho de dia e luz de descanso à noite.",
+  "publico_nao_obvio": "Quem trabalha ou estuda no quarto e precisa de luz fria de dia e quente à noite no mesmo teto.",
+  "por_que_converte": "Hopkins: especificidade (3.500K, 4.500K, 6.500K) vence 'luz linda'. Heath: o Reels abre com a comparação fria ou quente e fecha a lacuna com 'as duas'.",
+  "visual": "Plafon quadrado de 2 andares brilhando com o painel estrelado ocupando metade da tela, câmera deslizando com o brilho espalhando no teto: luz quente em quarto de hotel para o dedo."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle view from below at a diagonal, 35mm lens. The exact ceiling light from the reference images, identical shape, color, material and every part: flush square two-tier LED ceiling light, white body, exactly 2 nested borders of clear crystal-pattern acrylic, star-speckled glowing center panel, glowing warm white on a white ceiling. Bedroom corner with a small oak desk, plain sage-green wall. Blue-hour dusk in the window. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Very slow push-in from below. The square two-tier ceiling light with exactly 2 clear crystal-pattern borders and a star-speckled glowing center panel stays perfectly still and unchanged, every part identical, glowing warm white; the whole fixture stays fully in frame. Blue dusk light rests on the walls. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t10-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.6,
+   "fiscal": "3.6",
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up from below on one corner, 85mm lens. The exact ceiling light from the reference images, identical shape, color, material and every part: flush square two-tier LED ceiling light, white body, exactly 2 nested borders of clear crystal-pattern acrylic, star-speckled glowing center panel, glowing bright cool white. Smooth white ceiling around it. Light sparkles inside the crystal-pattern borders. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Slow lateral dolly right along the corner. The square two-tier ceiling light with exactly 2 clear crystal-pattern borders and a star-speckled glowing center panel stays perfectly still and unchanged, every part identical, glowing bright cool white. Tiny highlights glide slowly across the crystal borders. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t10-cenas/cena2.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.5,
+   "fiscal": "2.5",
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide low angle shot of a living room at night. The exact ceiling light from the reference images, identical shape, color, material and every part: flush square two-tier LED ceiling light, white body, exactly 2 nested borders of clear crystal-pattern acrylic, star-speckled glowing center panel, glowing warm white on the ceiling of a living room with a low linen sofa, plain deep navy wall. A hand reaches into frame at the lower right and presses a white wall light switch, and the ceiling light above glows warm white. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "The hand slowly presses the switch while the camera tilts up very slowly toward the glowing ceiling light. The ceiling light stays perfectly still and unchanged. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t10-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide low angle view, 24mm lens. The exact ceiling light from the reference images, identical shape, color, material and every part: flush square two-tier LED ceiling light, white body, exactly 2 nested borders of clear crystal-pattern acrylic, star-speckled glowing center panel, glowing warm white on the ceiling of a living room with a low linen sofa, plain deep navy wall. Night. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the ceiling. The square two-tier ceiling light with exactly 2 clear crystal-pattern borders and a star-speckled glowing center panel stays perfectly still and unchanged, every part identical, glowing warm white. Warm light rests softly on the sofa and the walls. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "fiscal": "ok",
+   "foto": 4
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Plafon LED de 2 andares",
+     "titulo": "Um toque, [outro] quarto",
+     "abertura": {
+      "grande": "3",
+      "texto": "tons, um interruptor"
+     }
+    },
+    {
+     "rotulo": "3.500K, 4.500K e 6.500K",
+     "titulo": "Do [quente] ao frio no toque"
+    },
+    {
+     "rotulo": "LED integrado e bivolt",
+     "titulo": "Teto de [céu] estrelado",
+     "fichas": [
+      "3 tons de luz",
+      "Bivolt",
+      "Plafon de 2 andares"
+     ],
+     "cta": "Toque no carrinho e acenda o céu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Trabalha no [quarto]? Olha isso",
+     "sub": "6.500K pro dia, 3.500K pra noite"
+    },
+    {
+     "titulo": "[3] tons no mesmo interruptor",
+     "sub": "O tom muda a cada toque"
+    },
+    {
+     "titulo": "Pegue o seu no [carrinho]",
+     "sub": "Bivolt, LED integrado, 2 andares"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Quarto ou sala",
+     "titulo": "Luz [fria] ou quente? As duas",
+     "sub": "Plafon céu estrelado de LED"
+    },
+    {
+     "rotulo": "Troca no interruptor",
+     "titulo": "[3.500K] até 6.500K",
+     "sub": "Passando pelos 4.500K"
+    },
+    {
+     "rotulo": "Céu estrelado no teto",
+     "titulo": "Escolha o [clima] da noite",
+     "sub": "Plafon de 2 andares, bivolt",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "3",
+  "t": "tons de luz"
+ },
+ "legendas": {
+  "shopee": "Plafon LED céu estrelado de 2 andares com 3 tons de luz, bivolt\n#plafonled #plafonceuestrelado #luminariadeteto #iluminacaoquarto",
+  "shopee2": "Plafon quadrado que vai de 3.500K a 6.500K no interruptor, LED integrado\n#plafonquadrado #luzdequarto #homeofficenoquarto #luminariaquarto",
+  "shopee3": "Plafon céu estrelado bem avaliado, 3 tonalidades e bivolt 110v ou 220v\n#plafonsala #decoracaoquarto #ledintegrado #tetoestrelado",
+  "reels": "Luz fria ou quente? Este plafon céu estrelado troca entre 3 tons a cada toque no interruptor 💡\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#plafonled #plafonceuestrelado #iluminacaoquarto #luminariadeteto"
+ },
+ "notas": "A 01 é arte com texto grande e fica fora das cenas (só em fotos[0] por formato); as 3 cenas usam a 06, limpa e do mesmo modelo quadrado de 2 andares. 02-05 têm logo ou marca d'água, 07 é redonda. Cena 2 por código (close nas bordas de cristal, padrão fino que a IA redesenharia). Watt fora do texto (24W/36W, variação não confirmada). Risco: Pruna redesenhar o padrão das bordas, virar 1 ou 3 andares, ou fazer as estrelas piscarem; conferir 2 andares contra a 06."
+}

@@ -1,0 +1,151 @@
+{
+ "nome": "t05_lustre_quadrado_24w",
+ "titulo_produto": "Lustre LED Quadrado 24W Cor Fixa em Acrílico com Alumínio",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r05-fotos/01.jpg",
+  "t05-cenas/cena1.png",
+  "t05-cenas/cena2.png",
+  "t05-cenas/cena3.png"
+ ],
+ "cor_destaque": "6E7FA6",
+ "contagem": {
+  "bordas_quadradas_de_acrilico": 2
+ },
+ "diretor": {
+  "angulo": "A lâmpada pelada no teto do quarto é a vergonha que ninguém fotografa; um lustre de 10 cm de altura resolve sem reforma.",
+  "palavra": "lâmpada pelada",
+  "prova": "Milhares de avaliações com nota alta, 24W, bivolt, 34 x 34 x 10 cm, acrílico com alumínio",
+  "errc": "E: 'olha esse brilho' e foto parada. R: lista de specs. E: a prova social (milhares) e a borda de acrílico em close. C: falar com quem tem teto baixo (só 10 cm de altura).",
+  "publico_nao_obvio": "Quem tem teto baixo e acha que lustre não cabe (o anúncio dá 10 cm de altura).",
+  "por_que_converte": "Schwartz: o feed está consciente do problema (lâmpada pelada), então abrimos pela dor. Cialdini: milhares de avaliações dão a certeza que Hormozi pede no CTA.",
+  "visual": "1º segundo: o quadrado aceso com halo branco no teto escuro do quarto; forma geométrica limpa contra parede escura para o dedo."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle view from below at a diagonal, 35mm lens. The exact ceiling light from the reference images, identical shape, color, material and every part: flush square LED ceiling light, flat white center panel, exactly 2 nested square borders of clear faceted acrylic, slim white aluminum base, glowing neutral white on a smooth white ceiling. Real size, keep the scale true against the room and furniture: a compact flush ceiling light only 34 cm by 34 cm and 10 cm thick, small against the ceiling. Minimalist living room, plain pale gray-blue walls, window at blue-hour dusk. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Very slow push-in from below. The square ceiling light with exactly 2 nested clear faceted acrylic borders around a white panel stays perfectly still and unchanged, every part identical; the whole fixture stays fully in frame. Blue dusk light rests on the walls, a soft white halo glows on the ceiling. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t05-cenas/cena1.mp4",
+   "lento": 1.0,
+   "fiscal": "ok",
+   "foto": 1
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up from below on one corner, 85mm lens. The exact ceiling light from the reference images, identical shape, color, material and every part: flush square LED ceiling light, flat white center panel, exactly 2 nested square borders of clear faceted acrylic, slim white aluminum base, glowing neutral white. Real size, keep the scale true against the room and furniture: a compact flush ceiling light only 34 cm by 34 cm and 10 cm thick, small against the ceiling. Smooth white ceiling around it. Light sparkles inside the faceted acrylic. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Slow lateral dolly right along the corner. The square ceiling light with exactly 2 nested clear faceted acrylic borders around a white panel stays perfectly still and unchanged, every part identical. Tiny highlights glide slowly across the faceted acrylic. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t05-cenas/cena2.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.5,
+   "fiscal": "2.5",
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide low angle shot of a bedroom at night. The exact ceiling light from the reference images, identical shape, color, material and every part: flush square LED ceiling light, flat white center panel, exactly 2 nested square borders of clear faceted acrylic, slim white aluminum base, glowing neutral white on the ceiling of a calm bedroom: oak bed, cream linen, plain warm-white walls. A hand reaches into frame at the lower right and presses a white wall light switch, and the compact ceiling light above glows; the light is small against the ceiling. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Extremely slow push-in only, no tilt and no pan. The hand rests on the wall switch and presses it; the ceiling light above glows softly and stays perfectly still and unchanged, every part identical. The hand, the switch and the ceiling light stay in frame for the whole shot. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t05-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide low angle view, 24mm lens. The exact ceiling light from the reference images, identical shape, color, material and every part: flush square LED ceiling light, flat white center panel, exactly 2 nested square borders of clear faceted acrylic, slim white aluminum base, glowing neutral white on the ceiling of a calm bedroom: oak bed, cream linen, plain warm-white walls. Real size, keep the scale true against the room and furniture: a compact flush ceiling light only 34 cm by 34 cm and 10 cm thick, small against the ceiling. Night, the ceiling light as the main light. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the ceiling. The square ceiling light with exactly 2 nested clear faceted acrylic borders around a white panel stays perfectly still and unchanged, every part identical. Soft white light rests on the bed linen and the walls. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "fiscal": "2.2",
+   "refeito": "r1",
+   "pruna_t": 2.2,
+   "foto": 3
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre quadrado de 24W",
+     "titulo": "Adeus, [lâmpada pelada]",
+     "abertura": {
+      "grande": "10cm",
+      "texto": "de altura no teto"
+     }
+    },
+    {
+     "rotulo": "Acrílico sobre alumínio",
+     "titulo": "Duas bordas de [acrílico]"
+    },
+    {
+     "rotulo": "Bivolt e 24W de potência",
+     "titulo": "Seu quarto, [outro] quarto",
+     "fichas": [
+      "Potência 24W",
+      "Tensão bivolt",
+      "34 x 34 cm"
+     ],
+     "cta": "Toque no carrinho e escolha a cor"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Teto baixo? [10 cm] resolvem",
+     "sub": "Só 10 cm de altura no teto"
+    },
+    {
+     "titulo": "Três tons, [você] escolhe um",
+     "sub": "Frio, neutro ou quente na compra"
+    },
+    {
+     "titulo": "Garanta já no [carrinho]",
+     "sub": "Milhares de avaliações, nota alta"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre LED de 24W",
+     "titulo": "Teto do quarto [sem graça]?",
+     "sub": "24W de LED em acrílico e alumínio"
+    },
+    {
+     "rotulo": "Visto de perto",
+     "titulo": "A [borda] que brilha junto",
+     "sub": "Acrílico com alumínio, 34 x 34 cm"
+    },
+    {
+     "rotulo": "Milhares de avaliações",
+     "titulo": "Aprovado por [milhares]",
+     "sub": "Bivolt, cor fixa à sua escolha",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Lustre LED quadrado 24W em acrílico com alumínio, bivolt\n#lustreled #lustrequadrado #iluminacaoquarto #lustredeteto",
+  "shopee2": "Lustre de 34 x 34 cm com só 10 cm de altura, cor fixa à escolha\n#plafonled #tetobaixo #luminariadeteto #decoracaoquarto",
+  "shopee3": "Lustre quadrado com milhares de avaliações, 24W e bivolt\n#lustreacrilico #iluminacaoled #quartodecasal #reformaquarto",
+  "reels": "Teto do quarto sem graça? Lustre quadrado de 24W em acrílico, bivolt e com milhares de avaliações 💡\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustreled #lustrequadrado #decoracaoquarto #iluminacaoled"
+ },
+ "notas": "Só a 01 serve (06 é cópia; 02/03/04/07 são o modelo redondo; 05 tem texto e é redondo). Cena 2 é close da borda por código (a IA redesenharia o facetado). Cor da luz: o anúncio vende cor fixa em 3 tons; nenhum texto diz que a foto é um tom específico. Anúncio irmão do r14 (mesma foto). Risco Pruna: redesenhar o facetado do acrílico ou somar uma 3ª borda."
+}

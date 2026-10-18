@@ -1,0 +1,120 @@
+{
+ "nome": "r15_lylacrilic_quadrado",
+ "titulo_produto": "Lustre Lylacrilic Quadrado 2 Camadas",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r15-fotos/01.jpg",
+  "r15-fotos/05.jpg",
+  "r15-fotos/02.jpg"
+ ],
+ "cor_destaque": "B8923A",
+ "cenas": [
+  {
+   "foto": 1,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r15-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "codigo": "pan_esq",
+   "zoom": 1.07,
+   "clipe": "r15-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "codigo": "pull",
+   "zoom": 1.1,
+   "recorte": [
+    100,
+    80,
+    950,
+    950
+   ],
+   "clipe": "r15-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre Lylacrilic quadrado",
+     "titulo": "Teto sem graça? [Resolva]",
+     "abertura": {
+      "grande": "416",
+      "texto": "castanhas de acrílico brilhando"
+     }
+    },
+    {
+     "rotulo": "Quadrado, 2 camadas",
+     "titulo": "Placa de acrílico de [20 cm]"
+    },
+    {
+     "rotulo": "Base de alumínio prateado",
+     "titulo": "Acende com [1] lâmpada comum",
+     "fichas": [
+      "416 castanhas",
+      "Altura 25 cm",
+      "Lâmpada E27 ou LED"
+     ],
+     "cta": "Toque no carrinho e escolha o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Seu teto vai [brilhar]",
+     "sub": "Plafon quadrado 2 camadas"
+    },
+    {
+     "titulo": "Encaixe [fácil] na base",
+     "sub": "Acompanha manual de montagem"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Garantia do vendedor: 90 dias"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lylacrilic quadrado",
+     "titulo": "Cristal em [2 camadas]",
+     "sub": "Base de alumínio"
+    },
+    {
+     "rotulo": "Argolas de aço inox",
+     "titulo": "Argolas que [não enferrujam]",
+     "sub": "Castanhas de alto brilho"
+    },
+    {
+     "rotulo": "Clássico e moderno",
+     "titulo": "Nota [4,71] em 3.077 opiniões",
+     "sub": "Altura de 25 cm",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,71",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Lustre Lylacrilic quadrado 2 camadas com 416 castanhas de acrílico\n#lustrequadrado #plafoncristal #lustreacrilico #decoracaosala",
+  "shopee2": "Plafon de cristal acrílico, nota 4,71 em 3.077 avaliações\n#lustredeteto #plafonquadrado #iluminacaosala #decoracaoquarto",
+  "shopee3": "Lylacrilic com base em alumínio, argolas inox e lâmpada E27\n#lustrecristal #lustreprateado #decoracaodeteto #lustresimples",
+  "reels": "Teto liso? Esse plafon quadrado tem 416 castanhas de cristal acrílico e usa só 1 lâmpada comum ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrequadrado #plafoncristal #lustreacrilico #decoracaosala"
+ },
+ "notas": "RISCO: foto 01 é colagem com 3 acabamentos (prata, dourado, cobre); instrução exige 01 na cena 1, mas ela mostra a colagem. Sugestão: trocar cena 1 para foto 02/05 (dourado) se a dona preferir limpo. Cenas 2 e 3 usam 05 e 02 (dourado). Cor_destaque dourado; nao afirmei cor. Anúncio tem variações de cor: nao citar."
+}

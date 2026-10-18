@@ -1,0 +1,144 @@
+{
+ "nome": "s16_kit2_plafon_spark_cobre",
+ "titulo_produto": "Kit 2 Lustre Plafon de Cristal Acrílico Spark Cobre",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r16-fotos/01.jpg",
+  "../lista1016/r16-fotos/02.jpg",
+  "../lista1016/r16-fotos/04.jpg"
+ ],
+ "cor_destaque": "A8643A",
+ "contagem": {
+  "unidades_no_kit": 2,
+  "lampadas_e27_por_unidade": 1
+ },
+ "diretor": {
+  "angulo": "Não é um lustre, é o par: o mesmo brilho de cristal cobre em dois cômodos (quarto, sala, corredor) num pedido só.",
+  "palavra": "par",
+  "prova": "kit com 2 plafons de inox espelhado cobre e cristais de acrílico de alto brilho, pré-montados, 14 x 14 x 27 cm, bivolt",
+  "errc": "E: 'achadinho' e foto parada de um lustre só. R: ficha técnica empilhada. E: o par inteiro no quadro e o reflexo cobre do inox espelhado. C: a comparação 'um ou dois iguais?' e o corredor como cômodo esquecido.",
+  "publico_nao_obvio": "quem tem corredor escuro ou quer dois cômodos combinando (quarto e sala) sem garimpar dois anúncios",
+  "por_que_converte": "Ries/Trout: o kit é dono da palavra 'par' e ela abre e fecha a edição. Hormozi: 'pré-montado' corta esforço e o par dobra o resultado no mesmo pedido.",
+  "visual": "1º segundo: dois plafons cobre idênticos lado a lado com brilhos correndo nas gotas; a simetria do par é rara no feed de lustres e prende o olho."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": "Very slow push-in on exactly 2 identical copper flush-mount ceiling chandeliers side by side, each with a mirrored copper square base, copper socket and hanging strands of clear octagonal acrylic crystals ending in clear teardrop pendants, white studio background. Both stay fully in frame, perfectly still and unchanged, identical to the photo. Soft highlights glide across the crystals. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s16-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.0,
+   "fiscal": "2.0"
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    60,
+    60,
+    700,
+    700
+   ],
+   "pruna": null,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "s16-cenas/cena2.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Slow lateral dolly left across a mirrored copper square ceiling base with a copper socket and hanging strands of clear octagonal acrylic crystals on small silver rings, white studio background. The base and strands stay perfectly still and unchanged, every ring and crystal identical to the photo. Warm reflections slide slowly over the copper and sparkle in the facets. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "fiscal": "codigo",
+   "nota_fiscal": "trocada para recorte da 01: kit de 2 (regra 1.1.3)"
+  },
+  {
+   "foto": 0,
+   "pruna": null,
+   "codigo": "pull",
+   "zoom": 1.1,
+   "clipe": "s16-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Slow crane down along a copper flush-mount ceiling chandelier: copper base and socket at the top, straight hanging strands of clear octagonal acrylic crystals ending in clear teardrop pendants at two lengths, white studio background. The chandelier stays perfectly still and unchanged, every strand identical to the photo. Soft highlights shimmer inside the teardrop pendants. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "fiscal": "codigo",
+   "nota_fiscal": "trocada para a 01 inteira: kit de 2; foto 04 virou pessoa no Pruna"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Kit 2 plafons Spark cobre",
+     "titulo": "[Dois] plafons, mesmo brilho",
+     "abertura": {
+      "grande": "2",
+      "texto": "plafons de cristal no kit"
+     }
+    },
+    {
+     "rotulo": "Inox espelhado cobre",
+     "titulo": "Sai da caixa [pré-montado]"
+    },
+    {
+     "rotulo": "Quarto, sala ou corredor",
+     "titulo": "Mesmo brilho em [2] cômodos",
+     "fichas": [
+      "14 x 14 x 27 cm",
+      "1 lâmpada E-27",
+      "Bivolt"
+     ],
+     "cta": "Toque no carrinho e leve o par"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Corredor escuro? Ponha [dois]",
+     "sub": "Kit com 2 plafons de cristal"
+    },
+    {
+     "titulo": "Base de [inox] espelhado",
+     "sub": "Cristais de acrílico alto brilho"
+    },
+    {
+     "titulo": "O par te espera no [carrinho]",
+     "sub": "Usa 1 lâmpada E-27 cada"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Plafon Spark cobre",
+     "titulo": "Um lustre ou [dois] iguais?",
+     "sub": "O kit já vem com o par"
+    },
+    {
+     "rotulo": "Cristais que você arruma",
+     "titulo": "Monte os cristais como [preferir]",
+     "sub": "Fotos do anúncio dão ideias"
+    },
+    {
+     "rotulo": "Nota alta no kit",
+     "titulo": "Dois cômodos com [brilho]",
+     "sub": "Bivolt, 1 lâmpada E-27 cada",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Kit 2 plafons de cristal acrílico Spark cobre, inox espelhado e bivolt\n#plafoncobre #lustrecristal #lustrecorredor #kitlustre",
+  "shopee2": "Plafon Spark cobre em par, 14 x 14 x 27 cm e cristais pré-montados\n#lustredeteto #plafoncristal #decoracaoquarto #lustrecobre",
+  "shopee3": "Kit com 2 lustres plafon de cristal acrílico bem avaliado, 1 lâmpada E-27 cada\n#lustreacrilico #plafonsala #iluminacaocorredor #lustrepar",
+  "reels": "Um lustre ou dois iguais? Esse kit traz 2 plafons Spark cobre com cristais de acrílico de alto brilho, já pré-montados ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrecobre #plafoncristal #lustrecorredor #decoracaoquarto"
+ },
+ "notas": "Cena 1 é a 01 com as 2 unidades (contar 2 em cada quadro). Cenas 2 e 3 mostram 1 unidade como detalhe (02 recorte da base, 04 arranjo alternativo que o anúncio sugere). Riscos: Pruna pode balançar ou redesenhar fios e gotas; 04 tem o topo da base cortado na foto original, por isso câmera descendo."
+}

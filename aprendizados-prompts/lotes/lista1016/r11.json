@@ -1,0 +1,114 @@
+{
+ "nome": "r11_sweetcrillic_cobre",
+ "titulo_produto": "Lustre Sweetcrillic 30x30 Cobre",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r11-fotos/01.jpg",
+  "r11-fotos/03.jpg",
+  "r11-fotos/02.jpg"
+ ],
+ "cor_destaque": "B87333",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r11-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "codigo": "desce",
+   "zoom": 1.08,
+   "clipe": "r11-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_dir",
+   "zoom": 1.07,
+   "clipe": "r11-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre Sweetcrillic cobre",
+     "titulo": "[664] cristais no seu teto",
+     "abertura": {
+      "grande": "664",
+      "texto": "cristais de acrílico no teto"
+     }
+    },
+    {
+     "rotulo": "Alumínio espelhado",
+     "titulo": "Base de [cobre] brilhante"
+    },
+    {
+     "rotulo": "30 x 30 cm, bivolt",
+     "titulo": "Cabe até [4] lâmpadas",
+     "fichas": [
+      "4 lâmpadas E-27",
+      "30 x 30 x 28 cm",
+      "Bivolt"
+     ],
+     "cta": "Toque no carrinho e escolha a sua"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Cobre e cristal no [teto]",
+     "sub": "Plafon Sweetcrillic 30x30"
+    },
+    {
+     "titulo": "[112] pirulitos de cristal",
+     "sub": "e 552 castanhas de acrílico"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Lustre cobre, uso interno"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Sweetcrillic cobre",
+     "titulo": "Luxo de [cristal] pro teto",
+     "sub": "Plafon 30 x 30 cm"
+    },
+    {
+     "rotulo": "Cristais de acrílico",
+     "titulo": "Alto [brilho] de verdade",
+     "sub": "Pirulitos e castanhas"
+    },
+    {
+     "rotulo": "Nota 4,86",
+     "titulo": "[771] avaliações no anúncio",
+     "sub": "Bivolt, uso interno",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "664",
+  "t": "cristais"
+ },
+ "legendas": {
+  "shopee": "Lustre Sweetcrillic cobre 30x30 com 664 cristais e 4 lâmpadas E-27\n#lustrecristal #plafoncobre #decoracaosala #lustrequarto",
+  "shopee2": "Plafon de cristal acrílico cobre, nota 4,86 em 771 avaliações\n#plafondecristal #iluminacaosala #decoracaodeteto #lustrecobre",
+  "shopee3": "Sweetcrillic em alumínio espelhado, bivolt, 30 x 28 cm\n#lustredeteto #cristalacrilico #decoracaodesala #plafonluxo",
+  "reels": "Seu teto pode ter 664 cristais brilhando. Plafon Sweetcrillic cobre, 30 x 30 cm, bivolt ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrecristal #plafoncobre #decoracaosala #lustredeteto"
+ },
+ "notas": "Fotos 01 (inteira), 03 (lateral, pingentes longos), 02 (3 níveis). Gancho 664 = 112 pirulitos + 552 castanhas. Risco baixo: sem letras; lâmpadas não inclusas (ficha diz só capacidade). Descrição não fala pré-montado, não afirmado."
+}

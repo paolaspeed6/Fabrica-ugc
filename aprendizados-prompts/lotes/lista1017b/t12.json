@@ -1,0 +1,161 @@
+{
+ "nome": "t12_manucrillic_pre_montado",
+ "titulo_produto": "Lustre Cristal Acrílico Manucrillic",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r12-fotos/01.jpg",
+  "../lista1016/r12-fotos/03.jpg",
+  "../lista1016/r12-fotos/02.jpg",
+  "t12-cenas/cena1.png",
+  "t12-cenas/cena2.png",
+  "t12-cenas/cena3.png"
+ ],
+ "cor_destaque": "4F6F9F",
+ "contagem": {
+  "plafon": 1,
+  "niveis_de_cristais": 3,
+  "soquetes_E27": 1,
+  "pirulitos": 73,
+  "castanhas": 375
+ },
+ "diretor": {
+  "angulo": "Lustre de cristal que chega pronto: pré-montado e aceso com 1 lâmpada E-27, até no corredor que ninguém decora.",
+  "palavra": "pré-montado",
+  "prova": "Pré-montado, 1 lâmpada E-27, 73 pirulitos de 30 mm e 375 castanhas de 14 mm de acrílico de alto brilho, alumínio espelhado, bivolt, 25 x 30 cm; mais de mil avaliações.",
+  "errc": "E: 'lustre maravilhoso' e o zoom parado. R: lista de especificações. E: o pré-montado e o soquete único visto por baixo. C: o lustre de cristal para o corredor e o hall.",
+  "publico_nao_obvio": "Quem tem corredor ou hall de entrada escuro (o anúncio cita corredores).",
+  "por_que_converte": "Hormozi: corta tempo e esforço (pré-montado, 1 lâmpada). Cialdini: prova social de mais de mil avaliações sem número exato. Schwartz: o Reels abre na dor do corredor escuro.",
+  "visual": "Cascata redonda de cristais em 3 níveis sobre branco puro, câmera recuando devagar com reflexos de arco-íris nas gotas: brilho máximo logo no primeiro quadro."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle hero shot from front below, as in reference image 1. The exact chandelier from the reference images, identical shape, color, material and every part: round brushed silver-tone polished aluminum base, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 3 round tiers narrowing downward. Real size, keep the scale true against the room and furniture: a small chandelier only 25 cm wide and 30 cm tall. On the white ceiling of a small entrance hall, plain soft grey walls. Cool blue evening window light, crystals glowing softly warm. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Very slow pull-back, the whole chandelier stays fully in frame. The round aluminum chandelier with exactly 3 tiers of clear acrylic crystal strands stays perfectly still and unchanged, every part identical. Cool evening light rests on the plain wall, tiny sparkles glint in the crystals. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pull",
+   "zoom": 1.06,
+   "clipe": "t12-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.0,
+   "fiscal": "2.0",
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up worm's-eye view from directly below, as in reference image 2. The exact chandelier from the reference images, identical shape, color, material and every part: round brushed silver-tone aluminum base, exactly 1 central socket, concentric rings of clear acrylic bead strands with faceted teardrop pendants. Real size, keep the scale true against the room and furniture: a small chandelier only 25 cm wide and 30 cm tall. White ceiling around. Soft side daylight, small rainbow glints in the facets. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Very slow push-in from below toward the center. The round aluminum base, its single socket and the clear acrylic bead strands with teardrop pendants stay perfectly still and unchanged, every bead identical. Small rainbow glints travel slowly across the facets. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t12-cenas/cena2.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.0,
+   "fiscal": "2.0",
+   "foto": 4
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot down a narrow hallway at night. The exact chandelier from the reference images, identical shape, color, material and every part: round brushed silver-tone polished aluminum base, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 3 round tiers narrowing downward. A woman seen from behind walks down the hallway under the lit chandelier mounted flush on the ceiling; the chandelier is small, narrower than her shoulders. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "She slowly walks away from the camera while it follows gently. The chandelier stays perfectly still and unchanged. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_dir",
+   "zoom": 1.06,
+   "clipe": "t12-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle view down a narrow hallway at night. The exact chandelier from the reference images, identical shape, color, material and every part: round brushed silver-tone polished aluminum base, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 3 round tiers narrowing downward. Real size, keep the scale true against the room and furniture: a small chandelier only 25 cm wide and 30 cm tall. Lit warm on the white ceiling, plain off-white walls, light oak floor, small sparkles on the walls. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow lateral dolly right along the hallway. The round aluminum chandelier with exactly 3 tiers of clear acrylic crystal strands stays perfectly still and unchanged, every part identical. Soft sparkle reflections shimmer gently on the plain walls. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "refeito": "r1",
+   "pruna_t": 1.8,
+   "fiscal": "1.8",
+   "foto": 5
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Plafon Manucrillic",
+     "titulo": "Lustre de cristal [pré-montado]",
+     "abertura": {
+      "grande": "1",
+      "texto": "lâmpada E-27, só isso"
+     }
+    },
+    {
+     "rotulo": "Cristais de 14 e 30 mm",
+     "titulo": "[375] castanhas, 73 pirulitos"
+    },
+    {
+     "rotulo": "Corredor, sala ou quarto",
+     "titulo": "Só fixar e [acender]",
+     "fichas": [
+      "Pré-montado",
+      "Bivolt",
+      "Alumínio espelhado"
+     ],
+     "cta": "Toque no carrinho, ele vem montado"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Seu [corredor] merece cristal",
+     "sub": "Plafon de 25 x 30 cm"
+    },
+    {
+     "titulo": "[1] soquete E-27 no centro",
+     "sub": "Bivolt, lâmpada não inclusa"
+    },
+    {
+     "titulo": "Peça o seu no [carrinho]",
+     "sub": "Mais de mil avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Hall e corredor",
+     "titulo": "Corredor [escuro] e sem graça?",
+     "sub": "Cristal com uma lâmpada E-27"
+    },
+    {
+     "rotulo": "Por baixo do lustre",
+     "titulo": "Pirulitos de [30 mm] em cascata",
+     "sub": "E castanhas de 14 mm"
+    },
+    {
+     "rotulo": "Vem pré-montado",
+     "titulo": "Do escuro ao [cristal]",
+     "sub": "Alumínio polido, bivolt",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "+mil",
+  "t": "avaliações"
+ },
+ "legendas": {
+  "shopee": "Lustre Manucrillic pré-montado com 73 pirulitos e 375 castanhas de acrílico\n#lustredecristal #plafondecristal #lustrecorredor #lustreacrilico",
+  "shopee2": "Plafon de cristal para corredor ou hall, 25 x 30 cm e 1 lâmpada E-27\n#lustrehall #iluminacaocorredor #plafonredondo #decoracaoentrada",
+  "shopee3": "Lustre de cristal acrílico com mais de mil avaliações, alumínio espelhado e bivolt\n#lustremanucrillic #lustrequarto #lustresala #iluminacaodecorativa",
+  "reels": "Corredor escuro e sem graça? Este lustre de cristal vem pré-montado e usa 1 lâmpada E-27 ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustredecristal #lustrecorredor #plafondecristal #decoracaoentrada"
+ },
+ "notas": "01 (inteira, 3 níveis), 03 (vista de baixo com o soquete único, por código: cristal em close que a IA redesenharia) e 02 (frente, 3 níveis). Sem foto de ambiente. Cor 'prata' fora do texto (anúncio diz só alumínio polido/espelhado); total 448 fora (soma não escrita). Risco: Pruna somar/tirar nível, redesenhar gotas ou balançar os fios; conferir 3 níveis contra a 01. Lâmpada não inclusa."
+}

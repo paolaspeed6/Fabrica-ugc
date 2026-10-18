@@ -1,0 +1,147 @@
+{
+ "nome": "t28_cortina_blackout_tecido",
+ "titulo_produto": "Cortina Blackout Tecido Grosso 2,80 x 2,30 m",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r28-fotos/01.jpg",
+  "t28-cenas/cena1.png",
+  "t28-cenas/cena2.png",
+  "t28-cenas/cena3.png"
+ ],
+ "cor_destaque": "8B6B4F",
+ "contagem": {
+  "partes": 2,
+  "ilhoses_por_parte": 8
+ },
+ "diretor": {
+  "angulo": "O blackout de tecido grosso que segura o sol da tarde e ainda vai para a lavagem sem encolher.",
+  "palavra": "tecido",
+  "prova": "Blackout em tecido grosso 100 por cento poliéster (sem símbolo na tela), lavável e não encolhe, isolamento térmico (preserva a temperatura), antialérgico, 2 partes de 1,40 x 2,30 m; bem avaliada.",
+  "errc": "E: 'achadinho' e o infográfico com selo de lupa. R: número de bloqueio de luz (o anúncio diz 80 e 90, fica fora). E: o tecido grosso contra a janela clara e o isolamento térmico. C: falar com quem tem sala virada para o sol da tarde.",
+  "publico_nao_obvio": "Quem tem sala ou home office virado para o poente, com o sol da tarde esquentando o sofá.",
+  "por_que_converte": "Schwartz (sofisticação de mercado): em blackout saturado, o mecanismo novo é o tecido lavável que não encolhe; Whitman: conforto e livrar-se do calor; Ries/Trout: a palavra tecido no gancho e no CTA.",
+  "visual": "Faixas verticais pesadas de tecido emoldurando uma janela branca estourada de luz: o contraste escuro/claro mostra o bloqueio sem texto."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide shot slightly from the right, both panels rod to floor. The exact curtain from the reference image, identical shape, color, material and every part: exactly 2 floor-length taupe-brown heavy blackout panels, each with exactly 8 round chrome grommets on a silver rod, deep even folds. Real size, keep the scale true against the room and furniture: 2 panels, each 1.40 m wide and 2.30 m tall, with exactly 8 grommets per panel. Open on each side of a tall window, plain warm white walls, light oak floor, a cream boucle armchair. Golden late-afternoon sun pours in between them. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Very slow push-in toward the window, the whole curtain staying fully in frame. The 2 taupe-brown blackout panels stay perfectly still and unchanged, every fold and grommet identical. Golden sunlight streams steadily between them and fine dust floats in the beam. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t28-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 1
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up of the top of one panel: exactly 8 round chrome grommets on the silver rod, heavy folds below. The exact curtain from the reference image, identical color, material and every part: thick taupe-brown blackout fabric with a matte woven texture. Real size, keep the scale true against the room and furniture: 2 panels, each 1.40 m wide and 2.30 m tall, with exactly 8 grommets per panel. The top of each panel is plain flat fabric with the grommets punched straight through it: no valance, no folded flap, no extra layer. Plain warm white wall. Warm side light from the window reveals the fabric thickness, 85 mm lens. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Slow lateral dolly left along the rod. The taupe-brown panel stays perfectly still and unchanged, exactly 8 grommets, every fold identical. Warm side light glows steadily and a soft highlight glides along the chrome. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_esq",
+   "zoom": 1.06,
+   "clipe": "t28-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium shot of a living room window at noon. The exact curtain from the reference image, identical shape, color, material and every part: exactly 2 floor-length taupe-brown heavy blackout panels, each with exactly 8 round chrome grommets on a silver rod, deep even folds. A woman seen from behind, cropped at the shoulders, closes the taupe-brown blackout panels with both hands, blocking the bright sun; each panel is floor-length. The person is seen from directly behind, only the back of the head visible; no face and no profile. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Her hands slowly bring the panels together while the room dims and the camera drifts slightly. The grommets and fabric stay identical. The person is seen from directly behind, only the back of the head visible; no face and no profile. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t28-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot from standing eye height. The exact curtain from the reference image, identical shape, color, material and every part: exactly 2 floor-length taupe-brown heavy blackout panels, each with exactly 8 round chrome grommets on a silver rod, deep even folds. Real size, keep the scale true against the room and furniture: 2 panels, each 1.40 m wide and 2.30 m tall, with exactly 8 grommets per panel. Drawn closed behind a grey linen sofa and a low oak coffee table on a cream rug, plain warm white walls. Calm warm shade, one glowing table lamp, a thin line of sun at the curtain edges. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Very slow push-in toward the closed curtain. The 2 taupe-brown blackout panels stay perfectly still and unchanged, every fold and grommet identical. The table lamp glows steadily and the thin line of sun at the edges stays soft. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": false,
+   "origem_foto": "cena3_sem_uso",
+   "foto": 3
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Blackout de tecido grosso",
+     "titulo": "Sol da tarde [fora] da sala",
+     "abertura": {
+      "grande": "2,80",
+      "texto": "m de largura, 2 partes"
+     }
+    },
+    {
+     "rotulo": "Acabamento premium em bainha",
+     "titulo": "Tecido [grosso] contra a luz"
+    },
+    {
+     "rotulo": "Preserva a temperatura",
+     "titulo": "Sala [aconchegante] o dia todo",
+     "fichas": [
+      "2 partes de 1,40 m",
+      "Não encolhe",
+      "Antialérgico"
+     ],
+     "cta": "Escolha a sua cor no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Blackout feito de [tecido]",
+     "sub": "Lavável e não encolhe"
+    },
+    {
+     "titulo": "Isolamento [térmico] na janela",
+     "sub": "Preserva a temperatura do ambiente"
+    },
+    {
+     "titulo": "Feche o pedido no [carrinho]",
+     "sub": "Para varão de 2 m, 18 a 28 mm"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Sala virada pro sol da tarde?",
+     "titulo": "Sofá [quente] às 4 da tarde?",
+     "sub": "Cortina de tecido que bloqueia luz"
+    },
+    {
+     "rotulo": "Isolamento térmico",
+     "titulo": "Segura o sol [lá fora]",
+     "sub": "Tecido antialérgico e lavável"
+    },
+    {
+     "rotulo": "Privacidade para sala e quarto",
+     "titulo": "Sua sala, sua [penumbra]",
+     "sub": "2 partes de 1,40 x 2,30 m",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliada"
+ },
+ "legendas": {
+  "shopee": "Cortina blackout de tecido grosso 2,80 x 2,30 m, lavável e antialérgica\n#cortinablackout #cortinaquarto #cortinasala #blackouttecido",
+  "shopee2": "Cortina blackout com isolamento térmico e 16 ilhós cromados, não encolhe\n#cortinatermica #cortinacomilhos #decoracaoquarto #janelasol",
+  "shopee3": "Cortina blackout em 2 partes de 1,40 m com acabamento premium em bainha\n#cortinagrossa #blackoutlavavel #salaaconchegante #cortinamoderna",
+  "reels": "Sol da tarde esquentando a sala? Essa cortina blackout de tecido grosso tem isolamento térmico, é lavável e não encolhe ☀️\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinablackout #cortinatermica #soldatarde #decoracaosala"
+ },
+ "notas": "Só a 01, recortada para tirar o texto 'Valoriza qualquer ambiente.' (vai até x=442) e a linha branca vertical; 02/03/04 têm texto/medidas, 05 tem lupa de colagem e tom mais bege que a 01, 06-10 são outras cores. Riscos: a 01 nunca mostra o produto inteiro (painel direito sai do quadro) e o recorte da cena 1 tem 580 px de largura (20 px abaixo do mínimo, mas já em 9:16); ilhoses só por código e sem número na tela (vê-se ~6-7 por parte, as pontas dobram); bloqueio 80 x 90 se contradiz e fica fora."
+}

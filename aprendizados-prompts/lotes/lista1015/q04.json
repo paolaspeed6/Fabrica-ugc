@@ -1,0 +1,127 @@
+{
+  "nome": "q04_tapete_padliz_120",
+  "titulo_produto": "Tapete Higiênico PadLiz 120 un",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q04-fotos/01.jpg",
+    "q04-fotos/02.jpg"
+  ],
+  "cor_destaque": "auto",
+  "embalagem_com_letras": true,
+  "cenas": [
+    {
+      "foto": 0,
+      "recorte": [
+        0,
+        180,
+        1024,
+        1024
+      ],
+      "movimento": "slow push-in",
+      "clipe": "q04-cenas/cena1.mp4"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. Top-down DSLR photo filling the entire frame edge to edge, not a screen: one open plain white quilted dog training pad with a thin border lying flat on a light wood floor, centered between 30% and 60% of the image height, with blue liquid being absorbed in its center. No bag or packaging anywhere, no text, no letters, no logos, no printing on the pad or anywhere in the image.",
+      "movimento": "Very slow overhead push-in; the blue liquid sinks into the pad and the stain shrinks until the surface looks dry.",
+      "clipe": "q04-cenas/cena2.mp4"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. Bright living room with a light wood floor and soft daylight, plain wall, minimalist, only the objects described. Empty floor, no bag or packaging, no text, no letters, no logos anywhere. 85 mm, shallow depth of field, neutral white balance.",
+      "composicao": false,
+      "sobrepor": {
+        "foto": "q04-fotos/01.jpg",
+        "recorte": [
+          200,
+          330,
+          830,
+          810
+        ],
+        "x": 0.5,
+        "base": 0.62,
+        "altura": 0.3
+      },
+      "movimento": "Static camera on a tripod, the camera does not move.",
+      "clipe": "q04-cenas/cena3.mp4"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "PadLiz · 4 pacotes",
+          "titulo": "[120] tapetes higiênicos",
+          "abertura": {
+            "grande": "120",
+            "texto": "tapetes, 4 pacotes de 30"
+          }
+        },
+        {
+          "rotulo": "Borda antivazamento",
+          "titulo": "Fita que [fixa] no chão"
+        },
+        {
+          "rotulo": "Nota 4,87",
+          "titulo": "[80 x 60] cm, para todos os portes",
+          "fichas": [
+            "80 x 60 cm",
+            "Borda antivazamento",
+            "Nota 4,87"
+          ],
+          "cta": "Toque no carrinho e leve os 4 pacotes"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "[120] tapetes de uma vez",
+          "sub": "PadLiz 80 x 60 cm"
+        },
+        {
+          "titulo": "Borda [antivazamento]",
+          "sub": "Com adesivos de fixação"
+        },
+        {
+          "titulo": "Leve o seu no [carrinho]",
+          "sub": "Nota 4,87 · 1.258 avaliações",
+          "subir": -90
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_cartao",
+      "cenas": [
+        {
+          "rotulo": "Quem tem cachorro",
+          "titulo": "Conta rápida: [120] tapetes",
+          "sub": "4 pacotes de 30 unidades"
+        },
+        {
+          "rotulo": "Absorção total",
+          "titulo": "Barreira [antivazamento] nas bordas",
+          "sub": "Mais adesivos de fixação"
+        },
+        {
+          "rotulo": "Nota 4,87 · 1.258 avaliações",
+          "titulo": "80 x 60 cm, [R$ 1,65] cada",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "120",
+    "t": "tapetes"
+  },
+  "legendas": {
+    "shopee": "Tapete higiênico PadLiz 80 x 60 cm, kit com 120 unidades. Borda antivazamento.\n#tapetehigienico #cachorro #pet #achadinhosshopee",
+    "shopee2": "Kit com 4 pacotes de tapete higiênico PadLiz, 120 unidades de 80 x 60 cm.\n#tapetehigienico #cachorro #petshop #achadinhosshopee",
+    "reels": "120 tapetes higiênicos de uma vez 🐶 PadLiz 80 x 60 cm com barreira antivazamento e adesivos de fixação. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#cachorro #pet #tapetehigienico #dogsofinstagram"
+  },
+  "comentario": "🛒 Tapete PadLiz 120 un aqui: {link}",
+  "imagens_conferidas": true
+}

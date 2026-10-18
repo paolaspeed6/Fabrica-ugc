@@ -1,0 +1,144 @@
+{
+ "nome": "s14_lustre_tres_cores_interruptor",
+ "titulo_produto": "Lustre LED Três Cores quadrado (Castelo de Luz)",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r14-fotos/01.jpg"
+ ],
+ "cor_destaque": "B5833A",
+ "contagem": {
+  "lustre": 1,
+  "bordas_de_acrilico": 2
+ },
+ "diretor": {
+  "angulo": "Três luzes num lustre só, e o controle é o interruptor que você já tem: a cor muda toda vez que apaga e acende.",
+  "palavra": "apaga e acende",
+  "prova": "OBS do anúncio: troca a cor toda vez que você apaga e acende a luz; três cores, bivolt, acrílico com alumínio; nota alta com mais de mil avaliações.",
+  "errc": "E: foto parada e 'olha esse brilho'. R: potência e medidas na tela. E: o gesto do interruptor como mecanismo único. C: o lustre que acaba com a briga do casal pela luz do quarto.",
+  "publico_nao_obvio": "Casal que divide o quarto e nunca concorda com a luz.",
+  "por_que_converte": "Schwartz: mecanismo único (apagar e acender) diferencia de todo plafon. Berger: o humor do casal que briga pela luz é compartilhável; o Reels abre com a comparação 'um lustre ou três?'.",
+  "visual": "Quadrado aceso com halo branco no teto escuro do quarto, câmera deslizando devagar: forma geométrica brilhante contra parede escura."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": "Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance. Slow lateral dolly right. A square white LED ceiling light with exactly 2 clear crystal-pattern acrylic borders around a glowing white center panel, on the ceiling of a dark bedroom, stays perfectly still and unchanged, every part identical to the photo; the whole ceiling light stays fully in frame. A soft halo glows on the ceiling.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s14-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.0,
+   "fiscal": "2.0"
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    200,
+    40,
+    800,
+    640
+   ],
+   "pruna": null,
+   "codigo": "pan_esq",
+   "zoom": 1.1,
+   "clipe": "s14-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    100,
+    0,
+    800,
+    700
+   ],
+   "pruna": null,
+   "codigo": "sobe",
+   "zoom": 1.07,
+   "clipe": "s14-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_reprovado": "Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance. Slow crane up. A square white LED ceiling light with exactly 2 clear crystal-pattern acrylic borders around a glowing white center panel, mounted on the ceiling of a calm dark bedroom, stays perfectly still and unchanged, every part identical to the photo. The bedside wall lamp glows warmly on the headboard.",
+   "fiscal": "codigo"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre LED três cores",
+     "titulo": "Apaga, acende, [outra] cor",
+     "abertura": {
+      "grande": "3",
+      "texto": "cores sem trocar lustre"
+     }
+    },
+    {
+     "rotulo": "Detalhe da borda",
+     "titulo": "Feito em acrílico e [alumínio]"
+    },
+    {
+     "rotulo": "Quadrado, bivolt",
+     "titulo": "Um lustre, [três] luzes",
+     "fichas": [
+      "3 cores",
+      "Bivolt",
+      "Acrílico e alumínio"
+     ],
+     "cta": "Escolha o tamanho no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Casal que [briga] pela luz?",
+     "sub": "Esse lustre tem 3 cores"
+    },
+    {
+     "titulo": "Cada [reacender] troca a cor",
+     "sub": "É só apagar e acender de novo"
+    },
+    {
+     "titulo": "Paz no quarto pelo [carrinho]",
+     "sub": "Nota alta e bivolt"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Interruptor comum",
+     "titulo": "Um lustre ou [três]?",
+     "sub": "A cor muda a cada vez que acende"
+    },
+    {
+     "rotulo": "Visto de perto",
+     "titulo": "Brilho de [acrílico] no teto",
+     "sub": "Acabamento com alumínio"
+    },
+    {
+     "rotulo": "Mais de mil avaliações",
+     "titulo": "O quarto em [3] versões",
+     "sub": "Bivolt, modelo quadrado",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "3",
+  "t": "cores"
+ },
+ "legendas": {
+  "shopee": "Lustre LED três cores quadrado que troca a cor ao apagar e acender, bivolt\n#lustreled #lustretrescores #plafonquadrado #iluminacaoquarto",
+  "shopee2": "Lustre de 3 cores em acrílico com alumínio para o quarto do casal\n#lustrequarto #quartodecasal #luminariadeteto #lustremudacor",
+  "shopee3": "Lustre três cores com nota alta e mais de mil avaliações, bivolt\n#lustreacrilico #plafonled #decoracaoquarto #lustremoderno",
+  "reels": "Um lustre ou três? Este muda de cor toda vez que você apaga e acende a luz 💡\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustreled #lustretrescores #iluminacaoquarto #quartodecasal"
+ },
+ "notas": "Só a 01 presta: a 06 é cópia idêntica da 01, 02/07 são o modelo redondo, 03-05 têm texto, selo ou colagem. As 3 cenas saem da 01 (inteira, close da borda por código, recorte com o quarto). Sem medida, watt ou nome das cores (tamanho e cores da foto não confirmados). Risco: a troca de cor só é afirmada no texto (foto mostra só branco); Pruna pode mudar a cor da luz, redesenhar o padrão das bordas ou virar 1/3 bordas; conferir 2 bordas."
+}

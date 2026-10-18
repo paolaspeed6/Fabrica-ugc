@@ -1,0 +1,99 @@
+{
+  "nome": "q13_kit_prateleira_120cm",
+  "titulo_produto": "Kit Prateleiras Industriais Metal Decore 120 cm",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q13-fotos/01.jpg"
+  ],
+  "cor_destaque": "E0A060",
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "Very slow push-in, the warm light stays steady, shelves and objects do not change."
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical. Close-up of one long light oak shelf board 120 cm wide resting on two matte black square-tube steel brackets with visible round screw heads, from reference photo 1: light wood board with thin straight edge, black powder-coated metal frame. Minimalist beige plaster wall, only the objects described, a small green plant in a white ceramic pot on the board. 85 mm, shallow depth of field, soft warm window light, neutral white balance. The whole product fills 25-60% of the image height, centered, empty wall below. No text, no letters, no logos, no printing anywhere in the image.",
+      "movimento": "Gentle lateral dolly along the board, the plant leaves barely sway."
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical. Wide view of a wall-mounted shelf set from reference photo 1: four light oak boards (two long, two short) on four black square-tube steel brackets, boards at staggered heights, arranged like the product photo. Only a few green plants in plain white pots and a plain beige ceramic vase on the boards, beige plaster wall, soft warm light, 35 mm, neutral white balance. The whole product fills 25-60% of the image height, centered, empty floor below. No text, no letters, no logos, no printing anywhere in the image.",
+      "movimento": "Crane up reveal of the whole wall shelf, then hold."
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Kit Metal Decore · 4 tábuas",
+          "titulo": "Tábua de [120 cm] de largura",
+          "abertura": {
+            "grande": "120",
+            "texto": "cm de tábua, kit completo"
+          }
+        },
+        {
+          "rotulo": "Ferro metalon",
+          "titulo": "Suporte [preto] que segura firme"
+        },
+        {
+          "rotulo": "Nota 4,85",
+          "titulo": "Kit pronto para [furar]",
+          "fichas": [
+            "4 tábuas",
+            "4 suportes",
+            "Parafusos e buchas"
+          ],
+          "cta": "Toque no carrinho e monte o seu"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Parede vazia? [Vista] ela",
+          "sub": "Kit industrial 4 tábuas"
+        },
+        {
+          "titulo": "Metalon [preto] reforçado",
+          "sub": "Pintura eletrostática"
+        },
+        {
+          "titulo": "Leve o seu no [carrinho]",
+          "sub": "Nota 4,85 · 124 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Sala, quarto ou escritório",
+          "titulo": "Uma parede [sem graça] vira isto"
+        },
+        {
+          "rotulo": "Kit completo",
+          "titulo": "2 tábuas de [120 cm] + 2 de 60 cm",
+          "sub": "Com suportes, parafusos e buchas"
+        },
+        {
+          "rotulo": "Nota 4,85",
+          "titulo": "Organiza e [decora] junto",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Kit de prateleiras industriais com 4 tábuas MDF e suportes de metalon preto, tábuas de 120 e 60 cm.\n#prateleira #decoracao #industrial #achadinhosshopee",
+    "shopee2": "Kit prateleira industrial Metal Decore: 4 tábuas e 4 suportes de ferro. Para sala, quarto e escritório.\n#prateleira #decoracao #organizacao #achadinhosshopee",
+    "reels": "Uma parede sem graça vira isto 😍 Kit com 4 tábuas (120 e 60 cm) e suportes de metalon preto, com parafusos e buchas. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#prateleira #decoracao #industrial #organizacao"
+  },
+  "comentario": "🛒 Kit Prateleiras Industriais Metal Decore 120 cm aqui: {link}",
+  "embalagem_com_letras": false,
+  "letras_na_foto01": "lombadas de livros: usar foto com movimento minimo; cenas editar sem livros",
+  "imagens_conferidas": true
+}

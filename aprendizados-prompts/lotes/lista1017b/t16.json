@@ -1,0 +1,155 @@
+{
+ "nome": "t16_kit2_plafon_spark_cobre",
+ "titulo_produto": "Kit 2 Lustre Plafon de Cristal Acrílico Spark Cobre",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r16-fotos/01.jpg",
+  "../lista1016/r16-fotos/02.jpg",
+  "../lista1016/r16-fotos/04.jpg",
+  "t16-cenas/cena1.png",
+  "t16-cenas/cena2.png",
+  "t16-cenas/cena3.png"
+ ],
+ "cor_destaque": "A8643A",
+ "contagem": {
+  "unidades_no_kit": 2,
+  "lampadas_e27_por_unidade": 1
+ },
+ "diretor": {
+  "angulo": "Não é um lustre, é o par: o mesmo brilho de cristal cobre em dois cômodos (quarto, sala, corredor) num pedido só.",
+  "palavra": "par",
+  "prova": "kit com 2 plafons de inox espelhado cobre e cristais de acrílico de alto brilho, pré-montados, 14 x 14 x 27 cm, bivolt",
+  "errc": "E: 'achadinho' e foto parada de um lustre só. R: ficha técnica empilhada. E: o par inteiro no quadro e o reflexo cobre do inox espelhado. C: a comparação 'um ou dois iguais?' e o corredor como cômodo esquecido.",
+  "publico_nao_obvio": "quem tem corredor escuro ou quer dois cômodos combinando (quarto e sala) sem garimpar dois anúncios",
+  "por_que_converte": "Ries/Trout: o kit é dono da palavra 'par' e ela abre e fecha a edição. Hormozi: 'pré-montado' corta esforço e o par dobra o resultado no mesmo pedido.",
+  "visual": "1º segundo: dois plafons cobre idênticos lado a lado com brilhos correndo nas gotas; a simetria do par é rara no feed de lustres e prende o olho."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle shot across a hallway. Exactly 2 identical chandeliers from the reference images, identical shape, color, material and every part, side by side one meter apart on the white ceiling, each: small square mirror-polished copper-colored stainless steel base, central copper socket, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 2 tiers, inner tier lower. Real size, keep the scale true against the room and furniture: each of the 2 fixtures is very small, only 14 cm by 14 cm and 27 cm tall. Plain warm white walls, blue-hour window light, both glowing warm. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Very slow push-in, both chandeliers stay fully in frame. Exactly 2 identical copper chandeliers with 2 tiers of clear acrylic crystal strands stay perfectly still and unchanged, every part identical. Blue-hour light rests softly on the walls, tiny sparkles glint in the crystals. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t16-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 3,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Macro 100mm eye-level close-up of the top of one chandelier, as in reference image 2. The exact chandelier from the reference images, identical shape, color, material and every part: mirror-polished copper-colored stainless steel base, copper socket, clear octagonal acrylic bead strands on small silver rings. Real size, keep the scale true against the room and furniture: each of the 2 fixtures is very small, only 14 cm by 14 cm and 27 cm tall. It is mounted flush directly against the ceiling by its square copper plate, exactly as in the reference photo, with no rod, stem, cone or cable. Plain charcoal wall, out of focus. Warm side light on the copper. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Slow lateral dolly right across the copper base and crystal strands. The base, socket and clear acrylic bead strands stay perfectly still and unchanged, every bead and ring identical. Warm reflections slide slowly over the copper. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_dir",
+   "zoom": 1.06,
+   "clipe": "t16-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 4
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide shot of a bedroom at night. Exactly 2 identical chandeliers from the reference images, identical shape, color, material and every part, each: small square mirror-polished copper-colored stainless steel base, central copper socket, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 2 tiers, inner tier lower. A woman seen from behind sits on the edge of the bed reading under the two small lit chandeliers, each mounted flush directly against the ceiling with no rod or cable, one above each nightstand; each chandelier is very small, about the size of a hat. The only light fixtures in the room are these 2 ceiling chandeliers; the walls are bare. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "She slowly closes the book while the camera pushes in very slowly. The chandeliers stay perfectly still and unchanged. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.06,
+   "clipe": "t16-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide low angle shot of a bedroom at night. Exactly 2 identical chandeliers from the reference images, identical shape, color, material and every part, each: small square mirror-polished copper-colored stainless steel base, central copper socket, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 2 tiers, inner tier lower. Real size, keep the scale true against the room and furniture: each of the 2 fixtures is very small, only 14 cm by 14 cm and 27 cm tall. One on the white ceiling above each of 2 wooden nightstands beside a white linen bed. Plain greige walls, both lit warm. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the ceiling. Exactly 2 identical copper chandeliers with 2 tiers of clear acrylic crystal strands stay perfectly still and unchanged, every part identical; the bed and nightstands stay in place. Soft sparkles shimmer gently on the walls. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": false,
+   "origem_foto": "cena3_sem_uso",
+   "foto": 5,
+   "fiscal": "ok"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Kit 2 plafons Spark cobre",
+     "titulo": "[Dois] plafons, mesmo brilho",
+     "abertura": {
+      "grande": "2",
+      "texto": "plafons de cristal no kit"
+     }
+    },
+    {
+     "rotulo": "Inox espelhado cobre",
+     "titulo": "Sai da caixa [pré-montado]"
+    },
+    {
+     "rotulo": "Quarto, sala ou corredor",
+     "titulo": "Um par [aceso] no quarto",
+     "fichas": [
+      "14 x 14 x 27 cm",
+      "1 lâmpada E-27",
+      "Bivolt"
+     ],
+     "cta": "Toque no carrinho e leve o par"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Corredor escuro? Ponha [dois]",
+     "sub": "Kit com 2 plafons de cristal"
+    },
+    {
+     "titulo": "Base de [inox] espelhado",
+     "sub": "Cristais de acrílico alto brilho"
+    },
+    {
+     "titulo": "O par te espera no [carrinho]",
+     "sub": "Usa 1 lâmpada E-27 cada"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Plafon Spark cobre",
+     "titulo": "Um lustre ou [dois] iguais?",
+     "sub": "O kit já vem com o par"
+    },
+    {
+     "rotulo": "Cristais que você arruma",
+     "titulo": "Monte os cristais como [preferir]",
+     "sub": "Fotos do anúncio dão ideias"
+    },
+    {
+     "rotulo": "Nota alta no kit",
+     "titulo": "Quarto com [brilho] em par",
+     "sub": "Bivolt, 1 lâmpada E-27 cada",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Kit 2 plafons de cristal acrílico Spark cobre, inox espelhado e bivolt\n#plafoncobre #lustrecristal #lustrecorredor #kitlustre",
+  "shopee2": "Plafon Spark cobre em par, 14 x 14 x 27 cm e cristais pré-montados\n#lustredeteto #plafoncristal #decoracaoquarto #lustrecobre",
+  "shopee3": "Kit com 2 lustres plafon de cristal acrílico bem avaliado, 1 lâmpada E-27 cada\n#lustreacrilico #plafonsala #iluminacaocorredor #lustrepar",
+  "reels": "Um lustre ou dois iguais? Esse kit traz 2 plafons Spark cobre com cristais de acrílico de alto brilho, já pré-montados ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrecobre #plafoncristal #lustrecorredor #decoracaoquarto"
+ },
+ "notas": "Cena 1 é a 01 com as 2 unidades (contar 2 em cada quadro). Cenas 2 e 3 mostram 1 unidade como detalhe (02 recorte da base, 04 arranjo alternativo que o anúncio sugere). Riscos: Pruna pode balançar ou redesenhar fios e gotas; 04 tem o topo da base cortado na foto original, por isso câmera descendo."
+}

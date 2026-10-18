@@ -1,0 +1,148 @@
+{
+ "nome": "t24_cortina_wave_gaze_linho",
+ "titulo_produto": "Cortina Wave Trilho Suíço Gaze de Linho com Forro Microfibra",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r24-fotos/01.jpg",
+  "t24-cenas/cena1.png",
+  "t24-cenas/cena2.png",
+  "t24-cenas/cena3.png"
+ ],
+ "cor_destaque": "A8844F",
+ "contagem": {},
+ "diretor": {
+  "angulo": "A cortina de ondas iguais de projeto de arquiteto: o cordão wave faz o caimento, e a gaze de linho com forro dá privacidade sem apagar a luz.",
+  "palavra": "ondas",
+  "prova": "Cordão wave incluso para formar as ondas; rodízios tipo Maxi e terminais de travamento; voil gaze de linho com forro em microfibra; altura personalizada; bem avaliada.",
+  "errc": "E: 'achadinho' e infográfico com ícones. R: promessas de escurecer (não é blackout). E: as ondas em close real e a dica dos 3x a largura do trilho. C: a cortina para quem tem janela de frente para o vizinho e não quer viver no escuro.",
+  "publico_nao_obvio": "Quem mora de frente para o vizinho (prédio colado, térreo) e quer privacidade sem fechar a luz natural.",
+  "por_que_converte": "Hopkins: a especificidade útil (3x a largura do trilho) quebra a objeção 'qual tamanho compro'; Ries/Trout: uma palavra só, ondas, no gancho e no CTA; Schwartz: o Reels abre na dor do vizinho.",
+  "visual": "Parede inteira de ondas brancas acesas por trás, com as linhas de LED do teto brilhando: luz quente em quadro simétrico para o dedo no feed escuro."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide shot slightly from the left, whole curtain ceiling to floor. The exact curtain from the reference image, identical shape, color, material and every part: a floor-to-ceiling ivory linen-texture sheer voile curtain drawn closed, hanging from a hidden ceiling track in deep, evenly spaced wave folds. Minimalist bedroom, plain warm white walls, light oak floor, one low linen bench. Early morning sun glows through the sheer from behind. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Very slow push-in toward the curtain, which stays fully in frame. The ivory wave curtain stays perfectly still and unchanged, every fold identical. Morning sunlight glows steadily through the fabric while soft light patches drift slowly across the oak floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t24-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.6,
+   "fiscal": "3.6",
+   "foto": 1
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up of several wave folds showing the fine linen slub texture. The exact curtain from the reference image, identical shape, color, material and every part: a floor-to-ceiling ivory linen-texture sheer voile curtain drawn closed, hanging from a hidden ceiling track in deep, evenly spaced wave folds. Warm late-afternoon sun shines through from behind and glows in the folds, 85 mm lens. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Slow lateral dolly right along the folds. The ivory wave curtain stays perfectly still and unchanged, every fold identical. Warm backlight glows softly through the sheer fabric and a few dust specks float in the light. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_dir",
+   "zoom": 1.06,
+   "clipe": "t24-cenas/cena2.mp4",
+   "lento": 1.0,
+   "fiscal": "ok",
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium shot of a living room window in golden hour. The exact curtain from the reference image, identical shape, color, material and every part: a floor-to-ceiling ivory linen-texture sheer voile curtain drawn closed, hanging from a hidden ceiling track in deep, evenly spaced wave folds. A woman's hand and forearm enter from the right and gently slide the curtain along its ceiling track, revealing a sliver of sunlit window; the curtain runs floor to ceiling. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "The hand slowly slides the curtain a little along the track while the camera drifts slightly. The wave folds stay even and identical. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t24-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot across a living room. The exact curtain from the reference image, identical shape, color, material and every part: a floor-to-ceiling ivory linen-texture sheer voile curtain drawn closed, hanging from a hidden ceiling track in deep, evenly spaced wave folds. Plain greige walls, light oak floor, a low sand linen sofa and a round oak side table. Golden hour sun glows through the curtain, filling the room with diffused warm light. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Very slow push-in across the living room toward the window. The ivory wave curtain stays perfectly still and unchanged, every fold identical. Diffused golden sunlight glows steadily through it and soft light drifts slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "pruna_t": 2.2,
+   "fiscal": "2.2",
+   "foto": 3
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Prega wave, trilho suíço",
+     "titulo": "Cortina que cai em [ondas]",
+     "abertura": {
+      "grande": "3x",
+      "texto": "a largura do trilho"
+     }
+    },
+    {
+     "rotulo": "O segredo é o cordão wave",
+     "titulo": "Cada onda no [lugar] certo"
+    },
+    {
+     "rotulo": "Gaze de linho com forro",
+     "titulo": "Luz natural, [privacidade] suave",
+     "fichas": [
+      "Rodízios tipo Maxi",
+      "Altura personalizada",
+      "Forro microfibra"
+     ],
+     "cta": "Peça e avise o trilho no chat"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Prega [wave] em trilho suíço",
+     "sub": "Voil gaze de linho com forro"
+    },
+    {
+     "titulo": "Rodízios e [terminais] inclusos",
+     "sub": "Cordão wave já acompanha"
+    },
+    {
+     "titulo": "Leve a sua no [carrinho]",
+     "sub": "Altura personalizada para você"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Privacidade com luz",
+     "titulo": "Janela de frente pro [vizinho]?",
+     "sub": "Privacidade suave e luz natural"
+    },
+    {
+     "rotulo": "Voil gaze de linho",
+     "titulo": "Toque leve, textura [elegante]",
+     "sub": "Forro em microfibra leve"
+    },
+    {
+     "rotulo": "Para salas e quartos",
+     "titulo": "Casa clara e [reservada]",
+     "sub": "Não bloqueia totalmente a luz",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliada"
+ },
+ "legendas": {
+  "shopee": "Cortina wave para trilho suíço em gaze de linho com forro microfibra\n#cortinawave #trilhosuico #cortinasala #cortinadelinho",
+  "shopee2": "Cortina prega wave com cordão wave, rodízios Maxi e terminais inclusos\n#pregawave #cortinasobmedida #decoracaosala #cortinaquarto",
+  "shopee3": "Cortina de voil gaze de linho com altura personalizada e luz natural\n#cortinavoil #cortinalinho #cortinaparasala #salaclara",
+  "reels": "Janela de frente pro vizinho e você não quer viver no escuro? Essa cortina wave de gaze de linho com forro dá privacidade suave e deixa a luz natural entrar ☀️\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinawave #trilhosuico #cortinadelinho #decoracaoapartamento"
+ },
+ "notas": "Só 01 e 03 (mesma sala e mesma cortina); 03 recortada para tirar o infográfico da esquerda, 01 recortada para tirar a faixa 'Prega Wave' do topo. 07/08/06/09 parecem outras cores, 02/04/05 são tabelas. Riscos: Pruna pode balançar o tecido ou mudar o número de ondas (fiscal confere 4 quadros); não é blackout (nada de 'escurece'); 'duas folhas' fica fora da tela porque a 01 fechada não mostra as 2 folhas."
+}

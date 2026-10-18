@@ -1,0 +1,125 @@
+{
+ "nome": "r28_cortina_blackout_2_80",
+ "titulo_produto": "Cortina Blackout Tecido Grosso 2,80x2,30",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r28-fotos/01.jpg",
+  "r28-fotos/05.jpg"
+ ],
+ "cor_destaque": "8B6B4F",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r28-cenas/cena1.mp4",
+   "lento": 1.0,
+   "recorte": [
+    440,
+    0,
+    1024,
+    1024
+   ]
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_dir",
+   "zoom": 1.06,
+   "clipe": "r28-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    440,
+    250,
+    1024,
+    1024
+   ],
+   "codigo": "pull",
+   "zoom": 1.12,
+   "clipe": "r28-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Cortina blackout tecido grosso",
+     "titulo": "Sol batendo no [quarto]?",
+     "abertura": {
+      "grande": "16",
+      "texto": "ilhós cromados, 2,80 x 2,30 m"
+     }
+    },
+    {
+     "rotulo": "Ilhós cromados",
+     "titulo": "[8 ilhós] em cada parte"
+    },
+    {
+     "rotulo": "Bloqueia a luz",
+     "titulo": "Blackout que [protege] da luz",
+     "fichas": [
+      "2,80 x 2,30 m",
+      "16 ilhós cromados",
+      "Tecido lavável"
+     ],
+     "cta": "Toque no carrinho e escolha a sua"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Quarto [escuro] e aconchegante",
+     "sub": "Blackout de tecido grosso"
+    },
+    {
+     "titulo": "Acabamento em [bainha] premium",
+     "sub": "Ilhós cromado, 8 em cada parte"
+    },
+    {
+     "titulo": "Leve a sua no [carrinho]",
+     "sub": "Nota 4,88 · 624 avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Blackout 2,80 x 2,30 m",
+     "titulo": "Sala e quarto com [privacidade]",
+     "sub": "Tecido grosso, 100% poliéster"
+    },
+    {
+     "rotulo": "Conforto o dia todo",
+     "titulo": "Segura a [temperatura] da sala",
+     "sub": "Tecido antialérgico"
+    },
+    {
+     "rotulo": "Nota 4,88 · 624 avaliações",
+     "titulo": "Cortina que lava e [não encolhe]",
+     "sub": "Duas partes de 1,40 m",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "16",
+  "t": "ilhós"
+ },
+ "legendas": {
+  "shopee": "Cortina blackout de tecido grosso 2,80 x 2,30 m com 16 ilhós cromados\n#cortinablackout #cortinaquarto #cortinasala #decoracaoquarto",
+  "shopee2": "Blackout 100% poliéster que bloqueia a luz, nota 4,88 em 624 avaliações\n#cortinaparaquarto #cortinaparasala #blackouttecido #cortinailhos",
+  "shopee3": "Blackout lavável que não encolhe e preserva a temperatura da sala\n#cortinaisolamentotermico #cortinaantialergica #decoracaodecasa #cortinagrossa",
+  "reels": "Sol batendo cedo no quarto? Blackout de tecido grosso com 16 ilhós, 2,80 x 2,30 m. ☀️\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinablackout #cortinaquarto #cortinasala #decoracaodecasa"
+ },
+ "notas": "Fotos 01 (principal, bege) e 05 (mesma cor/ambiente da galeria). 02/03/04 têm texto grande, 06-10 outras cores. Medidas 2,80x2,30 e 16 ilhós confirmadas por título e descrição; percentual de bloqueio NÃO usado (descrição diz 80% e 90%). Riscos: 01 tem texto 'Valoriza qualquer ambiente.' impresso na foto; 05 tem círculo de zoom do ilhós no centro."
+}

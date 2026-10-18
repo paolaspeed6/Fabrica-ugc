@@ -1,0 +1,110 @@
+{
+  "nome": "q15_prateleira_5_tabuas",
+  "titulo_produto": "Prateleira Industrial 5 Tábuas Ferro Metalon",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q15-fotos/01.jpg"
+  ],
+  "cor_destaque": "D8A868",
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "Very slow lateral dolly, warm light steady, objects do not change."
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        0,
+        100,
+        780,
+        880
+      ],
+      "movimento": "gentle lateral dolly"
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        200,
+        120,
+        1000,
+        920
+      ],
+      "movimento": "crane up reveal"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Industrial · 60 cm de largura",
+          "titulo": "[5] tábuas em uma só parede",
+          "abertura": {
+            "grande": "5",
+            "texto": "tábuas e só 60 cm de largura"
+          }
+        },
+        {
+          "rotulo": "Até 74 cm de altura",
+          "titulo": "Cresce na [vertical]"
+        },
+        {
+          "rotulo": "Tábuas em 3 cores",
+          "titulo": "Metalon [reforçado]",
+          "fichas": [
+            "5 tábuas",
+            "4 suportes",
+            "3 cores de tábua"
+          ],
+          "cta": "Toque no carrinho e escolha a cor"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Parede [estreita]? Suba",
+          "sub": "5 tábuas em 60 cm"
+        },
+        {
+          "titulo": "Mais [espaço] sem ocupar chão",
+          "sub": "Até 74 cm de altura"
+        },
+        {
+          "titulo": "Escolha a cor no [carrinho]",
+          "sub": "Amadeirado, preto ou branco"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Pouco espaço na parede?",
+          "titulo": "Tem [cinco] andares aqui"
+        },
+        {
+          "rotulo": "Prateleira industrial",
+          "titulo": "[5 tábuas] em 60 cm de largura",
+          "sub": "Suportes em ferro metalon"
+        },
+        {
+          "rotulo": "Nota 4,82",
+          "titulo": "Decora e [organiza]",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Prateleira industrial com 5 tábuas de 60 cm e suportes de ferro metalon. Cresce na vertical.\n#prateleira #industrial #decoracao #achadinhosshopee",
+    "shopee2": "Prateleira suspensa com 5 tábuas em 60 cm de largura, até 74 cm de altura. Três cores de tábua.\n#prateleira #organizacao #casa #achadinhosshopee",
+    "reels": "Pouco espaço na parede? 5 tábuas em só 60 cm de largura 😮 Suportes de ferro metalon, até 74 cm de altura, tábuas em 3 cores. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#prateleira #industrial #organizacao #decoracao"
+  },
+  "comentario": "🛒 Prateleira Industrial 5 Tábuas Ferro Metalon aqui: {link}",
+  "letras_na_foto01": "lombadas de livros: foto com movimento minimo; cenas editar sem livros",
+  "imagens_conferidas": true
+}

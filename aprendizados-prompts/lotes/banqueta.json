@@ -1,0 +1,31 @@
+{
+ "nome": "banqueta",
+ "link": "https://shopee.com.br/product/1281485491/58267016519",
+ "fotos": ["../banqueta-fotos/A_banqueta_caramelo.png"],
+ "cor_destaque": "F2B66D",
+ "cenas": [
+  {"editar": "Use only the bar stool from the reference image ... white kitchen island, no people, photorealistic full-frame photo, vertical 9:16. No phone frame, no borders, no text.", "movimento": "Very slow camera push-in, steam from the mug; the stool stays still and unchanged.", "clipe": "../banqueta-cenas/cena1_cozinha.mp4"},
+  {"editar": "Use only the bar stool from the reference image ... two identical stools at a concrete gourmet counter at sunset, no people, photorealistic full-frame photo, vertical 9:16. No phone frame, no borders, no text.", "movimento": "Slow sideways camera move, grill flames flicker; the stools stay still and unchanged.", "clipe": "../banqueta-cenas/cena2_gourmet.mp4"},
+  {"foto": 0, "movimento": "Very slow camera push-in toward the stool, soft studio light. The stool does not move or change shape.", "clipe": "../banqueta-cenas/cena3_principal.mp4", "lento": 1.4}
+ ],
+ "versoes": {
+  "shopee": {"cenas": [
+   {"rotulo": "Para sua bancada", "titulo": "Eleve o nível da sua [cozinha]", "chamadas": [{"texto": "Encosto estofado", "x": 690, "y": 680, "lx": 430, "ly": 540}]},
+   {"rotulo": "Área gourmet", "titulo": "Courissimo que [limpa fácil]"},
+   {"rotulo": "Medidas", "titulo": "[93,5 cm] de altura", "fichas": ["Altura de bancada", "Courissimo", "Ferro"], "cta": "Toque no carrinho", "chamadas": [{"texto": "Assento estofado", "x": 560, "y": 640, "lx": 430, "ly": 480}]}]},
+  "tiktok": {"cenas": [
+   {"titulo": "Bancada com cara de [restaurante]"},
+   {"titulo": "Courissimo + [ferro] preto", "sub": "Fácil de limpar e firme"},
+   {"titulo": "[93,5 cm] de altura", "sub": "Perfeita pra bancada", "cta": "Link no perfil"}]},
+  "reels": {"ordem": [1, 0, 2], "cenas": [
+   {"rotulo": "Área gourmet", "titulo": "Conforto com cara de [projeto]"},
+   {"rotulo": "Acabamento", "titulo": "Courissimo e [ferro] preto", "sub": "Firme e fácil de limpar"},
+   {"rotulo": "93,5 cm de altura", "titulo": "Feita para [bancadas]", "cta": "Compre pelo link"}]}
+ },
+ "legendas": {
+  "shopee": "Banqueta alta com encosto em courissimo e base de ferro preto. 93,5 cm, na altura certa para bancada e área gourmet. Toque no carrinho para ver as cores.",
+  "tiktok": "A banqueta que deixa qualquer bancada com cara de restaurante 🍽️ Courissimo fácil de limpar + base de ferro. Link no perfil!",
+  "reels": "Detalhes que transformam a área gourmet ✨ Banqueta com encosto, courissimo e ferro preto, 93,5 cm de altura. Compre pelo link: {link}"
+ },
+ "hashtags": {"tiktok": "#casa #decoracao #areagourmet #achadinhosshopee", "reels": "#decoracao #areagourmet #cozinhaplanejada #casanova"}
+}

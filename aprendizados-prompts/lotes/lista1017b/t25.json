@@ -1,0 +1,151 @@
+{
+ "nome": "t25_cortina_voil_bordada",
+ "titulo_produto": "Cortina Voil Bordada com Forro",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r25-fotos/01.jpg",
+  "t25-cenas/cena1.png",
+  "t25-cenas/cena2.png",
+  "t25-cenas/cena3.png"
+ ],
+ "cor_destaque": "9C6B30",
+ "contagem": {
+  "faixas_largas_de_bordado": 2
+ },
+ "diretor": {
+  "angulo": "A janela vira peça de decoração: voil bordado de fabricante, com forro, em fotos reais do estúdio.",
+  "palavra": "bordado",
+  "prova": "Fabricante especializado em cortina bordada com forro; 'todas as fotos são reais, tiradas em nosso estúdio'; voil bordado + forro de microfibra; bem avaliada.",
+  "errc": "E: 'achadinho' e foto de catálogo parada. R: medidas (título e descrição se contradizem, ficam fora). E: o bordado em close real e a luz da sanca acesa. C: a cortina como item do enxoval de quem monta a casa nova.",
+  "publico_nao_obvio": "Noivos e quem está montando a casa nova (enxoval), que querem a sala pronta para receber visita.",
+  "por_que_converte": "Cialdini (autoridade): 'feita por fabricante' e 'fotos reais do estúdio' derrubam o medo de receber diferente; Berger (moeda social): a visita repara; Ries/Trout: a palavra bordado no gancho e no CTA.",
+  "visual": "Parede inteira de voil branco com a luz quente da sanca acendendo as dobras de cima: brilho dourado no topo do quadro que para o dedo."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide shot slightly from the left, whole curtain ceiling to floor. The exact curtain from the reference image, identical shape, color, material and every part: a wide floor-length white voile curtain with lining, soft vertical folds, beige and taupe embroidered scroll vines and exactly 2 wide horizontal floral bands, middle and bottom hem. Real size, keep the scale true against the room and furniture: 2 panels, each 2.00 m wide and 2.60 m tall, floor-length. Bright bedroom window, plain pale grey walls, light oak floor, a low cream bench. Soft morning daylight glows through the fabric. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Very slow push-in toward the curtain, which stays fully in frame. The white embroidered voile curtain stays perfectly still and unchanged, every fold and embroidered motif identical. Soft morning light glows steadily through it while pale light patches drift slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t25-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 1,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up of the middle embroidered band across several folds. The exact curtain from the reference image, identical shape, color, material and every part: a wide floor-length white voile curtain with lining, soft vertical folds, beige and taupe embroidered scroll vines and exactly 2 wide horizontal floral bands, middle and bottom hem. Real size, keep the scale true against the room and furniture: 2 panels, each 2.00 m wide and 2.60 m tall, floor-length. Soft raking window light reveals the raised stitching, 85 mm lens. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Extremely slow push-in along the embroidered band. The frame stays filled with the white voile curtain the whole time, close and frontal. The curtain stays perfectly still and unchanged, every fold and embroidered flower identical. Soft side light glides slowly across the stitching. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_esq",
+   "zoom": 1.06,
+   "clipe": "t25-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 2,
+   "refeito": "r1",
+   "pruna_t": 2.5,
+   "fiscal": "2.5"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium shot of a bedroom window in the morning. The exact curtain from the reference image, identical shape, color, material and every part: a wide floor-length white voile curtain with lining, soft vertical folds, beige and taupe embroidered scroll vines and exactly 2 wide horizontal floral bands, middle and bottom hem. A woman's hand and forearm enter from the left and gently open one curtain panel, letting soft daylight in; the curtain is floor-length. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "The hand slowly opens the panel a little while the camera drifts slightly. The embroidery bands stay identical. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pull",
+   "zoom": 1.06,
+   "clipe": "t25-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot from standing eye height. The exact curtain from the reference image, identical shape, color, material and every part: a wide floor-length white voile curtain with lining, soft vertical folds, beige and taupe embroidered scroll vines and exactly 2 wide horizontal floral bands, middle and bottom hem. Real size, keep the scale true against the room and furniture: 2 panels, each 2.00 m wide and 2.60 m tall, floor-length. Closed behind a cream linen sofa in an evening living room, plain warm white walls, light wood floor. A warm ceiling cove light washes down the folds, a table lamp glows. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Very slow pull-back revealing the living room. The white embroidered voile curtain stays perfectly still and unchanged, every fold and embroidered band identical. The warm cove light and lamp glow stay steady, with soft reflections on the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "foto": 3,
+   "fiscal": "ok"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Voil bordado com forro",
+     "titulo": "Bordado de [fábrica] na janela",
+     "abertura": {
+      "grande": "REAL",
+      "texto": "fotos do estúdio do fabricante"
+     }
+    },
+    {
+     "rotulo": "Excelente acabamento",
+     "titulo": "O [bordado] é o protagonista"
+    },
+    {
+     "rotulo": "Privacidade com claridade",
+     "titulo": "A sala inteira [muda]",
+     "fichas": [
+      "Forro de microfibra",
+      "Ilhós cromado",
+      "Ótimo caimento"
+     ],
+     "cta": "Escolha a sua no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Cortina [bordada] de fabricante",
+     "sub": "Fotos reais tiradas no estúdio"
+    },
+    {
+     "titulo": "Privacidade sem perder a [luz]",
+     "sub": "Voil leve com forro de microfibra"
+    },
+    {
+     "titulo": "Garanta a sua no [carrinho]",
+     "sub": "Excelente acabamento e caimento"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Casa nova?",
+     "titulo": "Sua janela ainda está [pelada]?",
+     "sub": "Voil bordado e forro de microfibra"
+    },
+    {
+     "rotulo": "Para o enxoval da casa nova",
+     "titulo": "Delicada até no [caimento]",
+     "sub": "Excelente acabamento de fábrica"
+    },
+    {
+     "rotulo": "Feita por fabricante",
+     "titulo": "A visita vai [reparar]",
+     "sub": "Privacidade sem escurecer a sala",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliada"
+ },
+ "legendas": {
+  "shopee": "Cortina voil bordada com forro de microfibra e ilhós cromado\n#cortinabordada #cortinavoil #cortinasala #decoracaoclassica",
+  "shopee2": "Cortina bordada de fabricante, fotos reais do estúdio e ótimo caimento\n#cortinadevoil #cortinacomforro #janeladecorada #salaelegante",
+  "shopee3": "Cortina de voil bordado que dá privacidade sem bloquear a claridade\n#cortinaquarto #cortinabordada #enxovalcasa #casanova",
+  "reels": "Sua janela ainda está pelada? Essa cortina de voil bordado com forro dá privacidade sem bloquear totalmente a claridade, e as fotos são reais do estúdio do fabricante ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinabordada #enxovalcasa #casanova #decoracaosala"
+ },
+ "notas": "Só a foto 01 (recortada sem as tarjas brancas laterais) em 3 enquadramentos: a 06 é o mesmo produto mas mostra uma cortina cor de ferrugem ao lado que não sai com recorte de 600 px; demais fotos são outras cores/bordados. Medidas fora (título 6,00x2,70 x descrição 4,00x2,60). Riscos: bordado fino no Pruna (cenas 1 e 3) pode ser redesenhado ou ganhar faixas: conferir 2 faixas largas de bordado; ilhós cromado não aparece na 01 (só nas fichas/legenda)."
+}

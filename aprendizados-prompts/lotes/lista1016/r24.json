@@ -1,0 +1,124 @@
+{
+  "nome": "r24_cortina_wave_gaze_linho",
+  "titulo_produto": "Cortina Wave Trilho Suíço Gaze de Linho com Forro Microfibra",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "r24-fotos/01.jpg",
+    "r24-fotos/07.jpg"
+  ],
+  "cor_destaque": "A8844F",
+  "cenas": [
+    {
+      "foto": 0,
+      "recorte": [
+        0,
+        230,
+        1024,
+        1024
+      ],
+      "codigo": "push",
+      "zoom": 1.05,
+      "clipe": "r24-cenas/cena1.mp4",
+      "lento": 1.0
+    },
+    {
+      "foto": 1,
+      "codigo": "pan_esq",
+      "zoom": 1.08,
+      "clipe": "r24-cenas/cena2.mp4",
+      "lento": 1.0
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        240,
+        240,
+        840,
+        860
+      ],
+      "codigo": "desce",
+      "zoom": 1.1,
+      "clipe": "r24-cenas/cena3.mp4",
+      "lento": 1.0
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Cortina wave trilho suíço",
+          "titulo": "Ondas [perfeitas] na janela",
+          "abertura": {
+            "grande": "4,90",
+            "texto": "de nota em 164 avaliações"
+          }
+        },
+        {
+          "rotulo": "Gaze de linho + microfibra",
+          "titulo": "Luz [suave], mais privacidade"
+        },
+        {
+          "rotulo": "Cordão wave incluso",
+          "titulo": "Já vem pra [montar]",
+          "fichas": [
+            "Cordão wave incluso",
+            "Rodízios maxi",
+            "Altura sob medida"
+          ],
+          "cta": "Toque no carrinho e escolha a sua"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "A cortina que faz [ondas]",
+          "sub": "Gaze de linho com forro"
+        },
+        {
+          "titulo": "Filtra a luz, [não] escurece",
+          "sub": "Bloqueia cerca de 30% da luz"
+        },
+        {
+          "titulo": "Peça a sua no [carrinho]",
+          "sub": "Nota 4,90 · 164 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Sala leve e sofisticada",
+          "titulo": "Prega [wave] sem complicação",
+          "sub": "Cordão e rodízios inclusos"
+        },
+        {
+          "rotulo": "Tecidos",
+          "titulo": "Voil gaze de linho e [forro]",
+          "sub": "100% poliéster"
+        },
+        {
+          "rotulo": "Nota 4,90 · 164 avaliações",
+          "titulo": "Duas folhas, altura [sob medida]",
+          "cta": "Link na legenda"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "4,90",
+    "t": "de nota"
+  },
+  "legendas": {
+    "shopee": "Cortina wave para trilho suíço em gaze de linho com forro de microfibra, nota 4,90.\n#cortinawave #trilhosuico #cortinasala #decoracaosala",
+    "shopee2": "Cortina Fatimalhas com cordão wave e rodízios inclusos, 164 avaliações.\n#cortinagazedelinho #cortinaluxo #cortinaquarto #decoracaodejanela",
+    "shopee3": "Cortina wave em duas folhas, altura personalizada, bloqueia cerca de 30% da luz.\n#cortinasobmedida #cortinatrilhosuico #salaestar #casaelegante",
+    "reels": "Quer ondas perfeitas na sua janela? 🌊 Cortina wave de gaze de linho com forro de microfibra, privacidade suave e luz natural.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+  },
+  "hashtags": {
+    "reels": "#cortinawave #trilhosuico #cortinasala #decoracaosala"
+  },
+  "notas": "Fotos 01 (recorte que tira a faixa 'Prega Wave...' do topo; desvio da regra 'cena 1 sem recorte') e 07 (ambiente beige limpo); 02-05 têm tabelas/infográfico, 06/08/09 são mais brancas. RISCO: não é blackout (30% de luz) — não usar essa palavra; vendida sob medida, trilho suíço duplo/simples é escolha no chat, preço não citado; recorte de detalhe tem só ~600 px."
+}

@@ -1,0 +1,130 @@
+{
+ "nome": "r27_cortina_9m_voal_forro",
+ "titulo_produto": "Cortina 9,00 x 2,80 Voal com Forro",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r27-fotos/01.jpg"
+ ],
+ "cor_destaque": "A0522D",
+ "cenas": [
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    168,
+    1024,
+    854
+   ],
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r27-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    180,
+    168,
+    800,
+    788
+   ],
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "r27-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    380,
+    168,
+    1024,
+    854
+   ],
+   "codigo": "desce",
+   "zoom": 1.1,
+   "clipe": "r27-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Cortina voal com forro",
+     "titulo": "Cortina de [9 metros]",
+     "abertura": {
+      "grande": "9m",
+      "texto": "de largura, 2,80m de altura"
+     }
+    },
+    {
+     "rotulo": "Ilhós cromado",
+     "titulo": "Desliza fácil no [varão]"
+    },
+    {
+     "rotulo": "Forro em microfibra",
+     "titulo": "Sombreamento de [60 a 70%]",
+     "fichas": [
+      "9,00 x 2,80 m",
+      "2 partes de 4,50 m",
+      "Voal + microfibra"
+     ],
+     "cta": "Toque no carrinho e leve a sua"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Janela [grande]? Resolvido",
+     "sub": "9 x 2,80 m, 2 partes de 4,50"
+    },
+    {
+     "titulo": "Ilhós que [não] enferruja",
+     "sub": "Para varão de até 28 mm"
+    },
+    {
+     "titulo": "Leve a sua no [carrinho]",
+     "sub": "Nota 4,83 · 270 avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Cortina grande para sala",
+     "titulo": "Parede inteira de [cortina]",
+     "sub": "Voal com forro microfibra"
+    },
+    {
+     "rotulo": "Acabamento",
+     "titulo": "Ótimo [franzido] na janela",
+     "sub": "Bainha bem feita"
+    },
+    {
+     "rotulo": "Nota 4,83 · 270 avaliações",
+     "titulo": "Sala e quarto [vestidos]",
+     "sub": "Direto da fábrica",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "9m",
+  "t": "de largura"
+ },
+ "legendas": {
+  "shopee": "Cortina 9,00 x 2,80 m voal com forro de microfibra e ilhós cromado\n#cortinagrande #cortinasala #cortinavoal #decoracaosala",
+  "shopee2": "Cortina de 9 metros dividida em 2 partes de 4,50 m, nota 4,83 em 270 avaliações\n#cortinaparajanela #cortinaquarto #cortinaforrada #cortinailhos",
+  "shopee3": "Voal com forro de microfibra, sombreamento de 60 a 70% e ilhós sem ferrugem\n#cortinavoilforro #cortinaparasala #decoracaodecasa #cortinadefabrica",
+  "reels": "Janela grande pede cortina grande: 9 x 2,80 m em voal com forro. 🪟 Nota 4,83 em 270 avaliações.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinagrande #cortinavoal #cortinasala #decoracaodesala"
+ },
+ "notas": "Só a foto 01 presta (02 creme e 03 cinza são outras cores; 04 e 05 têm mão). 3 cenas da 01 em recortes diferentes, todos dentro da faixa útil y168-854 (o resto é tarja branca). Medida 9,00x2,80 confirmada por título e descrição. Gancho: número 9 metros. Risco: foto parece só o voal (forro não visível); recortes repetem a mesma foto."
+}

@@ -1,0 +1,137 @@
+{
+ "nome": "s01_lustre_tres_aneis",
+ "titulo_produto": "Lustre Nórdico de 3 Anéis com LED e 3 Cores de Luz",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r01-fotos/01.jpg",
+  "../lista1016/r01-fotos/02.jpg"
+ ],
+ "cor_destaque": "B8892E",
+ "contagem": {
+  "aneis": 3,
+  "globos": 3
+ },
+ "diretor": {
+  "angulo": "O teto é a parede esquecida da casa: 3 anéis de LED fazem dele o centro da sala de jantar.",
+  "palavra": "3 cores",
+  "prova": "Mesmo lustre em 3 cores de luz (foto 02) + anéis de 60, 40 e 20 cm, LED de 64W, bem avaliado",
+  "errc": "E: 'achadinho' e lista de specs. R: adjetivos de luxo. E: prova das 3 cores lado a lado e medida dos anéis. C: falar com dono de café/loja, que a descrição cita.",
+  "publico_nao_obvio": "Dono de café ou loja pequena (a descrição cita sala de café e loja) que quer um teto que vira foto de Instagram.",
+  "por_que_converte": "Schwartz: quem já procura lustre está consciente da solução, então abrimos com o quadro mais bonito e a medida (Hopkins, especificidade). Sutherland: não é luminária, é o clima da sala.",
+  "visual": "1º segundo: anéis acesos com o teto pontilhado de luz e a cidade à noite na janela; contraste quente contra azul para o dedo."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": "Very slow push-in on a ceiling chandelier at dusk. The chandelier with exactly 3 thin gold rings glowing warm white and exactly 3 small gold-capped glass globes stays perfectly still and unchanged, every part identical to the photo; the whole chandelier stays fully in frame. Star-shaped light dots glow softly on the ceiling, city lights shimmer in the windows. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s01-cenas/cena1.mp4",
+   "lento": 1.0,
+   "fiscal": "ok"
+  },
+  {
+   "foto": 1,
+   "pruna": null,
+   "codigo": "pan_dir",
+   "zoom": 1.07,
+   "clipe": "s01-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    100,
+    700,
+    800
+   ],
+   "pruna": "Slow lateral dolly right beneath a ceiling chandelier in an evening living room. The chandelier with exactly 3 thin gold rings glowing warm white and exactly 3 small gold-capped glass globes stays perfectly still and unchanged, every part identical to the photo. Warm light reflects softly on the marble wall, city lights twinkle in the windows. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pull",
+   "zoom": 1.1,
+   "clipe": "s01-cenas/cena3.mp4",
+   "lento": 1.0,
+   "fiscal": "ok"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre nórdico de 3 anéis",
+     "titulo": "Três anéis acesos no [seu teto]",
+     "abertura": {
+      "grande": "60cm",
+      "texto": "de anel no teto"
+     }
+    },
+    {
+     "rotulo": "Mesmo lustre, 3 cores de luz",
+     "titulo": "Escolha entre [3 cores] de luz"
+    },
+    {
+     "rotulo": "Anéis de 60, 40 e 20 cm",
+     "titulo": "Ilumina [15 a 25 m²]",
+     "fichas": [
+      "Anéis 60/40/20 cm",
+      "LED de 64W",
+      "Cabo ajustável 1 m"
+     ],
+     "cta": "Toque no carrinho e ilumine a sala"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Seu [café] merece esse teto",
+     "sub": "Lustre para sala de café e loja"
+    },
+    {
+     "titulo": "Romântica ou [alto brilho]",
+     "sub": "3 cores de luz no mesmo lustre"
+    },
+    {
+     "titulo": "Garanta o seu no [carrinho]",
+     "sub": "Bem avaliado por quem comprou"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre nórdico de luxo",
+     "titulo": "Teto [sem vida] na sala?",
+     "sub": "Três anéis de LED resolvem"
+    },
+    {
+     "rotulo": "Um lustre, três climas",
+     "titulo": "Muda o [clima] da sala",
+     "sub": "São 3 cores de luz para escolher"
+    },
+    {
+     "rotulo": "Cabo de aço ajustável",
+     "titulo": "Altura certa pro [seu teto]",
+     "sub": "Cabo ajustável de até 1 m",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "3",
+  "t": "cores de luz"
+ },
+ "legendas": {
+  "shopee": "Lustre nórdico de 3 anéis com LED de 64W e 3 cores de luz\n#lustredeteto #lustrenordico #lustrependente #saladejantar",
+  "shopee2": "Lustre de anéis 60, 40 e 20 cm com cabo de aço ajustável de 1 m\n#lustremoderno #iluminacaosala #decoracaocafe #lustredeaneis",
+  "shopee3": "Lustre romântico para sala de 15 a 25 m², bem avaliado por quem comprou\n#luminariadeteto #saladeestar #lustreled #decoracaoquarto",
+  "reels": "Teto sem vida na sala de jantar? 3 anéis de LED com 3 cores de luz mudam o clima da casa ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustredeteto #lustrenordico #saladejantar #lustreled"
+ },
+ "notas": "Fotos: 01 (produto inteiro em ambiente real, Pruna) e 02 (3 cores lado a lado, tem legendas escritas, por isso só código). 04/05/07 têm tabela e diagrama (recorte limpo ficaria < 600 px), 03 tem mão e celular, 06 colagem, 08/09 outro modelo. Cor 'dourado' e 'estrelas' fora do texto: não estão escritas no título/descrição. Risco: Pruna somar/tirar anel ou globo (contagem 3+3 no prompt) e redesenhar os pontos de luz do teto."
+}

@@ -1,0 +1,75 @@
+{
+ "nome": "tapete_shopito",
+ "titulo_produto": "Tapete Shopito",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p10-fotos/01.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. One unopened package of these dog training pads (orange Espaço de Bicho Tapete Higiênico do Shopito package) standing on a clean light wood floor next to one open white training pad, a drop of blue liquid on the pad being absorbed instantly, bright modern living room, soft daylight. Package lettering exactly as in the reference.",
+   "movimento": "Slow push-in; the blue liquid soaks into the pad and disappears quickly, the surface stays dry. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. Top-down close-up of one open white training pad from this package on a light wood floor, blue liquid being absorbed into the center, leak-proof edges visible.",
+   "movimento": "Slow overhead descent; the blue stain shrinks into the pad, satisfying absorption. The product does not change shape, color or lettering. No people.",
+   "composicao": false
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. A happy small puppy sitting calmly next to the open training pad and the package of these pads, bright clean living room, soft daylight. Package lettering exactly as in the reference.",
+   "movimento": "Very slow push-in; the dog wags its tail and looks at the camera. The product does not change shape, color or lettering. No people."
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Tapete Shopito",
+     "titulo": "[150] tapetes"
+    },
+    {
+     "rotulo": "6 camadas protetoras",
+     "titulo": "Proteção [total]"
+    },
+    {
+     "rotulo": "Espaço de Bicho",
+     "titulo": "Atrativo [canino]",
+     "fichas": [
+      "150 un.",
+      "6 camadas",
+      "Antivazamento"
+     ],
+     "cta": "Toque no carrinho"
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "Tapete Shopito",
+     "titulo": "O tapete [oficial] da Shopee"
+    },
+    {
+     "rotulo": "Tapete do Shopito",
+     "titulo": "[6 camadas] de proteção",
+     "sub": "Barreira antivazamento"
+    },
+    {
+     "rotulo": "150 unidades",
+     "titulo": "Ideal pra [filhote]",
+     "cta": "Link no comentário"
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Tapete higiênico Espaço de Bicho do Shopito, produto oficial Shopee, pacote com 150 unidades: 6 camadas protetoras, barreira antivazamento e atrativo canino. Indicado para cães de pequeno porte. Toque no carrinho.",
+  "reels": "O tapete oficial da Shopee 🐶 Shopito Espaço de Bicho, 150 unidades com 6 camadas. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#cachorro #pet #dogsofinstagram #tapetehigienico"
+ },
+ "comentario": "🛒 Tapete Shopito aqui: {link}",
+ "embalagem_com_letras": true
+}

@@ -1,0 +1,100 @@
+{
+ "nome": "placa",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../placa-fotos/01.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "clipe": "../placa-cenas/teste_seedance15fast.mp4",
+   "lento": 1.1
+  },
+  {
+   "clipe": "../placa-cenas/cena2_gabinete.mp4",
+   "lento": 1.1
+  },
+  {
+   "clipe": "../placa-cenas/cena3_setup_dia.mp4",
+   "lento": 1.1
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "ate": 5.27,
+     "rotulo": "Placa de vídeo",
+     "titulo": "SOYO [RX580 8GB] GDDR5"
+    },
+    {
+     "ate": 5.27,
+     "rotulo": "Dual-fan",
+     "titulo": "Duas ventoinhas de [80 mm]"
+    },
+    {
+     "ate": 5.27,
+     "rotulo": "SOYO RX580",
+     "titulo": "[2 HDMI + 2 DP] até 4 telas",
+     "fichas": [
+      "8GB GDDR5",
+      "256 bits",
+      "150W"
+     ],
+     "cta": "Toque no carrinho"
+    }
+   ]
+  },
+  "tiktok": {
+   "cenas": [
+    {
+     "ate": 5.08,
+     "titulo": "SOYO [RX580] 8GB",
+     "sub": "Placa de vídeo branca dual-fan"
+    },
+    {
+     "ate": 5.08,
+     "titulo": "[8GB] pra rodar seus jogos",
+     "sub": "RX580 com 2048 shaders"
+    },
+    {
+     "ate": 5.08,
+     "titulo": "Branca e [silenciosa]",
+     "sub": "Até 4 monitores",
+     "cta": "Link no perfil"
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "ate": 5.33,
+     "rotulo": "Placa de vídeo SOYO",
+     "titulo": "RX580 [8GB] branca"
+    },
+    {
+     "ate": 5.33,
+     "rotulo": "Setup branco",
+     "titulo": "Desempenho com [estilo]",
+     "sub": "8GB GDDR5 e 256 bits"
+    },
+    {
+     "ate": 5.33,
+     "rotulo": "2 HDMI + 2 DisplayPort",
+     "titulo": "Até [quatro] monitores",
+     "cta": "Compre pelo link"
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Placa de vídeo SOYO RX580 8GB GDDR5 branca, 256 bits, 2048 shaders e duas ventoinhas de 80 mm. Saídas 2 HDMI + 2 DisplayPort para até 4 monitores. Requer fonte de 500W ou mais. Toque no carrinho e confira.",
+  "tiktok": "Setup branco pede placa branca 🤍 RX580 8GB com dual-fan e até 4 monitores. Link no perfil!",
+  "reels": "O upgrade que seu PC pedia 🎮 SOYO RX580 8GB GDDR5, dual-fan, 2 HDMI + 2 DP. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "tiktok": "#setupgamer #pcgamer #placadevideo #achadinhosshopee",
+  "reels": "#setupgamer #pcgamer #rx580 #setupbranco"
+ },
+ "comentario": "🛒 Placa de vídeo SOYO RX580 8GB aqui: {link}"
+}

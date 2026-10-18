@@ -1,0 +1,125 @@
+{
+  "nome": "q01_areia_novacat",
+  "titulo_produto": "Areia de Mandioca Nova Cat",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q01-fotos/01.jpg"
+  ],
+  "cor_destaque": "auto",
+  "embalagem_com_letras": true,
+  "cenas": [
+    {
+      "foto": 0,
+      "recorte": [
+        190,
+        165,
+        630,
+        730
+      ],
+      "movimento": "slow push-in",
+      "clipe": "q01-cenas/cena1.mp4"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. Extreme macro close-up of pale beige cassava cat litter granules, small cylindrical pellets, a few firm clumps among them, filling the whole frame edge to edge. Soft side light, shallow depth of field. No bag, no packaging, no label, no text, no letters, no logos anywhere.",
+      "movimento": "slow push-in",
+      "clipe": "q01-cenas/cena2.mp4"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. Clean minimalist pet corner with a light wood floor and a plain pale wall, soft window light, an empty open cream litter box at the left, the right third of the floor empty. No bag, no packaging, no text, no letters, no logos anywhere. 85 mm, shallow depth of field, neutral white balance.",
+      "composicao": false,
+      "sobrepor": {
+        "foto": "q01-fotos/01.jpg",
+        "recorte": [
+          190,
+          165,
+          630,
+          730
+        ],
+        "x": 0.72,
+        "base": 0.62,
+        "altura": 0.4
+      },
+      "movimento": "Static camera on a tripod, the camera does not move.",
+      "clipe": "q01-cenas/cena3.mp4"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Nova Cat · 3 pacotes",
+          "titulo": "[12 kg] de areia de mandioca",
+          "abertura": {
+            "grande": "12KG",
+            "texto": "de areia de mandioca"
+          }
+        },
+        {
+          "rotulo": "Mecanismo",
+          "titulo": "Absorve e forma [torrões] firmes"
+        },
+        {
+          "rotulo": "Nota 4,96",
+          "titulo": "Kit com [3 pacotes] de 4 kg",
+          "fichas": [
+            "100% mandioca",
+            "Torrões firmes",
+            "Nota 4,96"
+          ],
+          "cta": "Toque no carrinho e leve os 3 pacotes"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Areia de [mandioca]?",
+          "sub": "Kit 3 pacotes · 12 kg"
+        },
+        {
+          "titulo": "Forma [torrões] firmes",
+          "sub": "Limpe só o torrão"
+        },
+        {
+          "titulo": "Leve o seu no [carrinho]",
+          "sub": "Nota 4,96 · 166 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_cartao",
+      "cenas": [
+        {
+          "rotulo": "Dono de gato, olha isso",
+          "titulo": "Areia feita de [mandioca]?",
+          "sub": "Biodegradável e natural"
+        },
+        {
+          "rotulo": "Controla odores",
+          "titulo": "Forma [torrões] firmes na caixa",
+          "sub": "Tira só o torrão, o resto fica"
+        },
+        {
+          "rotulo": "Nota 4,96 · 166 avaliações",
+          "titulo": "Kit com 3 pacotes, 12 kg",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "selo": {
+    "n": "12",
+    "t": "kg"
+  },
+  "legendas": {
+    "shopee": "Areia higiênica Nova Cat de mandioca, kit 3 pacotes, 12 kg. Biodegradável.\n#areiaparagato #gato #pet #achadinhosshopee",
+    "shopee2": "Areia de mandioca Nova Cat, 3 pacotes de 4 kg. Forma torrões firmes.\n#gatos #areiahigienica #petshop #achadinhosshopee",
+    "reels": "Areia feita de mandioca? 🐱 Kit com 3 pacotes (12 kg), biodegradável, forma torrões firmes e controla odores. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#gato #gatos #areiaparagato #pet"
+  },
+  "comentario": "🛒 Areia Nova Cat aqui: {link}",
+  "imagens_conferidas": true
+}

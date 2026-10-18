@@ -1,0 +1,51 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Reels modelo 1 "faixas" (aprovado por a dona em 2026-10-15): frase em duas faixas inclinadas (cor e preto),
+     rótulo branco espaçado, frase de apoio e botão branco. Bloco ancorado embaixo, acima da interface do Facebook. -->
+<style>
+@font-face{font-family:M;src:url("../fontes/Montserrat.ttf");font-weight:100 900}
+html,body{margin:0;width:1080px;height:1920px;background:transparent;overflow:hidden}
+body{font-family:M,sans-serif;color:#fff;position:relative}
+.cena{position:absolute;left:0;right:0;bottom:300px;padding:0 50px}
+.rot{font:700 40px M;letter-spacing:4px;text-transform:uppercase;margin:0 0 22px 10px;text-shadow:0 3px 14px rgba(0,0,0,.7)}
+.f{display:table;font:900 96px/1 M;text-transform:uppercase;padding:18px 30px 16px;letter-spacing:-1px;transform:rotate(var(--rot,-2deg));
+  white-space:nowrap;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.f + .f{margin-top:-4px}
+.dir{text-align:right}.dir .f{margin-left:auto}.dir .rot{margin:0 10px 22px 0}.dir .sub{margin:30px 10px 0 auto}
+.f.b{background:#111;color:#fff}
+.sub{font:600 52px/1.2 M;margin:30px 0 0 10px;text-shadow:0 3px 16px rgba(0,0,0,.8);max-width:960px}
+.cta{margin-top:34px;height:120px;border-radius:60px;background:#fff;color:#111;font:800 50px/120px M;text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.35)}
+</style></head><body>
+<script src="gsap.min.js"></script>
+<script src="comum.js"></script>
+<script>
+const D = window.DADOS, cor = "#" + D.cor;
+document.documentElement.style.setProperty("--rot", (D.inclina == null ? -2 : D.inclina) + "deg");
+const tl = gsap.timeline({paused: true});
+document.fonts.load("900 96px M").then(() => {
+  D.cenas.forEach((c, i) => {
+    const box = el("div", "cena" + (D.alinha === "dir" ? " dir" : "")); gsap.set(box, {autoAlpha: 0});
+    const t0 = c.ini + 0.2;
+    tl.set(box, {autoAlpha: 1}, c.ini);
+    let r = null;
+    if (c.rotulo) r = el("div", "rot", box, c.rotulo);
+    const fs = duasLinhas(limpo(c.titulo || "")).map((t, k) => {
+      const f = el("div", "f" + (k ? " b" : ""), box, t);
+      if ((D.ordem === "preto") ? k === 1 : !k) { f.style.background = cor; f.style.color = "#161616"; f.classList.remove("b"); } else { f.classList.add("b"); }
+      caber(f, 980, 96, 64); return f;
+    });
+    let s = null, b = null;
+    if (c.sub) s = el("div", "sub", box, c.sub);
+    if (c.cta) b = el("div", "cta", box, c.cta + " 👇");
+    if (r) tl.from(r, {x: -60, autoAlpha: 0, duration: .4, ease: "power3.out"}, t0);
+    tl.from(fs, {xPercent: -110, duration: .45, ease: "power4.out", stagger: .12}, t0 + .1);
+    if (s) tl.from(s, {y: 30, autoAlpha: 0, duration: .4, ease: "power2.out"}, t0 + .55);
+    if (b) tl.from(b, {scale: .6, autoAlpha: 0, duration: .45, ease: "back.out(1.8)"}, t0 + .7)
+             .to(b, {scale: 1.05, duration: .35, yoyo: true, repeat: 3, ease: "sine.inOut"}, t0 + 1.4);
+    if (i < D.cenas.length - 1) tl.to(box, {autoAlpha: 0, x: 60, duration: .25, ease: "power2.in"}, c.fim - .3);
+  });
+  tl.set({}, {}, D.fim);
+  window.TL = tl;
+});
+</script></body></html>

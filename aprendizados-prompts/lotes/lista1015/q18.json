@@ -1,0 +1,104 @@
+{
+  "nome": "q18_prateleira_aco_20kg",
+  "titulo_produto": "Prateleira Industrial Aço Preto 30 cm E-Nichos",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q18-fotos/01.jpg"
+  ],
+  "cor_destaque": "979797",
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "Very slow push-in, shelf and wall stay still."
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical. A black steel and black MDF wall shelf from reference photo 1: 30 cm deep matte black boards held by a square-tube black steel frame with visible round screw heads, hung on a light grey plaster wall. Only a small green plant in a white pot and a plain white ceramic vase on the boards. 50 mm, soft window light, neutral white balance. The whole product fills 25-60% of the image height, centered, empty floor below. No text, no letters, no logos, no printing anywhere in the image.",
+      "movimento": "Gentle lateral dolly, objects stay still."
+    },
+    {
+      "foto": 0,
+      "recorte": [
+        100,
+        60,
+        900,
+        860
+      ],
+      "movimento": "crane up reveal"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Aço 20x20 · epóxi",
+          "titulo": "[20 kg] por nível",
+          "abertura": {
+            "grande": "20",
+            "texto": "kg suportados por nível"
+          }
+        },
+        {
+          "rotulo": "Pintura anti ferrugem",
+          "titulo": "Aço [preto] que não enferruja"
+        },
+        {
+          "rotulo": "Nota 4,81",
+          "titulo": "30 cm de [profundidade]",
+          "fichas": [
+            "20 kg por nível",
+            "68 cm de altura",
+            "Parafusos e buchas"
+          ],
+          "cta": "Toque no carrinho e organize"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Aguenta [20 kg] por nível",
+          "sub": "Prateleira industrial de aço"
+        },
+        {
+          "titulo": "Pintura [anti ferrugem]",
+          "sub": "Aço com epóxi"
+        },
+        {
+          "titulo": "Leve a sua no [carrinho]",
+          "sub": "Nota 4,81 · 257 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Escritório, home office",
+          "titulo": "Quanto peso ela [aguenta]?"
+        },
+        {
+          "rotulo": "E-Nichos · aço e MDF 15 mm",
+          "titulo": "[20 kg] em cada nível",
+          "sub": "30 cm de profundidade"
+        },
+        {
+          "rotulo": "Parafusos e buchas inclusos",
+          "titulo": "Aço [reforçado] na parede",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Prateleira industrial de aço preto com MDF, 30 cm de profundidade, suporta 20 kg por nível.\n#prateleira #escritorio #industrial #achadinhosshopee",
+    "shopee2": "Prateleira de aço preto com pintura epóxi anti ferrugem, 68 cm de altura. Parafusos e buchas inclusos.\n#prateleira #homeoffice #organizacao #achadinhosshopee",
+    "reels": "Quanto peso ela aguenta? 💪 20 kg por nível! Aço com pintura epóxi anti ferrugem, MDF 15 mm e 30 cm de profundidade. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#prateleira #homeoffice #escritorio #industrial"
+  },
+  "comentario": "🛒 Prateleira Industrial Aço Preto 30 cm E-Nichos aqui: {link}",
+  "letras_na_foto01": "tela de notebook com logo: foto com movimento minimo; cenas editar sem notebook",
+  "imagens_conferidas": true
+}

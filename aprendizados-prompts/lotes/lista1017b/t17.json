@@ -1,0 +1,152 @@
+{
+ "nome": "t17_cortina_blackout_voil_xadrez",
+ "titulo_produto": "Cortina Blackout com Voil Xadrez 2,80 m x 1,60 m",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r17-fotos/01.jpg",
+  "t17-cenas/cena1.png",
+  "t17-cenas/cena2.png",
+  "t17-cenas/cena3.png"
+ ],
+ "cor_destaque": "8C6A48",
+ "contagem": {
+  "partes": 2,
+  "ilhoses": 12
+ },
+ "diretor": {
+  "angulo": "Para de escolher entre voil e blackout: a mesma cortina traz os dois e ainda serve no varão que você já tem (19 ou 28 mm).",
+  "palavra": "2 em 1",
+  "prova": "blackout PVC + voil xadrez de poliéster, 2,80 x 1,60 m em 2 partes de 1,40 m, 12 ilhoses de 28 mm, varão fino ou grosso; milhares de avaliações",
+  "errc": "E: 'achadinho' e zoom em cortina parada. R: tabela de medidas e cores. E: luz do dia atravessando o voil sobre o blackout e os 12 ilhoses contados na tela. C: a comparação 'voil ou blackout?' e quem herdou o varão do imóvel.",
+  "publico_nao_obvio": "quem se mudou ou aluga e já tem um varão fino ou grosso instalado",
+  "por_que_converte": "Ries/Trout: dona da palavra '2 em 1'. Hormozi: some a dúvida de qual comprar e o 'serve no seu varão' corta esforço; Heath: a pergunta do gancho fecha na cena 2.",
+  "visual": "1º segundo: sala inteira com o voil xadrez em curva sobre o blackout escuro e a luz da janela crescendo atrás; contraste claro/escuro das 2 camadas prende o olho."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide eye-level shot facing a window. The exact curtain from the reference image, identical color, fabric, grid pattern and every part: exactly 2 panels, each a cream sheer grid-check voil in front of a charcoal grey blackout layer, exactly 12 dark metal grommets (6 per panel) on a bronze rod. Real size, keep the scale true against the room and furniture: 2 panels, each 1.40 m wide and only 1.60 m tall: a short curtain whose hem ends just below the windowsill, never reaching the floor. Each panel is the checkered off-white voile in front with the solid black blackout panel beside it exactly as in the reference photo; the voile has no black band at the bottom. Panels hang straight in still folds, slightly apart, hem just below the sill. Bright bedroom, plain white walls, light oak floor. Soft overcast morning daylight. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Very slow push-in, the whole curtain stays fully in frame. The curtain hangs perfectly still and unchanged, exactly 2 panels and 12 grommets, every grid line identical. Soft morning daylight rests on the plain walls, dust floats gently in the window light. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t17-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.6,
+   "fiscal": "3.6",
+   "foto": 1
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Eye-level close-up of the top of one panel. The exact curtain from the reference image, identical color, fabric, grid pattern and every part: bronze rod through exactly 6 dark metal grommets, cream sheer grid-check voil in front of the charcoal grey blackout layer, still vertical folds. Real size, keep the scale true against the room and furniture: 2 panels, each 1.40 m wide and only 1.60 m tall: a short curtain whose hem ends just below the windowsill, never reaching the floor. Each panel is the checkered off-white voile in front with the solid black blackout panel beside it exactly as in the reference photo; the voile has no black band at the bottom. Plain white wall. Soft side daylight shows the grid. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Slow lateral dolly left along the rod. The grommets, voil and blackout stay perfectly still and unchanged, exactly 6 grommets, every grid line identical. Soft daylight rests on the fabric. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_esq",
+   "zoom": 1.06,
+   "clipe": "t17-cenas/cena2.mp4",
+   "lento": 1.0,
+   "fiscal": "ok",
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium shot of a bright bedroom window at midday. The exact curtain from the reference image, identical color, fabric, grid pattern and every part: exactly 2 panels, each a cream sheer grid-check voil in front of a charcoal grey blackout layer, exactly 12 dark metal grommets (6 per panel) on a bronze rod. A woman's hand and forearm enter from the left and gently draw one checkered voil panel along the rod; the curtain is short, its hem ending just below the windowsill. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "A still moment: the hand keeps holding the edge of the cream check-pattern voile panel without moving it. Both curtain panels hang perfectly still: the cream check voile and the solid black blackout panel beside it, every grommet identical on the rod. Only the camera moves, an extremely slow push-in. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pull",
+   "zoom": 1.06,
+   "clipe": "t17-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot of a bedroom at midday, curtain fully closed. The exact curtain from the reference image, identical color, fabric, grid pattern and every part: exactly 2 panels, each a cream sheer grid-check voil in front of a charcoal grey blackout layer, exactly 12 dark metal grommets (6 per panel) on a bronze rod. Real size, keep the scale true against the room and furniture: 2 panels, each 1.40 m wide and only 1.60 m tall: a short curtain whose hem ends just below the windowsill, never reaching the floor. Panels straight and still. Sunlight only outlines the edges in a thin rim, the room in soft cool shade, low white linen bed, plain white walls. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow pull-back revealing the room. The closed curtain hangs perfectly still and unchanged, exactly 2 panels and 12 grommets, every grid line identical. The thin rim of daylight at the edges stays steady, the room calm in soft shade. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "refeito": "r2",
+   "pruna_t": 3.6,
+   "fiscal": "3.6",
+   "foto": 3
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Blackout PVC + voil xadrez",
+     "titulo": "Voil e blackout num [só] varão",
+     "abertura": {
+      "grande": "2,8m",
+      "texto": "de largura esticada"
+     }
+    },
+    {
+     "rotulo": "Ilhós de 28 mm",
+     "titulo": "Serve varão [fino] ou grosso"
+    },
+    {
+     "rotulo": "Voil de poliéster",
+     "titulo": "[2 em 1] na sua janela",
+     "fichas": [
+      "2 partes 1,40 m",
+      "Altura 1,60 m",
+      "12 ilhoses"
+     ],
+     "cta": "Toque no carrinho e leve o 2 em 1"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Mudou e herdou o [varão]?",
+     "sub": "Vale varão de 19 mm ou 28 mm"
+    },
+    {
+     "titulo": "Voil [xadrez] sobre blackout",
+     "sub": "Base em PVC, voil em poliéster"
+    },
+    {
+     "titulo": "Seu 2 em 1 no [carrinho]",
+     "sub": "2,80 x 1,60 m, em 2 partes"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Cortina blackout com voil",
+     "titulo": "Voil ou blackout? Leve [os dois]",
+     "sub": "Na mesma cortina xadrez"
+    },
+    {
+     "rotulo": "Duas partes de 1,40 m",
+     "titulo": "[12] ilhoses em 2 partes",
+     "sub": "Para varão de 19 ou 28 mm"
+    },
+    {
+     "rotulo": "Milhares de avaliações",
+     "titulo": "[2,80 m] de janela vestida",
+     "sub": "Lavar à mão, secar à sombra",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "12",
+  "t": "ilhoses"
+ },
+ "legendas": {
+  "shopee": "Cortina blackout PVC com voil xadrez, 2,80 x 1,60 m e 12 ilhoses de 28 mm\n#cortinablackout #cortinavoil #cortinaxadrez #cortinasala",
+  "shopee2": "Cortina 2 em 1 voil e blackout, serve varão de 19 ou 28 mm\n#cortinacomilhos #cortinaquarto #cortinajanela #decoracaoquarto",
+  "shopee3": "Cortina blackout com voil xadrez bem avaliada, 2 partes de 1,40 m\n#cortinaxadrez #blackoutpvc #cortinavoilxadrez #cortinadupla",
+  "reels": "Voil ou blackout? Essa cortina xadrez tem os dois: 2,80 x 1,60 m, 12 ilhoses e serve varão de 19 ou 28 mm 🪟\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinablackout #cortinavoilxadrez #cortinacomilhos #decoracaosala"
+ },
+ "notas": "Só a 01 serve: 02 tem 8 ilhoses, 03 tem 9 e sem blackout, 04 tem mão, 05-12 outras cores. 01 conferida: 6+6 = 12 ilhoses. Recorte 1 tira os livros com letras (CHANEL/KINFOLK). Cena 2 por código (ilhoses contáveis + xadrez em close). Riscos: Pruna pode mexer o voil em curva ou redesenhar o xadrez; contar 2 partes e 12 ilhoses; foto 01 parece até o chão, mas a altura é 1,60 m."
+}

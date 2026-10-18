@@ -1,0 +1,120 @@
+{
+ "nome": "r18_lustre_espiral_led",
+ "titulo_produto": "Lustre Pendente LED Espiral Moderno Ouro",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r18-fotos/01.jpg",
+  "r18-fotos/12.jpg",
+  "r18-fotos/15.jpg"
+ ],
+ "cor_destaque": "B8892F",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r18-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "r18-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "recorte": [
+    300,
+    100,
+    2300,
+    1500
+   ],
+   "codigo": "sobe",
+   "zoom": 1.1,
+   "clipe": "r18-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre LED espiral",
+     "titulo": "O lustre que [muda] a sala",
+     "abertura": {
+      "grande": "4,73",
+      "texto": "de nota, 505 avaliações"
+     }
+    },
+    {
+     "rotulo": "Sala de jantar",
+     "titulo": "Luz de [38W] no ambiente"
+    },
+    {
+     "rotulo": "Luz que valoriza",
+     "titulo": "Acabamento ouro",
+     "fichas": [
+      "LED 38W",
+      "Bivolt 110-220V",
+      "3000, 4000 ou 6000K"
+     ],
+     "cta": "Toque no carrinho e escolha o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Sua sala sem [graça]?",
+     "sub": "Esse lustre espiral resolve"
+    },
+    {
+     "titulo": "LED de [38W] bivolt",
+     "sub": "Escolha o tom da luz"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Espiral na cor ouro"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre pendente LED",
+     "titulo": "Sala com [cara] nova",
+     "sub": "Espiral moderno cor ouro"
+    },
+    {
+     "rotulo": "38W, bivolt",
+     "titulo": "Luz que [encanta]",
+     "sub": "110V ou 220V"
+    },
+    {
+     "rotulo": "Luz 3000, 4000 ou 6000K",
+     "titulo": "Escolha o [seu]",
+     "sub": "Fio ajustável de 100 cm",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,73",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Lustre pendente LED espiral ouro 38W bivolt\n#lustreled #lustrependente #decoracaosala #iluminacaomoderna",
+  "shopee2": "Lustre espiral moderno com 3 opções de tom de luz, nota 4,73\n#lustreespiral #lustredejantar #pendentemoderno #decoracaodejantar",
+  "shopee3": "Pendente LED em espiral com mais de 500 avaliações\n#lustremoderno #iluminacaodecor #pendenteled #saladejantar",
+  "reels": "Quer mudar a cara da sala só com a luz? Esse lustre LED em espiral é bivolt e você escolhe o tom da luz.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustreled #lustrependente #iluminacaomoderna #decoracaodesala"
+ },
+ "notas": "Foto 01 (dourado) + 12 e 15 (versões 2560 limpas dos ambientes dourados, sem texto); cena 3 recorte de 15 no lustre. Descartadas fotos pretas (04,16,18-21) e com texto/medidas (05-10,17). Risco: medida contradiz (80 cm na descrição/fotos x 75 cm na foto 07), não usada; 'ouro' é a cor da 01, anúncio vende também rosa/preto; tom de luz 3000/4000/6000K é variação escolhida na compra."
+}

@@ -1,0 +1,120 @@
+{
+ "nome": "r22_tapete_persa",
+ "titulo_produto": "Tapete Persa Clássico Oriental Vermelho",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r22-fotos/01.jpg",
+  "r22-fotos/02.jpg",
+  "r22-fotos/08.jpg"
+ ],
+ "cor_destaque": "A11D2E",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r22-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_esq",
+   "zoom": 1.08,
+   "clipe": "r22-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "recorte": [
+    350,
+    330,
+    1000,
+    980
+   ],
+   "codigo": "pull",
+   "zoom": 1.1,
+   "clipe": "r22-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Tapete persa clássico",
+     "titulo": "Nota [4,98] no tapete persa",
+     "abertura": {
+      "grande": "4,98",
+      "texto": "de nota em 125 avaliações"
+     }
+    },
+    {
+     "rotulo": "Estampa refinada",
+     "titulo": "Estampa de [tradição]"
+    },
+    {
+     "rotulo": "Antiácaro e antialérgico",
+     "titulo": "Base que não escorrega",
+     "fichas": [
+      "100% poliéster",
+      "Base antiderrapante",
+      "3 tamanhos"
+     ],
+     "cta": "Toque no carrinho e escolha o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Sala de [luxo] com persa",
+     "sub": "Tapete persa nota 4,98"
+    },
+    {
+     "titulo": "Estampa com [riqueza] de detalhe",
+     "sub": "Inspirada na cultura persa"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Escolha entre 3 tamanhos"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Tapete persa clássico",
+     "titulo": "Ar de [mansão] na sua sala",
+     "sub": "Nota 4,98 em 125 avaliações"
+    },
+    {
+     "rotulo": "Estampa oriental",
+     "titulo": "Detalhe que [encanta]",
+     "sub": "Franjas e cores elegantes"
+    },
+    {
+     "rotulo": "Antiácaro",
+     "titulo": "Base [antiderrapante]",
+     "sub": "3 tamanhos disponíveis",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,98",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Tapete persa clássico vermelho, nota 4,98 em 125 avaliações\n#tapetepersa #tapeteoriental #tapeteclassico #decoracaosala",
+  "shopee2": "Tapete estilo persa 100% poliéster com base antiderrapante\n#tapetesala #tapeteindiano #saladeestar #decoracaoclassica",
+  "shopee3": "Tapete oriental antiácaro e antialérgico em 3 tamanhos\n#tapeteluxo #tapetebelga #tapetegrande #decoracaosofisticada",
+  "reels": "Quer dar um toque de luxo à sala? Esse tapete persa tem nota 4,98, base antiderrapante e vem em 3 tamanhos.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapetepersa #tapeteoriental #tapeteclassico #decoracaosala"
+ },
+ "notas": "Fotos 01, 02 e 08, todas do vermelho floral; cena 3 recorte da 08 no desenho e na franja. Descartadas azul (04,09), marrom/cinza (03,07,10), vermelho com medalhão branco (05) e a 06 (gato). Risco: na 01 as poltronas cobrem parte do tapete; estampa e franja finas não podem ser animadas por IA; tamanho da foto 01 não identificado."
+}

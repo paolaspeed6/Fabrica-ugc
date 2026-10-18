@@ -1,0 +1,147 @@
+{
+ "nome": "s27_cortina_9m_voal_forro",
+ "titulo_produto": "Cortina 9,00 x 2,80 m Voal com Forro Microfibra",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r27-fotos/01.jpg"
+ ],
+ "cor_destaque": "8B5A3C",
+ "contagem": {
+  "partes": 2
+ },
+ "diretor": {
+  "angulo": "A cortina para a janela larga que nenhuma cortina comum cobre: 9 m de voal com forro, de ponta a ponta da parede.",
+  "palavra": "9 metros",
+  "prova": "9,00 m de largura x 2,80 m de altura (título e descrição batem); duas partes de 4,50 m; ilhós cromado que não oxida nem enferruja; alto sombreamento; bem avaliada.",
+  "errc": "E: 'achadinho' e 'mega promoção'. R: lista de especificações na tela. E: o número 9 m grande e o ilhós cromado em close. C: falar com quem tem parede/porta de vidro larga e sofre com cortina curta.",
+  "publico_nao_obvio": "Quem tem porta de vidro de canto a canto ou varanda envidraçada, onde cortina comum fica curta.",
+  "por_que_converte": "Hopkins: especificidade (9 m x 2,80 m) vende mais que 'cortina grande'; Ries/Trout: a palavra 9 metros no gancho, no selo e no CTA; Schwartz: Reels abre na dor da cortina curta.",
+  "visual": "Parede inteira branca de ponta a ponta, ao lado da janela verde de jardim: a escala da cortina enche o quadro e para o dedo."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    168,
+    1024,
+    854
+   ],
+   "pruna": null,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s27-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    420,
+    168,
+    1024,
+    772
+   ],
+   "pruna": null,
+   "codigo": "pan_esq",
+   "zoom": 1.12,
+   "clipe": "s27-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    254,
+    1024,
+    854
+   ],
+   "pruna": "Photorealistic commercial product cinematography. Very slow push-in on a bright living room where wide white voile curtains hang in soft vertical folds across the wall, beside a wooden-grid window with green garden light, a stone-clad wall, a low white coffee table with two small topiary plants and a beige shag rug. The curtains stay perfectly still and unchanged, every fold identical to the photo. Garden sunlight drifts slowly through the window. Shallow depth of field, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.08,
+   "clipe": "s27-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Voal com forro em microfibra",
+     "titulo": "[9 metros] de voal com forro",
+     "abertura": {
+      "grande": "9m",
+      "texto": "de largura por 2,80 m"
+     }
+    },
+    {
+     "rotulo": "Não oxida, não enferruja",
+     "titulo": "Abre e fecha [deslizando]"
+    },
+    {
+     "rotulo": "Para quarto e sala",
+     "titulo": "Sala [inteira] na sombra certa",
+     "fichas": [
+      "Partes de 4,50 m",
+      "Alto sombreamento",
+      "Varão até 28 mm"
+     ],
+     "cta": "Leve os 9 metros no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Janela de [ponta a ponta]?",
+     "sub": "9,00 m de largura x 2,80 m"
+    },
+    {
+     "titulo": "Voal na frente, [forro] atrás",
+     "sub": "Acabamento feito na bainha"
+    },
+    {
+     "titulo": "Garanta a sua no [carrinho]",
+     "sub": "Para varão simples de até 28 mm"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Parede de vidro em casa?",
+     "titulo": "Cortina [curta] na janela larga?",
+     "sub": "Esta tem 9 m de largura"
+    },
+    {
+     "rotulo": "Sem ferrugem no ilhós",
+     "titulo": "Desliza [fácil] todo dia",
+     "sub": "Ilhós cromado que não oxida"
+    },
+    {
+     "rotulo": "Duas partes de 4,50 m",
+     "titulo": "Luz [filtrada] de ponta a ponta",
+     "sub": "Alto sombreamento com forro",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "9m",
+  "t": "de largura"
+ },
+ "legendas": {
+  "shopee": "Cortina 9,00 x 2,80 m de voal com forro em microfibra e ilhós cromado\n#cortinagrande #cortinavoal #cortinasala #janelagrande",
+  "shopee2": "Cortina de 9 m em duas partes de 4,50 m, ótimo franzido e alto sombreamento\n#cortina9metros #cortinacomforro #portadevidro #decoracaosala",
+  "shopee3": "Cortina para quarto e sala com ilhós que não enferruja, varão até 28 mm\n#cortinaquarto #cortinailhos #cortinamicrofibra #salagrande",
+  "reels": "Cortina curta na janela larga? Essa tem 9 m de largura por 2,80 m de altura, voal com forro em microfibra e ilhós que não enferruja 🪟\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinagrande #portadevidro #cortinasala #janelagrande"
+ },
+ "notas": "Só a 01 presta (02 creme e 03 cinza são outras cores; 04 e 05 têm mão), recortada dentro da faixa útil y168-854. Cenas 1 e 2 por código porque mostram a fileira de ilhoses (partes repetidas, regra 1.1); só a cena 3 (recorte abaixo dos ilhoses) vai ao Pruna. Riscos: Pruna pode borrar os livros/revista da mesa e do sofá; forro não aparece na foto; sombreamento 60 a 70 fica sem número na tela (sem símbolo)."
+}

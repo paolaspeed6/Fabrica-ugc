@@ -1,0 +1,141 @@
+{
+ "nome": "s20_tapete_jacquard_dallas",
+ "titulo_produto": "Tapete Jacquard Grande Antiderrapante",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r20-fotos/01.jpg"
+ ],
+ "cor_destaque": "B07A45",
+ "contagem": {},
+ "diretor": {
+  "angulo": "O desenho não é pintado: são fios entrelaçados no Jacquard, e por baixo tiras de EVA seguram o tapete no piso.",
+  "palavra": "Jacquard",
+  "prova": "Jacquard de algodão e poliéster com fios coloridos entrelaçados (resistência contra desbotamento) + base de tiras de EVA emborrachado antiderrapante; milhares de avaliações",
+  "errc": "E: 'achadinho' e a lista de composição. R: falar de tamanho e preço. E: o mecanismo (fio no desenho, EVA embaixo) com luz de manhã sobre o tapete. C: a dor 'seu tapete anda pelo piso?' e o escritório com cara de luxo.",
+  "publico_nao_obvio": "quem montou escritório ou consultório em casa e quer acabamento de luxo no chão",
+  "por_que_converte": "Schwartz: mercado saturado de tapetes, então vende o mecanismo único (fios entrelaçados + EVA). Hopkins: material e base específicos no lugar de adjetivo.",
+  "visual": "1º segundo: sala clara com o tapete preto e marfim e o sol da porta-janela se espalhando sobre ele; o contraste escuro no piso claro prende o olho."
+ },
+ "cenas": [
+  {
+   "foto": 0,
+   "pruna": "Very slow push-in on a bright Scandinavian living room: a large black and ivory distressed jacquard rug on a light oak floor, a round oak coffee table, a light grey sofa, French windows with sheer curtains. The rug stays perfectly still and unchanged, its pattern identical to the photo. Soft morning sunlight slowly spreads from the windows across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s20-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 1.6,
+   "fiscal": "1.6"
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    300,
+    424,
+    1024,
+    1024
+   ],
+   "pruna": null,
+   "codigo": "pan_esq",
+   "zoom": 1.08,
+   "clipe": "s20-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    300,
+    700,
+    1000
+   ],
+   "pruna": "Slow crane down from sunlit French windows with sheer curtains to a round oak coffee table with a ceramic vase, standing on a black and ivory distressed jacquard rug on a light oak floor. The rug stays perfectly still and unchanged, its pattern identical to the photo. A warm sunbeam with golden dust drifts slowly across the rug. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "desce",
+   "zoom": 1.07,
+   "clipe": "s20-cenas/cena3.mp4",
+   "lento": 1.0,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Tapete Jacquard Dallas",
+     "titulo": "Desenho feito de [fio]",
+     "abertura": {
+      "grande": "EVA",
+      "texto": "base antiderrapante e estável"
+     }
+    },
+    {
+     "rotulo": "Algodão e poliéster",
+     "titulo": "Resiste ao [desbote]"
+    },
+    {
+     "rotulo": "Sala, quarto ou escritório",
+     "titulo": "O toque final da [sala]",
+     "fichas": [
+      "Tecido Jacquard",
+      "Base de EVA",
+      "4 tamanhos"
+     ],
+     "cta": "Escolha o tamanho no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Escritório com cara de [luxo]",
+     "sub": "Tapete Jacquard contemporâneo"
+    },
+    {
+     "titulo": "Fios [entrelaçados] no desenho",
+     "sub": "Resistência contra desbotamento"
+    },
+    {
+     "titulo": "Seu Jacquard no [carrinho]",
+     "sub": "Lava com detergente neutro"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Tapete Jacquard grande",
+     "titulo": "Seu tapete [anda] pelo piso?",
+     "sub": "Esse tem base de tiras de EVA"
+    },
+    {
+     "rotulo": "Antiderrapante estável",
+     "titulo": "[EVA] emborrachado por baixo",
+     "sub": "Jacquard de algodão por cima"
+    },
+    {
+     "rotulo": "Milhares de avaliações",
+     "titulo": "Firme, bonito e [lavável]",
+     "sub": "Opções até 3,00 x 2,00 m",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Tapete Jacquard grande com base antiderrapante de EVA e desenho de fios entrelaçados\n#tapetejacquard #tapetesala #tapeteantiderrapante #tapetegrande",
+  "shopee2": "Tapete Jacquard de algodão e poliéster, resistente a desbotamento\n#tapeteescritorio #tapetemoderno #tapetequarto #decoracaosala",
+  "shopee3": "Tapete Jacquard bem avaliado, 4 tamanhos até 3,00 x 2,00 m\n#tapetegeometrico #tapeteluxo #tapetedesala #tapetecontemporaneo",
+  "reels": "Seu tapete anda pelo piso? Esse Jacquard tem base de tiras de EVA emborrachado, antiderrapante e estável 👣\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapetejacquard #tapeteantiderrapante #tapetesala #decoracaoescritorio"
+ },
+ "notas": "Só a 01 serve (15 é cópia; 02-04 e 10-14 outras cores; 05-09 outros desenhos). Cena 2 por código: close de Jacquard é estampa fina que a IA redesenharia. Riscos: nas cenas 1 e 3 o Pruna pode alterar a textura desgastada do tapete; tapete já sai cortado na borda da foto 01; tamanho da foto 01 não confirmado (falo só das 4 opções); cor não citada."
+}

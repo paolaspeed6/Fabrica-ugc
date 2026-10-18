@@ -1,0 +1,119 @@
+{
+ "nome": "r02_kit4_cadeiras_eames",
+ "titulo_produto": "Kit 4 Cadeiras Eames Eiffel Preta",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r02-fotos/01.jpg",
+  "r02-fotos/02.jpg"
+ ],
+ "cor_destaque": "B5733A",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r02-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_esq",
+   "zoom": 1.08,
+   "clipe": "r02-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    360,
+    640,
+    1000
+   ],
+   "codigo": "sobe",
+   "zoom": 1.1,
+   "clipe": "r02-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Kit 4 cadeiras Eames Eiffel",
+     "titulo": "[4] cadeiras de uma vez",
+     "abertura": {
+      "grande": "4",
+      "texto": "cadeiras no kit"
+     }
+    },
+    {
+     "rotulo": "Concha de polipropileno",
+     "titulo": "Leve e [resistente]"
+    },
+    {
+     "rotulo": "Pés com reforço metálico",
+     "titulo": "Aguenta até [110 kg]",
+     "fichas": [
+      "53 x 46,5 x 82 cm",
+      "Assento a 44 cm",
+      "Suporta 110 kg"
+     ],
+     "cta": "Toque no carrinho e leve o kit"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Cadeira [Eames] que combina",
+     "sub": "Design clássico, visual atual"
+    },
+    {
+     "titulo": "Resistente sem [pesar]",
+     "sub": "Reforço metálico nos pés"
+    },
+    {
+     "titulo": "Garanta o kit no [carrinho]",
+     "sub": "Nota 4,83 em 556 avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Cadeira Eames Eiffel",
+     "titulo": "Mesa completa com [4] Eames",
+     "sub": "4 cadeiras pretas no kit"
+    },
+    {
+     "rotulo": "Jantar, home office, cozinha",
+     "titulo": "Serve em [qualquer] canto",
+     "sub": "Estrutura leve e fácil de mover"
+    },
+    {
+     "rotulo": "Nota 4,83, 556 avaliações",
+     "titulo": "[4,83] de nota no kit",
+     "sub": "Avaliado por 556 clientes",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,83",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Kit 4 cadeiras Eames Eiffel pretas, nota 4,83 e suportam até 110 kg\n#cadeiraeames #cadeiraeiffel #saladejantar #decoracaocozinha",
+  "shopee2": "Cadeira Eames DSW em polipropileno com pés reforçados, 53 x 46,5 x 82 cm\n#eamesdsw #cadeiradejantar #homeoffice #mesadejantar",
+  "shopee3": "Kit com 4 cadeiras Eames leves e fáceis de mover, 556 avaliações\n#kitcadeiras #cadeirapreta #decoracaosala #moveiscasa",
+  "reels": "Quer renovar a mesa de jantar? 🪑 Kit com 4 cadeiras Eames Eiffel pretas, leves e com nota 4,83.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cadeiraeames #kitcadeiras #saladejantar #cadeiraeiffel"
+ },
+ "notas": "Foto 01 (kit preto em ambiente) + 02 (4 cadeiras pretas em fundo branco) + recorte 640x640 da 01 nos pés eiffel. Só a cor preta da foto 01; o anúncio tem cores variadas mas não falei delas. Foto 01 parece render de IA do próprio anúncio, sem letras. Peso de 3,7 kg omitido (ambíguo se por cadeira). Preço não citado."
+}

@@ -1,0 +1,158 @@
+{
+ "nome": "t03_luminaria_piso_tripe",
+ "titulo_produto": "Luminária de Piso Tripé em Madeira Maciça com Cúpula Cor Palha",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r03-fotos/01.jpg",
+  "../lista1016/r03-fotos/04.jpg",
+  "t03-cenas/cena1.png",
+  "t03-cenas/cena2.png",
+  "t03-cenas/cena3.png"
+ ],
+ "cor_destaque": "B5733A",
+ "contagem": {
+  "pes": 3,
+  "cupula": 1
+ },
+ "diretor": {
+  "angulo": "Luz de teto é dura à noite; 160 cm de tripé de madeira com luz difusa transformam o canto da sala sem reforma.",
+  "palavra": "luz difusa",
+  "prova": "Base de 3 pés em madeira maciça, 160 cm, cúpula 40 x 25 em tecido Brugges com estrutura de aço carbono, nota alta",
+  "errc": "E: 'abajur lindo' e foto parada. R: adjetivos de luxo da descrição. E: a madeira maciça em close e a medida de 160 cm. C: a pergunta 'luz de teto cansa à noite?' e o quarto de hóspedes.",
+  "publico_nao_obvio": "Quem recebe visita e quer o quarto de hóspedes acolhedor (a descrição cita quartos de hóspedes e escritórios).",
+  "por_que_converte": "Sutherland (Alquimia): não vende luminária, vende desligar o lustre e mudar o clima. Hopkins: madeira maciça e 160 cm são provas concretas.",
+  "visual": "1º segundo: canto escuro com a cúpula acesa e a cidade na janela; um ponto de luz quente no escuro prende o olho."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Full-length eye-level front view, 50mm lens. The exact floor lamp from the reference images, identical shape, color, material and every part: tripod floor lamp, pale sand-beige smooth fabric drum shade, silver stem, exactly 3 straight solid natural wood legs meeting in a wooden hub, shade glowing warm. The shade is smooth plain lampshade fabric in pale sand-beige with a flat even surface. Guest bedroom corner beside a bed with white linen, plain warm-white wall, oak floor. Blue-hour dusk in the window. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Very slow push-in. The floor lamp with a straw-colored fabric drum shade on exactly 3 natural wood tripod legs stays perfectly still and unchanged, every part identical; the whole lamp stays fully in frame. Warm light rests on the wall, blue dusk light glows softly in the window. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t03-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 2,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle close-up of the tripod hub under the shade, 85mm lens. The exact floor lamp from the reference images, identical shape, color, material and every part: tripod floor lamp, pale sand-beige smooth fabric drum shade, silver stem, exactly 3 straight solid natural wood legs meeting in a wooden hub. The shade is smooth plain lampshade fabric in pale sand-beige with a flat even surface. Plain deep terracotta wall behind. Warm light from the shade falls on the wood grain of the legs. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Extremely slow push-in. The frame stays on the lit linen drum shade and the three wooden legs the whole time, and the plain terracotta wall behind stays bare and unchanged. The floor lamp stays perfectly still, every part identical. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t03-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 3,
+   "refeito": "r1",
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot, slight three-quarter angle. The exact floor lamp from the reference images, identical shape, color, material and every part: tripod floor lamp, pale sand-beige smooth fabric drum shade, silver stem, exactly 3 straight solid natural wood legs meeting in a wooden hub, beside a cream boucle armchair with a folded wool throw. A woman seen from behind sits in the armchair reading a book under the warm light of the floor lamp; the lamp stands taller than the seated woman and shorter than the door. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "She slowly turns a page while the camera pushes in very slowly. The lamp stays perfectly still and unchanged. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t03-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot at a slight three-quarter angle, 35mm lens. The exact floor lamp from the reference images, identical shape, color, material and every part: tripod floor lamp, straw-colored (palha) fabric drum shade, silver stem, exactly 3 straight solid natural wood legs meeting in a wooden hub, beside a cream boucle armchair with a folded wool throw. Real size, keep the scale true against the room and furniture: the lamp is 160 cm tall in total with a 40 cm wide, 25 cm tall shade, its top well below a standard door frame. Reading nook, plain olive-green wall. Night, the glowing shade as the only light. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow lateral dolly right. The floor lamp with a straw-colored fabric drum shade on exactly 3 natural wood tripod legs stays perfectly still and unchanged, every part identical, the shade glowing warm. Warm light rests on the armchair, faint dust drifts in the glow. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": false,
+   "origem_foto": "recorte de cena1 (180, 0, 1080, 1600)",
+   "foto": 4,
+   "pruna_t": 2.5,
+   "fiscal": "2.5"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Abajur de chão de 160 cm",
+     "titulo": "Tripé maciço de [160 cm]",
+     "abertura": {
+      "grande": "160",
+      "texto": "cm de altura total"
+     }
+    },
+    {
+     "rotulo": "3 pés de madeira maciça",
+     "titulo": "Firme em [3 pés] maciços"
+    },
+    {
+     "rotulo": "Cúpula de tecido Brugges",
+     "titulo": "Luz [difusa] no fim do dia",
+     "fichas": [
+      "Altura 160 cm",
+      "Cúpula 40 x 25 cm",
+      "Fio de 2 m, bivolt"
+     ],
+     "cta": "Toque no carrinho e acenda o canto"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Hóspede chega, [quarto] acolhe",
+     "sub": "Abajur de chão para quarto e sala"
+    },
+    {
+     "titulo": "Montagem [descomplicada] e rápida",
+     "sub": "Base de três pés em madeira maciça"
+    },
+    {
+     "titulo": "Peça a sua no [carrinho]",
+     "sub": "Nota alta de quem já comprou"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Luminária de piso Paris",
+     "titulo": "Luz de teto [cansa] à noite?",
+     "sub": "Uma luz difusa no canto resolve"
+    },
+    {
+     "rotulo": "Pés em madeira maciça",
+     "titulo": "Madeira maciça e [aço carbono]",
+     "sub": "Pés maciços e cúpula estruturada"
+    },
+    {
+     "rotulo": "Soquete E27, bivolt",
+     "titulo": "Seu livro pede [essa luz]",
+     "sub": "Leitura, sala ou escritório",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "160",
+  "t": "cm de altura"
+ },
+ "legendas": {
+  "shopee": "Luminária de piso tripé em madeira maciça com 160 cm e cúpula cor palha\n#luminariadepiso #abajurdechao #luminariatripe #decoracaosala",
+  "shopee2": "Abajur de chão com cúpula 40 x 25 cm em tecido e fio de 2 m, bivolt\n#abajurdecorativo #quartodehospedes #luminariamadeira #cantodeleitura",
+  "shopee3": "Luminária de chão com soquete E27, montagem rápida e nota alta\n#luminariamoderna #iluminacaoaconchegante #saladeestar #decoracaoquarto",
+  "reels": "Luz de teto cansa à noite? Uma luminária de piso em madeira maciça com luz difusa muda o clima da sala 💡\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#luminariadepiso #abajurdechao #cantodeleitura #decoracaosala"
+ },
+ "notas": "01 recortada em 505x1024 na cena 1 (produto inteiro, vertical; tira o copo com líquido âmbar da mesinha, que pode ser lido como bebida alcoólica; lado menor abaixo de 600 de propósito), 04 (close dos 3 pés, sem texto) e recorte 600x600 da cúpula na 01, também sem o copo. 02 é colagem com texto e 03 infográfico. Risco Pruna: somar um 4º pé ou redesenhar a trama do tecido da cúpula. Lâmpada não inclusa: nenhum texto promete lâmpada."
+}

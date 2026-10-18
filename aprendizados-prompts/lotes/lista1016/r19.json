@@ -1,0 +1,126 @@
+{
+ "nome": "r19_tapete_oval_organico",
+ "titulo_produto": "Tapete Macio Oval Orgânico 2,0 x 1,50 m",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r19-fotos/01.jpg",
+  "r19-fotos/04.jpg",
+  "r19-fotos/02.jpg"
+ ],
+ "cor_destaque": "A67C4F",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r19-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "recorte": [
+    160,
+    40,
+    880,
+    740
+   ],
+   "codigo": "pan_esq",
+   "zoom": 1.08,
+   "clipe": "r19-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "recorte": [
+    40,
+    80,
+    1000,
+    1000
+   ],
+   "codigo": "pull",
+   "zoom": 1.1,
+   "clipe": "r19-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Formato orgânico",
+     "titulo": "Tapete que não é [redondo]",
+     "abertura": {
+      "grande": "4,89",
+      "texto": "de nota em 71 avaliações"
+     }
+    },
+    {
+     "rotulo": "Textura macia",
+     "titulo": "Macio pra pisar [descalço]"
+    },
+    {
+     "rotulo": "Tamanho grande",
+     "titulo": "Formato feijão moderno",
+     "fichas": [
+      "2,0 x 1,50 m",
+      "Textura macia",
+      "Fácil de limpar"
+     ],
+     "cta": "Toque no carrinho e escolha o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Tapete que [não] é redondo",
+     "sub": "Formato orgânico em tendência"
+    },
+    {
+     "titulo": "Macio pra pisar [descalço]",
+     "sub": "Textura que acolhe"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Bege neutro, 2,0 x 1,50 m"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Tapete orgânico",
+     "titulo": "Sala com [formato] novo",
+     "sub": "Oval tipo feijão, 2,0 x 1,50 m"
+    },
+    {
+     "rotulo": "Textura macia",
+     "titulo": "Pisar é [aconchego]",
+     "sub": "Bom pra andar descalço"
+    },
+    {
+     "rotulo": "Cor neutra bege",
+     "titulo": "Combina com [tudo]",
+     "sub": "Sala, quarto ou closet",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,89",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Tapete macio oval orgânico 2,0 x 1,50 m, nota 4,89\n#tapeteoval #tapeteorganico #decoracaosala #tapetemacio",
+  "shopee2": "Tapete formato feijão bege com textura macia e fácil de limpar\n#tapetebege #tapetemoderno #saladeestar #decoracaoneutra",
+  "shopee3": "Tapete orgânico 2,0 x 1,50 m com 71 avaliações\n#tapetesala #tapeteformatodiferente #decorquarto #tapetegrande",
+  "reels": "Cansou de tapete retangular? Esse oval orgânico é macio, bege e mede 2,0 x 1,50 m.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapeteorganico #tapeteoval #decoracaosala #tapetemacio"
+ },
+ "notas": "Foto 01 (ambiente), 04 (textura, recorte limpo sem a faixa cinza do rodapé) e 02 (forma completa em fundo branco). Descartada 03 (ambiente repetido). Risco: descrição diz 'cinza' em um trecho mas cor e título dizem bege, só 'bege' usado; a 02 tem tom um pouco mais dourado que a 01; 71 avaliações é volume baixo."
+}

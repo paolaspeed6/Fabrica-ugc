@@ -1,0 +1,125 @@
+{
+ "nome": "r06_pendente_led_3_aros",
+ "titulo_produto": "Lustre Pendente LED 3 Aros Dourado",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r06-fotos/01.jpg",
+  "r06-fotos/04.jpg"
+ ],
+ "cor_destaque": "B58A1B",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "recorte": [
+    0,
+    0,
+    750,
+    600
+   ],
+   "clipe": "r06-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "recorte": [
+    230,
+    0,
+    830,
+    600
+   ],
+   "clipe": "r06-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "desce",
+   "zoom": 1.06,
+   "clipe": "r06-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Pendente LED 3 aros dourado",
+     "titulo": "[3] aros dourados na sua sala",
+     "abertura": {
+      "grande": "60cm",
+      "texto": "de diâmetro no maior aro"
+     }
+    },
+    {
+     "rotulo": "Metal dourado e LED",
+     "titulo": "Aros [dourados] com LED"
+    },
+    {
+     "rotulo": "852 avaliações na Shopee",
+     "titulo": "Ajusta à altura do seu [teto]",
+     "fichas": [
+      "Nota 4,87",
+      "Bivolt",
+      "Cabo de 1 m"
+     ],
+     "cta": "Toque no carrinho e leve o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Transforme a sala com [luz]",
+     "sub": "Pendente LED de 3 aros"
+    },
+    {
+     "titulo": "[3] cores em 1 só luz",
+     "sub": "Luz quente, natural ou fria"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Bivolt, 110/220V"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Lustre pendente LED",
+     "titulo": "Ele muda a [sala] inteira",
+     "sub": "Pendente de 3 aros dourados"
+    },
+    {
+     "rotulo": "Tamanhos",
+     "titulo": "Aros de [60], 40, 20 cm",
+     "sub": "Para sala ou quarto de 15 a 25 m²"
+    },
+    {
+     "rotulo": "Instalação",
+     "titulo": "Cabo de aço de [1 metro]",
+     "sub": "Você ajusta a altura",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "60cm",
+  "t": "de diâmetro"
+ },
+ "legendas": {
+  "shopee": "Lustre pendente LED 3 aros dourado, 60 cm e bivolt\n#lustrependente #lustreled #decoracaosala #pendentedourado",
+  "shopee2": "Pendente de 3 aros com cabo ajustável de 1 m, nota 4,87\n#lustremoderno #luminariapendente #ilhadacozinha #decoracaomoderna",
+  "shopee3": "Lustre de LED 3 cores em 1 luz, 852 avaliações na Shopee\n#lustrenordic #lustrecozinha #iluminacaosala #lustredourado",
+  "reels": "Sala simples vira sala de decoração com 3 aros de luz dourados ✨ Bivolt e cabo ajustável.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrependente #lustreled3aros #decoracaosala #pendentemoderno"
+ },
+ "notas": "Foto 01 com recorte que tira os 3 quadrinhos de texto da parte de baixo (sobra ~55 px do topo deles); foto 04 é ambiente real (sala de jantar). Descartadas 02/03/05/06/07 (texto, tabela, selo 'compre um leve outro grátis'). Gancho: 3 aros / 60 cm. Medida 60-40-20 consistente; 'controle remoto/interruptor' contraditório no anúncio, não citado. Risco: foto 04 mostra só 2 a 3 aros pequenos e itens/adesivos chineses no cenário."
+}

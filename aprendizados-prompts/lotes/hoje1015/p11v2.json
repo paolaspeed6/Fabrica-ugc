@@ -1,0 +1,135 @@
+{
+ "nome": "tapete_espacodebicho_v2",
+ "titulo_produto": "Tapete Espaço de Bicho",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p11-fotos/01.jpg",
+  "p11-fotos/03.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. No people, no hands. No phone frame, no device bezel, no borders, no added text. Bright modern living room with a light wood floor and soft neutral daylight, sofa softly blurred in the background. An open plain white dog training pad (quilted absorbent center, thin border, like the pad under the dog in reference photo 2) lies flat on the floor, centered slightly LEFT, between 45% and 62% of the image height, with a small blue liquid stain in its center. The RIGHT third of the floor is empty. No bag or packaging anywhere, no text, no letters, no logos, no printing on the pad or anywhere in the image.",
+   "composicao": false,
+   "sobrepor": {
+    "foto": "p11-fotos/04.jpg",
+    "recorte": [
+     440,
+     170,
+     945,
+     870
+    ],
+    "x": 0.72,
+    "base": 0.6,
+    "altura": 0.27
+   },
+   "movimento": "Static camera on a tripod, the camera does not move. The blue liquid soaks into the pad and disappears, the surface turns dry.",
+   "clipe": "tapete_espacodebicho-cenas/cena1.mp4"
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. No people, no hands. No phone frame, no device bezel, no borders, no added text. Top-down DSLR photo filling the entire frame edge to edge, not a screen: one open plain white dog training pad (quilted absorbent center, thin border) lying flat on a light wood floor, centered between 30% and 60% of the image height, with blue liquid being absorbed in its center. No bag or packaging anywhere, no text, no letters, no logos, no printing on the pad or anywhere in the image.",
+   "movimento": "Very slow overhead push-in; the blue liquid sinks into the pad quickly and the stain shrinks until the surface looks dry.",
+   "clipe": "tapete_espacodebicho-cenas/cena2.mp4"
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. No people, no hands. No phone frame, no device bezel, no borders, no added text. A grey and white miniature schnauzer exactly like the dog in reference photos 1 and 2 sits calmly on an open plain white training pad in a bright living room with a light wood floor and soft daylight, dog and pad centered slightly LEFT between 30% and 62% of the image height. The RIGHT third of the floor is empty. No bag or packaging anywhere, no text, no letters, no logos, no printing on the pad or anywhere in the image.",
+   "composicao": false,
+   "sobrepor": {
+    "foto": "p11-fotos/04.jpg",
+    "recorte": [
+     440,
+     170,
+     945,
+     870
+    ],
+    "x": 0.77,
+    "base": 0.6,
+    "altura": 0.22
+   },
+   "movimento": "Static camera on a tripod, the camera does not move. The dog breathes, blinks and wags its tail gently, staying on the pad.",
+   "clipe": "tapete_espacodebicho-cenas/cena3.mp4"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Espaço de Bicho · 60 x 50 cm",
+     "titulo": "[200 TAPETES] a R$ 0,99 cada",
+     "subir": 310,
+     "abertura": {
+      "grande": "200",
+      "texto": "tapetes a R$ 0,99 cada"
+     }
+    },
+    {
+     "rotulo": "Gel superabsorvente",
+     "titulo": "O gel [trava] o xixi no meio",
+     "escala": 0.72
+    },
+    {
+     "rotulo": "Nota 4,93",
+     "titulo": "Atrativo [chama] o cão",
+     "fichas": [
+      "200 unidades",
+      "60 x 50 cm",
+      "Nota 4,93"
+     ],
+     "cta": "Toque no carrinho e leve os 200",
+     "subir": 540
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "200 tapetes por [menos de R$ 1]",
+     "sub": "Espaço de Bicho · 60 x 50 cm"
+    },
+    {
+     "titulo": "Gel que [trava] o xixi",
+     "sub": "Absorção imediata",
+     "subir": -130
+    },
+    {
+     "titulo": "Leve os [200] no carrinho",
+     "sub": "Atrativo canino · nota 4,93",
+     "subir": 0
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "Quem tem cachorro precisa ver",
+     "titulo": "Por que [ninguém] fala desse tapete?",
+     "subir": 470
+    },
+    {
+     "rotulo": "Espaço de Bicho · 60 x 50 cm",
+     "titulo": "[200 tapetes] por menos de R$ 1 cada",
+     "sub": "Gel que segura o xixi no centro",
+     "escala": 0.48
+    },
+    {
+     "rotulo": "Atrativo canino",
+     "titulo": "Ele no tapete, chão [protegido]",
+     "cta": "Link dos 200 no 1º comentário",
+     "subir": 700
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Tapete higiênico Espaço de Bicho 60 x 50 cm, 200 unidades, menos de R$ 1 cada. Gel superabsorvente.\n#tapetehigienico #pet #cachorro #achadinhosshopee",
+  "shopee2": "Tapete higiênico Espaço de Bicho, pacote com 200 unidades de 60 x 50 cm. Gel absorve na hora.\n#tapetehigienico #cachorro #petshop #achadinhosshopee",
+  "reels": "Por que ninguém fala desse tapete? 🐶 200 tapetes Espaço de Bicho por menos de R$ 1 cada: gel superabsorvente, bordas altas e atrativo canino. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#cachorro #pet #dogsofinstagram #tapetehigienico"
+ },
+ "comentario": "🛒 Tapete Espaço de Bicho aqui: {link}",
+ "embalagem_com_letras": true,
+ "imagens_conferidas": true
+}

@@ -1,0 +1,145 @@
+{
+ "nome": "t20_tapete_jacquard_dallas",
+ "titulo_produto": "Tapete Jacquard Grande Antiderrapante",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r20-fotos/01.jpg",
+  "t20-cenas/cena1.png",
+  "t20-cenas/cena2.png",
+  "t20-cenas/cena3.png"
+ ],
+ "cor_destaque": "B07A45",
+ "contagem": {},
+ "diretor": {
+  "angulo": "O desenho não é pintado: são fios entrelaçados no Jacquard, e por baixo tiras de EVA seguram o tapete no piso.",
+  "palavra": "Jacquard",
+  "prova": "Jacquard de algodão e poliéster com fios coloridos entrelaçados (resistência contra desbotamento) + base de tiras de EVA emborrachado antiderrapante; milhares de avaliações",
+  "errc": "E: 'achadinho' e a lista de composição. R: falar de tamanho e preço. E: o mecanismo (fio no desenho, EVA embaixo) com luz de manhã sobre o tapete. C: a dor 'seu tapete anda pelo piso?' e o escritório com cara de luxo.",
+  "publico_nao_obvio": "quem montou escritório ou consultório em casa e quer acabamento de luxo no chão",
+  "por_que_converte": "Schwartz: mercado saturado de tapetes, então vende o mecanismo único (fios entrelaçados + EVA). Hopkins: material e base específicos no lugar de adjetivo.",
+  "visual": "1º segundo: sala clara com o tapete preto e marfim e o sol da porta-janela se espalhando sobre ele; o contraste escuro no piso claro prende o olho."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Top-down overhead shot from directly above, the whole rug fully visible inside the frame with floor around it, its long side running vertically in the frame and its true width-to-length proportion kept exactly as in the reference photo. The exact rug from the reference image, identical shape, color, material and every part: one large rectangular flat-woven jacquard rug, black with an ivory distressed brushed pattern, thin black bound edges. Real size, keep the scale true against the room and furniture: the rug measures 3.00 m by 2.00 m. Minimalist home office, plain warm grey walls, pale concrete floor, a light oak desk and one cognac leather chair. Golden hour sun from a side window casts long warm stripes across the rug. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Very slow top-down descent from directly above the rug, the camera lowering gently toward the floor. The rug stays perfectly still and unchanged, its shape, pattern, color and edges identical to the photo; the whole rug stays fully in frame. Soft window light drifts slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t20-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 1
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low-angle close-up of one rug corner and its bound edge. The exact rug from the reference image, identical shape, color, material and every part: one large rectangular flat-woven jacquard rug, black with an ivory distressed brushed pattern, thin black bound edges. Real size, keep the scale true against the room and furniture: the rug measures 3.00 m by 2.00 m. Walnut herringbone floor. Soft raking morning window light reveals the interwoven threads, macro 100 mm look. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Slow lateral dolly left along the rug corner. The black and ivory jacquard rug stays perfectly still and unchanged, every thread and edge identical. Soft raking morning light shifts gently across the weave and a few dust specks float in the beam. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_esq",
+   "zoom": 1.06,
+   "clipe": "t20-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, square 1:1. Low angle shot at floor level. The exact rug, a wide rectangle almost as wide as it is long, from the reference image, identical shape, color, material and every part: one large rectangular flat-woven jacquard rug, black with an ivory distressed brushed pattern, thin black bound edges. Bare feet of a man, cropped at the knees, rest on the rug in front of a green velvet sofa; the rug is large, wider than the sofa. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text. One single seamless rug, no seam or join.",
+   "refs": [
+    0
+   ],
+   "pruna": "The bare feet slowly shift on the rug while the camera drifts gently along the floor. The rug keeps its exact pattern and edges. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t20-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Top-down overhead shot from directly above, the whole rug fully visible inside the frame with floor around it, its long side running vertically in the frame and its true width-to-length proportion kept exactly as in the reference photo. The exact rug from the reference image, identical shape, color, material and every part: one large rectangular flat-woven jacquard rug, black with an ivory distressed brushed pattern, thin black bound edges. Real size, keep the scale true against the room and furniture: the rug measures 3.00 m by 2.00 m. Under a deep green velvet sofa and a round walnut coffee table with one ceramic cup, plain warm white walls, light oak floor. Evening: warm table lamp glow and deep blue dusk in a window. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Very slow top-down descent from directly above the rug, the camera lowering gently toward the floor. The rug stays perfectly still and unchanged, its shape, pattern, color and edges identical to the photo; the whole rug stays fully in frame. Soft window light drifts slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": false,
+   "tamanho": "1440*1440",
+   "origem_foto": "recorte de cena1 (0, 480, 1080, 1840)",
+   "foto": 3
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Tapete Jacquard Dallas",
+     "titulo": "Desenho feito de [fio]",
+     "abertura": {
+      "grande": "EVA",
+      "texto": "base antiderrapante e estável"
+     }
+    },
+    {
+     "rotulo": "Algodão e poliéster",
+     "titulo": "Resiste ao [desbote]"
+    },
+    {
+     "rotulo": "Sala, quarto ou escritório",
+     "titulo": "O toque final da [sala]",
+     "fichas": [
+      "Tecido Jacquard",
+      "Base de EVA",
+      "4 tamanhos"
+     ],
+     "cta": "Escolha o tamanho no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Escritório com cara de [luxo]",
+     "sub": "Tapete Jacquard contemporâneo"
+    },
+    {
+     "titulo": "Fios [entrelaçados] no desenho",
+     "sub": "Resistência contra desbotamento"
+    },
+    {
+     "titulo": "Seu Jacquard no [carrinho]",
+     "sub": "Lava com detergente neutro"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Tapete Jacquard grande",
+     "titulo": "Seu tapete [anda] pelo piso?",
+     "sub": "Esse tem base de tiras de EVA"
+    },
+    {
+     "rotulo": "Antiderrapante estável",
+     "titulo": "[EVA] emborrachado por baixo",
+     "sub": "Jacquard de algodão por cima"
+    },
+    {
+     "rotulo": "Milhares de avaliações",
+     "titulo": "Firme, bonito e [lavável]",
+     "sub": "Opções até 3,00 x 2,00 m",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Tapete Jacquard grande com base antiderrapante de EVA e desenho de fios entrelaçados\n#tapetejacquard #tapetesala #tapeteantiderrapante #tapetegrande",
+  "shopee2": "Tapete Jacquard de algodão e poliéster, resistente a desbotamento\n#tapeteescritorio #tapetemoderno #tapetequarto #decoracaosala",
+  "shopee3": "Tapete Jacquard bem avaliado, 4 tamanhos até 3,00 x 2,00 m\n#tapetegeometrico #tapeteluxo #tapetedesala #tapetecontemporaneo",
+  "reels": "Seu tapete anda pelo piso? Esse Jacquard tem base de tiras de EVA emborrachado, antiderrapante e estável 👣\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapetejacquard #tapeteantiderrapante #tapetesala #decoracaoescritorio"
+ },
+ "notas": "Só a 01 serve (15 é cópia; 02-04 e 10-14 outras cores; 05-09 outros desenhos). Cena 2 por código: close de Jacquard é estampa fina que a IA redesenharia. Riscos: nas cenas 1 e 3 o Pruna pode alterar a textura desgastada do tapete; tapete já sai cortado na borda da foto 01; tamanho da foto 01 não confirmado (falo só das 4 opções); cor não citada."
+}

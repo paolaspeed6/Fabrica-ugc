@@ -1,0 +1,142 @@
+{
+ "nome": "s22_tapete_persa_tabriz",
+ "titulo_produto": "Tapete de Luxo Estilo Persa Clássico Oriental",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r22-fotos/01.jpg",
+  "../lista1016/r22-fotos/02.jpg",
+  "../lista1016/r22-fotos/08.jpg"
+ ],
+ "cor_destaque": "A11D2E",
+ "contagem": {},
+ "diretor": {
+  "angulo": "Não é um tapete: é o desenho persa de Tabriz que dá à sala comum (até a alugada) cara de alto padrão sem obra.",
+  "palavra": "Tabriz",
+  "prova": "Origem Índia, Tabriz; antiácaro e antialérgico; base antiderrapante; 3 tamanhos até 300x250 cm; bem avaliado.",
+  "errc": "E: 'achadinho', zoom parado e lista de specs. R: adjetivos de luxo vazios. E: o canto real do tapete (borda marfim, debrum) em close de foto. C: o persa como reforma sem obra para quem mora de aluguel.",
+  "publico_nao_obvio": "Quem mora de aluguel e não pode reformar: o tapete muda a sala e vai junto na mudança.",
+  "por_que_converte": "Ries/Trout: uma palavra só (Tabriz) que nenhum vendedor da categoria usa; Sutherland reenquadra tapete como reforma sem obra; Schwartz: o Reels abre na dor da sala sem graça.",
+  "visual": "Sala clara e simétrica com um bloco vermelho saturado no centro e a luz da janela andando no piso: o vermelho contra o cinza-claro quebra o feed bege de decoração."
+ },
+ "cenas": [
+  {
+   "foto": 1,
+   "recorte": [
+    0,
+    32,
+    854,
+    822
+   ],
+   "pruna": "Photorealistic commercial product cinematography. Very slow push-in toward a bright living room where a deep red Persian-style rug with an ivory floral border and cream fringe lies flat on light gray tiles. The whole rug stays fully in frame. The rug stays perfectly still and unchanged, every part identical to the photo. Soft window sunlight drifts slowly across the floor. Shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "s22-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 2.2,
+   "fiscal": "2.2"
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    400,
+    100,
+    1000,
+    700
+   ],
+   "pruna": null,
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "s22-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "pruna": "Photorealistic commercial product cinematography. Slow lateral dolly right across a sunlit living room with a light gray sofa, an olive tree in a dark vase and a deep red Persian-style rug with an ivory border and cream fringe on the floor. The rug stays perfectly still and unchanged, every part identical to the photo. Warm sunlight drifts across the wall. Shallow depth of field, subtle film grain, neutral white balance.",
+   "codigo": "pull",
+   "zoom": 1.06,
+   "clipe": "s22-cenas/cena3.mp4",
+   "lento": 1.0,
+   "fiscal": "ok"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Estampa persa, origem Tabriz",
+     "titulo": "Tabriz no [chão] da sua sala",
+     "abertura": {
+      "grande": "3m",
+      "texto": "no maior dos 3 tamanhos"
+     }
+    },
+    {
+     "rotulo": "Acabamento em debrum",
+     "titulo": "Olhe o [canto] de perto"
+    },
+    {
+     "rotulo": "Sala de alto padrão",
+     "titulo": "Sua sala em [outro nível]",
+     "fichas": [
+      "Origem Índia, Tabriz",
+      "Antiácaro",
+      "Altura de 4 mm"
+     ],
+     "cta": "Escolha o tamanho no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Um persa de [Tabriz] em casa",
+     "sub": "Estampa persa, origem Índia"
+    },
+    {
+     "titulo": "Antiácaro e [antialérgico]",
+     "sub": "Base antiderrapante, altura 4 mm"
+    },
+    {
+     "titulo": "Garanta o seu no [carrinho]",
+     "sub": "200x140, 200x250 ou 300x250 cm"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Para quem mora de aluguel",
+     "titulo": "Sala [sem graça] e sem reforma?",
+     "sub": "Um persa de Tabriz resolve"
+    },
+    {
+     "rotulo": "Detalhes refinados",
+     "titulo": "Paleta de cores [elegante]",
+     "sub": "Estilo clássico, design persa"
+    },
+    {
+     "rotulo": "Vai junto na mudança",
+     "titulo": "Sua sala com cara de [nova]",
+     "sub": "3 tamanhos, até 300x250 cm",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "TOP",
+  "t": "avaliado"
+ },
+ "legendas": {
+  "shopee": "Tapete estilo persa de origem Tabriz, antiácaro e com base antiderrapante\n#tapetepersa #tapeteoriental #tapetesala #salaclassica",
+  "shopee2": "Tapete clássico oriental em poliéster, 4 mm de altura e 3 tamanhos\n#tapeteclassico #tapeteindiano #decoracaoclassica #saladeestar",
+  "shopee3": "Tapete persa antialérgico com acabamento em debrum, até 300x250 cm\n#tapetegrande #tapeteantiacaro #salasofisticada #tapeteluxo",
+  "reels": "Mora de aluguel e quer a sala com cara de nova sem reforma? Esse tapete estilo persa de Tabriz é antiácaro e tem base antiderrapante 🏠\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapetepersa #decoracaoaluguel #tapetesala #salaclassica"
+ },
+ "notas": "Só fotos do mesmo tapete vermelho floral (01, 02, 08); 02 recortada para tirar as faixas brancas; cena 2 é close da 01 (canto com borda e franja), por código porque estampa persa em close a IA redesenha. Riscos: Pruna nas cenas 1 e 3 (planos abertos) pode mexer no desenho ou na franja: fiscal compara a estampa com a foto; 'vermelho' e 'franja' não estão escritos no anúncio, então não aparecem na tela."
+}

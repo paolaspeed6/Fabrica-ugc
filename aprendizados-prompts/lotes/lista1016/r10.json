@@ -1,0 +1,125 @@
+{
+ "nome": "r10_plafon_ceu_estrelado_3_tons",
+ "titulo_produto": "Plafon LED Céu Estrelado 3 Cores",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r10-fotos/01.jpg",
+  "r10-fotos/06.jpg"
+ ],
+ "cor_destaque": "C77A1E",
+ "cenas": [
+  {
+   "foto": 1,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r10-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "pan_dir",
+   "zoom": 1.09,
+   "recorte": [
+    100,
+    30,
+    700,
+    630
+   ],
+   "clipe": "r10-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "desce",
+   "zoom": 1.07,
+   "recorte": [
+    0,
+    200,
+    800,
+    800
+   ],
+   "clipe": "r10-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Plafon LED céu estrelado",
+     "titulo": "[3] luzes no mesmo plafon",
+     "abertura": {
+      "grande": "3",
+      "texto": "tons de luz num plafon"
+     }
+    },
+    {
+     "rotulo": "Efeito céu estrelado",
+     "titulo": "Teto cheio de [estrelas]"
+    },
+    {
+     "rotulo": "Cada toque troca a luz",
+     "titulo": "Cada toque, uma [luz] nova",
+     "fichas": [
+      "3.500K a 6.500K",
+      "Bivolt",
+      "LED integrado"
+     ],
+     "cta": "Toque no carrinho e escolha o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Quarto com [céu] estrelado",
+     "sub": "Plafon de LED com 3 tonalidades"
+    },
+    {
+     "titulo": "[Toque] no interruptor, luz nova",
+     "sub": "Cada toque troca o tom"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Nota 4,85 e bivolt"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Plafon céu estrelado",
+     "titulo": "Parece [céu] estrelado no teto",
+     "sub": "Plafon LED com borda trabalhada"
+    },
+    {
+     "rotulo": "Tonalidades",
+     "titulo": "[3.500K], 4.500K e 6.500K",
+     "sub": "Do mais quente ao mais frio"
+    },
+    {
+     "rotulo": "Avaliações",
+     "titulo": "Nota [4,85] em 377 avaliações",
+     "sub": "Bivolt e LED integrado",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "3",
+  "t": "tons de luz"
+ },
+ "legendas": {
+  "shopee": "Plafon LED céu estrelado com 3 tons de luz e bivolt\n#plafonled #ceuestrelado #luminariadeteto #decoracaoquarto",
+  "shopee2": "Plafon de teto com LED integrado, nota 4,85 em 377 avaliações\n#plafonteto #iluminacaoquarto #lustreestrelado #tetoled",
+  "shopee3": "Luminária de teto 3500K, 4500K e 6500K, troca a luz a cada toque\n#luminarialed #plafonestrelado #quartodecorado #iluminacaosala",
+  "reels": "Seu quarto com céu estrelado no teto ✨ Plafon LED com 3 tonalidades de luz e bivolt.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#plafoncomestrelas #plafonled #tetodequarto #iluminacaoquarto"
+ },
+ "notas": "Foto 01 é arte de propaganda com texto grande (descartada; fica em fotos[0] por regra mas NÃO é usada, as 3 cenas usam a 06, limpa, mesmo modelo quadrado). Foto 07 é redonda (outro modelo), 02-05 têm logo/texto. Gancho: 3 tons de luz por toque. Risco: título diz '2 andar'; 24W/36W não confirmado para a variação da foto, watt não citado; efeito de estrelas é da foto, anúncio chama 'céu estrelado'."
+}

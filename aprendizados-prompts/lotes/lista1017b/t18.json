@@ -1,0 +1,156 @@
+{
+ "nome": "t18_pendente_led_espiral",
+ "titulo_produto": "Lustre Pendente LED em Espiral Moderno",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r18-fotos/01.jpg",
+  "../lista1016/r18-fotos/12.jpg",
+  "t18-cenas/cena1.png",
+  "t18-cenas/cena2.png",
+  "t18-cenas/cena3.png"
+ ],
+ "cor_destaque": "B8862E",
+ "contagem": {
+  "fitas_em_espiral": 2
+ },
+ "diretor": {
+  "angulo": "Não é um lustre, é uma escultura de luz de 80 cm sobre a mesa, com fio de 100 cm que acerta a altura em qualquer pé-direito.",
+  "palavra": "espiral",
+  "prova": "LED de 38W em formato ondulado, 80 cm de comprimento, luz que simula a solar natural, bivolt, fio ajustável de 100 cm, tom 3000/4000/6000K",
+  "errc": "E: 'achadinho' e lista de watts e kelvins. R: texto técnico na tela. E: o close da curva dourada com a borda de LED acesa. C: a comparação 'lustre ou escultura de luz?' e o dono de pé-direito alto.",
+  "publico_nao_obvio": "quem tem pé-direito alto ou mesa longe do teto e precisa descer a luz (fio ajustável de 100 cm)",
+  "por_que_converte": "Sutherland: reenquadrar lustre como escultura muda o valor percebido sem mudar o produto. Ogilvy: produto herói no ambiente pronto, prova específica (80 cm, 38W).",
+  "visual": "1º segundo: a espiral dourada acesa flutuando sobre a mesa escura enquanto a câmera avança; a linha de luz em curva é forma rara no feed e prende o olho."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle hero shot from below, slightly to the side, as in reference image 1. The exact LED pendant from the reference images, identical shape, color, material and every part: exactly 2 long wave-shaped gold-colored metal ribbons twisting around each other, glowing white LED edges, exactly 2 thin wires with a small white bar, rectangular gold canopy. Real size, keep the scale true against the room and furniture: the twisted ribbon fixture is about 80 cm long, hanging on 1 m wires. Low over a walnut dining table in a double-height room, plain white plaster walls, tall window. Blue-hour dusk, soft white LED glow. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Very slow push-in, the whole pendant stays fully in frame. The gold wave pendant with exactly 2 twisted ribbons stays perfectly still and unchanged, every curve identical, its LED light steady. Blue dusk rests at the tall window, soft glow on the plaster. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t18-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 1.8,
+   "fiscal": "1.8",
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Eye-level close-up where the 2 ribbons cross. The exact LED pendant from the reference images, identical shape, color, material and every part: exactly 2 gold-colored metal ribbons twisting around each other, sharp glowing white LED edges, one thin wire above. Real size, keep the scale true against the room and furniture: the twisted ribbon fixture is about 80 cm long, hanging on 1 m wires. The fixture hangs horizontally, its long twisted ribbons running parallel to the ceiling and the table, exactly as in the reference photo: never vertical. Plain dark warm grey background, out of focus, warm low side light on the gold. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Slow lateral dolly left along the ribbons. Exactly 2 twisted gold ribbons stay perfectly still and unchanged, every curve identical, the LED edges steady. Soft warm reflections glide slowly along the gold metal. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_esq",
+   "zoom": 1.06,
+   "clipe": "t18-cenas/cena2.mp4",
+   "lento": 1.0,
+   "pruna_t": 1.8,
+   "fiscal": "1.8",
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium shot from behind a long dining table at night. The exact LED pendant from the reference images, identical shape, color, material and every part: exactly 2 long wave-shaped gold-colored metal ribbons twisting around each other, glowing white LED edges, exactly 2 thin wires with a small white bar, rectangular gold canopy. Friends seen from behind sit down to dinner at the table under the lit horizontal pendant; the pendant is clearly shorter than the table. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Extremely slow push-in toward the glowing gold wave pendant. Everyone at the table stays seated, backs to the camera, moving only their hands a little. The pendant stays perfectly still and unchanged. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.06,
+   "clipe": "t18-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide eye-level shot of a dining room at night. The exact LED pendant from the reference images, identical shape, color, material and every part: exactly 2 long wave-shaped gold-colored metal ribbons twisting around each other, glowing white LED edges, exactly 2 thin wires with a small white bar, rectangular gold canopy. Real size, keep the scale true against the room and furniture: the twisted ribbon fixture is about 80 cm long, hanging on 1 m wires. Glowing above a light oak table set with exactly 6 white plates, exactly 6 cane chairs. Plain terracotta-beige plaster walls. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the pendant. The gold wave pendant with exactly 2 twisted ribbons stays perfectly still and unchanged, every curve identical, its LED light steady; the table and 6 chairs stay in place. Warm glow rests on the plaster walls. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "refeito": "r1",
+   "pruna_t": 3.6,
+   "fiscal": "3.6",
+   "foto": 4
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Pendente LED em espiral",
+     "titulo": "[80 cm] de luz em espiral",
+     "abertura": {
+      "grande": "38W",
+      "texto": "de LED em espiral"
+     }
+    },
+    {
+     "rotulo": "LED de 38W, bivolt",
+     "titulo": "Luz que simula o [sol]"
+    },
+    {
+     "rotulo": "Escolha 3000, 4000 ou 6000K",
+     "titulo": "A mesa vira [cenário]",
+     "fichas": [
+      "80 cm de comprimento",
+      "Fio de 100 cm",
+      "Bivolt"
+     ],
+     "cta": "Toque no carrinho e escolha a luz"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Pé-direito alto? Desce a [luz]",
+     "sub": "Fio de 100 cm ajustável"
+    },
+    {
+     "titulo": "Formato [ondulado] de LED",
+     "sub": "Vem com parafusos e manual"
+    },
+    {
+     "titulo": "Sua espiral no [carrinho]",
+     "sub": "Luz 3000, 4000 ou 6000K"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Pendente espiral moderno",
+     "titulo": "Lustre ou [escultura] de luz?",
+     "sub": "Esse aqui tem 80 cm em espiral"
+    },
+    {
+     "rotulo": "Bivolt 110V-220V",
+     "titulo": "[38W] de LED sobre a mesa",
+     "sub": "Luz que simula a solar natural"
+    },
+    {
+     "rotulo": "Bem avaliado na Shopee",
+     "titulo": "Seu jantar em [outro] nível",
+     "sub": "Escolha o tom: 3000, 4000 ou 6000K",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "80cm",
+  "t": "de espiral"
+ },
+ "legendas": {
+  "shopee": "Lustre pendente LED em espiral de 80 cm, 38W e bivolt\n#lustrependente #lustreespiral #lustresaladejantar #lustreled",
+  "shopee2": "Pendente LED ondulado com fio ajustável de 100 cm e luz 3000, 4000 ou 6000K\n#pendentemoderno #lustremoderno #iluminacaojantar #pendenteled",
+  "shopee3": "Lustre LED espiral bem avaliado, luz que simula a solar e 80 cm de comprimento\n#lustreondulado #pendentesala #decoracaojantar #lustremesadejantar",
+  "reels": "Lustre ou escultura de luz? Esse pendente LED em espiral tem 80 cm, 38W e fio ajustável de 100 cm ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustreespiral #pendenteled #lustremoderno #saladejantar"
+ },
+ "notas": "13 = foto 01 em 2560 px e 12 = foto 02 em 2560 px (conferidas por diferença de imagem). Cor não citada na tela (título diz 'Ouro Rosa ou Preto', ambíguo). Riscos: Pruna pode mudar o número de voltas/fitas da espiral (contar 2 fitas por cena) e os fios; tom de luz é variação de compra."
+}

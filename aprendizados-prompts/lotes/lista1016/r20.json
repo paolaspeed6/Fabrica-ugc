@@ -1,0 +1,124 @@
+{
+ "nome": "r20_tapete_jacquard",
+ "titulo_produto": "Tapete Jacquard Antiderrapante Grande Preto",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r20-fotos/01.jpg"
+ ],
+ "cor_destaque": "3E4A57",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r20-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    0,
+    424,
+    1024,
+    1024
+   ],
+   "codigo": "pan_dir",
+   "zoom": 1.08,
+   "clipe": "r20-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 0,
+   "recorte": [
+    200,
+    120,
+    950,
+    870
+   ],
+   "codigo": "desce",
+   "zoom": 1.1,
+   "clipe": "r20-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Tapete Jacquard",
+     "titulo": "Mais de [3 mil] avaliações",
+     "abertura": {
+      "grande": "4,83",
+      "texto": "de nota, +3 mil avaliações"
+     }
+    },
+    {
+     "rotulo": "Tecido trabalhado",
+     "titulo": "Tecido [Jacquard] de verdade"
+    },
+    {
+     "rotulo": "Sala com estilo",
+     "titulo": "Base que não escorrega",
+     "fichas": [
+      "Jacquard 75% algodão",
+      "Base antiderrapante",
+      "4 tamanhos"
+     ],
+     "cta": "Toque no carrinho e escolha o seu"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "3 mil [avaliações] e nota 4,83",
+     "sub": "Esse tapete é campeão"
+    },
+    {
+     "titulo": "Base [antiderrapante] de EVA",
+     "sub": "Não escorrega no piso"
+    },
+    {
+     "titulo": "Leve o seu no [carrinho]",
+     "sub": "Escolha o tamanho"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Tapete Jacquard",
+     "titulo": "Tapete que [não] escorrega",
+     "sub": "Mais de 3 mil avaliações"
+    },
+    {
+     "rotulo": "75% algodão",
+     "titulo": "Tecido [resistente]",
+     "sub": "Fios coloridos entrelaçados"
+    },
+    {
+     "rotulo": "Antiderrapante",
+     "titulo": "Fica [firme] no chão",
+     "sub": "Base de tiras de EVA",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,83",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Tapete Jacquard antiderrapante grande, nota 4,83 em 3.323 avaliações\n#tapetejacquard #tapeteantiderrapante #tapetesala #decoracaosala",
+  "shopee2": "Tapete Jacquard 75% algodão com base de EVA antiderrapante\n#tapetegrande #tapetegeometrico #decoracaoquarto #tapetemoderno",
+  "shopee3": "Tapete Jacquard com 4 tamanhos e mais de 3 mil avaliações\n#tapeteescritorio #tapeteluxuoso #saladeestar #tapetepreto",
+  "reels": "Mais de 3 mil avaliações e nota 4,83: esse tapete Jacquard tem base antiderrapante e vem em 4 tamanhos.\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#tapetejacquard #tapeteantiderrapante #decoracaosala #tapetegrande"
+ },
+ "notas": "Só a foto 01 (preto/cinza) por segurança: 02-04,10-14 são outras cores, 05-09 outros desenhos, 15 repete a 01; cenas 2 e 3 são recortes (faixa do tapete e sofá+mesa). Risco: tamanho da foto 01 não é confirmado (título diz 2,50x2,00 mas há 4 tamanhos), por isso medida fora do texto; cor da 01 é preto desgastado; cena 2 recorte 1024x600 inclui pé da mesa."
+}

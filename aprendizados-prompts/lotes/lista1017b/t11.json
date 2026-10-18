@@ -1,0 +1,162 @@
+{
+ "nome": "t11_sweetcrillic_cobre",
+ "titulo_produto": "Lustre Sweetcrillic 30x30 Cobre",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r11-fotos/01.jpg",
+  "../lista1016/r11-fotos/03.jpg",
+  "../lista1016/r11-fotos/02.jpg",
+  "t11-cenas/cena1.png",
+  "t11-cenas/cena2.png",
+  "t11-cenas/cena3.png"
+ ],
+ "cor_destaque": "A0603A",
+ "contagem": {
+  "plafon": 1,
+  "niveis_de_cristais": 3,
+  "soquetes_E27": 4,
+  "pirulitos": 112,
+  "castanhas": 552
+ },
+ "diretor": {
+  "angulo": "O lustre que dá para contar: 112 pirulitos e 552 castanhas de acrílico numa base cobre, fugindo do dourado de sempre.",
+  "palavra": "cobre",
+  "prova": "112 pirulitos de 30 mm e 552 castanhas de 14 mm de cristal acrílico de alto brilho, alumínio espelhado, 4 lâmpadas E-27, bivolt, 30 x 30 x 28 cm; bem avaliado.",
+  "errc": "E: 'lustre lindo' e o zoom parado. R: adjetivo de luxo e sofisticação. E: as quantidades exatas de cristais e o reflexo da base cobre. C: a comparação com o dourado que todo mundo tem.",
+  "publico_nao_obvio": "Quem está montando a sala de jantar do apartamento novo e quer uma peça só sobre a mesa.",
+  "por_que_converte": "Hopkins: números exatos (112 e 552) são crença instantânea. Ries/Trout: dono da palavra 'cobre' num mar de dourado; o Reels abre com a comparação (manual do vídeo vencedor).",
+  "visual": "Cascata de cristais em 3 níveis sobre branco puro, câmera recuando devagar com reflexos de arco-íris correndo nas gotas: brilho que acende a tela no primeiro quadro."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle hero shot from front-left below, as in reference image 1. The exact chandelier from the reference images, identical shape, color, material and every part: square brushed copper-colored mirrored aluminum base, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 3 stepped square tiers. Real size, keep the scale true against the room and furniture: a small chandelier only 30 cm wide and 28 cm tall. On the white ceiling of a dining room, plain greige walls. Blue-hour dusk from a side window, crystals glowing warm. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Very slow push-in, the whole chandelier stays fully in frame. The copper square chandelier with exactly 3 tiers of clear acrylic crystal strands stays perfectly still and unchanged, every part identical. Soft dusk light drifts slowly along the plain wall, tiny sparkles glint in the crystals. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t11-cenas/cena1.mp4",
+   "lento": 1.0,
+   "pruna_t": 1.8,
+   "fiscal": "1.8",
+   "foto": 3
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Macro 100mm eye-level close-up of the front edge, as in reference image 2. The exact chandelier from the reference images, identical shape, color, material and every part: brushed copper-colored mirrored aluminum rim, clear octagonal acrylic bead strands on small silver rings, each ending in a faceted teardrop pendant. Real size, keep the scale true against the room and furniture: a small chandelier only 30 cm wide and 28 cm tall. It is a compact square flush ceiling chandelier with 3 stepped crystal tiers, as wide as it is tall, mounted directly on the ceiling: never a long hanging column. Plain charcoal wall, out of focus. Golden hour window side light makes the facets sparkle. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    1
+   ],
+   "pruna": "Slow lateral dolly left across the crystal strands. The copper rim and the clear acrylic bead strands with teardrop pendants stay perfectly still and unchanged, every bead and ring identical. Warm golden glints travel slowly across the facets. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_esq",
+   "zoom": 1.06,
+   "clipe": "t11-cenas/cena2.mp4",
+   "lento": 1.0,
+   "refeito": "r1",
+   "pruna_t": 3.6,
+   "fiscal": "3.6",
+   "foto": 4
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide low angle front shot. The exact chandelier from the reference images, identical shape, color, material and every part: square brushed copper-colored mirrored aluminum base, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 3 stepped square tiers. Real size, keep the scale true against the room and furniture: a small chandelier only 30 cm wide and 28 cm tall. Lit warm on the white ceiling above a round light oak dining table with exactly 4 cream chairs and a linen runner. Plain warm white walls, night, the chandelier as main light casting soft sparkles. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0,
+    2
+   ],
+   "pruna": "Slow crane up toward the ceiling. The copper square chandelier with exactly 3 tiers of clear acrylic crystal strands stays perfectly still and unchanged, every part identical; the table and 4 chairs stay in place. Soft sparkle reflections shimmer gently on the plain walls. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.06,
+   "clipe": "t11-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide low angle front shot. The exact chandelier from the reference images, identical shape, color, material and every part: square brushed copper-colored mirrored aluminum base, clear octagonal acrylic bead strands ending in faceted teardrop pendants, exactly 3 stepped square tiers. Real size, keep the scale true against the room and furniture: a small chandelier only 30 cm wide and 28 cm tall. Lit warm on the white ceiling above a round light oak dining table with exactly 4 cream chairs and a linen runner. Plain warm white walls, night, the chandelier as main light casting soft sparkles. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the ceiling. The copper square chandelier with exactly 3 tiers of clear acrylic crystal strands stays perfectly still and unchanged, every part identical; the table and 4 chairs stay in place. Soft sparkle reflections shimmer gently on the plain walls. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": false,
+   "refeito": "r1",
+   "pruna_t": 5.4,
+   "fiscal": "5.4",
+   "foto": 5
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Plafon Sweetcrillic cobre",
+     "titulo": "Alumínio [cobre] e cristal",
+     "abertura": {
+      "grande": "552",
+      "texto": "castanhas de cristal acrílico"
+     }
+    },
+    {
+     "rotulo": "Acrílico de alto brilho",
+     "titulo": "Mais [552] castanhas de 14 mm"
+    },
+    {
+     "rotulo": "Feito em alumínio polido",
+     "titulo": "Teto que [fecha] a decoração",
+     "fichas": [
+      "Bivolt",
+      "4 lâmpadas E-27",
+      "Até 15w por lâmpada"
+     ],
+     "cta": "Toque no carrinho e leve o cobre"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Sala de jantar pede [cristal]",
+     "sub": "Plafon cobre de 30 x 30 cm"
+    },
+    {
+     "titulo": "[4] lâmpadas E-27, bivolt",
+     "sub": "Até 15w cada, não inclusas"
+    },
+    {
+     "titulo": "O seu está no [carrinho]",
+     "sub": "Plafon Sweetcrillic em cobre"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Teto da sala de jantar",
+     "titulo": "Dourado de novo? Tenta [cobre]",
+     "sub": "Alumínio espelhado cor cobre"
+    },
+    {
+     "rotulo": "Conte os cristais",
+     "titulo": "[112] pirulitos de 30 mm",
+     "sub": "E outras 552 castanhas"
+    },
+    {
+     "rotulo": "30 x 30 x 28 cm",
+     "titulo": "Jantar com [brilho] no teto",
+     "sub": "Quarto, sala ou varanda",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "552",
+  "t": "castanhas"
+ },
+ "legendas": {
+  "shopee": "Lustre Sweetcrillic cobre 30x30 com 112 pirulitos e 552 castanhas de acrílico\n#lustredecristal #plafoncobre #lustresaladejantar #lustreacrilico",
+  "shopee2": "Plafon de cristal acrílico em alumínio espelhado cobre, bivolt, 4 lâmpadas E-27\n#plafondecristal #lustrecobre #decoracaosalajantar #lustrequarto",
+  "shopee3": "Lustre de cristal cobre bem avaliado, 30 x 30 x 28 cm e cristais de alto brilho\n#lustresweetcrillic #lustreplafon #iluminacaodecorativa #lustresala",
+  "reels": "Dourado de novo? Esse lustre cobre tem 112 pirulitos e 552 castanhas de cristal acrílico ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustredecristal #lustrecobre #plafondecristal #decoracaosalajantar"
+ },
+ "notas": "01 (inteira, 3 níveis), 03 (lateral com soquetes, por código: close de cristal que a IA redesenharia) e 02 (frente, 3 níveis). Sem foto de ambiente no anúncio. Total 664 fora do texto (soma não escrita no anúncio). Risco: Pruna somar/tirar nível de cristais, redesenhar as gotas ou fazê-las balançar, e escurecer o cobre; conferir 3 níveis contra a 01. Lâmpadas não inclusas."
+}

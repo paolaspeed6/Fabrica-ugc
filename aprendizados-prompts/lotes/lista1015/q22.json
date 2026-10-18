@@ -1,0 +1,98 @@
+{
+  "nome": "q22_solda_mig_coban_kit",
+  "titulo_produto": "Kit Máquina de Solda MIG 200A Coban + Máscara",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q22-fotos/01.jpg",
+    "q22-fotos/02.jpg"
+  ],
+  "cor_destaque": "E8501E",
+  "cenas": [
+    {
+      "foto": 0,
+      "movimento": "slow push-in, minimal motion, the display, panel and logos stay exactly as in the photo"
+    },
+    {
+      "foto": 1,
+      "movimento": "gentle lateral dolly, very slight, the text and panel stay sharp"
+    },
+    {
+      "foto": 0,
+      "movimento": "crane up reveal, very slight, nothing on the machine or mask changes"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Solda MIG sem gás · 200 A",
+          "titulo": "[3 em 1] numa só máquina",
+          "abertura": {
+            "grande": "3em1",
+            "texto": "MIG, eletrodo e TIG Lift"
+          }
+        },
+        {
+          "rotulo": "Bivolt 110 V / 220 V",
+          "titulo": "Leve e [portátil] de 3 kg"
+        },
+        {
+          "rotulo": "Nota 4,89 · 238 avaliações",
+          "titulo": "Já vem com [máscara] automática",
+          "fichas": [
+            "MIG 200 A",
+            "Bivolt",
+            "Nota 4,89"
+          ],
+          "cta": "Toque no carrinho e solde"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Solda [3 em 1] com máscara",
+          "sub": "MIG sem gás, MMA e TIG Lift"
+        },
+        {
+          "titulo": "[200 A] em 3 kg",
+          "sub": "Bivolt automático"
+        },
+        {
+          "titulo": "Monte sua oficina no [carrinho]",
+          "sub": "Nota 4,89 · 238 avaliações"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Serralheiro, olha isso",
+          "titulo": "Solda MIG [sem gás] e já com máscara"
+        },
+        {
+          "rotulo": "Kit Coban",
+          "titulo": "[3 em 1]: MIG, eletrodo e TIG Lift",
+          "sub": "200 A · Bivolt"
+        },
+        {
+          "rotulo": "Nota 4,89",
+          "titulo": "Tocha, garra e [máscara] inclusas",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Kit máquina de solda MIG 200A 3 em 1 bivolt com máscara automática. #solda #serralheria #ferramentas #achadinhosshopee",
+    "shopee2": "Solda inversora Coban 3 em 1: MIG sem gás, eletrodo e TIG Lift, com máscara. #solda #oficina #mig #achadinhosshopee",
+    "reels": "Solda MIG sem gás, eletrodo e TIG Lift em uma máquina de 3 kg, bivolt, com máscara automática. Nota 4,89. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#solda #serralheria #ferramentas #oficina"
+  },
+  "comentario": "🛒 Kit Solda MIG 200A Coban aqui: {link}",
+  "imagens_conferidas": true
+}

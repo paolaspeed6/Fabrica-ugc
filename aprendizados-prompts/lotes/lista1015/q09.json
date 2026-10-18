@@ -1,0 +1,99 @@
+{
+  "nome": "q09_mesa_yon_120",
+  "titulo_produto": "Mesa de Escritório Yon 120 cm",
+  "link": "https://s.shopee.com.br/SEU_LINK",
+  "fotos": [
+    "q09-fotos/01.jpg"
+  ],
+  "cor_destaque": "auto",
+  "cenas": [
+    {
+      "clipe": "mesa_yon_120-cenas/cena1_codigo.mp4",
+      "foto": 0,
+      "movimento": "zoom lento feito por código, produto inteiro desde o primeiro quadro"
+    },
+    {
+      "foto": 0,
+      "movimento": "gentle lateral dolly",
+      "clipe": "mesa_yon_120-cenas/cena2.mp4"
+    },
+    {
+      "editar": "Photorealistic full-frame photo, 9:16 vertical No phone frame, no device bezel, no borders, no added text. A matte black rectangular desk exactly like reference photo 1, black steel tube legs, seen from a three-quarter low angle, in a minimalist office with a pale wall and pale concrete floor, a single small green plant beside it, only the objects described. 50 mm, soft daylight, neutral white balance. The whole product fills 25-60% of the image height, centered, empty floor below.",
+      "movimento": "crane up reveal",
+      "clipe": "mesa_yon_120-cenas/cena3.mp4"
+    }
+  ],
+  "versoes": {
+    "shopee": {
+      "cenas": [
+        {
+          "rotulo": "Mesa Yon · 120 x 70 x 75 cm",
+          "titulo": "Tampo de [40 mm], visual industrial",
+          "abertura": {
+            "grande": "40mm",
+            "texto": "de tampo, pés de aço"
+          }
+        },
+        {
+          "rotulo": "Estrutura",
+          "titulo": "Pés de aço [suportam] até 90 kg"
+        },
+        {
+          "rotulo": "Nota 4,83",
+          "titulo": "Home office [sem gaveta], sem peso visual",
+          "fichas": [
+            "120 x 70 cm",
+            "Até 90 kg",
+            "Nota 4,83"
+          ],
+          "cta": "Toque no carrinho e leve a sua"
+        }
+      ]
+    },
+    "shopee2": {
+      "estilo": "tiktok",
+      "cenas": [
+        {
+          "titulo": "Sua mesa [balança]? Essa não",
+          "sub": "Yon 120 x 70 cm"
+        },
+        {
+          "titulo": "Pés de aço até [90 kg]",
+          "sub": "Pés niveladores"
+        },
+        {
+          "titulo": "Monte o seu [escritório]",
+          "sub": "Nota 4,83 · Estilo industrial"
+        }
+      ]
+    },
+    "reels": {
+      "estilo": "reels_faixas",
+      "cenas": [
+        {
+          "rotulo": "Home office industrial",
+          "titulo": "Tampo [grosso] muda tudo"
+        },
+        {
+          "rotulo": "Mesa Yon · 120 x 70 cm",
+          "titulo": "Pés de aço, aguenta até [90 kg]"
+        },
+        {
+          "rotulo": "Nota 4,83",
+          "titulo": "Seu canto de trabalho, [pronto]",
+          "cta": "Link no 1º comentário"
+        }
+      ]
+    }
+  },
+  "legendas": {
+    "shopee": "Mesa de escritório Yon 120 x 70 cm, tampo de 40 mm e pés de aço, estilo industrial.\n#mesa #homeoffice #escritorio #achadinhosshopee",
+    "shopee2": "Mesa Yon 120 x 70 x 75 cm, suporta até 90 kg, pés niveladores.\n#mesaescritorio #homeoffice #industrial #achadinhosshopee",
+    "reels": "Tampo grosso de 40 mm, pés de aço e visual industrial: mesa Yon 120 cm para o seu home office. Link no primeiro comentário 👇"
+  },
+  "hashtags": {
+    "reels": "#homeoffice #escritorio #decoracao #mesa"
+  },
+  "comentario": "🛒 Mesa de Escritório Yon 120 cm aqui: {link}",
+  "imagens_conferidas": true
+}

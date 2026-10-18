@@ -1,0 +1,114 @@
+{
+ "nome": "r13_spark_unidade",
+ "titulo_produto": "Lustre Plafon Cristal Acrílico Spark",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "r13-fotos/01.jpg",
+  "r13-fotos/02.jpg",
+  "r13-fotos/03.jpg"
+ ],
+ "cor_destaque": "D1A24A",
+ "cenas": [
+  {
+   "foto": 0,
+   "codigo": "push",
+   "zoom": 1.05,
+   "clipe": "r13-cenas/cena1.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 1,
+   "codigo": "sobe",
+   "zoom": 1.08,
+   "clipe": "r13-cenas/cena2.mp4",
+   "lento": 1.0
+  },
+  {
+   "foto": 2,
+   "codigo": "pan_dir",
+   "zoom": 1.07,
+   "clipe": "r13-cenas/cena3.mp4",
+   "lento": 1.0
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Plafon Spark inox",
+     "titulo": "Cristal que você [monta]",
+     "abertura": {
+      "grande": "14cm",
+      "texto": "de largura, 27 de altura"
+     }
+    },
+    {
+     "rotulo": "Monte do seu jeito",
+     "titulo": "Monte o [desenho] que gosta"
+    },
+    {
+     "rotulo": "Inox espelhado e cristal",
+     "titulo": "[6.691] avaliações, nota 4,8",
+     "fichas": [
+      "14 x 14 x 27 cm",
+      "1 lâmpada E-27",
+      "Bivolt"
+     ],
+     "cta": "Toque e escolha o seu Spark"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Lustre pequeno, [efeito] grande",
+     "sub": "Spark 14 x 14 x 27 cm"
+    },
+    {
+     "titulo": "Você [monta] do seu jeito",
+     "sub": "Cristais de acrílico"
+    },
+    {
+     "titulo": "Coloque o seu no [carrinho]",
+     "sub": "Nota 4,8 em 6.691 avaliações"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Plafon Spark",
+     "titulo": "Pequeno e [brilhante]",
+     "sub": "Só 14 cm de largura"
+    },
+    {
+     "rotulo": "Inox espelhado",
+     "titulo": "Cristal de [acrílico]",
+     "sub": "Alto brilho, pré-montado"
+    },
+    {
+     "rotulo": "6.691 avaliações",
+     "titulo": "Nota [4,8] pra valer",
+     "sub": "Uso interno, bivolt",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "4,8",
+  "t": "de nota"
+ },
+ "legendas": {
+  "shopee": "Plafon Spark de cristal acrílico, 14 x 14 x 27 cm, nota 4,8\n#plafonspark #lustrecristal #lustrepequeno #decoracaosala",
+  "shopee2": "Lustre Spark com 6.691 avaliações, inox espelhado e bivolt\n#lustredeteto #cristalacrilico #iluminacaoquarto #plafoninox",
+  "shopee3": "Spark: cristais para montar do seu jeito, usa 1 lâmpada E-27\n#lustrecorredor #decoracaodeteto #plafonquadrado #lustrediy",
+  "reels": "Pequeno no tamanho, grande no brilho: Spark de cristal, 14 cm de largura e nota 4,8 em 6.691 avaliações ✨\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustrespark #plafoncristal #lustrepequeno #decoracaosala"
+ },
+ "notas": "Fotos 01, 02 (tiras verticais), 03 (frontal). Gancho: medida 14 cm + montar do seu jeito. Risco: inox cromado, sem letras; 01 tem leve angulo diagonal. r16 é o kit cobre da mesma linha, ganchos distintos."
+}

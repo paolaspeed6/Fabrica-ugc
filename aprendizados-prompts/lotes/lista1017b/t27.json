@@ -1,0 +1,151 @@
+{
+ "nome": "t27_cortina_9m_voal_forro",
+ "titulo_produto": "Cortina 9,00 x 2,80 m Voal com Forro Microfibra",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r27-fotos/01.jpg",
+  "t27-cenas/cena1.png",
+  "t27-cenas/cena2.png",
+  "t27-cenas/cena3.png"
+ ],
+ "cor_destaque": "8B5A3C",
+ "contagem": {
+  "partes": 2
+ },
+ "diretor": {
+  "angulo": "A cortina para a janela larga que nenhuma cortina comum cobre: 9 m de voal com forro, de ponta a ponta da parede.",
+  "palavra": "9 metros",
+  "prova": "9,00 m de largura x 2,80 m de altura (título e descrição batem); duas partes de 4,50 m; ilhós cromado que não oxida nem enferruja; alto sombreamento; bem avaliada.",
+  "errc": "E: 'achadinho' e 'mega promoção'. R: lista de especificações na tela. E: o número 9 m grande e o ilhós cromado em close. C: falar com quem tem parede/porta de vidro larga e sofre com cortina curta.",
+  "publico_nao_obvio": "Quem tem porta de vidro de canto a canto ou varanda envidraçada, onde cortina comum fica curta.",
+  "por_que_converte": "Hopkins: especificidade (9 m x 2,80 m) vende mais que 'cortina grande'; Ries/Trout: a palavra 9 metros no gancho, no selo e no CTA; Schwartz: Reels abre na dor da cortina curta.",
+  "visual": "Parede inteira branca de ponta a ponta, ao lado da janela verde de jardim: a escala da cortina enche o quadro e para o dedo."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Three-quarter wide shot along the wall, the whole curtain receding in perspective corner to corner. The exact curtain from the reference image, identical shape, color, material and every part: a very wide white voile curtain with lining, exactly 2 panels meeting at the center, round chrome grommets on one long silver rod, soft even folds. Real size, keep the scale true against the room and furniture: 2 panels, each 4.50 m wide and 2.80 m tall, together covering a 9 m wide wall from end to end. It covers one long wall of a spacious living room, light grey porcelain floor, one low sand linen sofa. Late-afternoon sun glows softly through the fabric. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Slow lateral dolly right along the wall, the whole curtain staying in frame. The white curtain stays perfectly still and unchanged, exactly 2 panels, every fold and grommet identical. Afternoon sun glows steadily through it and soft light patches drift slowly across the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_dir",
+   "zoom": 1.06,
+   "clipe": "t27-cenas/cena1.mp4",
+   "lento": 1.0,
+   "foto": 1,
+   "pruna_t": 3.6,
+   "fiscal": "3.6"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up looking slightly up at the top of the curtain, exactly 5 round chrome grommets on the brushed silver rod in sharp focus. The exact curtain from the reference image, identical color, material and every part: white voile with lining gathered in soft even folds between the grommets. Real size, keep the scale true against the room and furniture: 2 panels, each 4.50 m wide and 2.80 m tall, together covering a 9 m wide wall from end to end. Plain warm white wall behind. Soft daylight from the side makes the chrome gleam, 85 mm lens. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Slow lateral dolly left along the rod. The curtain, grommets and rod stay perfectly still and unchanged, every fold identical. Soft daylight glides along the chrome, leaving a gentle moving highlight. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_esq",
+   "zoom": 1.06,
+   "clipe": "t27-cenas/cena2.mp4",
+   "lento": 1.0,
+   "foto": 2,
+   "pruna_t": 1.8,
+   "fiscal": "1.8"
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide shot of a long living room wall in afternoon light. The exact curtain from the reference image, identical shape, color, material and every part: a very wide white voile curtain with lining, exactly 2 panels meeting at the center, round chrome grommets on one long silver rod, soft even folds. A woman seen from behind, cropped at the shoulders, gently opens the wide white voil curtain, which covers the whole wall from end to end. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Her hand slowly draws the curtain a little along the rod while the camera drifts slightly. The grommets and folds stay identical. The person is seen only from behind or cropped below the shoulders; the face is never visible. Photorealistic commercial cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t27-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Medium wide shot across a living room. The exact curtain from the reference image, identical shape, color, material and every part: a very wide white voile curtain with lining, exactly 2 panels meeting at the center, round chrome grommets on one long silver rod, soft even folds. Real size, keep the scale true against the room and furniture: 2 panels, each 4.50 m wide and 2.80 m tall, together covering a 9 m wide wall from end to end. Closed behind a sand linen sofa and a low oak coffee table with one ceramic vase, light grey porcelain floor. Strong afternoon sun turns into an even, diffused warm glow through the fabric. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Very slow push-in across the living room toward the curtain. The white curtain stays perfectly still and unchanged, exactly 2 panels, every fold identical. Diffused warm light glows steadily through the fabric while soft shadows rest on the floor. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "foto": 3,
+   "pruna_t": 2.5,
+   "fiscal": "2.5"
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Voal com forro em microfibra",
+     "titulo": "[9 metros] de voal com forro",
+     "abertura": {
+      "grande": "9m",
+      "texto": "de largura por 2,80 m"
+     }
+    },
+    {
+     "rotulo": "Não oxida, não enferruja",
+     "titulo": "Abre e fecha [deslizando]"
+    },
+    {
+     "rotulo": "Para quarto e sala",
+     "titulo": "Sala [inteira] na sombra certa",
+     "fichas": [
+      "Partes de 4,50 m",
+      "Alto sombreamento",
+      "Varão até 28 mm"
+     ],
+     "cta": "Leve os 9 metros no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Janela de [ponta a ponta]?",
+     "sub": "9,00 m de largura x 2,80 m"
+    },
+    {
+     "titulo": "Voal na frente, [forro] atrás",
+     "sub": "Acabamento feito na bainha"
+    },
+    {
+     "titulo": "Garanta a sua no [carrinho]",
+     "sub": "Para varão simples de até 28 mm"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Parede de vidro em casa?",
+     "titulo": "Cortina [curta] na janela larga?",
+     "sub": "Esta tem 9 m de largura"
+    },
+    {
+     "rotulo": "Sem ferrugem no ilhós",
+     "titulo": "Desliza [fácil] todo dia",
+     "sub": "Ilhós cromado que não oxida"
+    },
+    {
+     "rotulo": "Duas partes de 4,50 m",
+     "titulo": "Luz [filtrada] de ponta a ponta",
+     "sub": "Alto sombreamento com forro",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "9m",
+  "t": "de largura"
+ },
+ "legendas": {
+  "shopee": "Cortina 9,00 x 2,80 m de voal com forro em microfibra e ilhós cromado\n#cortinagrande #cortinavoal #cortinasala #janelagrande",
+  "shopee2": "Cortina de 9 m em duas partes de 4,50 m, ótimo franzido e alto sombreamento\n#cortina9metros #cortinacomforro #portadevidro #decoracaosala",
+  "shopee3": "Cortina para quarto e sala com ilhós que não enferruja, varão até 28 mm\n#cortinaquarto #cortinailhos #cortinamicrofibra #salagrande",
+  "reels": "Cortina curta na janela larga? Essa tem 9 m de largura por 2,80 m de altura, voal com forro em microfibra e ilhós que não enferruja 🪟\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#cortinagrande #portadevidro #cortinasala #janelagrande"
+ },
+ "notas": "Só a 01 presta (02 creme e 03 cinza são outras cores; 04 e 05 têm mão), recortada dentro da faixa útil y168-854. Cenas 1 e 2 por código porque mostram a fileira de ilhoses (partes repetidas, regra 1.1); só a cena 3 (recorte abaixo dos ilhoses) vai ao Pruna. Riscos: Pruna pode borrar os livros/revista da mesa e do sofá; forro não aparece na foto; sombreamento 60 a 70 fica sem número na tela (sem símbolo)."
+}

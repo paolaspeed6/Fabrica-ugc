@@ -1,0 +1,75 @@
+{
+ "nome": "capacete_spider",
+ "titulo_produto": "Capacete EBF Spark Spider",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "p03-fotos/01.jpg",
+  "p03-fotos/03.jpg",
+  "p03-fotos/04.jpg"
+ ],
+ "cor_destaque": "auto",
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. This exact helmet sitting on wet asphalt at night, red and white street lights reflecting on the glossy black shell and on the puddles, SPARK lettering sharp.",
+   "movimento": "Low tracking shot gliding across the wet asphalt toward the helmet, reflections shimmering. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. Front view of this exact helmet on a dark workshop counter, cool overhead light highlighting the air vents and the red stripes.",
+   "movimento": "Slow crane up from chin level to the top vents. The product does not change shape, color or lettering. No people."
+  },
+  {
+   "editar": "Photorealistic full-frame photo, 9:16 vertical. Keep THIS exact product from the reference images: same shape, colors, graphics, lettering and logos. No people, no hands. No phone frame, no device bezel, no borders, no added text. This exact helmet resting on the fuel tank of a dark sport motorcycle in a moody garage with soft red neon accent light.",
+   "movimento": "Very slow push-in toward the product. The product does not change shape, color or lettering. No people."
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "EBF Spark Spider",
+     "titulo": "Viseira [antirrisco] de 2 mm"
+    },
+    {
+     "rotulo": "Entradas de ar",
+     "titulo": "Ventilação pro [calor]"
+    },
+    {
+     "rotulo": "Produto nacional",
+     "titulo": "Troca [rápida] de viseira",
+     "fichas": [
+      "Engate rápido",
+      "Forro lavável",
+      "Termoplástico"
+     ],
+     "cta": "Toque no carrinho"
+    }
+   ]
+  },
+  "reels": {
+   "cenas": [
+    {
+     "rotulo": "EBF Spark Spider",
+     "titulo": "Visual de [pista]"
+    },
+    {
+     "rotulo": "Preto e vermelho brilhante",
+     "titulo": "Pro seu [dia a dia]",
+     "sub": "Viseira cristal antirrisco"
+    },
+    {
+     "rotulo": "Forro removível e lavável",
+     "titulo": "Proteção que [combina]",
+     "cta": "Link no comentário"
+    }
+   ]
+  }
+ },
+ "legendas": {
+  "shopee": "Capacete EBF New Spark Spider preto e vermelho: viseira cristal de 2 mm antirrisco com troca rápida, entradas de ar, cinta com engate rápido e forro removível e lavável. Produto nacional. Toque no carrinho.",
+  "reels": "Visual de pista pro seu dia a dia 🏍️ EBF Spark Spider com viseira antirrisco. Link no primeiro comentário 👇"
+ },
+ "hashtags": {
+  "reels": "#moto #capacete #motociclista #ebf"
+ },
+ "comentario": "🛒 Capacete EBF Spark Spider aqui: {link}"
+}

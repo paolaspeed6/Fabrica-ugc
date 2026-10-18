@@ -1,0 +1,153 @@
+{
+ "nome": "t14_lustre_tres_cores_interruptor",
+ "titulo_produto": "Lustre LED Três Cores quadrado (Castelo de Luz)",
+ "link": "https://s.shopee.com.br/SEU_LINK",
+ "fotos": [
+  "../lista1016/r14-fotos/01.jpg",
+  "t14-cenas/cena1.png",
+  "t14-cenas/cena2.png",
+  "t14-cenas/cena3.png"
+ ],
+ "cor_destaque": "B5833A",
+ "contagem": {
+  "lustre": 1,
+  "bordas_de_acrilico": 2
+ },
+ "diretor": {
+  "angulo": "Três luzes num lustre só, e o controle é o interruptor que você já tem: a cor muda toda vez que apaga e acende.",
+  "palavra": "apaga e acende",
+  "prova": "OBS do anúncio: troca a cor toda vez que você apaga e acende a luz; três cores, bivolt, acrílico com alumínio; nota alta com mais de mil avaliações.",
+  "errc": "E: foto parada e 'olha esse brilho'. R: potência e medidas na tela. E: o gesto do interruptor como mecanismo único. C: o lustre que acaba com a briga do casal pela luz do quarto.",
+  "publico_nao_obvio": "Casal que divide o quarto e nunca concorda com a luz.",
+  "por_que_converte": "Schwartz: mecanismo único (apagar e acender) diferencia de todo plafon. Berger: o humor do casal que briga pela luz é compartilhável; o Reels abre com a comparação 'um lustre ou três?'.",
+  "visual": "Quadrado aceso com halo branco no teto escuro do quarto, câmera deslizando devagar: forma geométrica brilhante contra parede escura."
+ },
+ "cenas": [
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Low angle wide shot from a room corner looking up, as in the reference image. The exact LED ceiling light from the reference image, identical shape, color, material and every part: square flush-mount, glowing white square center panel, exactly 2 stepped square borders of clear faceted crystal-pattern acrylic, rounded corners, soft white halo. Real size, keep the scale true against the room and furniture: a flush ceiling light 43 cm by 43 cm. On the white ceiling of a minimalist living room, plain warm white walls, linen sofa below. Blue-hour dusk window, neutral white glow. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Slow lateral dolly left, the whole ceiling light stays fully in frame. The square LED ceiling light with exactly 2 clear acrylic borders around the glowing white panel stays perfectly still and unchanged, every part identical, its light steady. Dusk light rests softly on the walls. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "pan_esq",
+   "zoom": 1.06,
+   "clipe": "t14-cenas/cena1.mp4",
+   "lento": 1.0,
+   "fiscal": "ok",
+   "foto": 1
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Close-up from below of one rounded corner, as in the reference image. The exact LED ceiling light from the reference image, identical shape, color, material and every part: glowing white panel edge, exactly 2 stepped borders of clear faceted crystal-pattern acrylic, white outer rim, white ceiling. Real size, keep the scale true against the room and furniture: a flush ceiling light 43 cm by 43 cm. Evening light, small neutral sparkles in the acrylic. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Extremely slow push-in. The frame stays on the square ceiling light the whole time and the plain white ceiling around it stays bare and unchanged. The glowing white panel and the exactly 2 clear faceted acrylic borders stay perfectly still, every facet identical, the light steady neutral white. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "push",
+   "zoom": 1.06,
+   "clipe": "t14-cenas/cena2.mp4",
+   "lento": 1.0,
+   "fiscal": "2.0",
+   "refeito": "r1",
+   "pruna_t": 2.0,
+   "foto": 2
+  },
+  {
+   "editar": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide low angle shot of a bedroom at night. The exact LED ceiling light from the reference image, identical shape, color, material and every part: square flush-mount, glowing white square center panel, exactly 2 stepped square borders of clear faceted crystal-pattern acrylic, rounded corners, soft white halo. A hand reaches into frame at the lower right and presses a white wall light switch, and the square ceiling light above glows; the light is compact against the ceiling. The person is seen only from behind or cropped below the shoulders; the face is never visible. Shallow depth of field, cinematic commercial look, natural candid home moment. No measurement lines, no dimension labels. No phone frame, no device bezel, no borders, no text.",
+   "refs": [
+    0
+   ],
+   "pruna": "Extremely slow push-in only, no tilt and no pan. The hand rests on the wall switch and presses it; the ceiling light above glows softly and stays perfectly still and unchanged, every part identical. The hand, the switch and the ceiling light stay in frame for the whole shot. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "codigo": "sobe",
+   "zoom": 1.06,
+   "clipe": "t14-cenas/cena3.mp4",
+   "lento": 1.0,
+   "editar_antigo": "Photorealistic full-frame DSLR photo, vertical 9:16. Wide low angle shot of a calm bedroom at night. The exact LED ceiling light from the reference image, identical shape, color, material and every part: square flush-mount, glowing white square center panel, exactly 2 stepped square borders of clear faceted crystal-pattern acrylic, rounded corners, soft white halo. Real size, keep the scale true against the room and furniture: a flush ceiling light 43 cm by 43 cm. On the white ceiling above a low bed with white linen, plain taupe walls, deep blue night window, neutral white glow. Shallow depth of field, cinematic commercial look. No phone frame, no device bezel, no borders, no text.",
+   "pruna_antigo": "Slow crane up toward the ceiling. The square LED ceiling light with exactly 2 clear acrylic borders around the glowing white panel stays perfectly still and unchanged, every part identical, its light steady. Deep blue night rests at the window. Photorealistic commercial product cinematography, shallow depth of field, soft motivated light, subtle film grain, neutral white balance.",
+   "uso": true,
+   "fiscal": "1.8",
+   "refeito": "r1",
+   "pruna_t": 1.8,
+   "foto": 3
+  }
+ ],
+ "versoes": {
+  "shopee": {
+   "cenas": [
+    {
+     "rotulo": "Lustre LED três cores",
+     "titulo": "Apaga, acende, [outra] cor",
+     "abertura": {
+      "grande": "3",
+      "texto": "cores sem trocar lustre"
+     }
+    },
+    {
+     "rotulo": "Detalhe da borda",
+     "titulo": "Feito em acrílico e [alumínio]"
+    },
+    {
+     "rotulo": "Quadrado, bivolt",
+     "titulo": "Um lustre, [três] luzes",
+     "fichas": [
+      "3 cores",
+      "Bivolt",
+      "Acrílico e alumínio"
+     ],
+     "cta": "Escolha o tamanho no carrinho"
+    }
+   ]
+  },
+  "shopee2": {
+   "estilo": "tiktok",
+   "cenas": [
+    {
+     "titulo": "Casal que [briga] pela luz?",
+     "sub": "Esse lustre tem 3 cores"
+    },
+    {
+     "titulo": "Cada [reacender] troca a cor",
+     "sub": "É só apagar e acender de novo"
+    },
+    {
+     "titulo": "Paz no quarto pelo [carrinho]",
+     "sub": "Nota alta e bivolt"
+    }
+   ]
+  },
+  "reels": {
+   "estilo": "reels_faixas",
+   "cenas": [
+    {
+     "rotulo": "Interruptor comum",
+     "titulo": "Um lustre ou [três]?",
+     "sub": "A cor muda a cada vez que acende"
+    },
+    {
+     "rotulo": "Visto de perto",
+     "titulo": "Brilho de [acrílico] no teto",
+     "sub": "Acabamento com alumínio"
+    },
+    {
+     "rotulo": "Mais de mil avaliações",
+     "titulo": "O quarto em [3] versões",
+     "sub": "Bivolt, modelo quadrado",
+     "cta": "Link na legenda"
+    }
+   ]
+  }
+ },
+ "selo": {
+  "n": "3",
+  "t": "cores"
+ },
+ "legendas": {
+  "shopee": "Lustre LED três cores quadrado que troca a cor ao apagar e acender, bivolt\n#lustreled #lustretrescores #plafonquadrado #iluminacaoquarto",
+  "shopee2": "Lustre de 3 cores em acrílico com alumínio para o quarto do casal\n#lustrequarto #quartodecasal #luminariadeteto #lustremudacor",
+  "shopee3": "Lustre três cores com nota alta e mais de mil avaliações, bivolt\n#lustreacrilico #plafonled #decoracaoquarto #lustremoderno",
+  "reels": "Um lustre ou três? Este muda de cor toda vez que você apaga e acende a luz 💡\nLink do produto: https://s.shopee.com.br/SEU_LINK"
+ },
+ "hashtags": {
+  "reels": "#lustreled #lustretrescores #iluminacaoquarto #quartodecasal"
+ },
+ "notas": "Só a 01 presta: a 06 é cópia idêntica da 01, 02/07 são o modelo redondo, 03-05 têm texto, selo ou colagem. As 3 cenas saem da 01 (inteira, close da borda por código, recorte com o quarto). Sem medida, watt ou nome das cores (tamanho e cores da foto não confirmados). Risco: a troca de cor só é afirmada no texto (foto mostra só branco); Pruna pode mudar a cor da luz, redesenhar o padrão das bordas ou virar 1/3 bordas; conferir 2 bordas."
+}
