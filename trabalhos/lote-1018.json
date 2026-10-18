@@ -72,6 +72,66 @@
    "slug": "banqueta",
    "nome": "Banqueta de madeira",
    "legenda": "Banqueta de madeira com apoio para os pés, na altura do balcão.\n#banqueta #cozinhaamericana #ilhadecozinha #decoracao"
+  },
+  {
+   "id": "p13",
+   "slug": "banquetas-pretas",
+   "nome": "Banqueta alta preta com pés de madeira",
+   "legenda": "Banqueta alta com encosto vazado, apoio para os pés e pés de madeira.\n#banquetaalta #cozinhaamericana #ilhadecozinha #decoracao"
+  },
+  {
+   "id": "p14",
+   "slug": "cadeira-boucle",
+   "nome": "Cadeira bouclé com pés dourados",
+   "legenda": "Cadeira com textura bouclé, assento fofinho e pés dourados.\n#cadeirabouclé #penteadeira #saladejantar #decoracaoelegante"
+  },
+  {
+   "id": "p15",
+   "slug": "bicicleta-cinza",
+   "nome": "Bicicleta mountain bike cinza",
+   "legenda": "Bicicleta com freio a disco, suspensão dianteira e câmbio com marchas.\n#bicicleta #mountainbike #pedal #trilha"
+  },
+  {
+   "id": "p16",
+   "slug": "poltrona-palhinha",
+   "nome": "Poltrona com encosto de palhinha",
+   "legenda": "Poltrona com encosto em palhinha, braços de madeira e assento estofado.\n#poltrona #palhinha #decoracaonatural #saladeestar"
+  },
+  {
+   "id": "p17",
+   "slug": "bicicleta-colorida",
+   "nome": "Bicicleta preta com rosa e azul",
+   "legenda": "Bicicleta com freio a disco, suspensão e detalhes rosa e azul.\n#bicicleta #pedal #mountainbike #ciclismo"
+  },
+  {
+   "id": "p18",
+   "slug": "banqueta-trancada",
+   "nome": "Banqueta trançada com assento estofado",
+   "legenda": "Banqueta com trama trançada, assento estofado e apoio para os pés.\n#banqueta #areagourmet #cozinhaamericana #varanda"
+  },
+  {
+   "id": "p19",
+   "slug": "cadeiras-vermelhas",
+   "nome": "Cadeira vazada vermelha",
+   "legenda": "Cadeira vazada vermelha que combina com qualquer mesa.\n#cadeiravazada #varanda #areaexterna #decoracaocolorida"
+  },
+  {
+   "id": "p21",
+   "slug": "cadeira-bistro",
+   "nome": "Cadeira de palhinha estilo bistrô",
+   "legenda": "Cadeira com encosto oval e assento em palhinha, madeira preta.\n#cadeirapalhinha #bistro #saladejantar #decoracaoclassica"
+  },
+  {
+   "id": "p22",
+   "slug": "assento-reposicao",
+   "nome": "Assento de reposição para cadeira",
+   "legenda": "Assento de reposição para renovar suas cadeiras, em cores neutras.\n#assentodecadeira #renovacao #saladejantar #decoracao"
+  },
+  {
+   "id": "p23",
+   "slug": "banquetas-estofadas",
+   "nome": "Banqueta estofada com base cromada",
+   "legenda": "Banqueta estofada com base cromada e apoio para os pés.\n#banqueta #cozinhaamericana #ilhadecozinha #decoracao"
   }
  ]
 }
