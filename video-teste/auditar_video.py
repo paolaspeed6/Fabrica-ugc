@@ -84,7 +84,9 @@ def auditar(v):
         # troca seca = 1 pico; fusão longa = vários quadros médios seguidos (dupla exposição)
         janela = d[int((corte - 1) * 10):int((corte + 1) * 10)]
         base = sorted(janela)[len(janela) // 2] if janela else 0
-        fantasma = sum(1 for x in janela if x > base + 3) / 10
+        fantasma = sum(1 for x in janela if x > max(base * 1.8, base + 3)) / 10  # relativo: câmera andando não conta
+        if janela and max(janela) >= 20:  # pico forte = corte seco (fusão espalha a troca em vários quadros médios)
+            fantasma = 0.0
         info[f"fusao_{int(corte)}s"] = fantasma
         # passou pelo preto (brilho < 35) = mergulho ao preto proposital, não dupla exposição
         jl = luz[int((corte - 1) * 10):int((corte + 1) * 10)] or [255]
