@@ -18,7 +18,7 @@ opcao_b('poltrona_b_shopee3', dict(kicker='Poltrona capitonê', accent=CARAMELO,
   cenas=[(['A poltrona que deixa', 'a sala [pronta]'], 'Encosto capitonê · visual aveludado'),
          (['Capitonê que', '[valoriza] o ambiente'], 'Pés escuros de linha clássica'),
          (['Sala, quarto', 'ou [leitura]'], None)]),
-  [seg('D', 0.0, 5.0, (1.0, 1.07)), seg('D', 3.0, 2.5, (1.6, 1.7), c0=(360, 700)), seg('E', 0.0, 2.5, (1.45, 1.5), c0=(400, 820)),
+  [seg('D', 0.0, 2.8, (1.0, 1.14)), seg('E', 3.2, 2.2, (1.0, 1.12)), seg('D', 3.0, 2.5, (1.6, 1.7), c0=(360, 700)), seg('E', 0.0, 2.5, (1.45, 1.5), c0=(400, 820)),
    seg('F', 1.0, 5.0, (1.0, 1.07))],
   N + 'pb_t.wav', narr_at=0.4, bed=PIANO, tempo=1.04)
 
@@ -35,3 +35,16 @@ opcao_c('poltrona_c_revista', dict(edicao='Edição nº 08 · A peça do mês', 
   [seg('E', 0.0, 4.6, (1.0, 1.07)), seg('D', 0.0, 2.7, (1.0, 1.06)), seg('F', 0.0, 2.6, (1.0, 1.06)),
    seg('E', 3.0, 2.1, (1.05, 1.1)), seg('D', 2.5, 3.0, (1.0, 1.06))],
   N + 'pc_t.wav', narr_at=0.6, bed=PIANO)
+
+# opção C nova "Direto ao ponto" (a Revista não convenceu a dona: quer persuasivo e fácil para o público leigo)
+opcao_d('cadeira_c_direto', dict(eyebrow='Para a sua varanda', gancho=['Falta *uma peça*', 'na sua varanda.'],
+  itens=['Encosto trançado', 'Assento trançado', 'Linhas retas'], onde=['Varanda, sala', '*ou leitura.*'], accent=AREIA),
+  [seg('A', 0.0, 2.8, (1.0, 1.08)), seg('C', 0.0, 3.0, (1.0, 1.07)), seg('B', 0.0, 3.1, (1.0, 1.06)),
+   seg('A', 2.4, 2.1, (1.0, 1.05)), seg('A', 0.6, 4.0, (1.08, 1.0))],
+  N + 'cd_t.wav', narr_at=0.3, bed=PIANO, cuts=(0, 2.8, 8.9, 11.0, 15))
+
+opcao_d('poltrona_c_direto', dict(eyebrow='Para a sua sala', gancho=['Sua sala merece', '*mais conforto.*'],
+  itens=['Encosto capitonê', 'Visual aveludado', 'Pés clássicos'], onde=['Sala, quarto', '*ou leitura.*'], accent=CARAMELO),
+  [seg('D', 0.0, 3.3, (1.0, 1.12)), seg('E', 0.0, 3.0, (1.0, 1.08)), seg('F', 0.0, 2.9, (1.0, 1.08)),
+   seg('E', 3.0, 2.65, (1.04, 1.12)), seg('D', 2.2, 3.15, (1.12, 1.0))],
+  N + 'pd_t.wav', narr_at=0.3, bed=PIANO, cuts=(0, 3.3, 9.2, 11.85, 15))

@@ -1,0 +1,241 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/tts2/cd_t.wav",
+ "narr_at": 0.3,
+ "tempo": 1.0,
+ "bed": [
+  "D",
+  "F",
+  "D"
+ ],
+ "grade": {
+  "sat": 0.9,
+  "warm": 0.025,
+  "contrast": 1.02,
+  "lift": 0.03,
+  "vign": 0.18,
+  "grain": 0.014,
+  "top": 0.4
+ },
+ "accent": [
+  201,
+  160,
+  112
+ ],
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 2.8,
+   "z": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 3.0,
+   "z": [
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 3.1,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 2.4,
+   "dur": 2.1,
+   "z": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.6,
+   "dur": 4.0,
+   "z": [
+    1.08,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "bars",
+   "cuts": [
+    0,
+    2.8,
+    8.9,
+    11.0,
+    15
+   ],
+   "t0": 0,
+   "t1": 15,
+   "y": 96,
+   "out": false
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Para a sua varanda"
+   ],
+   "t0": 0,
+   "t1": 2.8,
+   "y": 150,
+   "base": "dm",
+   "size": 30,
+   "track": 7,
+   "align": "center",
+   "x": "c"
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Falta *uma peça*",
+    "na sua varanda."
+   ],
+   "t0": 0,
+   "t1": 2.8,
+   "y": 206,
+   "size": 108,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Olha o que",
+    "*ela tem:*"
+   ],
+   "t0": 2.8,
+   "t1": 8.9,
+   "y": 150,
+   "size": 100,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "check",
+   "text": "Encosto trançado",
+   "t0": 4.0,
+   "t1": 8.9,
+   "y": 392,
+   "x": 90,
+   "size": 58,
+   "fill": [
+    201,
+    160,
+    112
+   ]
+  },
+  {
+   "kind": "check",
+   "text": "Assento trançado",
+   "t0": 5.5,
+   "t1": 8.9,
+   "y": 516,
+   "x": 90,
+   "size": 58,
+   "fill": [
+    201,
+    160,
+    112
+   ]
+  },
+  {
+   "kind": "check",
+   "text": "Linhas retas",
+   "t0": 7.0,
+   "t1": 8.9,
+   "y": 640,
+   "x": 90,
+   "size": 58,
+   "fill": [
+    201,
+    160,
+    112
+   ]
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Varanda, sala",
+    "*ou leitura.*"
+   ],
+   "t0": 8.9,
+   "t1": 11.0,
+   "y": 206,
+   "size": 104,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Toque no carrinho",
+    "*e veja o preço.*"
+   ],
+   "t0": 11.0,
+   "t1": 15,
+   "y": 170,
+   "size": 96,
+   "out": false,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "button",
+   "text": "Ver o preço",
+   "t0": 11.4,
+   "t1": 15,
+   "y": 400,
+   "x": "c",
+   "w": 600,
+   "h": 112,
+   "size": 44,
+   "fill": [
+    201,
+    160,
+    112
+   ],
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "anim": "rise",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/out2/cadeira_c_direto.mp4",
+ "dur": 15.0
+}

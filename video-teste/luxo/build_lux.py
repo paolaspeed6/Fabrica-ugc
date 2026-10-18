@@ -18,6 +18,7 @@ FONTS = {
     # opção B (shopee3 moderno) e opção C (revista), 2026-10-18
     'pop': FD + 'Poppins-Medium.ttf', 'pop_sb': FD + 'Poppins-SemiBold.ttf', 'pop_b': FD + 'Poppins-Bold.ttf',
     'pop_r': FD + 'Poppins-Regular.ttf',
+    'dms': FD + 'DMSerifDisplay-Regular.ttf', 'dms_it': FD + 'DMSerifDisplay-Italic.ttf',
     'play': FD + 'PlayfairDisplay.ttf', 'play_it': FD + 'PlayfairDisplay-Italic.ttf', 'dm': FD + 'DMSans.ttf',
 }
 spec = json.load(open(sys.argv[1]))
@@ -118,6 +119,18 @@ def make(el):
             d.line([(ax + 22, ay - 14), (ax + 36, ay), (ax + 22, ay + 14)], fill=tc, width=5, joint='curve')
         img.alpha_composite(b, (40, 40))
         return soft_shadow(img, 18, 90, 8), 40
+    if k == 'check':  # item de lista com ✓ desenhado num círculo (opção "Direto ao ponto")
+        f = font(el.get('base', 'dm'), el.get('size', 52)); txt = el['text']
+        r = int(el.get('size', 52) * 0.62); w = int(2 * r + 28 + f.getlength(txt)) + 80
+        img = Image.new('RGBA', (w, 2 * r + 80), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
+        cx, cy = 40 + r, 40 + r
+        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=tuple(el.get('fill', ACC)) + (255,))
+        d.line([(cx - r * .45, cy + r * .02), (cx - r * .1, cy + r * .38), (cx + r * .5, cy - r * .35)],
+               fill=(255, 255, 255), width=max(4, r // 5), joint='curve')
+        d.text((40 + 2 * r + 28, cy), txt, font=f, fill=tuple(el.get('color', INK)), anchor='lm')
+        return soft_shadow(img, 12, 120), 40
+    if k == 'bars':  # barrinhas de progresso no topo, como nos Stories (desenhadas por quadro)
+        return None, 0
     if k == 'glass':  # cartão de vidro fosco: desenhado por quadro em cima do vídeo (ver glass_on)
         return None, 0
     if k == 'line':
@@ -141,6 +154,20 @@ def make(el):
     if k == 'clock':
         return None, 0
     raise ValueError(k)
+
+
+def bars_on(base, el, t):
+    """segmentos finos que enchem conforme o vídeo avança (cada um = um momento do roteiro)."""
+    cuts = el['cuts']; n = len(cuts) - 1; x0, y, gap = 60, el.get('y', 96), 12
+    w = (W - 2 * x0 - gap * (n - 1)) / n
+    ov = Image.new('RGBA', (W, y + 20), (0, 0, 0, 0)); d = ImageDraw.Draw(ov)  # camada à parte: o branco translúcido mistura com o vídeo
+    for i in range(n):
+        a, b = cuts[i], cuts[i + 1]; fill = min(1, max(0, (t - a) / (b - a)))
+        xa = x0 + i * (w + gap)
+        d.rounded_rectangle([xa, y, xa + w, y + 6], radius=3, fill=(255, 255, 255, 90))
+        if fill > 0:
+            d.rounded_rectangle([xa, y, xa + max(6, w * fill), y + 6], radius=3, fill=(255, 255, 255, 235))
+    base.alpha_composite(ov)
 
 
 def glass_on(base, el, alpha, dy):
@@ -277,6 +304,9 @@ def compose(base, t):
             alpha *= rem / 0.35
         if el['kind'] == 'glass':
             glass_on(base, el, alpha, dy + YT)
+            continue
+        if el['kind'] == 'bars':
+            bars_on(base, el, t)
             continue
         im = img
         if wipe < 0.999:

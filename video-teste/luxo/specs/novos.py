@@ -60,3 +60,26 @@ def save2(name, **sp):
     tot = sum(s['dur'] for s in sp['segs']); assert abs(tot - 15) < 1e-6, (name, tot)
     os.makedirs(f'{S}/specs', exist_ok=True); os.makedirs(f'{S}/out2', exist_ok=True)
     json.dump(sp, open(f'{S}/specs/{name}.json', 'w'), ensure_ascii=False, indent=1)
+
+
+FMT_D = dict(sat=0.9, warm=0.025, contrast=1.02, lift=0.03, vign=0.18, grain=0.014, top=0.40)
+
+
+def opcao_d(nome, p, segs, narr, narr_at=0.3, bed=None, tempo=1.0, cuts=(0, 3.2, 9.4, 12.0, 15)):
+    """"Direto ao ponto" (substitui a Revista, 2026-10-18: persuasivo e fácil para o público leigo).
+    p: eyebrow, gancho=[linhas], itens=[3 textos], onde=[linhas], accent. Barrinhas tipo Stories no topo;
+    frase simples -> "Olha o que ela tem:" + lista com ✓ -> onde usar -> "Toque no carrinho e veja o preço"."""
+    a, b, c, d, e = cuts
+    big = dict(base='dms', it='dms_it', align='center', x='c', spacing=1.04)
+    tx = [dict(kind='bars', cuts=list(cuts), t0=0, t1=15, y=96, out=False),
+          _txt('eyebrow', p['eyebrow'], a, b, 150, base='dm', size=30, track=7, align='center', x='c'),
+          _txt('title', p['gancho'], a, b, 206, size=108, **big),
+          _txt('title', ['Olha o que', '*ela tem:*'], b, c, 150, size=100, **big)]
+    for i, item in enumerate(p['itens']):
+        tx.append(dict(kind='check', text=item, t0=b + 1.2 + i * 1.5, t1=c, y=392 + i * 124, x=90, size=58,
+                       fill=p['accent']))
+    tx += [_txt('title', p['onde'], c, d, 206, size=104, **big),
+           _txt('title', ['Toque no carrinho', '*e veja o preço.*'], d, e, 170, size=96, out=False, **big),
+           dict(kind='button', text='Ver o preço', t0=d + 0.4, t1=e, y=400, x='c', w=600, h=112, size=44,
+                fill=p['accent'], text_color=(255, 255, 255), anim='rise', out=False)]
+    save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_D, accent=p['accent'], segs=segs, texts=tx)
