@@ -1,5 +1,6 @@
 # Lições (mais novas em cima)
 
+- 2026-10-18 · Poltrona (sessão de edição): edição sem a fábrica carregada (stickers, emoji) e recolor por máscara HSV (pixels bugados) reprovados → regras 9 e 10. Vídeos Veo com mão inventada: Camera_filming_green_lounge_chair ~0,75-5,75 s; Camera_filming_green_suede_chair ~0,75-3,5 s (limpo 3,75-6 s).
 - 2026-10-18 · API Gemini grátis: imagem e Veo com cota 0; texto, visão e voz grátis (agentes/prompts_da_dona.md). Whisper não baixa modelo sem `*.hf.co` na rede (us.aws.cdn.hf.co, cas-server.xethub.hf.co).
 - 2026-10-18 · Referências q09-q16: as cenas eram foto do anúncio com movimento por código (mover_foto.py), por isso quase paradas (movimento 0,5-1,6) e a capa sem gancho → criado `video-teste/auditar_video.py` (movimento por cena, gancho no 1º quadro, fusão fantasma, áudio, duração), ligado ao `fazer_lista.py`.
 - 2026-10-16 · Lista1015 (revisão da dona): cenas de IA pagas trocadas por foto real em 15 produtos (desmonte de prateleira, planta andando, celular, parafusos inventados, letras tortas, pegador do lado errado) → o roteiro decide CÓDIGO ou IA por cena antes de gastar (regras_de_erros.md, seção 0).
