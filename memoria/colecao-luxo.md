@@ -19,6 +19,14 @@ A dona pediu (2026-10-18): "conceito zara home, regras de design que já aprende
 - Narração: gemini-2.5-flash-preview-tts só dá 10 por dia grátis; usar `MODELO=gemini-3.1-flash-tts-preview PREFIXO=1` (lê só o texto, testado por transcrição).
 - Sempre gerar prévias paradas (`PREVIEW=0,6,13`) e conferir texto cortado e texto sobre o produto antes de renderizar.
 
+**DECISÃO FINAL DOS 3 MODELOS (a dona, 2026-10-18 05:20): "já temos os 3 modelos de layout decididos".**
+1. A = "Um dia com ela" — `opcao_a` (specs/novos.py). Produto sem manhã/tarde/noite: os 3 momentos viram palavras curtas do uso real (Café · Almoço · Jantar; Ao sair · Ao chegar · Antes de dormir; Desenho · Leitura · Soneca).
+2. B = "Faixas moderno" — `opcao_b_faixas` (exemplo 1 dos JPEGs: "ficou perfeita, usaremos como padrão").
+3. C = "Direto ao ponto" na versão ANTIGA — `opcao_d` sem `fonte` (DM Serif Display branca, botão "Ver o preço" como antes). Só muda: nunca citar qualidade inexistente; na dúvida, simplificar.
+PDF para mostrar a alguém: referencias/modelos-layout/Modelos_de_layout_Fabrica_UGC.pdf (gerador: video-teste/luxo/gerar_pdf_modelos.py).
+Produto alto e central (cabideiro, luminária): `shiftx` ~300 empurra o vídeo para a direita e o texto vai à esquerda (`esq=True`, `escala`, `item_size` no C). Sempre conferir prévias.
+Voz: Kore (a "primeira de todas", preferida). Grátis = 10 narrações/dia POR modelo de voz (2.5-flash-preview, 3.1-flash-preview, 3.8-flash, 3.8-flash-lite): alternar modelos com a mesma voz Kore. 3.8 lê instrução em voz alta: mandar só o texto (tts_lux.py sem PREFIXO/ESTILO). Amostras "sedutoras" (Aoede, Leda, Despina, Vindemiatrix, Sulafat, Algieba) foram REPROVADAS. Trilha padrão: video-teste/luxo/trilha_piano.wav.
+
 **Ajustes da dona (2026-10-18, depois da 1ª entrega das 3 opções):**
 - Textos e escritas: "perfeitos". Layouts 2 e 3 ainda vão mudar; mostrar JPEG de exemplo antes de editar o vídeo.
 - Opção 2: o cartão com selo já é um dos modelos do Kevin; ela quer a OUTRA opção do modelo Kevin (letras grandes no topo ou faixas), modernizada.

@@ -244,13 +244,15 @@ def clock_img(txt, size):
 # ---------- vídeo ----------
 def read_seg(src, ss, n):
     raw = subprocess.run(['ffmpeg', '-v', 'error', '-ss', str(ss), '-i', SRC[src], '-frames:v', str(n),
-                          '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], capture_output=True, check=True).stdout
+                          '-vf', f'scale={SW}:{SH}', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'],  # qualquer resolução vira 720x1280
+                         capture_output=True, check=True).stdout
     fr = np.frombuffer(raw, np.uint8).reshape(-1, SH, SW, 3)
     while len(fr) < n:
         fr = np.concatenate([fr, fr[-1:]])
     return fr
 
 
+SHIFTX = spec.get('shiftx', 0)
 LIFT = spec.get('lift', 0)  # sobe o vídeo N px; a faixa de baixo vira o próprio vídeo desfocado (fica atrás do cartão)
 
 
@@ -258,6 +260,16 @@ def render_src(frame, z, cx, cy):
     w, h = SW / z, SH / z
     x0 = min(max(cx - w / 2, 0), SW - w); y0 = min(max(cy - h / 2, 0), SH - h)
     img = Image.fromarray(frame).resize((W, H), Image.LANCZOS, box=(x0, y0, x0 + w, y0 + h))
+    if SHIFTX:  # produto alto no meio: empurra o vídeo para o lado; a sobra vira a borda desfocada (parede)
+        out = Image.new('RGB', (W, H)); out.paste(img, (SHIFTX, 0))
+        faixa = abs(SHIFTX)
+        borda = img.crop((0, 0, 120, H) if SHIFTX > 0 else (W - 120, 0, W, H)).resize((faixa + 120, H)).filter(ImageFilter.GaussianBlur(30))
+        if SHIFTX > 0:
+            out.paste(borda.crop((0, 0, faixa, H)), (0, 0))
+            out.paste(borda.crop((faixa, 0, faixa + 120, H)), (faixa, 0), Image.linear_gradient('L').rotate(-90).resize((120, H)))
+        else:
+            out.paste(borda.crop((120, 0, faixa + 120, H)), (W - faixa, 0))
+        img = out
     if not LIFT:
         return img
     out = Image.new('RGB', (W, H))
@@ -329,7 +341,11 @@ def compose(base, t):
         img = el['img']
         if el['kind'] == 'clock':  # relógio que rola entre horários
             keys = el['keys']; txt = keys[0][1]
+            rola = all(len(k[1]) == 5 and k[1][2] == ':' for k in keys)  # horários rolam; palavras só trocam
             for (ta, sa), (tb, sb) in zip(keys, keys[1:]):
+                if not rola:
+                    if t >= tb: txt = sb
+                    continue
                 if t >= tb: txt = sb
                 elif t >= ta and t > tb - 0.6:
                     ha = int(sa[:2]) * 60; hb = int(sb[:2]) * 60
@@ -422,8 +438,8 @@ if enc:
 # ---------- áudio: narração + trilha (piano das cenas) ----------
 bed = spec['bed']
 inputs = ['-i', spec['out'] + '.video.mp4', '-i', spec['narr']]
-for b in bed:
-    inputs += ['-i', SRC[b]]
+for b in bed:  # cena do próprio produto (letra) ou arquivo de trilha (caminho)
+    inputs += ['-i', SRC.get(b, b)]
 fc = [f'[{i + 2}:a]aresample=48000,aformat=channel_layouts=stereo[b{i}]' for i in range(len(bed))]
 cur = 'b0'
 for i in range(1, len(bed)):

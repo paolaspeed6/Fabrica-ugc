@@ -1,0 +1,243 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/tts/c_t.wav",
+ "narr_at": 0.35,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "grade": {
+  "sat": 0.9,
+  "warm": 0.025,
+  "contrast": 1.02,
+  "lift": 0.03,
+  "vign": 0.18,
+  "grain": 0.014,
+  "top": 0.4
+ },
+ "accent": [
+  196,
+  132,
+  82
+ ],
+ "segs": [
+  {
+   "src": "C",
+   "ss": 2.6,
+   "dur": 2.5,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 2.0,
+   "z": [
+    1.0,
+    1.02
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 1.95,
+   "z": [
+    1.0,
+    1.02
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 6.0,
+   "dur": 1.85,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 1.3,
+   "dur": 6.7,
+   "z": [
+    1.05,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "bars",
+   "cuts": [
+    0,
+    2.5,
+    6.45,
+    8.3,
+    15
+   ],
+   "t0": 0,
+   "t1": 15,
+   "y": 96,
+   "out": false
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Para a sua entrada"
+   ],
+   "t0": 0,
+   "t1": 2.5,
+   "y": 150,
+   "base": "dm",
+   "size": 30,
+   "track": 7,
+   "align": "left",
+   "x": 84
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Falta *um lugar*",
+    "para os casacos."
+   ],
+   "t0": 0,
+   "t1": 2.5,
+   "y": 206,
+   "size": 79,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "left",
+   "x": 84,
+   "spacing": 1.04
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Olha o que",
+    "*ele tem:*"
+   ],
+   "t0": 2.5,
+   "t1": 6.45,
+   "y": 150,
+   "size": 74,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "left",
+   "x": 84,
+   "spacing": 1.04
+  },
+  {
+   "kind": "check",
+   "text": "Ganchos em vários níveis",
+   "t0": 3.45,
+   "t1": 6.45,
+   "y": 392,
+   "x": 90,
+   "size": 44,
+   "fill": [
+    196,
+    132,
+    82
+   ],
+   "base": "dm"
+  },
+  {
+   "kind": "check",
+   "text": "Madeira torneada",
+   "t0": 4.7,
+   "t1": 6.45,
+   "y": 516,
+   "x": 90,
+   "size": 44,
+   "fill": [
+    196,
+    132,
+    82
+   ],
+   "base": "dm"
+  },
+  {
+   "kind": "check",
+   "text": "Ocupa pouco espaço",
+   "t0": 5.6,
+   "t1": 6.45,
+   "y": 640,
+   "x": 90,
+   "size": 44,
+   "fill": [
+    196,
+    132,
+    82
+   ],
+   "base": "dm"
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Entrada, sala",
+    "*ou quarto.*"
+   ],
+   "t0": 6.45,
+   "t1": 8.3,
+   "y": 206,
+   "size": 76,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "left",
+   "x": 84,
+   "spacing": 1.04
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Toque no carrinho",
+    "*e veja o preço.*"
+   ],
+   "t0": 8.3,
+   "t1": 15,
+   "y": 170,
+   "size": 71,
+   "out": false,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "left",
+   "x": 84,
+   "spacing": 1.04
+  },
+  {
+   "kind": "button",
+   "text": "Ver o preço",
+   "t0": 8.700000000000001,
+   "t1": 15,
+   "y": 400,
+   "x": 84,
+   "w": 600,
+   "h": 112,
+   "size": 44,
+   "fill": [
+    196,
+    132,
+    82
+   ],
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "anim": "rise",
+   "out": false
+  }
+ ],
+ "shiftx": 310,
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/out2/p01_c_direto.mp4",
+ "dur": 15.0
+}

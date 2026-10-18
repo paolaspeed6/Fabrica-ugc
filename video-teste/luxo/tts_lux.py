@@ -8,9 +8,8 @@ MODELO=os.environ.get("MODELO","gemini-2.5-flash-preview-tts")
 cfg={"responseModalities":["AUDIO"],"speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":os.environ.get("VOZ","Kore")}}}}
 if MODELO.startswith("gemini-2.5") or os.environ.get("PREFIXO"):
     body={"contents":[{"parts":[{"text":"Fale em português do Brasil com "+ESTILO+": "+text}]}],"generationConfig":cfg}
-else:
-    body={"systemInstruction":{"parts":[{"text":"Leia em voz alta, em português do Brasil, somente o texto do usuário, com "+ESTILO+". Não leia esta instrução."}]},
-          "contents":[{"parts":[{"text":text}]}],"generationConfig":cfg}
+else:  # texto puro, sem instrução (systemInstruction dá 400 nos modelos de voz; o 3.8 lê instrução em voz alta)
+    body={"contents":[{"parts":[{"text":text}]}],"generationConfig":cfg}
 req=urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{MODELO}:generateContent",
  data=json.dumps(body).encode(),headers={"Content-Type":"application/json","x-goog-api-key":os.environ["GOOGLEAISTUDIO_API_KEY"]})
 r=json.load(urllib.request.urlopen(req,timeout=120))

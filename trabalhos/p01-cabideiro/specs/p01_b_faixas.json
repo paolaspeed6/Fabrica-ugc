@@ -1,0 +1,286 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/tts/b_t.wav",
+ "narr_at": 0.4,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "warm": 0.015,
+  "contrast": 1.04,
+  "lift": 0.02,
+  "vign": 0.1,
+  "grain": 0.01,
+  "top": 0.1
+ },
+ "lift": 0,
+ "accent": [
+  196,
+  132,
+  82
+ ],
+ "segs": [
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 5.0,
+   "z": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 4.0,
+   "dur": 3.3,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 3.0,
+   "dur": 3.5,
+   "z": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.5,
+   "dur": 3.2,
+   "z": [
+    1.0,
+    1.05
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Cabideiro de madeira"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "Chega de casaco",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "jogado na cadeira",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    196,
+    132,
+    82,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Casacos, bolsas e chapéus"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Cabideiro de madeira"
+   ],
+   "t0": 5.0,
+   "t1": 8.3,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "Ganchos em",
+   "t0": 5.0,
+   "t1": 8.3,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "vários níveis",
+   "t0": 5.12,
+   "t1": 8.3,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    196,
+    132,
+    82,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Madeira torneada"
+   ],
+   "t0": 5.3,
+   "t1": 8.3,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Cabideiro de madeira"
+   ],
+   "t0": 8.3,
+   "t1": 15,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "Entrada, sala",
+   "t0": 8.3,
+   "t1": 15,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "ou quarto",
+   "t0": 8.42,
+   "t1": 15,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    196,
+    132,
+    82,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": false
+  },
+  {
+   "kind": "button",
+   "text": "Toque no carrinho",
+   "t0": 8.700000000000001,
+   "t1": 15,
+   "y": 1604,
+   "x": 70,
+   "anim": "fade",
+   "out": false,
+   "style": "outline",
+   "icon": "cart",
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "fill": [
+    20,
+    18,
+    16,
+    70
+   ],
+   "lw": 2,
+   "base": "dm_md",
+   "size": 46,
+   "h": 110
+  }
+ ],
+ "shiftx": 310,
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p01-cabideiro/out2/p01_b_faixas.mp4",
+ "dur": 15.0
+}

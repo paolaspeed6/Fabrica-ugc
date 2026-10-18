@@ -87,21 +87,27 @@ def opcao_d(nome, p, segs, narr, narr_at=0.3, bed=None, tempo=1.0, cuts=(0, 3.2,
     else:
         big = dict(base='dms', it='dms_it', align='center', x='c', spacing=1.04)
         conv, tam = (lambda l: l), 1.0
+    lado = dict(align='center', x='c')
+    if p.get('esq'):  # produto alto deslocado para a direita (shiftx): texto alinhado à esquerda
+        big.update(align='left', x=84); lado = dict(align='left', x=84); tam *= p.get('escala', 0.86)
+    tem = p.get('tem', '*ela tem:*')
     tx = [dict(kind='bars', cuts=list(cuts), t0=0, t1=15, y=96, out=False),
-          _txt('eyebrow', p['eyebrow'], a, b, 150, base=(fonte + '_md') if fonte else 'dm', size=30, track=7, align='center', x='c'),
+          _txt('eyebrow', p['eyebrow'], a, b, 150, base=(fonte + '_md') if fonte else 'dm', size=30, track=7, **lado),
           _txt('title', conv(p['gancho']), a, b, 206, size=int(108 * tam), **big),
-          _txt('title', conv(['Olha o que', '*ela tem:*']), b, c, 150, size=int(100 * tam), **big)]
+          _txt('title', conv(['Olha o que', tem]), b, c, 150, size=int(100 * tam), **big)]
     for i, item in enumerate(p['itens']):
-        tx.append(dict(kind='check', text=item, t0=b + 1.2 + i * 1.5, t1=c, y=392 + i * 124, x=90, size=58,
+        ti = p['itens_t'][i] if p.get('itens_t') else b + 1.2 + i * 1.5  # entra junto com a voz
+        tx.append(dict(kind='check', text=item, t0=ti, t1=c, y=392 + i * 124, x=90, size=p.get('item_size', 58),
                        fill=p['accent'], base=(fonte + '_md') if fonte else 'dm'))
     tx += [_txt('title', conv(p['onde']), c, d, 206, size=int(104 * tam), **big),
            _txt('title', conv(['Toque no carrinho', '*e veja o preço.*']), d, e, 170, size=int(96 * tam), out=False, **big)]
     if fonte:
         tx.append(dict(kind='button', text='Ver o preço', t0=d + 0.4, t1=e, y=392, x='c', anim='fade', out=False, **CTA_MODERNO))
     else:
-        tx.append(dict(kind='button', text='Ver o preço', t0=d + 0.4, t1=e, y=400, x='c', w=600, h=112, size=44,
+        tx.append(dict(kind='button', text='Ver o preço', t0=d + 0.4, t1=e, y=400, x=lado['x'], w=600, h=112, size=44,
                        fill=p['accent'], text_color=(255, 255, 255), anim='rise', out=False))
-    save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_D, accent=p['accent'], segs=segs, texts=tx)
+    save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_D, accent=p['accent'], segs=segs, texts=tx,
+          **({'shiftx': p['shiftx']} if p.get('shiftx') else {}))
 
 
 def opcao_b_faixas(nome, p, segs, narr, narr_at=0.4, bed=None, cuts=(0, 5, 10, 15), tempo=1.0):
@@ -118,7 +124,8 @@ def opcao_b_faixas(nome, p, segs, narr, narr_at=0.4, bed=None, cuts=(0, 5, 10, 1
         if sub and not fim:
             tx.append(_txt('body', sub, a + (0 if i == 0 else 0.3), b, Y + 300, base='pop_r', it='pop_r', size=38, x=82))
     tx.append(dict(kind='button', text=p['cta'], t0=cuts[2] + 0.4, t1=15, y=Y + 304, x=70, anim='fade', out=False, **CTA_MODERNO))
-    save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_B, lift=300, accent=p['accent'], segs=segs, texts=tx)
+    save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_B, lift=p.get('lift', 300), accent=p['accent'], segs=segs,
+          texts=tx, **({'shiftx': p['shiftx']} if p.get('shiftx') else {}))
 
 
 def opcao_b_topo(nome, p, segs, narr, narr_at=0.4, bed=None, cuts=(0, 5, 10, 15), tempo=1.0):
@@ -135,3 +142,27 @@ def opcao_b_topo(nome, p, segs, narr, narr_at=0.4, bed=None, cuts=(0, 5, 10, 15)
     tx.append(dict(kind='button', text=p['cta'], t0=cuts[2] + 0.4, t1=15, y=440, x='c', anim='fade', out=False,
                    style='link', icon='cart', text_color=(255, 255, 255), base='dm_md', size=48, h=100, shadow=True))
     save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_B, accent=p['accent'], segs=segs, texts=tx)
+
+
+FMT_A = dict(sat=0.86, contrast=0.98, lift=0.035, vign=0.25, grain=0.022, top=0.30)
+
+
+def opcao_a(nome, p, segs, narr, narr_at=0.5, bed=None, tempo=1.0, cuts=(0, 2.9, 5.6, 7.9, 10.6)):
+    """Opção A padrão "Um dia com ele/ela" (aprovada 2026-10-18; molde = poltrona_lux3_umdia em lux.py).
+    p: eyebrow ('Das 8h às 22h'), gancho=[linhas com *itálico*], momentos=[(rótulo grande, legenda)]*3, cta.
+    Rótulo grande: horário 'HH:MM' (rola entre eles) OU palavra curta para produtos sem manhã/tarde/noite
+    ('Café', 'Almoço', 'Jantar'). Mergulho ao preto na virada de cada momento e luz que esquenta até a noite."""
+    a, b, c, d, e = cuts
+    ramp = [(0, -0.02, 1.03), (c - 0.2, -0.02, 1.03), (c + 0.2, 0.05, 1.0), (d - 0.2, 0.05, 1.0), (d + 0.2, 0.11, 0.86), (15, 0.11, 0.86)]
+    tx = [_txt('eyebrow', p['eyebrow'], a, b - 0.1, 250), _txt('title', p['gancho'], a, b - 0.1, 300),
+          dict(kind='clock', keys=[(b, p['momentos'][0][0]), (c, p['momentos'][1][0]), (d, p['momentos'][2][0])],
+               t0=b, t1=e - 0.1, y=230, size=200 if ':' in p['momentos'][0][0] else 150, anim='fade')]
+    for (rot, leg), t0, t1 in zip(p['momentos'], (b + 0.2, c + 0.1, d + 0.1), (c - 0.1, d - 0.1, e - 0.1)):
+        tx.append(_txt('eyebrow', leg, t0, t1, 470))
+    head = p.get('cta', 'Leve pra casa.')
+    lines = head if isinstance(head, list) else [head]
+    tx += [_txt('eyebrow', 'Disponível no link', e + 0.1, 15, 250, out=False),
+           _txt('title', lines, e + 0.35, 15, 300, out=False, anim='wipe'),
+           dict(kind='line', len=220, t0=e + 0.7, t1=15, y=300 + len(lines) * 122 + 30, anim='draw', out=False)]
+    save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], dips=[c, d],
+          grade=dict(FMT_A, warm_ramp=ramp), segs=segs, texts=tx, **({'shiftx': p['shiftx']} if p.get('shiftx') else {}))
