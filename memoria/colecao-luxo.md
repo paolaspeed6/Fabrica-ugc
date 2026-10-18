@@ -13,6 +13,12 @@ A dona pediu (2026-10-18): "conceito zara home, regras de design que já aprende
 - Opção B = shopee3 do Kevin (cartão escuro embaixo, gancho com palavra de destaque, CTA cheio) com toque modernizado. Substitui o Zara Home ("ficou boa, porém quero outra versão, também moderna").
 - Opção C = conceito NOVO a cada coleção, com outro layout, outras fontes e outro conceito, sofisticado e elegante. A Galeria foi DESCARTADA.
 
+**Como as opções B e C foram feitas (2026-10-18, `video-teste/luxo/specs/novos.py`, exemplo em `cadeira_poltrona.py`):**
+- B (shopee3 moderno): cartão de vidro fosco (o vídeo desfocado por trás, tinta escura 62%, borda branca fina, raio 44) fixo embaixo em y=1400, h=420; vídeo sobe 260 px (`lift`) para o produto ficar acima do cartão. Rótulo Poppins SemiBold em CAIXA ALTA na cor de destaque + contador "01 / 03"; título Poppins Bold 80 px com palavra entre [ ] na cor de destaque (tom do produto: areia/caramelo); subtítulo Poppins Regular; CTA = pílula cheia na cor de destaque com seta desenhada (sem emoji) que sobe na última cena. Cor limpa (sat 0,92, grão 0,01). Voz confiante e moderna.
+- C (Revista): "CASA" em Playfair espaçada no topo + linha fina + "EDIÇÃO Nº 07 · A PEÇA DO MÊS" em DM Sans; gancho em Playfair centralizado; detalhes como "01 / 02 / 03" em Playfair itálico grande + nota curta; CTA "Disponível no link / Leve essa peça *pra casa.*". Tudo no topo, centralizado (produto livre embaixo); fechar voltando ao plano da abertura. Cor matte quente com grão.
+- Narração: gemini-2.5-flash-preview-tts só dá 10 por dia grátis; usar `MODELO=gemini-3.1-flash-tts-preview PREFIXO=1` (lê só o texto, testado por transcrição).
+- Sempre gerar prévias paradas (`PREVIEW=0,6,13`) e conferir texto cortado e texto sobre o produto antes de renderizar.
+
 **Tipografia:** serifa Caladea Regular (título ~118 px, corpo ~88 px); destaque em *itálico* (Caladea Italic), NÃO em cor. Rótulo "eyebrow" em sans (Liberation Sans) CAIXA ALTA 34 px, espaçamento ~11 px. Texto branco com sombra suave (blur 14, alpha 120). Alinhado à esquerda em x=84, faixa do topo y≈200–620, nunca sobre o produto. Sem moldura, sem pílula, sem ícone de carrinho, sem emoji.
 
 **Animação:** linha fina de 3 px que se desenha (0,9 s); textos entram com fade + subida de 26 px (0,55 s) ou wipe da esquerda com borda suave (CTA). Gancho JÁ visível no 1º quadro (sem animação em t=0).

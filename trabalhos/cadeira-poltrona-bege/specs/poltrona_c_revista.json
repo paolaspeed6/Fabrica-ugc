@@ -1,0 +1,254 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/tts2/pc_t.wav",
+ "narr_at": 0.6,
+ "tempo": 1.0,
+ "bed": [
+  "D",
+  "F",
+  "D"
+ ],
+ "grade": {
+  "sat": 0.78,
+  "warm": 0.04,
+  "contrast": 0.96,
+  "lift": 0.045,
+  "vign": 0.22,
+  "grain": 0.024,
+  "top": 0.34
+ },
+ "segs": [
+  {
+   "src": "E",
+   "ss": 0.0,
+   "dur": 4.6,
+   "z": [
+    1.0,
+    1.07
+   ]
+  },
+  {
+   "src": "D",
+   "ss": 0.0,
+   "dur": 2.7,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "F",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "E",
+   "ss": 3.0,
+   "dur": 2.1,
+   "z": [
+    1.05,
+    1.1
+   ]
+  },
+  {
+   "src": "D",
+   "ss": 2.5,
+   "dur": 3.0,
+   "z": [
+    1.0,
+    1.06
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "title",
+   "lines": [
+    "CASA"
+   ],
+   "t0": 0,
+   "t1": 15,
+   "y": 70,
+   "base": "play",
+   "it": "play",
+   "size": 96,
+   "align": "center",
+   "x": "c",
+   "track": 38,
+   "out": false
+  },
+  {
+   "kind": "line",
+   "len": 150,
+   "t0": 0,
+   "t1": 15,
+   "y": 196,
+   "x": "c",
+   "out": false
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Edição nº 08 · A peça do mês"
+   ],
+   "t0": 0,
+   "t1": 15,
+   "y": 236,
+   "base": "dm",
+   "size": 26,
+   "track": 8,
+   "align": "center",
+   "x": "c",
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "O conforto",
+    "*virou tendência.*"
+   ],
+   "t0": 0,
+   "t1": 4.6,
+   "y": 330,
+   "base": "play",
+   "it": "play_it",
+   "size": 92,
+   "spacing": 1.08,
+   "align": "center",
+   "x": "c"
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "01"
+   ],
+   "t0": 4.7,
+   "t1": 7.3,
+   "y": 330,
+   "base": "play_it",
+   "it": "play_it",
+   "size": 120,
+   "align": "center",
+   "x": "c"
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Encosto *capitonê.*"
+   ],
+   "t0": 4.9,
+   "t1": 7.3,
+   "y": 486,
+   "base": "play",
+   "it": "play_it",
+   "size": 64,
+   "spacing": 1.12,
+   "align": "center",
+   "x": "c"
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "02"
+   ],
+   "t0": 7.3,
+   "t1": 9.9,
+   "y": 330,
+   "base": "play_it",
+   "it": "play_it",
+   "size": 120,
+   "align": "center",
+   "x": "c"
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Visual *aveludado.*"
+   ],
+   "t0": 7.5,
+   "t1": 9.9,
+   "y": 486,
+   "base": "play",
+   "it": "play_it",
+   "size": 64,
+   "spacing": 1.12,
+   "align": "center",
+   "x": "c"
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "03"
+   ],
+   "t0": 9.9,
+   "t1": 12.0,
+   "y": 330,
+   "base": "play_it",
+   "it": "play_it",
+   "size": 120,
+   "align": "center",
+   "x": "c"
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Pés de *linha clássica.*"
+   ],
+   "t0": 10.1,
+   "t1": 12.0,
+   "y": 486,
+   "base": "play",
+   "it": "play_it",
+   "size": 64,
+   "spacing": 1.12,
+   "align": "center",
+   "x": "c"
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 12.1,
+   "t1": 15,
+   "y": 340,
+   "base": "dm",
+   "size": 30,
+   "track": 9,
+   "align": "center",
+   "x": "c",
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Leve essa peça",
+    "*pra casa.*"
+   ],
+   "t0": 12.3,
+   "t1": 15,
+   "y": 396,
+   "base": "play",
+   "it": "play_it",
+   "size": 96,
+   "spacing": 1.06,
+   "align": "center",
+   "x": "c",
+   "anim": "wipe",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/out2/poltrona_c_revista.mp4",
+ "dur": 15.0
+}

@@ -1,0 +1,319 @@
+{
+ "narr": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/tts2/cb_t.wav",
+ "narr_at": 0.4,
+ "tempo": 1.0,
+ "bed": [
+  "D",
+  "F",
+  "D"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "warm": 0.015,
+  "contrast": 1.04,
+  "lift": 0.02,
+  "vign": 0.1,
+  "grain": 0.01,
+  "top": 0.1
+ },
+ "lift": 260,
+ "accent": [
+  201,
+  160,
+  112
+ ],
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 4.6,
+   "z": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 3.6,
+   "dur": 2.4,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 2.4,
+   "dur": 2.0,
+   "z": [
+    1.02,
+    1.08
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 3.0,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 3.0,
+   "z": [
+    1.0,
+    1.06
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "glass",
+   "y": 1400,
+   "h": 420,
+   "t0": 0,
+   "t1": 15,
+   "out": false
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Cadeira trançada"
+   ],
+   "t0": 0,
+   "t1": 4.6,
+   "y": 1430,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 6,
+   "color": [
+    201,
+    160,
+    112
+   ],
+   "shadow": false,
+   "x": 104,
+   "out": true
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "01 / 03"
+   ],
+   "t0": 0,
+   "t1": 4.6,
+   "y": 1430,
+   "base": "pop",
+   "size": 26,
+   "track": 4,
+   "color": [
+    226,
+    222,
+    216
+   ],
+   "shadow": false,
+   "x": 846,
+   "out": true
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "O [trançado] que a",
+    "varanda pedia"
+   ],
+   "t0": 0,
+   "t1": 4.6,
+   "y": 1480,
+   "base": "pop_b",
+   "it": "pop_b",
+   "size": 80,
+   "spacing": 1.1,
+   "shadow": false,
+   "x": 104,
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Encosto e assento trançados"
+   ],
+   "t0": 0,
+   "t1": 4.6,
+   "y": 1670,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "color": [
+    226,
+    222,
+    216
+   ],
+   "shadow": false,
+   "x": 104
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Cadeira trançada"
+   ],
+   "t0": 4.6,
+   "t1": 9.0,
+   "y": 1430,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 6,
+   "color": [
+    201,
+    160,
+    112
+   ],
+   "shadow": false,
+   "x": 104,
+   "out": true
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "02 / 03"
+   ],
+   "t0": 4.6,
+   "t1": 9.0,
+   "y": 1430,
+   "base": "pop",
+   "size": 26,
+   "track": 4,
+   "color": [
+    226,
+    222,
+    216
+   ],
+   "shadow": false,
+   "x": 846,
+   "out": true
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Textura [natural]",
+    "de pertinho"
+   ],
+   "t0": 4.75,
+   "t1": 9.0,
+   "y": 1480,
+   "base": "pop_b",
+   "it": "pop_b",
+   "size": 80,
+   "spacing": 1.1,
+   "shadow": false,
+   "x": 104,
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Linhas retas · visual leve"
+   ],
+   "t0": 4.8999999999999995,
+   "t1": 9.0,
+   "y": 1670,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "color": [
+    226,
+    222,
+    216
+   ],
+   "shadow": false,
+   "x": 104
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Cadeira trançada"
+   ],
+   "t0": 9.0,
+   "t1": 15,
+   "y": 1430,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 6,
+   "color": [
+    201,
+    160,
+    112
+   ],
+   "shadow": false,
+   "x": 104,
+   "out": false
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "03 / 03"
+   ],
+   "t0": 9.0,
+   "t1": 15,
+   "y": 1430,
+   "base": "pop",
+   "size": 26,
+   "track": 4,
+   "color": [
+    226,
+    222,
+    216
+   ],
+   "shadow": false,
+   "x": 846,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Combina com",
+    "[qualquer canto]"
+   ],
+   "t0": 9.15,
+   "t1": 15,
+   "y": 1480,
+   "base": "pop_b",
+   "it": "pop_b",
+   "size": 80,
+   "spacing": 1.1,
+   "shadow": false,
+   "x": 104,
+   "out": false
+  },
+  {
+   "kind": "button",
+   "text": "Toque no carrinho",
+   "t0": 9.35,
+   "t1": 15,
+   "y": 1678,
+   "x": 104,
+   "w": 872,
+   "h": 112,
+   "size": 42,
+   "fill": [
+    201,
+    160,
+    112
+   ],
+   "anim": "rise",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/cadeira-poltrona-bege/out2/cadeira_b_shopee3.mp4",
+ "dur": 15.0
+}

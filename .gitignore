@@ -3,3 +3,6 @@ __pycache__/
 video-teste/saida/
 *.zip
 .env
+*.video.mp4
+*.pcm
+*.mp4_t*.jpg

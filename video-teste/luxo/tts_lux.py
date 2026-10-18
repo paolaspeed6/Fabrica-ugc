@@ -1,10 +1,17 @@
-"""Narração luxo grátis (Gemini TTS, voz Kore). uso: python3 -I tts_lux.py "texto" saida.wav
+"""Narração luxo grátis (Gemini TTS, voz Kore). uso: [ESTILO="..."] python3 -I tts_lux.py "texto" saida.wav
 Rodar uma de cada vez: várias em paralelo deram HTTP 429."""
 import os,sys,json,base64,urllib.request,subprocess
 text,out=sys.argv[1],sys.argv[2]
-body={"contents":[{"parts":[{"text":"Fale em português do Brasil com voz calma, elegante e sofisticada, ritmo pausado, como comercial de marca de decoração de luxo: "+text}]}],
- "generationConfig":{"responseModalities":["AUDIO"],"speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":"Kore"}}}}}
-req=urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent",
+ESTILO=os.environ.get("ESTILO","voz calma, elegante e sofisticada, ritmo pausado, como comercial de marca de decoração de luxo")
+# 2.5 = só 10 grátis por dia (2026-10-18); os outros recebem o estilo como instrução de sistema (senão leem a instrução em voz alta)
+MODELO=os.environ.get("MODELO","gemini-2.5-flash-preview-tts")
+cfg={"responseModalities":["AUDIO"],"speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":{"voiceName":os.environ.get("VOZ","Kore")}}}}
+if MODELO.startswith("gemini-2.5") or os.environ.get("PREFIXO"):
+    body={"contents":[{"parts":[{"text":"Fale em português do Brasil com "+ESTILO+": "+text}]}],"generationConfig":cfg}
+else:
+    body={"systemInstruction":{"parts":[{"text":"Leia em voz alta, em português do Brasil, somente o texto do usuário, com "+ESTILO+". Não leia esta instrução."}]},
+          "contents":[{"parts":[{"text":text}]}],"generationConfig":cfg}
+req=urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{MODELO}:generateContent",
  data=json.dumps(body).encode(),headers={"Content-Type":"application/json","x-goog-api-key":os.environ["GOOGLEAISTUDIO_API_KEY"]})
 r=json.load(urllib.request.urlopen(req,timeout=120))
 pcm=base64.b64decode(r["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
