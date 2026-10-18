@@ -8,12 +8,12 @@ EXATAMENTE este layout, estas regras e este processo. Não invente outro visual 
 
 | Opção | Nome | Visual | Onde está o molde |
 |---|---|---|---|
-| A | **Um dia com ela** (modelo padrão) | Serifa Caladea branca à esquerda, destaque em *itálico*; rótulo pequeno em caixa alta espaçada; 3 momentos com horário grande que rola (08:00 → 15:00 → 22:00) ou palavra curta (Café · Almoço · Jantar; Desenho · Leitura · Soneca); mergulho rápido ao preto em cada virada; a luz esquenta do dia para a noite; CTA "Disponível no link / Leve pra casa." com linha fina | `opcao_a` em `video-teste/luxo/specs/novos.py` |
+| A | **Um dia com ela** (modelo padrão) | Serifa Caladea branca à esquerda, destaque em *itálico*; rótulo pequeno em caixa alta espaçada; 3 momentos com horário grande que rola (08:00 → 15:00 → 22:00) ou palavra curta (Café · Almoço · Jantar; Desenho · Leitura · Soneca). Peça de reposição/produto que não é de uso no dia (ex.: assento de reposição de cadeira): NADA de manhã/tarde/noite, use as etapas (Chegou · Abriu · Renovou / Antes · Troca · Depois); mergulho rápido ao preto em cada virada; a luz esquenta do dia para a noite; CTA "Disponível no link / Leve pra casa." com linha fina | `opcao_a` em `video-teste/luxo/specs/novos.py` |
 | B | **Faixas moderno** (modelo Kevin "faixas" modernizado) | Embaixo: rótulo Poppins SemiBold espaçado + 2 faixas inclinadas 2° (1ª quase preta com letra branca, 2ª na cor do produto com letra escura, Poppins Bold) + subtítulo Poppins Regular; vídeo sobe 300 px para o produto ficar acima das faixas; CTA final = contorno fino branco com carrinho desenhado em traço + "Toque no carrinho" (sem pílula colorida, sem emoji) | `opcao_b_faixas` |
 | C | **Direto ao ponto** (persuasivo, para o público leigo) | Barrinhas de progresso no topo (como Stories); DM Serif Display branca centralizada com *itálico*; gancho em frase simples → "Olha o que *ela tem:*" + 3 itens com ✓ desenhado num círculo na cor do produto → onde usar → "Toque no carrinho *e veja o preço.*" + botão "Ver o preço" | `opcao_d` (sem `fonte`) |
 
-Em TODOS: assinatura **"Aguiiar Lar"** em Playfair itálico pequeno e translúcido que passeia devagar pelo meio do quadro
-(não dá para cortar nem borrar um ponto fixo). Color grade suave com grão fino. Cortes secos (nunca fusão/dupla exposição).
+Em TODOS: assinatura **"Aguiiar Lar"** em Playfair itálico pequeno, branco translúcido, PARADA e centralizada no topo
+(y≈30, acima das barrinhas e dos textos) — a dona, 2026-10-18 (antes ela passeava pelo meio; trocado a pedido dela). Color grade suave com grão fino. Cortes secos (nunca fusão/dupla exposição).
 
 ## 2. Regras que nunca mudam (detalhe em `agentes/regras_de_erros.md`)
 1. **Produto inteiro e sem mão/pessoa no 1º quadro** (é a capa/thumb). Close só depois.

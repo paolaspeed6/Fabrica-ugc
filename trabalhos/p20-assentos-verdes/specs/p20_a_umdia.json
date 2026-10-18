@@ -1,0 +1,272 @@
+{
+ "narr": null,
+ "narr_at": 0.5,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "dips": [
+  5.6,
+  8.2
+ ],
+ "grade": {
+  "sat": 0.86,
+  "contrast": 0.98,
+  "lift": 0.035,
+  "vign": 0.25,
+  "grain": 0.022,
+  "top": 0.3,
+  "warm_ramp": [
+   [
+    0,
+    -0.02,
+    1.03
+   ],
+   [
+    5.3999999999999995,
+    -0.02,
+    1.03
+   ],
+   [
+    5.8,
+    0.05,
+    1.0
+   ],
+   [
+    7.999999999999999,
+    0.05,
+    1.0
+   ],
+   [
+    8.399999999999999,
+    0.11,
+    0.86
+   ],
+   [
+    15,
+    0.11,
+    0.86
+   ]
+  ]
+ },
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 0.6,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.1,
+   "dur": 1.8,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 5.5,
+   "dur": 0.6,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 5.5,
+   "dur": 1.3,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 5.8,
+   "dur": 1.3,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 5.7,
+   "dur": 1.3,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 6.6,
+   "dur": 1.3,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 6.0,
+   "dur": 1.3,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.3,
+   "dur": 1.3,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 6.0,
+   "dur": 1.4,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 6.2,
+   "dur": 1.4,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 6.5,
+   "dur": 1.4,
+   "z": [
+    1.04,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Do pacote à mesa"
+   ],
+   "t0": 0,
+   "t1": 2.9,
+   "y": 250
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Cadeira nova",
+    "*sem trocar tudo.*"
+   ],
+   "t0": 0,
+   "t1": 2.9,
+   "y": 300
+  },
+  {
+   "kind": "clock",
+   "keys": [
+    [
+     3.0,
+     "Chegou"
+    ],
+    [
+     5.6,
+     "Abriu"
+    ],
+    [
+     8.2,
+     "Renovou"
+    ]
+   ],
+   "t0": 3.0,
+   "t1": 10.700000000000001,
+   "y": 230,
+   "size": 150,
+   "anim": "fade"
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Na caixa"
+   ],
+   "t0": 3.2,
+   "t1": 5.5,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Pronto para encaixar"
+   ],
+   "t0": 5.699999999999999,
+   "t1": 8.1,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Cara de nova"
+   ],
+   "t0": 8.299999999999999,
+   "t1": 10.700000000000001,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 10.9,
+   "t1": 15,
+   "y": 250,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Leve pra casa."
+   ],
+   "t0": 11.15,
+   "t1": 15,
+   "y": 300,
+   "out": false,
+   "anim": "wipe"
+  },
+  {
+   "kind": "line",
+   "len": 220,
+   "t0": 11.5,
+   "t1": 15,
+   "y": 452,
+   "anim": "draw",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/out2/p20_a_umdia.mp4",
+ "dur": 15.0
+}

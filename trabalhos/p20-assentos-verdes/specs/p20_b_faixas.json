@@ -1,0 +1,330 @@
+{
+ "narr": null,
+ "narr_at": 0.4,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "warm": 0.015,
+  "contrast": 1.04,
+  "lift": 0.02,
+  "vign": 0.1,
+  "grain": 0.01,
+  "top": 0.1
+ },
+ "lift": 300,
+ "accent": [
+  132,
+  168,
+  128
+ ],
+ "segs": [
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 1.95,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 5.5,
+   "dur": 1.5,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 6.4,
+   "dur": 1.55,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 5.8,
+   "dur": 1.6,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 5.7,
+   "dur": 1.7,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 6.25,
+   "dur": 1.7,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 5.6,
+   "dur": 1.7,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.2,
+   "dur": 1.7,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 6.2,
+   "dur": 1.6,
+   "z": [
+    1.04,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Assento de cadeira"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "Renove suas",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "cadeiras",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    132,
+    168,
+    128,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Troque só o assento"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Assento de cadeira"
+   ],
+   "t0": 5.0,
+   "t1": 10.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "Encosto vazado",
+   "t0": 5.0,
+   "t1": 10.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "e almofada",
+   "t0": 5.12,
+   "t1": 10.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    132,
+    168,
+    128,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Verde elegante"
+   ],
+   "t0": 5.3,
+   "t1": 10.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Assento de cadeira"
+   ],
+   "t0": 10.0,
+   "t1": 15,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "Jantar, cozinha",
+   "t0": 10.0,
+   "t1": 15,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "ou varanda",
+   "t0": 10.12,
+   "t1": 15,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    132,
+    168,
+    128,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": false
+  },
+  {
+   "kind": "button",
+   "text": "Toque no carrinho",
+   "t0": 10.4,
+   "t1": 15,
+   "y": 1604,
+   "x": 70,
+   "anim": "fade",
+   "out": false,
+   "style": "outline",
+   "icon": "cart",
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "fill": [
+    20,
+    18,
+    16,
+    70
+   ],
+   "lw": 2,
+   "base": "dm_md",
+   "size": 46,
+   "h": 110
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p20-assentos-verdes/out2/p20_b_faixas.mp4",
+ "dur": 15.0
+}

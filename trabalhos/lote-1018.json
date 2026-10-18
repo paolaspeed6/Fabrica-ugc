@@ -1,20 +1,77 @@
-{"titulo": "Lote de 10 produtos", "produtos": [
- {"id": "p01", "slug": "cabideiro", "nome": "Cabideiro de madeira",
-  "legenda": "Cabideiro de madeira torneada com ganchos em vários níveis.\n#cabideiro #halldeentrada #organizacaodecasa #decoracao"},
- {"id": "p03", "slug": "poltrona-puff", "nome": "Poltrona puff terracota",
-  "legenda": "Poltrona puff terracota: assento fofinho e braços que abraçam.\n#poltronapuff #cantinhodeleitura #salaaconchegante #decoracao"},
- {"id": "p04", "slug": "piano-digital", "nome": "Piano digital com móvel de madeira",
-  "legenda": "Piano digital com móvel de madeira e pedaleira inclusa.\n#pianodigital #musicaemcasa #decoracaodesala #estudiodemusica"},
- {"id": "p05", "slug": "banco-ripado", "nome": "Banco estofado ripado",
-  "legenda": "Banco estofado ripado com base em metal, lindo aos pés da cama.\n#peseira #bancoestofado #quartodecorado #halldeentrada"},
- {"id": "p06", "slug": "poltrona-cinza", "nome": "Poltrona cinza com base dourada",
-  "legenda": "Poltrona com almofadas capitonê e base dourada.\n#poltrona #saladeestar #decoracaoelegante #cantinhodeleitura"},
- {"id": "p07", "slug": "cadeira-caramelo", "nome": "Cadeira caramelo com base dourada",
-  "legenda": "Cadeira com encosto que abraça e base dourada.\n#cadeiradecorativa #penteadeira #decoracaoelegante #quartodecorado"},
- {"id": "p08", "slug": "sofa-infantil", "nome": "Sofá infantil rosa",
-  "legenda": "Sofá infantil rosa do tamanho da criança, com visual aveludado.\n#sofainfantil #quartoinfantil #brinquedoteca #decoracaoinfantil"},
- {"id": "p09", "slug": "luminaria-arco", "nome": "Luminária de chão em arco",
-  "legenda": "Luminária de chão com braço em arco e luz aconchegante.\n#luminariadechao #salaaconchegante #iluminacao #cantinhodeleitura"},
- {"id": "p10", "slug": "mesa-redonda", "nome": "Mesa redonda com pés de madeira",
-  "legenda": "Mesa redonda compacta com pés de madeira e visual moderno.\n#mesaredonda #cozinhapequena #homeoffice #decoracaomoderna"}
-]}
+{
+ "titulo": "Lote de 10 produtos",
+ "produtos": [
+  {
+   "id": "p01",
+   "slug": "cabideiro",
+   "nome": "Cabideiro de madeira",
+   "legenda": "Cabideiro de madeira torneada com ganchos em vários níveis.\n#cabideiro #halldeentrada #organizacaodecasa #decoracao"
+  },
+  {
+   "id": "p03",
+   "slug": "poltrona-puff",
+   "nome": "Poltrona puff terracota",
+   "legenda": "Poltrona puff terracota: assento fofinho e braços que abraçam.\n#poltronapuff #cantinhodeleitura #salaaconchegante #decoracao"
+  },
+  {
+   "id": "p04",
+   "slug": "piano-digital",
+   "nome": "Piano digital com móvel de madeira",
+   "legenda": "Piano digital com móvel de madeira e pedaleira inclusa.\n#pianodigital #musicaemcasa #decoracaodesala #estudiodemusica"
+  },
+  {
+   "id": "p05",
+   "slug": "banco-ripado",
+   "nome": "Banco estofado ripado",
+   "legenda": "Banco estofado ripado com base em metal, lindo aos pés da cama.\n#peseira #bancoestofado #quartodecorado #halldeentrada"
+  },
+  {
+   "id": "p06",
+   "slug": "poltrona-cinza",
+   "nome": "Poltrona cinza com base dourada",
+   "legenda": "Poltrona com almofadas capitonê e base dourada.\n#poltrona #saladeestar #decoracaoelegante #cantinhodeleitura"
+  },
+  {
+   "id": "p07",
+   "slug": "cadeira-caramelo",
+   "nome": "Cadeira caramelo com base dourada",
+   "legenda": "Cadeira com encosto que abraça e base dourada.\n#cadeiradecorativa #penteadeira #decoracaoelegante #quartodecorado"
+  },
+  {
+   "id": "p08",
+   "slug": "sofa-infantil",
+   "nome": "Sofá infantil rosa",
+   "legenda": "Sofá infantil rosa do tamanho da criança, com visual aveludado.\n#sofainfantil #quartoinfantil #brinquedoteca #decoracaoinfantil"
+  },
+  {
+   "id": "p09",
+   "slug": "luminaria-arco",
+   "nome": "Luminária de chão em arco",
+   "legenda": "Luminária de chão com braço em arco e luz aconchegante.\n#luminariadechao #salaaconchegante #iluminacao #cantinhodeleitura"
+  },
+  {
+   "id": "p10",
+   "slug": "mesa-redonda",
+   "nome": "Mesa redonda com pés de madeira",
+   "legenda": "Mesa redonda compacta com pés de madeira e visual moderno.\n#mesaredonda #cozinhapequena #homeoffice #decoracaomoderna"
+  },
+  {
+   "id": "p11",
+   "slug": "poltrona-preta",
+   "nome": "Poltrona preta com pés de madeira",
+   "legenda": "Poltrona preta com visual de couro, braços estofados e pés de madeira.\n#poltrona #salaelegante #escritorio #decoracaodeinteriores"
+  },
+  {
+   "id": "p12",
+   "slug": "conjunto-poltronas-puffs",
+   "nome": "Conjunto de poltronas e puffs",
+   "legenda": "Conjunto de poltronas e puffs em tecido claro com pés de madeira.\n#poltronas #puff #saladerecepcao #decoracao"
+  },
+  {
+   "id": "p02",
+   "slug": "banqueta",
+   "nome": "Banqueta de madeira",
+   "legenda": "Banqueta de madeira com apoio para os pés, na altura do balcão.\n#banqueta #cozinhaamericana #ilhadecozinha #decoracao"
+  }
+ ]
+}

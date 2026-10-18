@@ -402,20 +402,18 @@ _marca_cache = {}
 
 
 def marca_on(base, t):
-    """assinatura sofisticada pequena (Playfair itálico translúcido) que passeia devagar pelo meio do quadro,
-    num caminho contínuo: não dá para cortar nem borrar um ponto fixo (a dona, 2026-10-18)."""
+    """assinatura "Aguiiar Lar" fixa, centralizada no topo, igual em todos os vídeos (a dona, 2026-10-18):
+    Playfair itálico pequeno, branco translúcido com sombra suave, acima das barrinhas e dos textos."""
     if not MARCA:
         return
     if 'p' not in _marca_cache:
-        f = font('play_it', 40)
+        f = font('play_it', 36)
         tw = int(f.getlength(MARCA)) + 40
         pq = Image.new('RGBA', (tw, 70), (0, 0, 0, 0)); d = ImageDraw.Draw(pq)
-        d.text((20, 35), MARCA, font=f, fill=(255, 255, 255, 135), anchor='lm')
-        _marca_cache['p'] = soft_shadow(pq, 6, 60, 2)
+        d.text((20, 35), MARCA, font=f, fill=(255, 255, 255, 170), anchor='lm')
+        _marca_cache['p'] = soft_shadow(pq, 8, 90, 2)
     m = _marca_cache['p']
-    x0, x1 = spec.get('marca_x', (70, W - 70 - m.width)); y0, y1 = spec.get('marca_y', (700, 1240))
-    u = 0.5 + 0.5 * math.sin(t * 0.37 + 0.6); v = 0.5 + 0.5 * math.sin(t * 0.23 + 2.1)  # Lissajous lento
-    base.alpha_composite(m, (int(x0 + (x1 - x0) * u), int(y0 + (y1 - y0) * v)))
+    base.alpha_composite(m, ((W - m.width) // 2, spec.get('marca_y', 30)))
 
 
 def preview(tempos):

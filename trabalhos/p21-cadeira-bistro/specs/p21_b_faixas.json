@@ -1,0 +1,294 @@
+{
+ "narr": null,
+ "narr_at": 0.4,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "warm": 0.015,
+  "contrast": 1.04,
+  "lift": 0.02,
+  "vign": 0.1,
+  "grain": 0.01,
+  "top": 0.1
+ },
+ "lift": 300,
+ "accent": [
+  204,
+  164,
+  104
+ ],
+ "segs": [
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 5.0,
+   "z": [
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 1.5,
+   "dur": 2.5,
+   "z": [
+    1.04,
+    1.18
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 2.5,
+   "dur": 2.5,
+   "z": [
+    1.04,
+    1.18
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 3.325,
+   "dur": 2.5,
+   "z": [
+    1.16,
+    1.0
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 3.325,
+   "dur": 2.5,
+   "z": [
+    1.0,
+    1.12
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Cadeira de palhinha"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "Charme de",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "bistrô em casa",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    204,
+    164,
+    104,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Encosto oval em palhinha"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Cadeira de palhinha"
+   ],
+   "t0": 5.0,
+   "t1": 10.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "Madeira",
+   "t0": 5.0,
+   "t1": 10.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "preta",
+   "t0": 5.12,
+   "t1": 10.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    204,
+    164,
+    104,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Assento em palhinha"
+   ],
+   "t0": 5.3,
+   "t1": 10.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Cadeira de palhinha"
+   ],
+   "t0": 10.0,
+   "t1": 15,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "Jantar, cozinha",
+   "t0": 10.0,
+   "t1": 15,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "ou varanda",
+   "t0": 10.12,
+   "t1": 15,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    204,
+    164,
+    104,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": false
+  },
+  {
+   "kind": "button",
+   "text": "Toque no carrinho",
+   "t0": 10.4,
+   "t1": 15,
+   "y": 1604,
+   "x": 70,
+   "anim": "fade",
+   "out": false,
+   "style": "outline",
+   "icon": "cart",
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "fill": [
+    20,
+    18,
+    16,
+    70
+   ],
+   "lw": 2,
+   "base": "dm_md",
+   "size": 46,
+   "h": 110
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p21-cadeira-bistro/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p21-cadeira-bistro/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p21-cadeira-bistro/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p21-cadeira-bistro/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p21-cadeira-bistro/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p21-cadeira-bistro/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p21-cadeira-bistro/out2/p21_b_faixas.mp4",
+ "dur": 15.0
+}
