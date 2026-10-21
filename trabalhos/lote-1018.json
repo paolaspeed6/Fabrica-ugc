@@ -132,6 +132,84 @@
    "slug": "banquetas-estofadas",
    "nome": "Banqueta estofada com base cromada",
    "legenda": "Banqueta estofada com base cromada e apoio para os pés.\n#banqueta #cozinhaamericana #ilhadecozinha #decoracao"
+  },
+  {
+   "id": "p24",
+   "slug": "motosserra",
+   "nome": "Motosserra Toyama",
+   "legenda": "Motosserra Toyama com sabre e corrente, para lenha, poda e sítio.\n#motosserra #toyama #sitio #ferramentas"
+  },
+  {
+   "id": "p25",
+   "slug": "toalheiro",
+   "nome": "Toalheiro elétrico",
+   "legenda": "Toalheiro elétrico de parede: toalha quentinha depois do banho.\n#toalheiro #banheiro #toalheiroeletrico #casa"
+  },
+  {
+   "id": "p26",
+   "slug": "chinelo",
+   "nome": "Chinelo com tira transparente",
+   "legenda": "Chinelo com tira transparente em branco, preto e rosa.\n#chinelo #verao #piscina #moda"
+  },
+  {
+   "id": "p27",
+   "slug": "lavadora",
+   "nome": "Lavadora de alta pressão Eletroplas",
+   "legenda": "Lavadora de alta pressão Eletroplas com carrinho e mangueira no suporte.\n#lavadora #altapressao #limpeza #garagem"
+  },
+  {
+   "id": "p28",
+   "slug": "cortador-piso",
+   "nome": "Cortador de piso",
+   "legenda": "Cortador de piso com guia longa e base larga para obra e reforma.\n#cortadordepiso #obra #reforma #ferramentas"
+  },
+  {
+   "id": "p29",
+   "slug": "cortador-grama",
+   "nome": "Cortador de grama Tramontina",
+   "legenda": "Cortador de grama Tramontina com quatro rodas para o seu jardim.\n#cortadordegrama #tramontina #jardim #quintal"
+  },
+  {
+   "id": "p30",
+   "slug": "espreguicadeira",
+   "nome": "Espreguiçadeira",
+   "legenda": "Espreguiçadeira com tela clara e estrutura preta: clima de hotel em casa.\n#espreguicadeira #piscina #areaexterna #varanda"
+  },
+  {
+   "id": "p31",
+   "slug": "dvr-agl",
+   "nome": "Gravador de vídeo AGL",
+   "legenda": "Gravador de vídeo AGL para ver as câmeras da casa ou da loja no monitor.\n#seguranca #cameras #dvr #agl"
+  },
+  {
+   "id": "p32",
+   "slug": "microfone",
+   "nome": "Kit microfone sem fio",
+   "legenda": "Kit com 2 microfones sem fio e receptor para festa, igreja e estúdio.\n#microfonesemfio #karaoke #louvor #som"
+  },
+  {
+   "id": "p33",
+   "slug": "ventilador",
+   "nome": "Ventilador",
+   "legenda": "Ventilador com grade de proteção e hélice larga para galpão e oficina.\n#ventilador #calor #oficina #galpao"
+  },
+  {
+   "id": "p34",
+   "slug": "kit-ferramentas",
+   "nome": "Kit esmerilhadeira e chave de impacto",
+   "legenda": "Kit sem fio com esmerilhadeira, chave de impacto, baterias e maleta.\n#ferramentas #esmerilhadeira #chavedeimpacto #oficina"
+  },
+  {
+   "id": "p35",
+   "slug": "manifold",
+   "nome": "Manifold digital",
+   "legenda": "Manifold digital com display e mangueiras para ar-condicionado.\n#manifold #refrigeracao #arcondicionado #tecnico"
+  },
+  {
+   "id": "p36",
+   "slug": "perfurador-solo",
+   "nome": "Perfurador de solo",
+   "legenda": "Perfurador de solo com broca em espiral para cerca e plantio.\n#perfuradordesolo #sitio #cerca #plantio"
   }
  ]
 }

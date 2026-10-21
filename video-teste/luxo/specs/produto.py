@@ -13,7 +13,7 @@ cfg = dict(
 )
 Regras: produto inteiro e sem mão no 1º quadro (regra 13); cada opção abre com um take diferente (regra 12);
 itens só com qualidades reais (regra 11)."""
-import os, subprocess
+import os, json, subprocess
 import numpy as np
 from novos import *
 
@@ -66,6 +66,18 @@ MUSICA = os.environ.get('MUSICA', TRILHA)  # música calma de fundo quando não 
 COM_VOZ = os.environ.get('COM_VOZ') == '1'  # a dona, 2026-10-18: SEM voz por enquanto (a Kokoro soou estrangeira); só música
 
 
+NATURAL = os.environ.get('ESTILO', 'natural') == 'natural'  # a dona, 2026-10-21: sem filtro + transições
+
+
+def _natural(nome, cuts):
+    """estilo 2026-10-21: sem filtro (resolução cheia), sem mergulho ao preto, transição whip/zoom em cada virada."""
+    if not NATURAL: return
+    f = f'{S}/specs/{nome}.json'; sp = json.load(open(f))
+    sp['natural'] = 1; sp.pop('dips', None)
+    sp['trans'] = [[c, ('whip', 'zoom')[i % 2]] for i, c in enumerate(cuts[1:]) if 0 < c < 15]
+    json.dump(sp, open(f, 'w'), ensure_ascii=False, indent=1)
+
+
 def sem_voz(cfg):
     """3 vídeos só com música: textos em ritmo fixo e calmo (sem narração)."""
     pid = cfg['id']
@@ -74,14 +86,17 @@ def sem_voz(cfg):
     cuts = (0, 3.0, 5.6, 8.2, 10.8)
     opcao_a(f'{pid}_a_umdia', dict(eyebrow=A['eyebrow'], gancho=A['gancho'], momentos=A['momentos'], **comum),
             _segs(cuts + (15,), cfg['tomadas']['a'], cfg['clips']), None, bed=[MUSICA], cuts=cuts)
+    _natural(f'{pid}_a_umdia', cuts)
     cuts = (0, 5.0, 10.0, 15)
     opcao_b_faixas(f'{pid}_b_faixas', dict(kicker=B['kicker'], cenas=B['cenas'], cta='Toque no carrinho', lift=cfg.get('lift', 300), **comum),
                    _segs(cuts, cfg['tomadas']['b'], cfg['clips']), None, bed=[MUSICA], cuts=cuts)
+    _natural(f'{pid}_b_faixas', cuts)
     cuts = (0, 3.2, 9.0, 11.6, 15)
     opcao_d(f'{pid}_c_direto', dict(eyebrow=C['eyebrow'], gancho=C['gancho'], itens=C['itens'], onde=C['onde'],
             tem=cfg.get('tem', '*ela tem:*'), itens_t=[4.3, 5.9, 7.5], esq=cfg.get('esq', False),
             **({'escala': cfg['escala'], 'item_size': cfg['item_size']} if cfg.get('esq') else {}), **comum),
             _segs(cuts, cfg['tomadas']['c'], cfg['clips']), None, bed=[MUSICA], cuts=cuts)
+    _natural(f'{pid}_c_direto', cuts)
     return [f'{pid}_a_umdia', f'{pid}_b_faixas', f'{pid}_c_direto']
 
 

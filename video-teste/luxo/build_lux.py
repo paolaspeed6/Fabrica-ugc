@@ -292,6 +292,7 @@ yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
 VIG = 1 - G.get('vign', 0.15) * np.clip(((xx - W / 2) / (W * 0.62)) ** 2 + ((yy - H * 0.55) / (H * 0.62)) ** 2, 0, 1.6)
 TOPG = 1 - G.get('top', 0.28) * np.clip(1 - yy / 900, 0, 1) ** 1.5  # escurece o topo p/ o texto
 SHADE = (VIG * TOPG)[..., None]
+TOPN = 1 - max(G.get('top', 0.28), 0.42) * np.clip(1 - yy / 1000, 0, 1) ** 1.4  # natural: sombra de leitura no topo
 rng = np.random.default_rng(7)
 
 
@@ -336,9 +337,10 @@ def trans_fx(img, t):
 def grade(img, t):
     img = trans_fx(img, t)
     if NATURAL:  # sem filtro: só os mergulhos ao preto, se houver
+        a = np.asarray(img, np.float32) * TOPN[..., None]  # só uma sombra suave no topo p/ ler o texto
         dd = [abs(t - dt) for dt in spec.get('dips', []) if abs(t - dt) < 0.17]
-        if not dd: return img
-        return Image.fromarray((np.asarray(img, np.float32) * (min(dd) / 0.17) ** 1.2).astype(np.uint8))
+        if dd: a = a * (min(dd) / 0.17) ** 1.2
+        return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
     a = np.asarray(img, np.float32) / 255
     warm, expo = warm_at(t)
     lum = (a * [0.2126, 0.7152, 0.0722]).sum(-1, keepdims=True)
