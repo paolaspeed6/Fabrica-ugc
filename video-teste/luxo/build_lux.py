@@ -25,6 +25,11 @@ FONTS = {
     'play': FD + 'PlayfairDisplay.ttf', 'play_it': FD + 'PlayfairDisplay-Italic.ttf', 'dm': FD + 'DMSans.ttf',
 }
 spec = json.load(open(sys.argv[1]))
+# modo natural (a dona, 2026-10-21): sem filtro/grão/vinheta, take lido em resolução cheia, bitrate alto,
+# transições profissionais nos cortes (spec['trans'] = [[t, 'whip'|'zoom'|'whipv'], ...])
+NATURAL = bool(spec.get('natural'))
+RS = 1.5 if NATURAL else 1.0  # leitura em 1080x1920; coordenadas continuam no espaço 720x1280
+VBR = ['-b:v', '14M', '-maxrate', '18M', '-bufsize', '24M'] if NATURAL else ['-b:v', '5M', '-maxrate', '6.5M', '-bufsize', '9M']
 SRC = spec['src']
 INK = tuple(spec.get('ink', (255, 255, 255)))
 ACC = tuple(spec.get('accent', (214, 168, 120)))  # cor de destaque das palavras entre [ ]
@@ -244,9 +249,9 @@ def clock_img(txt, size):
 # ---------- vídeo ----------
 def read_seg(src, ss, n):
     raw = subprocess.run(['ffmpeg', '-v', 'error', '-ss', str(ss), '-i', SRC[src], '-frames:v', str(n),
-                          '-vf', f'scale={SW}:{SH}', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'],  # qualquer resolução vira 720x1280
+                          '-vf', f'scale={int(SW*RS)}:{int(SH*RS)}:flags=lanczos', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'],  # qualquer resolução vira 720x1280
                          capture_output=True, check=True).stdout
-    fr = np.frombuffer(raw, np.uint8).reshape(-1, SH, SW, 3)
+    fr = np.frombuffer(raw, np.uint8).reshape(-1, int(SH*RS), int(SW*RS), 3)
     while len(fr) < n:
         fr = np.concatenate([fr, fr[-1:]])
     return fr
@@ -259,7 +264,7 @@ LIFT = spec.get('lift', 0)  # sobe o vídeo N px; a faixa de baixo vira o própr
 def render_src(frame, z, cx, cy, sx=None):
     w, h = SW / z, SH / z
     x0 = min(max(cx - w / 2, 0), SW - w); y0 = min(max(cy - h / 2, 0), SH - h)
-    img = Image.fromarray(frame).resize((W, H), Image.LANCZOS, box=(x0, y0, x0 + w, y0 + h))
+    img = Image.fromarray(frame).resize((W, H), Image.LANCZOS, box=(x0 * RS, y0 * RS, (x0 + w) * RS, (y0 + h) * RS))
     SHIFTX = globals()['SHIFTX'] if sx is None else sx
     if SHIFTX:  # produto alto no meio: empurra o vídeo para o lado; a sobra vira a borda desfocada (parede)
         out = Image.new('RGB', (W, H)); out.paste(img, (SHIFTX, 0))
@@ -300,7 +305,40 @@ def warm_at(t):
     return ramp[-1][1], ramp[-1][2]
 
 
+def trans_fx(img, t):
+    """transição no corte: chicote (whip) com borrão de movimento ou zoom punch; o vídeo de saída sai, o de entrada chega."""
+    for tc, kind in spec.get('trans', []):
+        d = t - tc; R = 0.16
+        if abs(d) >= R: continue
+        u = 1 - abs(d) / R; u = u * u  # força máxima no corte
+        sgn = -1 if d < 0 else 1  # antes do corte sai, depois entra
+        a = np.asarray(img, np.float32)
+        if kind in ('whip', 'whipv'):
+            ax = 1 if kind == 'whip' else 0
+            off = int((W if ax else H) * 0.35 * u) * (1 if d < 0 else -1) * -1
+            k = max(1, int(70 * u))
+            acc = np.zeros_like(a)
+            for i in range(8):
+                acc += np.roll(a, off + int((i - 3.5) / 3.5 * k), axis=ax)
+            a = acc / 8
+        else:  # zoom punch: sai crescendo, entra encolhendo, com borrão radial
+            z = 1 + 0.22 * u
+            acc = np.zeros_like(a)
+            for i in range(6):
+                zi = z * (1 + 0.018 * u * i)
+                ww, hh = W / zi, H / zi
+                acc += np.asarray(img.resize((W, H), Image.BILINEAR, box=((W - ww) / 2, (H - hh) / 2, (W + ww) / 2, (H + hh) / 2)), np.float32)
+            a = acc / 6
+        img = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
+    return img
+
+
 def grade(img, t):
+    img = trans_fx(img, t)
+    if NATURAL:  # sem filtro: só os mergulhos ao preto, se houver
+        dd = [abs(t - dt) for dt in spec.get('dips', []) if abs(t - dt) < 0.17]
+        if not dd: return img
+        return Image.fromarray((np.asarray(img, np.float32) * (min(dd) / 0.17) ** 1.2).astype(np.uint8))
     a = np.asarray(img, np.float32) / 255
     warm, expo = warm_at(t)
     lum = (a * [0.2126, 0.7152, 0.0722]).sum(-1, keepdims=True)
@@ -437,7 +475,7 @@ if os.environ.get('PREVIEW'):
     preview([float(x) for x in os.environ['PREVIEW'].split(',')]); sys.exit(0)
 enc = None if AUDIO_ONLY else subprocess.Popen(
     ['ffmpeg', '-v', 'error', '-y', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
-     '-c:v', 'libx264', '-crf', '17', '-preset', 'medium', '-pix_fmt', 'yuv420p', spec['out'] + '.video.mp4'],
+     '-c:v', 'libx264', '-crf', '12' if NATURAL else '17', '-preset', 'medium', '-pix_fmt', 'yuv420p', spec['out'] + '.video.mp4'],
     stdin=subprocess.PIPE)
 t_cur = 0.0; fi = 0
 for sg in ([] if AUDIO_ONLY else segs):
@@ -461,7 +499,7 @@ if not spec.get('narr'):  # sem voz (a dona, 2026-10-18): só a música calma, m
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', spec['out'] + '.video.mp4', '-i', SRC.get(bed[0], bed[0]), '-filter_complex',
                     f'[1:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=in:d=0.8,afade=t=out:st={spec["dur"] - 1.8}:d=1.8,'
                     f'apad,atrim=0:{spec["dur"]},loudnorm=I=-16:TP=-1.5:LRA=11[aout]', '-map', '0:v', '-map', '[aout]',
-                    '-c:v', 'libx264', '-b:v', '5M', '-maxrate', '6.5M', '-bufsize', '9M', '-preset', 'slow', '-pix_fmt', 'yuv420p',
+                    '-c:v', 'libx264', *VBR, '-preset', 'slow', '-pix_fmt', 'yuv420p',
                     '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-t', str(spec['dur']), spec['out']], check=True)
     print('ok', spec['out']); sys.exit(0)
 inputs = ['-i', spec['out'] + '.video.mp4', '-i', spec['narr']]
@@ -477,6 +515,6 @@ fc.append(f'[1:a]aresample=48000,aformat=channel_layouts=stereo,atempo={spec.get
 fc.append(f'[amb][nar]amix=inputs=2:normalize=0:duration=longest,apad,atrim=0:{spec["dur"]},'
           'loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[aout]')
 subprocess.run(['ffmpeg', '-v', 'error', '-y'] + inputs + ['-filter_complex', ';'.join(fc), '-map', '0:v', '-map', '[aout]',
-                '-c:v', 'libx264', '-b:v', '5M', '-maxrate', '6.5M', '-bufsize', '9M', '-preset', 'slow', '-pix_fmt', 'yuv420p',
+                '-c:v', 'libx264', *VBR, '-preset', 'slow', '-pix_fmt', 'yuv420p',
                 '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-t', str(spec['dur']), spec['out']], check=True)
 print('ok', spec['out'])

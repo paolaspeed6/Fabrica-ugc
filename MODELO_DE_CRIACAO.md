@@ -3,6 +3,10 @@
 Este é o modelo que a dona aprovou depois de várias rodadas. Qualquer sessão (nova, ou de outra pessoa) deve seguir
 EXATAMENTE este layout, estas regras e este processo. Não invente outro visual sem pedido dela.
 
+> **Atualização 2026-10-21 (a dona):** nos próximos produtos, abertura SEM o gancho de horas (usar pergunta,
+> curiosidade, problema → solução, "achei"…), SEM filtro (`natural: 1` no spec: resolução cheia, sem grade/grão,
+> bitrate alto), com transições profissionais (`trans` whip/zoom) e só os melhores momentos dos takes.
+
 ## 1. O que sai para cada produto
 3 vídeos de 15 s, 9:16, 1080x1920, um em cada modelo de layout (PDF com imagens: `referencias/modelos-layout/Modelos_de_layout_Fabrica_UGC.pdf`):
 

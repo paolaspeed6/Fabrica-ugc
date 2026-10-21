@@ -59,3 +59,11 @@ Voz: Kore (a "primeira de todas", preferida). Grátis = 10 narrações/dia POR m
 **Auditoria (2026-10-18):** os 6 passam em movimento (3,3–13), gancho na capa (0,87–1,0), som e 15 s. O auditor foi corrigido: medir letras (não diferença de quadro) e aceitar mergulho ao preto.
 
 **Atenção:** os textos usam só o que se vê (trançado, capitonê, visual aveludado, pés escuros) porque a Shopee bloqueou a leitura dos anúncios; material e tecido não confirmados — confirmar com a dona antes de postar.
+
+## 2026-10-21 — novo estilo pedido pela dona (para os próximos produtos)
+- Gancho: NÃO usar o de "horas" (Das 8h às 21h / 08:00 → 15:00) como abertura; usar outro gancho atrativo
+  (pergunta, curiosidade, problema → solução, "achei", antes/depois), escolhido conforme o produto.
+- SEM filtro: o color grade/grão/vinheta estava tirando qualidade. Usar `natural: 1` no spec
+  (take lido em 1080x1920, sem grade, bitrate 14M).
+- Transições profissionais nos cortes: `trans: [[t, 'whip'|'whipv'|'zoom'], ...]` (chicote com borrão / zoom punch).
+- Usar só os melhores momentos dos takes; realista e atrativo. Ela manda os takes + link do produto (usar o anúncio como fonte das qualidades).
