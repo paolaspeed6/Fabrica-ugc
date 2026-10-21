@@ -43,7 +43,7 @@ P['p24'] = dict(id='p24', accent=(205, 45, 45), clips={'A': 6.0, 'B': 6.0, 'C': 
                  [('C', 3.3, 1.0, 1.03)], [('A', 4.2, 1.0, 1.02, {'d': 1.6}), ('B', 0.5, 1.03, 1.0)]]})
 
 # p25 toalheiro elétrico: a mão sentindo o calor faz parte (realista), nunca no 1º quadro
-P['p25'] = dict(id='p25', accent=(70, 115, 195), clips={'A': 6.0, 'B': 6.0, 'C': 6.0}, leve='o seu', tem='*ele tem:*',
+P['p25'] = dict(id='p25', accent=(70, 115, 195), scrim=0.62, clips={'A': 6.0, 'B': 6.0, 'C': 6.0}, leve='o seu', tem='*ele tem:*',
   a=dict(eyebrow='Banheiro de hotel', gancho=['Toalha quentinha', '*todo dia.*'],
          momentos=[('Banho', 'Toalha quentinha na hora'), ('Parede', 'Fica fixo e ocupa pouco'), ('Tomada', 'É só ligar e usar')]),
   b=dict(kicker='Toalheiro elétrico', cenas=[('Toalha', 'quentinha', 'Aquece as toalhas'),
