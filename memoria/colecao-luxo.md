@@ -67,3 +67,7 @@ Voz: Kore (a "primeira de todas", preferida). Grátis = 10 narrações/dia POR m
   (take lido em 1080x1920, sem grade, bitrate 14M).
 - Transições profissionais nos cortes: `trans: [[t, 'whip'|'whipv'|'zoom'], ...]` (chicote com borrão / zoom punch).
 - Usar só os melhores momentos dos takes; realista e atrativo. Ela manda os takes + link do produto (usar o anúncio como fonte das qualidades).
+- Lote 2026-10-21 (p24–p36, 13 produtos) entregue no estilo natural: páginas 4, 5 e 6. Correções feitas: logo
+  "TOYIAMA" (p24), legenda sumindo em banheiro branco (p25, scrim 0,62), rótulo trocado de cena (p26/p30),
+  títulos encostando na borda (p24, p27, p31, p32), cena parada em take Hailuo (p31 B), gancho que some no 1º
+  quadro quando a cena troca antes de 1,2 s (p34 B).
