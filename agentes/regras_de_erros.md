@@ -86,3 +86,9 @@ Em 57 cenas: a câmera avança rápido (em 3-4 s já corta o produto) e o LLM do
 3. `timeout -s KILL` por produto; conferir progresso a cada poucos minutos. 2 renders por vez (4 CPUs), cerca de 4 min por produto.
 4. Não usar `pkill -f`; `TETO_LOTE_USD=0` quando só renderizar.
 5. Página Vídeos Prontos: armazenamento de 1 GB; apagar as versões substituídas (com OK da dona) antes de subir as novas. O nome do arquivo baixado precisa terminar em `.mp4`.
+
+## Regra 14 — logo distorcido pela IA e mão escondida no meio do take (2026-10-21)
+Takes de IA (Veo/Hailuo) costumam deformar o LOGO no close (ex.: "TOYAIMA" em vez de "Toyama") e a mão pode
+continuar no quadro mais tempo do que a tira de 1 quadro/s mostra. Antes do roteiro: tira a cada 0,5 s do
+trecho de close, ler o logo; usar só trechos com logo certo e sem mão. Marca d'água "MiniMax/Hailuo" no canto
+de baixo: cortar (crop 714x1270 + escala) antes de editar.

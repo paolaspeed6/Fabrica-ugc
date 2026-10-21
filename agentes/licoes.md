@@ -20,3 +20,4 @@
 - 2026-10-15 · Tapete: letras da embalagem tortas → embalagem real composta por código (compor_embalagem.py) com rastreio de câmera.
 - 2026-10-15 · Capacete: giro inventou a frente → TRAVA_ANGULO; giro grande só com angulos_reais.
 - 2026-10-15 · Vários: texto cobrindo o produto → conferir o último quadro; subir/escala por versão.
+- 2026-10-21: motosserra p24 saiu com logo "TOYIAMA" (close de IA) e título encostando na borda; refeita. Ver regra 14.

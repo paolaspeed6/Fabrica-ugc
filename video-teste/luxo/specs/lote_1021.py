@@ -26,21 +26,21 @@ def duo(X, Y):
 
 
 P = {}
-# p24 motosserra Toyama: C e D têm mão 0,55–1,85 s; fim do D (≥5 s) mostra logo distorcido pela IA
+# p24 motosserra Toyama: C tem mão 0,55–2,5 s; D tem mão 0,55–2,5 e logo distorcido pela IA (TOYAIMA) a partir de 3 s -> D só 0–0,55
 P['p24'] = dict(id='p24', accent=(205, 45, 45), clips={'A': 6.0, 'B': 6.0, 'C': 6.0, 'D': 6.0}, leve='a sua',
   a=dict(eyebrow='Para quem tem sítio', gancho=['Lenha cortada', '*sem sofrimento.*'],
          momentos=[('Lenha', 'Para o fogão e a lareira'), ('Poda', 'Galhos grandes do quintal'), ('Sítio', 'O trabalho pesado do dia')]),
   b=dict(kicker='Motosserra Toyama', cenas=[('Chega de', 'machado', 'Corte de lenha e poda'),
                                            ('Sabre com', 'corrente', 'Empunhadura dupla'),
                                            ('Lenha, poda', 'e sítio', None)]),
-  c=dict(eyebrow='Motosserra Toyama', gancho=['Ainda cortando lenha', '*no machado?*'],
+  c=dict(eyebrow='Motosserra Toyama', gancho=['Cortando lenha', '*no machado?*'],
          itens=['Marca Toyama', 'Sabre com corrente', 'Empunhadura dupla'], onde=['Lenha, poda', '*e sítio.*']),
-  tomadas={'a': [[('A', 0.0, 1.0, 1.03)], [('C', 2.0, 1.0, 1.03)], [('B', 2.5, 1.0, 1.03)], [('D', 1.9, 1.0, 1.03)],
-                 [('A', 3.2, 1.0, 1.02, {'d': 2.2}), ('B', 0.3, 1.03, 1.0)]],
-           'b': [[('B', 0.0, 1.0, 1.03)], [('A', 1.5, 1.0, 1.03, {'d': 2.5}), ('C', 3.0, 1.0, 1.03)],
-                 [('D', 2.0, 1.0, 1.02, {'d': 2.0}), ('A', 0.3, 1.03, 1.0)]],
-           'c': [[('D', 0.0, 1.0, 1.02, {'d': 0.55}), ('C', 2.4, 1.0, 1.03)], [('B', 1.5, 1.0, 1.03, {'d': 3.0}), ('D', 1.9, 1.0, 1.03)],
-                 [('A', 1.0, 1.0, 1.03)], [('C', 3.8, 1.0, 1.02, {'d': 1.6}), ('B', 0.5, 1.03, 1.0)]]})
+  tomadas={'a': [[('A', 0.0, 1.0, 1.03)], [('B', 2.5, 1.0, 1.03)], [('C', 3.4, 1.0, 1.03)], [('A', 3.0, 1.0, 1.03)],
+                 [('B', 0.3, 1.0, 1.02, {'d': 2.2}), ('A', 1.0, 1.03, 1.0)]],
+           'b': [[('B', 0.0, 1.0, 1.03)], [('A', 1.5, 1.0, 1.03, {'d': 2.5}), ('C', 3.4, 1.0, 1.03)],
+                 [('A', 3.5, 1.0, 1.02, {'d': 2.0}), ('B', 3.0, 1.03, 1.0)]],
+           'c': [[('D', 0.0, 1.0, 1.02, {'d': 0.55}), ('C', 3.4, 1.0, 1.03)], [('B', 1.5, 1.0, 1.03, {'d': 3.0}), ('A', 2.5, 1.0, 1.03)],
+                 [('C', 3.3, 1.0, 1.03)], [('A', 4.2, 1.0, 1.02, {'d': 1.6}), ('B', 0.5, 1.03, 1.0)]]})
 
 # p25 toalheiro elétrico: a mão sentindo o calor faz parte (realista), nunca no 1º quadro
 P['p25'] = dict(id='p25', accent=(70, 115, 195), clips={'A': 6.0, 'B': 6.0, 'C': 6.0}, leve='o seu', tem='*ele tem:*',
