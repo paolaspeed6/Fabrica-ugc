@@ -126,15 +126,15 @@
    "keys": [
     [
      3.0,
-     "Piscina"
-    ],
-    [
-     5.6,
      "Casa"
     ],
     [
+     5.6,
+     "Piscina"
+    ],
+    [
      8.2,
-     "Passeio"
+     "Dia a dia"
     ]
    ],
    "t0": 3.0,
@@ -146,7 +146,7 @@
   {
    "kind": "eyebrow",
    "lines": [
-    "Para o dia de sol"
+    "Para ficar à vontade"
    ],
    "t0": 3.2,
    "t1": 5.5,
@@ -155,7 +155,7 @@
   {
    "kind": "eyebrow",
    "lines": [
-    "Para ficar à vontade"
+    "Para o dia de sol"
    ],
    "t0": 5.699999999999999,
    "t1": 8.1,

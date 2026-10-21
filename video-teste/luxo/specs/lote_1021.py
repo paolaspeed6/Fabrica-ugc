@@ -61,7 +61,7 @@ P['p25'] = dict(id='p25', accent=(70, 115, 195), scrim=0.62, clips={'A': 6.0, 'B
 # p26 chinelos (branco, preto, rosa) com tira transparente
 P['p26'] = dict(id='p26', accent=(225, 110, 170), clips={'A': 6.0, 'B': 6.0}, leve='o seu', tem='*ele tem:*',
   a=dict(eyebrow='Achado de verão', gancho=['Um par pra cada', '*momento.*'],
-         momentos=[('Piscina', 'Para o dia de sol'), ('Casa', 'Para ficar à vontade'), ('Passeio', 'Combina com tudo')]),
+         momentos=[('Casa', 'Para ficar à vontade'), ('Piscina', 'Para o dia de sol'), ('Dia a dia', 'Combina com tudo')]),
   b=dict(kicker='Chinelo tira transparente', cenas=[('Branco, preto', 'ou rosa', 'Escolha a sua cor'),
                                                    ('Tira', 'transparente', 'Visual delicado'),
                                                    ('Piscina, casa', 'e passeio', None)]),

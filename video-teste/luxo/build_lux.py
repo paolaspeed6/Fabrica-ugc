@@ -292,7 +292,7 @@ yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
 VIG = 1 - G.get('vign', 0.15) * np.clip(((xx - W / 2) / (W * 0.62)) ** 2 + ((yy - H * 0.55) / (H * 0.62)) ** 2, 0, 1.6)
 TOPG = 1 - G.get('top', 0.28) * np.clip(1 - yy / 900, 0, 1) ** 1.5  # escurece o topo p/ o texto
 SHADE = (VIG * TOPG)[..., None]
-TOPN = 1 - max(G.get('top', 0.28), 0.42) * np.clip(1 - yy / 1000, 0, 1) ** 1.4  # natural: sombra de leitura no topo
+TOPN = 1 - max(G.get('top', 0.28), 0.5) * np.clip(1 - yy / 1000, 0, 1) ** 1.4  # natural: sombra de leitura no topo
 rng = np.random.default_rng(7)
 
 
