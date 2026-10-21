@@ -29,7 +29,8 @@ spec = json.load(open(sys.argv[1]))
 # transições profissionais nos cortes (spec['trans'] = [[t, 'whip'|'zoom'|'whipv'], ...])
 NATURAL = bool(spec.get('natural'))
 RS = 1.5 if NATURAL else 1.0  # leitura em 1080x1920; coordenadas continuam no espaço 720x1280
-VBR = ['-b:v', '10M', '-maxrate', '14M', '-bufsize', '20M'] if NATURAL else ['-b:v', '5M', '-maxrate', '6.5M', '-bufsize', '9M']
+# página aceita até 16 MB por arquivo: 7,5 Mbps ≈ 14 MB em 15 s
+VBR = ['-b:v', '7.5M', '-maxrate', '10M', '-bufsize', '15M'] if NATURAL else ['-b:v', '5M', '-maxrate', '6.5M', '-bufsize', '9M']
 SRC = spec['src']
 INK = tuple(spec.get('ink', (255, 255, 255)))
 ACC = tuple(spec.get('accent', (214, 168, 120)))  # cor de destaque das palavras entre [ ]
