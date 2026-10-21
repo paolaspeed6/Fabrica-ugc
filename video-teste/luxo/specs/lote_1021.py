@@ -142,7 +142,7 @@ P['p32'] = dict(id='p32', accent=(210, 175, 90), clips={'A': 6.0, 'B': 6.0, 'C':
   b=dict(kicker='Microfone sem fio', cenas=[('Kit com', '2 microfones', 'E o receptor'),
                                            ('Sem', 'fio', 'Liberdade para cantar'),
                                            ('Festa, igreja', 'e estúdio', None)]),
-  c=dict(eyebrow='Microfone sem fio', gancho=['Cansou de tropeçar', '*no fio?*'],
+  c=dict(eyebrow='Microfone sem fio', gancho=['Tropeçando', '*no fio?*'],
          itens=['2 microfones', 'Receptor com antenas', 'Sem fio'], onde=['Festa, igreja', '*e estúdio.*']),
   tomadas={'a': [[('A', 0.0, 1.0, 1.03, {'d': 1.05}), ('A', 4.1, 1.0, 1.03)], [('B', 1.0, 1.0, 1.03)], [('C', 2.0, 1.0, 1.03)],
                  [('B', 3.4, 1.0, 1.03)], [('D', 3.5, 1.0, 1.02, {'d': 2.2}), ('A', 4.3, 1.03, 1.0)]],
