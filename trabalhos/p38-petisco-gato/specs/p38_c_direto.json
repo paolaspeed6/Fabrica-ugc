@@ -1,0 +1,275 @@
+{
+ "narr": null,
+ "narr_at": 0.3,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "grade": {
+  "sat": 0.9,
+  "warm": 0.025,
+  "contrast": 1.02,
+  "lift": 0.03,
+  "vign": 0.18,
+  "grain": 0.014,
+  "top": 0.4
+ },
+ "accent": [
+  215,
+  35,
+  45
+ ],
+ "segs": [
+  {
+   "src": "A",
+   "ss": 1.0,
+   "dur": 0.9,
+   "z": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 2.0,
+   "dur": 2.3,
+   "z": [
+    1.0,
+    1.1
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 2.0,
+   "dur": 2.9,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.4,
+   "dur": 2.9,
+   "z": [
+    1.0,
+    1.1
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 3.35,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 4.0,
+   "dur": 1.6,
+   "z": [
+    1.1,
+    1.0
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 4.15,
+   "dur": 1.8,
+   "z": [
+    1.03,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "bars",
+   "cuts": [
+    0,
+    3.2,
+    9.0,
+    11.6,
+    15
+   ],
+   "t0": 0,
+   "t1": 15,
+   "y": 96,
+   "out": false
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Petisco para gatos"
+   ],
+   "t0": 0,
+   "t1": 3.2,
+   "y": 150,
+   "base": "dm",
+   "size": 30,
+   "track": 7,
+   "align": "center",
+   "x": "c"
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Seu gato",
+    "*merece um mimo?*"
+   ],
+   "t0": 0,
+   "t1": 3.2,
+   "y": 206,
+   "size": 108,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Olha o que",
+    "*ele tem:*"
+   ],
+   "t0": 3.2,
+   "t1": 9.0,
+   "y": 150,
+   "size": 100,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "check",
+   "text": "Marca Dreamies",
+   "t0": 4.3,
+   "t1": 9.0,
+   "y": 392,
+   "x": 90,
+   "size": 58,
+   "fill": [
+    215,
+    35,
+    45
+   ],
+   "base": "dm"
+  },
+  {
+   "kind": "check",
+   "text": "Sabor carne",
+   "t0": 5.9,
+   "t1": 9.0,
+   "y": 516,
+   "x": 90,
+   "size": 58,
+   "fill": [
+    215,
+    35,
+    45
+   ],
+   "base": "dm"
+  },
+  {
+   "kind": "check",
+   "text": "Pacote prático",
+   "t0": 7.5,
+   "t1": 9.0,
+   "y": 640,
+   "x": 90,
+   "size": 58,
+   "fill": [
+    215,
+    35,
+    45
+   ],
+   "base": "dm"
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Um mimo",
+    "*todo dia.*"
+   ],
+   "t0": 9.0,
+   "t1": 11.6,
+   "y": 206,
+   "size": 104,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Toque no carrinho",
+    "*e veja o preço.*"
+   ],
+   "t0": 11.6,
+   "t1": 15,
+   "y": 170,
+   "size": 96,
+   "out": false,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "button",
+   "text": "Ver o preço",
+   "t0": 12.0,
+   "t1": 15,
+   "y": 400,
+   "x": "c",
+   "w": 600,
+   "h": 112,
+   "size": 44,
+   "fill": [
+    215,
+    35,
+    45
+   ],
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "anim": "rise",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p38-petisco-gato/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p38-petisco-gato/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p38-petisco-gato/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p38-petisco-gato/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p38-petisco-gato/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p38-petisco-gato/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p38-petisco-gato/out2/p38_c_direto.mp4",
+ "dur": 15.0,
+ "natural": 1,
+ "trans": [
+  [
+   3.2,
+   "whip"
+  ],
+  [
+   9.0,
+   "zoom"
+  ],
+  [
+   11.6,
+   "whip"
+  ]
+ ]
+}

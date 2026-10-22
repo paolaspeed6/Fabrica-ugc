@@ -200,6 +200,110 @@ P['p36'] = dict(id='p36', accent=(240, 110, 30), clips={'A': 5.875, 'B': 5.875},
          itens=['Broca em espiral', 'Motor portátil', 'Duas alças'], onde=['Cerca e', '*plantio.*']),
   tomadas=duo('A', 'B'))
 
+# p37 pneu XBRI Brutus T/A: A tem mão 0,55–2,0 s
+P['p37'] = dict(id='p37', accent=(240, 170, 40), clips={'A': 6.0, 'B': 6.0, 'C': 6.0}, leve='o seu', tem='*ele tem:*',
+  a=dict(eyebrow='Para a sua picape', gancho=['Pneu careca?', '*Hora de trocar.*'],
+         momentos=[('Cidade', 'No asfalto do dia a dia'), ('Estrada', 'Para pegar a estrada'), ('Terra', 'Para estrada de chão')]),
+  b=dict(kicker='Pneu XBRI Brutus T/A', cenas=[('Letras', 'brancas', 'Visual off-road'),
+                                              ('Cravos', 'largos', 'Para asfalto e terra'),
+                                              ('Asfalto', 'e terra', None)]),
+  c=dict(eyebrow='Pneu XBRI Brutus', gancho=['Pneu careca', '*no seu carro?*'],
+         itens=['Letras brancas', 'Cravos largos', 'Asfalto e terra'], onde=['Cidade, estrada', '*e terra.*']),
+  tomadas={'a': [[('A', 0.0, 1.0, 1.03, {'d': 0.5}), ('A', 2.1, 1.0, 1.03)], [('B', 2.0, 1.0, 1.03)], [('C', 2.5, 1.0, 1.03)],
+                 [('B', 3.4, 1.0, 1.03)], [('C', 3.6, 1.0, 1.02, {'d': 2.0}), ('A', 3.5, 1.03, 1.0)]],
+           'b': [[('B', 0.0, 1.0, 1.03)], [('C', 1.0, 1.0, 1.03, {'d': 2.5}), ('A', 3.2, 1.0, 1.03)],
+                 [('B', 3.4, 1.0, 1.02, {'d': 2.4}), ('A', 2.1, 1.03, 1.0)]],
+           'c': [[('C', 0.0, 1.0, 1.03)], [('A', 2.2, 1.0, 1.03, {'d': 2.9}), ('B', 1.0, 1.0, 1.03)], [('C', 3.2, 1.0, 1.03)],
+                 [('A', 4.4, 1.0, 1.02, {'d': 1.5}), ('B', 4.0, 1.03, 1.0)]]})
+
+# p38 petisco Dreamies sabor carne: A tem mão segurando o pacote a partir de ~1,9 s; B quase parado (zoom 1,1)
+P['p38'] = dict(id='p38', accent=(215, 35, 45), clips={'A': 6.0, 'B': 6.0}, leve='o seu', tem='*ele tem:*',
+  a=dict(eyebrow='Para o seu gato', gancho=['Hora do', '*petisco.*'],
+         momentos=[('Mimo', 'Um agrado no dia'), ('Treino', 'Recompensa na hora'), ('Carinho', 'Hora de agradar')]),
+  b=dict(kicker='Petisco Dreamies', cenas=[('Sabor', 'carne', 'Petisco para gatos'),
+                                          ('Pacote', 'prático', 'Fácil de guardar'),
+                                          ('Mimo pro', 'seu gato', None)]),
+  c=dict(eyebrow='Petisco para gatos', gancho=['Seu gato', '*merece um mimo?*'],
+         itens=['Marca Dreamies', 'Sabor carne', 'Pacote prático'], onde=['Um mimo', '*todo dia.*']),
+  tomadas={'a': [[('A', 0.0, 1.0, 1.04)], [('B', 0.5, 1.0, 1.1)], [('A', 3.0, 1.0, 1.03)], [('B', 3.0, 1.0, 1.1)],
+                 [('A', 4.0, 1.0, 1.02, {'d': 1.95}), ('B', 1.5, 1.1, 1.0)]],
+           'b': [[('B', 0.0, 1.0, 1.12, {'d': 2.5}), ('A', 3.5, 1.0, 1.04)], [('A', 0.5, 1.0, 1.04, {'d': 2.6}), ('B', 3.0, 1.0, 1.1)],
+                 [('A', 3.4, 1.0, 1.02, {'d': 2.4}), ('B', 1.5, 1.1, 1.0)]],
+           'c': [[('A', 1.0, 1.0, 1.05, {'d': 0.9}), ('B', 2.0, 1.0, 1.1)], [('A', 2.0, 1.0, 1.03, {'d': 2.9}), ('B', 0.4, 1.0, 1.1)],
+                 [('A', 3.5, 1.0, 1.03)], [('B', 4.0, 1.1, 1.0, {'d': 1.6}), ('A', 4.2, 1.03, 1.0)]]})
+
+# p39 tela de sombreamento: a dona pediu que a tela dobrada na bancada (take C) SEMPRE abra os 3 vídeos
+P['p39'] = dict(id='p39', accent=(90, 140, 70), clips={'A': 8.0, 'B': 8.0, 'C': 6.0}, leve='a sua', tem='*ela tem:*',
+  a=dict(eyebrow='Para a sua horta', gancho=['Sol forte', '*na horta?*'],
+         momentos=[('Horta', 'Proteção do sol forte'), ('Canteiro', 'Sombra para as mudas'), ('Viveiro', 'Plantas mais protegidas')]),
+  b=dict(kicker='Tela de sombreamento', cenas=[('Sombra', 'na horta', 'Protege do sol forte'),
+                                              ('Tela', 'preta', 'Cobre canteiros'),
+                                              ('Horta, viveiro', 'e jardim', None)]),
+  c=dict(eyebrow='Tela de sombreamento', gancho=['Sol queimando', '*suas plantas?*'],
+         itens=['Sombra na horta', 'Tela preta', 'Vem dobrada'], onde=['Horta, viveiro', '*e jardim.*']),
+  tomadas={'a': [[('C', 0.0, 1.0, 1.03)], [('A', 2.0, 1.0, 1.03)], [('B', 2.5, 1.0, 1.03)], [('A', 5.0, 1.0, 1.03)],
+                 [('B', 5.0, 1.0, 1.02, {'d': 2.2}), ('C', 3.0, 1.03, 1.0)]],
+           'b': [[('C', 1.5, 1.0, 1.04, {'d': 2.5}), ('A', 0.5, 1.0, 1.03)], [('B', 1.0, 1.0, 1.03, {'d': 2.5}), ('A', 4.0, 1.0, 1.03)],
+                 [('C', 3.6, 1.0, 1.02, {'d': 2.0}), ('B', 5.0, 1.03, 1.0)]],
+           'c': [[('C', 3.0, 1.0, 1.04, {'d': 1.6}), ('A', 0.0, 1.0, 1.03)], [('B', 2.0, 1.0, 1.03, {'d': 2.9}), ('A', 3.0, 1.0, 1.03)],
+                 [('B', 5.0, 1.0, 1.03)], [('A', 6.0, 1.0, 1.02, {'d': 1.6}), ('C', 4.2, 1.03, 1.0)]]})
+
+# p40 tubo de cobre com isolamento: B tem mão 1,5–4,0 s; a dona: "só os melhores momentos" (closes dos rolos)
+P['p40'] = dict(id='p40', accent=(200, 110, 60), clips={'A': 6.0, 'B': 6.0, 'C': 6.0}, leve='o seu', tem='*o kit tem:*',
+  a=dict(eyebrow='Para o instalador', gancho=['Instalação', '*sem improviso.*'],
+         momentos=[('Split', 'Ar-condicionado'), ('Obra', 'Instalação nova'), ('Troca', 'Manutenção do ar')]),
+  b=dict(kicker='Tubo de cobre', cenas=[('Rolo de', 'cobre', 'Com isolamento branco'),
+                                       ('Com', 'isolamento', 'Tubo branco por fora'),
+                                       ('Ar-condicionado', 'e refrigeração', None)]),
+  c=dict(eyebrow='Tubo de cobre', gancho=['Vai instalar', '*o ar?*'],
+         itens=['Rolo de cobre', 'Isolamento branco', 'Para ar-condicionado'], onde=['Ar-condicionado', '*e refrigeração.*']),
+  tomadas={'a': [[('A', 0.0, 1.0, 1.03)], [('C', 3.5, 1.0, 1.03)], [('B', 4.2, 1.0, 1.03, {'d': 1.75}), ('A', 4.5, 1.0, 1.03)],
+                 [('C', 2.5, 1.0, 1.03)], [('A', 3.0, 1.0, 1.02, {'d': 2.2}), ('B', 0.2, 1.03, 1.0)]],
+           'b': [[('B', 0.0, 1.0, 1.03, {'d': 1.4}), ('A', 2.5, 1.0, 1.03)], [('C', 4.0, 1.0, 1.03, {'d': 1.9}), ('A', 4.0, 1.0, 1.03)],
+                 [('B', 4.2, 1.0, 1.02, {'d': 1.75}), ('C', 2.0, 1.03, 1.0)]],
+           'c': [[('C', 0.0, 1.0, 1.03)], [('A', 3.2, 1.0, 1.03, {'d': 2.7}), ('C', 3.5, 1.0, 1.03)],
+                 [('B', 4.2, 1.0, 1.03, {'d': 1.75}), ('A', 5.0, 1.0, 1.02)], [('C', 4.4, 1.0, 1.02, {'d': 1.55}), ('A', 1.5, 1.03, 1.0)]]})
+
+# p41 martelete Bosch Professional: mão segurando a ferramenta a partir de ~1,0 s nos dois takes (natural, nunca na capa)
+P['p41'] = dict(id='p41', accent=(0, 95, 170), clips={'A': 6.0, 'B': 6.0}, leve='o seu', tem='*ele tem:*',
+  a=dict(eyebrow='Para a sua obra', gancho=['Furar concreto', '*sem sofrer.*'],
+         momentos=[('Concreto', 'Furos na parede'), ('Obra', 'Do começo ao fim'), ('Reforma', 'Faça você mesmo')]),
+  b=dict(kicker='Martelete Bosch', cenas=[('Bosch', 'Professional', 'Linha profissional'),
+                                         ('Com', 'maleta', 'Fácil de guardar'),
+                                         ('Obra e', 'reforma', None)]),
+  c=dict(eyebrow='Martelete Bosch', gancho=['Parede de', '*concreto?*'],
+         itens=['Bosch Professional', 'Empunhadura lateral', 'Vem na maleta'], onde=['Obra e', '*reforma.*']),
+  tomadas={'a': duo('A', 'B')['a'], 'b': duo('A', 'B')['b'],
+           'c': [[('A', 0.3, 1.0, 1.05, {'d': 1.3}), ('B', 3.0, 1.0, 1.03)], [('B', 0.4, 1.0, 1.03, {'d': 2.9}), ('A', 1.5, 1.0, 1.03)],
+                 [('B', 4.0, 1.0, 1.03)], [('A', 4.0, 1.0, 1.02, {'d': 1.6}), ('B', 1.2, 1.03, 1.0)]]})
+
+# p42 kit reparo hidráulico (lataria)
+P['p42'] = dict(id='p42', accent=(210, 30, 30), clips={'A': 6.0, 'B': 6.0}, leve='o seu', tem='*o kit tem:*',
+  a=dict(eyebrow='Para a sua oficina', gancho=['Lataria amassada?', '*Desamassa aqui.*'],
+         momentos=[('Lataria', 'Desempeno de amassados'), ('Oficina', 'Força hidráulica'), ('Garagem', 'Tudo na maleta')]),
+  b=dict(kicker='Kit reparo hidráulico', cenas=[('Bomba', 'hidráulica', 'Com mangueira'),
+                                               ('Várias', 'peças', 'Extensões e ponteiras'),
+                                               ('Oficina e', 'funilaria', None)]),
+  c=dict(eyebrow='Kit reparo hidráulico', gancho=['Lataria', '*amassada?*'],
+         itens=['Bomba hidráulica', 'Várias extensões', 'Vem na maleta'], onde=['Oficina e', '*funilaria.*']),
+  tomadas=duo('A', 'B'))
+
+# p43 centrífuga de mel manual: B tem mão 0,9–2,4 s
+P['p43'] = dict(id='p43', accent=(220, 160, 40), clips={'A': 6.0, 'B': 6.0}, leve='a sua', tem='*ela tem:*',
+  a=dict(eyebrow='Para o apicultor', gancho=['Colheita do mel', '*mais fácil.*'],
+         momentos=[('Colheita', 'Mel direto dos quadros'), ('Manivela', 'Funciona na mão'), ('Torneira', 'Mel sai por baixo')]),
+  b=dict(kicker='Centrífuga de mel', cenas=[('Aço', 'inox', 'Corpo brilhante'),
+                                           ('Manivela', 'manual', 'Sem energia elétrica'),
+                                           ('Apiário e', 'sítio', None)]),
+  c=dict(eyebrow='Centrífuga de mel', gancho=['Ainda espremendo', '*os favos?*'],
+         itens=['Corpo em inox', 'Manivela manual', 'Torneira de saída'], onde=['Apiário e', '*sítio.*']),
+  tomadas={'a': [[('A', 0.0, 1.0, 1.03)], [('B', 2.5, 1.0, 1.03)], [('A', 3.0, 1.0, 1.03)], [('B', 3.3, 1.0, 1.03)],
+                 [('A', 1.2, 1.0, 1.02, {'d': 2.0}), ('B', 3.8, 1.03, 1.0)]],
+           'b': [[('B', 0.0, 1.0, 1.03, {'d': 1.3}), ('A', 1.0, 1.0, 1.03)], [('A', 0.5, 1.0, 1.03, {'d': 2.6}), ('B', 2.5, 1.0, 1.03)],
+                 [('A', 3.4, 1.0, 1.02, {'d': 2.4}), ('B', 3.4, 1.03, 1.0)]],
+           'c': [[('A', 2.0, 1.0, 1.03)], [('B', 2.5, 1.0, 1.03, {'d': 2.9}), ('A', 0.3, 1.0, 1.03)], [('B', 3.2, 1.0, 1.03)],
+                 [('A', 4.0, 1.0, 1.02, {'d': 1.6}), ('B', 4.0, 1.03, 1.0)]]})
+
 if __name__ == '__main__':
     for pid in sys.argv[1:]:
         print(fazer_produto(P[pid]))

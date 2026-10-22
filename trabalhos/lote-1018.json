@@ -210,6 +210,48 @@
    "slug": "perfurador-solo",
    "nome": "Perfurador de solo",
    "legenda": "Perfurador de solo com broca em espiral para cerca e plantio.\n#perfuradordesolo #sitio #cerca #plantio"
+  },
+  {
+   "id": "p37",
+   "slug": "pneu",
+   "nome": "Pneu XBRI Brutus T/A",
+   "legenda": "Pneu XBRI Brutus T/A com letras brancas e cravos largos para asfalto e terra.\n#pneu #xbri #offroad #picape"
+  },
+  {
+   "id": "p38",
+   "slug": "petisco-gato",
+   "nome": "Petisco Dreamies para gatos",
+   "legenda": "Petisco Dreamies sabor carne: um mimo para o seu gato todo dia.\n#gatos #petiscoparagato #dreamies #pets"
+  },
+  {
+   "id": "p39",
+   "slug": "tela-sombreamento",
+   "nome": "Tela de sombreamento",
+   "legenda": "Tela de sombreamento preta para proteger horta, viveiro e jardim do sol forte.\n#teladesombreamento #horta #jardinagem #viveiro"
+  },
+  {
+   "id": "p40",
+   "slug": "tubo-cobre",
+   "nome": "Tubo de cobre com isolamento",
+   "legenda": "Rolo de tubo de cobre com isolamento branco para instalação de ar-condicionado.\n#tubodecobre #arcondicionado #refrigeracao #instalacao"
+  },
+  {
+   "id": "p41",
+   "slug": "martelete-bosch",
+   "nome": "Martelete Bosch Professional",
+   "legenda": "Martelete Bosch Professional com empunhadura lateral e maleta.\n#martelete #bosch #ferramentas #obra"
+  },
+  {
+   "id": "p42",
+   "slug": "kit-reparo-hidraulico",
+   "nome": "Kit reparo hidráulico",
+   "legenda": "Kit reparo hidráulico com bomba, extensões e maleta para funilaria.\n#funilaria #oficina #lataria #ferramentas"
+  },
+  {
+   "id": "p43",
+   "slug": "centrifuga-mel",
+   "nome": "Centrífuga de mel manual",
+   "legenda": "Centrífuga de mel manual em inox, com manivela e torneira de saída.\n#apicultura #mel #centrifugademel #apiario"
   }
  ]
 }
