@@ -382,6 +382,17 @@ P['p48'] = dict(id='p48', accent=(230, 150, 40), clips={'A': 6.0, 'B': 6.0, 'C':
            'c': [[('C', 0.0, 1.0, 1.03)], [('A', 3.4, 1.0, 1.03, {'d': 2.5}), ('C', 2.6, 1.0, 1.04)], [('A', 3.6, 1.0, 1.05)],
                  [('C', 4.2, 1.0, 1.02, {'d': 1.6}), ('A', 4.0, 1.03, 1.0)]]})
 
+# p49 step de exercício (blocos pretos empilháveis): A academia escura, B casa (empilhados), C academia clara
+P['p49'] = dict(id='p49', accent=(240, 100, 40), clips={'A': 6.0, 'B': 6.0, 'C': 6.0}, leve='o seu', tem='*ele tem:*',
+  a=dict(eyebrow='Para o seu treino', gancho=['Seu treino', '*mais completo.*'],
+         momentos=[('Casa', 'Treino na sala'), ('Academia', 'Treino funcional'), ('Aula', 'Step e aeróbico')]),
+  b=dict(kicker='Step de exercício', cenas=[('Treino', 'funcional', 'Para subir e descer'),
+                                           ('Empilha', 'fácil', 'Guarda em pouco espaço'),
+                                           ('Casa, academia', 'e estúdio', None)]),
+  c=dict(eyebrow='Step de exercício', gancho=['Treino sem', '*graça?*'],
+         itens=['Empilhável', 'Base larga', 'Cor preta'], onde=['Casa, academia', '*e estúdio.*']),
+  tomadas=trio('A', 'B', 'C'))
+
 if __name__ == '__main__':
     for pid in sys.argv[1:]:
         print(fazer_produto(P[pid]))
