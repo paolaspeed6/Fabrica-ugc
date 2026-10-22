@@ -304,6 +304,49 @@ P['p43'] = dict(id='p43', accent=(220, 160, 40), clips={'A': 6.0, 'B': 6.0}, lev
            'c': [[('A', 2.0, 1.0, 1.03)], [('B', 2.5, 1.0, 1.03, {'d': 2.9}), ('A', 0.3, 1.0, 1.03)], [('B', 3.2, 1.0, 1.03)],
                  [('A', 4.0, 1.0, 1.02, {'d': 1.6}), ('B', 4.0, 1.03, 1.0)]]})
 
+# p44 cadeira de escritório: mão nos 3 takes de ~0,7 a 2,1 s -> só 0–0,65 e depois de 2,2 s
+P['p44'] = dict(id='p44', accent=(190, 190, 195), clips={'A': 6.0, 'B': 6.0, 'C': 6.0}, leve='a sua', tem='*ela tem:*',
+  a=dict(eyebrow='Para o seu escritório', gancho=['Reunião', '*com estilo.*'],
+         momentos=[('Reunião', 'Sala de reunião'), ('Recepção', 'Para receber clientes'), ('Estudo', 'Mesa de estudo')]),
+  b=dict(kicker='Cadeira de escritório', cenas=[('Encosto', 'alto', 'Estofado preto'),
+                                               ('Base', 'cromada', 'Com braços'),
+                                               ('Escritório', 'e reunião', None)]),
+  c=dict(eyebrow='Cadeira de escritório', gancho=['Cadeira feia', '*na reunião?*'],
+         itens=['Encosto alto', 'Base cromada', 'Braços laterais'], onde=['Escritório', '*e reunião.*']),
+  tomadas={'a': [[('A', 0.0, 1.0, 1.03, {'d': 0.65}), ('A', 2.2, 1.0, 1.03)], [('B', 2.2, 1.0, 1.03)], [('C', 2.5, 1.0, 1.03)],
+                 [('A', 3.4, 1.0, 1.03)], [('B', 3.6, 1.0, 1.02, {'d': 2.2}), ('C', 4.0, 1.03, 1.0)]],
+           'b': [[('B', 0.0, 1.0, 1.03, {'d': 0.7}), ('B', 2.2, 1.0, 1.03, {'d': 2.3}), ('C', 3.5, 1.0, 1.03)],
+                 [('C', 2.2, 1.0, 1.03, {'d': 2.5}), ('A', 3.4, 1.0, 1.03)], [('B', 3.6, 1.0, 1.02, {'d': 2.4}), ('A', 2.4, 1.03, 1.0)]],
+           'c': [[('C', 0.0, 1.0, 1.03, {'d': 0.8}), ('C', 2.2, 1.0, 1.03)], [('A', 2.4, 1.0, 1.03, {'d': 2.9}), ('B', 2.6, 1.0, 1.03)],
+                 [('C', 3.3, 1.0, 1.03)], [('A', 4.4, 1.0, 1.02, {'d': 1.5}), ('B', 4.1, 1.03, 1.0)]]})
+
+# p45 fone sem fio esportivo (gancho na orelha + estojo): mão A 1,0–3,0 s, B 0,5–3,0 s
+P['p45'] = dict(id='p45', accent=(60, 170, 220), clips={'A': 6.0, 'B': 6.0}, leve='o seu', tem='*ele tem:*',
+  a=dict(eyebrow='Para treinar', gancho=['Fone caindo', '*no treino?*'],
+         momentos=[('Treino', 'Gancho na orelha'), ('Corrida', 'Sem fio'), ('Dia a dia', 'Estojo de carga')]),
+  b=dict(kicker='Fone sem fio esportivo', cenas=[('Gancho', 'na orelha', 'Feito para o esporte'),
+                                                ('Estojo', 'de carga', 'Guarda e carrega'),
+                                                ('Treino, corrida', 'e dia a dia', None)]),
+  c=dict(eyebrow='Fone sem fio', gancho=['Fone caindo', '*na corrida?*'],
+         itens=['Gancho na orelha', 'Estojo de carga', 'Sem fio'], onde=['Treino, corrida', '*e dia a dia.*']),
+  tomadas={'a': [[('A', 0.0, 1.0, 1.04, {'d': 0.9}), ('A', 3.1, 1.0, 1.05)], [('B', 3.1, 1.0, 1.04)], [('A', 3.3, 1.0, 1.06)],
+                 [('B', 3.3, 1.05, 1.0)], [('A', 3.6, 1.0, 1.03, {'d': 2.2}), ('B', 3.5, 1.03, 1.0)]],
+           'b': [[('B', 0.0, 1.0, 1.04, {'d': 0.45}), ('B', 3.1, 1.0, 1.05, {'d': 2.8}), ('A', 3.2, 1.0, 1.04)],
+                 [('A', 3.1, 1.0, 1.05, {'d': 2.5}), ('B', 3.2, 1.0, 1.04)], [('B', 3.4, 1.0, 1.02, {'d': 2.4}), ('A', 3.3, 1.03, 1.0)]],
+           'c': [[('A', 3.1, 1.06, 1.02, {'d': 2.8}), ('B', 5.5, 1.0, 1.02)], [('B', 3.1, 1.0, 1.05, {'d': 2.0}), ('A', 3.1, 1.0, 1.04, {'d': 2.0}), ('B', 5.0, 1.03, 1.0)],
+                 [('B', 3.3, 1.0, 1.03)], [('A', 4.3, 1.0, 1.02, {'d': 1.6}), ('B', 4.1, 1.03, 1.0)]]})
+
+# p46 banqueta estofada caramelo (matelassê, alavanca de altura, apoio de pés), takes Hailuo sem marca d'água
+P['p46'] = dict(id='p46', accent=(190, 110, 60), clips={'A': 5.875, 'B': 5.875, 'C': 5.875}, leve='a sua', tem='*ela tem:*',
+  a=dict(eyebrow='Para a sua cozinha', gancho=['Seu balcão', '*pede charme.*'],
+         momentos=[('Café', 'Manhã no balcão'), ('Almoço', 'Rápido na cozinha'), ('Visita', 'Conversa na ilha')]),
+  b=dict(kicker='Banqueta estofada', cenas=[('Estofado', 'matelassê', 'Cor caramelo'),
+                                           ('Altura', 'regulável', 'Alavanca embaixo do assento'),
+                                           ('Cozinha, ilha', 'e balcão', None)]),
+  c=dict(eyebrow='Banqueta estofada', gancho=['Balcão sem', '*banqueta?*'],
+         itens=['Estofado matelassê', 'Altura regulável', 'Apoio para os pés'], onde=['Cozinha, ilha', '*e balcão.*']),
+  tomadas=trio('A', 'B', 'C'))
+
 if __name__ == '__main__':
     for pid in sys.argv[1:]:
         print(fazer_produto(P[pid]))

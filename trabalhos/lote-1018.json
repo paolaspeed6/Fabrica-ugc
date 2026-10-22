@@ -252,6 +252,24 @@
    "slug": "centrifuga-mel",
    "nome": "Centrífuga de mel manual",
    "legenda": "Centrífuga de mel manual em inox, com manivela e torneira de saída.\n#apicultura #mel #centrifugademel #apiario"
+  },
+  {
+   "id": "p44",
+   "slug": "cadeira-escritorio",
+   "nome": "Cadeira de escritório",
+   "legenda": "Cadeira de escritório com encosto alto, base cromada e braços laterais.\n#cadeiradeescritorio #escritorio #homeoffice #reuniao"
+  },
+  {
+   "id": "p45",
+   "slug": "fone-bluetooth",
+   "nome": "Fone sem fio esportivo",
+   "legenda": "Fone sem fio esportivo com gancho na orelha e estojo de carga.\n#fonesemfio #fonebluetooth #treino #corrida"
+  },
+  {
+   "id": "p46",
+   "slug": "banqueta-caramelo",
+   "nome": "Banqueta estofada caramelo",
+   "legenda": "Banqueta estofada matelassê caramelo, altura regulável e apoio para os pés.\n#banqueta #cozinhaamericana #ilhadecozinha #decoracao"
   }
  ]
 }
