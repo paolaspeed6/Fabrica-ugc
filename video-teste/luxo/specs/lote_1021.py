@@ -365,6 +365,23 @@ P['p47'] = dict(id='p47', accent=(200, 140, 70), clips={'B': 5.875, 'C': 5.875, 
            'c': [[('E', 0.0, 1.0, 1.03)], [('B', 1.5, 1.0, 1.03, {'d': 2.9}), ('D', 2.0, 1.0, 1.03)], [('C', 3.2, 1.0, 1.03)],
                  [('D', 4.2, 1.0, 1.02, {'d': 1.5}), ('E', 3.8, 1.03, 1.0)]]})
 
+# p48 fritadeira elétrica 3 cubas inox: mão A 0,5–3,4 s; B 0,5–5,5 s (só B 0–0,45); C limpo
+P['p48'] = dict(id='p48', accent=(230, 150, 40), clips={'A': 6.0, 'B': 6.0, 'C': 6.0}, leve='a sua', tem='*ela tem:*',
+  a=dict(eyebrow='Para o seu negócio', gancho=['Fila na', '*lanchonete?*'],
+         momentos=[('Batata', 'Cestos separados'), ('Pastel', 'Três cubas'), ('Salgado', 'Tudo ao mesmo tempo')]),
+  b=dict(kicker='Fritadeira elétrica', cenas=[('Três', 'cubas', 'Cestos com cabo'),
+                                             ('Corpo em', 'inox', 'Para cozinha profissional'),
+                                             ('Lanchonete', 'e restaurante', None)]),
+  c=dict(eyebrow='Fritadeira elétrica', gancho=['Uma fritadeira', '*só não dá?*'],
+         itens=['Três cubas', 'Cestos com cabo', 'Corpo em inox'], onde=['Lanchonete', '*e restaurante.*']),
+  tomadas={'a': [[('A', 0.0, 1.0, 1.03, {'d': 0.45}), ('A', 3.5, 1.0, 1.03, {'d': 2.4}), ('C', 0.5, 1.0, 1.03)],
+                 [('C', 2.0, 1.0, 1.03)], [('A', 3.4, 1.0, 1.04)], [('C', 3.4, 1.0, 1.03)],
+                 [('A', 3.6, 1.0, 1.02, {'d': 2.2}), ('C', 4.0, 1.03, 1.0)]],
+           'b': [[('B', 0.0, 1.0, 1.03, {'d': 0.45}), ('C', 1.0, 1.0, 1.04, {'d': 2.6}), ('A', 3.6, 1.0, 1.03)],
+                 [('C', 3.0, 1.0, 1.03, {'d': 2.5}), ('A', 3.4, 1.0, 1.04)], [('C', 3.6, 1.0, 1.02, {'d': 2.4}), ('A', 3.5, 1.03, 1.0)]],
+           'c': [[('C', 0.0, 1.0, 1.03)], [('A', 3.4, 1.0, 1.03, {'d': 2.5}), ('C', 2.6, 1.0, 1.04)], [('A', 3.6, 1.0, 1.05)],
+                 [('C', 4.2, 1.0, 1.02, {'d': 1.6}), ('A', 4.0, 1.03, 1.0)]]})
+
 if __name__ == '__main__':
     for pid in sys.argv[1:]:
         print(fazer_produto(P[pid]))
