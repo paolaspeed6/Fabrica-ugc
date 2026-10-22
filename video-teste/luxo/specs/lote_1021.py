@@ -295,7 +295,7 @@ P['p43'] = dict(id='p43', accent=(220, 160, 40), clips={'A': 6.0, 'B': 6.0}, lev
   b=dict(kicker='Centrífuga de mel', cenas=[('Aço', 'inox', 'Corpo brilhante'),
                                            ('Manivela', 'manual', 'Sem energia elétrica'),
                                            ('Apiário e', 'sítio', None)]),
-  c=dict(eyebrow='Centrífuga de mel', gancho=['Ainda espremendo', '*os favos?*'],
+  c=dict(eyebrow='Centrífuga de mel', gancho=['Espremendo', '*os favos?*'],
          itens=['Corpo em inox', 'Manivela manual', 'Torneira de saída'], onde=['Apiário e', '*sítio.*']),
   tomadas={'a': [[('A', 0.0, 1.0, 1.03)], [('B', 2.5, 1.0, 1.03)], [('A', 3.0, 1.0, 1.03)], [('B', 3.3, 1.0, 1.03)],
                  [('A', 1.2, 1.0, 1.02, {'d': 2.0}), ('B', 3.8, 1.03, 1.0)]],
