@@ -347,6 +347,24 @@ P['p46'] = dict(id='p46', accent=(190, 110, 60), clips={'A': 5.875, 'B': 5.875, 
          itens=['Estofado matelassê', 'Altura regulável', 'Apoio para os pés'], onde=['Cozinha, ilha', '*e balcão.*']),
   tomadas=trio('A', 'B', 'C'))
 
+# p47 quadro decorativo (3 telas com moldura de madeira): takes B–E (sala, aparador, buffet, quarto); o take A é uma
+# cadeira de escritório (outro produto?) e ficou de fora
+P['p47'] = dict(id='p47', accent=(200, 140, 70), clips={'B': 5.875, 'C': 5.875, 'D': 5.875, 'E': 5.875}, leve='o seu', scrim=0.6,
+  tem='*o conjunto tem:*',
+  a=dict(eyebrow='Para a sua parede', gancho=['Parede vazia?', '*Fé e beleza.*'],
+         momentos=[('Sala', 'Acima do sofá'), ('Entrada', 'No aparador'), ('Quarto', 'Acima da cama')]),
+  b=dict(kicker='Quadro decorativo', cenas=[('Conjunto de', '3 quadros', 'Moldura de madeira'),
+                                           ('Fé na', 'sua parede', 'Tons quentes e suaves'),
+                                           ('Sala, quarto', 'e entrada', None)]),
+  c=dict(eyebrow='Quadro decorativo', gancho=['Parede vazia', '*na sala?*'],
+         itens=['3 quadros', 'Moldura de madeira', 'Tons quentes'], onde=['Sala, quarto', '*e entrada.*']),
+  tomadas={'a': [[('B', 0.0, 1.0, 1.03)], [('B', 2.0, 1.0, 1.03)], [('C', 2.5, 1.0, 1.03)], [('E', 2.5, 1.0, 1.03)],
+                 [('D', 3.0, 1.0, 1.02, {'d': 2.2}), ('B', 1.0, 1.03, 1.0)]],
+           'b': [[('C', 0.0, 1.0, 1.03)], [('D', 1.0, 1.0, 1.03, {'d': 2.5}), ('B', 3.2, 1.0, 1.03)],
+                 [('E', 3.0, 1.0, 1.02, {'d': 2.4}), ('C', 3.0, 1.03, 1.0)]],
+           'c': [[('E', 0.0, 1.0, 1.03)], [('B', 1.5, 1.0, 1.03, {'d': 2.9}), ('D', 2.0, 1.0, 1.03)], [('C', 3.2, 1.0, 1.03)],
+                 [('D', 4.2, 1.0, 1.02, {'d': 1.5}), ('E', 3.8, 1.03, 1.0)]]})
+
 if __name__ == '__main__':
     for pid in sys.argv[1:]:
         print(fazer_produto(P[pid]))
