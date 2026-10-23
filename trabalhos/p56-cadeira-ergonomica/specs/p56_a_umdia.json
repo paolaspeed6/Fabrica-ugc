@@ -1,0 +1,242 @@
+{
+ "narr": null,
+ "narr_at": 0.5,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/video-teste/luxo/specs/../trilha_piano.wav"
+ ],
+ "grade": {
+  "sat": 0.86,
+  "contrast": 0.98,
+  "lift": 0.035,
+  "vign": 0.25,
+  "grain": 0.022,
+  "top": 0.3,
+  "warm_ramp": [
+   [
+    0,
+    -0.02,
+    1.03
+   ],
+   [
+    5.3999999999999995,
+    -0.02,
+    1.03
+   ],
+   [
+    5.8,
+    0.05,
+    1.0
+   ],
+   [
+    7.999999999999999,
+    0.05,
+    1.0
+   ],
+   [
+    8.399999999999999,
+    0.11,
+    0.86
+   ],
+   [
+    15,
+    0.11,
+    0.86
+   ]
+  ]
+ },
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 0.65,
+   "z": [
+    1.0,
+    1.02
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 2.5,
+   "dur": 2.35,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 4.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 4.5,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 4.8,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 5.75,
+   "dur": 2.2,
+   "z": [
+    1.0,
+    1.02
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 5.8,
+   "dur": 2.0,
+   "z": [
+    1.03,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Para o seu home office"
+   ],
+   "t0": 0,
+   "t1": 2.9,
+   "y": 250
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Dor nas costas",
+    "*no trabalho?*"
+   ],
+   "t0": 0,
+   "t1": 2.9,
+   "y": 300
+  },
+  {
+   "kind": "clock",
+   "keys": [
+    [
+     3.0,
+     "Manhã"
+    ],
+    [
+     5.6,
+     "Reunião"
+    ],
+    [
+     8.2,
+     "Tarde"
+    ]
+   ],
+   "t0": 3.0,
+   "t1": 10.700000000000001,
+   "y": 230,
+   "size": 150,
+   "anim": "fade"
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Encosto em tela"
+   ],
+   "t0": 3.2,
+   "t1": 5.5,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Apoio de cabeça"
+   ],
+   "t0": 5.699999999999999,
+   "t1": 8.1,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Braços ajustáveis"
+   ],
+   "t0": 8.299999999999999,
+   "t1": 10.700000000000001,
+   "y": 470
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 10.9,
+   "t1": 15,
+   "y": 250,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Leve pra casa."
+   ],
+   "t0": 11.15,
+   "t1": 15,
+   "y": 300,
+   "out": false,
+   "anim": "wipe"
+  },
+  {
+   "kind": "line",
+   "len": 220,
+   "t0": 11.5,
+   "t1": 15,
+   "y": 452,
+   "anim": "draw",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p56-cadeira-ergonomica/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p56-cadeira-ergonomica/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p56-cadeira-ergonomica/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p56-cadeira-ergonomica/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p56-cadeira-ergonomica/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p56-cadeira-ergonomica/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p56-cadeira-ergonomica/out2/p56_a_umdia.mp4",
+ "dur": 15.0,
+ "natural": 1,
+ "trans": [
+  [
+   3.0,
+   "whip"
+  ],
+  [
+   5.6,
+   "zoom"
+  ],
+  [
+   8.2,
+   "whip"
+  ],
+  [
+   10.8,
+   "zoom"
+  ]
+ ]
+}

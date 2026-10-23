@@ -288,6 +288,96 @@
    "slug": "step",
    "nome": "Step de exercício",
    "legenda": "Step de exercício preto, empilhável e de base larga para treinar em casa ou na academia.\n#step #treinofuncional #academia #treinoemcasa"
+  },
+  {
+   "id": "p50",
+   "slug": "dispenser",
+   "nome": "Dispenser de grãos 6 reservatórios",
+   "legenda": "Dispenser de grãos com 6 reservatórios e saída embaixo para mercado e empório.\n#dispenserdegraos #granel #mercado #emporio"
+  },
+  {
+   "id": "p51",
+   "slug": "copos-aluminio",
+   "nome": "100 copos de alumínio personalizados",
+   "legenda": "Kit com 100 copos de alumínio personalizados com a sua arte para festa e eventos.\n#copospersonalizados #festa #lembrancinha #eventos"
+  },
+  {
+   "id": "p52",
+   "slug": "lona-tenda",
+   "nome": "Lona para tenda",
+   "legenda": "Lona para tenda em PVC emborrachado, fácil de instalar, para feira e eventos.\n#tenda #lona #feira #eventos"
+  },
+  {
+   "id": "p53",
+   "slug": "cabine-led",
+   "nome": "Cabine de LED para unhas",
+   "legenda": "Cabine de LED para esmalte em gel, ideal para nail designer e salão.\n#naildesigner #unhasemgel #cabineled #manicure"
+  },
+  {
+   "id": "p54",
+   "slug": "macaco-hidraulico",
+   "nome": "Macaco hidráulico jacaré",
+   "legenda": "Macaco hidráulico tipo jacaré com rodinhas e cabo longo para garagem.\n#macacohidraulico #garagem #oficina #ferramentas"
+  },
+  {
+   "id": "p55",
+   "slug": "plafon-led",
+   "nome": "Kit 10 plafons painel LED",
+   "legenda": "Kit com 10 plafons painel LED quadrados para casa, loja e escritório.\n#plafonled #iluminacao #painelled #obra"
+  },
+  {
+   "id": "p56",
+   "slug": "cadeira-ergonomica",
+   "nome": "Cadeira ergonômica",
+   "legenda": "Cadeira ergonômica com encosto em tela e apoio de cabeça para home office.\n#cadeiraergonomica #homeoffice #escritorio #ergonomia"
+  },
+  {
+   "id": "p57",
+   "slug": "motobomba-sodramar",
+   "nome": "Motobomba Sodramar para piscina",
+   "legenda": "Motobomba Sodramar para piscina com pré-filtro de tampa transparente.\n#motobomba #sodramar #piscina #piscinalimpa"
+  },
+  {
+   "id": "p58",
+   "slug": "inversor-1000w",
+   "nome": "Inversor onda senoidal pura 1000 W",
+   "legenda": "Inversor de onda senoidal pura 1000 W para carro, camping e casa.\n#inversor #ondasenoidalpura #camping #energia"
+  },
+  {
+   "id": "p59",
+   "slug": "geladeira-portatil",
+   "nome": "Geladeira portátil 42 L quadrivolt",
+   "legenda": "Geladeira portátil 42 litros quadrivolt para viagem, camping e pesca.\n#geladeiraportatil #camping #viagem #pesca"
+  },
+  {
+   "id": "p60",
+   "slug": "caixa-som-karaoke",
+   "nome": "Caixa de som com 2 microfones e bolsa",
+   "legenda": "Caixa de som portátil com 2 microfones e bolsa para festa e karaokê.\n#caixadesom #karaoke #microfone #festa"
+  },
+  {
+   "id": "p61",
+   "slug": "carregador-ev-oversun",
+   "nome": "Carregador de carro elétrico Oversun",
+   "legenda": "Carregador de carro elétrico Oversun de parede para carregar em casa.\n#carroeletrico #carregadorveicular #oversun #garagem"
+  },
+  {
+   "id": "p62",
+   "slug": "drone-zd012",
+   "nome": "Drone ZD012 GPS",
+   "legenda": "Drone ZD012 com GPS, câmera HD, 2 baterias e retorno automático.\n#drone #gps #filmagemaerea #tecnologia"
+  },
+  {
+   "id": "p63",
+   "slug": "isosource",
+   "nome": "Isosource 24 unidades",
+   "legenda": "Isosource em caixa com 24 unidades para manter o estoque garantido.\n#isosource #nestle #cuidado #saude"
+  },
+  {
+   "id": "p64",
+   "slug": "armario-cozinha",
+   "nome": "Armário de cozinha branco",
+   "legenda": "Armário de cozinha branco com portas e nicho aberto para organizar a cozinha.\n#armariodecozinha #cozinha #organizacao #moveis"
   }
  ]
 }
