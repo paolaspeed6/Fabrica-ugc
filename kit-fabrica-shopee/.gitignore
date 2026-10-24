@@ -1,0 +1,15 @@
+# Repositório SEMPRE privado. Nunca chave ou token aqui (eles ficam nos segredos do ambiente).
+# Os registros (vistos.json, postados.json, usadas.json, MINHAS_PAGINAS.md, desperdicios.md) DEVEM ir para o Git:
+# na nuvem cada conversa começa de um clone novo, e sem eles a fábrica repete produto ou posta duas vezes.
+.env
+*.mp4
+*.mov
+*.jpg
+*.png
+video-teste/lote/lista*/
+produto-campeao/afiliados/candidatos-*.json
+produto-campeao/afiliados/*.log
+produto-campeao/afiliados/*.fim
+meta/plano*.json
+meta/fila*.json
+__pycache__/

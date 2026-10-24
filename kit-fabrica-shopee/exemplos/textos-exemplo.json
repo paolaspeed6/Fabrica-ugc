@@ -1,0 +1,96 @@
+{
+ "p01": {
+  "slug": "barraca-canadense-ntk",
+  "nome": "Barraca Canadense NTK",
+  "ac": [
+   150,
+   130,
+   100
+  ],
+  "a": {
+   "sem_horario": true,
+   "eyebrow": "Acampamento clássico",
+   "gancho": [
+    "Chuva forte?",
+    "*Coluna 2000 mm.*"
+   ],
+   "momentos": [
+    [
+     "",
+     "Costuras termo-seladas"
+    ],
+    [
+     "",
+     "Vento de até 56 km/h"
+    ],
+    [
+     "",
+     "Tela mosquiteiro"
+    ]
+   ],
+   "cta": [
+    "2 a 3",
+    "*pessoas.*"
+   ]
+  },
+  "b": {
+   "kicker": "Barraca Canadense NTK",
+   "cenas": [
+    [
+     "2000 mm",
+     "de coluna d’água",
+     "Costuras termo-seladas"
+    ],
+    [
+     "Aço",
+     "galvanizado",
+     "Vento de até 56 km/h"
+    ],
+    [
+     "Só",
+     "4,9 kg",
+     null
+    ]
+   ]
+  },
+  "r": {
+   "kicker": "Pra quem acampa até na chuva",
+   "cenas": [
+    [
+     "Coluna",
+     "2000 mm",
+     "Sobreteto com proteção UV"
+    ],
+    [
+     "Piso",
+     "antifungos",
+     "Impermeável, sem umidade"
+    ],
+    [
+     "Formato",
+     "em A",
+     null
+    ]
+   ]
+  },
+  "en": "A-frame camping tent",
+  "ext": "from the ground to the ridge of the roof",
+  "letras": true,
+  "c": {
+   "selo": "3 motivos pra levar",
+   "gancho": [
+    "A barraca clássica",
+    "que encara chuva."
+   ],
+   "itens": [
+    "Coluna d’água 2000 mm",
+    "Aço galvanizado reforçado",
+    "Pesa só 4,9 kg"
+   ]
+  },
+  "leg_a": "Barraca Canadense NTK para 2 a 3 pessoas, coluna d'água 2000 mm #barraca #camping #acampamento #barracadecamping",
+  "leg_b": "Barraca canadense com estrutura de aço galvanizado e tela mosquiteiro #camping #acampar #barracacanadense #aventura",
+  "leg_c": "Barraca NTK com costuras termo-seladas e piso antifungos, 4,9 kg #barraca #camping #acampamento #trilha",
+  "leg_r": "Chuva forte? Coluna d'água de 2000 mm. #barraca #camping #acampamento #barracadecamping"
+ }
+}

@@ -1,0 +1,579 @@
+<title>Mapa da Fábrica</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@500;700;800&display=swap">
+<style>
+/* Layout: tabuleiro de jogo vertical; uma estrada sinuosa liga as estações, com produtos andando por ela. Visual único (dia claro), por escolha. */
+:root{
+  --ceu:#bfe6ff; --grama:#9fd77c; --grama2:#8cca69; --estrada:#f6e3b4; --borda:#5a3d1e;
+  --tinta:#2b2118; --papel:#fffaf0; --auto:#2f9e6b; --voce:#f08a24; --pausa:#8f8a99; --bonus:#d94f8a; --perda:#c8402e;
+  --display:"Lilita One","Arial Rounded MT Bold",system-ui,sans-serif;
+  --body:"Nunito",system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+body{background:var(--grama);color:var(--tinta);font-family:var(--body);font-size:15px;
+  background-image:radial-gradient(var(--grama2) 2px,transparent 2.5px);background-size:22px 22px}
+*{box-sizing:border-box}
+.wrap{max-width:560px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px 120px}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.3px;margin:0;text-wrap:balance}
+
+.hud{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:14px 14px 12px}
+.hud h1{font-size:28px;line-height:1.05;color:var(--borda)}
+.hud p{margin:6px 0 10px;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.stat{background:#fff;border:2px solid var(--borda);border-radius:12px;padding:8px 6px;text-align:center}
+.stat b{display:block;font-family:var(--display);font-size:22px;font-weight:400;font-variant-numeric:tabular-nums;color:var(--borda)}
+.stat span{font-size:11px;font-weight:700;line-height:1.15;display:block}
+.legenda{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.pill{font-size:12px;font-weight:800;border-radius:99px;padding:3px 9px;color:#fff;border:2px solid var(--borda)}
+.p-auto{background:var(--auto)}.p-voce{background:var(--voce)}.p-pausa{background:var(--pausa)}.p-bonus{background:var(--bonus)}
+.dica{font-size:12.5px;margin-top:8px;font-weight:700;opacity:.8}
+
+.secao{margin:22px 4px 8px;color:#fff;font-size:22px;text-shadow:0 2px 0 var(--borda),0 -1px 0 var(--borda),1px 0 0 var(--borda),-1px 0 0 var(--borda)}
+
+.mapa{position:relative;margin-top:6px}
+.mapa svg.estrada{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.est{position:absolute;width:44%;display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inherit;-webkit-tap-highlight-color:transparent}
+.est:focus-visible .casa{outline:4px solid #fff;outline-offset:3px}
+.casa{position:relative;width:88px;height:88px;border-radius:24px;border:3px solid var(--borda);box-shadow:0 5px 0 var(--borda);display:grid;place-items:center;transition:transform .15s}
+.est:active .casa{transform:translateY(3px);box-shadow:0 2px 0 var(--borda)}
+.num{position:absolute;top:-10px;left:-10px;width:28px;height:28px;border-radius:50%;background:var(--papel);border:3px solid var(--borda);font-family:var(--display);font-size:15px;display:grid;place-items:center}
+.tag{position:absolute;bottom:-9px;right:-12px;font-size:10px;font-weight:800;border-radius:99px;padding:2px 7px;color:#fff;border:2px solid var(--borda);white-space:nowrap}
+.nome{background:var(--papel);border:2px solid var(--borda);border-radius:10px;padding:3px 8px;font-weight:800;font-size:13px;text-align:center;line-height:1.15;max-width:100%}
+.nome small{display:block;font-weight:700;font-size:11px;opacity:.75}
+
+.mundos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mundo{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:12px;text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;flex-direction:column;gap:6px;min-width:0}
+.mundo h3{font-size:17px;line-height:1.1}
+.mundo p{margin:0;font-size:12.5px;line-height:1.3}
+.mundo .tag{position:static;align-self:flex-start}
+.mundo.trancado{background:#e9e4dc}
+
+.regras{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:12px 14px}
+.regras ul{margin:6px 0 0;padding-left:18px;display:grid;gap:5px;font-size:13.5px}
+
+/* folha de detalhes */
+.veu{position:fixed;inset:0;background:rgba(43,33,24,.45);z-index:20}
+.folha{position:fixed;left:0;right:0;bottom:0;z-index:21;max-height:82%;overflow:auto;background:var(--papel);border-top:3px solid var(--borda);border-radius:22px 22px 0 0;
+  padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px));padding-top:12px;padding-bottom:calc(20px + env(safe-area-inset-bottom,0px));
+  transform:translateY(0);transition:transform .25s ease}
+.folha .alca{width:44px;height:5px;border-radius:9px;background:var(--borda);opacity:.3;margin:0 auto 10px}
+.f-topo{display:flex;gap:12px;align-items:center}
+.f-topo .casa{width:72px;height:72px;flex:none;border-radius:20px}
+.f-topo h2{font-size:24px;line-height:1.05}
+.f-topo .quem{font-size:13px;font-weight:800;opacity:.75}
+.f-corpo{margin-top:12px;display:grid;gap:10px;max-width:60ch}
+.f-corpo p{margin:0;line-height:1.45}
+.linha{display:grid;grid-template-columns:86px 1fr;gap:8px;font-size:14px;align-items:start}
+.linha b{font-size:11px;text-transform:uppercase;letter-spacing:.6px;opacity:.7;padding-top:2px}
+.botoes{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.btn{display:inline-block;background:var(--voce);color:#fff;text-decoration:none;font-weight:800;border:3px solid var(--borda);border-radius:12px;padding:9px 14px;box-shadow:0 3px 0 var(--borda);font-family:var(--body);font-size:14px;cursor:pointer}
+.btn.sec{background:#fff;color:var(--tinta)}
+.rodape{text-align:center;font-size:12px;font-weight:700;color:var(--borda);margin-top:18px;opacity:.85}
+.abas{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px}
+.abas button{font-family:var(--display);font-size:16px;min-width:0;border:3px solid var(--borda);border-radius:14px;padding:9px 6px;background:#e9f6df;color:var(--borda);box-shadow:0 4px 0 var(--borda);cursor:pointer}
+.abas button[aria-selected="true"]{background:var(--papel)}
+.abas #t-desp[aria-selected="true"]{background:#ffd9d2}
+.abas button:focus-visible{outline:4px solid #fff;outline-offset:2px}
+.placar{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:14px;margin-top:16px}
+.placar-topo{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.placar-topo h2{font-size:22px;color:var(--borda)}
+.placar-topo span{font-size:12px;font-weight:800;opacity:.7}
+.barra{display:flex;height:18px;border:2px solid var(--borda);border-radius:99px;overflow:hidden;margin:10px 0}
+.b-ok{background:var(--auto)}.b-teste{background:#f2c230}.b-perda{background:var(--perda)}
+.pl-linhas{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.pl-linhas div{background:#fff;border:2px solid var(--borda);border-radius:12px;padding:8px 6px;text-align:center;min-width:0}
+.pl-linhas b{display:block;font-family:var(--display);font-weight:400;font-size:18px;font-variant-numeric:tabular-nums;color:var(--borda)}
+.pl-linhas span{font-size:11px;font-weight:700;line-height:1.2;display:block}
+.pl-linhas .c-teste{background:#fff3c4}.pl-linhas .c-perda{background:#ffd9d2}
+.pl-nota{font-size:12.5px;margin:10px 0 0;line-height:1.4}
+.monstros{display:grid;gap:12px}
+.monstro{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:12px;display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:start}
+.monstro .bicho{width:62px;height:62px;border-radius:16px;border:3px solid var(--borda);background:#ffd9d2;display:grid;place-items:center}
+.monstro h3{font-size:18px;line-height:1.1}
+.monstro .valor{font-weight:800;font-size:13px;color:var(--perda);font-variant-numeric:tabular-nums}
+.monstro p{margin:4px 0 0;font-size:13px;line-height:1.35}
+.monstro .regra{margin-top:6px;background:#e3f5ea;border:2px solid var(--auto);border-radius:10px;padding:6px 8px;font-size:12.5px;font-weight:700;line-height:1.35}
+.testes li span{font-weight:800;font-variant-numeric:tabular-nums}
+.gratis{margin:6px 0 0;padding-left:20px;display:grid;gap:6px;font-size:13.5px;line-height:1.35}
+.missoes{display:grid;gap:12px}
+.missao{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:12px;display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:start}
+.missao .casa{width:62px;height:62px;border-radius:16px;box-shadow:0 3px 0 var(--borda)}
+.missao h3{font-size:18px;line-height:1.1}
+.missao .agora{display:inline-block;margin-top:4px;font-size:12px;font-weight:800;background:#fff3c4;border:2px solid var(--borda);border-radius:99px;padding:2px 8px}
+.missao p{margin:5px 0 0;font-size:13px;line-height:1.35}
+.missao .botoes{margin-top:8px}
+.auto-lista{list-style:none;padding:0!important}
+.auto-lista li{display:grid;grid-template-columns:14px 1fr;gap:8px;align-items:start}
+.ponto{width:12px;height:12px;border-radius:50%;border:2px solid var(--borda);margin-top:3px}
+.ponto.ok{background:var(--auto)}.ponto.pausa{background:var(--pausa)}
+.cmd-dica{margin:0 0 8px;font-size:12.5px;font-weight:700;opacity:.8}
+.cmds{display:grid;gap:8px}
+.cmd{text-align:left;font:inherit;font-weight:700;font-size:14px;background:#fff;border:2px solid var(--borda);border-radius:12px;padding:9px 11px;cursor:pointer;color:var(--tinta);display:flex;justify-content:space-between;gap:10px;align-items:center}
+.cmd small{font-size:11px;font-weight:800;color:var(--auto);white-space:nowrap}
+.paginas{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pag{background:var(--papel);border:3px solid var(--borda);border-radius:14px;box-shadow:0 4px 0 var(--borda);padding:10px;text-decoration:none;color:var(--tinta);display:flex;flex-direction:column;gap:2px;min-width:0}
+.pag b{font-family:var(--display);font-weight:400;font-size:16px;color:var(--borda)}
+.pag span{font-size:12px;line-height:1.3}
+.g-total{display:flex;flex-direction:column;margin-top:8px}
+.g-total b{font-family:var(--display);font-weight:400;font-size:40px;line-height:1;color:var(--borda);font-variant-numeric:tabular-nums}
+.g-total span{font-size:13px;font-weight:700;margin-top:4px}
+.g-leg{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;font-weight:700}
+.g-leg i{display:inline-block;width:10px;height:10px;border-radius:3px;border:1.5px solid var(--borda);margin-right:4px;vertical-align:-1px}
+.g-lista{display:grid;gap:8px}
+.g-item{background:#fff;border:2px solid var(--borda);border-radius:12px;padding:9px 11px;display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:center}
+.g-item .gn{font-weight:800;font-size:14px;min-width:0}
+.g-item .gd{grid-column:1/-1;font-size:12px;line-height:1.35;opacity:.85}
+.g-item .gv{font-family:var(--display);font-size:17px;color:var(--borda);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.g-item .gv small{display:block;font-family:var(--body);font-size:11px;font-weight:700;opacity:.7}
+.g-item.falta{background:#fff3c4}
+.g-campo{display:flex;align-items:center;gap:4px;font-weight:800}
+.g-campo input{width:96px;font:inherit;font-size:16px;font-weight:800;border:2px solid var(--borda);border-radius:10px;padding:6px 8px;text-align:right;background:var(--papel);color:var(--tinta)}
+.g-campo input:focus-visible{outline:3px solid var(--voce);outline-offset:1px}
+.g-ok{grid-column:1/-1;font-size:11px;font-weight:800;color:var(--auto);min-height:14px}
+.g-vazio{margin:0;font-size:13px;font-weight:700;opacity:.75}
+.p-dias{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;align-items:end;height:64px;margin-top:10px}
+.p-dias div{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:2px;font-size:10px;font-weight:800}
+.p-dias i{display:block;width:70%;background:var(--voce);border:2px solid var(--borda);border-radius:5px 5px 2px 2px;min-height:3px}
+.p-dias div.hj i{background:var(--auto)}
+@media (prefers-reduced-motion:reduce){.folha,.casa{transition:none}}
+</style>
+
+<div class="wrap">
+  <header class="hud">
+    <h1>Minha Fábrica Shopee</h1>
+    <p>Do produto achado na Shopee até a venda. Toque em qualquer estação para ver quem trabalha nela.</p>
+    <div class="stats">
+      <div class="stat"><b>50</b><span>vídeos por dia (meta)</span></div>
+      <div class="stat"><b>R$&nbsp;3</b><span>teto por produto</span></div>
+      <div class="stat"><b>4</b><span>travas de qualidade</span></div>
+    </div>
+    <div class="legenda">
+      <span class="pill p-auto">Claude faz sozinho</span>
+      <span class="pill p-voce">Sua vez</span>
+      <span class="pill p-pausa">Pausado</span>
+      <span class="pill p-bonus">Bônus</span>
+    </div>
+    <div class="dica">Comece pelas Missões: cada botão abre a página certa. No Mapa, as bolinhas na estrada são produtos andando pela fábrica.</div>
+  </header>
+
+  <nav class="abas" role="tablist">
+    <button type="button" role="tab" id="t-missoes" aria-selected="true">Missões</button>
+    <button type="button" role="tab" id="t-mapa" aria-selected="false">Mapa</button>
+    <button type="button" role="tab" id="t-gasto" aria-selected="false">Gasto total</button>
+    <button type="button" role="tab" id="t-desp" aria-selected="false">Desperdício</button>
+  </nav>
+
+  <div id="aba-gasto" hidden>
+    <div class="placar">
+      <div class="placar-topo"><h2>Gasto total da fábrica</h2><span id="g-data">câmbio R$ 5,69</span></div>
+      <div class="g-total"><b id="g-total">R$ ...</b><span id="g-sub">Carregando os valores salvos...</span></div>
+      <div class="barra" id="g-barra" aria-hidden="true"></div>
+      <div class="g-leg" id="g-leg"></div>
+    </div>
+
+    <h2 class="secao">Contado por mim</h2>
+    <div class="regras"><p class="cmd-dica">Somado dos contadores de cada lote e teste. Eu atualizo sozinho.</p><div class="g-lista" id="g-contado"><p class="g-vazio">Os valores contados aparecem aqui assim que a página carrega.</p></div></div>
+
+    <h2 class="secao">Você preenche</h2>
+    <div class="regras"><p class="cmd-dica">Assinaturas e serviços que eu não consigo ver. Digite quanto já pagou até hoje, em reais. Salva sozinho e entra no total.</p><div class="g-lista" id="g-preencher"><p class="g-vazio">Os campos para preencher aparecem aqui assim que a página carrega.</p></div></div>
+
+    <h2 class="secao">Grátis</h2>
+    <div class="regras"><div class="g-lista" id="g-gratis"><p class="g-vazio">Os serviços grátis aparecem aqui.</p></div></div>
+  </div>
+
+  <div id="aba-missoes">
+    <div class="placar">
+      <div class="placar-topo"><h2>Vídeos postados na Shopee</h2><span id="p-atual">carregando...</span></div>
+      <div class="pl-linhas">
+        <div><b id="p-hoje">-</b><span>hoje</span></div>
+        <div><b id="p-semana">-</b><span>nesta semana</span></div>
+        <div><b id="p-mes">-</b><span>neste mês</span></div>
+      </div>
+      <div class="p-dias" id="p-dias" aria-hidden="true"></div>
+      <p class="pl-nota">Conta os vídeos Shopee marcados como Postei na página Postagens. Os Reels automáticos ficam de fora. Semana começa na segunda.</p>
+    </div>
+    <h2 class="secao">Sua vez de jogar</h2>
+    <div class="missoes" id="missoes"></div>
+
+    <h2 class="secao">Rodando sozinho</h2>
+    <div class="regras">
+      <ul class="auto-lista">
+        <li><span class="ponto ok"></span><span><b>Varredura do Tinder</b> todo dia de manhã, sem limite de produtos esperando.</span></li>
+        <li><span class="ponto ok"></span><span><b>Reels automáticos</b> no Instagram, Facebook e Threads assim que você marca Postei.</span></li>
+        <li><span class="ponto ok"></span><span><b>Contador de postados</b> todo dia às 23:55.</span></li>
+      </ul>
+    </div>
+
+    <h2 class="secao">Comandos rápidos</h2>
+    <div class="regras">
+      <p class="cmd-dica">Toque para copiar e cole no chat do projeto.</p>
+      <div class="cmds" id="cmds"></div>
+    </div>
+
+    <h2 class="secao">Todas as páginas</h2>
+    <div class="paginas" id="paginas"></div>
+  </div>
+
+  <div id="aba-desp" hidden>
+    <div class="placar">
+      <div class="placar-topo"><h2>Placar do desperdício</h2><span>registro em agentes/desperdicios.md</span></div>
+      <p class="pl-nota">Cada imagem ou vídeo pago que precisou ser refeito ou não deu para postar entra aqui como perda. Os monstros abaixo são os erros que já custaram dinheiro na fábrica original; as regras deles já valem na sua.</p>
+    </div>
+
+    <h2 class="secao">Monstros já enfrentados</h2>
+    <div class="monstros" id="monstros"></div>
+
+    <h2 class="secao">Testes que ensinaram</h2>
+    <div class="regras">
+      <ul class="testes" id="testes"></ul>
+    </div>
+
+    <h2 class="secao">Aprender sem gastar</h2>
+    <div class="regras">
+      <ol class="gratis">
+        <li><b>Ficha antes de tudo.</b> Contar os itens da foto 01, ler as medidas e as letras da marca. Grátis.</li>
+        <li><b>Prévia de enquadramento em código.</b> O guia do layout mostra se o produto cabe entre o texto e a chamada antes de gerar. Grátis.</li>
+        <li><b>Ler as regras de erros</b> antes de cada roteiro, comando ou geração. Grátis.</li>
+        <li><b>Checar textos</b> com o checar_textos: só fatos do anúncio, nada de %, prazo ou nota. Grátis.</li>
+        <li><b>Fiscal de imagem antes de animar.</b> Uma imagem errada custa US$ 0,04; o vídeo dela custaria US$ 0,10 a 0,20.</li>
+        <li><b>Teste de 1 cena</b> antes de um modelo novo ou de um lote com regra nova.</li>
+        <li><b>Teto no script.</b> Todo gasto roda com limite em dólar e para sozinho.</li>
+        <li><b>Comparar com os vídeos de referência</b> (o padrão de qualidade) antes de entregar. Grátis.</li>
+        <li><b>Sua marcação "corrigir"</b> vira regra nova pelo Melhorador, para o erro não voltar.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div id="aba-mapa" hidden>
+  <h2 class="secao">A estrada principal</h2>
+  <div class="mapa" id="mapa"></div>
+
+  <h2 class="secao">Outros mundos</h2>
+  <div class="mundos" id="mundos"></div>
+
+  <h2 class="secao">Leis do jogo</h2>
+  <div class="regras">
+    <ul>
+      <li>Nada pago sem o seu OK, sempre com teto de gasto antes.</li>
+      <li>Produto igual à foto 01 do anúncio: cor, peças, letras e todos os itens.</li>
+      <li>Só fatos do anúncio. Sem prazo de entrega, sem %, sem nota exata, sem álcool.</li>
+      <li>15 segundos, 3 cenas, câmera sempre se mexendo devagar.</li>
+      <li>Vídeo que não dá pra postar vira perda no registro de desperdícios e volta para a Fila.</li>
+      <li>Na revisão, só se corrige o que você marcar com "corrigir".</li>
+    </ul>
+  </div>
+  </div>
+  <div class="rodape">Mapa da fábrica</div>
+</div>
+
+<div class="veu" id="veu" hidden></div>
+<section class="folha" id="folha" hidden role="dialog" aria-modal="true" aria-labelledby="f-nome"></section>
+
+<script>
+const L={
+  tinder:"COLE_URL_TINDER",
+  post:"COLE_URL_POSTAGENS",
+  conf:"COLE_URL_CONFERENCIA"
+};  // o Claude troca pelas URLs das suas páginas ao publicar
+const COR={auto:"var(--auto)",voce:"var(--voce)",pausa:"var(--pausa)",bonus:"var(--bonus)"};
+const TXT={auto:"Automático",voce:"Sua vez",pausa:"Pausado",bonus:"Bônus"};
+
+const EST=[
+ {n:"Ilha do Tinder",p:"Varredor",tipo:"bonus",bg:"#ffd6e8",bot:["#d94f8a","antena"],
+  faz:"Todo dia de manhã o Varredor procura na Shopee produtos bons com poucos afiliados e coloca os cartões no Tinder. Você arrasta para a direita o que quer em vídeo.",
+  entra:"Busca diária na Shopee",sai:"Produtos aprovados vão para a Fila",custo:"Grátis",acao:[["Abrir Tinder",L.tinder]]},
+ {n:"Fila",p:"Porteiro",tipo:"voce",bg:"#ffe4c4",bot:["#f08a24","quadrado"],
+  faz:"Quando a Fila junta o tamanho do lote, o Porteiro te avisa o custo estimado do lote. Só depois do seu OK a máquina liga.",
+  entra:"Produtos aprovados",sai:"Lote liberado (ex.: Lista 23/10)",custo:"Teto por lote, aprovado por você"},
+ {n:"Capataz",p:"Orquestrador",tipo:"auto",bg:"#d8f0e4",bot:["#2f9e6b","chapeu"],
+  faz:"Divide o lote em 3 linhas de produção (A, B e C, uns 15 produtos cada) e faz todo mundo trabalhar ao mesmo tempo. Também cria os links de afiliado com Sub ID de cada vídeo.",
+  entra:"Lote liberado",sai:"3 linhas trabalhando juntas",custo:"Grátis"},
+ {n:"Fichador",p:"Trava 1",tipo:"auto",bg:"#e3ecff",bot:["#3b6fd8","lupa"],
+  faz:"Baixa e lê TODAS as fotos do anúncio e monta a ficha: cor da foto 01, quantos itens, letras exatas da marca, tamanho real pelas medidas e onde fica cada peça (tampa, painel, botões) olhando todos os ângulos. Ninguém gasta antes da ficha pronta.",
+  entra:"Link do produto",sai:"Ficha do produto",custo:"Grátis"},
+ {n:"Sala de roteiro",p:"Pesquisador, Roteirista, Produtor",tipo:"auto",bg:"#fff1b8",bot:["#c99a06","oculos"],
+  faz:"O Pesquisador acha o ângulo que vende (oceano azul), o Roteirista escreve gancho e chamada de cada versão, o Produtor escreve os comandos de cena. O QC de roteiro só libera nota 8 ou mais.",
+  entra:"Ficha + livros da fábrica",sai:"Roteiro aprovado e comandos de cena",custo:"Grátis"},
+ {n:"Estúdio de foto",p:"Nano Banana",tipo:"auto",bg:"#ffe0d6",bot:["#e0603a","flash"],
+  faz:"Cria as cenas novas usando as fotos reais do anúncio como base, nunca inventando o produto do zero.",
+  entra:"Fotos do anúncio + comando",sai:"Imagens das 3 cenas",custo:"Cerca de US$ 0,04 por imagem"},
+ {n:"Fiscal de imagem",p:"Trava 2",tipo:"auto",bg:"#e3ecff",bot:["#3b6fd8","apito"],
+  faz:"Compara cada imagem com a ficha e as fotos do anúncio. Reprova cor, letra, tamanho errado ou peça fora do lugar antes de gastar com vídeo. Só barra o que você veria no iPhone.",
+  entra:"Imagens",sai:"APROVADO ou REPROVADO",custo:"Grátis"},
+ {n:"Câmera",p:"Animador",tipo:"auto",bg:"#e6dcff",bot:["#7a55d6","camera"],
+  faz:"Método novo desde a Lista 23/10: câmera andando de verdade, avanço curto de 15 a 20 cm, produto parado em tamanho real. O comando leva só nome, itens, peças e escala, nunca a lista do que não pode aparecer.",
+  entra:"Imagens aprovadas",sai:"Cenas em vídeo",custo:"Seedance: US$ 0,10 por 5 s. Veo 3.1 Lite só se o Seedance não der: US$ 0,20 por 4 s"},
+ {n:"Fiscal de vídeo",p:"Trava 3",tipo:"auto",bg:"#e3ecff",bot:["#3b6fd8","apito"],
+  faz:"Assiste cada cena e corta trechos onde o produto escorrega, gira, derrete, muda de peça ou ganha objeto novo. Também reprova peça na posição errada. Se não salvar, pede para refazer.",
+  entra:"Cenas em vídeo",sai:"Trechos limpos",custo:"Grátis"},
+ {n:"Ilha de edição",p:"Editor",tipo:"auto",bg:"#d6f5f5",bot:["#1f9aa0","fone"],
+  faz:"Monta os vídeos de 15 s: Shopee A, B e C e o Reels, cada um com gancho e chamada próprios, letras fora da área do app e música própria que muda sozinha. Produto complexo (máquina, motor, painel, muitas peças) ganha a foto do anúncio num cartão de vidro desfocado no canto inferior.",
+  entra:"Trechos limpos + roteiro",sai:"4 vídeos prontos por produto",custo:"Grátis"},
+ {n:"Conferência",p:"Você confere",tipo:"voce",bg:"#ffe4c4",bot:["#f08a24","lupa"],
+  faz:"Uma página fixa só com o que falta conferir, de todos os lotes. Cada produto mostra o vídeo A. Toque OK, Editar, Descartar ou Esgotado e pronto, já fica salvo. Depois toque Avisar o Claude.",
+  entra:"Vídeos prontos de cada lote",sai:"OK vai para Postagens e Reels. Editar volta corrigido. Descartar volta para a Fila. Esgotado vai para a aba Esgotados",custo:"Grátis",acao:[["Abrir Conferência",L.conf]]},
+ {n:"Postagens",p:"Você",tipo:"voce",bg:"#ffe4c4",bot:["#f08a24","estrela"],
+  faz:"Os vídeos aprovados vão para o Drive e para a página Postagens. Lá você salva o vídeo, copiam a legenda, postam na Shopee e tocam em Postei. Produto que esgotou fica separado na aba Esgotados.",
+  entra:"Vídeos prontos",sai:"Vídeos postados na Shopee",custo:"Grátis",acao:[["Abrir Postagens",L.post]]},
+ {n:"Postador Meta",p:"Robô das redes",tipo:"auto",bg:"#d8f0e4",bot:["#2f9e6b","antena"],
+  faz:"Pega o Reels de cada produto marcado como Postei e publica no Instagram, no Facebook e no Threads, num ritmo seguro para conta nova. Aviso de spam pausa só aquela rede por 24 h.",
+  entra:"Produtos marcados Postei",sai:"Reels no Instagram e Threads",custo:"Grátis"},
+ {n:"Analista",p:"Contador de vendas",tipo:"auto",bg:"#fff1b8",bot:["#c99a06","grafico"],
+  faz:"Lê as vendas e cliques por Sub ID e descobre qual versão e qual gancho vendem mais. Os vencedores vão para o banco de ganchos.",
+  entra:"Vendas por Sub ID",sai:"Ganchos e lições novas",custo:"Grátis"},
+ {n:"Melhorador",p:"Trava 4",tipo:"auto",bg:"#e3ecff",bot:["#3b6fd8","chave"],
+  faz:"Uma vez por lote, depois da sua revisão, corrige as regras e os comandos para o erro não se repetir. Aí a estrada volta para o começo, mais esperta.",
+  entra:"Sua revisão + defeitos",sai:"Regras melhores para o próximo lote",custo:"Grátis"}
+];
+
+const MUNDOS=[
+ {n:"Cofre",p:"Guarda do dinheiro",tipo:"voce",bg:"#fff1b8",bot:["#c99a06","moeda"],
+  faz:"Teto de R$ 3 por produto (meta abaixo de R$ 2). Cada gasto pago tem teto antes e seu OK. Todo vídeo refeito ou perdido entra no registro de desperdícios.",
+  entra:"Seu OK",sai:"Gasto controlado",custo:"WaveSpeed, recarga feita por você"}
+];
+
+// robozinho desenhado em SVG, um por personagem
+function robo(cor,extra){
+  const x={
+    antena:'<line x1="40" y1="14" x2="40" y2="4" stroke="#5a3d1e" stroke-width="3"/><circle cx="40" cy="4" r="4" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/>',
+    quadrado:'<rect x="33" y="4" width="14" height="10" rx="2" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/>',
+    chapeu:'<path d="M20 18 h40 l-6 -12 h-28z" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2.5"/>',
+    lupa:'<circle cx="64" cy="58" r="8" fill="#fff" stroke="#5a3d1e" stroke-width="3"/><line x1="70" y1="64" x2="76" y2="72" stroke="#5a3d1e" stroke-width="4"/>',
+    oculos:'<rect x="24" y="30" width="13" height="9" rx="3" fill="none" stroke="#5a3d1e" stroke-width="2.5"/><rect x="43" y="30" width="13" height="9" rx="3" fill="none" stroke="#5a3d1e" stroke-width="2.5"/><line x1="37" y1="34" x2="43" y2="34" stroke="#5a3d1e" stroke-width="2"/>',
+    flash:'<path d="M42 2 l-8 12 h6 l-4 10 l10 -14 h-6z" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/>',
+    apito:'<path d="M18 16 q22 -14 44 0" fill="none" stroke="#ffd23f" stroke-width="5"/><path d="M18 16 q22 -14 44 0" fill="none" stroke="#5a3d1e" stroke-width="1.5"/>',
+    camera:'<rect x="56" y="48" width="18" height="13" rx="3" fill="#2b2118"/><circle cx="65" cy="54.5" r="4" fill="#9fd7ff"/>',
+    fone:'<path d="M14 36 q0 -28 26 -28 q26 0 26 28" fill="none" stroke="#5a3d1e" stroke-width="4"/><rect x="9" y="30" width="9" height="14" rx="3" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/><rect x="62" y="30" width="9" height="14" rx="3" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/>',
+    estrela:'<path d="M40 1 l4 8 9 1 -7 6 2 9 -8 -5 -8 5 2 -9 -7 -6 9 -1z" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/>',
+    grafico:'<rect x="58" y="56" width="5" height="12" fill="#2f9e6b"/><rect x="65" y="50" width="5" height="18" fill="#2f9e6b"/><rect x="72" y="44" width="5" height="24" fill="#2f9e6b"/>',
+    chave:'<circle cx="66" cy="52" r="6" fill="none" stroke="#5a3d1e" stroke-width="3"/><line x1="66" y1="58" x2="66" y2="72" stroke="#5a3d1e" stroke-width="3"/>',
+    laco:'<path d="M40 12 l-12 -8 v14z M40 12 l12 -8 v14z" fill="#ff8fc0" stroke="#5a3d1e" stroke-width="2"/>',
+    coracao:'<path d="M40 16 c-10 -8 -16 -2 -10 -10 c3 -3 7 -2 10 2 c3 -4 7 -5 10 -2 c6 8 0 2 -10 10z" fill="#ff6b8a" stroke="#5a3d1e" stroke-width="2"/>',
+    cadeado:'<rect x="56" y="54" width="18" height="15" rx="3" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/><path d="M60 54 v-5 a5 5 0 0 1 10 0 v5" fill="none" stroke="#5a3d1e" stroke-width="2.5"/>',
+    moeda:'<circle cx="65" cy="60" r="9" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2.5"/><text x="65" y="64.5" font-size="12" text-anchor="middle" font-family="Arial" font-weight="700" fill="#5a3d1e">$</text>'
+  }[extra]||"";
+  return `<svg viewBox="0 0 80 80" width="64" height="64" aria-hidden="true">
+   <rect x="16" y="16" width="48" height="40" rx="12" fill="${cor}" stroke="#5a3d1e" stroke-width="3"/>
+   <rect x="23" y="26" width="34" height="20" rx="8" fill="#fffaf0" stroke="#5a3d1e" stroke-width="2"/>
+   <circle cx="33" cy="36" r="3.6" fill="#2b2118"/><circle cx="47" cy="36" r="3.6" fill="#2b2118"/>
+   <path d="M35 42 q5 4 10 0" fill="none" stroke="#2b2118" stroke-width="2" stroke-linecap="round"/>
+   <rect x="28" y="56" width="24" height="16" rx="5" fill="${cor}" stroke="#5a3d1e" stroke-width="3"/>
+   ${x}</svg>`;
+}
+
+const mapa=document.getElementById("mapa");
+const PASSO=150;
+function montarMapa(){
+  mapa.innerHTML="";
+  const W=mapa.clientWidth||360;
+  const H=EST.length*PASSO+20;
+  mapa.style.height=H+"px";
+  const pts=EST.map((e,i)=>({x:i%2? W*0.73 : W*0.27, y:i*PASSO+56}));
+  let d=`M${pts[0].x} ${pts[0].y}`;
+  for(let i=1;i<pts.length;i++){const a=pts[i-1],b=pts[i];d+=` C${a.x} ${a.y+PASSO*.6}, ${b.x} ${b.y-PASSO*.6}, ${b.x} ${b.y}`;}
+  const NS="http://www.w3.org/2000/svg";
+  const svg=document.createElementNS(NS,"svg");svg.setAttribute("class","estrada");svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  const mov=!matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let bolas="";
+  if(mov){const cores=["#ff6b8a","#3b6fd8","#ffd23f","#2f9e6b","#7a55d6"];
+    for(let k=0;k<5;k++)bolas+=`<g><rect x="-7" y="-7" width="14" height="14" rx="3" fill="${cores[k]}" stroke="#5a3d1e" stroke-width="2"/><animateMotion dur="26s" begin="${-k*5.2}s" repeatCount="indefinite" path="${d}"/></g>`;}
+  svg.innerHTML=`<path d="${d}" fill="none" stroke="#5a3d1e" stroke-width="34" stroke-linecap="round"/>
+    <path d="${d}" fill="none" stroke="#f6e3b4" stroke-width="27" stroke-linecap="round"/>
+    <path d="${d}" fill="none" stroke="#e2c482" stroke-width="3" stroke-dasharray="10 12" stroke-linecap="round"/>${bolas}`;
+  mapa.appendChild(svg);
+  EST.forEach((e,i)=>mapa.appendChild(botao(e,i,pts[i],W)));
+}
+function botao(e,i,pt,W){
+  const b=document.createElement("button");b.className="est";b.type="button";
+  b.style.left=(pt.x-W*0.22)+"px";b.style.top=(pt.y-46)+"px";
+  b.innerHTML=`<div class="casa" style="background:${e.bg}">${robo(e.bot[0],e.bot[1])}<span class="num">${i+1}</span><span class="tag" style="background:${COR[e.tipo]}">${TXT[e.tipo]}</span></div><div class="nome">${e.n}<small>${e.p}</small></div>`;
+  b.setAttribute("aria-label",`${i+1}. ${e.n}, ${TXT[e.tipo]}`);
+  b.onclick=()=>abrir(e,i+1);
+  return b;
+}
+function montarMundos(){
+  const box=document.getElementById("mundos");
+  MUNDOS.forEach(m=>{
+    const b=document.createElement("button");b.type="button";b.className="mundo"+(m.trancado?" trancado":"");
+    b.innerHTML=`<div class="casa" style="background:${m.bg};width:64px;height:64px;border-radius:18px;box-shadow:0 3px 0 var(--borda)">${robo(m.bot[0],m.bot[1]).replace('width="64" height="64"','width="50" height="50"')}</div><h3>${m.n}</h3><p>${m.p}</p><span class="tag" style="background:${COR[m.tipo]}">${m.trancado?"Trancado":TXT[m.tipo]}</span>`;
+    b.onclick=()=>abrir(m,null);box.appendChild(b);
+  });
+}
+const veu=document.getElementById("veu"),folha=document.getElementById("folha");
+let ultimo=null;
+function abrir(e,n){
+  ultimo=document.activeElement;
+  const acoes=(e.acao||[]).map(([t,u])=>`<a class="btn" href="${u}" target="_blank" rel="noopener">${t}</a>`).join("");
+  folha.innerHTML=`<div class="alca"></div>
+   <div class="f-topo"><div class="casa" style="background:${e.bg}">${robo(e.bot[0],e.bot[1]).replace('width="64" height="64"','width="54" height="54"')}</div>
+   <div><div class="quem">${n?"Estação "+n+" · ":""}${e.p}</div><h2 id="f-nome">${e.n}</h2><span class="pill" style="background:${COR[e.tipo]};display:inline-block;margin-top:4px">${e.trancado?"Trancado":TXT[e.tipo]}</span></div></div>
+   <div class="f-corpo"><p>${e.faz}</p>
+   <div class="linha"><b>Entra</b><span>${e.entra}</span></div>
+   <div class="linha"><b>Sai</b><span>${e.sai}</span></div>
+   <div class="linha"><b>Custo</b><span>${e.custo}</span></div>
+   <div class="botoes">${acoes}<button class="btn sec" type="button" id="fechar">Fechar</button></div></div>`;
+  veu.hidden=false;folha.hidden=false;
+  document.getElementById("fechar").onclick=fechar;
+  document.getElementById("fechar").focus();
+}
+function fechar(){veu.hidden=true;folha.hidden=true;if(ultimo)ultimo.focus();}
+veu.onclick=fechar;
+document.addEventListener("keydown",ev=>{if(ev.key==="Escape"&&!folha.hidden)fechar();});
+const MONSTROS=[
+ {n:"Encolhedor",usd:"4,48",cor:"#7a55d6",
+  o:"Cadeiras, PC gamer, cozinha, arara, berço e banquetas saíram em miniatura. A faixa fixa do layout encolhia produto grande.",
+  r:"Tamanho real sempre: linha de escala em todo comando, kit de N com N unidades inteiras, medidas lidas em todas as fotos."},
+ {n:"Fantasma do prompt",usd:"3,64",cor:"#4a4a6a",
+  o:"O comando de vídeo citava a lista do que não pode aparecer, os textos das fotos e outras cores. O Seedance desenhou exatamente isso: taças, vasos, cotas, 3ª cadeira, texto na parede.",
+  r:"Comando de vídeo leva só nome, itens, peças e escala. Nada de proibidos, textos do anúncio, outras cores ou \"foto 0X\". Avanço curto de 15 a 20 cm."},
+ {n:"Barrados na porta",usd:"3,57",cor:"#2f9e6b",
+  o:"Imagens e clipes com letra errada, produto encostando na borda, ferramenta a mais na maleta, peça girando. Os fiscais pegaram antes de virar vídeo ruim.",
+  r:"Fiscal de imagem antes de animar e fiscal de vídeo antes de editar, calibrados para o que você veria no iPhone."},
+ {n:"Torto do quadro",usd:"2,81",cor:"#3b6fd8",
+  o:"Produto grande ou pequeno demais, fora do espaço entre o texto e a chamada. Na Lista 21/10 B ainda havia prompts antigos com objetos citados.",
+  r:"Prévia de enquadramento em código antes de gerar e comando sem nomear nenhum objeto proibido."},
+ {n:"Eco do lote",usd:"0,92",cor:"#8f8a99",
+  o:"Lote 20/10: 4 clipes a mais, 11 imagens refeitas por enquadramento e 2 imagens perdidas por erro de gravação do registro.",
+  r:"Um contador de gasto por lote e o registro salvo antes de cada pedido pago."},
+ {n:"Sumidor de itens",usd:"0,92",cor:"#e0603a",
+  o:"O relógio Zeblaze tinha 2 modelos na foto 01 e o vídeo mostrou 1. O monitor duplo saiu com 1 tela.",
+  r:"Se a foto 01 mostra 2 ou mais itens, todo vídeo mostra todos, na mesma quantidade e arrumação."},
+ {n:"Fora de lugar",usd:"0,42",cor:"#c99a06",
+  o:"A cadeirinha Maxi-Cosi apareceu no chão da sala, como se fosse cadeira de casa.",
+  r:"Cenário do uso real do produto, casas modernas e cenários variados entre as versões."}
+];
+const TESTES=[
+ ["Receita nova de qualidade (2 testes, Nano Banana + Veo e Seedance)","0,97","mostrou que com câmera andando de verdade o Seedance deforma o produto e criou os fiscais"],
+ ["Primeiro teste","0,12","provou a fábrica de ponta a ponta"]
+];
+function montarDesp(){
+  document.getElementById("monstros").innerHTML=MONSTROS.map(m=>`<article class="monstro">
+    <div class="bicho"><svg viewBox="0 0 60 60" width="50" height="50" aria-hidden="true"><path d="M8 52 V26 a22 22 0 0 1 44 0 V52 l-7 -6 -7 6 -8 -6 -8 6 -7 -6z" fill="${m.cor}" stroke="#5a3d1e" stroke-width="3"/><circle cx="22" cy="26" r="6" fill="#fff" stroke="#5a3d1e" stroke-width="2"/><circle cx="38" cy="26" r="6" fill="#fff" stroke="#5a3d1e" stroke-width="2"/><circle cx="23" cy="27" r="2.6" fill="#2b2118"/><circle cx="37" cy="27" r="2.6" fill="#2b2118"/><path d="M22 39 q8 -5 16 0" fill="none" stroke="#2b2118" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+    <div><h3>${m.n}</h3><div class="valor">Custou US$ ${m.usd}</div><p>${m.o}</p><div class="regra">Regra em vigor: ${m.r}</div></div></article>`).join("");
+  document.getElementById("testes").innerHTML=TESTES.map(t=>`<li>${t[0]}: <span>US$ ${t[1]}</span>. ${t[2].charAt(0).toUpperCase()+t[2].slice(1)}.</li>`).join("");
+}
+const MISSOES=[
+ {n:"Escolher produtos",bot:["#d94f8a","antena"],bg:"#ffd6e8",agora:"Todo dia, novos cartões de manhã",
+  t:"Arraste para a direita o que merece vídeo. Com 45 na Fila, eu te mando o custo do lote.",acao:[["Abrir Tinder",L.tinder]]},
+ {n:"Conferir vídeos",bot:["#f08a24","lupa"],bg:"#ffe4c4",agora:"Quando o Claude avisar que um lote ficou pronto",
+  t:"Veja o vídeo A de cada produto e toque OK, Editar, Descartar ou Esgotado. No fim, toque Avisar o Claude.",acao:[["Abrir Conferência",L.conf]]},
+ {n:"Postar na Shopee",bot:["#f08a24","estrela"],bg:"#ffe4c4",agora:"Depois do seu OK na Conferência",
+  t:"Salve o vídeo, copie a legenda, poste no app e toque Postei. O Reels vai sozinho para Instagram, Facebook e Threads.",acao:[["Abrir Postagens",L.post]]},
+ {n:"Olhar o desperdício",bot:["#c8402e","moeda"],bg:"#ffd9d2",agora:"Erros que já custaram dinheiro",
+  t:"Veja os monstros já enfrentados e a regra que impede cada um de voltar.",aba:"desp"}
+];
+const CMDS=[
+ ["Pode produzir o lote da Fila","libera o próximo lote"],
+ ["Terminei a Conferência, processa","OK vai para Postagens"],
+ ["Roda a varredura do Tinder agora","cartões novos"],
+ ["Quanto gastei até agora?","placar do dinheiro"],
+ ["Atualiza o mapa do jogo","novidades aqui"]
+];
+const PAGINAS=[
+ ["Tinder Shopee","escolher produtos",L.tinder],
+ ["Conferência","OK, Editar, Descartar, Esgotado",L.conf],
+ ["Postagens","postar e ver esgotados",L.post]
+];
+function montarMissoes(){
+  const box=document.getElementById("missoes");
+  MISSOES.forEach(m=>{
+    const a=document.createElement("article");a.className="missao";
+    const bts=(m.acao||[]).map(([t,u])=>`<a class="btn" href="${u}" target="_blank" rel="noopener">${t}</a>`).join("")+(m.aba?`<button type="button" class="btn" data-aba="${m.aba}">Abrir Desperdício</button>`:"");
+    a.innerHTML=`<div class="casa" style="background:${m.bg}">${robo(m.bot[0],m.bot[1]).replace('width="64" height="64"','width="48" height="48"')}</div>
+     <div><h3>${m.n}</h3><span class="agora">${m.agora}</span><p>${m.t}</p><div class="botoes">${bts}</div></div>`;
+    box.appendChild(a);
+  });
+  box.querySelectorAll("[data-aba]").forEach(b=>b.onclick=()=>{aba("desp");scrollTo(0,0);});
+  const c=document.getElementById("cmds");
+  CMDS.forEach(([t,d])=>{
+    const b=document.createElement("button");b.type="button";b.className="cmd";
+    b.innerHTML=`<span>${t}</span><small>${d}</small>`;
+    b.onclick=()=>{const fim=()=>{b.querySelector("small").textContent="copiado";setTimeout(()=>b.querySelector("small").textContent=d,1600)};
+      try{navigator.clipboard.writeText(t).then(fim,()=>sel(b))}catch(e){sel(b)}};
+    c.appendChild(b);
+  });
+  document.getElementById("paginas").innerHTML=PAGINAS.map(([n,d,u])=>`<a class="pag" href="${u}" target="_blank" rel="noopener"><b>${n}</b><span>${d}</span></a>`).join("");
+}
+function sel(b){const r=document.createRange();r.selectNodeContents(b.querySelector("span"));const s=getSelection();s.removeAllRanges();s.addRange(r);}
+const TABS={missoes:"t-missoes",mapa:"t-mapa",gasto:"t-gasto",desp:"t-desp"};
+function aba(k){
+  for(const [n,id] of Object.entries(TABS)){
+    document.getElementById(id).setAttribute("aria-selected",String(n===k));
+    document.getElementById("aba-"+n).hidden=n!==k;
+  }
+  if(k==="mapa")montarMapa();
+  try{localStorage.setItem("aba",k)}catch(e){}
+}
+for(const [n,id] of Object.entries(TABS))document.getElementById(id).onclick=()=>aba(n);
+montarMundos();montarDesp();montarMissoes();
+let ini={"#desperdicio":"desp","#mapa":"mapa","#missoes":"missoes","#gasto":"gasto"}[location.hash];
+if(!ini){try{ini=localStorage.getItem("aba")}catch(e){}}
+aba(TABS[ini]?ini:"missoes");
+// Gasto total: dados no banco da página (coleção gastos)
+const CAMBIO=5.69;
+const brl=v=>"R$ "+v.toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
+const esc=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let GASTOS=[],dbRef=null,podeEscrever=false;
+const emBRL=g=>g.valor==null?null:(g.moeda==="USD"?g.valor*CAMBIO:g.valor);
+function renderGasto(){
+  const grupos={contado:[],preencher:[],gratis:[]};
+  GASTOS.slice().sort((a,b)=>(a.ordem||0)-(b.ordem||0)).forEach(g=>(grupos[g.grupo]||grupos.contado).push(g));
+  const somaC=grupos.contado.reduce((t,g)=>t+(emBRL(g)||0),0);
+  const somaP=grupos.preencher.filter(g=>!g.conferencia).reduce((t,g)=>t+(emBRL(g)||0),0);
+  const faltam=grupos.preencher.filter(g=>g.valor==null&&!g.conferencia).length;
+  const tot=somaC+somaP;
+  document.getElementById("g-total").textContent=brl(tot);
+  document.getElementById("g-sub").textContent=GASTOS.length?(faltam?`Faltam ${faltam} valores seus, então o total real é maior.`:"Tudo preenchido."):"Ainda sem valores salvos.";
+  const pc=tot?somaC/tot*100:0;
+  document.getElementById("g-barra").innerHTML=tot?`<i style="width:${pc}%;background:var(--auto)"></i><i style="width:${100-pc}%;background:var(--voce)"></i>`:"";
+  document.getElementById("g-leg").innerHTML=`<span><i style="background:var(--auto)"></i>Contado por mim ${brl(somaC)}</span><span><i style="background:var(--voce)"></i>Você preencheu ${brl(somaP)}</span>`;
+  const linha=g=>{const v=emBRL(g);return `<div class="g-item"><span class="gn">${esc(g.nome)}</span><span class="gv">${v==null?"":brl(v)}${g.moeda==="USD"&&g.valor!=null?`<small>US$ ${g.valor.toFixed(2).replace(".",",")}</small>`:""}</span>${g.detalhe?`<span class="gd">${esc(g.detalhe)}</span>`:""}</div>`};
+  if(grupos.contado.length)document.getElementById("g-contado").innerHTML=grupos.contado.map(linha).join("");
+  if(grupos.gratis.length)document.getElementById("g-gratis").innerHTML=grupos.gratis.map(g=>`<div class="g-item"><span class="gn">${esc(g.nome)}</span><span class="gv">R$ 0</span>${g.detalhe?`<span class="gd">${esc(g.detalhe)}</span>`:""}</div>`).join("");
+  const box=document.getElementById("g-preencher");
+  if(!grupos.preencher.length)return;
+  const foco=document.activeElement&&document.activeElement.id;
+  box.innerHTML=grupos.preencher.map(g=>`<div class="g-item${g.valor==null?" falta":""}"><label class="gn" for="gi-${esc(g.id)}">${esc(g.nome)}</label>
+    <span class="g-campo">R$ <input id="gi-${esc(g.id)}" data-id="${esc(g.id)}" inputmode="decimal" placeholder="0,00" value="${g.valor==null?"":g.valor.toFixed(2).replace(".",",")}" ${podeEscrever?"":"disabled"}></span>
+    ${g.detalhe?`<span class="gd">${esc(g.detalhe)}</span>`:""}<span class="g-ok" id="go-${esc(g.id)}"></span></div>`).join("");
+  box.querySelectorAll("input").forEach(inp=>inp.addEventListener("change",()=>salvar(inp)));
+  if(foco&&document.getElementById(foco))document.getElementById(foco).focus();
+}
+async function salvar(inp){
+  const id=inp.dataset.id,ok=document.getElementById("go-"+id);
+  const t=inp.value.trim().replace(/\./g,"").replace(",",".");
+  const v=t===""?null:Number(t);
+  if(v!==null&&(!isFinite(v)||v<0)){ok.textContent="Digite só o número, por exemplo 550,00";ok.style.color="var(--perda)";return;}
+  ok.style.color="";ok.textContent="Salvando...";
+  try{await dbRef.doc("gastos/"+id).update({valor:v,atualizado_em:new Date().toISOString()});ok.textContent="Salvo";}
+  catch(e){ok.style.color="var(--perda)";ok.textContent="Não salvou. Abra a página no app do Claude logado e tente de novo.";}
+}
+(async()=>{
+  const db=window.claude?await window.claude.use("db"):null;
+  if(!db){document.getElementById("g-sub").textContent="Abra logado no app do Claude para ver e salvar os valores.";return;}
+  dbRef=db;
+  podeEscrever=true;
+  db.doc("postagens_resumo/atual").onSnapshot(sn=>{
+    const r=sn.data&&sn.data();if(!r)return;
+    const ref=r.dia_ref,agoraBR=new Date(Date.now()-3*3600e3).toISOString().slice(0,10);
+    const mesmoDia=ref===agoraBR;
+    const segRef=(()=>{const d=new Date(ref+"T12:00:00Z");const w=(d.getUTCDay()+6)%7;d.setUTCDate(d.getUTCDate()-w);return d.toISOString().slice(0,10)})();
+    const segHoje=(()=>{const d=new Date(agoraBR+"T12:00:00Z");const w=(d.getUTCDay()+6)%7;d.setUTCDate(d.getUTCDate()-w);return d.toISOString().slice(0,10)})();
+    document.getElementById("p-hoje").textContent=mesmoDia?r.hoje:0;
+    document.getElementById("p-semana").textContent=segRef===segHoje?r.semana:0;
+    document.getElementById("p-mes").textContent=ref.slice(0,7)===agoraBR.slice(0,7)?r.mes:0;
+    const at=new Date(r.atualizado_em);
+    document.getElementById("p-atual").textContent="atualizado "+at.toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"});
+    const dias=r.dias||{},lista=[];
+    for(let k=6;k>=0;k--){const d=new Date(agoraBR+"T12:00:00Z");d.setUTCDate(d.getUTCDate()-k);const id=d.toISOString().slice(0,10);lista.push([id,dias[id]||0]);}
+    const mx=Math.max(1,...lista.map(x=>x[1]));
+    document.getElementById("p-dias").innerHTML=lista.map(([id,n])=>`<div class="${id===agoraBR?"hj":""}"><span>${n||""}</span><i style="height:${Math.round(n/mx*40)}px"></i><span>${["dom","seg","ter","qua","qui","sex","sáb"][new Date(id+"T12:00:00Z").getUTCDay()]}</span></div>`).join("");
+  },()=>{});
+  db.collection("gastos").onSnapshot(snap=>{
+    GASTOS=snap.docs.map(d=>({id:d.id,...d.data()}));renderGasto();
+  },()=>{document.getElementById("g-sub").textContent="Não consegui ler os valores agora.";});
+})();
+let rz;addEventListener("resize",()=>{clearTimeout(rz);rz=setTimeout(()=>{if(!document.getElementById("aba-mapa").hidden)montarMapa()},150);});
+</script>
+

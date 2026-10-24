@@ -1,0 +1,94 @@
+# Lições da fábrica (memória do projeto original, out/2026, sem dados pessoais)
+
+Tudo aqui foi aprendido na prática, quase sempre perdendo dinheiro. As regras detalhadas e numeradas estão em
+`agentes/regras_de_erros.md`; este arquivo junta o "porquê" e o jeito de trabalhar que a dona da fábrica original pediu.
+Leia uma vez no começo de cada conversa nova. Quando a dona der uma regra nova, grave aqui (data + regra + porquê).
+
+## Jeito de trabalhar
+- Um passo por vez, resposta curta, em português. Diga o próximo passo e o custo dele em R$.
+- Nada pago sem pedido: nenhuma imagem, clipe, refação ou vídeo novo sem a dona pedir. Edição, checagem e código são grátis.
+- Antes de gastar: teto duro em dólar, custo esperado e o OK dela. Modelo novo: medir 1 cena pelo saldo antes de orçar
+  (o preço da lista do WaveSpeed às vezes é por SEGUNDO, não por clipe: um clipe que parecia US$ 0,11 custou US$ 0,56).
+- Qualidade acima de economia: economizar nunca pode baixar a qualidade final. Cena simples não pode virar cena pobre.
+- Toda cena é animação de IA de verdade. Câmera por código só onde o produto quebra na animação, e mesmo assim com o
+  cenário animado por trás (produto parado colado por código), nunca foto parada com zoom.
+- Na revisão, corrija SÓ o que ela marcar como "corrigir"/Editar. Comentário solto vira regra, não refação.
+  Não reassista vídeos tentando adivinhar o que ela quis dizer: espere ela apontar.
+- Lote liberado vai até o fim: trabalhos em segundo plano com tempo limite e nova tentativa, aviso curto a cada etapa.
+- Registre toda refação paga e todo vídeo que não deu para postar em `agentes/desperdicios.md` (data, produto, lote, US$, motivo).
+  Produto que não deu para postar volta para a Fila do Tinder.
+- Corrija a dona quando um pedido puder prejudicar a fábrica (gasto, uso do plano Claude, qualidade). Diga em uma linha.
+- Uso do plano Claude também é limite: lote numa conversa NOVA (15 a 20 produtos por conversa). Conversa longa gasta mais
+  por mensagem: um vídeo já custou mais de US$ 5 de uso de Claude contra US$ 0,12 de WaveSpeed numa conversa comprida.
+- Use o modelo Claude mais capaz para criação (roteiro, prompt, ficha). Subagentes separados para Fichador e fiscais são ok.
+- Proteja a conta de afiliada: nunca burlar captcha, nunca automatizar login da Shopee, nunca robô no app.
+
+## O que vende (busca de produtos)
+- Regra de ouro: vendas recentes + 0 a 3 vídeos de criadores no app = venda quase certa (o vídeo dela aparece primeiro
+  na busca). Menos de 10 vídeos com vendas recentes já vale. O número que importa é o de VÍDEOS de criadores, não de afiliados.
+- Preferir produto caro (high ticket): comissão é % do preço; uma venda de R$ 400 vale umas 10 de R$ 20.
+- Sinais: total vendido baixo (até ~30) tem menos vídeos; marca famosa lota mesmo sem vendas; nome difícil de buscar tem
+  menos criadores. Lotadas: caixa de som bluetooth, robô aspirador, ar-condicionado. Vazias: purificador de água, cadeira de
+  escritório, monitor sem marca, ventilador, gaiola, bebedouro, motor de popa. Móveis vendem mas lotam (fáceis de buscar).
+- Nunca repetir anúncio: o controle é pelo itemId (`vistos.json`). Parecido da mesma loja só ganha o selo "possível
+  duplicata"; a dona decide. A varredura nunca joga fora produto bom: soma tudo, sem limite.
+- A API não dá data de avaliação nem número de afiliados; datas de avaliação no site são bloqueadas (não tentar burlar).
+
+## Fidelidade ao anúncio (o que dá punição)
+- Nunca gerar o produto a partir de texto: sempre partir das fotos reais do anúncio (Nano Banana Edit com as fotos).
+- Cor, tecido, variante, detalhes e letras vêm da FOTO 01. Todos os itens da foto 01 aparecem em todo vídeo, na mesma
+  quantidade e arrumação (relógio com 2 modelos na foto 01 saiu com 1 e o vídeo foi perdido).
+- Tamanho real sempre: kit de N mostra N unidades inteiras; nada de miniatura (cadeiras, PC, berço saíram de brinquedo).
+  Linha de escala em todo prompt com 2-3 comparações; produto grande com câmera a 1,5-2,5 m e um objeto de tamanho
+  conhecido encostado; produto pequeno (até ~20 cm) com câmera a 70-90 cm e um objeto bem maior ao lado.
+- Peças contáveis (prateleiras, gavetas, níveis) com a contagem do anúncio: estante de 5 prateleiras já saiu com 6.
+- Letra miúda a IA redesenha errado: texto exato só onde dá para ler; letra ilegível = "tiny markings, keep as in image 1"
+  e nada de close nela. Produto com muitas letras/peças (máquina, motor, painel): foto 01 colada num canto (regra 14).
+- Posição de cada peça lida de TODAS as fotos (tampa de combustível em cima quando é embaixo = vídeo errado).
+- Só fatos do anúncio: todo número, material, recurso e cor no texto tem que estar escrito no título ou na descrição.
+  Nome de modelo não é recurso. Sem nota exata nem número de avaliações (mudam), sem % de desconto, sem prazo de entrega,
+  urgência só se o anúncio provar.
+- Nada de bebida alcoólica em cena (taças e garrafas aparecem sozinhas em sala e churrasqueira: conferir).
+- Nada de pessoa, mão ou bebê na cena. Produto parado, só a câmera anda (o que converte é produto parado com câmera viva).
+- Cenário do uso real (cadeirinha de carro não vai no chão da sala), casas MODERNAS de classe média alta, cenários
+  diferentes entre as 3 cenas e entre produtos (`agentes/aprendizado/cenarios_usados.csv`).
+- Conteúdo original: a Shopee prefere cena nova de IA a zoom na foto do anúncio (zoom na foto parece básico e igual aos rivais).
+
+## Prompts (o que já deu errado)
+- O prompt de VÍDEO leva só nome, itens, peças e escala. Citar o que NÃO pode aparecer faz o modelo desenhar exatamente
+  isso (taças, vasos, 3ª cadeira, texto na parede). Nada de "(não vendido)", "Layout in photo 01" ou textos do anúncio no vídeo.
+- "Smartphone photo" desenhou moldura de celular: use "Photorealistic full-frame photo" e "no phone frame, no borders, no text".
+- Pose que o produto não aguenta sozinho faz a IA inventar peça. Mostre o produto apoiado do jeito real.
+- Órbita/giro faz a IA virar o produto e inventar o lado escondido: só aproximação curta, deslize lateral ou subida leve.
+  A câmera só mostra o que a imagem de partida já mostra (passar por cima inventou o topo de uma cafeteira).
+- O Seedance avança mesmo quando se pede deslize: planeje cenas em que um avanço de 20 cm ainda deixa o produto inteiro.
+  Se ele insistir em mexer o produto: `FIXA=1` (câmera parada na IA) e o movimento vem por código.
+- Pisos de textura fina cintilam/pixelam: piso de textura larga e calma, câmera não rasante.
+- Letras espelhadas: escreva "lettering reads left to right, never mirrored".
+
+## Edição e entrega
+- 15 s exatos, 3 cenas, 9:16, gancho no primeiro segundo; o produto aparece inteiro, limpo e sem nada por cima na 1ª cena.
+- Texto nunca cobre o produto (confira o ÚLTIMO quadro de cada cena: a aproximação aumenta o produto).
+- Fora da área do app: barra de cima, legenda e cartão do produto embaixo, ícones à direita. Chamada com ↓ logo acima do
+  botão do app, nunca em cima dele.
+- Cada versão com gancho, chamada e modelo próprios: só trocar a ordem das cenas não vale como versão nova.
+- Ganchos e chamadas bem elaborados, específicos do produto (nada genérico). Detalhe de compra (quantidade, medida) grande na tela.
+- Legenda Shopee: nome + 2 fatos do anúncio + 4 hashtags de nicho, menos de 150 caracteres, sem link, sem emoji.
+  Reels: gancho + fatos + hashtags + o link de afiliada dela.
+- Música própria livre de direitos, alternando sozinha (`musicas/`). Volume baixo nos vídeos sem voz.
+- Celular: vídeo anexado no chat não baixa no iPhone; entregue por página com botão de baixar ou link do Drive.
+- Os layouts de edição da dona são os dela: use os modelos dela. Os modelos do kit (`video-teste/luxo/`) são só opção.
+
+## Postagem automática
+- Reels no Instagram, Facebook e Threads pela API da Meta (app em modo Desenvolvimento, sem revisão).
+- Conta nova: ritmo seguro (MAX_DIA=2, INTERVALO_H=3). O Facebook já recusou com aviso anti-spam (código 368) em página
+  nova: a rede fica pausada 24 h e tenta de novo 1 vez por dia, nunca em laço.
+- No Instagram link não é clicável: use o link da bio. No Facebook, o link vai num primeiro comentário. No Threads o link é clicável.
+- Pessoa realista feita por IA = rótulo de IA ligado.
+
+## Modelos e preços medidos (out/2026, WaveSpeed)
+- Nano Banana 2.1 Edit: US$ 0,0396 por imagem (1k, 9:16). Seedance 1.5 Pro Fast i2v 720p 5 s sem áudio: US$ 0,10.
+  Veo 3.1 Lite: US$ 0,20 por clipe de 4 s (melhor caminhada de câmera, mas pôs mão no produto e inventou letrinha; só se o Seedance não der).
+- Seedance v1 Pro Fast 720p foi ruim (zoom demais, pessoa fantasma). Kling v3 turbo std custa por segundo (caro).
+- Candidatos a comparar um dia (1 cena cada): Seedance 2.0 Mini Turbo, Kling 2.6 Std, Vidu Q3 Turbo, Wan 2.6 Flash.
+- Teto por produto: R$ 3 (todas as versões). Câmbio usado: R$ 5,69 por US$.

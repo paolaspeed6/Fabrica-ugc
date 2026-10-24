@@ -1,0 +1,234 @@
+<title>Tinder Shopee</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
+<style>
+/* Layout: um cartão grande por vez para o polegar; o cartão fica verde ou vermelho conforme o lado do arraste; laranja da Shopee só nas ações fortes */
+:root{
+  --bg:#f4f2f8; --card:#ffffff; --fg:#17141f; --muted:#5f586e; --line:#e3dfec; --soft:#f1eef7;
+  --accent:#ee4d2d; --accent-fg:#ffffff; --good:#12a150; --good-bg:#e2f6ea; --bad:#e5383b; --bad-bg:#fde7e7;
+  --shadow:0 1px 2px rgba(23,20,31,.06),0 12px 32px -12px rgba(23,20,31,.22);
+  --ease-out:cubic-bezier(0.23,1,0.32,1); --ease-drawer:cubic-bezier(0.32,0.72,0,1);
+  --display:"Bricolage Grotesque",ui-rounded,system-ui,sans-serif;
+  --body:system-ui,-apple-system,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#110f16; --card:#1c1924; --fg:#f3f0f8; --muted:#aaa3ba; --line:#2f2a3a; --soft:#25212f;
+  --accent:#ff6a4a; --accent-fg:#1a0d09; --good:#3ddc84; --good-bg:#12321f; --bad:#ff5c5f; --bad-bg:#3a1617;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 16px 40px -16px rgba(0,0,0,.7); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#110f16; --card:#1c1924; --fg:#f3f0f8; --muted:#aaa3ba; --line:#2f2a3a; --soft:#25212f;
+  --accent:#ff6a4a; --accent-fg:#1a0d09; --good:#3ddc84; --good-bg:#12321f; --bad:#ff5c5f; --bad-bg:#3a1617;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 16px 40px -16px rgba(0,0,0,.7); color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;font-weight:600;-webkit-font-smoothing:antialiased;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:16px 48px;overflow-x:hidden}
+.wrap{max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+h1{font-family:var(--display);font-weight:800;font-size:1.75rem;margin:0;letter-spacing:-.02em;line-height:1.1}
+h1 em{font-style:normal;color:var(--accent)}
+.sub{color:var(--muted);margin:4px 0 0;font-size:.9rem;font-weight:600;line-height:1.4}
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:4px;background:var(--soft);border-radius:14px}
+.tab{min-width:0;border:0;background:transparent;color:var(--muted);border-radius:10px;padding:7px 2px;font:700 .8rem var(--body);line-height:1.2;cursor:pointer;font-variant-numeric:tabular-nums;transition:background .16s ease,color .16s ease}
+.tab span{display:block;font-weight:800;font-size:1rem;color:var(--fg)}
+.tab[aria-pressed="true"]{background:var(--card);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.palco{position:relative}
+.swipe{position:relative;background:var(--card);border-radius:24px;overflow:hidden;box-shadow:var(--shadow);touch-action:pan-y;
+  user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;will-change:transform}
+.swipe.volta{transition:transform .42s var(--ease-drawer)}
+.swipe.sai{transition:transform .26s var(--ease-out),opacity .26s var(--ease-out)}
+.swipe img{-webkit-user-drag:none;pointer-events:none;display:block;width:100%;aspect-ratio:1;object-fit:contain;background:#fff}
+.tinta{position:absolute;inset:0;pointer-events:none;opacity:0;border-radius:inherit;box-shadow:inset 0 0 0 4px currentColor}
+.tinta.sim{background:color-mix(in srgb,var(--good) 22%,transparent);color:var(--good)}
+.tinta.nao{background:color-mix(in srgb,var(--bad) 22%,transparent);color:var(--bad)}
+.selo{position:absolute;top:20px;padding:6px 14px;border:4px solid currentColor;border-radius:12px;font:800 1.5rem var(--display);letter-spacing:.06em;
+  background:var(--card);opacity:0;pointer-events:none}
+.selo.sim{left:18px;color:var(--good);transform:rotate(-12deg)}
+.selo.nao{right:18px;color:var(--bad);transform:rotate(12deg)}
+.corpo{padding:16px 16px 18px;display:flex;flex-direction:column;gap:12px}
+.nome{font-weight:800;font-size:1.12rem;line-height:1.3;letter-spacing:-.01em}
+.nums{display:grid;grid-template-columns:1.25fr 1.25fr .8fr;gap:8px}
+.num{min-width:0;background:var(--soft);border-radius:14px;padding:10px 8px}
+.num small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted);font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
+.num b{display:block;margin-top:2px;font:800 clamp(.9rem,4.2vw,1.08rem) var(--body);font-variant-numeric:tabular-nums;white-space:nowrap}
+.num.dest b{color:var(--good)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-size:.74rem;font-weight:800;padding:4px 9px;border-radius:999px;background:var(--soft);color:var(--fg)}
+.chip.dup{background:color-mix(in srgb,#d97706 16%,transparent);color:#b45309}
+.chip.top{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.linha{display:flex;gap:8px;align-items:center}
+.abrir{flex:1;text-align:center;background:var(--fg);color:var(--bg);text-decoration:none;font-weight:800;padding:12px;border-radius:14px}
+input[type=number]{width:96px;font:800 1rem var(--body);padding:11px 10px;border:2px solid var(--line);border-radius:14px;background:var(--card);color:var(--fg);text-align:center}
+.acoes{display:flex;justify-content:center;gap:28px;padding:4px 0}
+.btn{width:68px;height:68px;border-radius:50%;border:0;display:grid;place-items:center;font:800 1.7rem var(--body);cursor:pointer;background:var(--card);box-shadow:var(--shadow);
+  transition:transform .14s var(--ease-out)}
+.btn:active{transform:scale(.92)}
+.nao{color:var(--bad)} .sim{color:var(--good)}
+.mini{display:flex;gap:8px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.leve{border:0;background:var(--soft);color:var(--fg);border-radius:12px;padding:10px 14px;font:800 .86rem var(--body);cursor:pointer;transition:transform .14s var(--ease-out)}
+.leve:active{transform:scale(.97)}
+.leve:disabled{opacity:.45}
+.forte{background:var(--accent);color:var(--accent-fg)}
+.confirma{background:var(--card);box-shadow:var(--shadow);border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px;font-weight:700}
+.list{display:flex;flex-direction:column;gap:10px}
+.item{background:var(--card);box-shadow:var(--shadow);border-radius:16px;padding:10px;display:grid;grid-template-columns:60px 1fr auto;gap:12px;align-items:center}
+.item img{width:60px;height:60px;object-fit:contain;border-radius:10px;background:#fff}
+.item .t{min-width:0;font-size:.9rem;font-weight:700;line-height:1.3}
+.item .t span{display:block;color:var(--muted);font-size:.8rem;font-weight:700;margin-top:2px}
+.aviso{font-weight:800;font-size:1rem}
+.barra{height:12px;background:var(--soft);border-radius:99px;overflow:hidden}
+.barra i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .3s var(--ease-out)}
+h2{font:800 1.05rem var(--display);margin:8px 0 0}
+.vazio{color:var(--muted);font-weight:700;text-align:center;padding:32px 12px;border:2px dashed var(--line);border-radius:18px;line-height:1.5}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.swipe.volta,.swipe.sai,.btn,.leve,.barra i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Tinder <em>Shopee</em></h1>
+    <p class="sub" id="sub">Produtos novos todo dia às 7h. Aprove os que valem vídeo.</p>
+  </header>
+  <div class="tabs" role="group" aria-label="Abas">
+    <button class="tab" id="t-escolher" aria-pressed="true">Escolher <span id="n-escolher"></span></button>
+    <button class="tab" id="t-fila" aria-pressed="false">Fila <span id="n-fila"></span></button>
+    <button class="tab" id="t-producao" aria-pressed="false">Produção <span id="n-producao"></span></button>
+    <button class="tab" id="t-descartados" aria-pressed="false">Descartados <span id="n-descartados"></span></button>
+  </div>
+  <main id="tela"><div class="vazio">Carregando os produtos…</div></main>
+</div>
+
+<script>
+let db=null, itens=[], aba="escolher", loteMin=15, ultimo=null, confirmarTodos=false;
+const $=s=>document.querySelector(s);
+const brl=v=>"R$ "+Number(v).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
+const el=(tag,cls,txt)=>{const e=document.createElement(tag); if(cls) e.className=cls; if(txt!=null) e.textContent=txt; return e;};
+const st=it=>it.status||"novo";
+function grupos(){
+  const g={escolher:[],fila:[],producao:[],descartados:[]};
+  for(const it of itens){ const s=st(it);
+    if(s==="novo") g.escolher.push(it); else if(s==="aprovado") g.fila.push(it);
+    else if(s==="descartado") g.descartados.push(it); else g.producao.push(it); }
+  g.escolher.sort((a,b)=>(b.dia||"").localeCompare(a.dia||"")||b.pontos-a.pontos);
+  g.fila.sort((a,b)=>(a.decidido_em||"").localeCompare(b.decidido_em||""));
+  return g;
+}
+async function salvar(it,dados){ if(!db) return; try{ await db.doc("candidatos/"+it._id).update(dados); }catch(e){ $("#sub").textContent="Não salvou. Confira a conexão e tente de novo."; } }
+async function decidir(it,status){
+  const inp=$("#videos"); const dados={status,decidido_em:new Date().toISOString()};
+  if(inp&&inp.value.trim()!=="") dados.afiliados=Number(inp.value);
+  ultimo={it,antes:st(it)}; await salvar(it,dados);
+}
+function cartao(it,total){
+  const box=el("div","list");
+  const palco=el("div","palco");
+  const c=el("article","swipe"); const img=el("img"); img.src=it.foto||""; img.alt=""; img.draggable=false; c.append(img);
+  const tSim=el("div","tinta sim"), tNao=el("div","tinta nao"), sSim=el("div","selo sim","APROVAR"), sNao=el("div","selo nao","DESCARTAR");
+  c.append(tSim,tNao,sSim,sNao);
+  const corpo=el("div","corpo"); corpo.append(el("div","nome",it.nome));
+  const nums=el("div","nums");
+  [["Preço",brl(it.preco)],["Comissão",brl(it.comissao_rs),"dest"],[it.vendas_dia!=null?"Vendas/dia":"Vendas",it.vendas_dia!=null?it.vendas_dia:it.vendidos]]
+    .forEach(([k,v,cl])=>{const n=el("div","num"+(cl?" "+cl:"")); n.append(el("small",null,k),el("b",null,String(v))); nums.append(n);});
+  corpo.append(nums);
+  const chips=el("div","chips");
+  if(it.parecidos!=null&&it.parecidos<=5) chips.append(el("span","chip top","nome raro"));
+  if(it.novo) chips.append(el("span","chip top","anúncio novo"));
+  if(it.extra_vendedor) chips.append(el("span","chip","comissão extra"));
+  if(it.nota) chips.append(el("span","chip","nota "+it.nota));
+  if(it.possivel_duplicata) chips.append(el("span","chip dup","⚠ possível duplicata da mesma loja"));
+  corpo.append(chips);
+  const linha=el("div","linha");
+  const a=el("a","abrir","Abrir no app"); a.href=it.link; a.target="_blank"; a.rel="noopener";
+  const inp=el("input"); inp.type="number"; inp.min="0"; inp.inputMode="numeric"; inp.id="videos"; inp.placeholder="Vídeos"; inp.setAttribute("aria-label","Vídeos de criadores (opcional)");
+  if(it.afiliados!=null) inp.value=it.afiliados;
+  linha.append(a,inp); corpo.append(linha); c.append(corpo); palco.append(c); box.append(palco);
+  const reduz=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // cor do arraste: verde à direita, vermelho à esquerda, mais forte quanto mais longe
+  const pintar=dx=>{ const f=Math.min(Math.abs(dx)/140,1);
+    tSim.style.opacity=dx>0?f:0; tNao.style.opacity=dx<0?f:0;
+    sSim.style.opacity=dx>0?Math.min(dx/90,1):0; sNao.style.opacity=dx<0?Math.min(-dx/90,1):0; };
+  const voar=(lado,status)=>{ if(c.dataset.foi) return; c.dataset.foi="1"; pintar(lado*140);
+    if(reduz){ decidir(it,status); return; }
+    c.className="swipe sai"; c.style.transform=`translateX(${lado*innerWidth*1.1}px) rotate(${lado*18}deg)`; c.style.opacity="0";
+    setTimeout(()=>decidir(it,status),200); };
+  const acoes=el("div","acoes");
+  const n=el("button","btn nao","✕"), s=el("button","btn sim","✓");
+  n.setAttribute("aria-label","Descartar"); s.setAttribute("aria-label","Aprovar");
+  n.onclick=()=>voar(-1,"descartado"); s.onclick=()=>voar(1,"aprovado");
+  acoes.append(n,s); box.append(acoes);
+  // iPhone: captura o dedo, um dedo só, decide pela distância ou por um peteleco rápido
+  let x0=null, dx=0, t0=0, dedo=null;
+  c.addEventListener("pointerdown",e=>{ if(dedo!=null||e.target.closest("a,input")) return; dedo=e.pointerId; x0=e.clientX; dx=0; t0=Date.now();
+    c.className="swipe"; try{c.setPointerCapture(e.pointerId);}catch(_){} });
+  c.addEventListener("pointermove",e=>{ if(x0==null||e.pointerId!==dedo) return; dx=e.clientX-x0;
+    c.style.transform=`translateX(${dx}px) rotate(${dx/22}deg)`; pintar(dx); });
+  const fim=e=>{ if(x0==null||(e&&e.pointerId!==dedo)) return; x0=null; dedo=null;
+    const vel=Math.abs(dx)/Math.max(Date.now()-t0,1);
+    if(dx>100||(dx>30&&vel>0.5)) voar(1,"aprovado"); else if(dx<-100||(dx<-30&&vel>0.5)) voar(-1,"descartado");
+    else { c.className="swipe volta"; c.style.transform=""; pintar(0); }
+    dx=0; };
+  c.addEventListener("pointerup",fim); c.addEventListener("pointercancel",fim); c.addEventListener("lostpointercapture",fim);
+  const mini=el("div","mini");
+  const desf=el("button","leve","↶ Desfazer"); desf.disabled=!ultimo;
+  desf.onclick=async()=>{ if(!ultimo) return; const u=ultimo; ultimo=null; await salvar(u.it,{status:u.antes}); };
+  const todos=el("button","leve forte","Aprovar todos ("+total+")");
+  todos.onclick=()=>{ confirmarTodos=true; render(); };
+  mini.append(desf,el("span","sub",total+" para escolher"),todos); box.append(mini);
+  if(confirmarTodos){
+    const cf=el("div","confirma"); cf.append(el("div",null,"Aprovar os "+total+" produtos de uma vez? Todos vão para a fila de produção."));
+    const l=el("div","linha"); const ok=el("button","leve forte","Sim, aprovar todos"), vol=el("button","leve","Cancelar");
+    ok.onclick=async()=>{ confirmarTodos=false; const agora=new Date().toISOString(); ok.disabled=true;
+      for(const i of grupos().escolher){ await salvar(i,{status:"aprovado",decidido_em:agora}); } };
+    vol.onclick=()=>{ confirmarTodos=false; render(); };
+    l.append(ok,vol); cf.append(l); box.append(cf);
+  }
+  return box;
+}
+function linhaItem(it,extra,botao){
+  const d=el("div","item"); const img=el("img"); img.src=it.foto||""; img.alt="";
+  const t=el("div","t",it.nome.slice(0,70)); t.append(el("span",null,extra));
+  d.append(img,t,botao||el("span")); return d;
+}
+function render(){
+  const g=grupos();
+  for(const k in g){ $("#n-"+k).textContent=g[k].length; $("#t-"+k).setAttribute("aria-pressed",String(k===aba)); }
+  const tela=$("#tela"); tela.replaceChildren();
+  if(!db){ tela.append(el("div","vazio","Abra esta página no app do Claude, logado, para ver os produtos.")); return; }
+  if(aba==="escolher"){
+    if(!g.escolher.length){ tela.append(el("div","vazio","Tudo escolhido. Os próximos chegam amanhã às 7h.")); return; }
+    tela.append(cartao(g.escolher[0],g.escolher.length)); return;
+  }
+  if(aba==="fila"){
+    const box=el("div","list"); const n=g.fila.length;
+    box.append(el("div","aviso",n>=loteMin?`Fila cheia: ${n} produtos. O próximo lote está pronto para produzir.`:`${n} de ${loteMin} para fechar o próximo lote.`));
+    const b=el("div","barra"); const i=el("i"); i.style.width=Math.min(100,n/loteMin*100)+"%"; b.append(i); box.append(b);
+    g.fila.forEach(it=>{ const v=el("button","leve","Tirar"); v.onclick=()=>salvar(it,{status:"novo"});
+      box.append(linhaItem(it,brl(it.preco)+(it.afiliados!=null?" · "+it.afiliados+" vídeos":""),v)); });
+    if(!n) box.append(el("div","vazio","Nenhum aprovado ainda. Aprove na aba Escolher."));
+    tela.append(box); return;
+  }
+  if(aba==="producao"){
+    const box=el("div","list"); const lotes={};
+    g.producao.forEach(it=>{ (lotes[it.lote||"Sem lote"] ||= []).push(it); });
+    Object.keys(lotes).sort().reverse().forEach(l=>{ box.append(el("h2",null,l+" · "+lotes[l].length+" produtos"));
+      lotes[l].forEach(it=>box.append(linhaItem(it,st(it)==="pronto"?"Pronto":"Em produção"))); });
+    if(!g.producao.length) box.append(el("div","vazio","Nenhum lote em produção."));
+    tela.append(box); return;
+  }
+  const box=el("div","list");
+  g.descartados.slice(0,200).forEach(it=>{ const v=el("button","leve","Voltar"); v.onclick=()=>salvar(it,{status:"novo"});
+    box.append(linhaItem(it,it.afiliados!=null?it.afiliados+" vídeos":"",v)); });
+  if(!g.descartados.length) box.append(el("div","vazio","Nenhum descartado."));
+  tela.append(box);
+}
+["escolher","fila","producao","descartados"].forEach(k=>$("#t-"+k).onclick=()=>{aba=k;confirmarTodos=false;render();});
+(async()=>{
+  db = await (window.claude?.use ? window.claude.use("db") : null);
+  if(!db){ render(); return; }
+  db.doc("config/geral").onSnapshot(s=>{ const d=s.exists?s.data():null; if(d&&d.lote_min) { loteMin=d.lote_min; render(); } });
+  db.collection("candidatos").onSnapshot(s=>{
+    itens=s.docs.map(d=>({...d.data(),_id:d.id}));
+    const dias=[...new Set(itens.map(i=>i.dia).filter(Boolean))].sort();
+    if(dias.length) $("#sub").textContent="Última busca: "+dias.at(-1).split("-").reverse().join("/")+". Arraste para a direita para aprovar, para a esquerda para descartar.";
+    render();
+  }, ()=>render());
+})();
+</script>
+

@@ -1,0 +1,92 @@
+{
+ "uso": "Poltronas tipo papasan (concha redonda) para área externa coberta e interna: varanda, sacada, área gourmet, beira de piscina coberta e sala de estar.",
+ "contexto_uso": "Isto é um kit de 2 poltronas redondas em tricô náutico com almofada, usadas em varanda gourmet, área de piscina coberta ou sala de estar.",
+ "nome_curto": "two round papasan armchairs with black woven nautical-rope base and cream tufted cushions",
+ "nome_pt": "Kit 2 Poltronas Luar em Tricô Náutico + 2 Almofadas Drytex",
+ "variante": "Almofadas creme/marfim claro (foto 01) com base em tricô náutico preto e aro de ferro preto. As outras cores (azul-marinho, cinza, azul-claro, verde, marrom, rosa e as 18 amostras de tecido estampado) NÃO são esta variante.",
+ "itens": [
+  "2 armchairs (round bowl seats on woven bases)",
+  "2 cream tufted seat cushions"
+ ],
+ "partes": [
+  "Cushion (x2): very thick, puffy round cream/ivory cushion filling the whole bowl, slightly glossy water-resistant fabric, deep tufting in a ring around the centre with soft radial folds, thick rolled edge overhanging the rim.",
+  "Bowl frame (x2): thin black iron ring visible only as a black rim line under the cushion edge, bowl tilted slightly back.",
+  "Base (x2): wide black drum/pot-shaped pedestal, narrower at the top under the bowl and wider at the floor, covered in chunky black nautical-rope knit forming a pattern of large rounded quilted cells; about 30 cm high.",
+  "Layout in photo 01: the two chairs side by side, left and right, both facing the camera, almost touching (gap of about 5 cm)."
+ ],
+ "letras": [
+  "No text on the product. The text 'MEDIDAS POLTRONA LUAR', 'ARCO SUPERIOR 90CM', etc. in photo 02 is advertising and must not appear."
+ ],
+ "tamanho_real": {
+  "altura_total_cm": 70,
+  "diametro_aro_superior_cm": 90,
+  "diametro_aro_inferior_cm": 65,
+  "altura_ate_assento_cm": 30,
+  "fonte": "Foto 02 (desenho com setas: ARCO SUPERIOR 90CM DIÂMETRO, ARCO INFERIOR 65CM DIÂMETRO, ALTURA ATÉ O ASSENTO 30 CM, ALTURA TOTAL 70 CM).",
+  "mundo_real": "Cada poltrona tem 90 cm de largura (mais larga que o vão de uma porta de 80 cm) e 70 cm de altura (pouco abaixo de uma mesa de jantar de 75 cm, na altura da coxa de um adulto em pé); as duas lado a lado somam ~1,85 m, o comprimento de um sofá de 3 lugares."
+ },
+ "contagem": {
+  "poltronas": 2,
+  "almofadas": 2,
+  "bases_tricô": 2,
+  "aros_ferro": 2
+ },
+ "fotos_ref": [
+  "poltronas-fotos/01.jpg",
+  "poltronas-fotos/06.jpg"
+ ],
+ "fotos_ref_nota": "Só 01 e 06 mostram a cor creme sem pessoa/colagem. 02 é desenho de medidas com texto (usar só para a ficha). 03/04/05/07/08/11/14/15/27 são outras cores; 09-26 são amostras de tecido.",
+ "proibidos": [
+  "any cushion color other than cream/ivory (navy, grey, light blue, green, brown, pink, red, patterned fabrics)",
+  "only 1 chair (must always be 2 in scene A)",
+  "the measurement drawing and its text",
+  "the abstract painting/vases of photo 01 as product",
+  "people sitting",
+  "extra pillows or throws on the cushion"
+ ],
+ "fatos": [
+  "Kit com 2 poltronas Luar em tricô náutico",
+  "Acompanha 2 almofadas em tecido Drytex, resistente à água (não é 100% impermeável)",
+  "Tricô náutico artesanal com enchimento interno",
+  "Estrutura em ferro com pintura eletrostática",
+  "Para áreas internas e externas cobertas",
+  "Medidas: 90 cm de diâmetro e 70 cm de altura total"
+ ],
+ "evitar_close": [
+  "texture of the knit base in extreme close-up (risk of shimmering)"
+ ],
+ "cenarios": [
+  {
+   "id": "A",
+   "texto": "Covered gourmet balcony of a modern high-rise apartment: smooth graphite-grey painted wall, large 90x90 cm light-grey porcelain floor tiles, frameless glass railing with soft-focus city skyline, recessed ceiling spots; BOTH cream papasan armchairs side by side, whole, facing the camera as in photo 01, the right chair's rim touching a low black-metal side table. Any side table is completely empty, nothing on it.",
+   "scale": "Scale: each chair 90 cm wide and 70 cm tall; the pair spans about 1.85 m, almost the full width of the 2 m glass railing panel behind them; each bowl rim sits just below the 1.10 m railing top at about two thirds of its height; the 45 cm side table touching the right chair reaches the lower half of the bowl.",
+   "camera": "Camera at 1.6 m height, about 2 m away; both chairs whole side by side filling about 40-45% of the frame height, little ceiling visible.",
+   "movimento": "Slow handheld push-in of about 40 cm with a slight drift to the left, ending on a medium shot that still shows both chairs whole with their bases on the floor; stable textures, solid objects keep their exact shape, no morphing.",
+   "narracao": "Kit com 2 poltronas Luar em tricô náutico e 2 almofadas."
+  },
+  {
+   "id": "B",
+   "texto": "Covered pool terrace of a modern white house: smooth white stucco wall with a large black-frame glass door, pale sand travertine-look porcelain pavers 60x120 cm, turquoise pool edge visible at one side, a potted olive tree; the two cream armchairs angled slightly toward each other, afternoon sunlight with crisp shade from the roof.",
+   "scale": "Scale: each chair 90 cm in diameter and 70 cm tall; next to the 2.1 m glass door they reach one third of its height, each chair is as wide as two 60 cm pavers minus a little, and the rim of the left chair touches the 75 cm-tall olive planter.",
+   "camera": "Camera 1.8 m away at 1 m height, three-quarter view from the left; the two chairs fill about 60% of the frame width; the right chair may be partly cut at the frame edge.",
+   "movimento": "Slow handheld arc of about 15 degrees to the right around the chairs, ending on a medium view with both cushions and at least one full base visible; stable textures, solid objects keep their exact shape, no morphing.",
+   "narracao": "Almofadas em tecido Drytex, resistente à água e fácil de limpar."
+  },
+  {
+   "id": "C",
+   "texto": "Modern living room corner at evening: smooth dusty-blue painted wall, polished warm-grey burnt-cement floor, a low charcoal fabric sofa, a slim black floor lamp casting warm light, a large monstera in a matte white pot; one cream armchair in the foreground placed right against the sofa arm, the second visible just behind it.",
+   "scale": "Scale: each chair 90 cm wide and 70 cm tall; the chair rim is about 10 cm higher than the 60 cm sofa arm it touches, and the 90 cm bowl is as wide as one and a half sofa seat cushions; the floor lamp (1.6 m) is more than twice the chair height.",
+   "camera": "Camera 1.6 m from the front chair at 90 cm height, the front chair filling about 50% of frame, the second chair partly behind; warm lamp key light with contrast.",
+   "movimento": "Slow handheld tilt down and push-in of about 30 cm from the lamp glow to the front chair, stopping on a medium shot of the whole front chair with its base; stable textures, solid objects keep their exact shape, no morphing.",
+   "narracao": "Estrutura em ferro com pintura eletrostática, para áreas internas e externas cobertas."
+  }
+ ],
+ "riscos": [
+  "mostrar só 1 poltrona ou 3 na cena A",
+  "encolher para miniatura (diâmetro 90 cm, altura 70 cm)",
+  "trocar a cor da almofada (o anúncio tem 10+ cores e estampas)",
+  "base em tricô virar vime fino ou pernas de metal; padrão do tricô cintilar",
+  "almofada achatar ou perder o capitonê",
+  "cena repetir parede creme + piso claro da foto 01"
+ ]
+}
