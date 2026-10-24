@@ -50,7 +50,12 @@ Pasta `video-teste/lote/listaDDMMx` (copie `video-teste/lote/modelo`). Passos co
 6. Clipes: `TETO_USD=<teto> python3 -I gerar.py clipes p01A,...` (só os liberados; `FIXA=1` se o produto se mexer).
 7. **Fiscal de vídeo** (trava 3, subagente separado): `BRIEF_FISCAL_VIDEO.md` → `aprovar.py`.
 8. Edição nos layouts DELA (acima). Produto `complexo`: foto 01 colada num canto (`video-teste/foto_colada/`).
-9. Drive (`video-teste/drive_backup.py`), Conferência, **Melhorador** (trava 4, 1 vez por lote).
+9. **Obrigatório, nunca pular** (a dona, 24/10: o teste foi entregue só na página de baixar e não foi para a Conferência):
+   finais em `<lote>/final/` com o nome `DDMMX_NN_slug_A|B|C.mp4` → `python3 video-teste/drive_backup.py <lote>/final --dia AAAA-MM-DD`
+   → `python3 -I conferencia.py "Lista DD/MM X" AAAA-MM-DD` → ArtifactData batch dos `conferir_docs/*.json` na coleção `conferir`
+   da Conferência (URL em `MINHAS_PAGINAS.md`) → Tinder status `pronto`. Página de baixar é extra, nunca no lugar da Conferência.
+   Siga `video-teste/lote/modelo/CHECKLIST.md` e marque cada passo no `<lote>/CHECKLIST.md`.
+   Depois da conferência dela: processar as decisões e o **Melhorador** (trava 4, 1 vez por lote).
 Os agentes do setor de qualidade são subagentes separados (ferramenta Agent), rodando em paralelo por grupos de 3-5 produtos.
 
 ## Páginas do kit (publicar uma vez, quando ela pedir) — capabilities {db: {}, user: {}}

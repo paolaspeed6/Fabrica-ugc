@@ -21,3 +21,5 @@
 - 2026-10-15 · Capacete: giro inventou a frente → TRAVA_ANGULO; giro grande só com angulos_reais.
 - 2026-10-15 · Vários: texto cobrindo o produto → conferir o último quadro; subir/escala por versão.
 - 2026-10-21: motosserra p24 saiu com logo "TOYIAMA" (close de IA) e título encostando na borda; refeita. Ver regra 14.
+
+- 2026-10-24: o teste do zero foi entregue só na página de baixar e esqueci Drive + Conferência. Agora há `conferencia.py` e `CHECKLIST.md` no modelo, e a regra 16.

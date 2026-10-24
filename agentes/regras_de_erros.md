@@ -253,3 +253,5 @@ Erro: itens "2 dining chairs (the side table, vase, cup, books, plant and rug of
 Regra: o prompt de vídeo tira parênteses dos itens, frases "not sold / no table is sold", menções "photo 0X" e as partes que começam com Layout/Orientation/Positions checked/Proportions (lista2410a/gerar.py vdescr). Cadeira/poltrona giratória: frase "seat, backrest and headrest keep facing exactly the same direction in every frame; the chair is locked in place" e câmera quase parada.
 
 15. **Ficha com cada mínimo detalhe** (a dona, 2026-10-24): medidas de cada parte, furos, botões, letras miúdas, cor por parte (hex da foto 01) e o que é propaganda. Ver `agentes/setor_qualidade/fichador.md`.
+
+16. **Lote criado do zero sempre termina na Conferência** (a dona, 2026-10-24: "por que esses videos não foram para a aba de conferencia?"): Drive + `conferencia.py` + doc em `conferir` + Tinder pronto. Página de baixar é só extra. Checklist: `video-teste/lote/modelo/CHECKLIST.md`.
