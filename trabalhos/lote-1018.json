@@ -378,6 +378,18 @@
    "slug": "armario-cozinha",
    "nome": "Armário de cozinha branco",
    "legenda": "Armário de cozinha branco com portas e nicho aberto para organizar a cozinha.\n#armariodecozinha #cozinha #organizacao #moveis"
+  },
+  {
+   "id": "p65",
+   "slug": "kit-2-banquetas-baixas",
+   "nome": "Kit 2 Banquetas Baixas (teste criado do zero)",
+   "legenda": "Kit 2 banquetas baixas para cozinha e ilha, assento em corino e estrutura em madeira\n#banqueta #cozinhaplanejada #areagourmet #ilhadecozinha"
+  },
+  {
+   "id": "p66",
+   "slug": "bicicleta-spinning-150kg",
+   "nome": "Bicicleta Spinning 150 kg (teste criado do zero)",
+   "legenda": "Bicicleta spinning profissional, suporta até 150 kg e tem painel digital\n#bikespinning #treinoemcasa #academiaemcasa #fitness"
   }
  ]
 }

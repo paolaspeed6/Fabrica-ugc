@@ -26,3 +26,4 @@
 - Lote 10: https://claude.ai/artifact/HFf5E1nvbF8cPo5Z1rrdpq
 - Lote 11: https://claude.ai/artifact/BZV6R6bJVRuncJvHLYp7pi
 - Lote 12: https://claude.ai/artifact/2iNpakQfG6L5naxkTiZ6wL
+- Teste criado do zero (24/10, banquetas e bicicleta): https://claude.ai/artifact/HEGk1fDqtGvBEuGGHCsZzt
