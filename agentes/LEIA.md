@@ -14,3 +14,6 @@ Comece por [orquestrador.md](orquestrador.md). Todos os agentes leem [principios
 Cada geração de 3 cenas = 3 vídeos (2 Shopee + 1 Reels).
 Entrega à dona: Brief + Roteiro aprovado + Observações de qualidade + custo máximo. Geração só com pedido dele.
 diretor.md é a versão anterior (juntava pesquisa e roteiro); fica só como referência.
+
+## Setor de Qualidade (kit 2026-10-23)
+Fichador, Fiscal de imagem, Fiscal de vídeo e Melhorador: ver [setor_qualidade/LEIA.md](setor_qualidade/LEIA.md). Rodam em todo produto da receita Veo (vídeo do zero).

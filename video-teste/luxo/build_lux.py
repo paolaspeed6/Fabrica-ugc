@@ -123,7 +123,7 @@ def make(el):
     if k == 'eyebrow':
         f = el.get('base', 'sans')
         return text_block([l.upper() for l in el['lines']], el.get('size', 34), al, 1.6, cor, f, f, el.get('track', 11), sh)
-    if k == 'button':  # CTA: 'solid' (cheio), 'outline' (contorno fino) ou 'link' (só texto sublinhado); ícone 'cart'/'arrow'
+    if k == 'button':  # CTA: 'solid' (cheio), 'outline' (contorno fino) ou 'link' (só texto sublinhado); ícone 'cart'/'arrow'/'down'
         f = font(el.get('base', 'pop_sb'), el.get('size', 46))
         txt = el['text']; h = el.get('h', 116); estilo = el.get('style', 'solid'); icon = el.get('icon', 'arrow')
         tc = tuple(el.get('text_color', (22, 20, 18)))
@@ -144,6 +144,11 @@ def make(el):
                     (cx + s_, cy + s_ * .24), (cx + s_ * .27, cy + s_ * .24)], fill=tc, width=lw, joint='curve')
             for wx in (.42, .82):
                 r_ = s_ * .07; d.ellipse([cx + s_ * wx - r_, cy + s_ * .86 - r_, cx + s_ * wx + r_, cy + s_ * .86 + r_], fill=tc)
+            x0 += iw
+        if icon == 'down':  # seta para baixo, aponta para o card do produto/legenda do app (Kevin 2026-10-20)
+            s_ = int(h * 0.42); cx, cy = x0 + s_ / 2, h / 2 - s_ / 2; lw = max(3, s_ // 9)
+            d.line([(cx, cy), (cx, cy + s_)], fill=tc, width=lw)
+            d.line([(cx - s_ * .36, cy + s_ * .62), (cx, cy + s_), (cx + s_ * .36, cy + s_ * .62)], fill=tc, width=lw, joint='curve')
             x0 += iw
         d.text((x0, h / 2), txt, font=f, fill=tc, anchor='lm')
         if icon == 'arrow':
@@ -185,7 +190,7 @@ def make(el):
         d.line([(cx - r * .45, cy + r * .02), (cx - r * .1, cy + r * .38), (cx + r * .5, cy - r * .35)],
                fill=(255, 255, 255), width=max(4, r // 5), joint='curve')
         d.text((40 + 2 * r + 28, cy), txt, font=f, fill=tuple(el.get('color', INK)), anchor='lm')
-        return soft_shadow(img, 12, 120), 40
+        return (soft_shadow(img, 12, 120) if el.get('shadow', True) else img), 40
     if k == 'bars':  # barrinhas de progresso no topo, como nos Stories (desenhadas por quadro)
         return None, 0
     if k == 'glass':  # cartão de vidro fosco: desenhado por quadro em cima do vídeo (ver glass_on)
@@ -243,7 +248,7 @@ def glass_on(base, el, alpha, dy):
 
 
 def clock_img(txt, size):
-    img, _ = text_block([txt], size, 'left', 1.0, base='serif')
+    img, _ = text_block([txt], size, 'left', 1.0, base=spec.get('clock_base', 'serif'))
     return img
 
 
@@ -295,6 +300,26 @@ TOPG = 1 - G.get('top', 0.28) * np.clip(1 - yy / 900, 0, 1) ** 1.5  # escurece o
 SHADE = (VIG * TOPG)[..., None]
 TOPN = 1 - max(G.get('top', 0.28), 0.5) * np.clip(1 - yy / 1000, 0, 1) ** 1.4  # natural: sombra de leitura no topo
 rng = np.random.default_rng(7)
+
+
+def encaixar(img, q, t=0.0):
+    """produto alto (lista1020): encolhe o quadro para o produto caber entre o texto de cima e o CTA, sobre o próprio vídeo desfocado.
+    q = [esc, offy] fixo, ou [esc, offy, t0, t1]: encaixado até t0 e abrindo suave até a tela cheia em t1 (Kevin 2026-10-20: só thumb e começo)."""
+    if not q:
+        return img
+    esc, offy = q[0], q[1]
+    if len(q) == 4:
+        u = min(1.0, max(0.0, (t - q[2]) / (q[3] - q[2]))); u = u * u * (3 - 2 * u)
+        esc, offy = esc + (1 - esc) * u, offy * (1 - u)
+        if esc > 0.999:
+            return img
+    fundo = img.filter(ImageFilter.GaussianBlur(28)).point(lambda v: int(v * 0.78))
+    w, h = int(W * esc), int(H * esc); peq = img.resize((w, h), Image.LANCZOS)
+    m = Image.new('L', (w, h), 255); dm = ImageDraw.Draw(m); f = 46
+    for i in range(f):
+        dm.rectangle([i, i, w - 1 - i, h - 1 - i], outline=int(255 * (i + 1) / f))
+    fundo.paste(peq, ((W - w) // 2, int(offy)), m)
+    return fundo
 
 
 def warm_at(t):
@@ -448,7 +473,7 @@ def marca_on(base, t):
     if not MARCA:
         return
     if 'p' not in _marca_cache:
-        f = font('play_it', 36)
+        f = font(spec.get('marca_fonte', 'play_it'), spec.get('marca_size', 36))
         tw = int(f.getlength(MARCA)) + 40
         pq = Image.new('RGBA', (tw, 70), (0, 0, 0, 0)); d = ImageDraw.Draw(pq)
         d.text((20, 35), MARCA, font=f, fill=(255, 255, 255, 170), anchor='lm')
@@ -467,7 +492,7 @@ def preview(tempos):
                 fr = read_seg(sg['src'], sg['ss'] + k / FPS, 1)[0]
                 u = ease_io(k / max(1, n - 1)) * 0.6 + (k / max(1, n - 1)) * 0.4
                 z0, z1 = sg.get('z', [1.0, 1.06]); c0 = sg.get('c0', [SW / 2, SH / 2]); c1 = sg.get('c1', c0)
-                base = grade(render_src(fr, lerp(z0, z1, u), lerp(c0[0], c1[0], u), lerp(c0[1], c1[1], u), sg.get('shiftx')), t).convert('RGBA')
+                base = grade(encaixar(render_src(fr, lerp(z0, z1, u), lerp(c0[0], c1[0], u), lerp(c0[1], c1[1], u), sg.get('shiftx')), sg.get('quadro'), t), t).convert('RGBA')
                 compose(base, t); marca_on(base, t)
                 base.convert('RGB').save(f"{spec['out']}_t{t:05.2f}.jpg", quality=88)
                 break
@@ -488,7 +513,7 @@ for sg in ([] if AUDIO_ONLY else segs):
     for k in range(n):
         u = ease_io(k / max(1, n - 1)) * 0.6 + (k / max(1, n - 1)) * 0.4
         t = fi / FPS
-        base = grade(render_src(frames[k], lerp(z0, z1, u), lerp(c0[0], c1[0], u), lerp(c0[1], c1[1], u), sg.get('shiftx')), t).convert('RGBA')
+        base = grade(encaixar(render_src(frames[k], lerp(z0, z1, u), lerp(c0[0], c1[0], u), lerp(c0[1], c1[1], u), sg.get('shiftx')), sg.get('quadro'), t), t).convert('RGBA')
         compose(base, t); marca_on(base, t)
         enc.stdin.write(base.convert('RGB').tobytes())
         fi += 1

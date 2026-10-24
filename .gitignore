@@ -7,3 +7,10 @@ video-teste/saida/
 *.video.mp4
 *.pcm
 *.mp4_t*.jpg
+# do kit (2026-10-24): temporários da busca e da fila de postagem
+video-teste/lote/lista*/
+produto-campeao/afiliados/candidatos-*.json
+produto-campeao/afiliados/*.log
+produto-campeao/afiliados/*.fim
+meta/plano*.json
+meta/fila*.json

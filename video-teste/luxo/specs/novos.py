@@ -114,7 +114,7 @@ def opcao_b_faixas(nome, p, segs, narr, narr_at=0.4, bed=None, cuts=(0, 5, 10, 1
     """Opção 2, candidata "Faixas" do modelo Kevin, modernizada: 2 faixas levemente inclinadas (escura + cor do
     produto) com Poppins Bold, rótulo espaçado acima, subtítulo leve, CTA em contorno fino com carrinho em traço."""
     tx = []
-    Y = 1300
+    Y = p.get('y', 1300)  # 2026-10-20: 230 = faixas no topo, dentro da área livre da Shopee/Reels
     for i, (l1, l2, sub) in enumerate(p['cenas']):
         a, b = cuts[i], cuts[i + 1]; fim = i == 2
         tx += [_txt('eyebrow', p['kicker'], a, b, Y, base='pop_sb', size=28, track=7, x=78, out=not fim),
@@ -123,7 +123,7 @@ def opcao_b_faixas(nome, p, segs, narr, narr_at=0.4, bed=None, cuts=(0, 5, 10, 1
                     fill=tuple(p['accent']) + (255,), color=(26, 22, 18), out=not fim)]
         if sub and not fim:
             tx.append(_txt('body', sub, a + (0 if i == 0 else 0.3), b, Y + 300, base='pop_r', it='pop_r', size=38, x=82))
-    tx.append(dict(kind='button', text=p['cta'], t0=cuts[2] + 0.4, t1=15, y=Y + 304, x=70, anim='fade', out=False, **CTA_MODERNO))
+    tx.append(dict(kind='button', text=p['cta'], t0=cuts[2] + 0.4, t1=15, y=p.get('cta_y', Y + 304), x=p.get('cta_x', 70), anim='fade', out=False, **p.get('cta_estilo', CTA_MODERNO)))
     save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_B, lift=p.get('lift', 300), accent=p['accent'], segs=segs,
           texts=tx, **({'shiftx': p['shiftx']} if p.get('shiftx') else {}))
 
@@ -144,7 +144,7 @@ def opcao_b_topo(nome, p, segs, narr, narr_at=0.4, bed=None, cuts=(0, 5, 10, 15)
     save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_B, accent=p['accent'], segs=segs, texts=tx)
 
 
-FMT_A = dict(sat=0.86, contrast=0.98, lift=0.035, vign=0.25, grain=0.022, top=0.30)
+FMT_A = dict(sat=0.92, contrast=0.98, lift=0.03, vign=0.22, grain=0.02, top=0.30)  # filtro mais leve (kit 2026-10-21)
 
 
 def opcao_a(nome, p, segs, narr, narr_at=0.5, bed=None, tempo=1.0, cuts=(0, 2.9, 5.6, 7.9, 10.6)):
@@ -153,12 +153,17 @@ def opcao_a(nome, p, segs, narr, narr_at=0.5, bed=None, tempo=1.0, cuts=(0, 2.9,
     Rótulo grande: horário 'HH:MM' (rola entre eles) OU palavra curta para produtos sem manhã/tarde/noite
     ('Café', 'Almoço', 'Jantar'). Mergulho ao preto na virada de cada momento e luz que esquenta até a noite."""
     a, b, c, d, e = cuts
-    ramp = [(0, -0.02, 1.03), (c - 0.2, -0.02, 1.03), (c + 0.2, 0.05, 1.0), (d - 0.2, 0.05, 1.0), (d + 0.2, 0.11, 0.86), (15, 0.11, 0.86)]
-    tx = [_txt('eyebrow', p['eyebrow'], a, b - 0.1, 250), _txt('title', p['gancho'], a, b - 0.1, 300),
-          dict(kind='clock', keys=[(b, p['momentos'][0][0]), (c, p['momentos'][1][0]), (d, p['momentos'][2][0])],
-               t0=b, t1=e - 0.1, y=230, size=200 if ':' in p['momentos'][0][0] else 150, anim='fade')]
-    for (rot, leg), t0, t1 in zip(p['momentos'], (b + 0.2, c + 0.1, d + 0.1), (c - 0.1, d - 0.1, e - 0.1)):
-        tx.append(_txt('eyebrow', leg, t0, t1, 470))
+    ramp = [(0, -0.01, 1.02), (c - 0.2, -0.01, 1.02), (c + 0.2, 0.025, 1.0), (d - 0.2, 0.025, 1.0), (d + 0.2, 0.05, 0.93), (15, 0.05, 0.93)]
+    tx = [_txt('eyebrow', p['eyebrow'], a, b - 0.1, 250), _txt('title', p['gancho'], a, b - 0.1, 300)]
+    if p.get('sem_horario'):  # plano B (kit 2026-10-21): produto que não encaixa em manhã/tarde/noite, só 1 frase curta por cena
+        ramp = [(0, 0.0, 1.0), (15, 0.0, 1.0)]
+        for (rot, leg), t0, t1 in zip(p['momentos'], (b + 0.2, c + 0.1, d + 0.1), (c - 0.1, d - 0.1, e - 0.1)):
+            tx.append(_txt('title', leg, t0, t1, 280, size=84))
+    else:
+        tx.append(dict(kind='clock', keys=[(b, p['momentos'][0][0]), (c, p['momentos'][1][0]), (d, p['momentos'][2][0])],
+                       t0=b, t1=e - 0.1, y=230, size=200 if ':' in p['momentos'][0][0] else 150, anim='fade'))
+        for (rot, leg), t0, t1 in zip(p['momentos'], (b + 0.2, c + 0.1, d + 0.1), (c - 0.1, d - 0.1, e - 0.1)):
+            tx.append(_txt('eyebrow', leg, t0, t1, 470))
     head = p.get('cta', 'Leve pra casa.')
     lines = head if isinstance(head, list) else [head]
     tx += [_txt('eyebrow', 'Disponível no link', e + 0.1, 15, 250, out=False),

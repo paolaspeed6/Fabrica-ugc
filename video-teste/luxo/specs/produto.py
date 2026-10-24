@@ -63,6 +63,20 @@ def _segs(cuts, tomadas, clips, sx=None):
 
 
 MUSICA = os.environ.get('MUSICA', TRILHA)  # música calma de fundo quando não há voz
+def trilha(video_id, conta='shopee'):
+    """Trilha de fundo: MUSICA fixa se definida; senão alterna a biblioteca própria (musicas/, kit 2026-10-22)."""
+    if 'MUSICA' in os.environ:
+        return MUSICA
+    import sys
+    sys.path.insert(0, str(__import__('pathlib').Path(__file__).resolve().parents[3] / 'musicas'))
+    try:
+        from escolher import escolher
+        return escolher(video_id, conta)
+    except Exception as e:
+        print('trilha: biblioteca indisponível, usando a padrão:', e)
+        return TRILHA
+
+
 COM_VOZ = os.environ.get('COM_VOZ') == '1'  # a dona, 2026-10-18: SEM voz por enquanto (a Kokoro soou estrangeira); só música
 
 
@@ -86,17 +100,17 @@ def sem_voz(cfg):
     A, B, C = cfg['a'], cfg['b'], cfg['c']
     cuts = (0, 3.0, 5.6, 8.2, 10.8)
     opcao_a(f'{pid}_a_umdia', dict(eyebrow=A['eyebrow'], gancho=A['gancho'], momentos=A['momentos'], **comum),
-            _segs(cuts + (15,), cfg['tomadas']['a'], cfg['clips']), None, bed=[MUSICA], cuts=cuts)
+            _segs(cuts + (15,), cfg['tomadas']['a'], cfg['clips']), None, bed=[trilha(f'{pid}_a_umdia')], cuts=cuts)
     _natural(f'{pid}_a_umdia', cuts, cfg.get('scrim'))
     cuts = (0, 5.0, 10.0, 15)
     opcao_b_faixas(f'{pid}_b_faixas', dict(kicker=B['kicker'], cenas=B['cenas'], cta='Toque no carrinho', lift=cfg.get('lift', 300), **comum),
-                   _segs(cuts, cfg['tomadas']['b'], cfg['clips']), None, bed=[MUSICA], cuts=cuts)
+                   _segs(cuts, cfg['tomadas']['b'], cfg['clips']), None, bed=[trilha(f'{pid}_b_faixas')], cuts=cuts)
     _natural(f'{pid}_b_faixas', cuts, cfg.get('scrim'))
     cuts = (0, 3.2, 9.0, 11.6, 15)
     opcao_d(f'{pid}_c_direto', dict(eyebrow=C['eyebrow'], gancho=C['gancho'], itens=C['itens'], onde=C['onde'],
             tem=cfg.get('tem', '*ela tem:*'), itens_t=[4.3, 5.9, 7.5], esq=cfg.get('esq', False),
             **({'escala': cfg['escala'], 'item_size': cfg['item_size']} if cfg.get('esq') else {}), **comum),
-            _segs(cuts, cfg['tomadas']['c'], cfg['clips']), None, bed=[MUSICA], cuts=cuts)
+            _segs(cuts, cfg['tomadas']['c'], cfg['clips']), None, bed=[trilha(f'{pid}_c_direto')], cuts=cuts)
     _natural(f'{pid}_c_direto', cuts, cfg.get('scrim'))
     return [f'{pid}_a_umdia', f'{pid}_b_faixas', f'{pid}_c_direto']
 

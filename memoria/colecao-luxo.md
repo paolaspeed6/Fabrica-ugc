@@ -71,3 +71,11 @@ Voz: Kore (a "primeira de todas", preferida). Grátis = 10 narrações/dia POR m
   "TOYIAMA" (p24), legenda sumindo em banheiro branco (p25, scrim 0,62), rótulo trocado de cena (p26/p30),
   títulos encostando na borda (p24, p27, p31, p32), cena parada em take Hailuo (p31 B), gancho que some no 1º
   quadro quando a cena troca antes de 1,2 s (p34 B).
+
+## 2026-10-24 — kit "Fábrica Shopee" (Kevin) juntado à fábrica
+- A dona mandou o kit (principal + músicas A + gerador). Intacto em `kit-fabrica-shopee/`; o que era novo foi copiado para a raiz
+  (setor de qualidade, páginas Tinder/Conferência/Postagens/Mapa, meta/postar.py, Drive, varredura, receita do vídeo do zero,
+  músicas). Os arquivos com o mesmo nome foram JUNTADOS mantendo o estilo dela: layouts e regras dela continuam o padrão;
+  do kit entraram ícone ↓ no CTA, `encaixar` (produto alto), opção `sem_horario` no A, B com faixas no topo (`y`), trilha
+  alternando a biblioteca `musicas/`, regras K6-K15, blocos novos do produtor e o banco de ganchos.
+- Ela pediu: "leia todos os arquivos que estão pedindo pra ler, é pra você eles".

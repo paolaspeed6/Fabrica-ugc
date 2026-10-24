@@ -1,0 +1,6 @@
+numpy
+pillow
+opencv-python
+rembg[cpu]
+easyocr
+scipy

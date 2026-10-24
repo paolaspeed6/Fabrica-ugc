@@ -43,3 +43,6 @@ Nunca afirmar prazo de entrega ou "envio imediato" (regra, não tem certeza da e
   - 15 s em 3 cenas;
   - legenda da Shopee no formato simples;
   - nada pago sem pedido da dona.
+
+## Trilha de fundo (kit 2026-10-22)
+O render alterna sozinho as trilhas próprias e livres (musicas/LEIA.md). Não usar música de terceiros nem fixar uma trilha sem pedido da dona.

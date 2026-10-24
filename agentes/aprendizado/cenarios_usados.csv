@@ -1,0 +1,267 @@
+data,produto,cena,ambiente,piso,parede,paleta
+2026-10-23,cafeteira,A,cozinha planejada,porcelanato cinza 120,verde oliva,verde oliva/branco/latao
+2026-10-23,cafeteira,B,varanda gourmet cantinho cafe,microcimento cinza claro,cimento queimado cinza,cinza/carvalho mel
+2026-10-23,cafeteira,C,cantinho cafe home office noite,porcelanato grafite,terracota,terracota/branco/latao
+2026-10-23,poltronas,A,varanda gourmet apto,porcelanato cinza claro 90,grafite,grafite/creme/vidro
+2026-10-23,poltronas,B,area piscina coberta,porcelanato travertino areia,branco,branco/areia/turquesa
+2026-10-23,poltronas,C,sala moderna noite,cimento queimado,azul acinzentado,azul/carvao/creme
+2026-10-23,cooktop,A,ilha cozinha planejada noite,porcelanato cinza quente 120,branco,azul marinho/latao/cinza
+2026-10-23,cooktop,B,cozinha varanda gourmet,cimento queimado cinza claro,microcimento areia,areia/branco/preto
+2026-10-23,cooktop,C,cozinha manha,porcelanato carvao 90,verde salvia,salvia/nogueira/bege
+2026-10-23,carrinho,A,parque calcada,placas concreto cinza,sebe verde,cinza/verde
+2026-10-23,carrinho,B,hall entrada predio,porcelanato branco quente 120,travertino bege,bege/latao/preto
+2026-10-23,carrinho,C,orla calcadao golden hour,pedra areia 60x120,mureta branca,areia/azul/branco
+2026-10-23,bicicleta,A,academia em casa,borracha preta placas 1m,azul profundo,azul/preto/prata
+2026-10-23,bicicleta,B,canto sala apto janela,porcelanato cinza claro 120,cinza claro,cinza/carvao/verde
+2026-10-23,bicicleta,C,varanda treino noite,porcelanato ardosia carvao,branco,branco/carvao/ambar
+2026-10-23,kit microondas forno embutir,A,cozinha planejada torre quente manha,porcelanato cinza claro acetinado 120,marcenaria laca verde petroleo,petroleo/inox/branco
+2026-10-23,kit microondas forno embutir,B,cozinha gourmet integrada noite,cimento queimado grafite,marcenaria nogueira escura,nogueira/preto/inox
+2026-10-23,kit microondas forno embutir,C,cozinha apto tarde,porcelanato concreto areia 90,laca off-white + parede ocre mostarda,ocre/off-white/oliva
+2026-10-23,autoclave,A,consultorio odonto esterilizacao,porcelanato cinza claro 90,porcelanato cinza claro 60x120,branco/cinza/inox
+2026-10-23,autoclave,B,clinica estetica tarde,porcelanato branco quente 90,rosa antigo,rosa/branco/dourado
+2026-10-23,autoclave,C,estudio tatuagem noite,cimento queimado cinza claro,microcimento carvao,carvao/branco/preto/azul led
+2026-10-23,seladora,A,consultorio odonto bancada,porcelanato cinza quente 120,laca azul acinzentado claro,azul cinza/branco/inox
+2026-10-23,seladora,B,estudio manicure podologia manha,porcelanato bege pedra 90,verde oliva,oliva/branco/latao
+2026-10-23,seladora,C,estudio tatuagem bancada inox noite,cimento queimado grafite,azul marinho,marinho/inox/preto
+2026-10-23,cadeiras interlocutor,A,recepcao escritorio clinica,porcelanato branco quente 120,azul petroleo,petroleo/branco/cromado
+2026-10-23,cadeiras interlocutor,B,home office apto manha,tabua larga nogueira escura,ocre mostarda,ocre/nogueira/preto
+2026-10-23,cadeiras interlocutor,C,sala de reuniao escritorio,carpete grafite liso,branco + vidro cidade,branco/grafite/cinza
+2026-10-23,cadeira presidente,A,escritorio executivo noite,porcelanato grafite 120,verde esmeralda,esmeralda/nogueira/latao
+2026-10-23,cadeira presidente,B,canto trabalho apto tarde vidro,cimento queimado cinza quente claro,branco,branco/cinza/preto
+2026-10-23,cadeira presidente,C,home office manha,porcelanato pedra bege 90,malva rosado,malva/branco/bege
+2026-10-23,monitor,A,quarto gamer noite,porcelanato carvao 90,ardosia escura,ardosia/preto/violeta
+2026-10-23,monitor,B,home office tarde,cimento queimado claro,branco,branco/nogueira/verde
+2026-10-23,monitor,C,estudio loft entardecer,porcelanato cinza claro 120,bordo,bordo/concreto/latao
+2026-10-23,nobreak jbr (2310b p10),A,home office manha,tabua larga carvalho natural 25cm,azul petroleo,petroleo/carvalho/branco
+2026-10-23,nobreak jbr (2310b p10),B,sala tv noite,porcelanato cimenticio grafite 120,off-white com led quente,grafite/nogueira/ambar
+2026-10-23,nobreak jbr (2310b p10),C,canto gamer fim de tarde,porcelanato branco 90,verde esmeralda,esmeralda/branco/preto
+2026-10-23,bateria estacionaria (2310b p11),A,area tecnica garagem noite,epoxi cinza claro,porcelanato concreto 60x120,cinza/preto/ambar
+2026-10-23,bateria estacionaria (2310b p11),B,lavanderia apto manha,porcelanato azul acinzentado 90,azulejo branco 60x120,branco/azul acinzentado
+2026-10-23,bateria estacionaria (2310b p11),C,sala de rede escritorio tarde,porcelanato nogueira 20x120,azul marinho,marinho/nogueira/preto
+2026-10-23,monitor 49 (2310b p12),A,home office executivo noite,porcelanato nogueira escuro 20x120,cinza carvao,carvao/nogueira/ambar
+2026-10-23,monitor 49 (2310b p12),B,loft manha,cimento queimado claro,branco,branco/preto/verde
+2026-10-23,monitor 49 (2310b p12),C,quarto gamer noite,porcelanato cinza medio 90,bordo,bordo/preto/ambar
+2026-10-23,p13 furadeira mourao,A,galpao maquinas haras manha,cimento polido cinza claro (bancada),verde floresta,verde/laranja/cinza
+2026-10-23,p13 furadeira mourao,B,cacamba pickup cerca golden hour,aco pintado grafite (tampa),campo/cerca branca,grafite/dourado/verde
+2026-10-23,p13 furadeira mourao,C,oficina rural noite,aco preto fosco (bancada),off-white,preto/laranja/ambar
+2026-10-23,p14 pneus aro 8,A,garagem casa de campo,epoxi cinza claro,branco,branco/preto/cinza
+2026-10-23,p14 pneus aro 8,B,entrada casa condominio golfe tarde,placas concreto areia 60x120,mureta branca,areia/branco/azul ceu
+2026-10-23,p14 pneus aro 8,C,oficina moderna noite,concreto polido cinza medio,azul marinho,marinho/preto/dourado
+2026-10-23,p15 kit 3em1,A,oficina garagem manha,epoxi cinza claro + bancada betula,verde salvia,salvia/amarelo/preto
+2026-10-23,p15 kit 3em1,B,casa nova em reforma tarde,porcelanato cinza quente 120,concreto liso cinza claro,cinza/branco/amarelo
+2026-10-23,p15 kit 3em1,C,sala oficina noite,concreto polido,terracota,terracota/carvao/amarelo
+2026-10-23,berco-balanco-p01,A,quarto casal moderno ao lado da cama,porcelanato greige grande,azul marinho,marinho/cinza claro/nogueira
+2026-10-23,berco-balanco-p01,B,quarto casal tarde ao lado da cama,carpete aveia liso,terracota rosado,terracota/aveia/branco
+2026-10-23,berco-balanco-p01,C,quarto casal noite luminaria,cimento queimado cinza quente,microcimento cinza claro,cinza/carvao/ambar
+2026-10-23,cadeiras-roma-p02,A,sala de jantar mesa 10 lugares,porcelanato travertino claro,grafite,grafite/travertino/mel
+2026-10-23,cadeiras-roma-p02,B,area gourmet coberta mesa carvalho,porcelanato ardosia escuro,branco,branco/ardosia/carvalho
+2026-10-23,cadeiras-roma-p02,C,canto jantar cozinha aberta,porcelanato cinza palido,rosa argila,rosa argila/branco/preto
+2026-10-23,banquetas-p03,A,ilha cozinha planejada,cimento queimado cinza claro,armarios verde floresta,verde floresta/branco/nogueira
+2026-10-23,banquetas-p03,B,varanda gourmet bancada,terracota grande,branco,branco/terracota/cinza concreto
+2026-10-23,banquetas-p03,C,cozinha apto noite ilha grafite,porcelanato grafite,branco quente,grafite/branco quente/ambar
+2026-10-23,banquetas,A,varanda gourmet apto manha,porcelanato bege calcario grande,branco quente,branco/preto/azul
+2026-10-23,banquetas,B,bar de piscina tarde,porcelanato basalto cinza quente 60x120,balcao estuque areia,areia/turquesa/azul
+2026-10-23,banquetas,C,cozinha planejada noite,porcelanato greige polido 120,armarios terracota laqueados,terracota/greige/azul
+2026-10-23,sofacama,A,sala apto manha,porcelanato bege quente polido 120,rosa blush,rosa/oliva/branco
+2026-10-23,sofacama,B,quarto hospedes home office,carpete cinza claro liso,off-white com painel nogueira,nogueira/branco/oliva
+2026-10-23,sofacama,C,sala loft noite,tabua larga carvalho escuro,carvao petroleo,petroleo/oliva/latao
+2026-10-23,poltronas-caraiva,A,sala canto conversa,porcelanato branco quente polido 120,preto fosco,preto/mel/aveia
+2026-10-23,poltronas-caraiva,B,quarto canto leitura tarde,porcelanato rosa bege 90,terracota rosado claro,rosa/mel/branco
+2026-10-23,poltronas-caraiva,C,home office noite,porcelanato marrom carvao 120,tijolo pintado branco,branco/marrom/latao
+2026-10-23,poltronas luna (2310a p10),A,sala de estar apto,porcelanato cimento cinza quente,berinjela ameixa,ameixa/creme/mel
+2026-10-23,poltronas luna (2310a p10),B,recepcao clinica estetica,porcelanato marmorizado branco 120,rosa antigo,rosa/branco/mel
+2026-10-23,poltronas luna (2310a p10),C,sala de jantar noite,tabua larga carvalho natural,marrom chocolate,chocolate/creme/travertino
+2026-10-23,banqueta hotel (2310a p11),A,varanda gourmet ilha,porcelanato calcario bege 60x120,concreto aparente,concreto/mel/preto
+2026-10-23,banqueta hotel (2310a p11),B,deck piscina tarde,deck cumaru tabua larga,branco liso,branco/mel/turquesa
+2026-10-23,banqueta hotel (2310a p11),C,rooftop bistro golden hour,porcelanato grafite 90,ferrugem terracota,ferrugem/mel/grafite
+2026-10-23,cadeiras tulipa (2310a p12),A,home office duplo,carpete liso grafite,lilas acinzentado,lilas/nude/cromado
+2026-10-23,cadeiras tulipa (2310a p12),B,canto jantar manha,porcelanato areia polido 100,mostarda ocre,mostarda/nude/branco
+2026-10-23,cadeiras tulipa (2310a p12),C,canto estudo noite,porcelanato off-white 120,painel nogueira liso,nogueira/nude/cromado
+2026-10-23,banquetas,A,(correcao: piso trocado p/ nao repetir p11) varanda gourmet apto manha,porcelanato cinza-salvia fosco grande,branco quente,branco/preto/azul
+2026-10-23,banquetas-l2310a-p04,A,ilha cozinha aberta,porcelanato bege quente 120,preto fosco,preto/branco/verde oliva/mel
+2026-10-23,banquetas-l2310a-p04,B,varanda gourmet churrasqueira tarde,porcelanato branco fosco 120,terracota,terracota/branco/granito preto
+2026-10-23,banquetas-l2310a-p04,C,peninsula cozinha noite,tabuas largas carvalho mel,branco quente,branco/carvalho/preto
+2026-10-23,aparador-l2310a-p05,A,sala ao lado do sofa manha,porcelanato greige polido 90,rosa blush,blush/azul ardosia/ambar
+2026-10-23,aparador-l2310a-p05,B,hall de entrada,porcelanato grafite fosco 120,placas marmore branco,branco/grafite/terracota
+2026-10-23,aparador-l2310a-p05,C,home office noite,carpete cinza claro pelo baixo,azul petroleo,petroleo/carvalho/ambar
+2026-10-23,poltronas-opala-l2310a-p06,A,sala de estar,cimento queimado cinza escuro polido,painel nogueira ripas largas lisas,nogueira/grafite/nude
+2026-10-23,poltronas-opala-l2310a-p06,B,recepcao escritorio clinica,porcelanato pedra mel 60x120,verde musgo,musgo/mel/nude
+2026-10-23,poltronas-opala-l2310a-p06,C,canto amamentacao suite noite,tabuas largas carvalho defumado,berinjela,berinjela/carvalho/nude
+2026-10-23,poltronas-opala-l2310a-p06,A,(correcao: parede trocada p/ nao repetir p12 C) sala de estar,cimento queimado cinza escuro polido,microcimento cinza quente claro,cinza/nogueira/nude
+2026-10-23,poltronas-opala-l2310a-p06,B,(correcao: contexto trocado p/ nao repetir p10 B) lounge casa tarde,porcelanato pedra mel 60x120,verde musgo,musgo/mel/nude
+2026-10-23,poltronas-opala-l2310a-p06,C,(correcao: parede trocada p/ nao repetir p10 A) canto amamentacao suite noite,tabuas largas carvalho defumado,azul ardosia,ardosia/carvalho/nude
+2026-10-23,banquetas-l2310a-p04,B,(correcao: parede trocada p/ nao espelhar p03 B terracota) varanda gourmet churrasqueira tarde,porcelanato branco fosco 120,azul empoeirado,azul/branco/granito preto
+2026-10-23,poltrona-sintra-l2310a-p07,A,deck piscina manha,porcelanato calcario claro 60x120,azul ardosia,ardosia/calcario/turquesa
+2026-10-23,poltrona-sintra-l2310a-p07,B,varanda gourmet apto tarde,porcelanato cinza pomba fosco 120,verde oliva,oliva/cinza/branco
+2026-10-23,poltrona-sintra-l2310a-p07,C,terraco jardim anoitecer,deck composito cinza-marrom tabua larga,pedra cinza placas lisas,pedra/cinza-marrom/ambar
+2026-10-23,cadeira-gamer-rosa-l2310a-p08,A,quarto gamer noite,microcimento cinza-bege polido,azul bebe,azul bebe/rosa/branco
+2026-10-23,cadeira-gamer-rosa-l2310a-p08,B,home office manha,tabuas largas carvalho claro,azul marinho,marinho/carvalho/rosa
+2026-10-23,cadeira-gamer-rosa-l2310a-p08,C,canto gamer quarto noite,porcelanato branco quente 120,verde menta,menta/branco/preto
+2026-10-23,cadeiras-boucle-l2310a-p09,A,canto jantar meio-dia,porcelanato cinza claro polido veio suave,vinho,vinho/off white/preto
+2026-10-23,cadeiras-boucle-l2310a-p09,B,home office manha,tabuas largas nogueira escura,amarelo manteiga,amarelo/nogueira/off white
+2026-10-23,cadeiras-boucle-l2310a-p09,C,penteadeira quarto noite,carpete areia pelo baixo,marrom chocolate,chocolate/areia/latao
+2026-10-23,cadeirinha,A,interior SUV banco traseiro manha,tapete borracha preto,estofado couro caramelo,caramelo/preto/cinza claro
+2026-10-23,cadeirinha,B,interior hatch garagem condominio tarde nublada,carpete automotivo grafite,estofado tecido cinza claro,cinza claro/grafite/concreto
+2026-10-23,cadeirinha,C,interior SUV premium noite luz ambiente,tapete marrom escuro,estofado couro marfim,marfim/marrom/ambar
+2026-10-23,suporte-lava,A,lavanderia planejada manha,porcelanato terracota 60x60,azul petroleo,petroleo/terracota/branco
+2026-10-23,suporte-lava,B,area de servico apto tarde,porcelanato off-white 100x100,rosa antigo,rosa/off-white/latao
+2026-10-23,suporte-lava,C,canto lavanderia noite,vinilico tabua larga carvalho escuro,porcelanato verde esmeralda 60x120,esmeralda/nogueira/branco
+2026-10-23,p35,A,curral fazenda moderna manha mourao eucalipto,terra vermelha batida,cerca tabuas brancas,verde/mel/laranja
+2026-10-23,p35,B,portao haras moderno tarde mourao madeira grafite,cimento polido cinza claro placas grandes,estabulo vidro e aco preto,grafite/cinza/laranja
+2026-10-23,p35,C,piquete ovinos chacara golden hour poste concreto branco,pedra arenito 60x60,casa branca esquadria preta,areia/branco/dourado
+2026-10-23,p36,A,entrada fazenda leiteira moderna manha poste aco galvanizado,lajes concreto cinza claro largas,celeiro branco telhado verde,branco/verde escuro/laranja
+2026-10-23,p36,B,curral gado de corte moderno tarde poste aco preto,terracota 30 cm,fibrocimento cinza claro,preto/terracota/laranja
+2026-10-23,p36,C,deck casa de chacara moderna golden hour poste concreto redondo,deck ipe tabua larga,vidro e aco preto,ipe/grafite/laranja
+2026-10-23,secador-8em1,A,banheiro moderno noite bancada,quartzo preto (bancada),mostarda,mostarda/preto/prata
+2026-10-23,secador-8em1,B,penteadeira closet manha,laca branca (tampo),lavanda clara,lavanda/branco/prata
+2026-10-23,secador-8em1,C,banheiro moderno meio-dia,quartzo calacatta (bancada),vinho,vinho/branco/dourado
+2026-10-23,estacao-ar-quente,A,bancada assistencia tecnica dia,manta antiestatica cinza (bancada),laranja queimado,laranja/cinza/turquesa
+2026-10-23,estacao-ar-quente,B,workspace eletronica casa noite,tampo carvalho tabua larga / porcelanato preto 90,azul marinho,marinho/carvalho/turquesa
+2026-10-23,estacao-ar-quente,C,laboratorio reparo noite,manta antiestatica azul escura / epoxi cinza claro,verde floresta,verde/branco/turquesa
+2026-10-23,p39,A,galpao locacao equipamentos manha bancada aco preta,epoxi cinza brilhante,azul petroleo,azul petroleo/preto/amarelo
+2026-10-23,p39,B,canteiro de obra laje concreto fim de tarde palete pinus,concreto liso laje,pilares concreto cinza,concreto/pinus/laranja
+2026-10-23,p39,C,oficina pequenos motores noite bancada betula,porcelanato cinza quente 90,terracota,terracota/betula/preto
+2026-10-23,rocadeira,A,quintal casa de campo moderna,placas basalto carvao 60x60,cerca ripas largas madeira escura,carvao/madeira escura/laranja/verde
+2026-10-23,rocadeira,B,canto ferramentas casa de campo coberto,pedra sao tome bege 40x40,tijolo aparente vermelho,tijolo/bege/laranja/verde escuro
+2026-10-23,rocadeira,C,beira de pasto fazenda moderna golden hour,terra vermelha compactada,cerca preta de pasto e ceu,preto/terra vermelha/verde/ambar
+2026-10-23,lavadora960,A,entrada garagem casa moderna,placas concreto cinza claro 100x100,fachada branca + portao aluminio preto,cinza claro/branco/grafite/teal
+2026-10-23,lavadora960,B,area de servico externa moderna,porcelanato bege 90x90,porcelanato azul marinho 60x120,azul marinho/bege/branco
+2026-10-23,lavadora960,C,degraus jardim frontal golden hour,deck ipe tabuas 20cm,fachada branca com vidro,madeira/terracota/verde/ambar
+2026-10-23,lavadora170,A,garagem moderna noite com bancada,epoxi cinza escuro,grafite com fita LED,grafite/preto/branco/teal
+2026-10-23,lavadora170,B,area de piscina casa moderna,porcelanato off-white 120x120,revestimento verde agua,off-white/verde agua/turquesa
+2026-10-23,lavadora170,C,terraco jardim cobertura fim de tarde,porcelanato terracota 60x60,mostarda lisa,terracota/mostarda/madeira clara/verde
+2026-10-23,arranhador,A,sala apto moderna manha,porcelanato branco quente 120,rosa blush,rosa/branco/carvao/latao
+2026-10-23,arranhador,B,home office tarde,tabua larga nogueira escura,verde floresta,verde floresta/nogueira/preto
+2026-10-23,arranhador,C,quarto lounge noite luminaria,carpete cinza claro liso,ocre mostarda,ocre/cinza/preto/ambar
+2026-10-23,plafon,A,sala apto manha teto,porcelanato cinza claro 120,rosa argila,rosa argila/branco/nogueira
+2026-10-23,plafon,B,quarto noite teto,porcelanato grafite grande,azul marinho,azul marinho/branco/ambar
+2026-10-23,plafon,C,home office anoitecer teto,terracota clara 60,pedra calcaria cinza claro,cinza claro/carvalho/preto
+2026-10-23,bicicleta spinning sport,A,academia em casa apto manha,porcelanato areia 120 acetinado,terracota laranja,terracota/areia/preto
+2026-10-23,bicicleta spinning sport,B,varanda apto tarde vidro,deck cumaru tabua 20cm,concreto aparente liso,concreto/cumaru/verde oliva
+2026-10-23,bicicleta spinning sport,C,home office noite,carpete grafite liso,bordo,bordo/grafite/latao
+2026-10-23,bicicleta spinning kodi,A,academia condominio manha,porcelanato branco gelo 100 fosco,preto fosco,preto/branco/vermelho
+2026-10-23,bicicleta spinning kodi,B,sala estar tarde,nogueira escura tabua 25cm,verde menta claro,menta/nogueira/cinza claro
+2026-10-23,bicicleta spinning kodi,C,area piscina coberta anoitecer,basalto cinza esverdeado 60x120,verde floresta,verde floresta/basalto/turquesa
+2026-10-23,esteira dobravel,A,home office manha,vinilico carvalho claro tabua 22cm,azul claro empoeirado,azul po/carvalho/branco
+2026-10-23,esteira dobravel,B,sala tv noite,porcelanato cimenticio cinza esverdeado 120,painel freijo liso,freijo/cinza verde/carvao
+2026-10-23,esteira dobravel,C,suite tarde,porcelanato off-white 90 fosco,lavanda acinzentado,lavanda/off-white/branco
+2026-10-24,L2410A p07 poltrona lara,A,canto de jantar apto manha,porcelanato cinza claro 120,verde oliva liso,oliva/cinza claro/branco/caramelo
+2026-10-24,L2410A p07 poltrona lara,B,home office tarde,tabua larga carvalho natural 25cm,grafite liso,grafite/carvalho/branco
+2026-10-24,L2410A p07 poltrona lara,C,canto leitura quarto noite,carpete cinza claro liso,azul empoeirado,azul po/cinza/latao
+2026-10-24,L2410A p08 poltrona marina,A,sala de jantar manha,cimento queimado cinza claro,azul petroleo profundo,petroleo/cinza claro/branco/nogueira
+2026-10-24,L2410A p08 poltrona marina,B,canto leitura sala tarde,porcelanato bege quente 90,branco quente liso + janela preta,branco/bege/preto/nogueira
+2026-10-24,L2410A p08 poltrona marina,C,sala estar noite,porcelanato carvao 120,vinho bordo,bordo/carvao/cinza claro/latao
+2026-10-24,L2410A p09 poltrona julia,A,sala estar manha,porcelanato travertino areia 60x120,cinza claro liso,cinza claro/areia/off-white/caramelo
+2026-10-24,L2410A p09 poltrona julia,B,home office tarde,porcelanato branco gelo 100,azul marinho,marinho/branco/carvalho claro/caramelo
+2026-10-24,L2410A p09 poltrona julia,C,quarto noite,tabua carvalho defumado 22cm,terracota rosado,terracota/carvalho escuro/latao
+2026-10-24,L2410A p10 banquetas olivia,A,cozinha apto peninsula quartzo preto,porcelanato cinza quente 120 fosco,verde oliva profundo,oliva/preto/conhaque
+2026-10-24,L2410A p10 banquetas olivia,B,loft cozinha ilha nogueira tarde,cimento queimado claro polido,concreto aparente cinza claro,cinza/nogueira/conhaque/branco
+2026-10-24,L2410A p10 banquetas olivia,C,varanda gourmet anoitecer bar concreto,porcelanato off-white 90 fosco,terracota vermelha,terracota/off-white/conhaque/ambar
+2026-10-24,L2410A p11 banquetas alca,A,cozinha ilha marcenaria azul marinho manha,porcelanato cinza claro 100 fosco,marcenaria azul marinho laca,marinho/branco/creme/mel
+2026-10-24,L2410A p11 banquetas alca,B,varanda gourmet tarde granito preto,porcelanato basalto cinza esverdeado 60x120,verde salvia,salvia/preto/creme/mel
+2026-10-24,L2410A p11 banquetas alca,C,cozinha escura noite ilha pedra preta,cimento queimado cinza quente polido,grafite liso,grafite/preto/latao/creme
+2026-10-24,L2410A p12 banquetas ibiza,A,cozinha ilha quartzo manha,porcelanato off-white 120 fosco,azul petroleo profundo,petroleo/off-white/caramelo/bege
+2026-10-24,L2410A p12 banquetas ibiza,B,area gourmet piscina coberta tarde,porcelanato cinza quente 90 antiderrapante,branco estuque,branco/preto/turquesa/caramelo
+2026-10-24,L2410A p12 banquetas ibiza,C,apto compacto bancada parede noite,cimento queimado cinza claro polido,azul acinzentado empoeirado,azul po/branco/carvalho/caramelo
+2026-10-24,L2410C p12 prateleira suspensa 110,A,hall de entrada apto manha,porcelanato off-white quente 120,azul ardosia liso,azul ardosia/off-white/aveia/preto
+2026-10-24,L2410C p12 prateleira suspensa 110,B,home office tarde,cimento queimado cinza claro,grafite fosco liso,grafite/cinza claro/branco/bege
+2026-10-24,L2410C p12 prateleira suspensa 110,C,sala estar noite luminaria,nogueira tabua larga 25cm,verde petroleo profundo,petroleo/nogueira/carvao/ambar
+2026-10-24,L2410C p13 prateleira tripla,A,cozinha planejada manha,porcelanato cinza medio 90x90,verde oliva fosco liso,oliva/branco quartzo/grafite
+2026-10-24,L2410C p13 prateleira tripla,B,home office tarde,vinilico carvalho claro tabua 22cm,azul marinho fosco,marinho/carvalho/branco/terracota
+2026-10-24,L2410C p13 prateleira tripla,C,sala estar anoitecer,porcelanato grafite 120x120,branco quente liso,branco quente/grafite/nogueira/latao
+2026-10-24,perfume aether french avenue,A,suite manha comoda,porcelanato areia 120,terracota argila,terracota/grafite/dourado/esmeralda
+2026-10-24,perfume aether french avenue,B,closet planejado tarde,carpete bege liso,laca cinza claro marcenaria,cinza claro/bege/dourado
+2026-10-24,perfume aether french avenue,C,hall entrada noite abajur,cimento queimado cinza quente,azul marinho empoeirado,marinho/carvao/creme/dourado
+2026-10-24,perfume orientica noble,A,quarto manha mesa cabeceira,porcelanato cinza claro 120,verde salvia claro,salvia/branco/rosa poeira/ambar
+2026-10-24,perfume orientica noble,B,closet planejado tarde,carpete taupe liso,laca carvao marcenaria,carvao/taupe/dourado
+2026-10-24,perfume orientica noble,C,sala estar noite rack,carvalho natural tabua 25cm,berinjela ameixa,ameixa/calcario/carvalho/ambar
+2026-10-24,L2410A p14 sofa pegasus,A,sala estar apto manha,porcelanato marmorizado branco fosco 120,mostarda ocre lisa,mostarda/branco/grafite/latao
+2026-10-24,L2410A p14 sofa pegasus,B,home theater noite LED,carpete aveia liso,berinjela ameixa escuro,berinjela/aveia/grafite/ambar
+2026-10-24,L2410A p14 sofa pegasus,C,sala integrada jardim tarde,porcelanato greige fosco 120,branca + porta vidro preta,branco/greige/preto/verde/terracota
+2026-10-24,L2410A p15 mesa damas,A,cozinha planejada copa manha,porcelanato pedra calcaria branco quente 90,armarios verde floresta fosco,verde floresta/branco/creme/mel
+2026-10-24,L2410A p15 mesa damas,B,terraco coberto golden hour,porcelanato antracite 60x120,placas lisas pedra calcaria cinza claro,cinza pedra/antracite/mel/verde
+2026-10-24,L2410A p15 mesa damas,C,sala jantar compacta noite pendente,porcelanato branco quente fosco 120,lavanda acinzentado,lavanda/branco/nogueira/latao
+2026-10-24,L2410A p04 kit4 cadeiras amsterdan,A,area gourmet coberta tarde,porcelanato cimenticio cinza claro 120,azul cobalto lisa,cobalto/cinza claro/carvalho/preto
+2026-10-24,L2410A p04 kit4 cadeiras amsterdan,B,bistro cafeteria manha,terracota quadrada 30x30,branca lisa + janela caixilho preto,terracota/branco/preto/marmore
+2026-10-24,L2410A p04 kit4 cadeiras amsterdan,C,cozinha planejada noite,microcimento cinza quente,armarios laca rosa antigo claro,rosa antigo/cinza quente/latao/preto
+2026-10-24,L2410A p05 cadeira addit presidente,A,home office apto manha,porcelanato cinza claro 120,rosa coral lisa,coral/cinza claro/branco/preto
+2026-10-24,L2410A p05 cadeira addit presidente,B,escritorio corporativo tarde,concreto polido bege-cinza 100x100,branca + divisoria vidro caixilho preto,cinza/branco/preto/verde
+2026-10-24,L2410A p05 cadeira addit presidente,C,home office noite luminaria,microcimento off-white quente,amarelo manteiga lisa,amarelo/nogueira/latao/preto
+2026-10-24,L2410A p06 poltrona beatriz,A,sala estar apto tarde,cimento queimado claro quente,verde pistache claro liso,pistache/off-white/caramelo/latao
+2026-10-24,L2410A p06 poltrona beatriz,B,quarto suite manha,carpete aveia liso,azul ardosia lisa,azul ardosia/aveia/branco/caramelo
+2026-10-24,L2410A p06 poltrona beatriz,C,recepcao consultorio noite,porcelanato basalto carvao 60x120,branco quente reboco liso,carvao/branco quente/caramelo/preto
+2026-10-24,L2410C p04 kit carrinho theros rosa,A,hall entrada apto moderno manha,porcelanato cinza quente 120,verde salvia,salvia/cinza quente/nogueira/rosa
+2026-10-24,L2410C p04 kit carrinho theros rosa,B,quarto de bebe tarde,tabua larga carvalho claro 25cm,azul empoeirado,azul po/carvalho/branco/rosa
+2026-10-24,L2410C p04 kit carrinho theros rosa,C,passeio coberto condominio golden hour,placas concreto areia 60x60,reboco branco liso + banco madeira,areia/branco/verde/rosa
+2026-10-24,L2410C p05 carrinho 3em1 preto dourado,A,sala estar apto noite spots,porcelanato off-white fosco 120,verde oliva escuro,oliva/off-white/latao/preto
+2026-10-24,L2410C p05 carrinho 3em1 preto dourado,B,lobby predio moderno manha,porcelanato travertino bege 60x120,painel nogueira liso + vidro,bege/nogueira/verde/dourado
+2026-10-24,L2410C p05 carrinho 3em1 preto dourado,C,suite casal tarde,carpete bege liso baixo,rosa antigo,rosa/bege/branco/latao
+2026-10-24,L2410C p06 carrinho 3em1 cinza dourado,A,hall elevador predio noite,porcelanato preto fosco 90,ocre mostarda,mostarda/preto/latao/cinza
+2026-10-24,L2410C p06 carrinho 3em1 cinza dourado,B,caminho jardim condominio manha,placas concreto polido areia 60x60,muro branco liso + banco teca,areia/branco/verde escuro/teca
+2026-10-24,L2410C p06 carrinho 3em1 cinza dourado,C,sala estar fim de tarde,tabua larga nogueira escura 25cm,azul marinho,marinho/nogueira/creme/dourado
+2026-10-24,tapete sisal 300x400,A,sala estar apto moderno manha,porcelanato branco quente 120 fosco,verde salvia lisa,salvia/branco/greige/nogueira/carvao
+2026-10-24,tapete sisal 300x400,B,sala jantar noite pendente,tabua larga carvalho defumado 25cm,azul petroleo lisa,petroleo/carvalho escuro/off-white/latao
+2026-10-24,tapete sisal 300x400,C,suite casa moderna tarde,cimento queimado carvao polido,branco quente + cabeceira veludo ferrugem,carvao/ferrugem/branco/greige
+2026-10-24,tapete sisal quadrado 3x3,A,sala estar casa moderna tarde,porcelanato cinza quente 120 acetinado,terracota argila lisa,terracota/off-white/marinho/conhaque
+2026-10-24,tapete sisal quadrado 3x3,B,jantar integrado apto noite,tabua carvalho mel 22cm,branco liso + divisoria vidro preto,branco/mel/marinho/preto
+2026-10-24,tapete sisal quadrado 3x3,C,home office manha,cimento queimado cinza claro polido,grafite lisa + prateleira carvalho,grafite/carvalho/marinho/cinza claro
+2026-10-24,kit 6 prateleiras inox,A,cozinha planejada manha,(bancada quartzo preto),microcimento cinza claro quente continuo,cinza claro/preto/carvalho/inox
+2026-10-24,kit 6 prateleiras inox,B,banheiro moderno tarde,(bancada pedra branca),placa porcelanato terracota 120x260 continua,terracota/carvalho branco/branco/inox
+2026-10-24,kit 6 prateleiras inox,C,varanda gourmet coberta noite LED,(bancada concreto claro),grafite fosco liso,grafite/concreto/madeira clara/inox
+2026-10-24,L2410C p01 bike spinning ITS,A,academia em casa apto manha,porcelanato cinza claro 90 fosco + tapete borracha preto,verde oliva,oliva/cinza claro/laranja
+2026-10-24,L2410C p01 bike spinning ITS,B,sala estar casa tarde sofa cinza,porcelanato grafite 120 acetinado,azul acinzentado claro,azul cinza/grafite/laranja
+2026-10-24,L2410C p01 bike spinning ITS,C,suite noite luminaria latao,microcimento areia polido,cinza carvao escuro com sanca LED,carvao/areia/latao
+2026-10-24,L2410C p02 mesa industrial canela,A,home office apto manha,porcelanato off-white 90 fosco,verde salvia,salvia/off-white/canela/preto
+2026-10-24,L2410C p02 mesa industrial canela,B,canto estudo quarto tarde,tabua larga carvalho natural 25cm,rosa terracota,terracota rosa/carvalho/canela
+2026-10-24,L2410C p02 mesa industrial canela,C,home office anoitecer luminaria,cimento queimado cinza claro,azul marinho,marinho/cinza/canela/ambar
+2026-10-24,L2410C p03 escrivaninha preta,A,canto estudo quarto manha,porcelanato branco quente 90 fosco,azul ceu suave,azul ceu/branco/preto
+2026-10-24,L2410C p03 escrivaninha preta,B,home office apto tarde roupeiro branco,tabua larga carvalho mel 25cm,ocre mostarda,mostarda/mel/preto/branco
+2026-10-24,L2410C p03 escrivaninha preta,C,home office noite sanca LED,cimento queimado grafite,cinza quente claro,cinza/grafite/latao/preto
+2026-10-24,L2410C p07 berco 3em1,A,quarto infantil amplo manha,carpete cinza perola liso,amarelo manteiga,manteiga/cinza perola/branco
+2026-10-24,L2410C p07 berco 3em1,B,quarto infantil tarde,porcelanato cinza frio claro 120 fosco,pessego damasco,pessego/cinza claro/branco
+2026-10-24,L2410C p07 berco 3em1,C,quarto infantil anoitecer luminaria,vinilico freijo tabua 25cm,azul denim suave,denim/freijo/branco/ambar
+2026-10-24,L2410C p08 cozinha infantil,A,brinquedoteca manha,porcelanato branco gelo 90 fosco,verde agua claro,verde agua/branco/rosa
+2026-10-24,L2410C p08 cozinha infantil,B,canto de brincar sala tarde,carpete cinza claro liso,azul marinho,marinho/cinza claro/rosa/branco
+2026-10-24,L2410C p08 cozinha infantil,C,quarto infantil anoitecer luminaria,vinilico nogueira media tabua 25cm,grafite claro,grafite/nogueira/rosa/latao
+2026-10-24,L2410B-p01,A,oficina garagem moderna manha bancada carvalho,porcelanato cinza claro 120,azul cobalto fosco liso,cobalto/carvalho/amarelo
+2026-10-24,L2410B-p01,B,reforma apartamento tarde placa porcelanato em cavaletes,cimento queimado cinza claro,drywall branco liso,branco/cinza claro/amarelo
+2026-10-24,L2410B-p01,C,oficina garagem noite bancada mdf preto luminaria,porcelanato grafite 90,verde oliva lisa com fita LED,verde oliva/preto/amarelo
+2026-10-24,L2410B-p02,A,mirante trilha montanha golden hour,rocha granito cinza escuro lisa,ceu e serra desfocados,grafite/ambar/oliva/creme
+2026-10-24,L2410B-p02,B,hall entrada apto moderno manha,(console quartzo branco fosco),bordo lisa,bordo/branco/areia/preto
+2026-10-24,L2410B-p02,C,garagem moderna parede de equipamento noite LED,(bancada compensado betula),placas concreto cinza claro lisas,cinza concreto/betula/preto/cobre
+2026-10-24,L2410B-p03,A,quarto gamer apto moderno noite,porcelanato cinza medio 120 fosco,preto fosco liso,preto/branco/amarelo ambar/cinza
+2026-10-24,L2410B-p03,B,home office moderno manha,tabua larga carvalho claro 25cm,verde menta claro liso,menta/carvalho/branco
+2026-10-24,L2410B-p03,C,canto estudo apto fim de tarde,porcelanato cinza quente claro 90,pessego claro liso,pessego/branco/cinza quente/ambar
+2026-10-24,L2410B-p04,A,patio transportadora moderna manha ao lado do pneu do caminhao,concreto polido cinza claro placas 1 m,painel metalico cinza claro galpao,cinza claro/branco/vermelho
+2026-10-24,L2410B-p04,B,garagem residencial moderna noite ao lado de picape,porcelanato cimenticio grafite 120x120,verde salvia liso,verde salvia/grafite/vermelho
+2026-10-24,L2410B-p04,C,parada de caminhoes moderna golden hour ao lado de balizador,pavers concreto bege claro 60x60,fachada vidro loja conveniencia,bege/preto/ambar
+2026-10-24,L2410B-p05,A,camping moderno manha ao lado do degrau do motorhome,deck composito cinza claro tabua 20 cm,lateral branca do motorhome,branco/cinza claro/verde pinheiro
+2026-10-24,L2410B-p05,B,terraco casa de campo moderna tarde com banco de carvalho,calcario travertino bege 90x90,reboco terracota liso + porta vidro aco preto,terracota/bege/preto
+2026-10-24,L2410B-p05,C,bau de caminhao aberto por dentro dia,compensado betula claro,parede branca composito,branco/betula/cinza
+2026-10-24,L2410B-p06,A,glamping moderno anoitecer ao lado de cadeira de camping,ardosia carvao placas 60x90,lona bege da barraca,carvao/bege/laranja/ambar
+2026-10-24,L2410B-p06,B,area de servico externa casa moderna noite com vaso terracota,porcelanato azul acinzentado 90x90,branca lisa + porta aluminio preto,azul acinzentado/branco/terracota
+2026-10-24,L2410B-p06,C,varanda coberta chale moderno manha com bau de madeira,cimento queimado verde oliva claro,tabuas largas madeira escura + janela preta,oliva/madeira escura/laranja
+2026-10-24,L2410B-p07,A,cozinha profissional restaurante manha,cimento queimado cinza escuro,porcelanato branco 120x260 liso,branco/inox/grafite
+2026-10-24,L2410B-p07,B,area gourmet coberta tarde,porcelanato cimenticio grafite 90x90,verde oliva lisa,oliva/concreto/madeira clara
+2026-10-24,L2410B-p07,C,cozinha pizzaria padaria noite,epoxi cinza claro acetinado,porcelanato terracota vermelho 60x120,terracota/inox/ambar
+2026-10-24,L2410B-p08,A,cozinha planejada manha,porcelanato cinza claro 120x120,porcelanato branco quente liso + armarios verde salvia,salvia/branco/inox
+2026-10-24,L2410B-p08,B,cozinha integrada noite,porcelanato cimenticio grafite 90x90,microcimento cinza claro + armarios nogueira,grafite/nogueira/inox
+2026-10-24,L2410B-p08,C,cozinha gourmet tarde,porcelanato areia 90x90,verde oliva escuro + armarios freijo,oliva/freijo/inox
+2026-10-24,L2410B-p09,A,academia funcional manha,emborrachado grafite placas 1 m,branco gelo liso,branco/grafite/vermelho
+2026-10-24,L2410B-p09,B,area gourmet coberta tarde,porcelanato cafe 90x90,porcelanato cimenticio cinza quente 120x260,cinza quente/cafe/vermelho
+2026-10-24,L2410B-p09,C,oficina galpao moderno noite,epoxi cinza medio acetinado,paineis azul cobalto lisos,cobalto/preto/cinza
+2026-10-24,L2410B-p10,A,oficina garagem moderna manha bancada concreto polido,concreto polido claro (bancada),azul acinzentado claro liso,azul cinza/concreto/vermelho
+2026-10-24,L2410B-p10,B,garagem casa moderna tarde carro ao fundo bancada nogueira,porcelanato cinza medio 100x100,verde garrafa lisa,verde garrafa/nogueira/vermelho
+2026-10-24,L2410B-p10,C,atelie marcenaria noite bancada compensado betula pendente preto,cimento queimado escuro,branco liso com fita LED quente,branco/grafite/vermelho
+2026-10-24,L2410B-p11,A,oficina profissional manha bancada longa concreto grafite,concreto polido grafite (bancada),branco liso com janela alta,branco/grafite/teal
+2026-10-24,L2410B-p11,B,casa moderna em obra fim de tarde plataforma compensado escada aluminio,porcelanato areia 90x90 novo,drywall branco liso,areia/branco/teal
+2026-10-24,L2410B-p11,C,garagem moderna noite bancada aco preto spots embutidos,epoxi bege areia fosco,cinza claro quente liso,cinza quente/preto/teal
+2026-10-24,L2410B-p13,A,sala apto novo em acabamento manha,porcelanato areia fosco 90x90,branco liso + janela esquadria preta,areia/branco/preto/vermelho
+2026-10-24,L2410B-p13,B,garagem casa moderna em reforma tarde bancada compensado sobre cavaletes,porcelanato carvao 120x120,verde oliva liso,oliva/compensado/carvao/vermelho
+2026-10-24,L2410B-p13,C,varanda gourmet em acabamento anoitecer,porcelanato travertino bege 60x120,cinza chumbo liso,chumbo/bege/ambar/vermelho
+2026-10-24,L2410B-p14,A,oficina ar-condicionado automotivo manha bancada inox,inox escovado (bancada),branco com faixa vermelha,branco/inox/vermelho/azul
+2026-10-24,L2410B-p14,B,canto oficina mecanica moderna tarde,manta de borracha preta lisa (bancada),vermelho tijolo liso,tijolo/preto/prata
+2026-10-24,L2410B-p14,C,auto center premium noite pendente,granito preto polido (bancada),verde musgo escuro com led,musgo/preto/prata/ambar
+2026-10-24,L2410B-p15,A,canto sala apto moderno manha,porcelanato branco gelo 120 fosco,areia quente lisa,areia/branco gelo/cinza claro/prata
+2026-10-24,L2410B-p15,B,varanda fechada vidro apto tarde,deck composto cinza tabua larga,branco liso + vidro caixilho preto,cinza deck/branco/preto/ceu
+2026-10-24,L2410B-p15,C,quarto canto de treino noite luminaria,carpete grafite liso baixo,azul petroleo teal escuro,teal/grafite/latao/branco
