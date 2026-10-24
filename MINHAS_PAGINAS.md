@@ -1,7 +1,7 @@
 # Páginas da dona (Aguiiar Lar)
 
 ## Páginas da fábrica (fixe no celular)
-- Olimpo da Fábrica (o jogo): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd  (fonte paginas/mapa.html; banco: metas, mural, gastos, postagens_resumo)
+- Jogo da fábrica (design do Kevin, versão feminina): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd  (fonte paginas/mapa.html; banco: metas, mural, gastos, postagens_resumo)
 - Tinder Shopee: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni  (banco: candidatos, config/geral lote_min 15)
 - Conferência (triagem): https://claude.ai/artifact/6An95qPxcauMJb3p1umWXk  (banco: conferir)
 - Postagens: https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt  (banco: posts, esgotados)
