@@ -251,3 +251,5 @@ Regra: o Fichador escreve isso na ficha ANTES da 1ª imagem (setor_qualidade/fic
 ## K13.b Ficha com "(não vendido)" e "Layout in photo 01" vaza para o vídeo (Lista 24/10 A, 2026-10-24)
 Erro: itens "2 dining chairs (the side table, vase, cup, books, plant and rug of photo 01 are not sold)" e a parte "Layout in photo 01: ... side table" iam inteiros no prompt do Seedance (o vdescr só filtrava partes com "never/hidden"). Vaso, xícara, livros e tapete surgiram do nada em p03 A e B; cadeira giratória girou em p05 C e p07 C.
 Regra: o prompt de vídeo tira parênteses dos itens, frases "not sold / no table is sold", menções "photo 0X" e as partes que começam com Layout/Orientation/Positions checked/Proportions (lista2410a/gerar.py vdescr). Cadeira/poltrona giratória: frase "seat, backrest and headrest keep facing exactly the same direction in every frame; the chair is locked in place" e câmera quase parada.
+
+15. **Ficha com cada mínimo detalhe** (a dona, 2026-10-24): medidas de cada parte, furos, botões, letras miúdas, cor por parte (hex da foto 01) e o que é propaganda. Ver `agentes/setor_qualidade/fichador.md`.

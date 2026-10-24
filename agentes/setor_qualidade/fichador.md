@@ -37,3 +37,12 @@ O Nano Banana desenha peça pequena 1,7-3x maior que o real quando a câmera est
 
 ## Textura de superfície (Kevin 2026-10-24, escultura de família da loja do amigo)
 Descreva a textura pelo que a foto 01 mostra em tamanho normal, nunca pelo material. Escrever "textura de pedra/arenito" ou "sandy grain" para uma peça lisa e fosca fez o Nano Banana desenhar poros grossos, que pioram no close do vídeo. Peça lisa vai como "smooth satin-matte surface, no pores, no visible grain". Só cite grão, poro ou rugosidade se eles aparecem claramente na foto 01.
+
+## Ficha com cada mínimo detalhe (a dona, 2026-10-24)
+"o fichador descreve cada minimo detalhe do produto, para não ter riscos de vir com tamanhos, ou pequenos detalhes como furos, botoes, letras miudas, etc e todas descrições de texto e pixels".
+- Medidas reais de cada parte (altura total, assento, largura, profundidade, diâmetros), do anúncio e das fotos.
+- Furos, parafusos, botões, reguladores, manoplas, pedais, ponteiras, costuras, emendas, textura e acabamento por material.
+- Posição exata de cada peça (lado, frente/trás, altura).
+- Toda letra NO produto, mesmo miúda, escrita exatamente; separar o que é só propaganda da foto. Letra miúda demais = câmera não chega perto.
+- Cor por parte, com tom aproximado em hex tirado dos pixels da foto 01. Nada inventado.
+- Objeto proibido que vem na foto (garrafa no suporte, taça, etc.) fica fora: descrever o suporte vazio; nunca citar o proibido no prompt de vídeo.
