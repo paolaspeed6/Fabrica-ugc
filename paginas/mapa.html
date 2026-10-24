@@ -1,172 +1,316 @@
-<title>Mapa da Fábrica</title>
+<title>Olimpo da Fábrica</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@500;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
 <style>
-/* Layout: tabuleiro de jogo vertical; uma estrada sinuosa liga as estações, com produtos andando por ela. Visual único (dia claro), por escolha. */
+/* Layout: jogo vertical em mármore; um caminho de ouro liga as estações, cada uma guardada por uma deusa num medalhão de louros.
+   Visual escolhido pela dona: delicado, feminino, Pinterest, luxuoso, mitologia greco-romana. */
 :root{
-  --ceu:#bfe6ff; --grama:#9fd77c; --grama2:#8cca69; --estrada:#f6e3b4; --borda:#5a3d1e;
-  --tinta:#2b2118; --papel:#fffaf0; --auto:#2f9e6b; --voce:#f08a24; --pausa:#8f8a99; --bonus:#d94f8a; --perda:#c8402e;
-  --display:"Lilita One","Arial Rounded MT Bold",system-ui,sans-serif;
-  --body:"Nunito",system-ui,-apple-system,sans-serif;
-  color-scheme:light;
+  --bg:#f4eee7; --papel:#fffdf9; --tinta:#3b2f2a; --muted:#7f7068; --linha:#e7ddd1; --soft:#f6f0e8;
+  --ouro:#a98446; --ouro2:#dcc394; --rosa:#bf7f76; --rosa-bg:#f6e4e0; --salvia:#6f8c6b; --salvia-bg:#e4ece1;
+  --pausa:#9f9893; --pausa-bg:#ece9e6; --lilas:#9a7fae; --lilas-bg:#eee6f3; --perda:#b0523f; --perda-bg:#f6e1db;
+  --sombra:0 1px 2px rgba(59,47,42,.05),0 14px 34px -18px rgba(90,64,40,.35);
+  --veios:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='900'%3E%3Cg fill='none' stroke='%23c9b8a4' stroke-opacity='.28'%3E%3Cpath d='M-20 120 C120 80 180 260 330 210 S520 120 640 260' stroke-width='1.2'/%3E%3Cpath d='M-30 470 C90 420 210 560 300 520 S480 380 640 470' stroke-width='.8'/%3E%3Cpath d='M60 900 C120 760 260 780 330 640 S470 560 520 420' stroke-width='1'/%3E%3Cpath d='M380 -10 C360 120 450 170 430 300' stroke-width='.6'/%3E%3C/g%3E%3C/svg%3E");
+  --display:"Cormorant Garamond","Didot","Bodoni 72",Georgia,serif;
+  --body:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
-body{background:var(--grama);color:var(--tinta);font-family:var(--body);font-size:15px;
-  background-image:radial-gradient(var(--grama2) 2px,transparent 2.5px);background-size:22px 22px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#191614; --papel:#231f1c; --tinta:#f1e8de; --muted:#b4a698; --linha:#3a332d; --soft:#2b2622;
+  --ouro:#d8b97c; --ouro2:#7d6640; --rosa:#e0a69c; --rosa-bg:#3d2724; --salvia:#9fbd98; --salvia-bg:#22301f;
+  --pausa:#9a948e; --pausa-bg:#2e2b28; --lilas:#c3a9d3; --lilas-bg:#30263a; --perda:#e88a74; --perda-bg:#3c211b;
+  --sombra:0 1px 2px rgba(0,0,0,.4),0 16px 36px -18px rgba(0,0,0,.8);
+  --veios:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='900'%3E%3Cg fill='none' stroke='%23d8b97c' stroke-opacity='.10'%3E%3Cpath d='M-20 120 C120 80 180 260 330 210 S520 120 640 260' stroke-width='1.2'/%3E%3Cpath d='M-30 470 C90 420 210 560 300 520 S480 380 640 470' stroke-width='.8'/%3E%3Cpath d='M60 900 C120 760 260 780 330 640 S470 560 520 420' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#191614; --papel:#231f1c; --tinta:#f1e8de; --muted:#b4a698; --linha:#3a332d; --soft:#2b2622;
+  --ouro:#d8b97c; --ouro2:#7d6640; --rosa:#e0a69c; --rosa-bg:#3d2724; --salvia:#9fbd98; --salvia-bg:#22301f;
+  --pausa:#9a948e; --pausa-bg:#2e2b28; --lilas:#c3a9d3; --lilas-bg:#30263a; --perda:#e88a74; --perda-bg:#3c211b;
+  --sombra:0 1px 2px rgba(0,0,0,.4),0 16px 36px -18px rgba(0,0,0,.8);
+  --veios:none; color-scheme:dark}
 *{box-sizing:border-box}
-.wrap{max-width:560px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px 120px}
-h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.3px;margin:0;text-wrap:balance}
+body{background:var(--bg) var(--veios) top center/600px 900px repeat;color:var(--tinta);font:400 15px/1.5 var(--body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:560px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:18px 110px}
+h1,h2,h3{font-family:var(--display);font-weight:600;margin:0;text-wrap:balance}
 
-.hud{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:14px 14px 12px}
-.hud h1{font-size:28px;line-height:1.05;color:var(--borda)}
-.hud p{margin:6px 0 10px;font-size:14px}
+.hud{background:var(--papel);border:1px solid var(--linha);border-radius:22px;box-shadow:var(--sombra);padding:20px 18px 16px;text-align:center;position:relative;overflow:hidden}
+.hud::before{content:"";position:absolute;inset:7px;border:1px solid var(--ouro2);border-radius:16px;pointer-events:none}
+.marca{font:italic 500 1.05rem var(--display);color:var(--ouro);letter-spacing:.04em}
+.hud h1{font-size:2.3rem;line-height:1;margin-top:2px;font-style:italic;font-weight:500}
+.hud p{margin:8px auto 12px;font-size:14px;color:var(--muted);max-width:40ch}
+.grega{display:block;width:100%;height:12px;color:var(--ouro);margin:10px 0 12px}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.stat{background:#fff;border:2px solid var(--borda);border-radius:12px;padding:8px 6px;text-align:center}
-.stat b{display:block;font-family:var(--display);font-size:22px;font-weight:400;font-variant-numeric:tabular-nums;color:var(--borda)}
-.stat span{font-size:11px;font-weight:700;line-height:1.15;display:block}
-.legenda{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
-.pill{font-size:12px;font-weight:800;border-radius:99px;padding:3px 9px;color:#fff;border:2px solid var(--borda)}
-.p-auto{background:var(--auto)}.p-voce{background:var(--voce)}.p-pausa{background:var(--pausa)}.p-bonus{background:var(--bonus)}
-.dica{font-size:12.5px;margin-top:8px;font-weight:700;opacity:.8}
+.stat{background:var(--soft);border-radius:14px;padding:9px 6px}
+.stat b{display:block;font:600 1.6rem/1.05 var(--display);color:var(--ouro);font-variant-numeric:lining-nums tabular-nums}
+.stat span{font-size:11px;font-weight:500;line-height:1.2;display:block;color:var(--muted)}
+.legenda{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:12px}
+.pill{font-size:11.5px;font-weight:600;border-radius:99px;padding:3px 10px;letter-spacing:.02em}
+.p-auto{background:var(--salvia-bg);color:var(--salvia)}.p-voce{background:var(--rosa-bg);color:var(--rosa)}
+.p-pausa{background:var(--pausa-bg);color:var(--pausa)}.p-bonus{background:var(--lilas-bg);color:var(--lilas)}
+.dica{font-size:12.5px;margin-top:10px;color:var(--muted)}
 
-.secao{margin:22px 4px 8px;color:#fff;font-size:22px;text-shadow:0 2px 0 var(--borda),0 -1px 0 var(--borda),1px 0 0 var(--borda),-1px 0 0 var(--borda)}
+.secao{margin:26px 4px 10px;font-size:1.55rem;font-style:italic;font-weight:500;display:flex;align-items:center;gap:10px}
+.secao::before,.secao::after{content:"";height:1px;background:linear-gradient(90deg,transparent,var(--ouro2));flex:1}
+.secao::after{background:linear-gradient(90deg,var(--ouro2),transparent)}
 
 .mapa{position:relative;margin-top:6px}
 .mapa svg.estrada{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
-.est{position:absolute;width:44%;display:flex;flex-direction:column;align-items:center;gap:4px;background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inherit;-webkit-tap-highlight-color:transparent}
-.est:focus-visible .casa{outline:4px solid #fff;outline-offset:3px}
-.casa{position:relative;width:88px;height:88px;border-radius:24px;border:3px solid var(--borda);box-shadow:0 5px 0 var(--borda);display:grid;place-items:center;transition:transform .15s}
-.est:active .casa{transform:translateY(3px);box-shadow:0 2px 0 var(--borda)}
-.num{position:absolute;top:-10px;left:-10px;width:28px;height:28px;border-radius:50%;background:var(--papel);border:3px solid var(--borda);font-family:var(--display);font-size:15px;display:grid;place-items:center}
-.tag{position:absolute;bottom:-9px;right:-12px;font-size:10px;font-weight:800;border-radius:99px;padding:2px 7px;color:#fff;border:2px solid var(--borda);white-space:nowrap}
-.nome{background:var(--papel);border:2px solid var(--borda);border-radius:10px;padding:3px 8px;font-weight:800;font-size:13px;text-align:center;line-height:1.15;max-width:100%}
-.nome small{display:block;font-weight:700;font-size:11px;opacity:.75}
+.est{position:absolute;width:44%;display:flex;flex-direction:column;align-items:center;gap:6px;background:none;border:0;padding:0;cursor:pointer;font:inherit;color:inherit;-webkit-tap-highlight-color:transparent}
+.est:focus-visible .casa{outline:2px solid var(--ouro);outline-offset:4px}
+.casa{position:relative;width:92px;height:92px;border-radius:50%;background:var(--papel);box-shadow:var(--sombra);display:grid;place-items:center;transition:transform .2s cubic-bezier(.23,1,.32,1)}
+.casa svg{color:var(--ouro)}
+.est:active .casa{transform:scale(.95)}
+.num{position:absolute;top:-4px;left:-4px;width:26px;height:26px;border-radius:50%;background:var(--papel);border:1px solid var(--ouro2);font:600 14px var(--display);display:grid;place-items:center;color:var(--ouro)}
+.tag{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:600;border-radius:99px;padding:2px 8px;white-space:nowrap}
+.nome{background:var(--papel);border:1px solid var(--linha);border-radius:12px;padding:4px 10px;font:600 1.02rem/1.1 var(--display);text-align:center;max-width:100%;margin-top:4px}
+.nome small{display:block;font:500 10.5px var(--body);color:var(--muted);letter-spacing:.04em;margin-top:1px}
 
 .mundos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.mundo{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:12px;text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;flex-direction:column;gap:6px;min-width:0}
-.mundo h3{font-size:17px;line-height:1.1}
-.mundo p{margin:0;font-size:12.5px;line-height:1.3}
-.mundo .tag{position:static;align-self:flex-start}
-.mundo.trancado{background:#e9e4dc}
+.mundo{background:var(--papel);border:1px solid var(--linha);border-radius:20px;box-shadow:var(--sombra);padding:14px;text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;flex-direction:column;gap:6px;min-width:0}
+.mundo .casa{width:64px;height:64px;box-shadow:none;background:var(--soft)}
+.mundo h3{font-size:1.25rem;line-height:1.05}
+.mundo p{margin:0;font-size:12.5px;line-height:1.35;color:var(--muted)}
+.mundo .tag{position:static;transform:none;align-self:flex-start}
 
-.regras{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:12px 14px}
-.regras ul{margin:6px 0 0;padding-left:18px;display:grid;gap:5px;font-size:13.5px}
+.regras{background:var(--papel);border:1px solid var(--linha);border-radius:20px;box-shadow:var(--sombra);padding:14px 16px}
+.regras ul{margin:4px 0 0;padding-left:18px;display:grid;gap:6px;font-size:14px}
+.regras ul li::marker{color:var(--ouro)}
 
-/* folha de detalhes */
-.veu{position:fixed;inset:0;background:rgba(43,33,24,.45);z-index:20}
-.folha{position:fixed;left:0;right:0;bottom:0;z-index:21;max-height:82%;overflow:auto;background:var(--papel);border-top:3px solid var(--borda);border-radius:22px 22px 0 0;
-  padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px));padding-top:12px;padding-bottom:calc(20px + env(safe-area-inset-bottom,0px));
-  transform:translateY(0);transition:transform .25s ease}
-.folha .alca{width:44px;height:5px;border-radius:9px;background:var(--borda);opacity:.3;margin:0 auto 10px}
-.f-topo{display:flex;gap:12px;align-items:center}
-.f-topo .casa{width:72px;height:72px;flex:none;border-radius:20px}
-.f-topo h2{font-size:24px;line-height:1.05}
-.f-topo .quem{font-size:13px;font-weight:800;opacity:.75}
-.f-corpo{margin-top:12px;display:grid;gap:10px;max-width:60ch}
-.f-corpo p{margin:0;line-height:1.45}
-.linha{display:grid;grid-template-columns:86px 1fr;gap:8px;font-size:14px;align-items:start}
-.linha b{font-size:11px;text-transform:uppercase;letter-spacing:.6px;opacity:.7;padding-top:2px}
+.veu{position:fixed;inset:0;background:rgba(40,30,24,.42);z-index:20}
+.folha{position:fixed;left:0;right:0;bottom:0;z-index:21;max-height:84%;overflow:auto;background:var(--papel);border-radius:26px 26px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,.18);
+  padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));padding-top:12px;padding-bottom:calc(22px + env(safe-area-inset-bottom,0px))}
+.folha .alca{width:44px;height:4px;border-radius:9px;background:var(--ouro2);margin:0 auto 14px}
+.f-topo{display:flex;gap:14px;align-items:center}
+.f-topo .casa{width:76px;height:76px;flex:none}
+.f-topo h2{font-size:1.9rem;line-height:1;font-style:italic;font-weight:500}
+.f-topo .quem{font-size:12px;font-weight:500;color:var(--muted);letter-spacing:.04em}
+.f-corpo{margin-top:14px;display:grid;gap:10px;max-width:60ch}
+.f-corpo p{margin:0;line-height:1.55}
+.mito{font:italic 500 1.05rem/1.4 var(--display);color:var(--ouro)}
+.linha{display:grid;grid-template-columns:70px 1fr;gap:8px;font-size:14px;align-items:start}
+.linha b{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:600;padding-top:3px}
 .botoes{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
-.btn{display:inline-block;background:var(--voce);color:#fff;text-decoration:none;font-weight:800;border:3px solid var(--borda);border-radius:12px;padding:9px 14px;box-shadow:0 3px 0 var(--borda);font-family:var(--body);font-size:14px;cursor:pointer}
-.btn.sec{background:#fff;color:var(--tinta)}
-.rodape{text-align:center;font-size:12px;font-weight:700;color:var(--borda);margin-top:18px;opacity:.85}
-.abas{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:14px}
-.abas button{font-family:var(--display);font-size:16px;min-width:0;border:3px solid var(--borda);border-radius:14px;padding:9px 6px;background:#e9f6df;color:var(--borda);box-shadow:0 4px 0 var(--borda);cursor:pointer}
-.abas button[aria-selected="true"]{background:var(--papel)}
-.abas #t-desp[aria-selected="true"]{background:#ffd9d2}
-.abas button:focus-visible{outline:4px solid #fff;outline-offset:2px}
-.placar{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:14px;margin-top:16px}
+.btn{display:inline-block;background:var(--tinta);color:var(--papel);text-decoration:none;font:500 14px var(--body);border:0;border-radius:99px;padding:10px 18px;cursor:pointer;letter-spacing:.02em}
+.btn.sec{background:var(--soft);color:var(--tinta)}
+.btn.off{background:var(--soft);color:var(--muted);pointer-events:none}
+.rodape{text-align:center;font:italic 500 1rem var(--display);color:var(--ouro);margin-top:24px}
+.abas{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:16px;padding:4px;background:var(--papel);border:1px solid var(--linha);border-radius:99px;position:sticky;top:max(8px,env(safe-area-inset-top,0px));z-index:5;box-shadow:var(--sombra)}
+.abas button{font:600 1.02rem var(--display);min-width:0;border:0;border-radius:99px;padding:8px 2px;background:transparent;color:var(--muted);cursor:pointer}
+.abas button[aria-selected="true"]{background:var(--tinta);color:var(--papel)}
+.abas button:focus-visible{outline:2px solid var(--ouro);outline-offset:2px}
+.placar{background:var(--papel);border:1px solid var(--linha);border-radius:20px;box-shadow:var(--sombra);padding:16px;margin-top:16px}
 .placar-topo{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
-.placar-topo h2{font-size:22px;color:var(--borda)}
-.placar-topo span{font-size:12px;font-weight:800;opacity:.7}
-.barra{display:flex;height:18px;border:2px solid var(--borda);border-radius:99px;overflow:hidden;margin:10px 0}
-.b-ok{background:var(--auto)}.b-teste{background:#f2c230}.b-perda{background:var(--perda)}
-.pl-linhas{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.pl-linhas div{background:#fff;border:2px solid var(--borda);border-radius:12px;padding:8px 6px;text-align:center;min-width:0}
-.pl-linhas b{display:block;font-family:var(--display);font-weight:400;font-size:18px;font-variant-numeric:tabular-nums;color:var(--borda)}
-.pl-linhas span{font-size:11px;font-weight:700;line-height:1.2;display:block}
-.pl-linhas .c-teste{background:#fff3c4}.pl-linhas .c-perda{background:#ffd9d2}
-.pl-nota{font-size:12.5px;margin:10px 0 0;line-height:1.4}
+.placar-topo h2{font-size:1.45rem;font-style:italic;font-weight:500}
+.placar-topo span{font-size:11.5px;color:var(--muted)}
+.barra{display:flex;height:10px;border-radius:99px;overflow:hidden;margin:12px 0;background:var(--soft)}
+.pl-linhas{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px}
+.pl-linhas div{background:var(--soft);border-radius:14px;padding:9px 6px;text-align:center;min-width:0}
+.pl-linhas b{display:block;font:600 1.7rem/1 var(--display);color:var(--ouro);font-variant-numeric:lining-nums tabular-nums}
+.pl-linhas span{font-size:11px;color:var(--muted);display:block;margin-top:2px}
+.pl-nota{font-size:12.5px;margin:10px 0 0;line-height:1.45;color:var(--muted)}
 .monstros{display:grid;gap:12px}
-.monstro{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:12px;display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:start}
-.monstro .bicho{width:62px;height:62px;border-radius:16px;border:3px solid var(--borda);background:#ffd9d2;display:grid;place-items:center}
-.monstro h3{font-size:18px;line-height:1.1}
-.monstro .valor{font-weight:800;font-size:13px;color:var(--perda);font-variant-numeric:tabular-nums}
-.monstro p{margin:4px 0 0;font-size:13px;line-height:1.35}
-.monstro .regra{margin-top:6px;background:#e3f5ea;border:2px solid var(--auto);border-radius:10px;padding:6px 8px;font-size:12.5px;font-weight:700;line-height:1.35}
-.testes li span{font-weight:800;font-variant-numeric:tabular-nums}
-.gratis{margin:6px 0 0;padding-left:20px;display:grid;gap:6px;font-size:13.5px;line-height:1.35}
+.monstro{background:var(--papel);border:1px solid var(--linha);border-radius:20px;box-shadow:var(--sombra);padding:14px;display:grid;grid-template-columns:58px 1fr;gap:12px;align-items:start}
+.monstro .bicho{width:58px;height:58px;border-radius:50%;background:var(--perda-bg);display:grid;place-items:center;color:var(--perda)}
+.monstro h3{font-size:1.3rem;line-height:1.05}
+.monstro .valor{font-weight:600;font-size:12.5px;color:var(--perda);font-variant-numeric:tabular-nums}
+.monstro p{margin:4px 0 0;font-size:13px;line-height:1.4}
+.monstro .regra{margin-top:8px;background:var(--salvia-bg);color:var(--tinta);border-radius:12px;padding:7px 10px;font-size:12.5px;line-height:1.4}
+.monstro .regra b{color:var(--salvia);font-weight:600}
+.testes{margin:0;padding-left:18px;display:grid;gap:6px;font-size:13.5px}
+.testes li span{font-weight:600;font-variant-numeric:tabular-nums}
+.gratis{margin:4px 0 0;padding-left:20px;display:grid;gap:7px;font-size:13.5px;line-height:1.4}
+.gratis li::marker{color:var(--ouro);font-family:var(--display);font-weight:600}
 .missoes{display:grid;gap:12px}
-.missao{background:var(--papel);border:3px solid var(--borda);border-radius:18px;box-shadow:0 5px 0 var(--borda);padding:12px;display:grid;grid-template-columns:62px 1fr;gap:10px;align-items:start}
-.missao .casa{width:62px;height:62px;border-radius:16px;box-shadow:0 3px 0 var(--borda)}
-.missao h3{font-size:18px;line-height:1.1}
-.missao .agora{display:inline-block;margin-top:4px;font-size:12px;font-weight:800;background:#fff3c4;border:2px solid var(--borda);border-radius:99px;padding:2px 8px}
-.missao p{margin:5px 0 0;font-size:13px;line-height:1.35}
-.missao .botoes{margin-top:8px}
+.missao{background:var(--papel);border:1px solid var(--linha);border-radius:20px;box-shadow:var(--sombra);padding:14px;display:grid;grid-template-columns:62px 1fr;gap:12px;align-items:start}
+.missao .casa{width:62px;height:62px;box-shadow:none;background:var(--soft)}
+.missao h3{font-size:1.35rem;line-height:1.05}
+.missao .agora{display:inline-block;margin-top:5px;font-size:11.5px;font-weight:500;background:var(--rosa-bg);color:var(--rosa);border-radius:99px;padding:2px 9px}
+.missao p{margin:6px 0 0;font-size:13.5px;line-height:1.45}
+.missao .botoes{margin-top:10px}
 .auto-lista{list-style:none;padding:0!important}
-.auto-lista li{display:grid;grid-template-columns:14px 1fr;gap:8px;align-items:start}
-.ponto{width:12px;height:12px;border-radius:50%;border:2px solid var(--borda);margin-top:3px}
-.ponto.ok{background:var(--auto)}.ponto.pausa{background:var(--pausa)}
-.cmd-dica{margin:0 0 8px;font-size:12.5px;font-weight:700;opacity:.8}
+.auto-lista li{display:grid;grid-template-columns:14px 1fr;gap:10px;align-items:start}
+.ponto{width:10px;height:10px;border-radius:50%;margin-top:6px}
+.ponto.ok{background:var(--salvia)}.ponto.pausa{background:var(--pausa)}
+.auto-lista small{display:block;color:var(--muted);font-size:12.5px}
+.cmd-dica{margin:0 0 10px;font-size:12.5px;color:var(--muted)}
 .cmds{display:grid;gap:8px}
-.cmd{text-align:left;font:inherit;font-weight:700;font-size:14px;background:#fff;border:2px solid var(--borda);border-radius:12px;padding:9px 11px;cursor:pointer;color:var(--tinta);display:flex;justify-content:space-between;gap:10px;align-items:center}
-.cmd small{font-size:11px;font-weight:800;color:var(--auto);white-space:nowrap}
+.cmd{text-align:left;font:500 14px var(--body);background:var(--soft);border:0;border-radius:14px;padding:10px 12px;cursor:pointer;color:var(--tinta);display:flex;justify-content:space-between;gap:10px;align-items:center}
+.cmd small{font-size:11px;font-weight:600;color:var(--ouro);white-space:nowrap}
 .paginas{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.pag{background:var(--papel);border:3px solid var(--borda);border-radius:14px;box-shadow:0 4px 0 var(--borda);padding:10px;text-decoration:none;color:var(--tinta);display:flex;flex-direction:column;gap:2px;min-width:0}
-.pag b{font-family:var(--display);font-weight:400;font-size:16px;color:var(--borda)}
-.pag span{font-size:12px;line-height:1.3}
+.pag{background:var(--papel);border:1px solid var(--linha);border-radius:18px;box-shadow:var(--sombra);padding:12px;text-decoration:none;color:var(--tinta);display:flex;flex-direction:column;gap:2px;min-width:0}
+.pag b{font:600 1.15rem var(--display)}
+.pag span{font-size:12px;line-height:1.3;color:var(--muted)}
 .g-total{display:flex;flex-direction:column;margin-top:8px}
-.g-total b{font-family:var(--display);font-weight:400;font-size:40px;line-height:1;color:var(--borda);font-variant-numeric:tabular-nums}
-.g-total span{font-size:13px;font-weight:700;margin-top:4px}
-.g-leg{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:12px;font-weight:700}
-.g-leg i{display:inline-block;width:10px;height:10px;border-radius:3px;border:1.5px solid var(--borda);margin-right:4px;vertical-align:-1px}
+.g-total b{font:600 2.6rem/1 var(--display);color:var(--ouro);font-variant-numeric:lining-nums tabular-nums}
+.g-total span{font-size:13px;margin-top:4px;color:var(--muted)}
+.g-leg{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted)}
+.g-leg i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:0}
 .g-lista{display:grid;gap:8px}
-.g-item{background:#fff;border:2px solid var(--borda);border-radius:12px;padding:9px 11px;display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:center}
-.g-item .gn{font-weight:800;font-size:14px;min-width:0}
-.g-item .gd{grid-column:1/-1;font-size:12px;line-height:1.35;opacity:.85}
-.g-item .gv{font-family:var(--display);font-size:17px;color:var(--borda);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
-.g-item .gv small{display:block;font-family:var(--body);font-size:11px;font-weight:700;opacity:.7}
-.g-item.falta{background:#fff3c4}
-.g-campo{display:flex;align-items:center;gap:4px;font-weight:800}
-.g-campo input{width:96px;font:inherit;font-size:16px;font-weight:800;border:2px solid var(--borda);border-radius:10px;padding:6px 8px;text-align:right;background:var(--papel);color:var(--tinta)}
-.g-campo input:focus-visible{outline:3px solid var(--voce);outline-offset:1px}
-.g-ok{grid-column:1/-1;font-size:11px;font-weight:800;color:var(--auto);min-height:14px}
-.g-vazio{margin:0;font-size:13px;font-weight:700;opacity:.75}
-.p-dias{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;align-items:end;height:64px;margin-top:10px}
-.p-dias div{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:2px;font-size:10px;font-weight:800}
-.p-dias i{display:block;width:70%;background:var(--voce);border:2px solid var(--borda);border-radius:5px 5px 2px 2px;min-height:3px}
-.p-dias div.hj i{background:var(--auto)}
-@media (prefers-reduced-motion:reduce){.folha,.casa{transition:none}}
+.g-item{background:var(--soft);border-radius:14px;padding:10px 12px;display:grid;grid-template-columns:1fr auto;gap:4px 10px;align-items:center}
+.g-item .gn{font-weight:500;font-size:14px;min-width:0}
+.g-item .gd{grid-column:1/-1;font-size:12px;line-height:1.35;color:var(--muted)}
+.g-item .gv{font:600 1.15rem var(--display);color:var(--ouro);font-variant-numeric:lining-nums tabular-nums;text-align:right;white-space:nowrap}
+.g-item .gv small{display:block;font:500 11px var(--body);color:var(--muted)}
+.g-item.falta{background:var(--rosa-bg)}
+.g-campo{display:flex;align-items:center;gap:4px;font-weight:500}
+.g-campo input{width:100px;font:500 16px var(--body);border:1px solid var(--ouro2);border-radius:12px;padding:6px 9px;text-align:right;background:var(--papel);color:var(--tinta)}
+.g-campo input:focus-visible{outline:2px solid var(--ouro);outline-offset:1px}
+.g-ok{grid-column:1/-1;font-size:11px;font-weight:600;color:var(--salvia);min-height:14px}
+.g-vazio{margin:0;font-size:13px;color:var(--muted)}
+.p-dias{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;align-items:end;height:66px;margin-top:12px}
+.p-dias div{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:2px;font-size:10px;color:var(--muted)}
+.p-dias i{display:block;width:60%;background:var(--ouro2);border-radius:6px 6px 2px 2px;min-height:3px}
+.p-dias div.hj i{background:var(--ouro)}
+/* nível da dona (vem das metas) */
+.nivel{margin-top:14px;background:var(--soft);border-radius:16px;padding:10px 12px;text-align:left;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:center}
+.nivel .coroa{grid-row:span 2;color:var(--ouro)}
+.nivel b{font:600 1.2rem/1 var(--display)}
+.nivel b small{font:500 11px var(--body);color:var(--muted);margin-left:6px}
+.trilho{height:7px;border-radius:99px;background:var(--linha);overflow:hidden}
+.trilho i{display:block;height:100%;background:linear-gradient(90deg,var(--ouro2),var(--ouro));border-radius:99px;transition:width .5s cubic-bezier(.23,1,.32,1)}
+/* metas */
+.metas{display:grid;gap:10px}
+.meta{background:var(--papel);border:1px solid var(--linha);border-radius:18px;box-shadow:var(--sombra);padding:12px 14px;display:grid;grid-template-columns:44px 1fr auto;gap:4px 12px;align-items:center}
+.meta .selo{grid-row:span 3;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--muted)}
+.meta.ganhou .selo{background:var(--ouro);color:var(--papel)}
+.meta h3{font-size:1.15rem;line-height:1.1;min-width:0}
+.meta .qt{font:600 1.05rem var(--display);color:var(--ouro);font-variant-numeric:lining-nums tabular-nums;white-space:nowrap}
+.meta .trilho{grid-column:2/-1}
+.meta p{grid-column:2/-1;margin:0;font-size:12px;color:var(--muted)}
+/* mural */
+.filtros{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 6px;scrollbar-width:none}
+.filtros::-webkit-scrollbar{display:none}
+.filtros button{flex:none;border:1px solid var(--linha);background:var(--papel);color:var(--muted);border-radius:99px;padding:6px 12px;font:500 12.5px var(--body);cursor:pointer}
+.filtros button[aria-pressed="true"]{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+.mural{display:grid;gap:10px;margin-top:8px}
+.dia{font:italic 500 1.15rem var(--display);color:var(--ouro);margin:10px 2px 0}
+.nota-m{background:var(--papel);border:1px solid var(--linha);border-left:3px solid var(--ouro2);border-radius:14px;box-shadow:var(--sombra);padding:10px 12px;display:grid;gap:4px}
+.nota-m.afazer{border-left-color:var(--rosa)}
+.nota-m .top{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.nota-m h3{font:600 1.08rem/1.15 var(--display)}
+.nota-m p{margin:0;font-size:13px;line-height:1.45}
+.nota-m q{font:italic 500 1rem/1.35 var(--display);color:var(--muted)}
+.t-pedido{background:var(--rosa-bg);color:var(--rosa)}.t-prompt{background:var(--lilas-bg);color:var(--lilas)}
+.t-geracao{background:var(--perda-bg);color:var(--perda)}.t-layout{background:var(--salvia-bg);color:var(--salvia)}
+.t-regra{background:var(--soft);color:var(--ouro)}.t-sistema{background:var(--pausa-bg);color:var(--pausa)}
+/* jogos */
+.jogo{background:var(--papel);border:1px solid var(--linha);border-radius:22px;box-shadow:var(--sombra);padding:16px;display:grid;gap:10px}
+.jogo h3{font-size:1.45rem;font-style:italic;font-weight:500}
+.jogo .sub{margin:0;font-size:13px;color:var(--muted)}
+.placa{display:flex;gap:8px;flex-wrap:wrap}
+.placa span{background:var(--soft);border-radius:99px;padding:3px 10px;font-size:12px;font-variant-numeric:tabular-nums}
+.carta{background:var(--soft);border-radius:18px;padding:22px 16px;text-align:center;font:500 1.35rem/1.3 var(--display);min-height:120px;display:grid;place-items:center;transition:background .2s}
+.carta.certo{background:var(--salvia-bg)} .carta.errado{background:var(--perda-bg)}
+.porque{font-size:13px;line-height:1.45;min-height:1.4em;margin:0;text-align:center}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.duas .btn{text-align:center;padding:12px}
+.btn.pode{background:var(--salvia);color:var(--papel)} .btn.nao{background:var(--perda);color:var(--papel)}
+.btn:disabled{opacity:.45}
+.tabuleiro{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.peca{aspect-ratio:1;border:0;border-radius:16px;background:var(--tinta);color:var(--ouro2);cursor:pointer;display:grid;place-items:center;padding:0;transition:transform .25s cubic-bezier(.23,1,.32,1),background .2s}
+.peca .verso{font:italic 600 1.5rem var(--display)}
+.peca.virada,.peca.par{background:var(--soft);color:var(--ouro)}
+.peca.par{box-shadow:inset 0 0 0 2px var(--ouro2)}
+.peca:active{transform:scale(.94)}
+.oraculo{border:0;cursor:pointer;width:150px;height:150px;margin:6px auto;border-radius:50%;background:radial-gradient(circle at 50% 40%,var(--papel),var(--soft));box-shadow:var(--sombra),inset 0 0 0 1px var(--ouro2);color:var(--ouro);display:grid;place-items:center}
+.oraculo.gira svg{animation:gira 1s cubic-bezier(.23,1,.32,1)}
+@keyframes gira{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.profecia{text-align:center;display:grid;gap:4px;min-height:96px}
+.profecia b{font:italic 500 1.45rem/1.25 var(--display)}
+.profecia span{font-size:12.5px;color:var(--muted)}
+.confete{position:fixed;inset:0;pointer-events:none;z-index:30;overflow:hidden}
+.confete i{position:absolute;top:-12px;width:8px;height:14px;border-radius:2px;animation:cai 1.8s ease-in forwards}
+@keyframes cai{to{transform:translateY(105vh) rotate(540deg);opacity:.2}}
+.abas{display:flex;overflow-x:auto;scrollbar-width:none}
+.abas::-webkit-scrollbar{display:none}
+.abas button{flex:1 0 auto;padding:8px 13px}
+@media (prefers-reduced-motion:reduce){.casa,.peca,.carta,.trilho i{transition:none}.oraculo.gira svg{animation:none}.confete{display:none}}
 </style>
 
 <div class="wrap">
   <header class="hud">
-    <h1>Minha Fábrica Shopee</h1>
-    <p>Do produto achado na Shopee até a venda. Toque em qualquer estação para ver quem trabalha nela.</p>
+    <div class="marca">Aguiiar Lar</div>
+    <h1>Olimpo da Fábrica</h1>
+    <svg class="grega" viewBox="0 0 240 12" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><pattern id="meandro" width="16" height="12" patternUnits="userSpaceOnUse"><path d="M0 11 H12 V1 H4 V8 H9 V4" fill="none" stroke="currentColor" stroke-width="1.2"/></pattern></defs><rect width="240" height="12" fill="url(#meandro)"/></svg>
+    <p>Do produto achado na Shopee até a venda. Cada estação tem uma deusa guardiã: toque nela para ver o que ela faz.</p>
     <div class="stats">
-      <div class="stat"><b>50</b><span>vídeos por dia (meta)</span></div>
+      <div class="stat"><b>3</b><span>layouts seus (A, B, C)</span></div>
       <div class="stat"><b>R$&nbsp;3</b><span>teto por produto</span></div>
       <div class="stat"><b>4</b><span>travas de qualidade</span></div>
     </div>
     <div class="legenda">
       <span class="pill p-auto">Claude faz sozinho</span>
       <span class="pill p-voce">Sua vez</span>
-      <span class="pill p-pausa">Pausado</span>
+      <span class="pill p-pausa">Esperando</span>
       <span class="pill p-bonus">Bônus</span>
     </div>
-    <div class="dica">Comece pelas Missões: cada botão abre a página certa. No Mapa, as bolinhas na estrada são produtos andando pela fábrica.</div>
+    <div class="nivel" id="nivel" aria-live="polite">
+      <svg class="coroa" viewBox="0 0 80 80" width="40" height="40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><path d="M18 56l-4-28 14 12 12-20 12 20 14-12-4 28z"/><path d="M18 64h44"/></svg>
+      <b id="nv-nome">Ninfa<small id="nv-pts"></small></b>
+      <div class="trilho"><i id="nv-barra" style="width:0%"></i></div>
+    </div>
+    <div class="dica">Comece pelas Missões: cada botão abre a página certa. No Olimpo, os brilhos dourados são produtos subindo pela fábrica.</div>
   </header>
 
   <nav class="abas" role="tablist">
     <button type="button" role="tab" id="t-missoes" aria-selected="true">Missões</button>
-    <button type="button" role="tab" id="t-mapa" aria-selected="false">Mapa</button>
-    <button type="button" role="tab" id="t-gasto" aria-selected="false">Gasto total</button>
-    <button type="button" role="tab" id="t-desp" aria-selected="false">Desperdício</button>
+    <button type="button" role="tab" id="t-metas" aria-selected="false">Metas</button>
+    <button type="button" role="tab" id="t-mural" aria-selected="false">Mural</button>
+    <button type="button" role="tab" id="t-jogos" aria-selected="false">Jogos</button>
+    <button type="button" role="tab" id="t-mapa" aria-selected="false">Olimpo</button>
+    <button type="button" role="tab" id="t-gasto" aria-selected="false">Tesouro</button>
+    <button type="button" role="tab" id="t-desp" aria-selected="false">Monstros</button>
   </nav>
+
+  <div id="aba-metas" hidden>
+    <div class="placar">
+      <div class="placar-topo"><h2>Coroa de louros</h2><span id="mt-cont"></span></div>
+      <p class="pl-nota">Cada meta cumprida vale uma folha de louro e sobe o seu nível: Ninfa, Musa, Semideusa, Deusa e Deusa do Olimpo. Eu atualizo os números quando a fábrica anda.</p>
+    </div>
+    <h2 class="secao">Metas da fábrica</h2>
+    <div class="metas" id="metas"><p class="g-vazio">As metas aparecem aqui assim que a página carrega.</p></div>
+  </div>
+
+  <div id="aba-mural" hidden>
+    <div class="placar">
+      <div class="placar-topo"><h2>Mural das correções</h2><span id="mu-cont"></span></div>
+      <p class="pl-nota">Tudo o que já foi corrigido e o que ainda vai ser: seus pedidos, prompts, erros de geração, mudanças de layout e regras novas, com a data. Cada correção nova entra aqui.</p>
+    </div>
+    <div class="filtros" id="mu-estado" role="group" aria-label="Situação" style="margin-top:14px"></div>
+    <div class="filtros" id="mu-tipo" role="group" aria-label="Tipo"></div>
+    <div class="mural" id="mural"><p class="g-vazio">O mural aparece aqui assim que a página carrega.</p></div>
+  </div>
+
+  <div id="aba-jogos" hidden>
+    <h2 class="secao">Julgamento de Atena</h2>
+    <div class="jogo">
+      <p class="sub">Atena mostra uma cena. Pode entrar no vídeo da Aguiiar Lar ou não pode? 10 rodadas. Acertou tudo, ganha a coruja de ouro.</p>
+      <div class="placa"><span id="at-rod">Rodada 1 de 10</span><span id="at-pts">0 acertos</span><span id="at-rec">recorde 0</span></div>
+      <div class="carta" id="at-carta">Toque em Começar</div>
+      <p class="porque" id="at-porque"></p>
+      <div class="duas" id="at-bts"><button class="btn pode" type="button" id="at-sim" disabled>Pode</button><button class="btn nao" type="button" id="at-nao" disabled>Não pode</button></div>
+      <button class="btn sec" type="button" id="at-ir">Começar</button>
+    </div>
+
+    <h2 class="secao">Memória do Olimpo</h2>
+    <div class="jogo">
+      <p class="sub">Ache os pares das deusas com o menor número de jogadas.</p>
+      <div class="placa"><span id="me-jog">0 jogadas</span><span id="me-par">0 de 8 pares</span><span id="me-rec">recorde -</span></div>
+      <div class="tabuleiro" id="me-tab"></div>
+      <button class="btn sec" type="button" id="me-novo">Embaralhar de novo</button>
+    </div>
+
+    <h2 class="secao">Oráculo de Delfos</h2>
+    <div class="jogo">
+      <p class="sub">Toque no oráculo e receba um gancho para o próximo vídeo e a profecia do dia. Só qualidades reais do anúncio entram no lugar dos colchetes.</p>
+      <button class="oraculo" type="button" id="or-bt" aria-label="Consultar o oráculo"><svg viewBox="0 0 80 80" width="96" height="96" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="40" cy="40" r="30"/><circle cx="40" cy="40" r="22" opacity=".5"/><path d="M40 18v6M40 56v6M18 40h6M56 40h6M25 25l4 4M51 51l4 4M55 25l-4 4M29 51l-4 4"/><path d="M30 40q10-10 20 0q-10 10-20 0z"/><circle cx="40" cy="40" r="3" fill="currentColor"/></svg></button>
+      <div class="profecia" id="or-txt"><b>O oráculo espera a sua pergunta.</b><span>Toque no olho dourado.</span></div>
+      <button class="btn sec" type="button" id="or-copiar" hidden>Copiar o gancho</button>
+    </div>
+  </div>
 
   <div id="aba-gasto" hidden>
     <div class="placar">
-      <div class="placar-topo"><h2>Gasto total da fábrica</h2><span id="g-data">câmbio R$ 5,69</span></div>
+      <div class="placar-topo"><h2>Tesouro de Juno</h2><span id="g-data">câmbio R$ 5,69</span></div>
       <div class="g-total"><b id="g-total">R$ ...</b><span id="g-sub">Carregando os valores salvos...</span></div>
       <div class="barra" id="g-barra" aria-hidden="true"></div>
       <div class="g-leg" id="g-leg"></div>
@@ -184,14 +328,14 @@ h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.3px;margin:0
 
   <div id="aba-missoes">
     <div class="placar">
-      <div class="placar-topo"><h2>Vídeos postados na Shopee</h2><span id="p-atual">carregando...</span></div>
+      <div class="placar-topo"><h2>Vídeos postados na Shopee</h2><span id="p-atual">aguardando o contador</span></div>
       <div class="pl-linhas">
         <div><b id="p-hoje">-</b><span>hoje</span></div>
         <div><b id="p-semana">-</b><span>nesta semana</span></div>
         <div><b id="p-mes">-</b><span>neste mês</span></div>
       </div>
       <div class="p-dias" id="p-dias" aria-hidden="true"></div>
-      <p class="pl-nota">Conta os vídeos Shopee marcados como Postei na página Postagens. Os Reels automáticos ficam de fora. Semana começa na segunda.</p>
+      <p class="pl-nota">Conta os vídeos marcados como Postei na página Postagens. Os Reels automáticos ficam de fora. A semana começa na segunda.</p>
     </div>
     <h2 class="secao">Sua vez de jogar</h2>
     <div class="missoes" id="missoes"></div>
@@ -199,9 +343,9 @@ h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.3px;margin:0
     <h2 class="secao">Rodando sozinho</h2>
     <div class="regras">
       <ul class="auto-lista">
-        <li><span class="ponto ok"></span><span><b>Varredura do Tinder</b> todo dia de manhã, sem limite de produtos esperando.</span></li>
-        <li><span class="ponto ok"></span><span><b>Reels automáticos</b> no Instagram, Facebook e Threads assim que você marca Postei.</span></li>
-        <li><span class="ponto ok"></span><span><b>Contador de postados</b> todo dia às 23:55.</span></li>
+        <li><span class="ponto pausa"></span><span><b>Varredura do Tinder</b> todo dia de manhã.<small>A API da Shopee já responde. Falta renomear a chave SHOPEE_APP_SECRET e criar a tarefa agendada.</small></span></li>
+        <li><span class="ponto pausa"></span><span><b>Reels automáticos</b> no Instagram, Facebook e Threads.<small>Falta o token da Página e um token novo do Threads. Depois, a tarefa agendada.</small></span></li>
+        <li><span class="ponto pausa"></span><span><b>Contador de postados</b> todo dia às 23:55.<small>Falta criar a tarefa agendada.</small></span></li>
       </ul>
     </div>
 
@@ -218,10 +362,15 @@ h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.3px;margin:0
   <div id="aba-desp" hidden>
     <div class="placar">
       <div class="placar-topo"><h2>Placar do desperdício</h2><span>registro em agentes/desperdicios.md</span></div>
-      <p class="pl-nota">Cada imagem ou vídeo pago que precisou ser refeito ou não deu para postar entra aqui como perda. Os monstros abaixo são os erros que já custaram dinheiro na fábrica original; as regras deles já valem na sua.</p>
+      <div class="pl-linhas">
+        <div><b>US$&nbsp;0</b><span>perdido na sua fábrica</span></div>
+        <div><b>7</b><span>monstros vencidos</span></div>
+        <div><b>4</b><span>travas de guarda</span></div>
+      </div>
+      <p class="pl-nota">Cada imagem ou vídeo pago que precisou ser refeito entra aqui como perda. Os monstros abaixo custaram dinheiro na fábrica original do Kevin; as regras que os venceram já valem na sua.</p>
     </div>
 
-    <h2 class="secao">Monstros já enfrentados</h2>
+    <h2 class="secao">Monstros vencidos</h2>
     <div class="monstros" id="monstros"></div>
 
     <h2 class="secao">Testes que ensinaram</h2>
@@ -233,38 +382,38 @@ h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.3px;margin:0
     <div class="regras">
       <ol class="gratis">
         <li><b>Ficha antes de tudo.</b> Contar os itens da foto 01, ler as medidas e as letras da marca. Grátis.</li>
-        <li><b>Prévia de enquadramento em código.</b> O guia do layout mostra se o produto cabe entre o texto e a chamada antes de gerar. Grátis.</li>
+        <li><b>Prévia de enquadramento em código.</b> Mostra se o produto cabe entre o texto e a chamada antes de gerar. Grátis.</li>
         <li><b>Ler as regras de erros</b> antes de cada roteiro, comando ou geração. Grátis.</li>
-        <li><b>Checar textos</b> com o checar_textos: só fatos do anúncio, nada de %, prazo ou nota. Grátis.</li>
+        <li><b>Checar textos:</b> só fatos do anúncio, nada de %, prazo ou nota. Grátis.</li>
         <li><b>Fiscal de imagem antes de animar.</b> Uma imagem errada custa US$ 0,04; o vídeo dela custaria US$ 0,10 a 0,20.</li>
         <li><b>Teste de 1 cena</b> antes de um modelo novo ou de um lote com regra nova.</li>
         <li><b>Teto no script.</b> Todo gasto roda com limite em dólar e para sozinho.</li>
-        <li><b>Comparar com os vídeos de referência</b> (o padrão de qualidade) antes de entregar. Grátis.</li>
-        <li><b>Sua marcação "corrigir"</b> vira regra nova pelo Melhorador, para o erro não voltar.</li>
+        <li><b>Comparar com os vídeos de referência</b> antes de entregar. Grátis.</li>
+        <li><b>Sua marcação "Editar"</b> vira regra nova pelo Melhorador, para o erro não voltar.</li>
       </ol>
     </div>
   </div>
 
   <div id="aba-mapa" hidden>
-  <h2 class="secao">A estrada principal</h2>
+  <h2 class="secao">O caminho de ouro</h2>
   <div class="mapa" id="mapa"></div>
 
-  <h2 class="secao">Outros mundos</h2>
+  <h2 class="secao">Templos à parte</h2>
   <div class="mundos" id="mundos"></div>
 
-  <h2 class="secao">Leis do jogo</h2>
+  <h2 class="secao">Leis do Olimpo</h2>
   <div class="regras">
     <ul>
       <li>Nada pago sem o seu OK, sempre com teto de gasto antes.</li>
       <li>Produto igual à foto 01 do anúncio: cor, peças, letras e todos os itens.</li>
-      <li>Só fatos do anúncio. Sem prazo de entrega, sem %, sem nota exata, sem álcool.</li>
-      <li>15 segundos, 3 cenas, câmera sempre se mexendo devagar.</li>
-      <li>Vídeo que não dá pra postar vira perda no registro de desperdícios e volta para a Fila.</li>
-      <li>Na revisão, só se corrige o que você marcar com "corrigir".</li>
+      <li>Só qualidades reais do anúncio. Sem prazo de entrega, sem %, sem nota exata, sem bebida.</li>
+      <li>Produto inteiro na capa, sem mão. Cada vídeo começa com um take diferente.</li>
+      <li>15 segundos, estilo natural sem filtro, sem voz e com música calma. "Aguiiar Lar" fixo no topo.</li>
+      <li>Vídeo que não dá pra postar vira perda no registro e volta para a Fila.</li>
     </ul>
   </div>
   </div>
-  <div class="rodape">Mapa da fábrica</div>
+  <div class="rodape">Aguiiar Lar · Olimpo da Fábrica</div>
 </div>
 
 <div class="veu" id="veu" hidden></div>
@@ -272,98 +421,113 @@ h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.3px;margin:0
 
 <script>
 const L={
-  tinder:"COLE_URL_TINDER",
-  post:"COLE_URL_POSTAGENS",
-  conf:"COLE_URL_CONFERENCIA"
-};  // o Claude troca pelas URLs das suas páginas ao publicar
-const COR={auto:"var(--auto)",voce:"var(--voce)",pausa:"var(--pausa)",bonus:"var(--bonus)"};
-const TXT={auto:"Automático",voce:"Sua vez",pausa:"Pausado",bonus:"Bônus"};
+  tinder:"https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni",
+  post:"https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt",
+  conf:"https://claude.ai/artifact/6An95qPxcauMJb3p1umWXk"
+};
+const COR={auto:"p-auto",voce:"p-voce",pausa:"p-pausa",bonus:"p-bonus"};
+const TXT={auto:"Automático",voce:"Sua vez",pausa:"Esperando",bonus:"Bônus"};
 
+// cada estação: deusa (d), símbolo (s), frase do mito (m)
 const EST=[
- {n:"Ilha do Tinder",p:"Varredor",tipo:"bonus",bg:"#ffd6e8",bot:["#d94f8a","antena"],
-  faz:"Todo dia de manhã o Varredor procura na Shopee produtos bons com poucos afiliados e coloca os cartões no Tinder. Você arrasta para a direita o que quer em vídeo.",
+ {n:"Tinder",d:"Ártemis",p:"a caçadora",s:"lua",tipo:"bonus",m:"Ártemis caça na floresta da Shopee só as presas raras.",
+  faz:"Todo dia de manhã a varredura procura na Shopee produtos bons com poucos vídeos de criadores e coloca os cartões no Tinder. Você arrasta para a direita o que quer em vídeo.",
   entra:"Busca diária na Shopee",sai:"Produtos aprovados vão para a Fila",custo:"Grátis",acao:[["Abrir Tinder",L.tinder]]},
- {n:"Fila",p:"Porteiro",tipo:"voce",bg:"#ffe4c4",bot:["#f08a24","quadrado"],
-  faz:"Quando a Fila junta o tamanho do lote, o Porteiro te avisa o custo estimado do lote. Só depois do seu OK a máquina liga.",
-  entra:"Produtos aprovados",sai:"Lote liberado (ex.: Lista 23/10)",custo:"Teto por lote, aprovado por você"},
- {n:"Capataz",p:"Orquestrador",tipo:"auto",bg:"#d8f0e4",bot:["#2f9e6b","chapeu"],
-  faz:"Divide o lote em 3 linhas de produção (A, B e C, uns 15 produtos cada) e faz todo mundo trabalhar ao mesmo tempo. Também cria os links de afiliado com Sub ID de cada vídeo.",
-  entra:"Lote liberado",sai:"3 linhas trabalhando juntas",custo:"Grátis"},
- {n:"Fichador",p:"Trava 1",tipo:"auto",bg:"#e3ecff",bot:["#3b6fd8","lupa"],
-  faz:"Baixa e lê TODAS as fotos do anúncio e monta a ficha: cor da foto 01, quantos itens, letras exatas da marca, tamanho real pelas medidas e onde fica cada peça (tampa, painel, botões) olhando todos os ângulos. Ninguém gasta antes da ficha pronta.",
+ {n:"Fila",d:"Jano",p:"o guardião das portas",s:"chave",tipo:"voce",m:"Jano só abre a porta com a sua palavra.",
+  faz:"Quando a Fila junta 15 produtos, eu te digo o custo do lote: quantos produtos, custo por produto e total. Só depois do seu OK a máquina liga.",
+  entra:"Produtos aprovados",sai:"Lote liberado",custo:"Teto por lote, aprovado por você"},
+ {n:"Orquestradora",d:"Hera",p:"a rainha",s:"coroa",tipo:"auto",m:"Hera reina sobre todas e faz cada uma cumprir o seu papel.",
+  faz:"Divide o lote em grupos de 3 a 5 produtos e põe as deusas para trabalhar ao mesmo tempo, cada uma num agente separado. Também cria os links de afiliado com Sub ID de cada vídeo.",
+  entra:"Lote liberado",sai:"Grupos trabalhando juntos",custo:"Grátis"},
+ {n:"Fichadora",d:"Mnemósine",p:"a memória · trava 1",s:"pergaminho",tipo:"auto",m:"Mnemósine não esquece nenhum detalhe.",
+  faz:"Lê TODAS as fotos do anúncio e monta a ficha: cor da foto 01, quantos itens, letras exatas da marca, tamanho real pelas medidas e onde fica cada peça. Ninguém gasta antes da ficha pronta.",
   entra:"Link do produto",sai:"Ficha do produto",custo:"Grátis"},
- {n:"Sala de roteiro",p:"Pesquisador, Roteirista, Produtor",tipo:"auto",bg:"#fff1b8",bot:["#c99a06","oculos"],
-  faz:"O Pesquisador acha o ângulo que vende (oceano azul), o Roteirista escreve gancho e chamada de cada versão, o Produtor escreve os comandos de cena. O QC de roteiro só libera nota 8 ou mais.",
-  entra:"Ficha + livros da fábrica",sai:"Roteiro aprovado e comandos de cena",custo:"Grátis"},
- {n:"Estúdio de foto",p:"Nano Banana",tipo:"auto",bg:"#ffe0d6",bot:["#e0603a","flash"],
-  faz:"Cria as cenas novas usando as fotos reais do anúncio como base, nunca inventando o produto do zero.",
-  entra:"Fotos do anúncio + comando",sai:"Imagens das 3 cenas",custo:"Cerca de US$ 0,04 por imagem"},
- {n:"Fiscal de imagem",p:"Trava 2",tipo:"auto",bg:"#e3ecff",bot:["#3b6fd8","apito"],
-  faz:"Compara cada imagem com a ficha e as fotos do anúncio. Reprova cor, letra, tamanho errado ou peça fora do lugar antes de gastar com vídeo. Só barra o que você veria no iPhone.",
-  entra:"Imagens",sai:"APROVADO ou REPROVADO",custo:"Grátis"},
- {n:"Câmera",p:"Animador",tipo:"auto",bg:"#e6dcff",bot:["#7a55d6","camera"],
-  faz:"Método novo desde a Lista 23/10: câmera andando de verdade, avanço curto de 15 a 20 cm, produto parado em tamanho real. O comando leva só nome, itens, peças e escala, nunca a lista do que não pode aparecer.",
-  entra:"Imagens aprovadas",sai:"Cenas em vídeo",custo:"Seedance: US$ 0,10 por 5 s. Veo 3.1 Lite só se o Seedance não der: US$ 0,20 por 4 s"},
- {n:"Fiscal de vídeo",p:"Trava 3",tipo:"auto",bg:"#e3ecff",bot:["#3b6fd8","apito"],
-  faz:"Assiste cada cena e corta trechos onde o produto escorrega, gira, derrete, muda de peça ou ganha objeto novo. Também reprova peça na posição errada. Se não salvar, pede para refazer.",
+ {n:"Sala das musas",d:"Calíope",p:"a musa das palavras",s:"lira",tipo:"auto",m:"Calíope escreve o gancho que faz parar o dedo.",
+  faz:"Acha o ângulo que vende, escreve o gancho (pergunta ou problema, nunca o de horas quando não combina) e a chamada de cada versão, e os comandos de cena. Só qualidades reais.",
+  entra:"Ficha + regras da fábrica",sai:"Roteiro e comandos de cena",custo:"Grátis"},
+ {n:"Estúdio de foto",d:"Afrodite",p:"a beleza · Nano Banana",s:"espelho",tipo:"auto",m:"Afrodite deixa a casa linda sem mudar o produto.",
+  faz:"Cria as cenas novas usando as fotos reais do anúncio como base, nunca inventando o produto do zero. Luz de janela, casa elegante, nada de cara de catálogo.",
+  entra:"Fotos do anúncio + comando",sai:"Imagens das 3 cenas",custo:"US$ 0,04 por imagem"},
+ {n:"Fiscal de imagem",d:"Têmis",p:"a justiça · trava 2",s:"balanca",tipo:"auto",m:"Têmis pesa cada imagem contra a ficha.",
+  faz:"Compara cada imagem com a ficha e as fotos do anúncio. Reprova cor, letra, tamanho errado ou peça fora do lugar antes de gastar com vídeo.",
+  entra:"Imagens",sai:"Aprovada ou reprovada",custo:"Grátis"},
+ {n:"Câmera",d:"Íris",p:"a mensageira do arco-íris",s:"arco",tipo:"auto",m:"Íris dá movimento suave a cada cena.",
+  faz:"Câmera andando devagar, avanço curto, produto parado em tamanho real. O comando leva só nome, itens, peças e escala.",
+  entra:"Imagens aprovadas",sai:"Cenas em vídeo",custo:"Seedance US$ 0,10 por 5 s; Veo 3.1 Lite US$ 0,20 por 4 s só se precisar"},
+ {n:"Fiscal de vídeo",d:"Nêmesis",p:"a que corrige · trava 3",s:"roda",tipo:"auto",m:"Nêmesis não deixa defeito passar.",
+  faz:"Assiste cada cena e corta trechos onde o produto escorrega, gira, derrete, muda de peça, ganha objeto novo ou aparece mão. Se não salvar, pede para refazer só uma vez.",
   entra:"Cenas em vídeo",sai:"Trechos limpos",custo:"Grátis"},
- {n:"Ilha de edição",p:"Editor",tipo:"auto",bg:"#d6f5f5",bot:["#1f9aa0","fone"],
-  faz:"Monta os vídeos de 15 s: Shopee A, B e C e o Reels, cada um com gancho e chamada próprios, letras fora da área do app e música própria que muda sozinha. Produto complexo (máquina, motor, painel, muitas peças) ganha a foto do anúncio num cartão de vidro desfocado no canto inferior.",
-  entra:"Trechos limpos + roteiro",sai:"4 vídeos prontos por produto",custo:"Grátis"},
- {n:"Conferência",p:"Você confere",tipo:"voce",bg:"#ffe4c4",bot:["#f08a24","lupa"],
-  faz:"Uma página fixa só com o que falta conferir, de todos os lotes. Cada produto mostra o vídeo A. Toque OK, Editar, Descartar ou Esgotado e pronto, já fica salvo. Depois toque Avisar o Claude.",
-  entra:"Vídeos prontos de cada lote",sai:"OK vai para Postagens e Reels. Editar volta corrigido. Descartar volta para a Fila. Esgotado vai para a aba Esgotados",custo:"Grátis",acao:[["Abrir Conferência",L.conf]]},
- {n:"Postagens",p:"Você",tipo:"voce",bg:"#ffe4c4",bot:["#f08a24","estrela"],
-  faz:"Os vídeos aprovados vão para o Drive e para a página Postagens. Lá você salva o vídeo, copiam a legenda, postam na Shopee e tocam em Postei. Produto que esgotou fica separado na aba Esgotados.",
-  entra:"Vídeos prontos",sai:"Vídeos postados na Shopee",custo:"Grátis",acao:[["Abrir Postagens",L.post]]},
- {n:"Postador Meta",p:"Robô das redes",tipo:"auto",bg:"#d8f0e4",bot:["#2f9e6b","antena"],
-  faz:"Pega o Reels de cada produto marcado como Postei e publica no Instagram, no Facebook e no Threads, num ritmo seguro para conta nova. Aviso de spam pausa só aquela rede por 24 h.",
-  entra:"Produtos marcados Postei",sai:"Reels no Instagram e Threads",custo:"Grátis"},
- {n:"Analista",p:"Contador de vendas",tipo:"auto",bg:"#fff1b8",bot:["#c99a06","grafico"],
-  faz:"Lê as vendas e cliques por Sub ID e descobre qual versão e qual gancho vendem mais. Os vencedores vão para o banco de ganchos.",
+ {n:"Ilha de edição",d:"Terpsícore",p:"a musa do ritmo",s:"nota",tipo:"auto",m:"Terpsícore corta no compasso da música.",
+  faz:"Monta os vídeos de 15 s nos seus 3 layouts: A Um dia com ela, B Faixas moderno, C Direto ao ponto. Estilo natural sem filtro, transições whip e zoom, só os melhores momentos, sem voz e com música calma. Aguiiar Lar fixo no topo.",
+  entra:"Trechos limpos + roteiro",sai:"3 vídeos prontos por produto",custo:"Grátis"},
+ {n:"Conferência",d:"Atena",p:"a sabedoria · você",s:"coruja",tipo:"voce",m:"Atena olha com calma e decide.",
+  faz:"Uma página só com o que falta conferir, de todos os lotes. Cada produto mostra o vídeo A. Toque OK, Editar, Descartar ou Esgotado e já fica salvo. Depois toque Avisar o Claude.",
+  entra:"Vídeos prontos",sai:"OK vai para Postagens. Editar volta corrigido. Descartar volta para a Fila",custo:"Grátis",acao:[["Abrir Conferência",L.conf]]},
+ {n:"Postagens",d:"Nike",p:"a vitória · você",s:"asa",tipo:"voce",m:"Nike leva o vídeo até a vitrine.",
+  faz:"Os vídeos aprovados vão para o Drive e para a página Postagens. Lá você salva o vídeo, copia a legenda, posta na Shopee e toca em Postei. Produto que esgotou fica separado.",
+  entra:"Vídeos aprovados",sai:"Vídeos postados na Shopee",custo:"Grátis",acao:[["Abrir Postagens",L.post]]},
+ {n:"Postador Meta",d:"Hermes",p:"o mensageiro",s:"caduceu",tipo:"pausa",m:"Hermes voa com o Reels para as redes.",
+  faz:"Pega o Reels de cada produto e publica no Instagram, no Facebook e no Threads, num ritmo seguro para conta nova: até 2 por dia, 3 horas entre eles. Aviso de spam pausa aquela rede por 24 h.",
+  entra:"Reels prontos",sai:"Reels no Instagram, Facebook e Threads",custo:"Grátis"},
+ {n:"Analista",d:"Tique",p:"a fortuna",s:"estrela",tipo:"pausa",m:"Tique descobre onde mora a sorte.",
+  faz:"Lê as vendas e cliques por Sub ID e descobre qual versão e qual gancho vendem mais. Os vencedores vão para o banco de ganchos. Liga junto com a chave da Shopee.",
   entra:"Vendas por Sub ID",sai:"Ganchos e lições novas",custo:"Grátis"},
- {n:"Melhorador",p:"Trava 4",tipo:"auto",bg:"#e3ecff",bot:["#3b6fd8","chave"],
-  faz:"Uma vez por lote, depois da sua revisão, corrige as regras e os comandos para o erro não se repetir. Aí a estrada volta para o começo, mais esperta.",
-  entra:"Sua revisão + defeitos",sai:"Regras melhores para o próximo lote",custo:"Grátis"}
+ {n:"Melhoradora",d:"Métis",p:"a astúcia · trava 4",s:"chama",tipo:"auto",m:"Métis transforma cada erro em regra.",
+  faz:"Uma vez por lote, depois da sua conferência, corrige as regras e os comandos para o erro não se repetir. Aí o caminho volta para o começo, mais esperto.",
+  entra:"Sua conferência + defeitos",sai:"Regras melhores para o próximo lote",custo:"Grátis"}
 ];
 
 const MUNDOS=[
- {n:"Cofre",p:"Guarda do dinheiro",tipo:"voce",bg:"#fff1b8",bot:["#c99a06","moeda"],
-  faz:"Teto de R$ 3 por produto (meta abaixo de R$ 2). Cada gasto pago tem teto antes e seu OK. Todo vídeo refeito ou perdido entra no registro de desperdícios.",
-  entra:"Seu OK",sai:"Gasto controlado",custo:"WaveSpeed, recarga feita por você"}
+ {n:"Ateliê de Aracne",d:"Aracne",p:"a tecelã · seus takes",s:"tesoura",tipo:"voce",m:"Aracne tece os seus takes num vídeo perfeito.",
+  faz:"Você manda os takes (Veo, Hailuo) e o link do produto aqui no chat. Eu edito nos seus 3 layouts, só com os melhores momentos, e entrego numa página com botão de baixar.",
+  entra:"Seus takes + link",sai:"3 vídeos por produto",custo:"Grátis"},
+ {n:"Tesouro de Juno",d:"Juno Moneta",p:"a guardiã da moeda",s:"moeda",tipo:"voce",m:"Juno guarda cada centavo.",
+  faz:"Teto de R$ 3 por produto. Cada gasto pago tem teto antes e o seu OK. Todo vídeo refeito ou perdido entra no registro de desperdícios.",
+  entra:"Seu OK",sai:"Gasto controlado",custo:"WaveSpeed, recarga feita por você",aba:"gasto"}
 ];
 
-// robozinho desenhado em SVG, um por personagem
-function robo(cor,extra){
-  const x={
-    antena:'<line x1="40" y1="14" x2="40" y2="4" stroke="#5a3d1e" stroke-width="3"/><circle cx="40" cy="4" r="4" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/>',
-    quadrado:'<rect x="33" y="4" width="14" height="10" rx="2" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/>',
-    chapeu:'<path d="M20 18 h40 l-6 -12 h-28z" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2.5"/>',
-    lupa:'<circle cx="64" cy="58" r="8" fill="#fff" stroke="#5a3d1e" stroke-width="3"/><line x1="70" y1="64" x2="76" y2="72" stroke="#5a3d1e" stroke-width="4"/>',
-    oculos:'<rect x="24" y="30" width="13" height="9" rx="3" fill="none" stroke="#5a3d1e" stroke-width="2.5"/><rect x="43" y="30" width="13" height="9" rx="3" fill="none" stroke="#5a3d1e" stroke-width="2.5"/><line x1="37" y1="34" x2="43" y2="34" stroke="#5a3d1e" stroke-width="2"/>',
-    flash:'<path d="M42 2 l-8 12 h6 l-4 10 l10 -14 h-6z" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/>',
-    apito:'<path d="M18 16 q22 -14 44 0" fill="none" stroke="#ffd23f" stroke-width="5"/><path d="M18 16 q22 -14 44 0" fill="none" stroke="#5a3d1e" stroke-width="1.5"/>',
-    camera:'<rect x="56" y="48" width="18" height="13" rx="3" fill="#2b2118"/><circle cx="65" cy="54.5" r="4" fill="#9fd7ff"/>',
-    fone:'<path d="M14 36 q0 -28 26 -28 q26 0 26 28" fill="none" stroke="#5a3d1e" stroke-width="4"/><rect x="9" y="30" width="9" height="14" rx="3" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/><rect x="62" y="30" width="9" height="14" rx="3" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/>',
-    estrela:'<path d="M40 1 l4 8 9 1 -7 6 2 9 -8 -5 -8 5 2 -9 -7 -6 9 -1z" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/>',
-    grafico:'<rect x="58" y="56" width="5" height="12" fill="#2f9e6b"/><rect x="65" y="50" width="5" height="18" fill="#2f9e6b"/><rect x="72" y="44" width="5" height="24" fill="#2f9e6b"/>',
-    chave:'<circle cx="66" cy="52" r="6" fill="none" stroke="#5a3d1e" stroke-width="3"/><line x1="66" y1="58" x2="66" y2="72" stroke="#5a3d1e" stroke-width="3"/>',
-    laco:'<path d="M40 12 l-12 -8 v14z M40 12 l12 -8 v14z" fill="#ff8fc0" stroke="#5a3d1e" stroke-width="2"/>',
-    coracao:'<path d="M40 16 c-10 -8 -16 -2 -10 -10 c3 -3 7 -2 10 2 c3 -4 7 -5 10 -2 c6 8 0 2 -10 10z" fill="#ff6b8a" stroke="#5a3d1e" stroke-width="2"/>',
-    cadeado:'<rect x="56" y="54" width="18" height="15" rx="3" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2"/><path d="M60 54 v-5 a5 5 0 0 1 10 0 v5" fill="none" stroke="#5a3d1e" stroke-width="2.5"/>',
-    moeda:'<circle cx="65" cy="60" r="9" fill="#ffd23f" stroke="#5a3d1e" stroke-width="2.5"/><text x="65" y="64.5" font-size="12" text-anchor="middle" font-family="Arial" font-weight="700" fill="#5a3d1e">$</text>'
-  }[extra]||"";
-  return `<svg viewBox="0 0 80 80" width="64" height="64" aria-hidden="true">
-   <rect x="16" y="16" width="48" height="40" rx="12" fill="${cor}" stroke="#5a3d1e" stroke-width="3"/>
-   <rect x="23" y="26" width="34" height="20" rx="8" fill="#fffaf0" stroke="#5a3d1e" stroke-width="2"/>
-   <circle cx="33" cy="36" r="3.6" fill="#2b2118"/><circle cx="47" cy="36" r="3.6" fill="#2b2118"/>
-   <path d="M35 42 q5 4 10 0" fill="none" stroke="#2b2118" stroke-width="2" stroke-linecap="round"/>
-   <rect x="28" y="56" width="24" height="16" rx="5" fill="${cor}" stroke="#5a3d1e" stroke-width="3"/>
-   ${x}</svg>`;
+// símbolos de cada deusa, traço em ouro (currentColor)
+const SIM={
+ lua:'<path d="M45 26a15 15 0 1 0 0 28a11.5 11.5 0 1 1 0-28z" fill="currentColor" opacity=".9"/>',
+ chave:'<circle cx="33" cy="33" r="7"/><path d="M38 38l15 15m-4-4l4-4m-8 0l4-4"/>',
+ coroa:'<path d="M27 50l-2-18 8 8 7-12 7 12 8-8-2 18z"/><path d="M27 54h26"/>',
+ pergaminho:'<path d="M29 28h20a4 4 0 0 1 0 8H33v16a4 4 0 0 1-8 0V32a4 4 0 0 1 4-4z"/><path d="M36 40h12m-12 5h10"/>',
+ lira:'<path d="M30 27c-4 6-3 16 4 21h12c7-5 8-15 4-21"/><path d="M33 31h14m-10 0v17m6-17v17M34 48v5h12v-5"/>',
+ espelho:'<circle cx="40" cy="34" r="9"/><path d="M40 43v13m-5-5h10"/>',
+ balanca:'<path d="M40 25v29m-8 0h16M27 31h26M27 31l-5 11h10zm26 0l-5 11h10z"/>',
+ arco:'<path d="M24 50a16 16 0 0 1 32 0"/><path d="M29 50a11 11 0 0 1 22 0"/><path d="M34 50a6 6 0 0 1 12 0"/>',
+ roda:'<circle cx="40" cy="40" r="13"/><circle cx="40" cy="40" r="3"/><path d="M40 27v26M27 40h26M31 31l18 18m0-18L31 49"/>',
+ nota:'<path d="M36 50V29l14-4v20"/><ellipse cx="32" cy="50" rx="4.5" ry="3.5"/><ellipse cx="46" cy="45" rx="4.5" ry="3.5"/>',
+ coruja:'<path d="M28 30q12-8 24 0v14q0 11-12 12q-12-1-12-12z"/><circle cx="35" cy="38" r="4"/><circle cx="45" cy="38" r="4"/><path d="M38.5 45l1.5 3 1.5-3"/>',
+ asa:'<path d="M24 50c4-14 14-22 30-24-3 5-6 8-10 9 3 1 6 0 8-1-3 6-8 9-13 9 2 1 5 1 7 0-4 5-12 7-22 7z"/>',
+ caduceu:'<path d="M40 24v32"/><path d="M34 32c0 4 12 4 12 8s-12 4-12 8 12 4 12 8"/><path d="M40 27c-5-3-11-2-14 1 4 0 8 1 14 2m0-3c5-3 11-2 14 1-4 0-8 1-14 2"/>',
+ estrela:'<path d="M40 24l4 11h11l-9 7 3 11-9-6-9 6 3-11-9-7h11z"/>',
+ chama:'<path d="M40 24c8 8 11 14 11 20a11 11 0 0 1-22 0c0-5 3-8 5-10 0 4 2 6 4 6-2-6 0-11 2-16z"/>',
+ moeda:'<circle cx="40" cy="40" r="13"/><circle cx="40" cy="40" r="9.5" opacity=".5"/><path d="M34 46V34l6 7 6-7v12"/>',
+ tesoura:'<circle cx="32" cy="48" r="4.5"/><circle cx="48" cy="48" r="4.5"/><path d="M35 45l14-20M45 45L31 25"/>'
+};
+// medalhão: aro duplo de ouro, coroa de louros e o símbolo no meio
+function louros(){
+  let s="";
+  const folha=(t,lado)=>{const r=31,a=t*Math.PI/180,x=40+r*Math.cos(a),y=40+r*Math.sin(a);
+    const rot=t+90+(lado<0?-28:28);
+    return `<ellipse cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" rx="4.6" ry="1.9" transform="rotate(${rot.toFixed(0)} ${x.toFixed(1)} ${y.toFixed(1)})" fill="currentColor" opacity=".55"/>`;};
+  for(let t=105;t<=225;t+=20)s+=folha(t,-1);
+  for(let t=75;t>=-45;t-=20)s+=folha(t,1);
+  return s;
 }
+const LOUROS=louros();
+function medalha(sim,tam){
+  return `<svg viewBox="0 0 80 80" width="${tam}" height="${tam}" aria-hidden="true">
+   <circle cx="40" cy="40" r="38" fill="none" stroke="currentColor" stroke-width="1.2"/>
+   <circle cx="40" cy="40" r="35" fill="none" stroke="currentColor" stroke-width=".5" opacity=".6"/>
+   ${LOUROS}
+   <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${SIM[sim]||""}</g></svg>`;
+}
+const esc=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
 const mapa=document.getElementById("mapa");
-const PASSO=150;
+const PASSO=160;
 function montarMapa(){
   mapa.innerHTML="";
   const W=mapa.clientWidth||360;
@@ -375,103 +539,108 @@ function montarMapa(){
   const NS="http://www.w3.org/2000/svg";
   const svg=document.createElementNS(NS,"svg");svg.setAttribute("class","estrada");svg.setAttribute("viewBox",`0 0 ${W} ${H}`);
   const mov=!matchMedia("(prefers-reduced-motion: reduce)").matches;
-  let bolas="";
-  if(mov){const cores=["#ff6b8a","#3b6fd8","#ffd23f","#2f9e6b","#7a55d6"];
-    for(let k=0;k<5;k++)bolas+=`<g><rect x="-7" y="-7" width="14" height="14" rx="3" fill="${cores[k]}" stroke="#5a3d1e" stroke-width="2"/><animateMotion dur="26s" begin="${-k*5.2}s" repeatCount="indefinite" path="${d}"/></g>`;}
-  svg.innerHTML=`<path d="${d}" fill="none" stroke="#5a3d1e" stroke-width="34" stroke-linecap="round"/>
-    <path d="${d}" fill="none" stroke="#f6e3b4" stroke-width="27" stroke-linecap="round"/>
-    <path d="${d}" fill="none" stroke="#e2c482" stroke-width="3" stroke-dasharray="10 12" stroke-linecap="round"/>${bolas}`;
+  let brilhos="";
+  if(mov){for(let k=0;k<5;k++)brilhos+=`<g><path d="M0 -7 L2 -2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2 -2z" fill="var(--ouro)"/><animateMotion dur="30s" begin="${-k*6}s" repeatCount="indefinite" path="${d}"/></g>`;}
+  svg.innerHTML=`<path d="${d}" fill="none" stroke="var(--ouro2)" stroke-width="16" stroke-linecap="round" opacity=".35"/>
+    <path d="${d}" fill="none" stroke="var(--ouro)" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="${d}" fill="none" stroke="var(--ouro)" stroke-width="1" stroke-dasharray="2 9" stroke-linecap="round" transform="translate(0 6)" opacity=".7"/>${brilhos}`;
   mapa.appendChild(svg);
   EST.forEach((e,i)=>mapa.appendChild(botao(e,i,pts[i],W)));
 }
 function botao(e,i,pt,W){
   const b=document.createElement("button");b.className="est";b.type="button";
-  b.style.left=(pt.x-W*0.22)+"px";b.style.top=(pt.y-46)+"px";
-  b.innerHTML=`<div class="casa" style="background:${e.bg}">${robo(e.bot[0],e.bot[1])}<span class="num">${i+1}</span><span class="tag" style="background:${COR[e.tipo]}">${TXT[e.tipo]}</span></div><div class="nome">${e.n}<small>${e.p}</small></div>`;
-  b.setAttribute("aria-label",`${i+1}. ${e.n}, ${TXT[e.tipo]}`);
+  b.style.left=(pt.x-W*0.22)+"px";b.style.top=(pt.y-48)+"px";
+  b.innerHTML=`<div class="casa">${medalha(e.s,78)}<span class="num">${i+1}</span><span class="tag pill ${COR[e.tipo]}">${TXT[e.tipo]}</span></div><div class="nome">${e.n}<small>${e.d}, ${e.p}</small></div>`;
+  b.setAttribute("aria-label",`${i+1}. ${e.n}, guardada por ${e.d}, ${TXT[e.tipo]}`);
   b.onclick=()=>abrir(e,i+1);
   return b;
 }
 function montarMundos(){
   const box=document.getElementById("mundos");
   MUNDOS.forEach(m=>{
-    const b=document.createElement("button");b.type="button";b.className="mundo"+(m.trancado?" trancado":"");
-    b.innerHTML=`<div class="casa" style="background:${m.bg};width:64px;height:64px;border-radius:18px;box-shadow:0 3px 0 var(--borda)">${robo(m.bot[0],m.bot[1]).replace('width="64" height="64"','width="50" height="50"')}</div><h3>${m.n}</h3><p>${m.p}</p><span class="tag" style="background:${COR[m.tipo]}">${m.trancado?"Trancado":TXT[m.tipo]}</span>`;
+    const b=document.createElement("button");b.type="button";b.className="mundo";
+    b.innerHTML=`<div class="casa">${medalha(m.s,54)}</div><h3>${m.n}</h3><p>${m.d}, ${m.p}</p><span class="tag pill ${COR[m.tipo]}">${TXT[m.tipo]}</span>`;
     b.onclick=()=>abrir(m,null);box.appendChild(b);
   });
 }
 const veu=document.getElementById("veu"),folha=document.getElementById("folha");
 let ultimo=null;
+function link(t,u){return u&&!u.startsWith("COLE_")?`<a class="btn" href="${u}" target="_blank" rel="noopener">${t}</a>`:`<span class="btn off">${t} (em breve)</span>`;}
 function abrir(e,n){
   ultimo=document.activeElement;
-  const acoes=(e.acao||[]).map(([t,u])=>`<a class="btn" href="${u}" target="_blank" rel="noopener">${t}</a>`).join("");
+  const acoes=(e.acao||[]).map(([t,u])=>link(t,u)).join("")+(e.aba?`<button class="btn" type="button" id="ir-aba">Abrir o Tesouro</button>`:"");
   folha.innerHTML=`<div class="alca"></div>
-   <div class="f-topo"><div class="casa" style="background:${e.bg}">${robo(e.bot[0],e.bot[1]).replace('width="64" height="64"','width="54" height="54"')}</div>
-   <div><div class="quem">${n?"Estação "+n+" · ":""}${e.p}</div><h2 id="f-nome">${e.n}</h2><span class="pill" style="background:${COR[e.tipo]};display:inline-block;margin-top:4px">${e.trancado?"Trancado":TXT[e.tipo]}</span></div></div>
-   <div class="f-corpo"><p>${e.faz}</p>
+   <div class="f-topo"><div class="casa">${medalha(e.s,64)}</div>
+   <div><div class="quem">${n?"Estação "+n+" · ":""}${e.d}, ${e.p}</div><h2 id="f-nome">${e.n}</h2><span class="pill ${COR[e.tipo]}" style="display:inline-block;margin-top:6px">${TXT[e.tipo]}</span></div></div>
+   <div class="f-corpo"><p class="mito">${e.m}</p><p>${e.faz}</p>
    <div class="linha"><b>Entra</b><span>${e.entra}</span></div>
    <div class="linha"><b>Sai</b><span>${e.sai}</span></div>
    <div class="linha"><b>Custo</b><span>${e.custo}</span></div>
    <div class="botoes">${acoes}<button class="btn sec" type="button" id="fechar">Fechar</button></div></div>`;
   veu.hidden=false;folha.hidden=false;
   document.getElementById("fechar").onclick=fechar;
+  const ir=document.getElementById("ir-aba"); if(ir) ir.onclick=()=>{fechar();aba(e.aba);scrollTo(0,0);};
   document.getElementById("fechar").focus();
 }
 function fechar(){veu.hidden=true;folha.hidden=true;if(ultimo)ultimo.focus();}
 veu.onclick=fechar;
 document.addEventListener("keydown",ev=>{if(ev.key==="Escape"&&!folha.hidden)fechar();});
 const MONSTROS=[
- {n:"Encolhedor",usd:"4,48",cor:"#7a55d6",
+ {n:"Encolhedor",usd:"4,48",
   o:"Cadeiras, PC gamer, cozinha, arara, berço e banquetas saíram em miniatura. A faixa fixa do layout encolhia produto grande.",
   r:"Tamanho real sempre: linha de escala em todo comando, kit de N com N unidades inteiras, medidas lidas em todas as fotos."},
- {n:"Fantasma do prompt",usd:"3,64",cor:"#4a4a6a",
-  o:"O comando de vídeo citava a lista do que não pode aparecer, os textos das fotos e outras cores. O Seedance desenhou exatamente isso: taças, vasos, cotas, 3ª cadeira, texto na parede.",
-  r:"Comando de vídeo leva só nome, itens, peças e escala. Nada de proibidos, textos do anúncio, outras cores ou \"foto 0X\". Avanço curto de 15 a 20 cm."},
- {n:"Barrados na porta",usd:"3,57",cor:"#2f9e6b",
-  o:"Imagens e clipes com letra errada, produto encostando na borda, ferramenta a mais na maleta, peça girando. Os fiscais pegaram antes de virar vídeo ruim.",
-  r:"Fiscal de imagem antes de animar e fiscal de vídeo antes de editar, calibrados para o que você veria no iPhone."},
- {n:"Torto do quadro",usd:"2,81",cor:"#3b6fd8",
-  o:"Produto grande ou pequeno demais, fora do espaço entre o texto e a chamada. Na Lista 21/10 B ainda havia prompts antigos com objetos citados.",
-  r:"Prévia de enquadramento em código antes de gerar e comando sem nomear nenhum objeto proibido."},
- {n:"Eco do lote",usd:"0,92",cor:"#8f8a99",
-  o:"Lote 20/10: 4 clipes a mais, 11 imagens refeitas por enquadramento e 2 imagens perdidas por erro de gravação do registro.",
+ {n:"Fantasma do prompt",usd:"3,64",
+  o:"O comando de vídeo citava a lista do que não pode aparecer. O modelo desenhou exatamente isso: taças, vasos, cotas, 3ª cadeira, texto na parede.",
+  r:"Comando de vídeo leva só nome, itens, peças e escala. Nada de proibidos, textos do anúncio ou outras cores."},
+ {n:"Barrados na porta",usd:"3,57",
+  o:"Imagens e clipes com letra errada, produto encostando na borda, peça girando. Os fiscais pegaram antes de virar vídeo ruim.",
+  r:"Fiscal de imagem antes de animar e fiscal de vídeo antes de editar."},
+ {n:"Torto do quadro",usd:"2,81",
+  o:"Produto grande ou pequeno demais, fora do espaço entre o texto e a chamada.",
+  r:"Prévia de enquadramento em código antes de gerar."},
+ {n:"Eco do lote",usd:"0,92",
+  o:"Clipes a mais, imagens refeitas por enquadramento e imagens perdidas por erro de gravação do registro.",
   r:"Um contador de gasto por lote e o registro salvo antes de cada pedido pago."},
- {n:"Sumidor de itens",usd:"0,92",cor:"#e0603a",
-  o:"O relógio Zeblaze tinha 2 modelos na foto 01 e o vídeo mostrou 1. O monitor duplo saiu com 1 tela.",
+ {n:"Sumidor de itens",usd:"0,92",
+  o:"O relógio tinha 2 modelos na foto 01 e o vídeo mostrou 1. O monitor duplo saiu com 1 tela.",
   r:"Se a foto 01 mostra 2 ou mais itens, todo vídeo mostra todos, na mesma quantidade e arrumação."},
- {n:"Fora de lugar",usd:"0,42",cor:"#c99a06",
-  o:"A cadeirinha Maxi-Cosi apareceu no chão da sala, como se fosse cadeira de casa.",
-  r:"Cenário do uso real do produto, casas modernas e cenários variados entre as versões."}
+ {n:"Fora de lugar",usd:"0,42",
+  o:"A cadeirinha de carro apareceu no chão da sala, como se fosse cadeira de casa.",
+  r:"Cenário do uso real do produto e cenários variados entre as versões."}
 ];
 const TESTES=[
  ["Receita nova de qualidade (2 testes, Nano Banana + Veo e Seedance)","0,97","mostrou que com câmera andando de verdade o Seedance deforma o produto e criou os fiscais"],
  ["Primeiro teste","0,12","provou a fábrica de ponta a ponta"]
 ];
+const MEDUSA='<svg viewBox="0 0 60 60" width="40" height="40" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="30" cy="34" r="12"/><path d="M19 28c-6-2-8-8-5-12m10 7c-3-5-1-11 4-13m6 13c2-6 7-8 11-6m-1 9c5-1 9 2 9 6"/><circle cx="25.5" cy="33" r="1.6" fill="currentColor"/><circle cx="34.5" cy="33" r="1.6" fill="currentColor"/><path d="M26 40q4 2.5 8 0"/></svg>';
 function montarDesp(){
   document.getElementById("monstros").innerHTML=MONSTROS.map(m=>`<article class="monstro">
-    <div class="bicho"><svg viewBox="0 0 60 60" width="50" height="50" aria-hidden="true"><path d="M8 52 V26 a22 22 0 0 1 44 0 V52 l-7 -6 -7 6 -8 -6 -8 6 -7 -6z" fill="${m.cor}" stroke="#5a3d1e" stroke-width="3"/><circle cx="22" cy="26" r="6" fill="#fff" stroke="#5a3d1e" stroke-width="2"/><circle cx="38" cy="26" r="6" fill="#fff" stroke="#5a3d1e" stroke-width="2"/><circle cx="23" cy="27" r="2.6" fill="#2b2118"/><circle cx="37" cy="27" r="2.6" fill="#2b2118"/><path d="M22 39 q8 -5 16 0" fill="none" stroke="#2b2118" stroke-width="2.5" stroke-linecap="round"/></svg></div>
-    <div><h3>${m.n}</h3><div class="valor">Custou US$ ${m.usd}</div><p>${m.o}</p><div class="regra">Regra em vigor: ${m.r}</div></div></article>`).join("");
+    <div class="bicho">${MEDUSA}</div>
+    <div><h3>${m.n}</h3><div class="valor">Custou US$ ${m.usd} na fábrica original</div><p>${m.o}</p><div class="regra"><b>Regra em vigor:</b> ${m.r}</div></div></article>`).join("");
   document.getElementById("testes").innerHTML=TESTES.map(t=>`<li>${t[0]}: <span>US$ ${t[1]}</span>. ${t[2].charAt(0).toUpperCase()+t[2].slice(1)}.</li>`).join("");
 }
 const MISSOES=[
- {n:"Escolher produtos",bot:["#d94f8a","antena"],bg:"#ffd6e8",agora:"Todo dia, novos cartões de manhã",
-  t:"Arraste para a direita o que merece vídeo. Com 45 na Fila, eu te mando o custo do lote.",acao:[["Abrir Tinder",L.tinder]]},
- {n:"Conferir vídeos",bot:["#f08a24","lupa"],bg:"#ffe4c4",agora:"Quando o Claude avisar que um lote ficou pronto",
+ {n:"Mandar takes para editar",s:"tesoura",agora:"Quando quiser",
+  t:"Mande os takes e o link do produto aqui no chat. Eu edito nos seus 3 layouts e entrego com botão de baixar."},
+ {n:"Escolher produtos",s:"lua",agora:"Quando a varredura estiver ligada",
+  t:"Arraste para a direita o que merece vídeo. Com 15 na Fila, eu te mando o custo do lote e espero o seu OK.",acao:[["Abrir Tinder",L.tinder]]},
+ {n:"Conferir vídeos",s:"coruja",agora:"Quando eu avisar que um lote ficou pronto",
   t:"Veja o vídeo A de cada produto e toque OK, Editar, Descartar ou Esgotado. No fim, toque Avisar o Claude.",acao:[["Abrir Conferência",L.conf]]},
- {n:"Postar na Shopee",bot:["#f08a24","estrela"],bg:"#ffe4c4",agora:"Depois do seu OK na Conferência",
-  t:"Salve o vídeo, copie a legenda, poste no app e toque Postei. O Reels vai sozinho para Instagram, Facebook e Threads.",acao:[["Abrir Postagens",L.post]]},
- {n:"Olhar o desperdício",bot:["#c8402e","moeda"],bg:"#ffd9d2",agora:"Erros que já custaram dinheiro",
-  t:"Veja os monstros já enfrentados e a regra que impede cada um de voltar.",aba:"desp"}
+ {n:"Postar na Shopee",s:"asa",agora:"Depois do seu OK na Conferência",
+  t:"Salve o vídeo, copie a legenda, poste no app e toque Postei.",acao:[["Abrir Postagens",L.post]]},
+ {n:"Ver os monstros",s:"roda",agora:"Erros que já custaram dinheiro",
+  t:"Veja os monstros já vencidos e a regra que impede cada um de voltar.",aba:"desp"}
 ];
 const CMDS=[
  ["Pode produzir o lote da Fila","libera o próximo lote"],
  ["Terminei a Conferência, processa","OK vai para Postagens"],
  ["Roda a varredura do Tinder agora","cartões novos"],
- ["Quanto gastei até agora?","placar do dinheiro"],
- ["Atualiza o mapa do jogo","novidades aqui"]
+ ["Quanto gastei até agora?","Tesouro de Juno"],
+ ["Atualiza o Olimpo da Fábrica","metas e mural"],
+ ["Anota no mural: ","correção nova com data"]
 ];
 const PAGINAS=[
- ["Tinder Shopee","escolher produtos",L.tinder],
+ ["Tinder","escolher produtos",L.tinder],
  ["Conferência","OK, Editar, Descartar, Esgotado",L.conf],
  ["Postagens","postar e ver esgotados",L.post]
 ];
@@ -479,9 +648,9 @@ function montarMissoes(){
   const box=document.getElementById("missoes");
   MISSOES.forEach(m=>{
     const a=document.createElement("article");a.className="missao";
-    const bts=(m.acao||[]).map(([t,u])=>`<a class="btn" href="${u}" target="_blank" rel="noopener">${t}</a>`).join("")+(m.aba?`<button type="button" class="btn" data-aba="${m.aba}">Abrir Desperdício</button>`:"");
-    a.innerHTML=`<div class="casa" style="background:${m.bg}">${robo(m.bot[0],m.bot[1]).replace('width="64" height="64"','width="48" height="48"')}</div>
-     <div><h3>${m.n}</h3><span class="agora">${m.agora}</span><p>${m.t}</p><div class="botoes">${bts}</div></div>`;
+    const bts=(m.acao||[]).map(([t,u])=>link(t,u)).join("")+(m.aba?`<button type="button" class="btn" data-aba="${m.aba}">Abrir Monstros</button>`:"");
+    a.innerHTML=`<div class="casa">${medalha(m.s,52)}</div>
+     <div><h3>${m.n}</h3><span class="agora">${m.agora}</span><p>${m.t}</p>${bts?`<div class="botoes">${bts}</div>`:""}</div>`;
     box.appendChild(a);
   });
   box.querySelectorAll("[data-aba]").forEach(b=>b.onclick=()=>{aba("desp");scrollTo(0,0);});
@@ -496,7 +665,156 @@ function montarMissoes(){
   document.getElementById("paginas").innerHTML=PAGINAS.map(([n,d,u])=>`<a class="pag" href="${u}" target="_blank" rel="noopener"><b>${n}</b><span>${d}</span></a>`).join("");
 }
 function sel(b){const r=document.createRange();r.selectNodeContents(b.querySelector("span"));const s=getSelection();s.removeAllRanges();s.addRange(r);}
-const TABS={missoes:"t-missoes",mapa:"t-mapa",gasto:"t-gasto",desp:"t-desp"};
+// ===== Metas e nível =====
+const NIVEIS=[["Ninfa",0],["Musa",.2],["Semideusa",.4],["Deusa",.6],["Deusa do Olimpo",.85]];
+const LOURO='<svg viewBox="0 0 80 80" width="26" height="26" aria-hidden="true" fill="currentColor"><path d="M40 66C26 56 20 42 24 22c6 10 12 20 16 44z" opacity=".8"/><path d="M40 66c14-10 20-24 16-44-6 10-12 20-16 44z"/></svg>';
+let METAS=[];
+function confete(){
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+  const c=document.createElement("div");c.className="confete";
+  const cores=["var(--ouro)","var(--ouro2)","var(--rosa)","var(--lilas)","var(--salvia)"];
+  for(let i=0;i<40;i++){const p=document.createElement("i");p.style.left=Math.random()*100+"%";p.style.background=cores[i%5];p.style.animationDelay=(Math.random()*.5)+"s";c.append(p);}
+  document.body.append(c);setTimeout(()=>c.remove(),2600);
+}
+function renderMetas(){
+  const box=document.getElementById("metas");
+  const lista=METAS.slice().sort((a,b)=>(a.ordem||0)-(b.ordem||0));
+  const ganhas=lista.filter(m=>m.alvo&&m.atual>=m.alvo).length;
+  const frac=lista.length?lista.reduce((t,m)=>t+Math.min(1,(m.atual||0)/(m.alvo||1)),0)/lista.length:0;
+  let nv=NIVEIS[0],prox=NIVEIS[1];
+  NIVEIS.forEach((n,i)=>{if(frac>=n[1]){nv=n;prox=NIVEIS[i+1]||null;}});
+  const fim=prox?prox[1]:1, ini=nv[1];
+  document.getElementById("nv-nome").firstChild.textContent=nv[0];
+  document.getElementById("nv-pts").textContent=lista.length?`${ganhas} de ${lista.length} louros${prox?" · próximo: "+prox[0]:""}`:"";
+  document.getElementById("nv-barra").style.width=(prox?Math.min(100,(frac-ini)/(fim-ini)*100):100)+"%";
+  document.getElementById("mt-cont").textContent=lista.length?`${ganhas} de ${lista.length} cumpridas`:"";
+  if(!lista.length){box.innerHTML='<p class="g-vazio">Ainda sem metas salvas.</p>';return;}
+  box.innerHTML=lista.map(m=>{const ok=m.alvo&&m.atual>=m.alvo,pc=Math.min(100,(m.atual||0)/(m.alvo||1)*100);
+    return `<article class="meta${ok?" ganhou":""}"><div class="selo">${LOURO}</div><h3>${esc(m.nome)}</h3><span class="qt">${(m.atual||0).toLocaleString("pt-BR")} / ${(m.alvo||0).toLocaleString("pt-BR")}${m.unidade?" "+esc(m.unidade):""}</span>
+      <div class="trilho"><i style="width:${pc}%"></i></div>${m.detalhe?`<p>${esc(m.detalhe)}</p>`:""}</article>`;}).join("");
+}
+// ===== Mural das correções =====
+const TIPOS={todos:"Todos",pedido:"Pedidos seus",prompt:"Prompts",geracao:"Erros de geração",layout:"Layout e edição",regra:"Regras",sistema:"Sistema"};
+const ESTADOS={tudo:"Tudo",feito:"Feitas",a_fazer:"Vão ser feitas"};
+let MURAL=[],fTipo="todos",fEst="tudo";
+const dataLonga=d=>{try{return new Date(d+"T12:00:00Z").toLocaleDateString("pt-BR",{day:"2-digit",month:"long",year:"numeric",timeZone:"UTC"})}catch(e){return d}};
+function filtros(id,mapa,atual,set){
+  const box=document.getElementById(id);
+  box.innerHTML=Object.entries(mapa).map(([k,t])=>`<button type="button" data-k="${k}" aria-pressed="${k===atual}">${t}</button>`).join("");
+  box.querySelectorAll("button").forEach(b=>b.onclick=()=>{set(b.dataset.k);renderMural();});
+}
+function renderMural(){
+  filtros("mu-estado",ESTADOS,fEst,k=>fEst=k);filtros("mu-tipo",TIPOS,fTipo,k=>fTipo=k);
+  const feitas=MURAL.filter(m=>m.status!=="a_fazer").length;
+  document.getElementById("mu-cont").textContent=MURAL.length?`${feitas} feitas · ${MURAL.length-feitas} por fazer`:"";
+  const box=document.getElementById("mural");
+  const lista=MURAL.filter(m=>(fTipo==="todos"||m.tipo===fTipo)&&(fEst==="tudo"||(fEst==="feito"?m.status!=="a_fazer":m.status==="a_fazer")))
+    .sort((a,b)=>((a.status==="a_fazer")===(b.status==="a_fazer")?0:a.status==="a_fazer"?-1:1)||(b.data||"").localeCompare(a.data||"")||(a.ordem||0)-(b.ordem||0));
+  if(!lista.length){box.innerHTML=`<p class="g-vazio">${MURAL.length?"Nada neste filtro.":"Ainda sem correções salvas."}</p>`;return;}
+  let grupo=null,html="";
+  lista.forEach(m=>{const g=m.status==="a_fazer"?"Vão ser feitas":dataLonga(m.data);
+    if(g!==grupo){grupo=g;html+=`<div class="dia">${esc(g)}</div>`;}
+    html+=`<article class="nota-m${m.status==="a_fazer"?" afazer":""}"><div class="top"><span class="pill t-${esc(m.tipo)}">${esc(TIPOS[m.tipo]||m.tipo)}</span>${m.status==="a_fazer"?`<span class="pill p-voce">pedido em ${esc(dataLonga(m.data))}</span>`:""}</div>
+      <h3>${esc(m.titulo)}</h3>${m.citacao?`<q>${esc(m.citacao)}</q>`:""}${m.texto?`<p>${esc(m.texto)}</p>`:""}</article>`;});
+  box.innerHTML=html;
+}
+// ===== Jogo 1: Julgamento de Atena =====
+const CENAS=[
+ ["Mão segurando o produto na capa do vídeo",0,"Capa sempre com o produto inteiro e sem mão (regra 13)."],
+ ["Taça de vinho na mesa ao lado do produto",0,"Nada de bebida alcoólica, taça ou garrafa em cena."],
+ ["Gancho: \"Cansada de bagunça na lavanderia?\"",1,"Pergunta com problema real: é o estilo de gancho que você pediu."],
+ ["\"Chega amanhã na sua casa\"",0,"Nunca prometer prazo de entrega."],
+ ["\"Nota 4,9 com 3.200 avaliações\"",0,"Nota e avaliações nunca em número exato: mudam com o tempo."],
+ ["\"Linhas retas e formato quadrado\" como qualidade",0,"Característica neutra não é benefício (regra 11)."],
+ ["Filtro de cor quente em todo o vídeo",0,"Estilo natural, sem filtro: o filtro tirava qualidade."],
+ ["Transição whip entre um take e outro",1,"Transições whip e zoom são o padrão do estilo natural."],
+ ["Voz narrando o produto",0,"Agora é sem voz, só música calma."],
+ ["\"Aguiiar Lar\" fixo no topo do vídeo",1,"A assinatura fica fixa e centralizada no topo."],
+ ["Os 3 vídeos começando com o mesmo take",0,"Cada vídeo começa com um take diferente (regra 12)."],
+ ["Logo da marca escrito torto pela IA",0,"Letra inventada ou distorcida reprova o take (regra 14)."],
+ ["O produto girando sozinho na cena",0,"Produto parado; quem se mexe é a câmera."],
+ ["Câmera se aproximando devagar do produto",1,"Movimento suave de câmera deixa o vídeo real."],
+ ["\"100 copos de alumínio\" quando o anúncio diz 100",1,"Número tirado do anúncio pode e deve aparecer grande."],
+ ["\"30% de desconto só hoje\"",0,"Porcentagem de desconto não entra."],
+ ["Produto inteiro no primeiro quadro",1,"É a capa certa."],
+ ["Inversor mostrando 1600 W quando o anúncio diz 1000 W",0,"Só o que o anúncio confirma. Detalhe errado da IA não passa."],
+ ["Música calma de fundo, trocando entre vídeos",1,"A biblioteca de músicas alterna sozinha."],
+ ["Pedaço do drone bugando no ar",0,"Só os momentos que não bugam."],
+ ["Gancho: \"Sua piscina ainda fica verde?\"",1,"Problema real que o produto resolve."],
+ ["Gerar imagem paga sem o seu OK",0,"Nada pago sem o seu OK, com teto em dólar."],
+ ["Cadeira de carro no chão da sala",0,"Cenário do uso real do produto."],
+ ["Kit de 10 cadeiras mostrando as 10 inteiras",1,"Se o anúncio tem 10, o vídeo mostra as 10."]
+];
+const ls={get:k=>{try{return localStorage.getItem(k)}catch(e){return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}}};
+let at={on:false,ronda:[],i:0,pts:0};
+function atRec(){document.getElementById("at-rec").textContent="recorde "+(ls.get("atena-rec")||0);}
+function atMostra(){
+  const [t]=at.ronda[at.i];const c=document.getElementById("at-carta");c.className="carta";c.textContent=t;
+  document.getElementById("at-porque").textContent="";
+  document.getElementById("at-rod").textContent=`Rodada ${at.i+1} de ${at.ronda.length}`;
+  document.getElementById("at-sim").disabled=false;document.getElementById("at-nao").disabled=false;
+}
+function atResp(v){
+  if(!at.on)return;const [,certo,pq]=at.ronda[at.i];const ok=(v===certo);
+  if(ok)at.pts++;
+  document.getElementById("at-carta").className="carta "+(ok?"certo":"errado");
+  document.getElementById("at-porque").textContent=(ok?"Acertou. ":"Errou. ")+pq;
+  document.getElementById("at-pts").textContent=at.pts+(at.pts===1?" acerto":" acertos");
+  document.getElementById("at-sim").disabled=true;document.getElementById("at-nao").disabled=true;
+  const bt=document.getElementById("at-ir");
+  if(at.i<at.ronda.length-1){bt.textContent="Próxima";bt.hidden=false;}
+  else{at.on=false;const rec=Number(ls.get("atena-rec")||0);if(at.pts>rec)ls.set("atena-rec",at.pts);atRec();
+    document.getElementById("at-carta").textContent=at.pts===10?"Coruja de ouro! Atena aprova a sua fábrica.":at.pts>=7?`${at.pts} de 10. Atena está orgulhosa.`:`${at.pts} de 10. Atena sugere mais uma rodada.`;
+    if(at.pts===10)confete();bt.textContent="Jogar de novo";bt.hidden=false;}
+}
+document.getElementById("at-ir").onclick=()=>{
+  if(!at.on){at={on:true,ronda:CENAS.slice().sort(()=>Math.random()-.5).slice(0,10),i:0,pts:0};document.getElementById("at-pts").textContent="0 acertos";}
+  else at.i++;
+  document.getElementById("at-ir").hidden=true;atMostra();
+};
+document.getElementById("at-sim").onclick=()=>atResp(1);document.getElementById("at-nao").onclick=()=>atResp(0);
+atRec();
+// ===== Jogo 2: Memória do Olimpo =====
+const PARES=["lua","coroa","lira","espelho","balanca","coruja","asa","moeda"];
+let me={cartas:[],abertas:[],jog:0,pares:0,trava:false};
+function meNovo(){
+  me={cartas:[...PARES,...PARES].sort(()=>Math.random()-.5).map(s=>({s,ok:false})),abertas:[],jog:0,pares:0,trava:false};
+  const tab=document.getElementById("me-tab");tab.innerHTML="";
+  me.cartas.forEach((c,i)=>{const b=document.createElement("button");b.type="button";b.className="peca";b.setAttribute("aria-label","Carta "+(i+1));
+    b.innerHTML='<span class="verso">Ω</span>';b.onclick=()=>meVira(i,b);c.el=b;tab.append(b);});
+  mePlaca();
+}
+function mePlaca(){document.getElementById("me-jog").textContent=me.jog+(me.jog===1?" jogada":" jogadas");document.getElementById("me-par").textContent=me.pares+" de 8 pares";
+  const r=ls.get("memoria-rec");document.getElementById("me-rec").textContent="recorde "+(r?r+" jogadas":"-");}
+function meVira(i,b){
+  const c=me.cartas[i];if(me.trava||c.ok||me.abertas.includes(i))return;
+  b.classList.add("virada");b.innerHTML=medalha(c.s,"70%");b.setAttribute("aria-label",c.s);me.abertas.push(i);
+  if(me.abertas.length<2)return;
+  me.jog++;const [a,z]=me.abertas.map(k=>me.cartas[k]);
+  if(a.s===z.s){a.ok=z.ok=true;a.el.classList.add("par");z.el.classList.add("par");me.abertas=[];me.pares++;
+    if(me.pares===8){const r=Number(ls.get("memoria-rec")||0);if(!r||me.jog<r)ls.set("memoria-rec",me.jog);confete();}
+  }else{me.trava=true;setTimeout(()=>{[a,z].forEach(c=>{c.el.classList.remove("virada");c.el.innerHTML='<span class="verso">Ω</span>';});me.abertas=[];me.trava=false;},850);}
+  mePlaca();
+}
+document.getElementById("me-novo").onclick=meNovo;meNovo();
+// ===== Jogo 3: Oráculo de Delfos =====
+const GANCHOS=["Ainda sofrendo com [problema]?","Sua [cômodo] estava pedindo isso","Chega de [problema] em casa","Por que ninguém me contou disso antes?",
+ "Quem tem [situação] precisa ver isso","Esse achadinho resolveu [problema]","Olha o que vem na caixa: [itens do anúncio]","Você ainda [hábito chato]?",
+ "O detalhe que muda a sua [cômodo]","Antes de comprar [produto], veja isso","[número do anúncio] num pedido só","A sua casa merece esse upgrade"];
+const PROFECIAS=["Ártemis vê um produto raro no seu caminho.","Tique sorri para quem posta no fim da tarde.","Atena aconselha: confira a capa antes de tudo.",
+ "Hermes diz que hoje as redes estão ouvindo.","Afrodite pede luz de janela e casa arrumada.","Juno guarda os seus centavos: nada pago sem teto.",
+ "Calíope sopra: pergunta curta prende o dedo.","Métis promete: o erro de ontem virou regra.","Nike anuncia uma venda perto de você.",
+ "Mnemósine lembra: só qualidades reais do anúncio.","Terpsícore pede música calma e corte no ritmo.","Hera manda dividir o trabalho e descansar."];
+let ganchoAtual="";
+const hojeIdx=()=>{const d=new Date();return (d.getFullYear()*372+d.getMonth()*31+d.getDate())%PROFECIAS.length;};
+document.getElementById("or-bt").onclick=e=>{
+  const bt=e.currentTarget;bt.classList.remove("gira");void bt.offsetWidth;bt.classList.add("gira");
+  let g;do{g=GANCHOS[Math.floor(Math.random()*GANCHOS.length)]}while(g===ganchoAtual&&GANCHOS.length>1);ganchoAtual=g;
+  setTimeout(()=>{document.getElementById("or-txt").innerHTML=`<b>${esc(g)}</b><span>Profecia do dia: ${esc(PROFECIAS[hojeIdx()])}</span>`;document.getElementById("or-copiar").hidden=false;},450);
+};
+document.getElementById("or-copiar").onclick=e=>{const b=e.currentTarget;try{navigator.clipboard.writeText(ganchoAtual).then(()=>{b.textContent="Copiado";setTimeout(()=>b.textContent="Copiar o gancho",1500)})}catch(x){}};
+
+const TABS={missoes:"t-missoes",metas:"t-metas",mural:"t-mural",jogos:"t-jogos",mapa:"t-mapa",gasto:"t-gasto",desp:"t-desp"};
 function aba(k){
   for(const [n,id] of Object.entries(TABS)){
     document.getElementById(id).setAttribute("aria-selected",String(n===k));
@@ -507,27 +825,27 @@ function aba(k){
 }
 for(const [n,id] of Object.entries(TABS))document.getElementById(id).onclick=()=>aba(n);
 montarMundos();montarDesp();montarMissoes();
-let ini={"#desperdicio":"desp","#mapa":"mapa","#missoes":"missoes","#gasto":"gasto"}[location.hash];
+renderMural();
+let ini={"#desperdicio":"desp","#mapa":"mapa","#missoes":"missoes","#gasto":"gasto","#metas":"metas","#mural":"mural","#jogos":"jogos"}[location.hash];
 if(!ini){try{ini=localStorage.getItem("aba")}catch(e){}}
 aba(TABS[ini]?ini:"missoes");
-// Gasto total: dados no banco da página (coleção gastos)
+// Tesouro: dados no banco da página (coleção gastos)
 const CAMBIO=5.69;
 const brl=v=>"R$ "+v.toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
-const esc=t=>String(t??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 let GASTOS=[],dbRef=null,podeEscrever=false;
 const emBRL=g=>g.valor==null?null:(g.moeda==="USD"?g.valor*CAMBIO:g.valor);
 function renderGasto(){
   const grupos={contado:[],preencher:[],gratis:[]};
   GASTOS.slice().sort((a,b)=>(a.ordem||0)-(b.ordem||0)).forEach(g=>(grupos[g.grupo]||grupos.contado).push(g));
   const somaC=grupos.contado.reduce((t,g)=>t+(emBRL(g)||0),0);
-  const somaP=grupos.preencher.filter(g=>!g.conferencia).reduce((t,g)=>t+(emBRL(g)||0),0);
-  const faltam=grupos.preencher.filter(g=>g.valor==null&&!g.conferencia).length;
+  const somaP=grupos.preencher.reduce((t,g)=>t+(emBRL(g)||0),0);
+  const faltam=grupos.preencher.filter(g=>g.valor==null).length;
   const tot=somaC+somaP;
   document.getElementById("g-total").textContent=brl(tot);
   document.getElementById("g-sub").textContent=GASTOS.length?(faltam?`Faltam ${faltam} valores seus, então o total real é maior.`:"Tudo preenchido."):"Ainda sem valores salvos.";
   const pc=tot?somaC/tot*100:0;
-  document.getElementById("g-barra").innerHTML=tot?`<i style="width:${pc}%;background:var(--auto)"></i><i style="width:${100-pc}%;background:var(--voce)"></i>`:"";
-  document.getElementById("g-leg").innerHTML=`<span><i style="background:var(--auto)"></i>Contado por mim ${brl(somaC)}</span><span><i style="background:var(--voce)"></i>Você preencheu ${brl(somaP)}</span>`;
+  document.getElementById("g-barra").innerHTML=tot?`<i style="width:${pc}%;background:var(--ouro)"></i><i style="width:${100-pc}%;background:var(--rosa)"></i>`:"";
+  document.getElementById("g-leg").innerHTML=`<span><i style="background:var(--ouro)"></i>Contado por mim ${brl(somaC)}</span><span><i style="background:var(--rosa)"></i>Você preencheu ${brl(somaP)}</span>`;
   const linha=g=>{const v=emBRL(g);return `<div class="g-item"><span class="gn">${esc(g.nome)}</span><span class="gv">${v==null?"":brl(v)}${g.moeda==="USD"&&g.valor!=null?`<small>US$ ${g.valor.toFixed(2).replace(".",",")}</small>`:""}</span>${g.detalhe?`<span class="gd">${esc(g.detalhe)}</span>`:""}</div>`};
   if(grupos.contado.length)document.getElementById("g-contado").innerHTML=grupos.contado.map(linha).join("");
   if(grupos.gratis.length)document.getElementById("g-gratis").innerHTML=grupos.gratis.map(g=>`<div class="g-item"><span class="gn">${esc(g.nome)}</span><span class="gv">R$ 0</span>${g.detalhe?`<span class="gd">${esc(g.detalhe)}</span>`:""}</div>`).join("");
@@ -544,24 +862,22 @@ async function salvar(inp){
   const id=inp.dataset.id,ok=document.getElementById("go-"+id);
   const t=inp.value.trim().replace(/\./g,"").replace(",",".");
   const v=t===""?null:Number(t);
-  if(v!==null&&(!isFinite(v)||v<0)){ok.textContent="Digite só o número, por exemplo 550,00";ok.style.color="var(--perda)";return;}
+  if(v!==null&&(!isFinite(v)||v<0)){ok.textContent="Digite só o número, por exemplo 110,00";ok.style.color="var(--perda)";return;}
   ok.style.color="";ok.textContent="Salvando...";
   try{await dbRef.doc("gastos/"+id).update({valor:v,atualizado_em:new Date().toISOString()});ok.textContent="Salvo";}
-  catch(e){ok.style.color="var(--perda)";ok.textContent="Não salvou. Abra a página no app do Claude logado e tente de novo.";}
+  catch(e){ok.style.color="var(--perda)";ok.textContent="Não salvou. Abra a página no app do Claude logada e tente de novo.";}
 }
 (async()=>{
-  const db=window.claude?await window.claude.use("db"):null;
-  if(!db){document.getElementById("g-sub").textContent="Abra logado no app do Claude para ver e salvar os valores.";return;}
+  const db=window.claude?.use?await window.claude.use("db"):null;
+  if(!db){document.getElementById("g-sub").textContent="Abra logada no app do Claude para ver e salvar os valores.";return;}
   dbRef=db;
   podeEscrever=true;
   db.doc("postagens_resumo/atual").onSnapshot(sn=>{
-    const r=sn.data&&sn.data();if(!r)return;
+    const r=sn.exists?sn.data():null;if(!r||!r.dia_ref)return;
     const ref=r.dia_ref,agoraBR=new Date(Date.now()-3*3600e3).toISOString().slice(0,10);
-    const mesmoDia=ref===agoraBR;
-    const segRef=(()=>{const d=new Date(ref+"T12:00:00Z");const w=(d.getUTCDay()+6)%7;d.setUTCDate(d.getUTCDate()-w);return d.toISOString().slice(0,10)})();
-    const segHoje=(()=>{const d=new Date(agoraBR+"T12:00:00Z");const w=(d.getUTCDay()+6)%7;d.setUTCDate(d.getUTCDate()-w);return d.toISOString().slice(0,10)})();
-    document.getElementById("p-hoje").textContent=mesmoDia?r.hoje:0;
-    document.getElementById("p-semana").textContent=segRef===segHoje?r.semana:0;
+    const seg=s=>{const d=new Date(s+"T12:00:00Z");d.setUTCDate(d.getUTCDate()-(d.getUTCDay()+6)%7);return d.toISOString().slice(0,10)};
+    document.getElementById("p-hoje").textContent=ref===agoraBR?r.hoje:0;
+    document.getElementById("p-semana").textContent=seg(ref)===seg(agoraBR)?r.semana:0;
     document.getElementById("p-mes").textContent=ref.slice(0,7)===agoraBR.slice(0,7)?r.mes:0;
     const at=new Date(r.atualizado_em);
     document.getElementById("p-atual").textContent="atualizado "+at.toLocaleString("pt-BR",{timeZone:"America/Sao_Paulo",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"});
@@ -570,10 +886,11 @@ async function salvar(inp){
     const mx=Math.max(1,...lista.map(x=>x[1]));
     document.getElementById("p-dias").innerHTML=lista.map(([id,n])=>`<div class="${id===agoraBR?"hj":""}"><span>${n||""}</span><i style="height:${Math.round(n/mx*40)}px"></i><span>${["dom","seg","ter","qua","qui","sex","sáb"][new Date(id+"T12:00:00Z").getUTCDay()]}</span></div>`).join("");
   },()=>{});
+  db.collection("metas").onSnapshot(snap=>{METAS=snap.docs.map(d=>({id:d.id,...d.data()}));renderMetas();},()=>{});
+  db.collection("mural").onSnapshot(snap=>{MURAL=snap.docs.map(d=>({id:d.id,...d.data()}));renderMural();},()=>{});
   db.collection("gastos").onSnapshot(snap=>{
     GASTOS=snap.docs.map(d=>({id:d.id,...d.data()}));renderGasto();
   },()=>{document.getElementById("g-sub").textContent="Não consegui ler os valores agora.";});
 })();
 let rz;addEventListener("resize",()=>{clearTimeout(rz);rz=setTimeout(()=>{if(!document.getElementById("aba-mapa").hidden)montarMapa()},150);});
 </script>
-

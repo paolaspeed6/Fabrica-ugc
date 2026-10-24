@@ -88,3 +88,8 @@ Voz: Kore (a "primeira de todas", preferida). Grátis = 10 narrações/dia POR m
 - Shopee Open API: pedida. Variáveis salvas no ambiente (aparecem só em sessão nova). Rede liberada (graph.facebook.com e
   graph.threads.net respondem).
 - Próximo: em sessão nova, "confira minhas chaves" (postar.py conferir, teste Shopee, teste Drive), sem gastar.
+
+## 2026-10-24: páginas e jogo no ar
+- Tinder, Conferência, Postagens e o Olimpo da Fábrica (mapa.html no visual que a dona pediu: mármore, ouro, louros, uma deusa por estação) publicados; URLs em MINHAS_PAGINAS.md.
+- Olimpo tem Metas (nível Ninfa → Deusa do Olimpo), Mural das correções com data (coleção mural; toda correção nova entra lá) e Jogos (Julgamento de Atena, Memória do Olimpo, Oráculo de Delfos).
+- Teste das chaves: Drive OK; Shopee responde, mas o segredo está como shopee_APP_SECRET (renomear); META_PAGE_TOKEN é o token pessoal (trocar pelo da Página); THREADS_TOKEN não responde; faltam MARCA_NOME e DRIVE_PASTA.
