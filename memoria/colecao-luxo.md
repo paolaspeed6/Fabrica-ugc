@@ -79,3 +79,12 @@ Voz: Kore (a "primeira de todas", preferida). Grátis = 10 narrações/dia POR m
   do kit entraram ícone ↓ no CTA, `encaixar` (produto alto), opção `sem_horario` no A, B com faixas no topo (`y`), trilha
   alternando a biblioteca `musicas/`, regras K6-K15, blocos novos do produtor e o banco de ganchos.
 - Ela pediu: "leia todos os arquivos que estão pedindo pra ler, é pra você eles".
+
+## 2026-10-24 — chaves e contas configuradas pela dona (nesta sessão)
+- Google Cloud: projeto "fabrica-de-videos-ugc", Drive API ativa, OAuth Externo publicado (Em produção), cliente Web com redirect
+  do OAuth Playground; escopo drive.file. Páginas públicas do app em MINHAS_PAGINAS.md (início, privacidade, termos).
+- Meta: app "Fabrica de Videos UGC" (Desenvolvimento) com Página, Instagram (login do Facebook) e Threads; Instagram ligado à
+  Página; ela é testadora do Threads. pages_manage_engagement ficou de fora (só serve para o 1º comentário com link no Facebook).
+- Shopee Open API: pedida. Variáveis salvas no ambiente (aparecem só em sessão nova). Rede liberada (graph.facebook.com e
+  graph.threads.net respondem).
+- Próximo: em sessão nova, "confira minhas chaves" (postar.py conferir, teste Shopee, teste Drive), sem gastar.
