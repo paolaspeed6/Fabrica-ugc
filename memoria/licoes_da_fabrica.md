@@ -92,3 +92,8 @@ Leia uma vez no começo de cada conversa nova. Quando a dona der uma regra nova,
 - Seedance v1 Pro Fast 720p foi ruim (zoom demais, pessoa fantasma). Kling v3 turbo std custa por segundo (caro).
 - Candidatos a comparar um dia (1 cena cada): Seedance 2.0 Mini Turbo, Kling 2.6 Std, Vidu Q3 Turbo, Wan 2.6 Flash.
 - Teto por produto: R$ 3 (todas as versões). Câmbio usado: R$ 5,69 por US$.
+
+## Limite de uso do Claude (a dona, 2026-10-24)
+Em 24/10 o limite de uso parou a Fiscal de vídeo às ~06:30 UTC (volta 8:20 UTC) e nada retomou sozinho até a dona escrever às 20:18.
+Regra: ao ver "session limit · resets HH:MM", agende na hora um lembrete (send_later) para alguns minutos depois do reset,
+com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a fábrica fica parada até a dona voltar.
