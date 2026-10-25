@@ -1,0 +1,16 @@
+{
+ "_leia": "O que os dados das páginas não mostram. O Claude atualiza a cada passo do lote. lote: null quando nada está em produção; senão {nome, etapa (id de fluxo.js), produtos: [...], erro: null ou texto}. etapas: correção manual de uma casinha {estado, texto}.",
+ "lote": null,
+ "ultimo_lote": "Lista 24/10 A (teste)",
+ "lote_min": 15,
+ "automaticas": {
+  "varredura": {"ligada": false, "texto": "A API da Shopee já responde. Falta renomear a chave SHOPEE_APP_SECRET e criar a tarefa agendada."},
+  "reels": {"ligada": false, "texto": "Falta o token da Página e um token novo do Threads. Depois, a tarefa agendada."},
+  "contador": {"ligada": false, "texto": "Falta criar a tarefa agendada das 23:55."}
+ },
+ "analista": "Liga junto com a leitura de vendas por Sub ID (chave da Shopee).",
+ "etapas": {},
+ "recentes": [
+  {"quando": "2026-10-24", "etapa": "edicao", "texto": "Teste criado do zero: 2 produtos, 6 vídeos, Drive e Conferência."}
+ ]
+}

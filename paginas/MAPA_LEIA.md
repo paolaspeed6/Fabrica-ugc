@@ -1,15 +1,8 @@
-# Mapa da Fábrica (opcional, a dona escolhe o visual)
+# Mapa da Fábrica → agora é o Reino Encantado das Divas
 
-`mapa.html` é o "jogo" da fábrica original: abas Missões (o que é a vez dela + botões para cada página), Mapa (estrada com as
-estações), Gasto total (coleção `gastos`) e Desperdício. Funciona como está, mas o visual é para ela escolher.
+O jogo da fábrica foi redesenhado (25/10/2026) como "Aguiiar Creative: O Reino Encantado das Divas" e está em
+`paginas/reino/` (leia `paginas/reino/LEIA.md`). Mesmo link e mesmo banco (metas, mural, gastos, postagens_resumo) + `reino/estado`.
 
-Antes de publicar, pergunte como ela quer o design. Sugestão do Kevin para ela: mais delicado e feminino, estilo Tumblr/Pinterest,
-luxuoso, fashion, conceitual, com elementos da mitologia greco-romana (colunas, mármore, folhas de louro, ouro suave, deusas como
-estações: Ártemis caçadora no Tinder, Atena na Conferência, Hermes no Postador...), com funcionalidades e estética melhoradas.
-Faça 2-3 prévias em imagem estática feita por código/HTML (grátis), nunca gere imagem paga para isso sem ela pedir.
-
-Ao publicar: capabilities {db: {}, user: {}}; troque COLE_URL_TINDER / COLE_URL_POSTAGENS / COLE_URL_CONFERENCIA pelas URLs dela.
-Banco: `postagens_resumo/atual` (contador, tarefa das 23:55 com mapa/resumo_postados.py) e `gastos/<id>` com
-{nome, grupo: contado|preencher|gratis, moeda: USD|BRL, valor (null = ela preenche), detalhe, ordem}. Semeie: WaveSpeed (contado, USD,
-some os gasto.json dos lotes), plano Claude e outras assinaturas (preencher), Shopee API, Drive, Meta, GitHub (gratis).
-Atualize Missões e o "Rodando sozinho" quando algo mudar.
+`mapa.html` (este diretório) é a versão antiga dos robozinhos, guardada só para voltar se a dona pedir. Não edite.
+Banco que continua igual: `postagens_resumo/atual` (contador das 23:55 com mapa/resumo_postados.py) e `gastos/<id>` com
+{nome, grupo: contado|preencher|gratis, moeda: USD|BRL, valor (null = ela preenche), detalhe, ordem}.

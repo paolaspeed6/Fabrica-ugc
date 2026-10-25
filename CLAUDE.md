@@ -60,7 +60,8 @@ Os agentes do setor de qualidade são subagentes separados (ferramenta Agent), r
 
 ## Páginas do kit (publicar uma vez, quando ela pedir) — capabilities {db: {}, user: {}}
 `paginas/tinder.html` (Tinder Shopee), `paginas/conferencia.html` (+comments), `paginas/postagens.html` (formato em `agentes/postagens_formato.md`),
-opcional `paginas/mapa.html` (ler `paginas/MAPA_LEIA.md` e perguntar o visual). URLs em `MINHAS_PAGINAS.md`. Dados só via ArtifactData.
+e o jogo "Reino Encantado das Divas" em `paginas/reino/` (ler `paginas/reino/LEIA.md`: aparência em tema.js/arte.js, etapas reais em
+fluxo.js; "Atualiza o reino" = sincronizar.py + doc reino/estado). URLs em `MINHAS_PAGINAS.md`. Dados só via ArtifactData.
 Varredura diária: `produto-campeao/afiliados/varrer.py` (precisa da API de afiliados). Tarefas agendadas: `TAREFAS_AGENDADAS.md`.
 Postagem automática: `meta/postar.py` (conferir, plano com `--seco`, fila `meta/rodar_fila.sh` com MAX_DIA=2 INTERVALO_H=3).
 
