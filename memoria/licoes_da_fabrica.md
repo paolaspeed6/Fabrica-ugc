@@ -97,3 +97,7 @@ Leia uma vez no começo de cada conversa nova. Quando a dona der uma regra nova,
 Em 24/10 o limite de uso parou a Fiscal de vídeo às ~06:30 UTC (volta 8:20 UTC) e nada retomou sozinho até a dona escrever às 20:18.
 Regra: ao ver "session limit · resets HH:MM", agende na hora um lembrete (send_later) para alguns minutos depois do reset,
 com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a fábrica fica parada até a dona voltar.
+
+## Conferência e Fila (a dona, 2026-10-25)
+- Produto em produção sai da Fila do Tinder (status produzindo → aba Produção; pronto quando terminar).
+- Na Conferência, ao tocar "Avisar o Claude" os decididos saem de "Para conferir": Editar → "Em edição", OK/Descartar/Esgotado → "Conferidos". "Para conferir" fica só com vídeo novo.

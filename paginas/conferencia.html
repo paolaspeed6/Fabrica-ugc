@@ -93,7 +93,7 @@ button:focus-visible,a:focus-visible,textarea:focus-visible{outline:2px solid va
     <ul>
       <li>Toque na capa para ver o vídeo A no Drive (ele mostra todas as cenas). <b>Abrir anúncio</b> abre o produto na Shopee.</li>
       <li><b>OK</b>: as 4 versões entram na fila de Postagens. <b>Editar</b>: o vídeo é reaproveitado; escreva a mudança. <b>Descartar</b>: o produto volta para a fila do Tinder. <b>Esgotado</b>: vai para a aba Esgotados da Postagens, para a conferência mensal.</li>
-      <li>Cada toque já fica salvo. Depois toque em <b>Avisar o Claude</b> para ele processar na hora; sem o aviso, ele confere as decisões a cada 30 minutos.</li>
+      <li>Cada toque já fica salvo e dá para trocar enquanto o produto está aqui. Ao tocar em <b>Avisar o Claude</b>, os decididos saem desta aba: <b>Editar</b> vai para "Em edição" e o resto para "Conferidos". Assim "Para conferir" fica só com vídeo novo.</li>
       <li>Os próximos lotes entram nesta mesma página.</li>
     </ul>
   </section>
@@ -103,7 +103,7 @@ button:focus-visible,a:focus-visible,textarea:focus-visible{outline:2px solid va
 let db=null, com=null, itens=[], aba="fazer";
 const $=s=>document.querySelector(s);
 const el=(t,c,x)=>{const e=document.createElement(t); if(c) e.className=c; if(x!=null) e.textContent=x; return e;};
-const NOMES={ok:"OK",editar:"Editar",descartar:"Descartar",esgotado:"Esgotado"};
+const NOMES={ok:"OK",editar:"Editar",descartar:"Descartar",esgotado:"Esgotado",editando:"Em edição"};
 const DEC=["ok","editar","descartar","esgotado"];
 const PH={editar:"Edição sugerida ou mudanças",descartar:"Motivo do descarte (opcional)",esgotado:"Observação (opcional)",ok:"Observação (opcional)"};
 async function salvar(it,campos,msg){
@@ -149,10 +149,12 @@ function cardFeito(it){
 }
 function render(){
   const ord=(a,b)=>(a.dia||"").localeCompare(b.dia||"")||(a.ordem||0)-(b.ordem||0);
-  // um produto decidido continua em "Para conferir" até o Claude processar, para dar para trocar a decisão
-  const fazer=itens.filter(i=>i.status==="pendente"||(DEC.includes(i.status)&&!i.processado)).sort(ord);
-  const edit=itens.filter(i=>i.status==="editando").sort(ord);
-  const feitos=itens.filter(i=>DEC.includes(i.status)).sort((a,b)=>(b.decidido_em||"").localeCompare(a.decidido_em||""));
+  // decidido fica em "Para conferir" (dá para trocar) só até tocar em "Avisar o Claude"; depois sai (a dona, 25/10):
+  // Editar vai para "Em edição", OK/Descartar/Esgotado para "Conferidos". "Para conferir" fica só com vídeo novo.
+  const aEditar=i=>i.status==="editando"||(i.status==="editar"&&i.enviado&&!i.processado);
+  const fazer=itens.filter(i=>i.status==="pendente"||(DEC.includes(i.status)&&!i.processado&&!i.enviado)).sort(ord);
+  const edit=itens.filter(aEditar).sort(ord);
+  const feitos=itens.filter(i=>DEC.includes(i.status)&&!aEditar(i)&&(i.processado||i.enviado)).sort((a,b)=>(b.decidido_em||"").localeCompare(a.decidido_em||""));
   const pend=itens.filter(i=>i.status==="pendente").length, novos=itens.filter(i=>DEC.includes(i.status)&&!i.processado&&!i.enviado).length;
   const total=fazer.length;
   $("#cont").textContent= total? `${total-pend} de ${total} conferidos`:"";
@@ -168,7 +170,7 @@ function render(){
   let atual=null;
   lista.forEach(it=>{
     if(aba!=="feitos"&&it.lote!==atual){ atual=it.lote; const s=el("div","sep"); s.append(el("b",null,it.lote), el("span",null,lista.filter(x=>x.lote===atual).length+" produtos")); l.append(s); }
-    l.append(aba==="feitos"?cardFeito(it):cardFazer(it));
+    l.append(aba==="fazer"?cardFazer(it):cardFeito(it));
   });
   tela.append(l); scrollTo(0,y);
 }
@@ -183,9 +185,10 @@ $("#enviar").onclick=async e=>{
     if(!com) throw 0; if(await com.canSendToClaude()!=="available") throw 0;
     await com.sendToClaude({anchor:await com.anchorFor(b),text:"Conferência: processar "+novos.length+" decisões salvas.\n"+novos.join("\n")});
     tx.textContent="Avisado. O Claude já está processando.";
-    for(const i of lote){ try{ await db.doc("conferir/"+i._id).update({enviado:true}); }catch(e){} }
-  }catch(err){ tx.textContent="Não deu para avisar daqui, mas está tudo salvo: o Claude processa em até 30 min."; }
-  finally{ b.disabled=false; }
+  }catch(err){ tx.textContent="Está tudo salvo. Se o Claude não responder, diga no chat: processa a Conferência."; }
+  // sai de "Para conferir" de qualquer jeito: Editar vai para "Em edição", o resto para "Conferidos" (a dona, 25/10)
+  for(const i of lote){ try{ await db.doc("conferir/"+i._id).update({enviado:true}); }catch(e){} }
+  b.disabled=false;
 };
 (async()=>{
   db = await (window.claude?.use ? window.claude.use("db") : null);
