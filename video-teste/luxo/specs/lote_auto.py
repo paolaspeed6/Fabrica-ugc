@@ -30,7 +30,7 @@ def tomadas(cenas, lens):
                 if dur - d < 0.6 and dur - d > 0.01: d = dur  # sobra pequena: estica a última se couber
                 d = min(d, lens[c] - 0.1)
                 st = ss[c] if ss[c] + d <= lens[c] - 0.05 else 0.0
-                z = (1.0, 1.03) if len(seg) % 2 == 0 else (1.03, 1.0)
+                z = (1.0, 1.06) if len(seg) % 2 == 0 else (1.06, 1.0)  # zoom maior: auditor reprovou cena quase parada (p67 B)
                 seg.append((c, round(st, 2), z[0], z[1], {'d': round(d, 3)}))
                 ss[c] = st + d if st + d < lens[c] - 1.0 else 0.0
                 dur -= d
@@ -50,7 +50,7 @@ def cfg(k, n):
         v = fv.get(c) or {}; fim = float(v.get('fim') or 0); ini = float(v.get('inicio') or 0)
         src = d / (f'{c}_ini.mp4' if ini > 0 and (d / f'{c}_ini.mp4').exists() else f'{c}_fixa.mp4' if (d / f'{c}_fixa.mp4').exists() else f'{c}.mp4')
         if fim - ini < 1.5 or not src.exists(): continue
-        shutil.copy(src, W / 'src' / f'{c}.mp4'); cenas.append(c); lens[c] = round(min(fim - ini, 5.0), 2)
+        shutil.copy(src, W / 'src' / f'{c}.mp4'); cenas.append(c); lens[c] = round(min(fim - ini, 4.0), 2)  # só os 4 primeiros s: o fim do clipe é onde a IA mais estraga (26/10)
     if not cenas: return None, W
     A = dict(t['a']); C = dict(t['c'])
     A.setdefault('eyebrow', t['nome'])

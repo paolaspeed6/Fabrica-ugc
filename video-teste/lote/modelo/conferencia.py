@@ -15,7 +15,7 @@ out = B / 'conferir_docs'; out.mkdir(exist_ok=True)
 for k, t in sorted(T.items()):
     nn = k[1:]
     a = next((f for f in sorted(drive) if f.startswith(f'{pre}_{nn}_') and f.endswith('_A.mp4')), None)
-    assert a, f'{k}: vídeo A não está no Drive (rode drive_backup.py antes)'
+    if not a: continue  # entrega em partes (de 15 em 15): só os que já estão no Drive
     jpg = subprocess.run(['ffmpeg', '-v', 'error', '-ss', '0.05', '-i', str(B / 'final' / a), '-frames:v', '1', '-vf', 'scale=240:-2',
                           '-q:v', '5', '-f', 'image2', '-c:v', 'mjpeg', '-'], capture_output=True, check=True).stdout
     doc = dict(lote=nome_lote, dia=dia, ordem=int(nn), n=int(nn), produto=t['nome'], link_anuncio=LINKS[nn], drive_a=drive[a],
