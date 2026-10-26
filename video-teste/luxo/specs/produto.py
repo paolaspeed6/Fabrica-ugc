@@ -99,7 +99,7 @@ def sem_voz(cfg):
     comum = dict(accent=cfg['accent'], **({'shiftx': cfg['shiftx']} if cfg.get('shiftx') else {}))
     A, B, C = cfg['a'], cfg['b'], cfg['c']
     cuts = (0, 3.0, 5.6, 8.2, 10.8)
-    opcao_a(f'{pid}_a_umdia', dict(eyebrow=A['eyebrow'], gancho=A['gancho'], momentos=A['momentos'], **comum),
+    opcao_a(f'{pid}_a_umdia', dict(eyebrow=A['eyebrow'], gancho=A['gancho'], momentos=A['momentos'], **{k: A[k] for k in ('sem_horario', 'cta') if A.get(k)}, **comum),
             _segs(cuts + (15,), cfg['tomadas']['a'], cfg['clips']), None, bed=[trilha(f'{pid}_a_umdia')], cuts=cuts)
     _natural(f'{pid}_a_umdia', cuts, cfg.get('scrim'))
     cuts = (0, 5.0, 10.0, 15)
