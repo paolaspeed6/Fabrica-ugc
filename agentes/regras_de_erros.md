@@ -265,3 +265,7 @@ Regra: o prompt de vídeo tira parênteses dos itens, frases "not sold / no tabl
    - **Letra inventada** (mualler, FITWESS, Borbolato): copiar letra por letra ou deixar pequena e ilegível; logo pequeno = câmera longe.
    - **Cor apagada** (solda): saturação da foto 01.
    O Fichador já escreve as cenas pensando nisso; a Fiscal continua barrando. Toda rodada nova: somar os motivos em `agentes/aprendizado/defeitos.csv` e atualizar esta lista.
+
+## K16. Texto nunca sai da tela (a dona, 26/10, Conferência do 25/10 A: 21 vídeos com letras grandes demais)
+Os tamanhos de fonte dos layouts são fixos e textos longos do Fichador passavam da largura. O `build_lux.py` agora mede cada
+texto (título, corpo, sobretítulo, botão, faixa, item) e encolhe até caber com 56 px de margem. Não desligar; conferir a capa e a folha.

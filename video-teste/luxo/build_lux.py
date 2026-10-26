@@ -112,7 +112,25 @@ def text_block(lines, size, align='left', spacing=1.06, color=INK, base='serif',
     return (soft_shadow(img) if shadow else img), pad
 
 
+MARGEM = 56  # a dona, 26/10 (lote 25/10 A): letras grandes saíram para fora da tela; nada passa desta margem
+
+
 def make(el):
+    """desenha o elemento; texto mais largo que a tela encolhe sozinho até caber (título, corpo, sobretítulo, botão, faixa, item)."""
+    k = el['kind']
+    if k in ('title', 'body', 'eyebrow', 'button', 'band', 'check') and el.get('size'):
+        x = el.get('x', 84)
+        maxw = W - 2 * MARGEM if x == 'c' else W - MARGEM - max(int(x), MARGEM)
+        if el.get('rotate'): maxw -= 40
+        for _ in range(30):
+            img, pad = _make(el)
+            if img is None or img.width - 2 * pad <= maxw or el['size'] <= 18: return img, pad
+            el['size'] = max(18, int(el['size'] * min(0.95, maxw / (img.width - 2 * pad))))
+            if el.get('w') and k == 'button': el['w'] = min(el['w'], maxw)
+    return _make(el)
+
+
+def _make(el):
     k = el['kind']; al = el.get('align', 'left')
     fb, fit = el.get('base', 'serif'), el.get('it', el.get('base_it', 'serif_it'))
     cor = tuple(el.get('color', INK)); sh = el.get('shadow', True)
