@@ -41,7 +41,7 @@ def tomadas(cenas, lens):
 
 def cfg(k, n):
     t = T[k]; d = L / f'{k}-cenas'
-    ap = json.loads((d / 'aprovado.json').read_text())
+    if not (d / 'aprovado.json').exists(): return None, None  # nenhuma cena aprovada (aprovar.py: SEM CENA APROVADA)
     fv = json.loads((d / 'fiscal_video.json').read_text()) if (d / 'fiscal_video.json').exists() else {}
     pid = f'p{n}'; W = RAIZ / 'trabalhos' / f'{pid}-{t["slug"]}'
     for s in ('src', 'specs', 'out2'): (W / s).mkdir(parents=True, exist_ok=True)
