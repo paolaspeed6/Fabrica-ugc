@@ -255,3 +255,13 @@ Regra: o prompt de vídeo tira parênteses dos itens, frases "not sold / no tabl
 15. **Ficha com cada mínimo detalhe** (a dona, 2026-10-24): medidas de cada parte, furos, botões, letras miúdas, cor por parte (hex da foto 01) e o que é propaganda. Ver `agentes/setor_qualidade/fichador.md`.
 
 16. **Lote criado do zero sempre termina na Conferência** (a dona, 2026-10-24: "por que esses videos não foram para a aba de conferencia?"): Drive + `conferencia.py` + doc em `conferir` + Tinder pronto. Página de baixar é só extra. Checklist: `video-teste/lote/modelo/CHECKLIST.md`.
+
+17. **Aprender com as reprovações da Fiscal de imagem** (a dona, 2026-10-26: "Aprenda com as gerações que deram erros, e os reprovados, para não repeti-los"). Lista 25/10 A, 1ª rodada (124 imagens): os motivos que mais se repetiram viraram frases fixas no prompt de imagem (`gerar.py`, FIM):
+   - **Borda** (cama, carrinho + bebê conforto, kit de cadeiras, banquetas, bike, lavadora): produto inteiro em no máximo 60% da largura, 12% de folga de cada lado; produto largo ou com vários itens = câmera mais longe.
+   - **Virado/fora do lugar** (banquetas de costas, bebê conforto em cima do móvel): cada item com o mesmo lado e a mesma posição relativa da foto 01.
+   - **Escala** (solda gigante, banqueta alta): comparar com portas, bancadas e camas; produto pequeno ganha objeto de referência com tamanho real na ficha.
+   - **Contagem** (travessas, manoplas, voltas de mangueira, luvas, eletrodos): contar tudo como na foto 01.
+   - **Fundo com objetos** (copo, frasco, pote, garrafa em criado-mudo/aparador): toda superfície do fundo vazia.
+   - **Letra inventada** (mualler, FITWESS, Borbolato): copiar letra por letra ou deixar pequena e ilegível; logo pequeno = câmera longe.
+   - **Cor apagada** (solda): saturação da foto 01.
+   O Fichador já escreve as cenas pensando nisso; a Fiscal continua barrando. Toda rodada nova: somar os motivos em `agentes/aprendizado/defeitos.csv` e atualizar esta lista.

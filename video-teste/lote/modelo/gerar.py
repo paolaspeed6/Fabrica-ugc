@@ -34,6 +34,14 @@ FIM = (" Photorealistic full-frame vertical 9:16 photo taken by a person with a 
        "Modern, new, well-kept and aspirational space with clean contemporary finishes; motivated natural light with soft contrast and depth (foreground, product, background). "
        "True-to-life colors with neutral white balance; the product's colors match image 1 exactly. Calm wide textures. It contains only the objects described. Fine sensor grain. "
        "The whole product is in frame with clear space on every side, never touching the frame edges. "
+       # Lista 25/10 A (a dona: "aprenda com os reprovados"): 40% das reprovações foram borda, costas, escala, fundo com objetos.
+       "All items of the product together fill at most 60 percent of the frame width, with at least 12 percent empty space on the left and on the right; for wide, long or multi-item products the camera stands farther back. "
+       "Every item faces the camera with the same side and orientation as in image 1, and each item stands in the same place relative to the others as in image 1 (on the floor if it is on the floor in image 1). "
+       "The real size is kept: compare the product with the doors, counters, beds and other furniture of the room so it is neither bigger nor smaller than in real life. "
+       "Every piece is counted exactly as in image 1: same number of legs, bars, crossbars, knobs, wheels, hose loops, accessories. "
+       "Every surface in the background (sideboards, nightstands, shelves, counters, tables) is completely bare: no small objects, no containers, no decorations on them. "
+       "Lettering on the product is copied letter by letter exactly as in image 1; if it cannot be copied exactly it is left small and unreadable. "
+       "Colors are as saturated and bright as in image 1, not faded. "
        "Candid premium UGC photo, not a catalog shot, not a studio render. Ignore every advertising headline, badge, icon, arrow, measurement label and watermark printed on the reference images; they are not part of the product. "
        "No phone frame, no device bezel, no borders, no added text.")
 

@@ -46,3 +46,8 @@ Descreva a textura pelo que a foto 01 mostra em tamanho normal, nunca pelo mater
 - Toda letra NO produto, mesmo miúda, escrita exatamente; separar o que é só propaganda da foto. Letra miúda demais = câmera não chega perto.
 - Cor por parte, com tom aproximado em hex tirado dos pixels da foto 01. Nada inventado.
 - Objeto proibido que vem na foto (garrafa no suporte, taça, etc.) fica fora: descrever o suporte vazio; nunca citar o proibido no prompt de vídeo.
+
+## Cenas que a Fiscal mais reprova (regra 17, 2026-10-26)
+Ao escrever cada cena: produto (todos os itens) em no máximo 60% da largura com folga dos lados; câmera mais longe para produto largo ou kit;
+itens na mesma orientação e posição da foto 01; objeto de escala com tamanho real perto de produto pequeno; fundo com superfícies vazias
+(nada em criado-mudo, aparador, prateleira); contagem de cada peça repetida; logo pequeno = sem close.

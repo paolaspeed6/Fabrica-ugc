@@ -23,3 +23,5 @@
 - 2026-10-21: motosserra p24 saiu com logo "TOYIAMA" (close de IA) e título encostando na borda; refeita. Ver regra 14.
 
 - 2026-10-24: o teste do zero foi entregue só na página de baixar e esqueci Drive + Conferência. Agora há `conferencia.py` e `CHECKLIST.md` no modelo, e a regra 16.
+
+- 2026-10-26: Lista 25/10 A, Fiscal de imagem reprovou muito por borda, costas, escala, fundo com objetos e letra inventada. Viraram frases fixas no FIM do gerar.py (regra 17).
