@@ -104,3 +104,6 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 
 ## Jogo pausado (a dona, 2026-10-26)
 "Pause o jogo até terminar os vídeos, depois voltamos": não atualizar o jogo (reino, metas, mural, gastos) até o lote 25/10 A estar na Conferência. Depois, atualizar tudo de uma vez e perguntar como seguir com o jogo.
+
+## Não encerrar antes de concluir (a dona, 2026-10-26)
+"Tenha certeza que não irá mais encerrar a tarefa antes de concluí-la". Lote longo: rodar solto (setsid nohup, sem limite de 2 h), script de retomada que pula o que já está pronto, e tarefa agendada de hora em hora que retoma e entrega até o fim. Só apagar a tarefa agendada quando tudo estiver na Conferência.
