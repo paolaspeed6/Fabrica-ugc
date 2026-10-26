@@ -56,7 +56,18 @@ Pasta `video-teste/lote/listaDDMMx` (copie `video-teste/lote/modelo`). Passos co
    da Conferência (URL em `MINHAS_PAGINAS.md`) → Tinder status `pronto`. Página de baixar é extra, nunca no lugar da Conferência.
    Siga `video-teste/lote/modelo/CHECKLIST.md` e marque cada passo no `<lote>/CHECKLIST.md`.
    Depois da conferência dela: processar as decisões e o **Melhorador** (trava 4, 1 vez por lote).
-Os agentes do setor de qualidade são subagentes separados (ferramenta Agent), rodando em paralelo por grupos de 3-5 produtos.
+Os agentes do setor de qualidade são subagentes separados (ferramenta Agent).
+
+## Economia de uso do Claude sem perder qualidade (a dona, 26/10: o lote 25/10 A esgotou o limite 3 vezes)
+- **Uma conversa nova por lote.** Comece lendo `PROXIMO_LOTE.md` (o resumo do ponto em que paramos), não o histórico.
+- **Agentes no Sonnet** (`model: "sonnet"` no Agent tool), 1 ou 2 por etapa, NUNCA 9 em paralelo. Eles leem só
+  `agentes/setor_qualidade/RESUMO_REGRAS.md` + o BRIEF da função; o `regras_de_erros.md` inteiro é só para o orquestrador.
+- **Código e Gemini antes do Claude (grátis):** `folha.py` (borda medida por rembg, reprova sozinho, monta 1 folha por produto),
+  `fiscal_gemini.py` e `fiscal_video_gemini.py` (GOOGLEAISTUDIO_API_KEY; modelo gemini-3-flash-preview com reserva automática);
+  a Fiscal Sonnet só confirma olhando a folha (`video-teste/lote/modelo/PROMPT_FISCAL_SONNET.md`).
+- **Edição sozinha:** `video-teste/luxo/specs/lote_auto.py` (3 layouts da dona a partir dos trechos limpos, clipe só até 4 s).
+- **Lote longo roda solto** (`setsid nohup`, sem o limite de 2 h) com `retomar.sh` + tarefa agendada de hora em hora até tudo estar na Conferência.
+- Respostas curtas; não reler arquivos grandes nem imagens já conferidas; olhar 1 folha de quadros por produto, não vídeo por vídeo.
 
 ## Páginas do kit (publicar uma vez, quando ela pedir) — capabilities {db: {}, user: {}}
 `paginas/tinder.html` (Tinder Shopee), `paginas/conferencia.html` (+comments), `paginas/postagens.html` (formato em `agentes/postagens_formato.md`),
