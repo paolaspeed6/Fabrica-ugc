@@ -271,3 +271,33 @@ data,produto,cena,ambiente,piso,parede,paleta
 2026-10-24,L2410a-aguiiar p02 bike spinning,A,academia residencial casa manha,vinilico carvalho acinzentado tabua 20cm + tapete borracha preto,branca lisa + janela caixilho preto,branco/carvalho cinza/preto/amarelo
 2026-10-24,L2410a-aguiiar p02 bike spinning,B,terraco cobertura coberto tarde,porcelanato grafite antiderrapante 60x120,estuque cinza claro + guarda-corpo vidro,grafite/cinza claro/ceu/amarelo
 2026-10-24,L2410a-aguiiar p02 bike spinning,C,canto de treino apto noite LED,microcimento cinza quente,malva acinzentado liso,malva/cinza quente/preto/amarelo
+2026-10-25,L2510A-p11 poltrona giratoria helena,A,recepcao clinica moderna manha,microcimento cinza perola,verde musgo claro liso,musgo claro/perola/off-white/marrom/cromo
+2026-10-25,L2510A-p11 poltrona giratoria helena,B,escritorio executivo alto tarde,vinilico nogueira escura tabua 22 cm,branca lisa + janela piso-teto caixilho preto,nogueira/branco/preto/off-white
+2026-10-25,L2510A-p11 poltrona giratoria helena,C,sala de estar noite luminaria latao,porcelanato preto fosco 120x120,terracota queimada lisa,terracota/preto/latao/off-white
+2026-10-25,L2510A-p12 tapete sisal redondo,A,sala de estar apto manha sofa linho,porcelanato grafite fosco 120x120,off-white lisa + janela piso-teto,grafite/off-white/bege sisal/nogueira
+2026-10-25,L2510A-p12 tapete sisal redondo,B,quarto principal tarde cama queen,porcelanato cimenticio cinza medio 90x90,azul jeans acinzentado liso,azul jeans/branco/bege/carvalho claro
+2026-10-25,L2510A-p12 tapete sisal redondo,C,home office canto leitura noite,tabua larga ipe escuro 25 cm,verde floresta escuro liso,verde floresta/ipe/caramelo/bege
+2026-10-25,L2510A-p13 poltrona organica infinity,A,canto leitura quarto manha,porcelanato off-white quente 90x90,azul ceu empoeirado liso,azul claro/off-white/terracota/carvalho claro
+2026-10-25,L2510A-p13 poltrona organica infinity,B,sala de estar apto tarde,cimento queimado areia polido,rosa nude blush liso + janela branca,blush/areia/terracota/branco
+2026-10-25,L2510A-p13 poltrona organica infinity,C,sala de TV noite LED,porcelanato cinza fume 120x120 acetinado,painel liso nogueira com LED quente,nogueira/fume/terracota/ambar
+2026-10-25,L2510A-p14 cooktop dako supreme,A,cozinha planejada manha,quartzo branco (bancada),porcelanato branco 60x120 + armarios azul marinho,branco/azul marinho/preto
+2026-10-25,L2510A-p14 cooktop dako supreme,B,cozinha integrada tarde,quartzo areia (bancada),microcimento off-white + armarios grafite,areia/grafite/off-white/preto
+2026-10-25,L2510A-p14 cooktop dako supreme,C,cozinha gourmet noite LED,quartzo branco (bancada),cinza quente liso + armarios bordo,bordo/branco/cinza quente/ambar
+2026-10-25,L2510A-p15 banqueta baixa pe palito,A,copa moderna manha mesa redonda branca,porcelanato branco gelo 120x120,verde menta suave liso,menta/branco/marfim/mel
+2026-10-25,L2510A-p15 banqueta baixa pe palito,B,sala de jantar tarde mesa nogueira,cimento queimado cinza claro,cinza quente + janela caixilho preto,cinza quente/nogueira/marfim/mel
+2026-10-25,L2510A-p15 banqueta baixa pe palito,C,cozinha integrada noite pendente preto,tabua larga freijo 20 cm,azul marinho profundo liso,azul marinho/freijo/marfim/branco
+2026-10-26,L2510a-p41 lavadora alta vazao,A,garagem coberta chacara moderna manha picape branca,concreto polido cinza claro placas 1.2m,branca quente lisa + abertura caixilho preto,cinza claro/branco/amarelo/vermelho
+2026-10-26,L2510a-p41 lavadora alta vazao,B,galpao de maquinas fazenda moderna tarde pneu trator laranja,concreto desempenado cinza medio,verde floresta lisa,verde floresta/concreto/laranja/amarelo
+2026-10-26,L2510a-p41 lavadora alta vazao,C,area de lavagem externa casa de campo fim de tarde,porcelanato pedra bege 60x120,branca rebocada lisa + janela preta + grama,bege/branco/verde/amarelo
+2026-10-26,L2510a-p42 banco sapateira freijo,A,hall de entrada apto manha porta branca,porcelanato off-white fosco 90x90,azul empoeirado claro liso,azul claro/off-white/freijo/preto
+2026-10-26,L2510a-p42 banco sapateira freijo,B,quarto casal moderno tarde pe da cama,carpete cinza claro baixo,taupe acinzentado quente liso,taupe/branco/freijo/carvao
+2026-10-26,L2510a-p42 banco sapateira freijo,C,sala de estar noite como aparador luminaria preta,microcimento cinza quente claro,terracota profundo liso,terracota/cinza quente/freijo/preto
+2026-10-26,L2510a-p43 bike spinning preta,A,sala apto moderno manha janela piso-teto,porcelanato off-white quente 120x120 + tapete borracha preto,azul ceu palido liso,azul ceu/off-white/preto/cinza
+2026-10-26,L2510a-p43 bike spinning preta,B,canto do quarto tarde painel ripado carvalho,carpete cinza claro baixo,terracota argila suave lisa + ripado carvalho,terracota/carvalho/cinza/preto
+2026-10-26,L2510a-p43 bike spinning preta,C,sala de treino casa noite fita LED,tabua larga nogueira escura 25cm,concreto claro liso + LED quente,nogueira/concreto/ambar/preto
+2026-10-26,L2510a-p44 cama montessoriana turquesa,A,quarto infantil apto manha armario branco,porcelanato branco quente 90x90,amarelo manteiga liso,amarelo/branco/turquesa
+2026-10-26,L2510a-p44 cama montessoriana turquesa,B,quarto de irmaos tarde estante baixa branca,carpete cinza claro baixo,salvia acinzentado palido liso,salvia/cinza/branco/turquesa
+2026-10-26,L2510a-p44 cama montessoriana turquesa,C,quarto infantil noite pendente globo papel,tabua larga carvalho acinzentado 25cm,blush terracota quente liso,blush/carvalho cinza/branco/turquesa
+2026-10-26,L2510a-p45 kit cadeiras dobraveis palhinha,A,varanda coberta casa branca manha porta de vidro,terracota lisa 30x30,branca rebocada lisa,terracota/branco/mel/palha
+2026-10-26,L2510a-p45 kit cadeiras dobraveis palhinha,B,patio jardim casa de praia tarde mesa concreto,porcelanato travertino claro 60x120,areia palida lisa + cerca viva,areia/travertino/verde/mel
+2026-10-26,L2510a-p45 kit cadeiras dobraveis palhinha,C,area gourmet noite churrasqueira preta pendentes,microcimento bege claro,azul marinho profundo liso,marinho/bege/preto/mel
