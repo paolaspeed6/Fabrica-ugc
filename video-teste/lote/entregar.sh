@@ -7,9 +7,12 @@ for k in "$@"; do
   ls $L/final/${PRE}_${k#p}_* >/dev/null 2>&1 && continue
   id=${w%%-*}; o=$R/trabalhos/$w/out2; ok=1
   for v in a_umdia b_faixas c_direto; do [ -f $o/${id}_$v.mp4 ] || ok=0; done; [ $ok = 1 ] || continue
-  python3 $R/video-teste/auditar_video.py $o/${id}_a_umdia.mp4 $o/${id}_b_faixas.mp4 $o/${id}_c_direto.mp4 | grep -q REPROVADO && { echo "$k reprovado no auditor"; continue; }
-  slug=$(python3 -c "import json;print(json.load(open('$L/textos.json'))['$k']['slug'])")
-  for x in A:a_umdia B:b_faixas C:c_direto; do f=$o/${id}_${x#*:}.mp4; [ $(stat -c%s $f) -gt 15500000 ] && bash $R/video-teste/luxo/recodificar.sh $f; cp $f $L/final/${PRE}_${k#p}_${slug}_${x%%:*}.mp4; done
+  slug=$(python3 -c "import json;print(json.load(open('$L/textos.json'))['$k']['slug'])"); boas=0
+  for x in A:a_umdia B:b_faixas C:c_direto; do f=$o/${id}_${x#*:}.mp4  # auditor por vídeo: 1 reprovado não barra os outros 2 (26/10)
+    python3 $R/video-teste/auditar_video.py $f | grep -q REPROVADO && { echo "$k ${x%%:*} reprovado no auditor"; continue; }
+    [ $(stat -c%s $f) -gt 15500000 ] && bash $R/video-teste/luxo/recodificar.sh $f
+    cp $f $L/final/${PRE}_${k#p}_${slug}_${x%%:*}.mp4 && ffprobe -v error $L/final/${PRE}_${k#p}_${slug}_${x%%:*}.mp4 || { rm -f $L/final/${PRE}_${k#p}_${slug}_${x%%:*}.mp4; echo "$k ${x%%:*} cópia falhou"; continue; }; boas=$((boas+1))
+  done; [ $boas = 0 ] && continue
   echo "$k -> $w ok"; n=$((n+1)); [ $n -ge $MAX ] && break
 done
 python3 $R/video-teste/drive_backup.py $L/final --dia $DIA | tail -2
