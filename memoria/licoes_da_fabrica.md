@@ -107,3 +107,8 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 
 ## Não encerrar antes de concluir (a dona, 2026-10-26)
 "Tenha certeza que não irá mais encerrar a tarefa antes de concluí-la". Lote longo: rodar solto (setsid nohup, sem limite de 2 h), script de retomada que pula o que já está pronto, e tarefa agendada de hora em hora que retoma e entrega até o fim. Só apagar a tarefa agendada quando tudo estiver na Conferência.
+
+## 2026-10-26 (Lista 25/10 A)
+- O container é reclamado quando a conversa fica parada: processo solto morre. Durante render longo, manter um Monitor ligado (30 min, re-armar) na conversa.
+- Apagar trabalhos/*/out2/*.video.mp4 depois de cada render (enchem o disco).
+- Auditor por vídeo: 1 vídeo reprovado não barra os outros 2 do produto.

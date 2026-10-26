@@ -2,15 +2,11 @@
 
 Atualizado: 2026-10-26.
 
-## Lote em andamento: Lista 25/10 A (`video-teste/lote/lista2510a`, pasta fora do Git)
-- 45 produtos da Fila do Tinder (OK da dona, teto US$ 24). 3 descartados antes de gastar: p05 (pessoa em todas as fotos),
-  p37 (réplica de Bosch), p39 (homem pedalando). Gasto em `gasto.json` (~US$ 18,7 com os clipes das refações).
-- 42 produtos viram trabalhos/p67 em diante (`trabalhos_todos.json` = pNN do lote -> pasta em trabalhos/).
-- Rodando solto: `cadeia.sh` (parte 1: 18 produtos; parte 2: 24 das refações). Se caiu: `setsid nohup bash retomar.sh &`.
-- Tarefa agendada "Checar lote 25/10 A até concluir" (de hora em hora) entrega na Conferência de 15 em 15
-  (conferir_docs/ -> ArtifactData coleção conferir; anotar em enviados_conferencia.txt), marca Tinder pronto (ids_tinder.json),
-  sobe os finais com `git add -f` e apaga a tarefa no fim.
-- Jogo pausado até o lote estar todo na Conferência (memoria/licoes_da_fabrica.md); depois atualizar metas/mural/gasto de uma vez.
+## Último lote: Lista 25/10 A — ENTREGUE (26/10, 23h)
+- 41 produtos na Conferência (106 vídeos: 41 A, 24 B, 41 C; 17 B reprovados no auditor por cena quase parada) e no Drive
+  "Fabrica Videos/2026-10-26". Tinder: os 41 em `pronto`. Gasto US$ 18,69. Jogo: retomar (metas, mural, gasto) e perguntar à dona.
+- No Drive ficaram cópias antigas cortadas (disco cheio) de 2510A_01 A/B, 25 A/B/C, 41 C, 43 A/B/C: a Conferência aponta para as boas.
+- Antes do próximo lote: corrigir o layout B no lote_auto (tomadas de 5 s com clipe de 4 s = cena quase parada).
 
 ## Pendências da dona
 - Segredos: renomear `shopee_APP_SECRET` para `SHOPEE_APP_SECRET`; token da Página em META_PAGE_TOKEN; THREADS_TOKEN novo;
@@ -25,4 +21,4 @@ render solto → entregar.sh → Conferência. Lote de 15 produtos de cada vez.
 ## Regra da dona (26/10): economia só se não prejudicar a qualidade
 No 1º lote com o fluxo econômico, conferir 3 produtos TAMBÉM com uma Fiscal Opus (modelo padrão) e comparar com a Fiscal Sonnet.
 Se o Sonnet deixar passar defeito que o Opus pegou, voltar a Fiscal de confirmação para o Opus (1 agente, só as folhas). Anotar o resultado aqui.
-- Durante o render do lote, musicas/usadas.json muda a cada vídeo: está com git update-index --assume-unchanged; no fim do lote rodar --no-assume-unchanged e commitar.
+- Durante o render, musicas/usadas.json muda a cada vídeo: usar git update-index --assume-unchanged e desfazer no fim.

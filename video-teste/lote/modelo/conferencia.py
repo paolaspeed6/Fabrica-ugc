@@ -8,7 +8,7 @@ from pathlib import Path
 B = Path(__file__).resolve().parent
 nome_lote, dia = sys.argv[1], sys.argv[2]
 pre = B.name.replace('lista', '').upper()
-drive = json.loads((B / 'final' / 'drive_links.json').read_text())
+drive = {k: v for k, v in json.loads((B / 'final' / 'drive_links.json').read_text()).items() if (B / 'final' / k).exists()}  # só o que está em final/ (aprovado e inteiro)
 T = json.loads((B / 'textos.json').read_text())
 LINKS = {l.split()[0]: l.split()[1] for l in (B / 'links.txt').read_text().splitlines() if l.strip() and '<loja>' not in l}
 out = B / 'conferir_docs'; out.mkdir(exist_ok=True)
