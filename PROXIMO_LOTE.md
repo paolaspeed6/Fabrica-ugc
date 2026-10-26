@@ -25,3 +25,4 @@ render solto → entregar.sh → Conferência. Lote de 15 produtos de cada vez.
 ## Regra da dona (26/10): economia só se não prejudicar a qualidade
 No 1º lote com o fluxo econômico, conferir 3 produtos TAMBÉM com uma Fiscal Opus (modelo padrão) e comparar com a Fiscal Sonnet.
 Se o Sonnet deixar passar defeito que o Opus pegou, voltar a Fiscal de confirmação para o Opus (1 agente, só as folhas). Anotar o resultado aqui.
+- Durante o render do lote, musicas/usadas.json muda a cada vídeo: está com git update-index --assume-unchanged; no fim do lote rodar --no-assume-unchanged e commitar.
