@@ -343,3 +343,33 @@ data,produto,cena,ambiente,piso,parede,paleta
 2026-10-26,L2510a p35 pendente cilindrico tecido 50,A,sala de jantar apto manha mesa tauari,porcelanato branco fosco 90x90 + teto branco liso,cinza claro quente liso,cinza quente/branco/tauari/caramelo
 2026-10-26,L2510a p35 pendente cilindrico tecido 50,B,suite casal apto fim de tarde cama linho branco,tabua freixo claro 22cm + teto branco liso,verde menta agua liso,menta/freixo/branco/caramelo
 2026-10-26,L2510a p35 pendente cilindrico tecido 50,C,sala de estar casa noite so o pendente aceso,porcelanato greige 120x120 + teto branco liso,carvao preto fosco liso,carvao/greige/carvalho/caramelo
+2026-10-26,L2510a p26 solda inversora MMA-250,A,garagem oficina casa moderna manha bancada betula,bancada compensado betula (bancada),terracota argila lisa,terracota/betula/preto/ciano
+2026-10-26,L2510a p26 solda inversora MMA-250,B,atelie serralheria moderna tarde janela alta,bancada laminado grafite (bancada),placas cimenticias cinza claro juntas finas,cinza claro/grafite/sol/ciano
+2026-10-26,L2510a p26 solda inversora MMA-250,C,garagem moderna noite pendente preto,epoxi cinza medio + bancada carvalho,carvao preto liso com fita LED quente,preto/carvalho/ambar/ciano
+2026-10-26,L2510a p27 fogao industrial 4 bocas,A,cozinha restaurante moderna manha,porcelanato antiderrapante cinza claro quente 60x60,porcelanato branco esmaltado 60x120,branco/inox/cinza claro/preto
+2026-10-26,L2510a p27 fogao industrial 4 bocas,B,area de eventos gourmet coberta tarde jardim,pedra basalto 50x50,areia bege lisa + balcao granito preto,areia/basalto/preto/verde
+2026-10-26,L2510a p27 fogao industrial 4 bocas,C,cozinha de casa estilo industrial noite pendentes,porcelanato branco quente 120x120,azul marinho liso + armarios marinho,marinho/branco/preto/ambar
+2026-10-26,L2510a p28 carrinho bebe compact preto,A,hall de entrada apto manha,porcelanato cinza claro 90x90,verde-azul salvia suave lisa + armario laca branca,salvia azul/branco/cinza/preto
+2026-10-26,L2510a p28 carrinho bebe compact preto,B,varanda casa moderna tarde guarda-corpo vidro,deck composto cinza tabua 20cm,branca lisa + porta vidro caixilho preto,cinza/branco/terracota/verde
+2026-10-26,L2510a p28 carrinho bebe compact preto,C,sala moderna noite luminaria latao,microcimento cinza quente,caramelo terracota lisa,caramelo/bege/latao/preto
+2026-10-26,L2510a p29 base mesa industrial metalon,A,area de jantar loft manha,cimento queimado cinza claro,branco quente liso + janela caixilho preto,branco/cinza/carvalho/preto
+2026-10-26,L2510a p29 base mesa industrial metalon,B,sala de jantar moderna tarde,tabua larga carvalho natural 25cm,verde floresta profundo liso,verde floresta/nogueira/carvalho/preto
+2026-10-26,L2510a p29 base mesa industrial metalon,C,home office noite luminaria preta,porcelanato grafite 90x90,cinza claro quente + LED no forro,grafite/branco/cinza/ambar
+2026-10-26,L2510a p30 berco balanco eletrico,A,quarto de bebe moderno manha,porcelanato branco quente 90x90 + tapete aveia,verde salvia claro liso,salvia/branco/aveia/cinza
+2026-10-26,L2510a p30 berco balanco eletrico,B,quarto do casal tarde janela,tabua carvalho lavado cinza 20cm,azul empoeirado suave liso,azul/cinza claro/linho/branco
+2026-10-26,L2510a p30 berco balanco eletrico,C,sala moderna noite luminaria latao sofa boucle,porcelanato greige claro 120x120,azul petroleo fechado liso,petroleo/creme/latao/cinza
+2026-10-26,L2510a-p21 bike spinning adking vermelha,A,academia residencial casa manha tapete borracha,porcelanato cinza claro fosco 120x120,verde salvia liso,salvia/cinza claro/preto/vermelho
+2026-10-26,L2510a-p21 bike spinning adking vermelha,B,varanda fechada apto tarde guarda-corpo vidro,cimento queimado cinza quente,terracota lisa,terracota/cinza quente/verde/vermelho
+2026-10-26,L2510a-p21 bike spinning adking vermelha,C,canto de treino quarto noite luminaria,carpete aveia bege baixo,azul marinho profundo liso,marinho/aveia/preto/vermelho
+2026-10-26,L2510a-p22 fogao semi industrial 6 bocas,A,area gourmet coberta tarde bancada granito preto,porcelanato cimenticio grafite 60x120,placas porcelanato cinza claro 120x260,grafite/cinza claro/preto/latao
+2026-10-26,L2510a-p22 fogao semi industrial 6 bocas,B,cozinha de edicula manha bancada quartzo branco,terracota lisa 30x30,azulejo branco brilhante 60x120,terracota/branco/preto/latao
+2026-10-26,L2510a-p22 fogao semi industrial 6 bocas,C,cozinha externa coberta anoitecer pendentes pretos,porcelanato pedra bege 90x90,verde oliva liso,oliva/bege/preto/ambar
+2026-10-26,L2510a-p23 carrinho bebe 3em1 cinza,A,quarto de bebe apto manha comoda laca branca,porcelanato greige claro 90x90,azul po liso,azul po/greige/cinza/dourado
+2026-10-26,L2510a-p23 carrinho bebe 3em1 cinza,B,hall e sala apto tarde porta vidro preta aparador carvalho,microcimento cinza claro polido,lilas acinzentado liso,lilas/cinza claro/carvalho/dourado
+2026-10-26,L2510a-p23 carrinho bebe 3em1 cinza,C,terraco coberto casa branca fim de tarde jardim,porcelanato travertino 60x120,estuque branco + porta vidro preta,travertino/branco/verde/dourado
+2026-10-26,L2510a-p24 kit2 cadeiras tropicalia rami,A,varanda apto alto manha guarda-corpo vidro,porcelanato carvao fosco 120x120,verde floresta profundo liso,carvao/verde floresta/rami/preto
+2026-10-26,L2510a-p24 kit2 cadeiras tropicalia rami,B,deck de piscina casa moderna tarde mesinha branca,atermico off-white 60x60,concreto aparente liso cinza claro,off-white/concreto/turquesa/rami
+2026-10-26,L2510a-p24 kit2 cadeiras tropicalia rami,C,canto de jantar cozinha noite mesa redonda branca pendente,porcelanato areia quente 90x90,malva empoeirado liso,malva/areia/branco/rami
+2026-10-26,L2510a-p25 mesa slim edna 4 bancos,A,cozinha pequena apto manha armarios brancos,porcelanato branco veio cinza 120x120,amarelo manteiga claro liso,manteiga/branco/carvalho/preto
+2026-10-26,L2510a-p25 mesa slim edna 4 bancos,B,canto de jantar studio tarde janela preta,tabua larga carvalho acinzentado 25cm,azul petroleo teal profundo liso,teal/carvalho cinza/latao/preto
+2026-10-26,L2510a-p25 mesa slim edna 4 bancos,C,copa compacta apto noite pendente branco,porcelanato grafite fosco 90x90,rosa empoeirado liso,rosa/grafite/carvalho/preto
