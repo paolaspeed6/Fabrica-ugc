@@ -101,3 +101,6 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 ## Conferência e Fila (a dona, 2026-10-25)
 - Produto em produção sai da Fila do Tinder (status produzindo → aba Produção; pronto quando terminar).
 - Na Conferência, ao tocar "Avisar o Claude" os decididos saem de "Para conferir": Editar → "Em edição", OK/Descartar/Esgotado → "Conferidos". "Para conferir" fica só com vídeo novo.
+
+## Jogo pausado (a dona, 2026-10-26)
+"Pause o jogo até terminar os vídeos, depois voltamos": não atualizar o jogo (reino, metas, mural, gastos) até o lote 25/10 A estar na Conferência. Depois, atualizar tudo de uma vez e perguntar como seguir com o jogo.
