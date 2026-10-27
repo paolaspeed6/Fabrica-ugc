@@ -25,6 +25,10 @@ Atualizado: 2026-10-26.
 - 22 produtos (21 letras grandes + 26 solda) re-renderizados por `lista2510a/editar.sh` (log editar.log). No fim: ArtifactData
   dos conferir_docs novos (status pendente) — os 19 ok já estão processado=true. Os 19 ok → Postagens.
 
+## Foto colada (produto complexo, K14) — só quando a dona pedir (27/10)
+`video-teste/foto_colada/colar_auto.sh <foto01> <video> <a|b|c>` cola o cartão num canto (A/C embaixo à direita, B em cima).
+AINDA NÃO TESTADO: testar em 1 produto e mostrar a ela antes de usar no lote.
+
 ## Pendências da dona
 - Segredos: renomear `shopee_APP_SECRET` para `SHOPEE_APP_SECRET`; token da Página em META_PAGE_TOKEN; THREADS_TOKEN novo;
   criar MARCA_NOME e DRIVE_PASTA.
