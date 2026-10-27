@@ -105,6 +105,8 @@ let db=null, posts=[], esgotados=[], conferir=[], aba=MODO==="conf"?"conf":"faze
 if(MODO==="conf"){ document.title="Conferência"; }
 const $=s=>document.querySelector(s);
 const el=(t,c,x)=>{const e=document.createElement(t); if(c) e.className=c; if(x!=null) e.textContent=x; return e;};
+// a dona 27/10: dois lotes no mesmo dia (2710A e 2710B) se misturavam e cada produto aparecia com 1 vídeo só
+const loteDe=p=>(p._id||"").split(/[_-]/)[0];
 const dataBR=d=>d?d.slice(0,10).split("-").reverse().join("/"):"";
 const hoje=()=>new Date().toISOString().slice(0,10);
 const mais30=()=>new Date(Date.now()+30*864e5).toISOString().slice(0,10);
@@ -197,12 +199,12 @@ function render(){
   const ehReels=p=>p.auto||/reels/i.test(p.versao||"");
   const reels=posts.filter(ehReels);
   const manuais=posts.filter(p=>!ehReels(p));
-  const fazer=manuais.filter(p=>p.status!=="postado").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||(a.ordem||0)-(b.ordem||0));
+  const fazer=manuais.filter(p=>p.status!=="postado").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||loteDe(a).localeCompare(loteDe(b))||(a.ordem||0)-(b.ordem||0));
   const feitos=manuais.filter(p=>p.status==="postado").sort((a,b)=>(b.postado_em||"").localeCompare(a.postado_em||""));
   const total=fazer.length+feitos.length;
   $("#cont").textContent= total? `${feitos.length} de ${total} postados`:"";
   $("#prog").style.width= total? (feitos.length/total*100)+"%":"0%";
-  const pend=conferir.filter(c=>c.status==="pendente").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||(a.ordem||0)-(b.ordem||0));
+  const pend=conferir.filter(c=>c.status==="pendente").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||loteDe(a).localeCompare(loteDe(b))||(a.ordem||0)-(b.ordem||0));
   const emEd=conferir.filter(c=>c.status==="editar"||c.status==="editando"||c.status==="resgatar");
   if(MODO==="conf") aba="conf"; else if(aba==="conf") aba="fazer";
   $("#h1").textContent=MODO==="conf"?"Conferência":"Postagens";
@@ -221,7 +223,7 @@ function render(){
     tela.append(l); scrollTo(0,y); return;
   }
   if(aba==="reels"){
-    const fila=reels.filter(p=>p.status!=="postado").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||(a.ordem||0)-(b.ordem||0));
+    const fila=reels.filter(p=>p.status!=="postado").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||loteDe(a).localeCompare(loteDe(b))||(a.ordem||0)-(b.ordem||0));
     const ok=reels.filter(p=>p.status==="postado").sort((a,b)=>(b.postado_em||"").localeCompare(a.postado_em||""));
     const cab=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"Postagem automática"),el("b",null,`${fila.length} na fila · ${ok.length} postados`)); cab.append(tx); l.append(cab);
     [...fila,...ok].forEach(p=>{ const d=el("div","item"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy";
