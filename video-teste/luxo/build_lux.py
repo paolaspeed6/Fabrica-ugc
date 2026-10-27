@@ -489,9 +489,24 @@ MARCA = spec.get('marca', 'Aguiiar Lar')  # marca d'água da conta da dona (2026
 _marca_cache = {}
 
 
+def _marca_plano():
+    """onde a assinatura fica em cada trecho (a dona, 27/10: "apareça às vezes em lugares aleatórios", para não dar para cortar
+    só a faixa de cima). Mesma fonte. Começa no topo; a cada 2,5-4 s pula para outro canto livre (laterais na altura do produto,
+    longe dos textos de A/B/C). Sorteio fixo por vídeo (re-render dá o mesmo)."""
+    import random
+    r = random.Random(os.path.basename(str(spec.get('out', ''))))
+    dur = float(spec.get('dur', 15)); t, plano, ult = 0.0, [], 'topo'
+    vagas = ['topo', 'esq_alto', 'dir_alto', 'esq_meio', 'dir_meio', 'esq_baixo', 'dir_baixo']
+    while t < dur:
+        d = r.uniform(2.5, 4.0)
+        plano.append((t, t + d, ult)); t += d
+        ult = r.choice([v for v in vagas if v != ult])
+    return plano
+
+
 def marca_on(base, t):
-    """assinatura "Aguiiar Lar" fixa, centralizada no topo, igual em todos os vídeos (a dona, 2026-10-18):
-    Playfair itálico pequeno, branco translúcido com sombra suave, acima das barrinhas e dos textos."""
+    """assinatura "Aguiiar Lar": Playfair itálico pequeno, branco translúcido com sombra suave (a dona, 2026-10-18).
+    Posição muda pelo vídeo (_marca_plano); troca com fade curto. MARCA_FIXA=1 no spec volta ao topo fixo."""
     if not MARCA:
         return
     if 'p' not in _marca_cache:
@@ -500,8 +515,17 @@ def marca_on(base, t):
         pq = Image.new('RGBA', (tw, 70), (0, 0, 0, 0)); d = ImageDraw.Draw(pq)
         d.text((20, 35), MARCA, font=f, fill=(255, 255, 255, 170), anchor='lm')
         _marca_cache['p'] = soft_shadow(pq, 8, 90, 2)
+        _marca_cache['plano'] = [] if spec.get('marca_fixa') else _marca_plano()
     m = _marca_cache['p']
-    base.alpha_composite(m, ((W - m.width) // 2, spec.get('marca_y', 30)))
+    pos = {'topo': ((W - m.width) // 2, spec.get('marca_y', 30)), 'esq_alto': (24, 760), 'dir_alto': (W - m.width - 24, 820),
+           'esq_meio': (24, 1010), 'dir_meio': (W - m.width - 24, 1080), 'esq_baixo': (24, 1150), 'dir_baixo': (W - m.width - 24, 1120)}
+    trecho = next((p for p in _marca_cache['plano'] if p[0] <= t < p[1]), None)
+    if not trecho:
+        base.alpha_composite(m, pos['topo']); return
+    a = min(1.0, (t - trecho[0]) / 0.3, (trecho[1] - t) / 0.3) if trecho[0] > 0 else min(1.0, (trecho[1] - t) / 0.3)
+    if a < 0.999:
+        m = m.copy(); m.putalpha(m.getchannel('A').point(lambda v: int(v * max(0.0, a))))
+    base.alpha_composite(m, pos[trecho[2]])
 
 
 def preview(tempos):

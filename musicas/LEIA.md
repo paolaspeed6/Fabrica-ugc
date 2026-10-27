@@ -1,5 +1,9 @@
 # Músicas (OPCIONAL: a dona decide)
 
+**27/10 (a dona):** "mais animadas, ainda sofisticadas, menos melancólicas". `biblioteca/` agora tem 12 trilhas animadas
+(lounge/bossa, 104-120 bpm, tom maior, bateria leve; `gerador/animadas.py`). As 10 calmas foram para `biblioteca_calmas/`
+(fora do rodízio; volte com elas só se ela pedir).
+
 
 O kit vem em partes de até 30 MB: `1-fabrica-shopee-principal.zip` (obrigatório) não traz as trilhas. As 30 trilhas vêm em
 `2-musicas-a/b/c.zip` e o timbre do gerador em `3-gerador-musicas-1/2.zip`. Só suba esses se ela quiser música; descompacte por cima

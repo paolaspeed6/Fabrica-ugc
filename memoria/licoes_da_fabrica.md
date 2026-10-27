@@ -120,3 +120,7 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 - 27/10: corte para peça gigante em kit = prompt de vídeo com detalhe de UMA peça (regra K18). Vídeo só com nome + itens + tomada travada.
 - 27/10 (19h): a dona confirmou que os vídeos ficam na aba Conferir esperando o Ok dela antes de ir para "Para postar" (ela tinha pedido o automático por engano). Nunca colocar em "Para postar" sem o Ok dela.
 - 27/10 (19h): ao desfazer o envio automático, o Claude apagou posts que a dona tinha acabado de aprovar (o Ok dela regrava o post e muda a versão). Antes de apagar/mexer em posts, ler o status do conferir: status "ok" sem auto = Ok dela, não mexer.
+
+## 27/10 (a dona)
+- Músicas mais animadas e sofisticadas, menos melancólicas: biblioteca = 12 trilhas animadas (gerador/animadas.py); calmas fora do rodízio.
+- "Aguiiar Lar" com a mesma fonte, mas mudando de lugar no vídeo (topo e cantos livres, a cada 2,5-4 s) para não dar para cortar só a faixa de cima (build_lux.py _marca_plano).

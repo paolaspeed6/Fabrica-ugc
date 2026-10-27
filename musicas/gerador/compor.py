@@ -78,8 +78,9 @@ def render(nome, bpm, progs, ev, dur_s=15.0, cauda=2.5):
     random.seed(nome)
     s = tinysoundfont.Synth(samplerate=SR)
     sf = s.sfload(SF)
-    for ch, p in progs.items():
-        s.program_select(ch, sf, 0, p)
+    for ch, p in progs.items():  # p = preset (banco 0) ou (banco, preset); bateria = (128, 0) no canal 9
+        b, p = p if isinstance(p, tuple) else (0, p)
+        s.program_select(ch, sf, b, p, is_drums=(b == 128))
         s.control_change(ch, 7, 110)
     spb = 60.0 / bpm
     acoes = []

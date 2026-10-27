@@ -21,7 +21,7 @@ EXATAMENTE este layout, estas regras e este processo. Não invente outro visual 
 | B | **Faixas moderno** (modelo Kevin "faixas" modernizado) | Embaixo: rótulo Poppins SemiBold espaçado + 2 faixas inclinadas 2° (1ª quase preta com letra branca, 2ª na cor do produto com letra escura, Poppins Bold) + subtítulo Poppins Regular; vídeo sobe 300 px para o produto ficar acima das faixas; CTA final = contorno fino branco com carrinho desenhado em traço + "Toque no carrinho" (sem pílula colorida, sem emoji) | `opcao_b_faixas` |
 | C | **Direto ao ponto** (persuasivo, para o público leigo) | Barrinhas de progresso no topo (como Stories); DM Serif Display branca centralizada com *itálico*; gancho em frase simples → "Olha o que *ela tem:*" + 3 itens com ✓ desenhado num círculo na cor do produto → onde usar → "Toque no carrinho *e veja o preço.*" + botão "Ver o preço" | `opcao_d` (sem `fonte`) |
 
-Em TODOS: assinatura **"Aguiiar Lar"** em Playfair itálico pequeno, branco translúcido, PARADA e centralizada no topo
+Em TODOS: assinatura **"Aguiiar Lar"** em Playfair itálico pequeno, branco translúcido; desde 27/10 (a dona) ela começa no topo e MUDA de lugar a cada 2,5-4 s (cantos livres, longe dos textos), para não dar para cortar; antes ficava PARADA e centralizada no topo
 (y≈30, acima das barrinhas e dos textos) — a dona, 2026-10-18 (antes ela passeava pelo meio; trocado a pedido dela). Color grade suave com grão fino. Cortes secos (nunca fusão/dupla exposição).
 
 ## 2. Regras que nunca mudam (detalhe em `agentes/regras_de_erros.md`)
