@@ -8,6 +8,7 @@
 set -u; F=$1; L=$(cd "$2" && pwd); P=$3; R=/home/user/fabrica-ugc; S=$R/video-teste/luxo/specs
 log(){ echo "$(date -u +%H:%M) $*" | tee -a $L/produzir.log; }
 cd $L
+python3 -c "import rembg" 2>/dev/null || pip install -q rembg onnxruntime >/dev/null 2>&1   # sem rembg o folha.py não mede a borda (27/10)
 sem_veredito(){ python3 -c "
 import json,os,sys
 r=[]

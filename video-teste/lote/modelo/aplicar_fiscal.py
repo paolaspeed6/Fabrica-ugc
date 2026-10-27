@@ -19,5 +19,7 @@ for p in sys.argv[1].split(','):
             rj.write_text(json.dumps(rr, ensure_ascii=False, indent=1))
             if c.get('fix_img'): c['estado'] = 'falhou'; falhou.append(f'{p}{k}')
             else: c['fix_img'] = v.get('corrigir_prompt', ''); refazer.append(f'{p}{k}')
+            fi.pop(k)  # a imagem refeita precisa de veredito novo (27/10: o antigo ficava e a refeita nunca era conferida)
     ff.write_text(json.dumps(f, ensure_ascii=False, indent=1))
+    (B / f'{p}-cenas/fiscal_imagem.json').write_text(json.dumps(fi, ensure_ascii=False, indent=1))
 print('refazer=' + ' '.join(refazer)); print('animar=' + ' '.join(animar)); print('falhou=' + ' '.join(falhou))
