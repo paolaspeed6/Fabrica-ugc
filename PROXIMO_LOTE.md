@@ -7,7 +7,9 @@ cria a pasta, fotos, 1 Fichador Sonnet, links/textos, `produzir.sh fase1` (segun
 
 Atualizado: 2026-10-27.
 
-- REGRA NOVA da dona (27/10 manhã): vídeos entram SEMPRE sozinhos em "Para postar" (`para_postar.py` + batch). Os 36 do lote A já estão lá.
+- Regra da dona (27/10 19h, confirmada): vídeos ficam na aba Conferir esperando o Ok dela; só o Ok leva para "Para postar". Nada de para_postar.py.
+- Conferência 27/10 (19h10): Ok em 2710A-01..07 e 2710B-01,02,04,05 (já em Para postar). 2710B-03 Mesa em L: `resgatar` com A, B e C
+  aceitas → processar no começo do próximo lote (CHECKLIST: resgatar). Os demais de A e B seguem pendentes para ela.
 ## Último lote: Lista 27/10 B — ENTREGUE (27/10, 13h UTC)
 - 14 produtos com A, B e C (42 vídeos) na aba Conferir da Postagens (2710B-01,02,04,05,07..13,15,16,17) + 2710B-03 (Mesa em L Lisboa)
   como "resgate" (as 3 cenas largas demais, 90-100% da largura, mesmo na refação). Drive "Fabrica Videos/2026-10-27".
