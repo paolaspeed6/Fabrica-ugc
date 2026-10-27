@@ -42,7 +42,7 @@ import json,os
 r=[]
 for p in '$P'.split(','):
     for c in json.load(open(p+'-ficha.json'))['cenarios']:
-        if c.get('estado')=='animar' and not os.path.exists(p+'-cenas/'+c['id']+'.mp4'): r.append(p+c['id'])
+        if c.get('estado')=='animar' and not os.path.exists(p+'-cenas/'+c['id']+'.mp4') and not os.path.exists(p+'-cenas/'+c['id']+'_fixa.mp4'): r.append(p+c['id'])
 print(','.join(r))")
 [ -n "$an" ] && python3 -I gerar.py clipes $an >> produzir.log 2>&1
 vs=$(python3 -c "
@@ -51,7 +51,7 @@ r=[]
 for p in '$P'.split(','):
     try: fv=json.load(open(p+'-cenas/fiscal_video.json'))
     except Exception: fv={}
-    r+=[p+c for c in 'ABC' if os.path.exists(p+'-cenas/'+c+'.mp4') and c not in fv]
+    r+=[p+c for c in 'ABC' if (os.path.exists(p+'-cenas/'+c+'.mp4') or os.path.exists(p+'-cenas/'+c+'_fixa.mp4')) and c not in fv]  # _fixa (FIXA=1) ficava sem Fiscal (27/10)
 print(','.join(r))")
 [ -n "$vs" ] && python3 -I fiscal_video_gemini.py $vs >> produzir.log 2>&1
 python3 -I aprovar.py $(echo $P | tr , ' ') >> produzir.log 2>&1

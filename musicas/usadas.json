@@ -1276,5 +1276,23 @@
 "conta": "shopee",
 "trilha": "calma_original_04_eletrico.wav",
 "quando": "2026-10-27 12:15"
+},
+{
+"video": "p135_a_umdia",
+"conta": "shopee",
+"trilha": "animada_04_rhodes_violao.wav",
+"quando": "2026-10-27 19:56"
+},
+{
+"video": "p135_b_faixas",
+"conta": "shopee",
+"trilha": "animada_06_violao_celesta.wav",
+"quando": "2026-10-27 19:56"
+},
+{
+"video": "p135_c_direto",
+"conta": "shopee",
+"trilha": "animada_11_piano_flauta.wav",
+"quando": "2026-10-27 19:56"
 }
 ]
