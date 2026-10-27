@@ -89,11 +89,14 @@ def soft_shadow(img, blur=14, alpha=120, dy=4):
     return out
 
 
-def text_block(lines, size, align='left', spacing=1.06, color=INK, base='serif', it='serif_it', track=0, shadow=True):
-    fr, fi = font(base, size), font(it, size)
+def text_block(lines, size, align='left', spacing=1.06, color=INK, base='serif', it='serif_it', track=0, shadow=True, maxw=None):
     def wlen(t, f):
         return f.getlength(t) + track * len(t)
-    widths = [sum(wlen(t, fi if i else fr) for t, i, _ in tokens(ln)) for ln in lines]
+    while True:  # encolhe até caber na largura da tela (a dona 26/10: letras grandes saindo da tela)
+        fr, fi = font(base, size), font(it, size)
+        widths = [sum(wlen(t, fi if i else fr) for t, i, _ in tokens(ln)) for ln in lines]
+        if not maxw or max(widths) <= maxw or size <= 24: break
+        size = int(size * 0.94)
     lh = int(size * spacing)
     pad = 40
     img = Image.new('RGBA', (int(max(widths)) + 2 * pad, lh * len(lines) + 2 * pad), (0, 0, 0, 0))
@@ -134,13 +137,14 @@ def _make(el):
     k = el['kind']; al = el.get('align', 'left')
     fb, fit = el.get('base', 'serif'), el.get('it', el.get('base_it', 'serif_it'))
     cor = tuple(el.get('color', INK)); sh = el.get('shadow', True)
+    x = el.get('x', 84); mw = el.get('maxw', W - 120 if x == 'c' else W - x - 60)
     if k == 'title':
-        return text_block(el['lines'], el.get('size', 118), al, el.get('spacing', 1.02), cor, fb, fit, el.get('track', 0), sh)
+        return text_block(el['lines'], el.get('size', 118), al, el.get('spacing', 1.02), cor, fb, fit, el.get('track', 0), sh, mw)
     if k == 'body':
-        return text_block(el['lines'], el.get('size', 88), al, el.get('spacing', 1.08), cor, fb, fit, el.get('track', 0), sh)
+        return text_block(el['lines'], el.get('size', 88), al, el.get('spacing', 1.08), cor, fb, fit, el.get('track', 0), sh, mw)
     if k == 'eyebrow':
         f = el.get('base', 'sans')
-        return text_block([l.upper() for l in el['lines']], el.get('size', 34), al, 1.6, cor, f, f, el.get('track', 11), sh)
+        return text_block([l.upper() for l in el['lines']], el.get('size', 34), al, 1.6, cor, f, f, el.get('track', 11), sh, mw)
     if k == 'button':  # CTA: 'solid' (cheio), 'outline' (contorno fino) ou 'link' (só texto sublinhado); ícone 'cart'/'arrow'/'down'
         f = font(el.get('base', 'pop_sb'), el.get('size', 46))
         txt = el['text']; h = el.get('h', 116); estilo = el.get('style', 'solid'); icon = el.get('icon', 'arrow')
