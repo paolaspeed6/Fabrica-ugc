@@ -1,0 +1,195 @@
+{
+ "narr": null,
+ "narr_at": 0.5,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/musicas/biblioteca/animada_01_rhodes_vibrafone.wav"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "contrast": 0.98,
+  "lift": 0.03,
+  "vign": 0.22,
+  "grain": 0.02,
+  "top": 0.3,
+  "warm_ramp": [
+   [
+    0,
+    0.0,
+    1.0
+   ],
+   [
+    15,
+    0.0,
+    1.0
+   ]
+  ]
+ },
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.0,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 2.6,
+   "dur": 0.3,
+   "z": [
+    1.06,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Impressão 3D"
+   ],
+   "t0": 0,
+   "t1": 2.9,
+   "y": 250
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Bico entupindo?",
+    "*Sem entupimento.*"
+   ],
+   "t0": 0,
+   "t1": 2.9,
+   "y": 300
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "PLA 1,75 mm"
+   ],
+   "t0": 3.2,
+   "t1": 5.5,
+   "y": 280,
+   "size": 84
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Até 300 mm/s"
+   ],
+   "t0": 5.699999999999999,
+   "t1": 8.1,
+   "y": 280,
+   "size": 84
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Tolerância de ±0,02 mm"
+   ],
+   "t0": 8.299999999999999,
+   "t1": 10.700000000000001,
+   "y": 280,
+   "size": 84
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 10.9,
+   "t1": 15,
+   "y": 250,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Compatível com",
+    "*várias marcas.*"
+   ],
+   "t0": 11.15,
+   "t1": 15,
+   "y": 300,
+   "out": false,
+   "anim": "wipe"
+  },
+  {
+   "kind": "line",
+   "len": 220,
+   "t0": 11.5,
+   "t1": 15,
+   "y": 574,
+   "anim": "draw",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p141-filamento-pla-soleyin-branco/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p141-filamento-pla-soleyin-branco/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p141-filamento-pla-soleyin-branco/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p141-filamento-pla-soleyin-branco/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p141-filamento-pla-soleyin-branco/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p141-filamento-pla-soleyin-branco/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p141-filamento-pla-soleyin-branco/out2/p141_a_umdia.mp4",
+ "dur": 15.0,
+ "natural": 1,
+ "trans": [
+  [
+   3.0,
+   "whip"
+  ],
+  [
+   5.6,
+   "zoom"
+  ],
+  [
+   8.2,
+   "whip"
+  ],
+  [
+   10.8,
+   "zoom"
+  ]
+ ]
+}

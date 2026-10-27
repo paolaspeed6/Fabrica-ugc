@@ -5,12 +5,25 @@ Mensagem: "Lote do dia: 15 produtos da Fila, teto US$ 8." O Claude: lê só este
 cria a pasta, fotos, 1 Fichador Sonnet, links/textos, `produzir.sh fase1` (segundo plano), 1 Fiscal Sonnet nas folhas,
 `produzir.sh fase2` (segundo plano), Conferência + Tinder + commit. Cerca de 10 a 15 respostas do Claude por lote.
 
-Atualizado: 2026-10-27.
+Atualizado: 2026-10-27 (21h50 UTC).
 
 - Regra da dona (27/10 19h, confirmada): vídeos ficam na aba Conferir esperando o Ok dela; só o Ok leva para "Para postar". Nada de para_postar.py.
-- Conferência 27/10 (19h10): Ok em 2710A-01..07 e 2710B-01,02,04,05 (já em Para postar). 2710B-03 Mesa em L: `resgatar` com A, B e C
-  aceitas → processar no começo do próximo lote (CHECKLIST: resgatar). Os demais de A e B seguem pendentes para ela.
-## Último lote: Lista 27/10 B — ENTREGUE (27/10, 13h UTC)
+- 2710B-03 Mesa em L: resgate PROCESSADO (27/10 21h): as 3 imagens aceitas foram recuperadas do histórico da WaveSpeed
+  (POST https://api.wavespeed.ai/api/v3/predictions {"page":1,"page_size":100} lista as gerações com o link do resultado; grátis),
+  animadas com câmera fixa (FIXA=1, US$ 0,30) e voltaram à aba Conferir como pendente com A, B e C. Tinder: pronto.
+## Último lote: Lista 27/10 C — ENTREGUE (27/10, 21h50 UTC)
+- 14 produtos com A, B e C (42 vídeos) na aba Conferir (2710C-02..13, 15, 16) + 2710C-01 Kit 2 Espreguiçadeiras como "resgate"
+  (91-96% da largura nas 2 rodadas). Drive "Fabrica Videos/2026-10-27". Tinder: 14 em `pronto`; p01 segue `produzindo`.
+  Gasto US$ 5,96 (52 imagens + 39 clipes) + US$ 0,30 do resgate da Mesa = US$ 6,26 de 8.
+- Pulado pelo Orquestrador: Aparador Industrial 160 cm 58268219197 (nenhuma foto limpa; garrafas e taças nas fotos 01/02; status
+  segue `aprovado`). Entrou Poltrona Bouclé Opally 58265861538 (p16).
+- Fiscal Sonnet pegou p06C (LED inventado) e p07C (vaso parecendo garrafa); cena liberada e depois reprovada fica "falhou" (sem 3ª imagem).
+- A dica "whole X under 40% of frame width" NÃO segurou o kit comprido de espreguiçadeiras (Nano Banana enche o quadro).
+  Produto comprido deitado ainda é risco: próximo passo a testar = cena vista de ponta/diagonal ou outpaint.
+- Consertos: gerar.py FIXA=1 era ignorado (2 "def clipe"); produzir.sh não via clipe `_fixa` (sem Fiscal de vídeo).
+- Atenção: p07 e p09 são o mesmo filamento Soleyin Ultra PLA branco de 2 lojas (vídeos parecidos); títulos dizem 12 kg mas é 1 carretel (textos sem peso).
+- Fila: próximos aprovados a partir de 58218778773 (Cadeira de Balanço Bebê) e 56166165783.
+## Lote anterior: Lista 27/10 B — ENTREGUE (27/10, 13h UTC)
 - 14 produtos com A, B e C (42 vídeos) na aba Conferir da Postagens (2710B-01,02,04,05,07..13,15,16,17) + 2710B-03 (Mesa em L Lisboa)
   como "resgate" (as 3 cenas largas demais, 90-100% da largura, mesmo na refação). Drive "Fabrica Videos/2026-10-27".
   Tinder: 14 em `pronto`; Mesa em L segue `produzindo` (resgate). Gasto US$ 5,58 (teto 8): 60 imagens + 32 clipes.
@@ -22,7 +35,7 @@ Atualizado: 2026-10-27.
   "whole X under 40% of frame width", piso vazio em volta.
 - Fila: próximos aprovados a partir de 58212612080 (decidido 25/10 02:50) e 58255199042.
 
-## Lote anterior: Lista 27/10 A — ENTREGUE (27/10, 11h20 UTC)
+## Lote mais antigo: Lista 27/10 A — ENTREGUE (27/10, 11h20 UTC)
 - 12 produtos com A, B e C (36 vídeos) na aba Conferir da Postagens (2710A-01..11, 14) + 2710A-12 (Caçarolas) como "resgate".
   Drive "Fabrica Videos/2026-10-27". Tinder: 12 em `pronto`; p12 segue `produzindo` (resgate). Gasto US$ 4,98 (teto 8).
 - Pulados pelo Fichador (sem gasto, status no Tinder intocado = `aprovado`): Poltrona Orgânica Redonda (foto 01 de outro modelo)

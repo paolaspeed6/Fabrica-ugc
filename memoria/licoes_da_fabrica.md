@@ -124,3 +124,4 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 ## 27/10 (a dona)
 - Músicas mais animadas e sofisticadas, menos melancólicas: biblioteca = 12 trilhas animadas (gerador/animadas.py); calmas fora do rodízio.
 - "Aguiiar Lar" com a mesma fonte, mas mudando de lugar no vídeo (topo e cantos livres, a cada 2,5-4 s) para não dar para cortar só a faixa de cima (build_lux.py _marca_plano).
+- 27/10 C: histórico da WaveSpeed (POST /api/v3/predictions) devolve as imagens já pagas: resgate sem pagar de novo. Kit comprido (espreguiçadeiras) sai largo mesmo pedindo 40% da largura.
