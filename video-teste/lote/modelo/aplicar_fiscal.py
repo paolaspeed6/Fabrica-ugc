@@ -14,6 +14,9 @@ for p in sys.argv[1].split(','):
             c['estado'] = 'animar'; animar.append(f'{p}{k}')
         else:
             n = len(list((B / 'rejeitadas').glob(f'{p}_{k}_v*.jpg'))) + 1; img.rename(B / f'rejeitadas/{p}_{k}_v{n}.jpg')
+            rj = B / f'{p}-cenas/reprovacoes.json'; rr = json.loads(rj.read_text()) if rj.exists() else []  # motivo vai para a dona na Conferir (27/10)
+            rr.append(dict(cena=k, etapa=f'imagem {n}ª', motivo=(v.get('provas') or v.get('corrigir_prompt') or '')[:300], fiscal=v.get('fiscal', '')))
+            rj.write_text(json.dumps(rr, ensure_ascii=False, indent=1))
             if c.get('fix_img'): c['estado'] = 'falhou'; falhou.append(f'{p}{k}')
             else: c['fix_img'] = v.get('corrigir_prompt', ''); refazer.append(f'{p}{k}')
     ff.write_text(json.dumps(f, ensure_ascii=False, indent=1))

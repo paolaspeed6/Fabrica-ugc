@@ -274,3 +274,6 @@ texto (título, corpo, sobretítulo, botão, faixa, item) e encolhe até caber c
 17 vídeos B foram reprovados no auditor (cena quase parada) e sumiram da Postagens; o p34 ficou sem cena aprovada e foi descartado
 sem ela ver (3 gerações pagas). Agora: B com zoom 1,12; o entregar.sh refaz a versão reprovada com zoom 1,18 e 1,26 e, se ainda
 falhar, entrega com `aviso`. Produto sem cena aprovada vira cartão "resgate" na aba Conferir (descartadas.py) com as cenas reprovadas.
+Refazer versão = só EDIÇÃO (render grátis, zoom maior). Nunca gerar imagem/clipe além da 1 refação: reprovou 2x = entender a causa
+(motivo em pNN-cenas/reprovacoes.json, que vai para a dona na aba Conferir) e corrigir a ficha/prompt para os próximos lotes, não gerar de novo.
+O resgate usa cenas já geradas (custo zero).

@@ -125,11 +125,18 @@ async function aprovar(c){
   await db.doc("conferir/"+c._id).update({status:"ok",decidido_em:new Date().toISOString()});
 }
 // Resgate (a dona 27/10): produto sem cena aprovada; ela olha as cenas reprovadas antes de perder as 3 gerações
+// motivo de cada cena reprovada (a dona 27/10: "me traga junto com o motivo")
+function listaReprov(c){
+  const r=c.reprovadas||[]; const box=el("details","nota");
+  box.append(el("summary",null,r.length?`${r.length} reprovação(ões) de cena — ver motivos`:"Nenhuma cena reprovada"));
+  r.forEach(x=>box.append(el("div",null,`Cena ${x.cena} · ${x.etapa}: ${x.motivo}`))); return box;
+}
 function cardResgate(c){
   const v=el("article","conf"); const im=el("img"); if(c.poster) im.src=c.poster; im.alt=""; v.append(im);
   const info=el("div","info"); const t=el("div","tit",c.produto); t.append(el("small",null,`${c.lote||""} · nenhuma cena passou na fiscal`)); info.append(t);
   info.append(el("div","aviso","Antes de descartar: veja as cenas reprovadas. Se alguma servir, marque e toque em Usar."));
   if(c.link_anuncio){ const a=el("a","b","Anúncio"); a.href=c.link_anuncio; a.target="_blank"; a.rel="noopener"; info.append(a); }
+  info.append(listaReprov(c));
   v.append(info);
   if(c.status!=="pendente"){ v.append(el("div","nota",c.status==="resgatar"?"O Claude vai montar os vídeos com: "+(c.escolha||[]).join(", "):"Produto descartado.")); return v; }
   const sel=new Set(); const g=el("div","cenas");
@@ -152,6 +159,7 @@ function cardConferir(c){
   if(c.link_anuncio){ const a=el("a","b","Anúncio"); a.href=c.link_anuncio; a.target="_blank"; a.rel="noopener"; bs.append(a); }
   info.append(bs);
   if(c.aviso) info.append(el("div","aviso","Atenção: "+c.aviso));
+  info.append(listaReprov(c));
   if(c.status==="editar"||c.status==="editando"){ info.append(el("div","nota","Em edição: "+(c.nota||""))); v.append(info); return v; }
   const ok=el("button","b postei","✓ Ok, pode postar"); const ed=el("button","b editar","Pedir edição");
   const tx=el("textarea"); tx.placeholder="O que mudar (vale para o produto)"; tx.hidden=true;

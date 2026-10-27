@@ -6,6 +6,8 @@ Depois: ArtifactData batch (set, coleção "conferir", doc_id = nome do arquivo 
 Ela marca as cenas e toca "Usar estas cenas" (status resgatar, campo escolha) ou "Descartar produto" (status descartado)."""
 import base64, json, shutil, subprocess, sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from reprovadas import reprovadas
 B = Path(__file__).resolve().parent
 nome_lote, dia = sys.argv[1], sys.argv[2]
 pre = B.name.replace('lista', '').upper()
@@ -39,6 +41,7 @@ for k in so:
     if not cenas: continue
     doc = dict(tipo='resgate', lote=nome_lote, dia=dia, ordem=int(nn), n=int(nn), produto=t['nome'], link_anuncio=LINKS.get(nn, ''),
                poster=cenas[0]['poster'], cenas=cenas, status='pendente', processado=False)
+    doc['reprovadas'] = reprovadas(B, k)
     (out / f'{pre}-{nn}.json').write_text(json.dumps(doc, ensure_ascii=False)); print(f'{pre}-{nn}', t['nome'], len(cenas), 'cenas')
 if any(env.glob('*.mp4')):
     subprocess.run([sys.executable, str(B.parents[1] / 'drive_backup.py'), str(env), '--dia', f'{dia}/descartadas'], check=True)

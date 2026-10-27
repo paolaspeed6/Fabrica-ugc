@@ -6,6 +6,8 @@ A dona confere na aba "Conferir" da Postagens: Ok cria sozinho os posts (campo p
 uso: python3 -I conferencia.py "Lista 24/10 A" 2026-10-24"""
 import base64, json, subprocess, sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from reprovadas import reprovadas
 B = Path(__file__).resolve().parent
 nome_lote, dia = sys.argv[1], sys.argv[2]
 pre = B.name.replace('lista', '').upper()
@@ -28,6 +30,7 @@ for k, t in sorted(T.items()):
         return 'data:image/jpeg;base64,' + base64.b64encode(j).decode()
     av = json.loads((B / 'avisos.json').read_text()).get(k) if (B / 'avisos.json').exists() else None
     if av: doc['aviso'] = '; '.join(f'{v}: {m}' for v, m in av.items())  # versão que passou com defeito do auditor: a dona decide
+    doc['reprovadas'] = reprovadas(B, k)
     doc['posts'] = {f[:-4]: dict(poster=capa(f), produto=t['nome'], versao=f[-5] + ' · ' + {'A': 'Um dia com ela', 'B': 'Faixas', 'C': 'Direto ao ponto'}[f[-5]], conta='Shopee Vídeo', legenda=t.get('leg_' + f[-5].lower(), ''),
                                  link_produto=(t.get('links') or {}).get(f[-5].lower(), ''), drive_url=drive[f], dia=dia, ordem=int(nn) * 10 + 'ABC'.index(f[-5]))
                     for f in sorted(drive) if f.startswith(f'{pre}_{nn}_') and f[-6:] in ('_A.mp4', '_B.mp4', '_C.mp4') and (B / 'final' / f).exists()}
