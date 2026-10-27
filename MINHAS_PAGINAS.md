@@ -27,3 +27,5 @@
 - Lote 11: https://claude.ai/artifact/BZV6R6bJVRuncJvHLYp7pi
 - Lote 12: https://claude.ai/artifact/2iNpakQfG6L5naxkTiZ6wL
 - Teste criado do zero (24/10, banquetas e bicicleta): https://claude.ai/artifact/HEGk1fDqtGvBEuGGHCsZzt
+
+- 27/10: a conferência dos vídeos agora é a aba "Conferir" da Postagens (https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt). A Conferência antiga fica só como histórico.

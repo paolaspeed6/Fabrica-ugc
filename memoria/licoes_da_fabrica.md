@@ -112,3 +112,7 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 - O container é reclamado quando a conversa fica parada: processo solto morre. Durante render longo, manter um Monitor ligado (30 min, re-armar) na conversa.
 - Apagar trabalhos/*/out2/*.video.mp4 depois de cada render (enchem o disco).
 - Auditor por vídeo: 1 vídeo reprovado não barra os outros 2 do produto.
+
+## 2026-10-27 Conferência dentro da Postagens (a dona: "tenha certeza que não vou precisar falar sobre isso novamente")
+- A dona confere na aba "Conferir" da página Postagens. Ok = os vídeos do produto vão sozinhos para "Para postar" (a página grava os posts). Pedir edição = status `editar` + nota; o Claude refaz no começo da conversa seguinte e grava de novo como `pendente`.
+- A página Conferência antiga não recebe mais lotes. Nunca gravar posts à mão um por um nem esperar autorização produto a produto.

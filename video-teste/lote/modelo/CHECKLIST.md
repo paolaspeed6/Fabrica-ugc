@@ -13,7 +13,7 @@ Geração + edição + entrega num comando (a dona 27/10): Bash em segundo plano
 - [ ] `TETO_USD=<teto> bash produzir.sh fase1 <lote> p01,...` (imagens, borda, Gemini, 1 refação)
 - [ ] 1 agente Sonnet nas folhas (PROMPT_FISCAL_SONNET.md)
 - [ ] `TETO_USD=<teto> bash produzir.sh fase2 <lote> p01,... <PRE> <AAAA-MM-DD> "Lista DD/MM X"` (clipes, Fiscal de vídeo, edição, render, Drive, conferir_docs)
-- [ ] ArtifactData batch na Conferência + Tinder `pronto` + commit — e pronto
+- [ ] ArtifactData batch dos conferir_docs na coleção `conferir` da página POSTAGENS (aba Conferir) + Tinder `pronto` + commit — e pronto
 O que o produzir.sh faz por dentro (só para conferir/consertar):
 - [ ] `TETO_USD=<teto> python3 -I gerar.py imagens p01,...`
 - [ ] `python3 -I folha.py p01,...` (grátis: mede a borda e reprova sozinho; monta pNN-cenas/folha.jpg)
@@ -34,9 +34,9 @@ Entrega (NUNCA pular; a dona 2026-10-24)
 - [ ] Finais em `<lote>/final/DDMMX_NN_slug_A|B|C.mp4`
 - [ ] Drive: `python3 video-teste/drive_backup.py <lote>/final --dia AAAA-MM-DD` (grava drive_links.json)
 - [ ] `bash video-teste/lote/entregar.sh <lote> <PREFIXO> <dia> "Lista DD/MM X" 15 pNN ...` (auditor + Drive + conferir_docs, de 15 em 15)
-- [ ] ArtifactData batch `conferir_docs/*.json` na coleção `conferir` da Conferência
+- [ ] ArtifactData batch `conferir_docs/*.json` na coleção `conferir` da página POSTAGENS (a dona 27/10: o Ok dela cria os posts sozinho)
 - [ ] Tinder: status `pronto`
 - [ ] Jogo: metas, Mural (o que aconteceu no lote) e Gasto
 - [ ] Commit e push (mp4 finais em trabalhos/, spec, desperdícios, defeitos, vistos)
 - [ ] (opcional) página com botão de baixar
-- [ ] Depois da conferência dela: processar decisões, Postagens (agentes/postagens_formato.md), Melhorador
+- [ ] Começo do lote seguinte: ler `conferir` da Postagens com status `editar` (nota dela), refazer, gravar de novo como `pendente`; Melhorador
