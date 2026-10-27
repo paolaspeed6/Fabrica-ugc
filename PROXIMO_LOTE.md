@@ -21,9 +21,10 @@ Atualizado: 2026-10-26.
 - 26: "surgiu uma imagem do nada, quero vídeo fluido" → achar o corte/tomada com salto e refazer a montagem (grátis).
 - A conversa do comentário (só app, sem chaves nem pasta do lote) não conseguiu processar; as decisões seguem salvas na página.
 
-## Refação da Conferência 25/10 A (27/10) — rodando
-- 22 produtos (21 letras grandes + 26 solda) re-renderizados por `lista2510a/editar.sh` (log editar.log). No fim: ArtifactData
-  dos conferir_docs novos (status pendente) — os 19 ok já estão processado=true. Os 19 ok → Postagens.
+## Lista 25/10 A — situação em 27/10
+- Postagens (Para postar): 19 produtos aprovados, cada um com A, B e C (57 vídeos).
+- Conferência (https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt → "Conferência →"): 22 refeitos (letras + solda) com A/B/C, pendentes;
+  2510A-34 (Kit 4 Cadeiras) como "resgate". Ao abrir a próxima conversa: ler `conferir` com status editar/resgatar e processar.
 
 ## Foto colada (produto complexo, K14) — só quando a dona pedir (27/10)
 `video-teste/foto_colada/colar_auto.sh <foto01> <video> <a|b|c>` cola o cartão num canto (A/C embaixo à direita, B em cima).
