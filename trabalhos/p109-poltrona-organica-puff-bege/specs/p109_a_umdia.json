@@ -1,0 +1,195 @@
+{
+ "narr": null,
+ "narr_at": 0.5,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/musicas/biblioteca/calma_original_09_marimba.wav"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "contrast": 0.98,
+  "lift": 0.03,
+  "vign": 0.22,
+  "grain": 0.02,
+  "top": 0.3,
+  "warm_ramp": [
+   [
+    0,
+    0.0,
+    1.0
+   ],
+   [
+    15,
+    0.0,
+    1.0
+   ]
+  ]
+ },
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.0,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 2.6,
+   "dur": 0.3,
+   "z": [
+    1.06,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Canto de descanso"
+   ],
+   "t0": 0,
+   "t1": 2.9,
+   "y": 250
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Falta um cantinho",
+    "pra *descansar?*"
+   ],
+   "t0": 0,
+   "t1": 2.9,
+   "y": 300
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Bouclê bege macio"
+   ],
+   "t0": 3.2,
+   "t1": 5.5,
+   "y": 280,
+   "size": 84
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Almofada de brinde"
+   ],
+   "t0": 5.699999999999999,
+   "t1": 8.1,
+   "y": 280,
+   "size": 84
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Pés em madeira"
+   ],
+   "t0": 8.299999999999999,
+   "t1": 10.700000000000001,
+   "y": 280,
+   "size": 84
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 10.9,
+   "t1": 15,
+   "y": 250,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Poltrona",
+    "*+ puff.*"
+   ],
+   "t0": 11.15,
+   "t1": 15,
+   "y": 300,
+   "out": false,
+   "anim": "wipe"
+  },
+  {
+   "kind": "line",
+   "len": 220,
+   "t0": 11.5,
+   "t1": 15,
+   "y": 574,
+   "anim": "draw",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p109-poltrona-organica-puff-bege/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p109-poltrona-organica-puff-bege/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p109-poltrona-organica-puff-bege/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p109-poltrona-organica-puff-bege/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p109-poltrona-organica-puff-bege/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p109-poltrona-organica-puff-bege/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p109-poltrona-organica-puff-bege/out2/p109_a_umdia.mp4",
+ "dur": 15.0,
+ "natural": 1,
+ "trans": [
+  [
+   3.0,
+   "whip"
+  ],
+  [
+   5.6,
+   "zoom"
+  ],
+  [
+   8.2,
+   "whip"
+  ],
+  [
+   10.8,
+   "zoom"
+  ]
+ ]
+}

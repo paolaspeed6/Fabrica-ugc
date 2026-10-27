@@ -5,9 +5,21 @@ Mensagem: "Lote do dia: 15 produtos da Fila, teto US$ 8." O Claude: lê só este
 cria a pasta, fotos, 1 Fichador Sonnet, links/textos, `produzir.sh fase1` (segundo plano), 1 Fiscal Sonnet nas folhas,
 `produzir.sh fase2` (segundo plano), Conferência + Tinder + commit. Cerca de 10 a 15 respostas do Claude por lote.
 
-Atualizado: 2026-10-26.
+Atualizado: 2026-10-27.
 
-## Último lote: Lista 25/10 A — ENTREGUE (26/10, 23h)
+## Último lote: Lista 27/10 A — ENTREGUE (27/10, 11h20 UTC)
+- 12 produtos com A, B e C (36 vídeos) na aba Conferir da Postagens (2710A-01..11, 14) + 2710A-12 (Caçarolas) como "resgate".
+  Drive "Fabrica Videos/2026-10-27". Tinder: 12 em `pronto`; p12 segue `produzindo` (resgate). Gasto US$ 4,98 (teto 8).
+- Pulados pelo Fichador (sem gasto, status no Tinder intocado = `aprovado`): Poltrona Orgânica Redonda (foto 01 de outro modelo)
+  e Kit Halteres 30 kg (foto 01 colagem). Bicicleta ergométrica silenciosa 58268085829 saiu da Shopee (404).
+- Consertos: produzir.sh instala rembg (sem ele a borda não era medida); aplicar_fiscal apaga o veredito velho da cena refeita.
+- Fiscal Sonnet x Opus (p05, p09, p11): fora de borda, a Sonnet achou o mesmo que a Opus (e mais: abajur aceso, armário espelhado).
+  As 2 que só a Opus pegou (p05B, p09B) eram borda larga, que o folha.py reprova sozinho quando o rembg está instalado.
+  Decisão: manter a Fiscal Sonnet, mas só depois do folha.py (conferir que pNN-cenas/folha.jpg existe).
+- Atenção: produto pequeno (panelas) e kits largos ainda saem largos demais mesmo na refação; Fichador deve pedir câmera mais longe.
+- Nota: a legenda B do balcão (05) diz "Pia e cooktop" (vem do título "p/Pia/Cooktop"); se a dona achar que confunde, trocar.
+
+## Lote anterior: Lista 25/10 A — ENTREGUE (26/10, 23h)
 - 41 produtos na Conferência (106 vídeos: 41 A, 24 B, 41 C; 17 B reprovados no auditor por cena quase parada) e no Drive
   "Fabrica Videos/2026-10-26". Tinder: os 41 em `pronto`. Gasto US$ 18,69. Jogo: retomar (metas, mural, gasto) e perguntar à dona.
 - No Drive ficaram cópias antigas cortadas (disco cheio) de 2510A_01 A/B, 25 A/B/C, 41 C, 43 A/B/C: a Conferência aponta para as boas.
