@@ -115,7 +115,7 @@ async function voltouEstoque(e){
 }
 // Conferência dentro da Postagens (a dona, 27/10): Ok libera os vídeos do produto em "Para postar" na hora, sem o Claude
 async function aprovar(c){
-  for(const [id,x] of Object.entries(c.posts||{})) await db.doc("posts/"+id).set({...x,poster:c.poster||"",status:"pronto"});
+  for(const [id,x] of Object.entries(c.posts||{})) await db.doc("posts/"+id).set({...x,poster:x.poster||c.poster||"",status:"pronto"});
   await db.doc("conferir/"+c._id).update({status:"ok",decidido_em:new Date().toISOString()});
 }
 function cardConferir(c){
