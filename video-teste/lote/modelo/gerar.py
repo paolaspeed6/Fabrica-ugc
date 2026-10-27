@@ -69,7 +69,14 @@ def vdescr(f):
         s = re.sub(r'[;,]?\s*not visible in the photos', '', s, flags=re.I)
         return re.sub(r'\s{2,}', ' ', s).strip()
     partes = [limpa(x) for x in partes if not re.match(r'\s*(layout|orientation|positions checked|proportions)', x, re.I)]
-    return f"The product: {j(f['nome_curto'])}. Items: {j([limpa(x) for x in f['itens']])}. Parts: {j(partes)}."
+    # Lista 25/10 A p34 (kit 4 cadeiras): a lista de peças de UMA cadeira, em detalhe, + a nota "Photo 01 is a collage" fez o
+    # Seedance cortar para uma cadeira enorme no meio da tela nos 3 clipes (e já tinha feito no p01/p04 da 24/10 A). A imagem de
+    # partida já mostra o produto: no vídeo vão só nome, itens e contagem, e a tomada aberta fica travada.
+    itens = [limpa(x) for x in f['itens'] if not re.search(r'collage|photo\s*\d|montagem', x, re.I)]
+    kit = len(itens) > 1 or any(re.match(r'\s*([2-9]|\d{2})\b', x) for x in itens)  # "4 aluminium armchairs" = kit; "50-litre oven" não
+    trava = (" All the pieces stay together in the same wide framing for the whole clip; never a new shot, never a close-up of a single piece."
+             if kit else " The whole product stays in the same wide framing for the whole clip; never a new shot.")
+    return f"The product: {j(f['nome_curto'])}. Items: {j(itens)}.{trava}"
 
 
 def cena(f, c): return next(x for x in f["cenarios"] if x["id"] == c)

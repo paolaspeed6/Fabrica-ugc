@@ -277,3 +277,10 @@ falhar, entrega com `aviso`. Produto sem cena aprovada vira cartão "resgate" na
 Refazer versão = só EDIÇÃO (render grátis, zoom maior). Nunca gerar imagem/clipe além da 1 refação: reprovou 2x = entender a causa
 (motivo em pNN-cenas/reprovacoes.json, que vai para a dona na aba Conferir) e corrigir a ficha/prompt para os próximos lotes, não gerar de novo.
 O resgate usa cenas já geradas (custo zero).
+
+## K18. Kit: o vídeo corta para uma peça gigante no meio da tela (a dona, 27/10, Lista 25/10 A p34 Kit 4 Cadeiras)
+Os 3 clipes começavam bem e no 1º-2º segundo surgia UMA cadeira enorme ocupando a tela. Causa: o prompt de VÍDEO levava a lista de
+peças de UMA cadeira em detalhe (tubo, encosto, ripas, rebites) + a nota interna "Photo 01 is a collage"; o Seedance lê isso como
+pedido de close/novo plano (o mesmo aconteceu no p01 A e p04 B da 24/10 A). Agora o `vdescr()` do gerar.py manda no vídeo só nome +
+itens (sem peças, sem nota de foto) e trava a tomada: "same wide framing for the whole clip; never a new shot, never a close-up of a
+single piece". Peças em detalhe só no prompt de IMAGEM. No 1º lote com a mudança, conferir na folha se algum produto passou a deformar.

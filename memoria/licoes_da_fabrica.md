@@ -116,3 +116,5 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 ## 2026-10-27 Conferência dentro da Postagens (a dona: "tenha certeza que não vou precisar falar sobre isso novamente")
 - A dona confere na aba "Conferir" da página Postagens. Ok = os vídeos do produto vão sozinhos para "Para postar" (a página grava os posts). Pedir edição = status `editar` + nota; o Claude refaz no começo da conversa seguinte e grava de novo como `pendente`.
 - A página Conferência antiga não recebe mais lotes. Nunca gravar posts à mão um por um nem esperar autorização produto a produto.
+
+- 27/10: corte para peça gigante em kit = prompt de vídeo com detalhe de UMA peça (regra K18). Vídeo só com nome + itens + tomada travada.
