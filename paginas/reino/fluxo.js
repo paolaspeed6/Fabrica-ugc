@@ -14,7 +14,7 @@ window.FLUXO = (() => {
   const L = {
     tinder: "https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni",
     post: "https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt",
-    conf: "https://claude.ai/artifact/6An95qPxcauMJb3p1umWXk"
+    conf: "https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt"  // 27/10: a Conferência mora no mesmo endereço da Postagens (botão "Conferência →")
   };
 
   const etapas = [
@@ -42,7 +42,7 @@ window.FLUXO = (() => {
       faz: "Compara cada imagem com a ficha e as fotos do anúncio. Reprova cor, letra, tamanho errado ou peça fora do lugar antes de gastar com vídeo.",
       entra: "Imagens", sai: "Aprovada ou reprovada", custo: "Grátis" },
     { id: "camera", nome: "Câmera", papel: "Animador", quem: "claude",
-      faz: "Câmera andando devagar, avanço curto, produto parado em tamanho real. O comando leva só nome, itens, peças e escala.",
+      faz: "Câmera andando devagar, avanço curto, produto parado em tamanho real. O comando leva só nome e itens, com a tomada aberta travada: sem novo plano, sem close de uma peça só (regra K18).",
       entra: "Imagens aprovadas", sai: "Cenas em vídeo", custo: "Seedance US$ 0,10 por 5 s; Veo 3.1 Lite US$ 0,20 por 4 s só se precisar" },
     { id: "fiscal_video", nome: "Fiscal de vídeo", papel: "Trava 3", quem: "claude",
       faz: "Assiste cada cena e corta trechos onde o produto escorrega, gira, derrete, muda de peça, ganha objeto novo ou aparece mão. Se não salvar, pede para refazer só uma vez.",
@@ -51,8 +51,8 @@ window.FLUXO = (() => {
       faz: "Monta os vídeos de 15 s nos seus 3 layouts: A Um dia com ela, B Faixas moderno, C Direto ao ponto. Estilo natural sem filtro, transições whip e zoom, só os melhores momentos, sem voz e com música calma. Aguiiar Lar fixo no topo. Depois: Drive e Conferência, sempre.",
       entra: "Trechos limpos + roteiro", sai: "3 vídeos prontos por produto", custo: "Grátis" },
     { id: "conferencia", nome: "Conferência", papel: "Você confere", quem: "voce",
-      faz: "Uma página só com o que falta conferir, de todos os lotes. Cada produto mostra o vídeo A. Toque OK, Editar, Descartar ou Esgotado e já fica salvo. Depois toque Avisar o Claude.",
-      entra: "Vídeos prontos", sai: "OK vai para Postagens. Editar volta corrigido. Descartar volta para a Fila", custo: "Grátis",
+      faz: "Uma página só com o que falta conferir. Cada produto mostra A, B e C e os motivos das cenas reprovadas. Ok já manda os 3 vídeos para Postagens, sozinho. Pedir edição: o Claude refaz na próxima conversa. Produto sem cena aprovada vem como resgate para você escolher uma cena.",
+      entra: "Vídeos prontos", sai: "Ok vai para Postagens na hora. Editar volta corrigido. Resgate aproveita cena já paga", custo: "Grátis",
       acao: [["Abrir Conferência", L.conf]], comando: "Terminei a Conferência, processa" },
     { id: "postagens", nome: "Postagens", papel: "Você posta", quem: "voce",
       faz: "Os vídeos aprovados vão para o Drive e para a página Postagens. Lá você salva o vídeo, copia a legenda, posta na Shopee e toca em Postei. Produto que esgotou fica separado.",
@@ -98,14 +98,14 @@ window.FLUXO = (() => {
     { id: "tinder", n: "Escolher produtos", agora: "Quando a varredura trouxer cartões",
       t: "Arraste para a direita o que merece vídeo. Com 15 na Fila, eu te mando o custo do lote e espero o seu OK.", acao: [["Abrir Tinder", L.tinder]] },
     { id: "conferencia", n: "Conferir vídeos", agora: "Quando eu avisar que um lote ficou pronto",
-      t: "Veja o vídeo A de cada produto e toque OK, Editar, Descartar ou Esgotado. No fim, toque Avisar o Claude.", acao: [["Abrir Conferência", L.conf]] },
+      t: "Abra a página e toque em Conferência →. Veja A, B e C e toque Ok (vai direto para Postagens) ou Pedir edição.", acao: [["Abrir Conferência", L.conf]] },
     { id: "postagens", n: "Postar na Shopee", agora: "Depois do seu OK na Conferência",
       t: "Salve o vídeo, copie a legenda, poste no app e toque Postei.", acao: [["Abrir Postagens", L.post]] }
   ];
 
   const comandos = [
     ["Pode produzir o lote da Fila", "libera o próximo lote"],
-    ["Terminei a Conferência, processa", "OK vai para Postagens"],
+    ["Processa as edições da Conferência", "refaz o que você pediu"],
     ["Roda a varredura do Tinder agora", "cartões novos"],
     ["Quanto gastei até agora?", "placar do dinheiro"],
     ["Atualiza o reino", "estados, metas e mural"],
@@ -114,7 +114,7 @@ window.FLUXO = (() => {
 
   const paginas = [
     ["Tinder", "escolher produtos", L.tinder],
-    ["Conferência", "OK, Editar, Descartar, Esgotado", L.conf],
+    ["Conferência", "Ok, Pedir edição, Resgate", L.conf],
     ["Postagens", "postar e ver esgotados", L.post]
   ];
 
@@ -124,7 +124,7 @@ window.FLUXO = (() => {
     "Só qualidades reais do anúncio. Sem prazo de entrega, sem %, sem nota exata, sem bebida.",
     "Produto inteiro na capa, sem mão. Cada vídeo começa com um take diferente.",
     "15 segundos, estilo natural sem filtro, sem voz e com música calma. \"Aguiiar Lar\" fixo no topo.",
-    "Vídeo que não dá pra postar vira perda no registro e volta para a Fila."
+    "Todo produto sai com A, B e C. Só 1 refação paga por cena: reprovou 2x, entender o motivo, nunca gerar em loop."
   ];
 
   /* Números da regra de dinheiro (CLAUDE.md). Mudou lá, mude aqui. */
