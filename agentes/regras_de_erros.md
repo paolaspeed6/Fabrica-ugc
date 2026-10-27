@@ -269,3 +269,8 @@ Regra: o prompt de vídeo tira parênteses dos itens, frases "not sold / no tabl
 ## K16. Texto nunca sai da tela (a dona, 26/10, Conferência do 25/10 A: 21 vídeos com letras grandes demais)
 Os tamanhos de fonte dos layouts são fixos e textos longos do Fichador passavam da largura. O `build_lux.py` agora mede cada
 texto (título, corpo, sobretítulo, botão, faixa, item) e encolhe até caber com 56 px de margem. Não desligar; conferir a capa e a folha.
+
+## K17. Nunca faltar versão nem descartar produto sem a dona ver (a dona, 27/10, lote 25/10 A)
+17 vídeos B foram reprovados no auditor (cena quase parada) e sumiram da Postagens; o p34 ficou sem cena aprovada e foi descartado
+sem ela ver (3 gerações pagas). Agora: B com zoom 1,12; o entregar.sh refaz a versão reprovada com zoom 1,18 e 1,26 e, se ainda
+falhar, entrega com `aviso`. Produto sem cena aprovada vira cartão "resgate" na aba Conferir (descartadas.py) com as cenas reprovadas.

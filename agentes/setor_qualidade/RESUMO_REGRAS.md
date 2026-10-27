@@ -29,3 +29,6 @@ variações misturadas sem foto da escolhida. Marque `"pular": true` com o motiv
 
 ## Refação
 Só UMA. Reprovou de novo = cena "falhou" e o produto usa outra cena aprovada. Toda perda vai em `agentes/desperdicios.md`.
+
+## Entrega
+Todo produto sai com A, B e C (versão reprovada é refeita, não pulada). Produto sem cena aprovada vai para a dona como "resgate", nunca é descartado direto.

@@ -14,7 +14,7 @@ CUTS = {'a': (0, 3.0, 5.6, 8.2, 10.8, 15), 'b': (0, 5.0, 10.0, 15), 'c': (0, 3.2
 ABRE = {'a': 0, 'b': 1, 'c': 2}  # índice da cena que abre cada versão (rodízio do take inicial, regra 12)
 
 
-def tomadas(cenas, lens):
+def tomadas(cenas, lens, zoom=None):
     """cenas: ['A','B','C'] disponíveis; lens: fim limpo de cada uma. Cada intervalo vira tomadas que cabem no trecho limpo."""
     out = {}
     for v, cuts in CUTS.items():
@@ -30,7 +30,7 @@ def tomadas(cenas, lens):
                 if dur - d < 0.6 and dur - d > 0.01: d = dur  # sobra pequena: estica a última se couber
                 d = min(d, lens[c] - 0.1)
                 st = ss[c] if ss[c] + d <= lens[c] - 0.05 else 0.0
-                zm = 1.12 if v == 'b' else 1.06  # B: o vídeo sobe 300 px e a câmera parecia parada (17 B reprovados no 25/10 A)
+                zm = (zoom or {}).get(v) or (1.12 if v == 'b' else 1.06)  # B: o vídeo sobe 300 px e a câmera parecia parada (17 B reprovados no 25/10 A)
                 z = (1.0, zm) if len(seg) % 2 == 0 else (zm, 1.0)  # zoom maior: auditor reprovou cena quase parada (p67 B)
                 seg.append((c, round(st, 2), z[0], z[1], {'d': round(d, 3)}))
                 ss[c] = st + d if st + d < lens[c] - 1.0 else 0.0

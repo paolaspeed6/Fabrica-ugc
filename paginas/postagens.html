@@ -75,6 +75,12 @@ h1{font-family:var(--display);font-weight:800;font-size:1.6rem;margin:0;letter-s
 .conf textarea{grid-column:1/-1;width:100%;box-sizing:border-box;min-height:64px;border:1px solid var(--line);border-radius:10px;padding:8px;font:inherit;font-size:.85rem;background:var(--soft);color:var(--fg)}
 .b.editar{background:var(--soft);color:var(--fg)}
 .nota{font-size:.8rem;color:var(--muted)}
+.aviso{font-size:.8rem;font-weight:600;color:var(--accent)}
+.cenas{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cena{display:flex;flex-direction:column;gap:4px;font-size:.74rem;color:var(--muted)}
+.cena img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:var(--line);border:3px solid transparent}
+.cena.sel img{border-color:var(--done)}
+.cena button,.cena a{font:700 .74rem var(--body)}
 button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){.b,.barra i,.video{transition:none}}
 </style>
@@ -118,13 +124,34 @@ async function aprovar(c){
   for(const [id,x] of Object.entries(c.posts||{})) await db.doc("posts/"+id).set({...x,poster:x.poster||c.poster||"",status:"pronto"});
   await db.doc("conferir/"+c._id).update({status:"ok",decidido_em:new Date().toISOString()});
 }
+// Resgate (a dona 27/10): produto sem cena aprovada; ela olha as cenas reprovadas antes de perder as 3 gerações
+function cardResgate(c){
+  const v=el("article","conf"); const im=el("img"); if(c.poster) im.src=c.poster; im.alt=""; v.append(im);
+  const info=el("div","info"); const t=el("div","tit",c.produto); t.append(el("small",null,`${c.lote||""} · nenhuma cena passou na fiscal`)); info.append(t);
+  info.append(el("div","aviso","Antes de descartar: veja as cenas reprovadas. Se alguma servir, marque e toque em Usar."));
+  if(c.link_anuncio){ const a=el("a","b","Anúncio"); a.href=c.link_anuncio; a.target="_blank"; a.rel="noopener"; info.append(a); }
+  v.append(info);
+  if(c.status!=="pendente"){ v.append(el("div","nota",c.status==="resgatar"?"O Claude vai montar os vídeos com: "+(c.escolha||[]).join(", "):"Produto descartado.")); return v; }
+  const sel=new Set(); const g=el("div","cenas");
+  (c.cenas||[]).forEach(x=>{ const d=el("div","cena"); const ci=el("img"); ci.src=x.poster||""; ci.alt="Cena "+x.id;
+    const marcar=el("button","leve","Marcar cena "+x.id); marcar.onclick=()=>{ sel.has(x.id)?sel.delete(x.id):sel.add(x.id); d.classList.toggle("sel",sel.has(x.id)); marcar.textContent=(sel.has(x.id)?"✓ ":"Marcar ")+"cena "+x.id; };
+    d.append(ci,marcar); if(x.drive_url){ const a=el("a","b","Ver vídeo"); a.href=x.drive_url; a.target="_blank"; a.rel="noopener"; d.append(a); }
+    d.append(el("span",null,(x.tipo==="imagem"?"(só imagem) ":"")+(x.motivo||""))); g.append(d); });
+  const usar=el("button","b postei","Usar estas cenas"); const desc=el("button","b editar","Descartar produto");
+  usar.onclick=async()=>{ if(!sel.size){ usar.textContent="Marque ao menos 1 cena"; return; } usar.disabled=true;
+    try{ await db.doc("conferir/"+c._id).update({status:"resgatar",escolha:[...sel],decidido_em:new Date().toISOString()}); }catch(e){ usar.disabled=false; usar.textContent="Não salvou, toque de novo"; } };
+  desc.onclick=async()=>{ desc.disabled=true; try{ await db.doc("conferir/"+c._id).update({status:"descartado",decidido_em:new Date().toISOString()}); }catch(e){ desc.disabled=false; desc.textContent="Não salvou, toque de novo"; } };
+  const b2=el("div","botoes"); b2.style.gridColumn="1/-1"; b2.append(usar,desc); v.append(g,b2); return v;
+}
 function cardConferir(c){
+  if(c.tipo==="resgate") return cardResgate(c);
   const v=el("article","conf"); const im=el("img"); if(c.poster) im.src=c.poster; im.alt=""; im.loading="lazy"; v.append(im);
   const info=el("div","info"); const t=el("div","tit",c.produto); t.append(el("small",null,`${c.lote||""} · ${Object.keys(c.posts||{}).length} vídeos`)); info.append(t);
   const bs=el("div","botoes");
   Object.entries(c.drive_urls||{}).forEach(([k,u])=>{ const a=el("a","b","Ver "+k); a.href=u; a.target="_blank"; a.rel="noopener"; bs.append(a); });
   if(c.link_anuncio){ const a=el("a","b","Anúncio"); a.href=c.link_anuncio; a.target="_blank"; a.rel="noopener"; bs.append(a); }
   info.append(bs);
+  if(c.aviso) info.append(el("div","aviso","Atenção: "+c.aviso));
   if(c.status==="editar"||c.status==="editando"){ info.append(el("div","nota","Em edição: "+(c.nota||""))); v.append(info); return v; }
   const ok=el("button","b postei","✓ Ok, pode postar"); const ed=el("button","b editar","Pedir edição");
   const tx=el("textarea"); tx.placeholder="O que mudar (vale para o produto)"; tx.hidden=true;
@@ -165,7 +192,7 @@ function render(){
   $("#cont").textContent= total? `${feitos.length} de ${total} postados`:"";
   $("#prog").style.width= total? (feitos.length/total*100)+"%":"0%";
   const pend=conferir.filter(c=>c.status==="pendente").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||(a.ordem||0)-(b.ordem||0));
-  const emEd=conferir.filter(c=>c.status==="editar"||c.status==="editando");
+  const emEd=conferir.filter(c=>c.status==="editar"||c.status==="editando"||c.status==="resgatar");
   if(!escolheu&&pend.length) aba="conf";
   $("#t-conf").textContent=pend.length?`Conferir (${pend.length})`:"Conferir"; $("#t-conf").setAttribute("aria-pressed",String(aba==="conf"));
   $("#t-fazer").setAttribute("aria-pressed",String(aba==="fazer")); $("#t-feitos").setAttribute("aria-pressed",String(aba==="feitos")); $("#t-reels").setAttribute("aria-pressed",String(aba==="reels")); $("#t-esg").setAttribute("aria-pressed",String(aba==="esg"));

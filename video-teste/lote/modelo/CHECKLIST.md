@@ -39,4 +39,7 @@ Entrega (NUNCA pular; a dona 2026-10-24)
 - [ ] Jogo: metas, Mural (o que aconteceu no lote) e Gasto
 - [ ] Commit e push (mp4 finais em trabalhos/, spec, desperdícios, defeitos, vistos)
 - [ ] (opcional) página com botão de baixar
+- [ ] Nenhum produto sem versão: o entregar.sh refaz a versão reprovada com zoom maior (2x) e, se ainda falhar, entrega com `aviso` para a dona decidir
+- [ ] Produto sem cena aprovada: `descartadas.py` (o produzir.sh já roda) manda as cenas reprovadas para a aba Conferir (cartão "resgate"); nunca descartar sem ela ver
+- [ ] Começo do lote seguinte: `conferir` com status `resgatar` (campo escolha = cenas que ela aceitou) → fiscal_video.json dessas cenas "usar 0.0-<fim antes do defeito, mín. 1,5 s>" → aprovar.py → lote_auto → render → entregar;
 - [ ] Começo do lote seguinte: ler `conferir` da Postagens com status `editar` (nota dela), refazer, gravar de novo como `pendente`; Melhorador
