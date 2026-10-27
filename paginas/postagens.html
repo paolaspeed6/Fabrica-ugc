@@ -86,7 +86,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
 </style>
 
 <div class="wrap">
-  <div class="topo"><h1>Postagens</h1><span class="cont" id="cont"></span></div>
+  <div class="topo"><h1 id="h1">Postagens</h1><span class="cont" id="cont"></span><a class="leve" id="troca" href="conferencia.html"></a></div>
   <div class="barra" aria-hidden="true"><i id="prog" style="width:0%"></i></div>
   <div class="tabs" role="group" aria-label="Abas">
     <button class="tab" id="t-conf" aria-pressed="false">Conferir</button>
@@ -99,7 +99,10 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
 </div>
 
 <script>
-let db=null, posts=[], esgotados=[], conferir=[], aba="fazer", feito={}, escolheu=false;
+// a dona 27/10: Conferência e Postagens são páginas separadas no MESMO endereço (mesmo banco): o Ok na Conferência já cai em Postagens
+const MODO=/conferencia/.test(location.pathname)?"conf":"post";
+let db=null, posts=[], esgotados=[], conferir=[], aba=MODO==="conf"?"conf":"fazer", feito={}, escolheu=false;
+if(MODO==="conf"){ document.title="Conferência"; }
 const $=s=>document.querySelector(s);
 const el=(t,c,x)=>{const e=document.createElement(t); if(c) e.className=c; if(x!=null) e.textContent=x; return e;};
 const dataBR=d=>d?d.slice(0,10).split("-").reverse().join("/"):"";
@@ -201,7 +204,11 @@ function render(){
   $("#prog").style.width= total? (feitos.length/total*100)+"%":"0%";
   const pend=conferir.filter(c=>c.status==="pendente").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||(a.ordem||0)-(b.ordem||0));
   const emEd=conferir.filter(c=>c.status==="editar"||c.status==="editando"||c.status==="resgatar");
-  if(!escolheu&&pend.length) aba="conf";
+  if(MODO==="conf") aba="conf"; else if(aba==="conf") aba="fazer";
+  $("#h1").textContent=MODO==="conf"?"Conferência":"Postagens";
+  const tr=$("#troca"); tr.href=MODO==="conf"?"index.html":"conferencia.html"; tr.textContent=MODO==="conf"?"Ir para Postagens →":(pend.length?`Conferência (${pend.length}) →`:"Conferência →");
+  document.querySelector(".tabs").hidden=MODO==="conf"; document.querySelector(".barra").hidden=MODO==="conf"; $("#cont").hidden=MODO==="conf";
+  $("#t-conf").hidden=true; document.querySelector(".tabs").style.gridTemplateColumns="repeat(4,1fr)";
   $("#t-conf").textContent=pend.length?`Conferir (${pend.length})`:"Conferir"; $("#t-conf").setAttribute("aria-pressed",String(aba==="conf"));
   $("#t-fazer").setAttribute("aria-pressed",String(aba==="fazer")); $("#t-feitos").setAttribute("aria-pressed",String(aba==="feitos")); $("#t-reels").setAttribute("aria-pressed",String(aba==="reels")); $("#t-esg").setAttribute("aria-pressed",String(aba==="esg"));
   const tela=$("#tela"); const y=scrollY; tela.replaceChildren();

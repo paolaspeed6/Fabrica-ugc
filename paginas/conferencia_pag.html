@@ -1,0 +1,290 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>*,*::before,*::after{box-sizing:border-box}body{margin:0}</style></head><body><title>Conferência</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&display=swap">
+<style>
+/* Layout: lista contínua para rolar; cada produto abre com um separador; cada vídeo é uma linha com os 4 passos em botões */
+:root{
+  --bg:#f6f5f2; --card:#ffffff; --fg:#1c1a19; --muted:#77706a; --line:#ebe7e1; --soft:#f1eee9;
+  --accent:#ee4d2d; --accent-fg:#ffffff; --done:#14804a; --done-bg:#e3f5ea;
+  --shadow:0 1px 2px rgba(28,26,25,.05),0 8px 24px -14px rgba(28,26,25,.25);
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --display:"Bricolage Grotesque",ui-rounded,system-ui,sans-serif;
+  --body:system-ui,-apple-system,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141211; --card:#1e1b19; --fg:#f2eee9; --muted:#a59d95; --line:#2f2b28; --soft:#262220;
+  --accent:#ff6a4a; --accent-fg:#1a0d09; --done:#5fd394; --done-bg:#173a27;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -16px rgba(0,0,0,.7); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141211; --card:#1e1b19; --fg:#f2eee9; --muted:#a59d95; --line:#2f2b28; --soft:#262220;
+  --accent:#ff6a4a; --accent-fg:#1a0d09; --done:#5fd394; --done-bg:#173a27;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -16px rgba(0,0,0,.7); color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;-webkit-font-smoothing:antialiased;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px 48px}
+.wrap{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+h1{font-family:var(--display);font-weight:800;font-size:1.6rem;margin:0;letter-spacing:-.02em}
+.topo{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.cont{color:var(--muted);font-weight:600;font-variant-numeric:tabular-nums}
+.barra{height:6px;background:var(--line);border-radius:99px;overflow:hidden}
+.barra i{display:block;height:100%;background:var(--done);transition:width .3s var(--ease-out)}
+.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding:4px;background:var(--soft);border-radius:12px;position:sticky;top:0;z-index:2}
+.tab{border:0;background:transparent;color:var(--muted);border-radius:9px;padding:9px 4px;font:700 .8rem var(--body);cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--card);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.lista{display:flex;flex-direction:column;gap:8px}
+.sep{display:flex;align-items:center;gap:10px;margin:14px 2px 2px}
+.sep:first-child{margin-top:4px}
+.sep img{width:34px;height:34px;border-radius:9px;object-fit:cover;background:var(--line);flex:none}
+.sep b{font:800 .98rem var(--display);line-height:1.25;letter-spacing:-.01em;min-width:0}
+.sep span{display:block;font:600 .74rem var(--body);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.sep::after{content:"";flex:1;height:1px;background:var(--line);min-width:16px}
+.video{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:10px;display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:start;transition:opacity .2s ease}
+.video.feito{opacity:.55}
+.video>img{width:64px;height:114px;object-fit:cover;border-radius:10px;background:var(--line)}
+.info{min-width:0;display:flex;flex-direction:column;gap:8px}
+.topo-v{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.placar{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:4px 0 6px}
+.num{background:var(--card);border-radius:14px;padding:12px 8px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.num b{display:block;font:800 1.6rem var(--display,var(--body));font-variant-numeric:tabular-nums}
+.num span{font:700 .74rem var(--body);color:var(--muted)}
+.topo-v .b,.topo-v .leve{flex:none;padding:7px 10px;font-size:.76rem}
+.topo-v .tit{flex:1}
+.acoes{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex:none}
+.b.postei{grid-column:1/-1}
+.tit{font-weight:700;font-size:.92rem}
+.tit small{display:block;color:var(--muted);font-weight:600;font-size:.78rem;margin-top:1px}
+.botoes{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.b{display:flex;align-items:center;justify-content:center;gap:6px;border:0;background:var(--soft);color:var(--fg);border-radius:10px;padding:9px 6px;font:700 .8rem var(--body);text-decoration:none;cursor:pointer;
+  transition:transform .14s var(--ease-out),background .16s ease}
+.b:active{transform:scale(.97)}
+.b.ok{background:var(--done-bg);color:var(--done)}
+.b.postei{background:var(--accent);color:var(--accent-fg)}
+.b:disabled{opacity:.5}
+.legenda{grid-column:1/-1;white-space:pre-wrap;font-size:.82rem;color:var(--muted);background:var(--soft);border-radius:10px;padding:10px;user-select:all}
+.item{background:var(--card);border-radius:12px;box-shadow:var(--shadow);padding:10px;display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center}
+.item img{width:44px;height:44px;object-fit:cover;border-radius:8px;background:var(--line)}
+.item .t{min-width:0;font-size:.88rem;font-weight:600;line-height:1.3}
+.item .t span{display:block;color:var(--muted);font-size:.76rem}
+.estado{font:700 .74rem var(--body);padding:4px 8px;border-radius:99px;background:var(--soft);color:var(--muted);white-space:nowrap}
+.estado.ok{background:var(--done-bg);color:var(--done)}
+.redes{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.redes a{font:700 .74rem var(--body);color:var(--accent);text-decoration:none}
+.leve{border:0;background:var(--soft);color:var(--fg);border-radius:10px;padding:8px 12px;font:700 .82rem var(--body);cursor:pointer}
+.vazio{color:var(--muted);font-weight:600;text-align:center;padding:28px 10px;border:2px dashed var(--line);border-radius:14px;line-height:1.5}
+.conf{background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:10px;display:grid;grid-template-columns:64px 1fr;gap:12px}
+.conf>img{width:64px;height:114px;object-fit:cover;border-radius:10px;background:var(--line)}
+.conf textarea{grid-column:1/-1;width:100%;box-sizing:border-box;min-height:64px;border:1px solid var(--line);border-radius:10px;padding:8px;font:inherit;font-size:.85rem;background:var(--soft);color:var(--fg)}
+.b.editar{background:var(--soft);color:var(--fg)}
+.nota{font-size:.8rem;color:var(--muted)}
+.aviso{font-size:.8rem;font-weight:600;color:var(--accent)}
+.cenas{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cena{display:flex;flex-direction:column;gap:4px;font-size:.74rem;color:var(--muted)}
+.cena img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:var(--line);border:3px solid transparent}
+.cena.sel img{border-color:var(--done)}
+.cena button,.cena a{font:700 .74rem var(--body)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.b,.barra i,.video{transition:none}}
+</style>
+
+<div class="wrap">
+  <div class="topo"><h1 id="h1">Postagens</h1><span class="cont" id="cont"></span><a class="leve" id="troca" href="conferencia.html"></a></div>
+  <div class="barra" aria-hidden="true"><i id="prog" style="width:0%"></i></div>
+  <div class="tabs" role="group" aria-label="Abas">
+    <button class="tab" id="t-conf" aria-pressed="false">Conferir</button>
+    <button class="tab" id="t-fazer" aria-pressed="true">Para postar</button>
+    <button class="tab" id="t-reels" aria-pressed="false">Reels auto</button>
+    <button class="tab" id="t-feitos" aria-pressed="false">Postados</button>
+    <button class="tab" id="t-esg" aria-pressed="false">Esgotados</button>
+  </div>
+  <main id="tela"><div class="vazio">Carregando os vídeos…</div></main>
+</div>
+
+<script>
+// a dona 27/10: Conferência e Postagens são páginas separadas no MESMO endereço (mesmo banco): o Ok na Conferência já cai em Postagens
+const MODO=/conferencia/.test(location.pathname)?"conf":"post";
+let db=null, posts=[], esgotados=[], conferir=[], aba=MODO==="conf"?"conf":"fazer", feito={}, escolheu=false;
+if(MODO==="conf"){ document.title="Conferência"; }
+const $=s=>document.querySelector(s);
+const el=(t,c,x)=>{const e=document.createElement(t); if(c) e.className=c; if(x!=null) e.textContent=x; return e;};
+const dataBR=d=>d?d.slice(0,10).split("-").reverse().join("/"):"";
+const hoje=()=>new Date().toISOString().slice(0,10);
+const mais30=()=>new Date(Date.now()+30*864e5).toISOString().slice(0,10);
+// Esgotado (Kevin 23/10): o produto sai da fila com todos os vídeos e vai para conferência mensal
+async function marcarEsgotado(p){
+  const vs=posts.filter(x=>(x.dia||"")===(p.dia||"")&&x.produto===p.produto&&x.status!=="postado");
+  const id=((p.dia||"")+"-"+p.produto).normalize("NFD").replace(/[^\w-]+/g,"_").slice(0,80);
+  const urls={}; vs.forEach(x=>{ if(x.versao) urls[x.versao]=x.drive_url; });
+  await db.doc("esgotados/"+id).set({produto:p.produto,lote:p.dia||"",link_produto:p.link_produto||"",poster:p.poster||"",
+    drive_urls:urls,posts:vs.map(({_id,...x})=>({...x,_id})),marcado_em:new Date().toISOString(),conferir_em:mais30()});
+  for(const x of vs) await db.doc("posts/"+x._id).delete();
+}
+async function voltouEstoque(e){
+  const vs=e.posts&&e.posts.length? e.posts : Object.entries(e.drive_urls||{}).map(([v,u],i)=>({_id:e._id+"-"+v,versao:v,drive_url:u,ordem:i,auto:/reels/i.test(v)}));
+  for(const {_id,...x} of vs) await db.doc("posts/"+_id).set({produto:e.produto,dia:e.lote,link_produto:e.link_produto,poster:e.poster,...x,status:"pronto"});
+  await db.doc("esgotados/"+e._id).delete();
+}
+// Conferência dentro da Postagens (a dona, 27/10): Ok libera os vídeos do produto em "Para postar" na hora, sem o Claude
+async function aprovar(c){
+  for(const [id,x] of Object.entries(c.posts||{})) await db.doc("posts/"+id).set({...x,poster:x.poster||c.poster||"",status:"pronto"});
+  await db.doc("conferir/"+c._id).update({status:"ok",decidido_em:new Date().toISOString()});
+}
+// Resgate (a dona 27/10): produto sem cena aprovada; ela olha as cenas reprovadas antes de perder as 3 gerações
+// motivo de cada cena reprovada (a dona 27/10: "me traga junto com o motivo")
+function listaReprov(c){
+  const r=c.reprovadas||[]; const box=el("details","nota");
+  box.append(el("summary",null,r.length?`${r.length} reprovação(ões) de cena — ver motivos`:"Nenhuma cena reprovada"));
+  r.forEach(x=>box.append(el("div",null,`Cena ${x.cena} · ${x.etapa}: ${x.motivo}`))); return box;
+}
+function cardResgate(c){
+  const v=el("article","conf"); const im=el("img"); if(c.poster) im.src=c.poster; im.alt=""; v.append(im);
+  const info=el("div","info"); const t=el("div","tit",c.produto); t.append(el("small",null,`${c.lote||""} · nenhuma cena passou na fiscal`)); info.append(t);
+  info.append(el("div","aviso","Antes de descartar: veja as cenas reprovadas. Se alguma servir, marque e toque em Usar."));
+  if(c.link_anuncio){ const a=el("a","b","Anúncio"); a.href=c.link_anuncio; a.target="_blank"; a.rel="noopener"; info.append(a); }
+  info.append(listaReprov(c));
+  v.append(info);
+  if(c.status!=="pendente"){ v.append(el("div","nota",c.status==="resgatar"?"O Claude vai montar os vídeos com: "+(c.escolha||[]).join(", "):"Produto descartado.")); return v; }
+  const sel=new Set(); const g=el("div","cenas");
+  (c.cenas||[]).forEach(x=>{ const d=el("div","cena"); const ci=el("img"); ci.src=x.poster||""; ci.alt="Cena "+x.id;
+    const marcar=el("button","leve","Marcar cena "+x.id); marcar.onclick=()=>{ sel.has(x.id)?sel.delete(x.id):sel.add(x.id); d.classList.toggle("sel",sel.has(x.id)); marcar.textContent=(sel.has(x.id)?"✓ ":"Marcar ")+"cena "+x.id; };
+    d.append(ci,marcar); if(x.drive_url){ const a=el("a","b","Ver vídeo"); a.href=x.drive_url; a.target="_blank"; a.rel="noopener"; d.append(a); }
+    d.append(el("span",null,(x.tipo==="imagem"?"(só imagem) ":"")+(x.motivo||""))); g.append(d); });
+  const usar=el("button","b postei","Usar estas cenas"); const desc=el("button","b editar","Descartar produto");
+  usar.onclick=async()=>{ if(!sel.size){ usar.textContent="Marque ao menos 1 cena"; return; } usar.disabled=true;
+    try{ await db.doc("conferir/"+c._id).update({status:"resgatar",escolha:[...sel],decidido_em:new Date().toISOString()}); }catch(e){ usar.disabled=false; usar.textContent="Não salvou, toque de novo"; } };
+  desc.onclick=async()=>{ desc.disabled=true; try{ await db.doc("conferir/"+c._id).update({status:"descartado",decidido_em:new Date().toISOString()}); }catch(e){ desc.disabled=false; desc.textContent="Não salvou, toque de novo"; } };
+  const b2=el("div","botoes"); b2.style.gridColumn="1/-1"; b2.append(usar,desc); v.append(g,b2); return v;
+}
+function cardConferir(c){
+  if(c.tipo==="resgate") return cardResgate(c);
+  const v=el("article","conf"); const im=el("img"); if(c.poster) im.src=c.poster; im.alt=""; im.loading="lazy"; v.append(im);
+  const info=el("div","info"); const t=el("div","tit",c.produto); t.append(el("small",null,`${c.lote||""} · ${Object.keys(c.posts||{}).length} vídeos`)); info.append(t);
+  const bs=el("div","botoes");
+  Object.entries(c.drive_urls||{}).forEach(([k,u])=>{ const a=el("a","b","Ver "+k); a.href=u; a.target="_blank"; a.rel="noopener"; bs.append(a); });
+  if(c.link_anuncio){ const a=el("a","b","Anúncio"); a.href=c.link_anuncio; a.target="_blank"; a.rel="noopener"; bs.append(a); }
+  info.append(bs);
+  if(c.aviso) info.append(el("div","aviso","Atenção: "+c.aviso));
+  info.append(listaReprov(c));
+  if(c.status==="editar"||c.status==="editando"){ info.append(el("div","nota","Em edição: "+(c.nota||""))); v.append(info); return v; }
+  const ok=el("button","b postei","✓ Ok, pode postar"); const ed=el("button","b editar","Pedir edição");
+  const tx=el("textarea"); tx.placeholder="O que mudar (vale para o produto)"; tx.hidden=true;
+  ok.onclick=async()=>{ ok.disabled=true; ok.textContent="Liberando…"; try{ await aprovar(c); }catch(e){ ok.disabled=false; ok.textContent="Não salvou, toque de novo"; } };
+  ed.onclick=async()=>{ if(tx.hidden){ tx.hidden=false; tx.focus(); ed.textContent="Enviar pedido"; return; }
+    ed.disabled=true; try{ await db.doc("conferir/"+c._id).update({status:"editar",nota:tx.value,decidido_em:new Date().toISOString()}); }catch(e){ ed.disabled=false; ed.textContent="Não salvou, toque de novo"; } };
+  const b2=el("div","botoes"); b2.append(ok,ed,tx); info.append(b2); v.append(info); return v;
+}
+function botao(txt,ok,cls){ const b=el("button","b"+(ok?" ok":"")+(cls?" "+cls:""),(ok?"✓ ":"")+txt); return b; }
+function link(txt,href,ok,marcar){ const a=el("a","b"+(ok?" ok":""),(ok?"✓ ":"")+txt); a.href=href||"#"; a.target="_blank"; a.rel="noopener"; a.onclick=()=>{marcar();setTimeout(render,300);}; return a; }
+function linhaVideo(p,primeiro){
+  const f=feito[p._id]||(feito[p._id]={});
+  const v=el("article","video"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy"; v.append(im);
+  const info=el("div","info"); const t=el("div","tit",`Vídeo ${p.versao||""}`); t.append(el("small",null,`postar em: ${p.conta||"—"}`));
+  const topo=el("div","topo-v"); topo.append(t);
+  // favoritar só uma vez por produto, ao lado do título do primeiro vídeo (o A); os outros botões ficam iguais em todos
+  if(primeiro){ const ac=el("div","acoes"); ac.append(link("☆ Abrir e favoritar",p.link_produto,f.produto,()=>f.produto=true));
+    const eg=el("button","leve","Esgotado"); eg.onclick=async()=>{ eg.disabled=true; eg.textContent="Movendo…";
+    try{ await marcarEsgotado(p); }catch(e){ eg.disabled=false; eg.textContent="Não salvou, toque de novo"; } }; ac.append(eg); topo.append(ac); }
+  info.append(topo);
+  const bs=el("div","botoes");
+  // abre no app do Drive: ⋯ > Enviar uma cópia > Salvar vídeo vai direto para o Fotos
+  bs.append(link("Salvar vídeo (Drive)",p.drive_url,f.video,()=>f.video=true));
+  const leg=botao("Copiar legenda",f.legenda); const caixa=el("div","legenda",p.legenda||""); caixa.hidden=true;
+  leg.onclick=async()=>{ try{ await navigator.clipboard.writeText(p.legenda||""); f.legenda=true; render(); }catch(e){ caixa.hidden=false; } };
+  const ok=botao("Postei",false,"postei");
+  ok.onclick=async()=>{ ok.disabled=true; try{ await db.doc("posts/"+p._id).update({status:"postado",postado_em:new Date().toISOString()}); }catch(e){ ok.disabled=false; ok.textContent="Não salvou, toque de novo"; } };
+  bs.append(leg,ok,caixa); info.append(bs); v.append(info); return v;
+}
+function render(){
+  // Reels saem da fila manual: o Postador Meta posta sozinho (Kevin 23/10)
+  const ehReels=p=>p.auto||/reels/i.test(p.versao||"");
+  const reels=posts.filter(ehReels);
+  const manuais=posts.filter(p=>!ehReels(p));
+  const fazer=manuais.filter(p=>p.status!=="postado").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||(a.ordem||0)-(b.ordem||0));
+  const feitos=manuais.filter(p=>p.status==="postado").sort((a,b)=>(b.postado_em||"").localeCompare(a.postado_em||""));
+  const total=fazer.length+feitos.length;
+  $("#cont").textContent= total? `${feitos.length} de ${total} postados`:"";
+  $("#prog").style.width= total? (feitos.length/total*100)+"%":"0%";
+  const pend=conferir.filter(c=>c.status==="pendente").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||(a.ordem||0)-(b.ordem||0));
+  const emEd=conferir.filter(c=>c.status==="editar"||c.status==="editando"||c.status==="resgatar");
+  if(MODO==="conf") aba="conf"; else if(aba==="conf") aba="fazer";
+  $("#h1").textContent=MODO==="conf"?"Conferência":"Postagens";
+  const tr=$("#troca"); tr.href=MODO==="conf"?"index.html":"conferencia.html"; tr.textContent=MODO==="conf"?"Ir para Postagens →":(pend.length?`Conferência (${pend.length}) →`:"Conferência →");
+  document.querySelector(".tabs").hidden=MODO==="conf"; document.querySelector(".barra").hidden=MODO==="conf"; $("#cont").hidden=MODO==="conf";
+  $("#t-conf").hidden=true; document.querySelector(".tabs").style.gridTemplateColumns="repeat(4,1fr)";
+  $("#t-conf").textContent=pend.length?`Conferir (${pend.length})`:"Conferir"; $("#t-conf").setAttribute("aria-pressed",String(aba==="conf"));
+  $("#t-fazer").setAttribute("aria-pressed",String(aba==="fazer")); $("#t-feitos").setAttribute("aria-pressed",String(aba==="feitos")); $("#t-reels").setAttribute("aria-pressed",String(aba==="reels")); $("#t-esg").setAttribute("aria-pressed",String(aba==="esg"));
+  const tela=$("#tela"); const y=scrollY; tela.replaceChildren();
+  if(!db){ tela.append(el("div","vazio","Abra esta página no app do Claude, logado, para ver os vídeos.")); return; }
+  const l=el("div","lista");
+  if(aba==="conf"){
+    pend.forEach(c=>l.append(cardConferir(c)));
+    if(!pend.length) l.append(el("div","vazio","Nada para conferir. Os vídeos do próximo lote aparecem aqui sozinhos."));
+    if(emEd.length){ const sp=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"O Claude refaz"),el("b",null,`${emEd.length} em edição`)); sp.append(tx); l.append(sp); emEd.forEach(c=>l.append(cardConferir(c))); }
+    tela.append(l); scrollTo(0,y); return;
+  }
+  if(aba==="reels"){
+    const fila=reels.filter(p=>p.status!=="postado").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||(a.ordem||0)-(b.ordem||0));
+    const ok=reels.filter(p=>p.status==="postado").sort((a,b)=>(b.postado_em||"").localeCompare(a.postado_em||""));
+    const cab=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"Postagem automática"),el("b",null,`${fila.length} na fila · ${ok.length} postados`)); cab.append(tx); l.append(cab);
+    [...fila,...ok].forEach(p=>{ const d=el("div","item"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy";
+      const t=el("div","t",p.produto);
+      if(p.status==="postado"){ t.append(el("span",null,"postado "+(p.postado_em?new Date(p.postado_em).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"")));
+        const rs=el("div","redes"); Object.entries(p.redes||{}).forEach(([r,u])=>{ const a=el("a",null,{ig:"Instagram ↗",fb:"Facebook ↗",threads:"Threads ↗"}[r]||r+" ↗"); a.href=u; a.target="_blank"; a.rel="noopener"; rs.append(a); }); t.append(rs); }
+      else t.append(el("span",null,"Lote "+dataBR(p.dia)));
+      d.append(im,t,el("span","estado"+(p.status==="postado"?" ok":""),p.status==="postado"?"Postado":"Na fila")); l.append(d); });
+    if(!reels.length) l.append(el("div","vazio","Nenhum Reels ainda. Os de cada lote entram aqui sozinhos."));
+    tela.append(l); scrollTo(0,y); return;
+  }
+  if(aba==="esg"){
+    const lista=[...esgotados].sort((a,b)=>(a.conferir_em||"").localeCompare(b.conferir_em||""));
+    const vence=lista.filter(e=>(e.conferir_em||"")<=hoje()).length;
+    const cab=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"Conferência mensal"),el("b",null,`${lista.length} esgotados · ${vence} para conferir hoje`)); cab.append(tx); l.append(cab);
+    lista.forEach(e=>{ const d=el("div","item"); const im=el("img"); if(e.poster) im.src=e.poster; im.alt=""; im.loading="lazy";
+      const t=el("div","t",e.produto); const venc=(e.conferir_em||"")<=hoje();
+      t.append(el("span",null,`Lote ${dataBR(e.lote)} · esgotou ${dataBR(e.marcado_em)} · ${venc?"conferir agora":"conferir em "+dataBR(e.conferir_em)}`));
+      const bs=el("div","redes"); const a=el("a",null,"Ver na Shopee ↗"); a.href=e.link_produto||"#"; a.target="_blank"; a.rel="noopener";
+      const sim=el("button","leve","Voltou ao estoque"); sim.onclick=async()=>{ sim.disabled=true; try{ await voltouEstoque(e); }catch(x){ sim.disabled=false; sim.textContent="Não salvou, toque de novo"; } };
+      const nao=el("button","leve","Ainda esgotado"); nao.onclick=()=>db.doc("esgotados/"+e._id).update({conferir_em:mais30()});
+      bs.append(a,sim,nao); t.append(bs); d.append(im,t,el("span","estado"+(venc?"":" ok"),venc?"Conferir":"Aguardar")); l.append(d); });
+    if(!lista.length) l.append(el("div","vazio","Nenhum produto esgotado."));
+    tela.append(l); scrollTo(0,y); return;
+  }
+  if(aba==="feitos"){
+    // Kevin 24/10: quantos o irmão postou hoje, na semana e no mês (pela hora do toque em "Postei", horário local)
+    const dia=d=>{const x=new Date(d); return x.getFullYear()+"-"+String(x.getMonth()+1).padStart(2,"0")+"-"+String(x.getDate()).padStart(2,"0");};
+    const agora=new Date(), hj=dia(agora), seg=new Date(agora); seg.setHours(0,0,0,0); seg.setDate(seg.getDate()-((seg.getDay()+6)%7));
+    const comData=feitos.filter(p=>p.postado_em);
+    const nHoje=comData.filter(p=>dia(p.postado_em)===hj).length;
+    const nSem=comData.filter(p=>new Date(p.postado_em)>=seg).length;
+    const nMes=comData.filter(p=>dia(p.postado_em).slice(0,7)===hj.slice(0,7)).length;
+    const pl=el("div","placar"); [["Hoje",nHoje],["Semana",nSem],["Mês",nMes]].forEach(([r,n])=>{const c=el("div","num"); c.append(el("b",null,String(n)),el("span",null,r)); pl.append(c);}); l.append(pl);
+    let diaAtual=null;
+    feitos.slice(0,300).forEach(p=>{
+      const d0=p.postado_em?dia(p.postado_em):"";
+      if(d0!==diaAtual){ diaAtual=d0; const n=feitos.filter(x=>(x.postado_em?dia(x.postado_em):"")===d0).length;
+        const sp=el("div","sep"); const tx=el("div"); tx.append(el("span",null,d0===hj?"Hoje":dataBR(d0)||"Sem data"),el("b",null,n+(n===1?" vídeo postado":" vídeos postados"))); sp.append(tx); l.append(sp); } const d=el("div","item"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy";
+      const t=el("div","t",p.produto); t.append(el("span",null,`${p.versao||""} · ${p.conta||""} · postado ${p.postado_em?new Date(p.postado_em).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):""}`));
+      const v=el("button","leve","Desfazer"); v.onclick=()=>db.doc("posts/"+p._id).update({status:"pronto"});
+      d.append(im,t,v); l.append(d); });
+    if(!feitos.length) l.append(el("div","vazio","Nada postado ainda."));
+    tela.append(l); scrollTo(0,y); return;
+  }
+  if(!fazer.length){ tela.append(el("div","vazio","Tudo postado. Os vídeos do próximo lote aparecem aqui sozinhos.")); return; }
+  let atual=null;
+  fazer.forEach(p=>{
+    const chave=(p.dia||"")+"|"+p.produto; const novo=chave!==atual;
+    if(novo){ atual=chave; const s=el("div","sep"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy";
+      const tx=el("div"); tx.append(el("span",null,"Lote "+dataBR(p.dia)),el("b",null,p.produto)); s.append(im,tx); l.append(s); }
+    l.append(linhaVideo(p,novo));
+  });
+  tela.append(l); scrollTo(0,y);
+}
+$("#t-conf").onclick=()=>{aba="conf";escolheu=true;render();}; $("#t-fazer").onclick=()=>{aba="fazer";escolheu=true;render();}; $("#t-feitos").onclick=()=>{aba="feitos";render();}; $("#t-reels").onclick=()=>{aba="reels";render();}; $("#t-esg").onclick=()=>{aba="esg";render();};
+(async()=>{
+  db = await (window.claude?.use ? window.claude.use("db") : null);
+  if(!db){ render(); return; }
+  db.collection("posts").onSnapshot(s=>{ posts=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>render());
+  db.collection("conferir").onSnapshot(s=>{ conferir=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>{});
+  db.collection("esgotados").onSnapshot(s=>{ esgotados=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>{});
+})();
+</script>
+
+</body></html>
