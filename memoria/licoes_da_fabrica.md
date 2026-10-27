@@ -118,4 +118,4 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 - A página Conferência antiga não recebe mais lotes. Nunca gravar posts à mão um por um nem esperar autorização produto a produto.
 
 - 27/10: corte para peça gigante em kit = prompt de vídeo com detalhe de UMA peça (regra K18). Vídeo só com nome + itens + tomada travada.
-- 27/10 (manhã): a dona entrou na Postagens e não viu nada (os vídeos estavam só na Conferência, atrás do botão). Regra: vídeos entram SEMPRE sozinhos em "Para postar" (para_postar.py + batch); Conferência só para resgate/editar.
+- 27/10 (19h): a dona confirmou que os vídeos ficam na aba Conferir esperando o Ok dela antes de ir para "Para postar" (ela tinha pedido o automático por engano). Nunca colocar em "Para postar" sem o Ok dela.
