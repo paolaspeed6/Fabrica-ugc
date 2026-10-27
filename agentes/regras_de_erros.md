@@ -284,3 +284,5 @@ peças de UMA cadeira em detalhe (tubo, encosto, ripas, rebites) + a nota intern
 pedido de close/novo plano (o mesmo aconteceu no p01 A e p04 B da 24/10 A). Agora o `vdescr()` do gerar.py manda no vídeo só nome +
 itens (sem peças, sem nota de foto) e trava a tomada: "same wide framing for the whole clip; never a new shot, never a close-up of a
 single piece". Peças em detalhe só no prompt de IMAGEM. No 1º lote com a mudança, conferir na folha se algum produto passou a deformar.
+- K18.b (27/10, resgate do p34): a Fiscal de vídeo (Gemini) disse "corte aos 2 s", mas o corte real era em 1,5 s e a cadeira gigante
+  entrou nos vídeos. Em resgate ou trecho curto (< 2,5 s), medir o corte quadro a quadro (fps=5 com o tempo escrito) antes de montar.
