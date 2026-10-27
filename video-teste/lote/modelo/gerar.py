@@ -112,10 +112,7 @@ def clipe_fixo(p, c):
 
 
 def clipe(p, c):
-    if FIXA: return clipe_fixo(p, c)
-
-
-def clipe(p, c):
+    if FIXA: return clipe_fixo(p, c)  # antes havia 2 "def clipe" e o 2º apagava este: FIXA=1 era ignorado (27/10)
     d = B / f"{p}-cenas"; out = d / f"{c}.mp4"
     if out.exists(): return f"{p} {c}.mp4 já existe"
     f = ficha(p); s = cena(f, c); cobrar(f"clipe {p}{c}", 0.10)
