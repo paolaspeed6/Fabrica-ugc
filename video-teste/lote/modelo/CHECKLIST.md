@@ -35,6 +35,7 @@ Entrega (NUNCA pular; a dona 2026-10-24)
 - [ ] Drive: `python3 video-teste/drive_backup.py <lote>/final --dia AAAA-MM-DD` (grava drive_links.json)
 - [ ] `bash video-teste/lote/entregar.sh <lote> <PREFIXO> <dia> "Lista DD/MM X" 15 pNN ...` (auditor + Drive + conferir_docs, de 15 em 15)
 - [ ] ArtifactData batch `conferir_docs/*.json` na coleção `conferir` da página POSTAGENS (a dona 27/10: o Ok dela cria os posts sozinho)
+- [ ] `python3 -I para_postar.py` + ArtifactData batch de cada `para_postar/writes_N.json` (url da Postagens): os vídeos entram SOZINHOS em "Para postar" (a dona 27/10)
 - [ ] Tinder: status `pronto`
 - [ ] Jogo: metas, Mural (o que aconteceu no lote) e Gasto
 - [ ] Commit e push (mp4 finais em trabalhos/, spec, desperdícios, defeitos, vistos)

@@ -59,7 +59,7 @@ Pasta `video-teste/lote/listaDDMMx` (copie `video-teste/lote/modelo`). Passos co
 9. **Obrigatório, nunca pular** (a dona, 24/10: o teste foi entregue só na página de baixar e não foi para a Conferência):
    finais em `<lote>/final/` com o nome `DDMMX_NN_slug_A|B|C.mp4` → `python3 video-teste/drive_backup.py <lote>/final --dia AAAA-MM-DD`
    → `python3 -I conferencia.py "Lista DD/MM X" AAAA-MM-DD` → ArtifactData batch dos `conferir_docs/*.json` na coleção `conferir`
-   da página **Postagens** (aba Conferir; a dona 27/10: o Ok dela libera sozinho em "Para postar", sem o Claude) → Tinder `pronto`. Página de baixar é extra, nunca no lugar da Conferência.
+   da página **Postagens** → `para_postar.py` + ArtifactData batch (a dona 27/10: os vídeos entram SEMPRE sozinhos em "Para postar", sem esperar o Ok dela; só o "resgate" fica na Conferência) → Tinder `pronto`. Página de baixar é extra, nunca no lugar da Conferência.
    Siga `video-teste/lote/modelo/CHECKLIST.md` e marque cada passo no `<lote>/CHECKLIST.md`.
    Depois da conferência dela: processar as decisões e o **Melhorador** (trava 4, 1 vez por lote).
 Os agentes do setor de qualidade são subagentes separados (ferramenta Agent).

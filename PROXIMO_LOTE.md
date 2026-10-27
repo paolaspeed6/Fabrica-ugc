@@ -8,6 +8,7 @@ cria a pasta, fotos, 1 Fichador Sonnet, links/textos, `produzir.sh fase1` (segun
 Atualizado: 2026-10-27.
 
 ## Último lote: Lista 27/10 A — ENTREGUE (27/10, 11h20 UTC)
+- REGRA NOVA da dona (27/10 manhã): vídeos entram SEMPRE sozinhos em "Para postar" (`para_postar.py` + batch). Os 36 do lote A já estão lá.
 - 12 produtos com A, B e C (36 vídeos) na aba Conferir da Postagens (2710A-01..11, 14) + 2710A-12 (Caçarolas) como "resgate".
   Drive "Fabrica Videos/2026-10-27". Tinder: 12 em `pronto`; p12 segue `produzindo` (resgate). Gasto US$ 4,98 (teto 8).
 - Pulados pelo Fichador (sem gasto, status no Tinder intocado = `aprovado`): Poltrona Orgânica Redonda (foto 01 de outro modelo)
