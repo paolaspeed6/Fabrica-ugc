@@ -9,7 +9,12 @@ Antes de gastar
 - [ ] Eu conferi cada ficha contra a foto 01 e cada texto contra o anúncio
 - [ ] Links com Sub ID: `SHOPEE_APP_SECRET=... python3 -I gerar_links.py` → `python3 -I textos.py`
 
-Geração (teto em TETO_USD; refazer só UMA vez) — fluxo econômico (a dona 26/10: economia sem perder qualidade)
+Geração + edição + entrega num comando (a dona 27/10): Bash em segundo plano, timeout 7200000, 1 aviso por fase
+- [ ] `TETO_USD=<teto> bash produzir.sh fase1 <lote> p01,...` (imagens, borda, Gemini, 1 refação)
+- [ ] 1 agente Sonnet nas folhas (PROMPT_FISCAL_SONNET.md)
+- [ ] `TETO_USD=<teto> bash produzir.sh fase2 <lote> p01,... <PRE> <AAAA-MM-DD> "Lista DD/MM X"` (clipes, Fiscal de vídeo, edição, render, Drive, conferir_docs)
+- [ ] ArtifactData batch na Conferência + Tinder `pronto` + commit — e pronto
+O que o produzir.sh faz por dentro (só para conferir/consertar):
 - [ ] `TETO_USD=<teto> python3 -I gerar.py imagens p01,...`
 - [ ] `python3 -I folha.py p01,...` (grátis: mede a borda e reprova sozinho; monta pNN-cenas/folha.jpg)
 - [ ] `python3 -I fiscal_gemini.py <cenas sem veredito>` (grátis; 2 ou 3 filas em paralelo)

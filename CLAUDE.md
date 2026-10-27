@@ -7,7 +7,13 @@ Esta fábrica faz duas coisas:
 2. **Criar do zero** (método do kit, a mesma fábrica do Kevin): Tinder de produtos → fotos do anúncio → setor de qualidade →
    imagens (Nano Banana) e clipes (Seedance/Veo) na WaveSpeed → edição nos layouts DELA → Conferência → Drive → Postagens → Reels automáticos.
 
-## Antes de QUALQUER roteiro, prompt, geração ou edição, leia
+## Produção diária de lote (a dona, 27/10: economizar uso sem perder qualidade)
+Leia SÓ `PROXIMO_LOTE.md`, `video-teste/lote/modelo/CHECKLIST.md` e `agentes/setor_qualidade/RESUMO_REGRAS.md` (as regras
+já estão nos scripts e no resumo). Rode `video-teste/lote/modelo/produzir.sh` (fase1/fase2) com o Bash em segundo plano
+(run_in_background, timeout 7200000): nada de Monitor de 30 em 30 min, nada de tarefa de hora em hora, nada de olhar vídeo por vídeo.
+Máximo 15 produtos por conversa; conversa nova para o próximo lote. A lista abaixo é só para mudar regra, layout ou prompt.
+
+## Antes de mudar regra, layout, prompt ou fazer edição manual, leia
 - `MODELO_DE_CRIACAO.md` (o padrão atual: 3 layouts, regras, processo, sem voz + música calma, estilo natural sem filtro)
 - `agentes/regras_de_erros.md` inteiro (regras da dona 1-14 e as do kit com prefixo K; cada uma custou dinheiro)
 - `agentes/setor_qualidade/LEIA.md` e o papel de cada agente (fichador, fiscal_imagem, fiscal_video, melhorador)

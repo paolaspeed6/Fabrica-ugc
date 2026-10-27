@@ -1,5 +1,10 @@
 # Onde paramos (leia isto no começo de uma conversa nova; atualize no fim de cada lote)
 
+## Como a dona começa um lote (conversa nova, 15 produtos no máximo)
+Mensagem: "Lote do dia: 15 produtos da Fila, teto US$ 8." O Claude: lê só este arquivo + CHECKLIST + RESUMO_REGRAS,
+cria a pasta, fotos, 1 Fichador Sonnet, links/textos, `produzir.sh fase1` (segundo plano), 1 Fiscal Sonnet nas folhas,
+`produzir.sh fase2` (segundo plano), Conferência + Tinder + commit. Cerca de 10 a 15 respostas do Claude por lote.
+
 Atualizado: 2026-10-26.
 
 ## Último lote: Lista 25/10 A — ENTREGUE (26/10, 23h)
@@ -15,6 +20,10 @@ Atualizado: 2026-10-26.
   esses produtos (lote_auto + render, grátis) e trocar no Drive e na Conferência. Vídeo de resto aprovado: não mexer em cena.
 - 26: "surgiu uma imagem do nada, quero vídeo fluido" → achar o corte/tomada com salto e refazer a montagem (grátis).
 - A conversa do comentário (só app, sem chaves nem pasta do lote) não conseguiu processar; as decisões seguem salvas na página.
+
+## Refação da Conferência 25/10 A (27/10) — rodando
+- 22 produtos (21 letras grandes + 26 solda) re-renderizados por `lista2510a/editar.sh` (log editar.log). No fim: ArtifactData
+  dos conferir_docs novos (status pendente) — os 19 ok já estão processado=true. Os 19 ok → Postagens.
 
 ## Pendências da dona
 - Segredos: renomear `shopee_APP_SECRET` para `SHOPEE_APP_SECRET`; token da Página em META_PAGE_TOKEN; THREADS_TOKEN novo;

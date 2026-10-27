@@ -78,7 +78,9 @@ def cena(f, c): return next(x for x in f["cenarios"] if x["id"] == c)
 def imagem(p, c):
     d = B / f"{p}-cenas"; d.mkdir(exist_ok=True); out = d / f"{c}.jpg"
     if out.exists(): return f"{p} {c}.jpg já existe"
-    f = ficha(p); s = cena(f, c); cobrar(f"img {p}{c}", 0.0396)
+    f = ficha(p); s = cena(f, c)
+    if s.get("estado") == "falhou": return f"{p} {c} falhou 2x: não refaz (regra: só 1 refação)"
+    cobrar(f"img {p}{c}", 0.0396)
     txt = descr(f) + f" Image 1 is the exact product and color. Setting: {s['texto']} {s['scale']} {s['camera']}" + FIM + (" " + s["fix_img"] if s.get("fix_img") else "")
     u = api("google/nano-banana-2.1/edit", {"prompt": txt, "images": [ref(f"{p}-fotos/{x}" if "/" not in x else x) for x in f["fotos_ref"]],
                                              "aspect_ratio": "9:16", "resolution": "1k", "output_format": "jpeg"})
