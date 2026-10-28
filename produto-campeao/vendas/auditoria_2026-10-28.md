@@ -221,3 +221,26 @@ Hipóteses a testar, sem prova:
 - **Grupo 2:** o jeito atual.
 - **Medir:** visualizações de cada vídeo no 3º dia (print da lista "Vídeos") e pedidos por produto (API).
 - **Meta:** visualização média do vídeo novo acima de 500, e pelo menos 1 em cada 5 produtos com pedido em 7 dias.
+
+---
+## Correção da dona (28/10) e plano final
+O que ela sabe por experiência, e que esta auditoria passa a seguir:
+- Shopee é marketplace: **não precisa de nicho**. Saem as recomendações "cortar fora do público" e "postar menos".
+- A Shopee demora para distribuir: o alcance baixo de vídeos de 2 a 16 dias (item F) **não prova fracasso**. Julgar com 30 dias.
+- Passar de 5 para 20 vídeos por dia dobrou o ganho. A meta é 100 por dia.
+
+O que os dados dizem sobre isso:
+- Comissão média por semana: agosto R$ 1,47 mil, setembro R$ 1,89 mil (+28%), outubro R$ 1,85 mil.
+  A virada para cerca de 20 por dia não aparece inteira nos 90 dias da API (o dobro deve ter vindo antes de 30/07, ou estar chegando agora).
+- O salto de postagem de outubro (de cerca de 57 para cerca de 194 vídeos a cada 15 dias, no painel) **ainda não virou dinheiro**. Pela regra dela (demora), a resposta aparece de meados de novembro em diante.
+  É o 1º ponto de checagem antes de ir a 100 por dia.
+
+Plano final (volume + filtros que não reduzem volume):
+1. **Escalar em degraus:** 20, 40, 60 e 100 por dia, 2 semanas por degrau.
+   A cada degrau, comparar a comissão por semana (API, grátis) e a visualização dos vídeos com 30 dias.
+   Se a comissão subir, sobe o degrau. Se ficar parada por 2 degraus, investigar antes de subir.
+2. **Mesmo volume, mais dinheiro por pedido:** no Tinder, priorizar (não excluir) produto com comissão extra de 7% ou mais. A diferença por pedido chega a 53 vezes.
+3. **Loja:** evitar lojas com cancelamento acima de 35% no histórico (Cripto Bikes, Distribuidora Ribeiro, Bella Decor, Sportbay, Flay Rims).
+4. **Taxas dos vídeos antigos:** rodar `vigiar_comissao.py` toda semana.
+5. **Custo de 100 por dia:** cerca de 33 produtos por dia (3 layouts cada) × R$ 2,40 = cerca de R$ 80 por dia, ou R$ 2,4 mil por mês de IA, contra R$ 7,85 mil por mês de comissão hoje.
+   Para se pagar, precisa trazer pelo menos +30% de comissão. O uso do Claude também é limite (15 produtos por conversa).

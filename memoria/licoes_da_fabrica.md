@@ -125,3 +125,9 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 - Músicas mais animadas e sofisticadas, menos melancólicas: biblioteca = 12 trilhas animadas (gerador/animadas.py); calmas fora do rodízio.
 - "Aguiiar Lar" com a mesma fonte, mas mudando de lugar no vídeo (topo e cantos livres, a cada 2,5-4 s) para não dar para cortar só a faixa de cima (build_lux.py _marca_plano).
 - 27/10 C: histórico da WaveSpeed (POST /api/v3/predictions) devolve as imagens já pagas: resgate sem pagar de novo. Kit comprido (espreguiçadeiras) sai largo mesmo pedindo 40% da largura.
+
+## 28/10 (a dona, experiência dela na Shopee)
+- Shopee é marketplace, não rede social: NÃO precisa de nicho, vende de tudo (ela testou). Não cortar produto por "fora do público".
+- A Shopee demora para entregar (distribuir) os vídeos: vídeo novo com pouca visualização nos primeiros dias não é fracasso. Julgar só depois de ~30 dias.
+- Volume funciona: passar de 5 para 20 vídeos por dia dobrou o ganho dela. Meta: 100 vídeos por dia.
+- O que os dados ainda pedem (auditoria 28/10): priorizar comissão extra do vendedor (R$ 1,85 a R$ 99 por pedido) e lojas com pouco cancelamento; isso vale em qualquer volume.
