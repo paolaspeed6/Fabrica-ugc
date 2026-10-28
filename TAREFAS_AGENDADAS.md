@@ -34,3 +34,6 @@ Só crie esta depois de a dona aprovar o primeiro plano de postagem com `--seco`
 - Uma conversa nova por rodada gasta menos uso do plano Claude que uma conversa longa.
 - Se a varredura começar a passar de 3 h (palavras.txt muito grande), limite as páginas por palavra no varrer.py.
 - O banco do Tinder guarda miniaturas (~35 KB por produto; limite 100 MB): com umas 2.500 cartas, limpe os descartados antigos.
+
+## 4. Redes, 6 posts por dia (CRIADA em 28/10, id trig_01SbdhGUDGc1uRG5H4x7aehs)
+08:07, 11:07, 13:07, 17:07, 19:07, 21:07 (Brasília), conversa nova a cada vez. Passos em meta/REDES_DIARIO.md (redes_diario.py).
