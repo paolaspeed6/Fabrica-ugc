@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-10-28 (20h45 UTC). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-10-28 (22h40 UTC). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -22,6 +22,10 @@ Atualizado: 2026-10-28 (20h45 UTC). Histórico completo: memoria/historico_lotes
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
 ## Estado atual (28/10)
+- Lote 28/10 B (28/10 22h35 UTC): 12 produtos com A, B e C (36 vídeos, 2810B-01..05, 07..13) + 2810B-06 Cabeceira Itália + Recamier
+  como resgate, na aba Conferir. Gasto US$ 4,56 de 8 (52 imagens + 25 clipes). Só 13 aprovados livres na Fila (nenhum pulado).
+- FILA VAZIA: todos os aprovados restantes são os 11 já pulados pelo Fichador. Próximo lote precisa de novos "aprovados" no Tinder
+  (187 em "Escolher").
 - Lote 28/10 A (28/10 20h40 UTC): 14 produtos com A, B e C (42 vídeos, 2810A-02..20) + 2810A-13 Colchão Ortho Flex como resgate,
   na aba Conferir. Gasto US$ 6,18 de 8 (60 imagens + 38 clipes). Pulados pelo Fichador (Tinder segue `aprovado`): Kit Cooktop+Balcão
   58254841155 (colagem), Viveiro 58265685456 (sem foto limpa), Radiador Kombi 58211200606 (colagem), Banco Kulmai 58209960104
@@ -30,7 +34,7 @@ Atualizado: 2026-10-28 (20h45 UTC). Histórico completo: memoria/historico_lotes
 - Lote 27/10 D (28/10 02h45): 15 produtos (2710D-01..15) + os 2 resgates (2710A-12 panelas, 2710C-01 espreguiçadeiras) com A, B e C,
   pendentes para a dona. Nenhum resgate nem pedido de edição pendente. Detalhes: memoria/historico_lotes.md.
 - Resgate: imagens aceitas pela dona vêm do histórico da WaveSpeed (grátis) + câmera por código (zoompan), nunca clipe IA (regra K19).
-- Fila: próximos aprovados a partir de 54514950462 (Banqueta Tulipa) e 58263622580 (Cortina Blackout). Pular os já pulados (ver histórico).
+- Fila: sem aprovados novos (só os 11 pulados). A dona precisa aprovar mais no Tinder antes do próximo lote.
 - Tinder: 187 produtos novos da lista da dona (busca 27/10) em "Escolher". Fila = aprovados.
 - Pedidos da dona já valendo: músicas animadas; assinatura "Aguiiar Lar" mudando de lugar.
 - Foto colada (produto complexo): só se a dona pedir. Não testada.
