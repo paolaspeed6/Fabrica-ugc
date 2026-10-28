@@ -58,7 +58,7 @@ PROIBIDO = ["vinho", "cerveja", "whisky", "vodka", "cachaca", "gin ", "licor", "
 
 def chamar_api(variables):
     app_id = os.environ["SHOPEE_APP_ID"]
-    secret = os.environ["SHOPEE_APP_SECRET"]
+    secret = (os.environ.get("SHOPEE_APP_SECRET") or os.environ["shopee_APP_SECRET"])
     payload = json.dumps({"query": QUERY, "variables": variables}, separators=(",", ":"))
     ts = str(int(time.time()))
     assinatura = hashlib.sha256((app_id + ts + payload + secret).encode()).hexdigest()

@@ -28,7 +28,7 @@ VISTOS = BASE / "vistos.json"  # itemIds que o Kevin já conferiu: não voltam
 
 
 def chamar(variaveis, tentativas=4):
-    app_id, secret = os.environ["SHOPEE_APP_ID"], os.environ["SHOPEE_APP_SECRET"]
+    app_id, secret = os.environ["SHOPEE_APP_ID"], (os.environ.get("SHOPEE_APP_SECRET") or os.environ["shopee_APP_SECRET"])
     for i in range(tentativas):
         try:
             corpo = json.dumps({"query": QUERY, "variables": variaveis}, separators=(",", ":"))
