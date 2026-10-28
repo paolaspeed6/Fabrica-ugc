@@ -5,13 +5,23 @@ Mensagem: "Lote do dia: 15 produtos da Fila, teto US$ 8." O Claude: lê só este
 cria a pasta, fotos, 1 Fichador Sonnet, links/textos, `produzir.sh fase1` (segundo plano), 1 Fiscal Sonnet nas folhas,
 `produzir.sh fase2` (segundo plano), Conferência + Tinder + commit. Cerca de 10 a 15 respostas do Claude por lote.
 
-Atualizado: 2026-10-27 (21h50 UTC).
+Atualizado: 2026-10-28 (02h45 UTC).
 
 - Regra da dona (27/10 19h, confirmada): vídeos ficam na aba Conferir esperando o Ok dela; só o Ok leva para "Para postar". Nada de para_postar.py.
-- 2710B-03 Mesa em L: resgate PROCESSADO (27/10 21h): as 3 imagens aceitas foram recuperadas do histórico da WaveSpeed
-  (POST https://api.wavespeed.ai/api/v3/predictions {"page":1,"page_size":100} lista as gerações com o link do resultado; grátis),
-  animadas com câmera fixa (FIXA=1, US$ 0,30) e voltaram à aba Conferir como pendente com A, B e C. Tinder: pronto.
-## Último lote: Lista 27/10 C — ENTREGUE (27/10, 21h50 UTC)
+- Nenhum resgate nem pedido de edição pendente na Conferir em 28/10 02h45.
+## Último lote: Lista 27/10 D — ENTREGUE (28/10, 02h45 UTC)
+- 15 produtos novos com A, B e C (45 vídeos) na aba Conferir (2710D-01..15) + os 2 resgates processados com A, B e C, pendentes
+  nos cartões antigos: 2710A-12 (Jogo 3 Panelas) e 2710C-01 (Kit 2 Espreguiçadeiras Fita Náutica). Drive "Fabrica Videos/2026-10-28"
+  (dos 2 resgates ficaram no Drive também as cópias velhas com o mesmo nome; a Conferir aponta para as novas).
+  Tinder: os 17 em `pronto`. Gasto US$ 6,72 de 8 (61 imagens + 37 clipes + 6 clipes fixos jogados fora).
+- Resgates: imagens recuperadas do histórico da WaveSpeed (grátis, comparando com o poster do cartão). O clipe de câmera fixa da IA
+  inventou cachorro, vapor e marca d'água (o Gemini deixou passar a marca) → regra K19: resgate = câmera por código (ffmpeg zoompan) sobre a imagem.
+- Fichador: só p01 tem foto limpa na 07 (foto 01 com bebê); p06 estante tem taças em todas as fotos (cenas saíram limpas);
+  p14 foto 01 é arte de propaganda (cena A saiu limpa). Fiscal Sonnet pegou abajur aceso (p01C, p15C).
+- Com 1 cena só: p11 espreguiçadeiras marrom e p14 kit camping (as outras falharam 2x; os 3 layouts usam a cena boa).
+  A dica "eixo comprido para o fundo" salvou 1 de 3 cenas no kit de espreguiçadeiras.
+- Fila: próximos aprovados a partir de 58254841155 (Kit Cooktop + Balcão) e 58256198377 (Kit Anilhas).
+## Lote anterior: Lista 27/10 C — ENTREGUE (27/10, 21h50 UTC)
 - 14 produtos com A, B e C (42 vídeos) na aba Conferir (2710C-02..13, 15, 16) + 2710C-01 Kit 2 Espreguiçadeiras como "resgate"
   (91-96% da largura nas 2 rodadas). Drive "Fabrica Videos/2026-10-27". Tinder: 14 em `pronto`; p01 segue `produzindo`.
   Gasto US$ 5,96 (52 imagens + 39 clipes) + US$ 0,30 do resgate da Mesa = US$ 6,26 de 8.

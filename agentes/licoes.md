@@ -25,3 +25,4 @@
 - 2026-10-24: o teste do zero foi entregue só na página de baixar e esqueci Drive + Conferência. Agora há `conferencia.py` e `CHECKLIST.md` no modelo, e a regra 16.
 
 - 2026-10-26: Lista 25/10 A, Fiscal de imagem reprovou muito por borda, costas, escala, fundo com objetos e letra inventada. Viraram frases fixas no FIM do gerar.py (regra 17).
+- 2026-10-28: Lista 27/10 D, nos resgates o clipe de câmera fixa da IA pôs cachorro, vapor e marca d'água, e o Gemini deixou passar a marca d'água. Resgate passou a usar câmera por código sobre a imagem aceita (regra K19).

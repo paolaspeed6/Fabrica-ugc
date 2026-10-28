@@ -286,3 +286,8 @@ itens (sem peças, sem nota de foto) e trava a tomada: "same wide framing for th
 single piece". Peças em detalhe só no prompt de IMAGEM. No 1º lote com a mudança, conferir na folha se algum produto passou a deformar.
 - K18.b (27/10, resgate do p34): a Fiscal de vídeo (Gemini) disse "corte aos 2 s", mas o corte real era em 1,5 s e a cadeira gigante
   entrou nos vídeos. Em resgate ou trecho curto (< 2,5 s), medir o corte quadro a quadro (fps=5 com o tempo escrito) antes de montar.
+- K19 (28/10, resgates 2710A-12 panelas e 2710C-01 espreguiçadeiras): o clipe com câmera fixa da IA (FIXA=1) INVENTOU coisas
+  sobre as imagens aceitas pela dona: vapor saindo das panelas vazias, um cachorro deitando na espreguiçadeira e uma marca d'água
+  com texto. A Fiscal de vídeo (Gemini) anotou a marca d'água e mesmo assim deu "usar 0.0-5.0". Resgate agora = câmera por código
+  sobre a imagem aceita (ffmpeg zoompan, avanço lento de 1,0 a 1,08 em 5 s; grátis), nunca clipe de IA. E todo "usar" com defeito
+  anotado (marca d'água, texto, animal, pessoa, vapor) conta como REPROVADO.

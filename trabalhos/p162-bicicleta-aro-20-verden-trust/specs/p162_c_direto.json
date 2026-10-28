@@ -1,0 +1,257 @@
+{
+ "narr": null,
+ "narr_at": 0.3,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/musicas/biblioteca/animada_03_piano_sinos.wav"
+ ],
+ "grade": {
+  "sat": 0.9,
+  "warm": 0.025,
+  "contrast": 1.02,
+  "lift": 0.03,
+  "vign": 0.18,
+  "grain": 0.014,
+  "top": 0.4
+ },
+ "accent": [
+  150,
+  220,
+  30
+ ],
+ "segs": [
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 3.2,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 1.9,
+   "z": [
+    1.06,
+    1.0
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.4,
+   "z": [
+    1.0,
+    1.06
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "bars",
+   "cuts": [
+    0,
+    3.2,
+    9.0,
+    11.6,
+    15
+   ],
+   "t0": 0,
+   "t1": 15,
+   "y": 96,
+   "out": false
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Bicicleta Infantil Aro 20 Verden Trust"
+   ],
+   "t0": 0,
+   "t1": 3.2,
+   "y": 150,
+   "base": "dm",
+   "size": 30,
+   "track": 7,
+   "align": "center",
+   "x": "c"
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "A bike verde neon",
+    "que a criançada quer."
+   ],
+   "t0": 0,
+   "t1": 3.2,
+   "y": 206,
+   "size": 108,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Olha o que",
+    "*ele tem:*"
+   ],
+   "t0": 3.2,
+   "t1": 9.0,
+   "y": 150,
+   "size": 100,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "check",
+   "text": "Freios V-Brake reforçados",
+   "t0": 4.3,
+   "t1": 9.0,
+   "y": 392,
+   "x": 90,
+   "size": 58,
+   "fill": [
+    150,
+    220,
+    30
+   ],
+   "base": "dm"
+  },
+  {
+   "kind": "check",
+   "text": "Quadro em aço carbono",
+   "t0": 5.9,
+   "t1": 9.0,
+   "y": 516,
+   "x": 90,
+   "size": 58,
+   "fill": [
+    150,
+    220,
+    30
+   ],
+   "base": "dm"
+  },
+  {
+   "kind": "check",
+   "text": "Pintura dupla camada",
+   "t0": 7.5,
+   "t1": 9.0,
+   "y": 640,
+   "x": 90,
+   "size": 58,
+   "fill": [
+    150,
+    220,
+    30
+   ],
+   "base": "dm"
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "7 a 9",
+    "*anos.*"
+   ],
+   "t0": 9.0,
+   "t1": 11.6,
+   "y": 206,
+   "size": 104,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Toque no carrinho",
+    "*e veja o preço.*"
+   ],
+   "t0": 11.6,
+   "t1": 15,
+   "y": 170,
+   "size": 96,
+   "out": false,
+   "base": "dms",
+   "it": "dms_it",
+   "align": "center",
+   "x": "c",
+   "spacing": 1.04
+  },
+  {
+   "kind": "button",
+   "text": "Ver o preço",
+   "t0": 12.0,
+   "t1": 15,
+   "y": 400,
+   "x": "c",
+   "w": 600,
+   "h": 112,
+   "size": 44,
+   "fill": [
+    150,
+    220,
+    30
+   ],
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "anim": "rise",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p162-bicicleta-aro-20-verden-trust/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p162-bicicleta-aro-20-verden-trust/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p162-bicicleta-aro-20-verden-trust/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p162-bicicleta-aro-20-verden-trust/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p162-bicicleta-aro-20-verden-trust/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p162-bicicleta-aro-20-verden-trust/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p162-bicicleta-aro-20-verden-trust/out2/p162_c_direto.mp4",
+ "dur": 15.0,
+ "natural": 1,
+ "trans": [
+  [
+   3.2,
+   "whip"
+  ],
+  [
+   9.0,
+   "zoom"
+  ],
+  [
+   11.6,
+   "whip"
+  ]
+ ]
+}

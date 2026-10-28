@@ -1,0 +1,314 @@
+{
+ "narr": null,
+ "narr_at": 0.4,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/musicas/biblioteca/animada_09_guitarra_vibrafone.wav"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "warm": 0.015,
+  "contrast": 1.04,
+  "lift": 0.02,
+  "vign": 0.1,
+  "grain": 0.01,
+  "top": 0.1
+ },
+ "lift": 300,
+ "accent": [
+  140,
+  80,
+  210
+ ],
+ "segs": [
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 1.1,
+   "z": [
+    1.12,
+    1.0
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 1.1,
+   "dur": 1.1,
+   "z": [
+    1.12,
+    1.0
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 2.2,
+   "dur": 1.1,
+   "z": [
+    1.12,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Carretilha Lubina Black Widow GTX"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "9.5:1",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "recolhimento",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    140,
+    80,
+    210,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Manivela de duralumínio de 97 mm"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Carretilha Lubina Black Widow GTX"
+   ],
+   "t0": 5.0,
+   "t1": 10.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "6",
+   "t0": 5.0,
+   "t1": 10.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "discos de drag",
+   "t0": 5.12,
+   "t1": 10.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    140,
+    80,
+    210,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Super Drag, drag de 7 kg"
+   ],
+   "t0": 5.3,
+   "t1": 10.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Carretilha Lubina Black Widow GTX"
+   ],
+   "t0": 10.0,
+   "t1": 15,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "Só",
+   "t0": 10.0,
+   "t1": 15,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "176 g",
+   "t0": 10.12,
+   "t1": 15,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    140,
+    80,
+    210,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": false
+  },
+  {
+   "kind": "button",
+   "text": "Toque no carrinho",
+   "t0": 10.4,
+   "t1": 15,
+   "y": 1604,
+   "x": 70,
+   "anim": "fade",
+   "out": false,
+   "style": "outline",
+   "icon": "cart",
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "fill": [
+    20,
+    18,
+    16,
+    70
+   ],
+   "lw": 2,
+   "base": "dm_md",
+   "size": 46,
+   "h": 110
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p161-carretilha-lubina-black-widow/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p161-carretilha-lubina-black-widow/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p161-carretilha-lubina-black-widow/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p161-carretilha-lubina-black-widow/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p161-carretilha-lubina-black-widow/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p161-carretilha-lubina-black-widow/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p161-carretilha-lubina-black-widow/out2/p161_b_faixas.mp4",
+ "dur": 15.0,
+ "natural": 1,
+ "trans": [
+  [
+   5.0,
+   "whip"
+  ],
+  [
+   10.0,
+   "zoom"
+  ]
+ ]
+}
