@@ -96,6 +96,9 @@ Hipóteses (precisam de dado que a API não dá):
 Dados salvos em `painel_app_2026-10-26.json`. Bate com a API: 30 dias = 604 pedidos no app e 611 na API.
 O valor de "Vendas" do app inclui pedidos cancelados (R$ 218 mil, contra R$ 147 mil válidos na API).
 
+**Observação (prints de 30 dias, 22h01):** idade, gênero, cidades e atividade são idênticos nos períodos de 7, 15 e 30 dias.
+Então esse quadro é o perfil geral da audiência, não o público de cada período. Ele não serve para medir mudança semana a semana.
+
 **Funil (30 dias):** cerca de 250 mil visualizações (estimativa: 4 × 62,7 mil), depois 44,3 mil cliques (cerca de 18% de quem vê clica, número muito bom),
 depois 604 pedidos (**1,4% de quem clica compra**), e por fim 27% de cancelamento.
 O gargalo não é atenção nem clique: é o produto, o preço e a loja depois do clique.
