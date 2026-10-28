@@ -1,7 +1,8 @@
 # Postagem nas redes, 6 por dia (a dona, 28/10)
 
 - Vídeos: coleção `posts` da Postagens com status `pronto` ou `postado` (já postado na Shopee também vale), só layouts **A e C**,
-  alternando A, C, A, C, lote mais novo primeiro.
+  alternando A, C, A, C. Ordem (a dona, 28/10): 1º puffs, poltronas, penteadeiras, lustres, aparadores (ESTRELAS),
+  depois móveis bonitos (BONITOS), depois o resto; ferramentas e eletrônicos (FIM) por último; dentro de cada grupo, lote mais novo primeiro.
   O B fica só para a Shopee. Postar nas redes NÃO muda o status do doc (ela ainda posta na Shopee à mão).
 - Redes: Instagram (Reels), Facebook (Reels da Página) e Threads, o mesmo vídeo nas 3.
 - Horários (Brasília, pico): 08:07, 11:07, 13:07, 17:07, 19:07, 21:07. 1 vídeo por horário, máximo 6 por dia.

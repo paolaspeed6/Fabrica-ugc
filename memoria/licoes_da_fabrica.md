@@ -139,3 +139,5 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
   instagram_manage_comments. Agora o link vai na legenda até a dona gerar uma chave com essas permissões.
 - A conversa da tarefa agendada não tem push no GitHub (403): o registro dos posts mora no banco da Postagens (redes/estado).
 - A query do banco pagina (next_cursor): sempre seguir o cursor.
+- 28/10: a dona quer nas redes SEMPRE primeiro os produtos bonitos e funcionais (puffs, poltronas, penteadeira): chamam mais
+  atenção. Listas ESTRELAS / BONITOS / FIM no meta/redes_diario.py; produto novo de decoração entra sozinho na frente.

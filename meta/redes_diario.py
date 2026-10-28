@@ -54,12 +54,31 @@ def docs(pasta):
     return out
 
 
+# a dona, 28/10: "priorize sempre produtos bonitos e funcionais, como puffs, poltronas, penteadeira" (chamam mais atenção)
+BONITOS = ("puff", "poltrona", "penteadeira", "camarim", "lustre", "pendente", "luminaria", "abajur", "aparador", "buffet",
+           "rack", "estante", "livreiro", "cabeceira", "balcao", "sapateira", "cama", "beliche", "berco", "tapete", "espelho",
+           "cadeira", "banqueta", "mesa", "sofa", "gabinete", "armario", "boucle", "espreguicadeira", "panela")
+FIM = ("filamento", "nobreak", "anilha", "halter", "furadeira", "parafusadeira", "ingco", "carretilha", "compressor",
+       "motor", "solda", "lavadora", "monitor", "gamer", "auxiliar-partida", "bike", "bicicleta", "spinning", "ventilador")
+
+
+ESTRELAS = ("puff", "poltrona", "penteadeira", "camarim", "boucle", "lustre", "pendente", "aparador", "buffet", "cabeceira",
+            "espelho", "sofa")
+
+
+def nota(d):  # 0 = estrela, 1 = bonito, 2 = resto, 3 = ferramenta/eletrônico (fim da fila)
+    s = d["id"].lower()
+    return (3 if any(x in s for x in FIM) else 0 if any(x in s for x in ESTRELAS)
+            else 1 if any(x in s for x in BONITOS) else 2)
+
+
 def fila(ds, reg):
     prods = {}
     for d in ds.values():
         prods.setdefault(d["chave"], {})[d["layout"]] = d
     # lote mais novo primeiro (os da Shopee já postados também valem para as redes); dentro do lote, na ordem
-    ordem, q = sorted(sorted(prods, key=lambda k: k[2]), key=lambda k: (k[0], k[1]), reverse=True), []
+    ordem = sorted(sorted(prods, key=lambda k: k[2]), key=lambda k: (k[0], k[1]), reverse=True)
+    ordem, q = sorted(ordem, key=lambda k: nota(next(iter(prods[k].values())))), []  # bonitos primeiro
     for volta in (0, 1):
         for i, k in enumerate(ordem):
             quer = "AC"[(i + volta) % 2]
@@ -67,12 +86,13 @@ def fila(ds, reg):
             if d and d["id"] not in reg and d not in q:
                 q.append(d)
     # alterna A e C de verdade, mesmo quando falta um layout
-    a, c = [d for d in q if d["layout"] == "A"], [d for d in q if d["layout"] == "C"]
     ult = next((v["layout"] for _, v in sorted(reg.items(), key=lambda x: x[1]["quando"], reverse=True)), "C")
     res = []
-    while a or c:
-        lado = (c or a) if ult == "A" else (a or c)
-        d = lado.pop(0)
+    while q:
+        quer = "C" if ult == "A" else "A"
+        # o próximo com o layout certo, sem pular para um produto menos bonito
+        i = next((j for j, d in enumerate(q) if d["layout"] == quer and nota(d) <= nota(q[0])), 0)
+        d = q.pop(i)
         res.append(d)
         ult = d["layout"]
     return res
