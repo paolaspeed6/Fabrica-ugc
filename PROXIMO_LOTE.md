@@ -12,7 +12,7 @@ Atualizado: 2026-10-28. Histórico completo: memoria/historico_lotes.md. Regras:
 - Nada pago sem OK da dona e teto em dólar. Refazer uma imagem ou clipe pago só UMA vez. Reprovou 2x: entender o motivo, não gerar de novo.
 - Todo produto sai com A, B e C. Versão reprovada pelo auditor é refeita só na edição (grátis).
 - Produto sem cena aprovada vira "resgate" na aba Conferir. Nunca descartar sem a dona ver.
-- Vídeo vai para a aba Conferir. Só o Ok da dona libera para Postagens (é automático, sem o Claude).
+- SEMPRE, em todo lote (a dona, 28/10): vídeo pronto vai para a Conferência (aba Conferir da Postagens, 7HYeG...). Só o Ok da dona libera para Postagens (automático, sem o Claude). A Conferência fixada antiga (6An95...) agora é só um botão para a certa.
 - Edição: layouts A "Um dia com ela", B "Faixas", C "Direto ao ponto". Música animada (musicas/biblioteca). Assinatura "Aguiiar Lar" muda de lugar no vídeo.
 - Nunca subir chave, token, link de afiliado ou Sub ID em repositório público (este é privado).
 

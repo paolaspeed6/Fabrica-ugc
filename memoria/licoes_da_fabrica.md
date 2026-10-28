@@ -129,3 +129,7 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 
 ## 28/10 (a dona): Reels das redes sociais
 - Para Instagram, Facebook e Threads: usar os layouts A ("Um dia com ela") e C ("Direto ao ponto"), alternando entre os produtos. B fica só para a Shopee.
+
+## 28/10 – Conferência sempre antes de Postagens (a dona: "a partir de agora sempre faça assim em todos os lotes")
+Todo lote: vídeos prontos vão para a Conferência (aba Conferir da Postagens). Só o Ok dela leva para "Para postar".
+Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e achava que os vídeos não chegavam; essa página virou um atalho.

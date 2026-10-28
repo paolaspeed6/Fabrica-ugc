@@ -30,3 +30,4 @@
 
 - 27/10: a conferência dos vídeos agora é a aba "Conferir" da Postagens (https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt). A Conferência antiga fica só como histórico.
 - 27/10 (2): Conferência e Postagens moram no MESMO endereço https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt (mesmo banco): página Postagens (index) e página conferencia.html (botão "Conferência →" no topo). Publicar sempre os dois: file_path paginas/postagens.html + files {conferencia.html: paginas/conferencia_pag.html} (gerado de postagens.html com o esqueleto). A Conferência antiga (6An95...) só tem o aviso de mudança.
+- 28/10: a Conferência fixada (6An95...) virou um atalho com botão para a Conferência certa dentro da Postagens (fonte paginas/conferencia_atalho.html). Nunca gravar vídeos no banco dela.
