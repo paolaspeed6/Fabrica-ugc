@@ -286,3 +286,18 @@ Pagamentos já recebidos: R$ 18.492 (de abril a outubro, de R$ 223 até R$ 6.339
 No ritmo de 31 dias, outubro dá cerca de R$ 8,3 mil (+11% sobre setembro). Então outubro não está parado, só cresce bem mais devagar que agosto.
 Redes sociais somam de R$ 0,1 a 0,5 mil por mês. Entre março e maio, o "Todos" tinha mais pedidos que o Shopee Vídeo (49 contra 30 em março).
 Hoje quase tudo vem do Shopee Vídeo.
+
+---
+## 100 vídeos por dia desde ~25/10: o que esperar (registrado em 28/10 para conferir depois)
+Ponto de partida: cerca de 9,5 mil visualizações por dia, cerca de R$ 250 por dia de comissão e cerca de R$ 26 por mil visualizações.
+
+| Cenário | O que acontece | Comissão por mês |
+|---|---|---|
+| Pessimista | A Shopee distribui uma quantidade quase fixa por conta. Sinal: em outubro o número de vídeos subiu cerca de 3 vezes e as visualizações por dia não subiram. | R$ 8 a 9 mil (como hoje) |
+| Médio | Repete o salto de julho para agosto (visualizações +50%). | R$ 11 a 13 mil |
+| Otimista | Cada vídeo novo soma cerca de 150 visualizações a mais, perto do que os vídeos novos têm mostrado (120 a 500), e as visualizações por dia chegam a 2 ou 3 vezes. | R$ 18 a 25 mil |
+
+Como saber qual cenário está acontecendo:
+- **Termômetro:** visualizações por dia, no print de "Visualizações · Últimos 7 dias" (hoje cerca de 62 mil por semana).
+- **Até ~15/11:** se passar de 85 mil por semana, o volume está pegando. Se ficar entre 60 e 70 mil, é sinal de teto por conta. Nesse caso, testar menos repetição (1 layout por produto) antes de desistir do volume.
+- **Até ~30/11:** a comissão por semana precisa passar de R$ 2,2 mil para o volume se pagar com folga.
