@@ -281,3 +281,8 @@ Pagamentos já recebidos: R$ 18.492 (de abril a outubro, de R$ 223 até R$ 6.339
 - **Volume** (dona: 20, depois 40, depois 100 por dia) aumenta visualizações.
 - **Taxa** (comissão extra de 7% ou mais, nos vídeos novos e trocando o produto marcado nos vídeos antigos de 0%) devolve o valor por pedido para cerca de R$ 23.
 - Juntas, valem mais que qualquer uma sozinha.
+
+**Aba "Todos" (Shopee Vídeo + redes):** julho R$ 2,8 mil, agosto R$ 6,4 mil, setembro R$ 7,5 mil, outubro (1 a 26) R$ 7,0 mil.
+No ritmo de 31 dias, outubro dá cerca de R$ 8,3 mil (+11% sobre setembro). Então outubro não está parado, só cresce bem mais devagar que agosto.
+Redes sociais somam de R$ 0,1 a 0,5 mil por mês. Entre março e maio, o "Todos" tinha mais pedidos que o Shopee Vídeo (49 contra 30 em março).
+Hoje quase tudo vem do Shopee Vídeo.
