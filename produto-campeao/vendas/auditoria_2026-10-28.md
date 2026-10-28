@@ -139,7 +139,7 @@ O gargalo não é atenção nem clique: é o produto, o preço e a loja depois d
 | R$ 200 a 500 | R$ 4,66 | R$ 20,17 | R$ 35,89 |
 | R$ 500 ou mais | R$ 12,18 | R$ 39,53 | **R$ 99,18** |
 
-O mesmo pedido pode valer **R$ 1,85 ou R$ 99** (53 vezes mais). 444 pedidos (27%) caíram na coluna de 0%.
+O mesmo pedido pode valer **R$ 1,85 ou R$ 99** (53 vezes mais). 444 dos pedidos válidos (37%) caíram na coluna de 0%.
 Com o alcance travado (veja F), escolher a taxa é a alavanca mais barata.
 
 ### B. Cancelamento: depende de quanto tempo a pessoa leva para comprar e da loja
