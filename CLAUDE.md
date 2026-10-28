@@ -7,6 +7,12 @@ Esta fábrica faz duas coisas:
 2. **Criar do zero** (método do kit, a mesma fábrica do Kevin): Tinder de produtos → fotos do anúncio → setor de qualidade →
    imagens (Nano Banana) e clipes (Seedance/Veo) na WaveSpeed → edição nos layouts DELA → Conferência → Drive → Postagens → Reels automáticos.
 
+## Modelo de cada conversa (a dona, 28/10: "Opus na produção, Sonnet nos agentes")
+- Conversa de LOTE (produção): modelo `claude-opus-5-5`. Ao criar a conversa com create_session, passe `model: "claude-opus-5-5"` SEMPRE.
+- Agentes de conferência (Fichador, Fiscal de imagem, Fiscal de vídeo, Fiscal de confirmação): `model: "sonnet"` no Agent tool.
+- Conversa de TESTE ou dúvida rápida: o modelo que a dona escolher com /model. Não trocar sozinho.
+- O modelo não muda sozinho dentro de uma conversa: quem troca é a dona (/model) ou a conversa nova.
+
 ## Produção diária de lote (a dona, 27/10: economizar uso sem perder qualidade)
 Leia SÓ `PROXIMO_LOTE.md`, `video-teste/lote/modelo/CHECKLIST.md` e `agentes/setor_qualidade/RESUMO_REGRAS.md` (as regras
 já estão nos scripts e no resumo). Rode `video-teste/lote/modelo/produzir.sh` (fase1/fase2) com o Bash em segundo plano

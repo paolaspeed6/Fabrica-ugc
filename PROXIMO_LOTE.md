@@ -1,5 +1,8 @@
 # Onde paramos (leia isto no começo de uma conversa nova; atualize no fim de cada lote)
 
+## Modelos (28/10)
+Lote novo: create_session com model claude-opus-5-5. Agentes de conferência: sonnet. Ver CLAUDE.md.
+
 ## Como a dona começa um lote (conversa nova, 15 produtos no máximo)
 Mensagem: "Lote do dia: 15 produtos da Fila, teto US$ 8." O Claude: lê só este arquivo + CHECKLIST + RESUMO_REGRAS,
 cria a pasta, fotos, 1 Fichador Sonnet, links/textos, `produzir.sh fase1` (segundo plano), 1 Fiscal Sonnet nas folhas,
