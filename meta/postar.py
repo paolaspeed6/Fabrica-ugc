@@ -85,10 +85,20 @@ def esperar(checar, pronto, erro, limite=600):
     raise RuntimeError("processamento passou de 10 min")
 
 
+_pagina = {}
+
+
 def tk(nome):
     v = os.environ.get(nome)
     if not v:
         sys.exit(f"falta a variável {nome}")
+    if nome == "META_PAGE_TOKEN":  # a dona guardou o token do PERFIL (28/10): troca pelo da Página via me/accounts, sem pedir nada a ela
+        if "t" not in _pagina:
+            contas = pedir("GET", f"{GRAPH}/me/accounts?fields=id,access_token", v).get("data", [])
+            alvo = os.environ.get("META_PAGE_ID")
+            pg = next((c for c in contas if c.get("id") == alvo), None) or (contas[0] if contas else None)
+            _pagina["t"] = pg["access_token"] if pg else v
+        return _pagina["t"]
     return v
 
 
