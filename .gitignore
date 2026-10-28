@@ -14,3 +14,4 @@ produto-campeao/afiliados/*.log
 produto-campeao/afiliados/*.fim
 meta/plano*.json
 meta/fila*.json
+trabalhos/*/out2/
