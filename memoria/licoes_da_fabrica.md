@@ -133,3 +133,9 @@ com o passo exato para retomar (ex.: SendMessage ao agente parado). Sem isso a f
 ## 28/10 – Conferência sempre antes de Postagens (a dona: "a partir de agora sempre faça assim em todos os lotes")
 Todo lote: vídeos prontos vão para a Conferência (aba Conferir da Postagens). Só o Ok dela leva para "Para postar".
 Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e achava que os vídeos não chegavam; essa página virou um atalho.
+
+## 28/10 – Redes automáticas: 1º disparo
+- Postou nas 3 redes (mesa em L, A). Comentário com link falhou no IG e no FB: a chave da Meta não tem pages_manage_engagement /
+  instagram_manage_comments. Agora o link vai na legenda até a dona gerar uma chave com essas permissões.
+- A conversa da tarefa agendada não tem push no GitHub (403): o registro dos posts mora no banco da Postagens (redes/estado).
+- A query do banco pagina (next_cursor): sempre seguir o cursor.

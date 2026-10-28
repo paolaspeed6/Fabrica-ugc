@@ -6,6 +6,8 @@ com a mensagem "Só copiar o link e colar no WhatsApp".
 Uso:
   python3 -I redes_diario.py <pasta dos docs posts> --seco [N]   mostra os próximos N posts (padrão 6), não posta
   python3 -I redes_diario.py <pasta dos docs posts>              posta o próximo vídeo da fila nas 3 redes
+  --estado F.json   registro + legendas num arquivo só (o doc redes/estado do banco da Postagens; a tarefa agendada
+                    não consegue dar push no GitHub, 28/10), em vez de postados_redes.json / legendas_redes.json
 
 <pasta dos docs posts> = saída do ArtifactData query (coleção posts, status pronto, out_dir) da página Postagens.
 Fila: produtos na ordem do lote; 1ª volta A, C, A, C...; 2ª volta o layout que faltou de cada produto.
@@ -47,7 +49,7 @@ def docs(pasta):
         d = d.get("data", d)
         nome = os.path.basename(f)[:-5]
         m = re.match(r"(\d{4})([A-Z]?)_(\d+)_.*_([AC])$", nome)
-        if m and d.get("status") == "pronto" and d.get("drive_url") and d.get("link_produto"):
+        if m and d.get("status") in ("pronto", "postado") and d.get("drive_url") and d.get("link_produto"):
             out[nome] = dict(d, id=nome, chave=(d.get("dia", ""), m[2], int(m[3])), layout=m[4])
     return out
 
@@ -56,7 +58,8 @@ def fila(ds, reg):
     prods = {}
     for d in ds.values():
         prods.setdefault(d["chave"], {})[d["layout"]] = d
-    ordem, q = sorted(prods), []
+    # lote mais novo primeiro (os da Shopee já postados também valem para as redes); dentro do lote, na ordem
+    ordem, q = sorted(sorted(prods, key=lambda k: k[2]), key=lambda k: (k[0], k[1]), reverse=True), []
     for volta in (0, 1):
         for i, k in enumerate(ordem):
             quer = "AC"[(i + volta) % 2]
@@ -103,6 +106,28 @@ nota ou número de avaliações; bebida; link; palavra "frete grátis"; dizer qu
 Responda JSON: {{"legenda": "..."}}"""
 
 
+ESTADO = {}
+
+
+def salvar(reg, cache):
+    if ESTADO.get("arq"):
+        gravar(ESTADO["arq"], {"registro": reg, "legendas": cache})
+    else:
+        gravar(REG, reg)
+        gravar(LEG, cache)
+
+
+def pode_comentar():
+    """A chave da Meta precisa de pages_manage_engagement (fb) e instagram_manage_comments (ig) para o 1º comentário;
+    sem elas (28/10) o link vai na legenda."""
+    try:
+        pm = P.pedir("GET", f"{P.GRAPH}/me/permissions", os.environ["META_PAGE_TOKEN"])["data"]
+        ok = {x["permission"] for x in pm if x["status"] == "granted"}
+    except Exception:
+        ok = set()
+    return {"fb": "pages_manage_engagement" in ok, "ig": "instagram_manage_comments" in ok, "threads": True}
+
+
 def legenda(d, cache):
     if d["id"] in cache:
         return cache[d["id"]]
@@ -113,7 +138,7 @@ def legenda(d, cache):
     if not txt or "http" in txt or len(txt) > 480:  # reserva sem Gemini
         txt = f"{base} ✨\n\n💬 Link nos comentários 👇\n\n{tags} #achadinhos #achadosshopee #casa #aguiiarlar".strip()
     cache[d["id"]] = txt
-    gravar(LEG, cache)
+    salvar(ESTADO.get("reg", {}), cache)
     return txt
 
 
@@ -154,7 +179,8 @@ def ig(arq, leg, com):
     pub = P.pedir("POST", f"{P.GRAPH}/{P.IG}/media_publish", t, {"creation_id": c["id"]})
     r = {"id": pub["id"], "permalink": P.pedir("GET", f"{P.GRAPH}/{pub['id']}?fields=permalink", t).get("permalink")}
     try:
-        r["comentario"] = P.pedir("POST", f"{P.GRAPH}/{pub['id']}/comments", t, {"message": com}).get("id")
+        if com:
+            r["comentario"] = P.pedir("POST", f"{P.GRAPH}/{pub['id']}/comments", t, {"message": com}).get("id")
     except Exception as e:
         r["comentario_erro"] = str(e)[:200]
     return r
@@ -174,8 +200,9 @@ def fb(arq, leg, com):
                    lambda s: s.get("status", {}).get("video_status") == "error")
     perm = st.get("permalink_url") or ""
     r = {"id": vid, "permalink": ("https://www.facebook.com" + perm) if perm.startswith("/") else perm}
-    try:
-        r["comentario"] = P.pedir("POST", f"{P.GRAPH}/{st.get('post_id') or vid}/comments", t, {"message": com}).get("id")
+    try:  # comentário no id do vídeo (no post_id a API recusa, 28/10)
+        if com:
+            r["comentario"] = P.pedir("POST", f"{P.GRAPH}/{vid}/comments", t, {"message": com}).get("id")
     except Exception as e:
         r["comentario_erro"] = str(e)[:200]
     return r
@@ -195,6 +222,8 @@ def threads(d, leg, com):
         fechar()
     r = {"id": pub["id"], "permalink": P.pedir("GET", f"{P.THREADS}/{pub['id']}?fields=permalink", t).get("permalink")}
     try:  # o "comentário" no Threads é uma resposta ao próprio post
+        if not com:
+            return r
         rc = P.pedir("POST", f"{P.THREADS}/me/threads", t, {"media_type": "TEXT", "text": com, "reply_to_id": pub["id"]})
         time.sleep(5)
         r["comentario"] = P.pedir("POST", f"{P.THREADS}/me/threads_publish", t, {"creation_id": rc["id"]}).get("id")
@@ -206,7 +235,15 @@ def threads(d, leg, com):
 def main():
     if len(sys.argv) < 2:
         sys.exit(__doc__)
-    reg, cache, pausas = ler(REG), ler(LEG), ler(P.PAUSAS)
+    if "--estado" in sys.argv:
+        ESTADO["arq"] = sys.argv[sys.argv.index("--estado") + 1]
+        e = ler(ESTADO["arq"])
+        e = e.get("data", e)
+        reg, cache = e.get("registro", {}), e.get("legendas", {})
+    else:
+        reg, cache = ler(REG), ler(LEG)
+    ESTADO["reg"] = reg
+    pausas = ler(P.PAUSAS)
     q = fila(docs(sys.argv[1]), reg)
     if "--seco" in sys.argv:
         n = int(sys.argv[-1]) if sys.argv[-1].isdigit() else 6
@@ -229,7 +266,9 @@ def main():
     ent = {"quando": agora.isoformat(timespec="seconds"), "layout": d["layout"], "produto": d.get("produto"),
            "link": d["link_produto"]}
     reg[d["id"]] = ent
-    gravar(REG, reg)  # grava antes, para nunca repostar se cair no meio
+    salvar(reg, cache)  # grava antes, para nunca repostar se cair no meio
+    comenta = pode_comentar()
+    link_leg = leg.replace("💬 Link nos comentários 👇", com)
     with tempfile.TemporaryDirectory() as tmp:
         arq = baixar(d, tmp)
         for rede in REDES:
@@ -238,8 +277,12 @@ def main():
                 ent[rede] = {"pulado": f"pausada até {pz['ate']}"}
                 continue
             try:
-                ent[rede] = {"ig": lambda: ig(arq, leg, com), "fb": lambda: fb(arq, leg, com),
-                             "threads": lambda: threads(d, leg, com)}[rede]()
+                lg = leg if comenta[rede] else link_leg  # sem permissão de comentar: link na legenda
+                cm = com if comenta[rede] else None
+                ent[rede] = {"ig": lambda: ig(arq, lg, cm), "fb": lambda: fb(arq, lg, cm),
+                             "threads": lambda: threads(d, lg, cm)}[rede]()
+                if not comenta[rede]:
+                    ent[rede]["link_na_legenda"] = True
                 print(f"ok {rede}: {ent[rede].get('permalink')}"
                       + (" (comentário falhou)" if "comentario_erro" in ent[rede] else ""), flush=True)
             except Exception as e:
@@ -250,7 +293,7 @@ def main():
                     pausas[rede] = {"ate": (datetime.now() + timedelta(hours=24)).isoformat(timespec="seconds"),
                                     "motivo": msg[:300]}
                     P.gravar(P.PAUSAS, pausas)
-            gravar(REG, reg)
+            salvar(reg, cache)
     print(f"postado {d['id']} ({d['layout']}); faltam {len(q) - 1} na fila")
 
 
