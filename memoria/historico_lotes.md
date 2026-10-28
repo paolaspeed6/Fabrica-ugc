@@ -26,7 +26,15 @@ Atualizado: 2026-10-27 (21h50 UTC).
 - 2710B-03 Mesa em L: resgate PROCESSADO (27/10 21h): as 3 imagens aceitas foram recuperadas do histórico da WaveSpeed
   (POST https://api.wavespeed.ai/api/v3/predictions {"page":1,"page_size":100} lista as gerações com o link do resultado; grátis),
   animadas com câmera fixa (FIXA=1, US$ 0,30) e voltaram à aba Conferir como pendente com A, B e C. Tinder: pronto.
-## Último lote: Lista 27/10 C — ENTREGUE (27/10, 21h50 UTC)
+## Último lote: Lista 28/10 A — ENTREGUE (28/10, 20h40 UTC)
+- 14 produtos com A, B e C (42 vídeos) na aba Conferir da Postagens (2810A-02,03,05..10,14,16..20) + 2810A-13 Colchão casal Ortho Flex
+  como "resgate" (as 3 cenas reprovadas nas 2 rodadas). Drive "Fabrica Videos/2026-10-28". Tinder: 14 em `pronto`; colchão segue `produzindo`.
+  Gasto US$ 6,18 de 8 (60 imagens + 38 clipes, nenhuma refação de clipe).
+- Pulados pelo Fichador: Kit Cooktop+Balcão, Viveiro, Radiador Kombi, Banco Kulmai, Chave de impacto 1200 N.m (sem foto limpa/colagem).
+  Entraram as reservas Mesa Moema, Purificador ALKA, Caixa de areia, Barraca pop-up e Monitor Concórdia (p16-p20).
+- Segredo do ambiente ainda com nome minúsculo `shopee_APP_SECRET`: rodei gerar_links com SHOPEE_APP_SECRET="$shopee_APP_SECRET".
+  Pedir à dona para renomear para SHOPEE_APP_SECRET.
+## Lote anterior: Lista 27/10 C — ENTREGUE (27/10, 21h50 UTC)
 - 14 produtos com A, B e C (42 vídeos) na aba Conferir (2710C-02..13, 15, 16) + 2710C-01 Kit 2 Espreguiçadeiras como "resgate"
   (91-96% da largura nas 2 rodadas). Drive "Fabrica Videos/2026-10-27". Tinder: 14 em `pronto`; p01 segue `produzindo`.
   Gasto US$ 5,96 (52 imagens + 39 clipes) + US$ 0,30 do resgate da Mesa = US$ 6,26 de 8.
