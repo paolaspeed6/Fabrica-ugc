@@ -90,3 +90,38 @@ Hipóteses (precisam de dado que a API não dá):
 5. **Medir por vídeo:** toda semana, exportar do app (Central de Afiliados > Shopee Vídeo) as visualizações e os cliques por vídeo,
    e salvar o arquivo aqui. Assim dá para cruzar visualização, clique e venda.
 6. Rodar esta auditoria a cada 7 dias (`auditoria_puxar.py`, grátis) e comparar com esta.
+
+---
+## Atualização: painel do app Shopee Vídeo (prints de 28/10, dados até 26/10)
+Dados salvos em `painel_app_2026-10-26.json`. Bate com a API: 30 dias = 604 pedidos no app e 611 na API.
+O valor de "Vendas" do app inclui pedidos cancelados (R$ 218 mil, contra R$ 147 mil válidos na API).
+
+**Funil (30 dias):** cerca de 250 mil visualizações (estimativa: 4 × 62,7 mil), depois 44,3 mil cliques (cerca de 18% de quem vê clica, número muito bom),
+depois 604 pedidos (**1,4% de quem clica compra**), e por fim 27% de cancelamento.
+O gargalo não é atenção nem clique: é o produto, o preço e a loja depois do clique.
+
+**Descobertas novas**
+1. **Os vídeos novos quase não são vistos.** Em 15 dias entraram cerca de 194 vídeos (eram 57 nos 15 dias anteriores), mas o melhor deles teve 496 visualizações
+   e a maioria ficou entre 120 e 280. As cerca de 64 mil visualizações por semana vêm dos vídeos antigos:
+   a Banqueta (postada em 24/06) trouxe sozinha +7,3 mil espectadores na semana, e a Mesa 8 lugares (28/05) trouxe +R$ 1,2 mil de GMV.
+   Explica por que "produtos com 1ª venda" caiu em outubro: **o volume de postagem subiu, mas o alcance de cada vídeo novo é perto de zero.**
+2. **O público é mulher (72%) e tem 45 anos ou mais (61%).** Vários vídeos novos fogem desse público: inversor de camping, DVR de câmeras,
+   adaptador de furadeira para motosserra e caixa de som. Casa, cozinha e móveis conversam com quem já assiste.
+3. **Compartilhar é a reação principal:** 816 compartilhamentos contra 249 curtidas e 15 comentários. Ela manda o vídeo para alguém (marido ou filha)
+   antes de comprar. Ganchos que pedem isso ("mostra pra quem vai montar com você") têm base nos dados.
+4. **Horário:** a audiência tem pico às 21h, depois às 12h e às 18h, e um vale entre 3h e 6h.
+   Vários vídeos novos foram postados entre 1h55 e 2h57, ou seja, no vale. Hipótese: isso piora o empurrão inicial. O efeito não está provado.
+5. **Foz do Iguaçu com 19,6% das visualizações** é fora do normal para o tamanho da cidade (SP tem 19,9%).
+   Hipóteses: visualizações da própria conta ou de aparelhos da casa, ou público de fronteira. Vale conferir; se for visualização própria, os números reais são cerca de 20% menores.
+6. **A última semana caiu:** de 20 a 26/10 foram 124 pedidos (−44) e R$ 41 mil (−R$ 24,9 mil), com cliques estáveis (−2%).
+   A queda está na conversão (de 0,3% para 0,2%), não no alcance. Isso combina com o fato de que os vídeos com receita caíram de 66 para 50.
+
+**Plano de 30 dias revisado (substitui a seção 7)**
+1. **Menos vídeos e mais certeiros:** parar a enxurrada (cerca de 13 por dia). Postar de 3 a 5 por dia, só de casa, cozinha e móveis,
+   com comissão extra de 7% ou mais, na faixa de R$ 150 a R$ 800.
+2. **Reaproveitar os campeões:** fazer variações dos vídeos da Banqueta, da Mesa 8 lugares e da Namoradeira (mesmo produto, novo gancho, nova capa),
+   e procurar produtos "irmãos" (banquetas, mesas e bancos de madeira em lojas com taxa).
+3. **Postar no pico:** entre 11h e 12h e entre 18h e 21h. Testar 2 semanas e comparar a visualização média dos vídeos novos (meta: passar de 500).
+4. **Cortar o fora do público:** eletrônico, ferramenta e camping saem, a não ser que um teste prove o contrário.
+5. **Cortar o que cancela:** bicicletas Cripto e GTS.
+6. **Medir toda semana:** mandar os mesmos prints (Vendas 7 dias + lista de vídeos novos). Eu comparo com este arquivo.
