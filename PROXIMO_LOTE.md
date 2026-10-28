@@ -70,6 +70,10 @@ Atualizado: 2026-10-27 (21h50 UTC).
 `video-teste/foto_colada/colar_auto.sh <foto01> <video> <a|b|c>` cola o cartão num canto (A/C embaixo à direita, B em cima).
 AINDA NÃO TESTADO: testar em 1 produto e mostrar a ela antes de usar no lote.
 
+## Redes sociais (28/10)
+- A dona escolheu: Reels = layout A e C alternando (B só Shopee). Ligar postagem só depois de `meta/postar.py conferir` passar.
+- 28/10: Meta respondeu "API access blocked" (app bloqueado/restrito) e Threads "Failed to decrypt" (token colado errado). Dona vai corrigir.
+
 ## Pendências da dona
 - Segredos: renomear `shopee_APP_SECRET` para `SHOPEE_APP_SECRET`; token da Página em META_PAGE_TOKEN; THREADS_TOKEN novo;
   criar MARCA_NOME e DRIVE_PASTA.
