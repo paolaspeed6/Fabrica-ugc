@@ -128,3 +128,96 @@ O gargalo não é atenção nem clique: é o produto, o preço e a loja depois d
 4. **Cortar o fora do público:** eletrônico, ferramenta e camping saem, a não ser que um teste prove o contrário.
 5. **Cortar o que cancela:** bicicletas Cripto e GTS.
 6. **Medir toda semana:** mandar os mesmos prints (Vendas 7 dias + lista de vídeos novos). Eu comparo com este arquivo.
+
+---
+## Análise profunda (28/10, API + painel do app)
+
+### A. Quanto vale um pedido: preço × taxa do vendedor (90 dias, pedidos válidos)
+| Preço \ taxa do vendedor | 0% | 1 a 6% | 7% ou mais |
+|---|---|---|---|
+| até R$ 200 | R$ 1,85 | R$ 9,33 | R$ 17,01 |
+| R$ 200 a 500 | R$ 4,66 | R$ 20,17 | R$ 35,89 |
+| R$ 500 ou mais | R$ 12,18 | R$ 39,53 | **R$ 99,18** |
+
+O mesmo pedido pode valer **R$ 1,85 ou R$ 99** (53 vezes mais). 444 pedidos (27%) caíram na coluna de 0%.
+Com o alcance travado (veja F), escolher a taxa é a alavanca mais barata.
+
+### B. Cancelamento: depende de quanto tempo a pessoa leva para comprar e da loja
+- Quem compra **em menos de 5 minutos** depois do clique cancela muito mais. O padrão se repete em todas as faixas de preço:
+
+  | Faixa de preço | Compra em menos de 5 min | Compra em 5 min ou mais |
+  |---|---|---|
+  | até R$ 200 | 36% | 18% |
+  | R$ 200 a 500 | 32% | 14% |
+  | R$ 500 ou mais | 53% | 25% |
+
+  Hipóteses, sem prova: Pix ou boleto gerado e não pago, ou arrependimento da compra por impulso.
+  O vídeo que empurra "compra já" pode estar gerando pedido que não vira dinheiro.
+- **Lojas** (15 pedidos ou mais):
+
+  | Grupo | Loja (produto) | Cancelamento |
+  |---|---|---|
+  | Ruins | Cripto Bikes | 63% |
+  | Ruins | Bella Decor (sofá Chesterfield) | 44% |
+  | Ruins | Flay Rims (bicicleta Pro-X) | 44% |
+  | Ruins | **Distribuidora Ribeiro** (Banqueta Country, 112 pedidos) | 43% |
+  | Ruins | Sportbay (capacete) | 39% |
+  | Ruins | WJ Móveis (a Banqueta nº 1) | 32% |
+  | Boas | Casa Golden (Lixeira) | 3% |
+  | Boas | Athor Bikes | 8% |
+  | Boas | MadeiraMadeira | 11% |
+  | Boas | Santa.Loja | 11% |
+  | Boas | Polizelli | 12% |
+
+  O cancelamento é traço da loja. Para o mesmo tipo de produto, escolher a loja boa recupera dinheiro.
+- O cancelamento em pedidos já resolvidos (com mais de 30 dias) é de 26%. Dos R$ 2.961 pendentes, espere receber cerca de R$ 2.200.
+
+### C. As taxas mudam por baixo dos vídeos antigos (conferido hoje na API)
+Dos 20 produtos que mais pagaram, 5 mudaram:
+
+| Produto | Taxa do vendedor antes | Taxa hoje |
+|---|---|---|
+| **Lixeira rosê** | 6% | **0%** |
+| **Kit 2 Cadeiras madeira maciça** | 10% | **5%** |
+| **Bicicleta GTS** | 16% | **5%** |
+| BMX infantil Aro 20 | 0% | 4% (subiu) |
+| Bicicleta Pro-X | — | **saiu do ar** |
+
+Mesa 8 lugares e Namoradeira continuam em 0% (só a parte da Shopee).
+O vídeo antigo segue trazendo visualização, mas o produto passou a pagar menos.
+Use `vigiar_comissao.py` (grátis) 1 vez por semana. Se a taxa caiu, troque o produto marcado no vídeo por um equivalente com taxa, quando o app permitir.
+Encontrei opções com 10 a 14% para banqueta giratória de balcão (ex.: Kit 2 Banquetas Gomos, 10%, nota 4,9, id 58250624038).
+Para Namoradeira e Mesa 8 lugares, a busca não achou equivalente parecido com taxa melhor.
+
+### D. Vida útil de um produto vencedor
+Dos 106 produtos que venderam pela 1ª vez há mais de 60 dias, **33 (31%) ainda vendem** nos últimos 14 dias.
+A Banqueta (vídeo de 24/06) e a Mesa (vídeo de 28/05) ainda lideram. Um vencedor rende por meses. O jogo é achar poucos vencedores, não postar muito.
+
+### E. Coortes: produtos novos rendem cada vez menos
+Comissão nos primeiros 21 dias depois da 1ª venda, por mês em que o produto vendeu pela 1ª vez:
+
+| Mês | Produtos | Comissão média por produto | Produtos que passaram de R$ 50 |
+|---|---|---|---|
+| julho | 8 | R$ 107 | 50% |
+| agosto | 107 | R$ 52 | 25% |
+| setembro | 59 | R$ 50 | 29% |
+| outubro | 12 | R$ 41 | 17% |
+
+Em outubro caiu tanto o número quanto a qualidade dos produtos que "pegaram".
+Os vídeos da fábrica de 21 a 24/10 (Savana, Inversor, DVR, Caixa de som, Kit Fischer, Adaptador de furadeira) ainda têm **0 pedidos**.
+É cedo (de 2 a 5 dias), mas a visualização deles (de 120 a 280) já indica alcance baixo.
+
+### F. Produção: o custo não é o problema, o alcance é
+Um produto na fábrica custa cerca de US$ 0,42 (R$ 2,40) por 3 vídeos. A Lista 27/10 A+B+C custou US$ 16,82 por 40 produtos.
+Um único produto que "pega" paga, em média, R$ 41 a R$ 52 em 3 semanas. Então o dinheiro gasto em IA se paga fácil.
+O gargalo é outro: os vídeos novos recebem de 120 a 500 visualizações cada, contra cerca de 64 mil por semana na conta toda.
+Hipóteses a testar, sem prova:
+1. Postar os 3 layouts (A, B, C) do mesmo produto no mesmo dia pode competir entre si ou parecer conteúdo repetido.
+2. A postagem de madrugada perde o empurrão inicial.
+3. Produto fora do público (eletrônico, ferramenta) é mostrado a menos gente.
+
+### G. Teste de 14 dias (para virar regra com dado)
+- **Grupo 1:** 1 layout por produto por dia, postado entre 11h e 12h ou entre 18h e 21h, só casa e móveis, com taxa do vendedor de 7% ou mais e loja com cancelamento abaixo de 20%.
+- **Grupo 2:** o jeito atual.
+- **Medir:** visualizações de cada vídeo no 3º dia (print da lista "Vídeos") e pedidos por produto (API).
+- **Meta:** visualização média do vídeo novo acima de 500, e pelo menos 1 em cada 5 produtos com pedido em 7 dias.
