@@ -1,5 +1,17 @@
 # Onde paramos (leia isto no começo de uma conversa nova; atualize no fim de cada lote)
 
+## PARA A CONVERSA NOVA: o que está pendente (28/10)
+Esta conversa nova NÃO lembra das conversas antigas. Tudo que importa está aqui e nas regras (CLAUDE.md, memoria/).
+1. Redes sociais (Reels automático): Facebook e Instagram OK (postar.py conferir). Threads: testar com a chave nova (THREADS_TOKEN);
+   se "Failed to decrypt", gerar de novo (Casos de uso > API do Threads > Gerador de token). Ainda não há Reels prontos nem agendamento.
+   Só postar com OK da dona (qual produto, layout A ou C, legenda). Postagem automática: até 2 por dia por rede, 3 h entre posts.
+2. Lote 27/10 D: pode estar em andamento na conversa "Lote 27/10 D". Conferir a aba Conferir antes de abrir outro.
+3. Modelo: lote = Opus; agentes de conferência = Sonnet (CLAUDE.md, "Modelo de cada conversa").
+4. Conferência e Postagens: mesmo endereço. Ok da dona libera sozinho. Edição pedida vira status editar.
+5. Músicas animadas (biblioteca) e assinatura "Aguiiar Lar" mudando de lugar já valem.
+6. Foto colada (produto complexo): só se a dona pedir. Não testada.
+7. Pendências da dona: confirmar Tinder da importação de 27/10 (187 cartões) e a Fila (aprovados).
+
 ## Modelos (28/10)
 Lote novo: create_session com model claude-opus-5-5. Agentes de conferência: sonnet. Ver CLAUDE.md.
 
