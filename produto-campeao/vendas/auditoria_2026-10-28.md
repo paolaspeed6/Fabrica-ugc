@@ -244,3 +244,40 @@ Plano final (volume + filtros que não reduzem volume):
 4. **Taxas dos vídeos antigos:** rodar `vigiar_comissao.py` toda semana.
 5. **Custo de 100 por dia:** cerca de 33 produtos por dia (3 layouts cada) × R$ 2,40 = cerca de R$ 80 por dia, ou R$ 2,4 mil por mês de IA, contra R$ 7,85 mil por mês de comissão hoje.
    Para se pagar, precisa trazer pelo menos +30% de comissão. O uso do Claude também é limite (15 produtos por conversa).
+
+---
+## Histórico março a outubro (prints "Insights > Shopee Video", mês a mês)
+Dados salvos em `historico_mensal_app.json`.
+
+| Mês | Comissão estimada | Por dia | Visualizações por dia | R$ por mil visualizações | Clique/visualização | Pedido/clique | R$ por pedido |
+|---|---|---|---|---|---|---|---|
+| mar | R$ 263 | 8 | 674 | 12,6 | 8% | 1,76% | 8,8 |
+| abr | R$ 997 | 33 | 1.563 | 21,3 | 7% | 1,26% | 23,2 |
+| mai | R$ 1,5 mil | 48 | 1.823 | 26,5 | 10% | 1,16% | 23,1 |
+| jun | R$ 2,8 mil | 93 | 2.977 | 31,4 | 13% | 1,01% | 23,7 |
+| jul | R$ 2,8 mil | 90 | 5.348 | 16,9 | 19% | 0,51% | 17,8 |
+| ago | R$ 6,4 mil | 206 | 8.187 | 25,2 | 16% | 0,87% | 18,7 |
+| set | R$ 7,4 mil | 247 | 9.583 | 25,7 | 15% | 0,98% | 17,2 |
+| out (1 a 26) | R$ 6,5 mil | 250 | 9.469 | 26,4 | 17% | 0,94% | 16,7 |
+
+Pagamentos já recebidos: R$ 18.492 (de abril a outubro, de R$ 223 até R$ 6.339 no pagamento de 09/10).
+
+**O que o histórico mostra**
+1. **O volume funcionou, como a dona disse:** de julho para agosto a comissão foi de R$ 2,8 mil para R$ 6,4 mil (+130%), e as visualizações por dia subiram 53%.
+   De março a setembro a conta cresceu 28 vezes.
+2. **Desde setembro está parada:** a comissão por dia ficou em 206, 247 e 250 (agosto, setembro e outubro). As visualizações por dia ficaram em 8,2 mil, 9,6 mil e 9,5 mil.
+   Pela regra da demora, o salto de postagem de outubro ainda pode aparecer em novembro. **Novembro é o teste.**
+3. **Modelo simples da conta:** comissão = visualizações × cerca de R$ 26 por mil visualizações (valor estável desde agosto).
+   Para chegar a R$ 15 mil por mês, é preciso dobrar as visualizações (alavanca do volume) ou subir o R$ por visualização (alavanca da taxa).
+4. **O valor por pedido caiu:** era cerca de R$ 23,5 de abril a junho e agora é R$ 16,7.
+   Com o valor por pedido de junho, outubro teria cerca de R$ 10,9 mil (no ritmo de 31 dias) em vez de cerca de R$ 7,8 mil.
+   Os prints de outubro mostram o motivo: Mesa 8 lugares vendeu R$ 13 mil e pagou R$ 196 (1,5%). Namoradeira vendeu R$ 4,6 mil e pagou R$ 69. Magnésio vendeu R$ 980 e pagou R$ 15.
+   Enquanto isso, a Banqueta de balcão vendeu R$ 9,1 mil e pagou R$ 1,1 mil (12%).
+5. **O pedido por clique caiu à metade em julho** (de 1,0% para 0,5%) e voltou para cerca de 0,95%. Os cliques cresceram mais rápido que as compras.
+   Hipótese: produtos que chamam clique mas convertem menos, ou o pico de cancelamento. Não está provado.
+6. "Tempo médio de visualização" sobe todo mês (de 2 min para 20 min). Para vídeos de 15 s, deve ser tempo somado, não por vídeo. Não usar como indicador de qualidade.
+
+**Conclusão para o plano:** as duas alavancas somam.
+- **Volume** (dona: 20, depois 40, depois 100 por dia) aumenta visualizações.
+- **Taxa** (comissão extra de 7% ou mais, nos vídeos novos e trocando o produto marcado nos vídeos antigos de 0%) devolve o valor por pedido para cerca de R$ 23.
+- Juntas, valem mais que qualquer uma sozinha.
