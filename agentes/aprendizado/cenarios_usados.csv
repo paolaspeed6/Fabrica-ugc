@@ -667,3 +667,48 @@ data,produto,cena,ambiente,piso,parede,paleta
 2026-10-28,L2810b p13 cama montessoriana dino bouclé verde,A,quarto infantil manha nicho carvalho,carvalho espinha de peixe + tapete redondo marfim,branco creme liso,creme/carvalho/marfim
 2026-10-28,L2810b p13 cama montessoriana dino bouclé verde,B,quarto infantil tarde cortina voil,microcimento cinza claro + tapete creme,terracota pessego liso,pessego/creme/cinza
 2026-10-28,L2810b p13 cama montessoriana dino bouclé verde,C,quarto infantil entardecer luminaria papel,carpete areia claro,verde sálvia acinzentado liso,salvia/areia/dourado
+2026-10-29,L2910a p09 suporte lava-loucas 60x60x25 preto,A,lavanderia apto manha janela esquerda,porcelanato cimento claro 90,azulejo branco 10x30 + terracota,terracota/branco/cinza claro
+2026-10-29,L2910a p09 suporte lava-loucas 60x60x25 preto,B,canto utilitario cozinha gourmet tarde,porcelanato areia 60,estuque off-white + armario sage,sage/areia/branco
+2026-10-29,L2910a p09 suporte lava-loucas 60x60x25 preto,C,area de servico casa golden hour janela longa,porcelanato grafite 60x120,bloco branco + nicho,grafite/branco/dourado
+2026-10-29,L2910a p10 kit poltronas opala puff grafite,A,recepcao clinica moderna manha console carvalho vazio,porcelanato cinza claro 90,verde eucalipto liso + vidro,eucalipto/grafite/carvalho
+2026-10-29,L2910a p10 kit poltronas opala puff grafite,B,sala de estar noite luminaria de chao,ceramica areia 80,terracota rosada lisa,terracota/areia/grafite
+2026-10-29,L2910a p10 kit poltronas opala puff grafite,C,home office criativo tarde janela voil,cimento polido cinza claro,azul indigo liso,indigo/grafite/branco
+2026-10-29,L2910a p11 cadeira paris corda nautica cinza,A,deck de piscina casa branca manha porta de vidro,porcelanato verde-cinza pedra 60x120,estuque branco + vidro,verde-cinza/branco/turquesa
+2026-10-29,L2910a p11 cadeira paris corda nautica cinza,B,varanda coberta apto alto golden hour cobogo,porcelanato cimenticio claro 90,estuque off-white + cobogo branco,off-white/cinza/dourado
+2026-10-29,L2910a p11 cadeira paris corda nautica cinza,C,terraco gourmet noite pergolado ripado luz embutida,deck ipe escuro,ripado branco + sebe verde,ipe/branco/verde
+2026-10-29,L2910a p12 bicicleta infantil zippy aro16 laranja,A,quintal casa moderna manha muro ripado,grama esmeralda + pavers cinza claro 60,estuque branco + ripado claro,esmeralda/cinza/laranja
+2026-10-29,L2910a p12 bicicleta infantil zippy aro16 laranja,B,pista de parque tarde contraluz,asfalto liso terracota + grama,tronco de arvore + folhas,terracota/verde/laranja
+2026-10-29,L2910a p12 bicicleta infantil zippy aro16 laranja,C,brinquedoteca condominio meio-dia janela,piso emborrachado azul claro,amarelo manteiga + prateleira branca,azul/manteiga/laranja
+2026-10-29,L2910a p13 lustre tulum bambu plafon,A,varanda gourmet coberta golden hour mesa redonda vazia,porcelanato cimenticio claro 90,estuque areia + teto gesso liso,areia/cinza/mel
+2026-10-29,L2910a p13 lustre tulum bambu plafon,B,sala de jantar noite mesa ipe vazia,porcelanato marmorizado cinza 120,azul marinho liso,marinho/cinza/mel
+2026-10-29,L2910a p13 lustre tulum bambu plafon,C,cozinha integrada apto manha ilha quartzo vazia,ceramica cinza quente 80,verde sage liso,sage/branco/mel
+2026-10-29,L2910a p14 kit 2 cadeiras savana caramelo,A,sala de jantar manha mesa redonda vazia cortina voil,porcelanato cinza quente 120,verde oliva liso,oliva/caramelo/offwhite
+2026-10-29,L2910a p14 kit 2 cadeiras savana caramelo,B,espaco gourmet casa tarde mesa bistro metal vazia,porcelanato cimenticio claro 90,estuque branco + porta preta,branco/caramelo/preto
+2026-10-29,L2910a p14 kit 2 cadeiras savana caramelo,C,cozinha aberta apto golden hour bancada quartzo vazia,tabuas carvalho claro 20 cm,terracota rosada lisa,terracota/caramelo/branco
+2026-10-29,L2910a p15 placa pei cryogrip azul impressora 3d,A,canto maker manha bancada carvalho pegboard vazio,porcelanato cimento cinza claro fosco,branco liso + pegboard preto,cinza/carvalho/preto
+2026-10-29,L2910a p15 placa pei cryogrip azul impressora 3d,B,home office apto tarde mesa branca vazia,vinilico cinza claro,azul poeira liso,azul poeira/branco/cinza
+2026-10-29,L2910a p15 placa pei cryogrip azul impressora 3d,C,prateleira de oficina noite led,concreto polido escuro,grafite liso,grafite/carvalho/preto
+2026-10-29,L2910a p01 caixa-gerador-fechadura,A,area tecnica lateral casa moderna manha porta ripada,cimento queimado claro,estuque verde garrafa fosco,verde/cinza/preto
+2026-10-29,L2910a p01 caixa-gerador-fechadura,B,garagem casa moderna tarde parede lateral,epoxi cinza claro,tijolo branco pintado + rodape preto,cinza/branco/preto
+2026-10-29,L2910a p01 caixa-gerador-fechadura,C,quintal coberto gourmet entardecer parede terracota,deck cumaru + grama,terracota liso,terracota/madeira/verde
+2026-10-29,L2910a p02 penteadeira-camarim-eloa,A,quarto feminino manha parede esmeralda cortina voil,porcelanato off-white amadeirado claro,verde esmeralda profundo liso,esmeralda/greige/dourado
+2026-10-29,L2910a p02 penteadeira-camarim-eloa,B,closet moderno tarde nichos iluminados,porcelanato marmorizado branco veios cinza,branco liso + nichos MDF caramelo,branco/caramelo/cinza
+2026-10-29,L2910a p02 penteadeira-camarim-eloa,C,quarto casal fim de tarde cabeceira ripada,carpete cinza quente baixo,terracota queimada com roda-teto branco,terracota/greige/dourado
+2026-10-29,L2910a p03 espelho-redondo-led-lopazzi,A,lavabo moderno noite bancada pedra grafite,porcelanato grafite fosco,porcelanato travertino bege,grafite/travertino/dourado
+2026-10-29,L2910a p03 espelho-redondo-led-lopazzi,B,closet casal manha parede nogueira,vinilico cinza claro,painel nogueira + parede branca,nogueira/branco/dourado
+2026-10-29,L2910a p03 espelho-redondo-led-lopazzi,C,hall de entrada tarde parede azul petroleo escura,porcelanato claro polido,azul petroleo profundo liso,petroleo/dourado/branco
+2026-10-29,L2910a p04 kit-3-mesas-organicas,A,sala de estar ampla manha vidro piso marmorizado,porcelanato branco veios cinza 120,painel cinza chumbo liso + cortina linho,cinza/mel/dourado
+2026-10-29,L2910a p04 kit-3-mesas-organicas,B,sala intima fim de tarde parede rosa antigo,vinilico cinza grafite,rosa antigo liso + rodape branco,rosa antigo/grafite/dourado
+2026-10-29,L2910a p04 kit-3-mesas-organicas,C,sala tijolo aparente tarde luz lateral,cimento queimado claro,tijolo aparente natural + pilar preto,tijolo/mel/preto
+2026-10-29,L2910a p05 espreguicadeira-madeira-200,A,deck de piscina moderna manha casa branca,deck cumaru + borda travertino,estuque branco + vidro,branco/cumaru/turquesa
+2026-10-29,L2910a p05 espreguicadeira-madeira-200,B,varanda gourmet coberta tarde guarda-corpo vidro,porcelanato cimento claro 90 cm,concreto aparente claro + jardim vertical verde,cinza claro/verde/mel
+2026-10-29,L2910a p05 espreguicadeira-madeira-200,C,jardim gramado golden hour muro grafite,grama + pedras cinza grandes,muro grafite baixo + arbustos,verde/grafite/mel
+2026-10-29,L2910a p06 moises-orbelle-6em1,A,quarto de bebe manha parede verde menta,vinilico madeira clara + tapete cru,verde menta liso + rodape branco,menta/madeira clara/cru
+2026-10-29,L2910a p06 moises-orbelle-6em1,B,quarto de casal ao lado da cama noite luz de abajur,carpete cinza claro,cinza grafite liso + cabeceira branca,grafite/cinza/branco
+2026-10-29,L2910a p06 moises-orbelle-6em1,C,sala de estar tarde parede branca janela larga,porcelanato cimento claro + tapete fio bege,branco liso + painel ripado claro,branco/bege/ripado claro
+2026-10-29,L2910a p07 kit-body-pump-20kg,A,studio de treino em casa manha espelho parede,vinilico madeira clara + tatame cinza,branco liso + espelho largo,branco/madeira clara/cinza
+2026-10-29,L2910a p07 kit-body-pump-20kg,B,quintal gourmet manha deck e grama sintetica,deck de porcelanato amadeirado + grama sintetica,muro cinza concreto + ripado preto,cinza/madeira/verde
+2026-10-29,L2910a p07 kit-body-pump-20kg,C,sala de ginastica do condominio fim de tarde,piso emborrachado azul marinho,branco liso + faixa azul,marinho/branco/preto
+2026-10-29,L2910a p08 motocompressor-ar-direto-g3,A,oficina em casa manha bancada carvalho janela,porcelanato grafite acetinado,azulejo branco quadrado + pegboard branco vazio,branco/carvalho/laranja
+2026-10-29,L2910a p08 motocompressor-ar-direto-g3,B,garagem casa moderna tarde parede cinza claro,epoxi grafite,estuque cinza claro + rodape preto,cinza/laranja/preto
+2026-10-29,L2910a p08 motocompressor-ar-direto-g3,C,area de servico lavanderia entardecer parede azul,porcelanato areia grande,azul petroleo fosco + armario branco,petroleo/areia/laranja
