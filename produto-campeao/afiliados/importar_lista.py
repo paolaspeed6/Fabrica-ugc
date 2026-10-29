@@ -28,7 +28,10 @@ for n, nome, preco, vend, vdia, nota, url, loja, item in itens:
         sub, curto = link(url, f'Tp{int(n):03d}', '', dia[2:].replace('-', ''))
     except Exception as e:
         print(n, item, 'FALHOU', e, flush=True); time.sleep(3); continue
-    pr = float(preco.replace('.', '').replace(',', '.'))
+    # lista só de links (a dona, 29/10): preço, vendidos e nota vêm da API
+    pr = float(preco.replace('.', '').replace(',', '.')) if preco else float(nd.get('priceMin') or 0)
+    vend = vend or nd.get('sales') or 0
+    nota = nota or nd.get('ratingStar') or 0
     cpct = round(float(nd.get('commissionRate') or 0) * 100, 1)
     doc = dict(nome=nd.get('productName') or nome.strip(), loja=nd.get('shopName') or '', preco=pr, vendidos=int(vend),
                vendas_dia=float(vdia or 0), nota=float(nota), link=url, link_afiliado=curto, sub_id=sub,
