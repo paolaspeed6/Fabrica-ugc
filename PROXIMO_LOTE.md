@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-10-28 (22h40 UTC). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-10-29 (22h10 UTC). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -21,7 +21,16 @@ Atualizado: 2026-10-28 (22h40 UTC). Histórico completo: memoria/historico_lotes
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
-## Estado atual (28/10)
+## Estado atual (29/10)
+- Lote 29/10 A (29/10 22h05 UTC): 13 produtos com A, B e C (39 vídeos, 2910A-01..08, 11..15) + 2910A-09 Aparador Cerca Viva Tekna
+  e 2910A-10 Kit 2 Poltronas Opala + Puff como resgate (largos demais), na aba Conferir. Gasto US$ 6,11 de 8 (66 imagens + 35 clipes).
+  Tinder: 13 em `pronto`; 55107980511 e 58204213844 (resgates) seguem `produzindo`.
+- Pulado pelo Orquestrador: Suporte lava-roupa 58203226664 (nenhuma foto vazia, sempre com máquina em cima; volta a `aprovado`).
+- Fila: aprovados livres só Exaustor Ventisol 60 cm 23398536883 e Kit 4 Cadeiras Amis Rattan 48318696775 (+ os 12 já pulados).
+  Próximo lote precisa de mais "aprovados" no Tinder.
+- Regra nova K20: rodar textos.py antes da fase2 (o produzir.sh agora para sozinho antes dos clipes se faltar).
+
+## Estado anterior (28/10)
 - Lote 28/10 B (28/10 22h35 UTC): 12 produtos com A, B e C (36 vídeos, 2810B-01..05, 07..13) + 2810B-06 Cabeceira Itália + Recamier
   como resgate, na aba Conferir. Gasto US$ 4,56 de 8 (52 imagens + 25 clipes). Só 13 aprovados livres na Fila (nenhum pulado).
 - FILA VAZIA: todos os aprovados restantes são os 11 já pulados pelo Fichador. Próximo lote precisa de novos "aprovados" no Tinder

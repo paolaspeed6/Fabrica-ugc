@@ -12,6 +12,11 @@ Esta conversa nova NÃO lembra das conversas antigas. Tudo que importa está aqu
 6. Foto colada (produto complexo): só se a dona pedir. Não testada.
 7. Pendências da dona: confirmar Tinder da importação de 27/10 (187 cartões) e a Fila (aprovados).
 
+
+## Lista 29/10 A (2026-10-29)
+- 13 produtos com A, B e C (39 vídeos) + 2 resgates (2910A-09 Aparador Cerca Viva Tekna 55107980511, 2910A-10 Kit 2 Poltronas Opala + Puff 58204213844), aba Conferir. Gasto US$ 6,11 de 8.
+- Pulado: Suporte lava-roupa 58203226664 (sem foto vazia). Entrou a reserva Tekna.
+- Fila: só 23398536883 e 48318696775 livres.
 ## Modelos (28/10)
 Lote novo: create_session com model claude-opus-5-5. Agentes de conferência: sonnet. Ver CLAUDE.md.
 

@@ -29,6 +29,10 @@ if [ "$F" = fase1 ]; then
   exit 0
 fi
 PRE=$4; DIA=$5; NOME=$6
+python3 -c "  # K20 (29/10): sem textos.json a edição para depois dos clipes pagos
+import json,sys
+t=json.load(open('textos.json')); f=[p for p in '$P'.split(',') if p not in t]
+sys.exit('textos.json sem '+','.join(f)) if f else None" || { log "PARADO: rode python3 -I textos.py antes da fase2"; exit 1; }
 log "fase2 $P"; python3 -I aplicar_fiscal.py $P | tee -a produzir.log
 python3 -c "  # Sonnet reprovou cena já liberada: fica 'falhou' (não gera 3ª imagem)
 import json

@@ -291,3 +291,6 @@ single piece". Peças em detalhe só no prompt de IMAGEM. No 1º lote com a muda
   com texto. A Fiscal de vídeo (Gemini) anotou a marca d'água e mesmo assim deu "usar 0.0-5.0". Resgate agora = câmera por código
   sobre a imagem aceita (ffmpeg zoompan, avanço lento de 1,0 a 1,08 em 5 s; grátis), nunca clipe de IA. E todo "usar" com defeito
   anotado (marca d'água, texto, animal, pessoa, vapor) conta como REPROVADO.
+
+## K20. Rodar textos.py antes da fase2 (Lista 29/10 A, 2026-10-29)
+A fase2 gastou os clipes e depois a edição parou: faltava `textos.json` (textos.py não foi rodado; o p09 reserva veio com o JSON aninhado em {"p09": ...}). Custo: rodada extra grátis. Agora o produzir.sh para ANTES dos clipes se não houver textos.json com todos os produtos.
