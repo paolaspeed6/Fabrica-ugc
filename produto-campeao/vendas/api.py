@@ -3,7 +3,9 @@ import hashlib, json, os, time, urllib.request
 
 
 def chamar(query, variaveis=None):
-    app_id, secret = os.environ["SHOPEE_APP_ID"], os.environ["SHOPEE_APP_SECRET"]
+    # a dona gravou o segredo como "shopee_APP_SECRET" (minúsculas, 29/10): aceita os dois nomes
+    app_id = os.environ["SHOPEE_APP_ID"]
+    secret = os.environ.get("SHOPEE_APP_SECRET") or os.environ["shopee_APP_SECRET"]
     corpo = json.dumps({"query": query, "variables": variaveis or {}}, separators=(",", ":"))
     ts = str(int(time.time()))
     sig = hashlib.sha256((app_id + ts + corpo + secret).encode()).hexdigest()
