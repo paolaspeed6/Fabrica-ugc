@@ -13,6 +13,13 @@ Esta conversa nova NÃO lembra das conversas antigas. Tudo que importa está aqu
 7. Pendências da dona: confirmar Tinder da importação de 27/10 (187 cartões) e a Fila (aprovados).
 
 
+## Lista 30/10 A (2026-10-30)
+- 10 produtos com A, B e C (30 vídeos, 3010A-01..09, 11) + 3010A-10 Bicicleta Infantil Aro 20 Triade 58214424772 como resgate (larga demais), aba Conferir. Gasto US$ 4,06 de 6 (47 imagens + 22 clipes).
+- Com 1 cena só (os 3 layouts abrem no mesmo take): p02 Kit 4 Cadeiras Amis, p04 Espreguiçadeira Inflável. p04 B entregue com aviso (cena quase parada).
+- 3010A-07 Cama Carro Stock Car: aviso no cartão, adesivo com chama/logo parecidos com Hot Wheels (a dona decide).
+- Fotos: p05 Arara só tinha colagens → recorte limpo da foto 04 (p05-fotos/04c.jpg); p04 e p05 sem foto com pessoa/colagem nas referências.
+- Chave Shopee está no ambiente como `shopee_APP_SECRET` (minúsculo): rodar `SHOPEE_APP_SECRET="$shopee_APP_SECRET" python3 -I gerar_links.py`.
+- Fila: nenhum aprovado livre (só os 12 pulados). Próximo lote precisa de novos "aprovados" no Tinder.
 ## Lista 29/10 A (2026-10-29)
 - 13 produtos com A, B e C (39 vídeos) + 2 resgates (2910A-09 Aparador Cerca Viva Tekna 55107980511, 2910A-10 Kit 2 Poltronas Opala + Puff 58204213844), aba Conferir. Gasto US$ 6,11 de 8.
 - Pulado: Suporte lava-roupa 58203226664 (sem foto vazia). Entrou a reserva Tekna.

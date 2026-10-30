@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-10-29 (22h10 UTC). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-10-30 (09h55 UTC). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -21,7 +21,15 @@ Atualizado: 2026-10-29 (22h10 UTC). Histórico completo: memoria/historico_lotes
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
-## Estado atual (29/10)
+## Estado atual (30/10)
+- Lote 30/10 A (30/10 09h50 UTC): 10 produtos com A, B e C (30 vídeos, 3010A-01..09, 11) + 3010A-10 Bicicleta Infantil Aro 20 Triade
+  como resgate (larga demais), na aba Conferir. Gasto US$ 4,06 de 6 (47 imagens + 22 clipes). Tinder: 10 em `pronto`; 58214424772 (resgate) segue `produzindo`.
+- 3010A-07 Cama Carro: aviso de adesivo parecido com Hot Wheels (a dona decide). p02 e p04 com 1 cena só.
+- Fila: nenhum aprovado livre (só os 12 já pulados). Próximo lote precisa de mais "aprovados" no Tinder.
+- Chave Shopee no ambiente se chama `shopee_APP_SECRET` (minúsculo): `SHOPEE_APP_SECRET="$shopee_APP_SECRET" python3 -I gerar_links.py <AAMMDD>`.
+- Copie a pasta modelo DEPOIS do git pull (no 30/10 a cópia saiu antes e faltavam K20/K21; corrigido a tempo).
+
+## Estado anterior (29/10)
 - Lote 29/10 A (29/10 22h05 UTC): 13 produtos com A, B e C (39 vídeos, 2910A-01..08, 11..15) + 2910A-09 Aparador Cerca Viva Tekna
   e 2910A-10 Kit 2 Poltronas Opala + Puff como resgate (largos demais), na aba Conferir. Gasto US$ 6,11 de 8 (66 imagens + 35 clipes).
   Tinder: 13 em `pronto`; 55107980511 e 58204213844 (resgates) seguem `produzindo`.
