@@ -59,6 +59,7 @@ for p in '$P'.split(','):
 print(','.join(r))")
 [ -n "$vs" ] && python3 -I fiscal_video_gemini.py $vs >> produzir.log 2>&1
 python3 -I aprovar.py $(echo $P | tr , ' ') >> produzir.log 2>&1
+python3 -I sem_cena.py $P >> produzir.log 2>&1   # K22 (30/10): sem cena aprovada = A, B e C com as reprovadas só por borda + aviso
 python3 -I descartadas.py "$NOME" $DIA >> produzir.log 2>&1   # produto sem cena aprovada: a dona confere as reprovadas (27/10)
 n0=$(ls $R/trabalhos | sed -n 's/^p\([0-9]*\)-.*/\1/p' | sort -n | tail -1); n0=$((n0+1))
 (cd $S && python3 lote_auto.py $L $n0 $P) >> produzir.log 2>&1

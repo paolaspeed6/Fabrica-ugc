@@ -146,3 +146,6 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
 - 30/10: a dona viu muito desperdício na Conferência. Pediu "manter a qualidade e reduzir o desperdício". ~US$ 0,90 por lote
   (15%) vai em refação de produto largo que falha de novo. Regra K21: selo "largo" no Tinder + sem refação de borda com 2 cenas boas.
   Ideia em espera (precisa OK com teto ~US$ 0,05): imagem horizontal para produto largo e vídeo vertical montado dela.
+- (30/10, a dona, K22) Produto sem cena aprovada não para mais em resgate: a fábrica monta A, B e C com as imagens reprovadas só por
+  borda/largura (câmera por código, grátis) e manda para a Conferir com "cenas reprovadas pela fiscal: confira"; ela descarta à mão.
+  Defeito grave (pessoa, bebida, letra inventada, objeto proibido) continua fora. Os 5 resgates de 28-30/10 eram todos assim e ela aceitou todos.

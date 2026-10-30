@@ -40,6 +40,13 @@ def tomadas(cenas, lens, zoom=None):
     return out
 
 
+def zoom_codigo(d):
+    """Cena feita por câmera por código (camera_codigo.py, K19/K22): produto largo encostando na borda; o zoom da edição fica
+    pequeno (1,03) para não cortar as pontas (o clipe já anda 1,00 -> 1,05)."""
+    fv = json.loads((d / 'fiscal_video.json').read_text()) if (d / 'fiscal_video.json').exists() else {}
+    return {v: 1.03 for v in 'abc'} if fv and all('câmera por código' in (x.get('origem') or '') for x in fv.values()) else None
+
+
 def cfg(k, n):
     t = T[k]; d = L / f'{k}-cenas'
     if not (d / 'aprovado.json').exists(): return None, None  # nenhuma cena aprovada (aprovar.py: SEM CENA APROVADA)
@@ -58,7 +65,7 @@ def cfg(k, n):
     C.setdefault('eyebrow', t['b'].get('kicker') or t['nome']); C.setdefault('onde', A.get('cta') or ['Leve pra casa.'])
     kit = any(w in t['nome'].lower() for w in ('kit', 'cadeiras', 'banquetas', 'bancos'))
     return dict(id=pid, accent=tuple(t.get('ac') or (200, 160, 120)), clips=lens, leve='o seu' if kit else 'a sua',
-                tem='*o kit tem:*' if kit else '*ele tem:*', a=A, b=dict(t['b']), c=C, tomadas=tomadas(cenas, lens)), W
+                tem='*o kit tem:*' if kit else '*ele tem:*', a=A, b=dict(t['b']), c=C, tomadas=tomadas(cenas, lens, zoom_codigo(d))), W
 
 
 if __name__ == '__main__':

@@ -29,7 +29,7 @@ for k, t in sorted(T.items()):
                             '-q:v', '6', '-f', 'image2', '-c:v', 'mjpeg', '-'], capture_output=True, check=True).stdout
         return 'data:image/jpeg;base64,' + base64.b64encode(j).decode()
     av = json.loads((B / 'avisos.json').read_text()).get(k) if (B / 'avisos.json').exists() else None
-    if av: doc['aviso'] = '; '.join(f'{v}: {m}' for v, m in av.items())  # versão que passou com defeito do auditor: a dona decide
+    if av: doc['aviso'] = '; '.join(m if v == 'geral' else f'{v}: {m}' for v, m in av.items())  # geral: K22, cenas reprovadas pela fiscal  # versão que passou com defeito do auditor: a dona decide
     doc['reprovadas'] = reprovadas(B, k)
     doc['posts'] = {f[:-4]: dict(poster=capa(f), produto=t['nome'], versao=f[-5] + ' · ' + {'A': 'Um dia com ela', 'B': 'Faixas', 'C': 'Direto ao ponto'}[f[-5]], conta='Shopee Vídeo', legenda=t.get('leg_' + f[-5].lower(), ''),
                                  link_produto=(t.get('links') or {}).get(f[-5].lower(), ''), drive_url=drive[f], dia=dia, ordem=int(nn) * 10 + 'ABC'.index(f[-5]))

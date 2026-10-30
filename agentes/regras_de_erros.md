@@ -302,3 +302,13 @@ A fase2 gastou os clipes e depois a edição parou: faltava `textos.json` (texto
 - Cena reprovada só por borda (folha.py, "borda medida por código") NÃO é refeita quando o produto já tem 2 cenas boas: a refação
   de produto largo quase nunca acerta (28/10 B: 10 de 13 reprovadas de novo). O vídeo usa as outras 2 cenas (aplicar_fiscal.py).
   Defeito com conserto (objeto a mais, letra, cor) continua com 1 refação.
+
+## K22. Produto sem cena aprovada não para mais em cartão de resgate (a dona, 30/10, resgates 2810A-13, 2810B-06, 2910A-09/10, 3010A-10)
+Os 5 resgates eram produtos largos (colchão, cabeceira + recamier, aparador de cerca viva, kit poltronas, bicicleta) com imagens
+reprovadas só por borda/largura, e a dona aceitou todas. Agora a fábrica monta A, B e C sozinha: `sem_cena.py` (o produzir.sh roda
+depois do aprovar.py) pega a última versão de cada cena reprovada SÓ pela folha.py ("borda medida por código") ou com imagem aprovada
+e clipe reprovado, faz a câmera por código (`camera_codigo.py`: zoom 1,00 -> 1,05 em 5 s, centro; na edição o lote_auto usa zoom 1,03
+para não cortar as pontas; grátis, nunca clipe IA: K19) e o produto vai para a Conferir com o aviso "cenas reprovadas pela fiscal:
+confira". Ela descarta à mão se não servir. Defeito grave (pessoa, mão, animal, bebida, garrafa/taça/copo, letra inventada, objeto
+proibido, produto diferente) continua fora: como a folha.py reprova antes da Fiscal, essas imagens passam por uma checagem só de defeito
+grave no Gemini (grátis). Sem nenhuma imagem aproveitável, o produto ainda vira cartão resgate (descartadas.py).
