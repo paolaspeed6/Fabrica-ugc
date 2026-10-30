@@ -42,9 +42,9 @@ def tomadas(cenas, lens, zoom=None):
 
 def zoom_codigo(d):
     """Cena feita por câmera por código (camera_codigo.py, K19/K22): produto largo encostando na borda; o zoom da edição fica
-    pequeno (1,03) para não cortar as pontas (o clipe já anda 1,00 -> 1,05)."""
+    pequeno (A e C 1,03; B 1,05, que com 1,03 ficava em 1,8-1,96 no auditor) para não cortar as pontas (o clipe já anda 1,00 -> 1,05)."""
     fv = json.loads((d / 'fiscal_video.json').read_text()) if (d / 'fiscal_video.json').exists() else {}
-    return {v: 1.03 for v in 'abc'} if fv and all('câmera por código' in (x.get('origem') or '') for x in fv.values()) else None
+    return {'a': 1.03, 'b': 1.05, 'c': 1.03} if fv and all('câmera por código' in (x.get('origem') or '') for x in fv.values()) else None
 
 
 def cfg(k, n):

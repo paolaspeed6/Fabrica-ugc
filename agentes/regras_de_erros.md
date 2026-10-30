@@ -307,7 +307,7 @@ A fase2 gastou os clipes e depois a edição parou: faltava `textos.json` (texto
 Os 5 resgates eram produtos largos (colchão, cabeceira + recamier, aparador de cerca viva, kit poltronas, bicicleta) com imagens
 reprovadas só por borda/largura, e a dona aceitou todas. Agora a fábrica monta A, B e C sozinha: `sem_cena.py` (o produzir.sh roda
 depois do aprovar.py) pega a última versão de cada cena reprovada SÓ pela folha.py ("borda medida por código") ou com imagem aprovada
-e clipe reprovado, faz a câmera por código (`camera_codigo.py`: zoom 1,00 -> 1,05 em 5 s, centro; na edição o lote_auto usa zoom 1,03
+e clipe reprovado, faz a câmera por código (`camera_codigo.py`: zoom 1,00 -> 1,05 em 5 s, centro; na edição o lote_auto usa zoom 1,03 em A e C e 1,05 em B (com 1,03 o B ficava 1,8-1,96 no auditor, abaixo de 2,0; o 1,18 do entregar.sh cortava rodas e braços)
 para não cortar as pontas; grátis, nunca clipe IA: K19) e o produto vai para a Conferir com o aviso "cenas reprovadas pela fiscal:
 confira". Ela descarta à mão se não servir. Defeito grave (pessoa, mão, animal, bebida, garrafa/taça/copo, letra inventada, objeto
 proibido, produto diferente) continua fora: como a folha.py reprova antes da Fiscal, essas imagens passam por uma checagem só de defeito
