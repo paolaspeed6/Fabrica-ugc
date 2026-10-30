@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-10-30 (09h55 UTC). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-10-30 (noite: resgates + regra K22). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -11,7 +11,9 @@ Atualizado: 2026-10-30 (09h55 UTC). Histórico completo: memoria/historico_lotes
 ## Regras que não podem falhar
 - Nada pago sem OK da dona e teto em dólar. Refazer uma imagem ou clipe pago só UMA vez. Reprovou 2x: entender o motivo, não gerar de novo.
 - Todo produto sai com A, B e C. Versão reprovada pelo auditor é refeita só na edição (grátis).
-- Produto sem cena aprovada vira "resgate" na aba Conferir. Nunca descartar sem a dona ver.
+- Produto sem cena aprovada (K22, 30/10): a fábrica monta A, B e C sozinha com as imagens reprovadas só por borda (câmera por código,
+  grátis, sem_cena.py no produzir.sh) e manda para a Conferir com o aviso "cenas reprovadas pela fiscal: confira". Defeito grave fica
+  fora. Sem imagem aproveitável: cartão "resgate" (nunca descartar sem a dona ver).
 - SEMPRE, em todo lote (a dona, 28/10): vídeo pronto vai para a Conferência (aba Conferir da Postagens, 7HYeG...). Só o Ok da dona libera para Postagens (automático, sem o Claude). A Conferência fixada antiga (6An95...) agora é só um botão para a certa.
 - Edição: layouts A "Um dia com ela", B "Faixas", C "Direto ao ponto". Música animada (musicas/biblioteca). Assinatura "Aguiiar Lar" muda de lugar no vídeo.
 - Nunca subir chave, token, link de afiliado ou Sub ID em repositório público (este é privado).
@@ -21,7 +23,15 @@ Atualizado: 2026-10-30 (09h55 UTC). Histórico completo: memoria/historico_lotes
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
-## Estado atual (30/10)
+## Estado atual (30/10, noite)
+- Resgates processados (30/10, US$ 0): 2810A-13 Colchão, 2810B-06 Cabeceira + Recamier, 2910A-09 Aparador Tekna, 2910A-10 Kit Poltronas
+  Opala, 3010A-10 Bicicleta Tríade: 15 vídeos (A, B e C) na aba Conferir, pendentes, nos mesmos cartões (resgate_processado: true).
+  Imagens do histórico da WaveSpeed (casadas pelo poster), textos refeitos do anúncio (pastas antigas não estavam no disco), câmera
+  por código (camera_codigo.py). B do colchão, cabeceira e poltronas vai com aviso (zoom suave; o auditor achou quase parada).
+  Tinder: os 5 em `pronto`. Ainda em `produzindo` no Tinder (de lotes antigos, não mexi): 52916448186, 54418096324, 54661666510, 56166664405.
+- Nenhum resgate pendente. Nenhum lote aberto.
+
+## Estado anterior (30/10, manhã)
 - Lote 30/10 A (30/10 09h50 UTC): 10 produtos com A, B e C (30 vídeos, 3010A-01..09, 11) + 3010A-10 Bicicleta Infantil Aro 20 Triade
   como resgate (larga demais), na aba Conferir. Gasto US$ 4,06 de 6 (47 imagens + 22 clipes). Tinder: 10 em `pronto`; 58214424772 (resgate) segue `produzindo`.
 - 3010A-07 Cama Carro: aviso de adesivo parecido com Hot Wheels (a dona decide). p02 e p04 com 1 cena só.

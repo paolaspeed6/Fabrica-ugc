@@ -142,3 +142,10 @@ Se o Sonnet deixar passar defeito que o Opus pegou, voltar a Fiscal de confirma�
 - Com 1 cena só: p11 espreguiçadeiras marrom e p14 kit camping (as outras falharam 2x; os 3 layouts usam a cena boa).
   A dica "eixo comprido para o fundo" salvou 1 de 3 cenas no kit de espreguiçadeiras.
 - Fila: próximos aprovados a partir de 58254841155 (Kit Cooktop + Balcão) e 58256198377 (Kit Anilhas).
+
+## Resgates de 28-30/10 — ENTREGUES (30/10, US$ 0)
+- 2810A-13, 2810B-06, 2910A-09, 2910A-10, 3010A-10: cenas escolhidas pela dona, 15 vídeos na Conferir (trabalhos p216-p220).
+- As pastas dos lotes (gitignored) não estavam no disco: imagens recuperadas do histórico da WaveSpeed (POST /api/v3/predictions,
+  casadas com o poster do cartão, diferença < 1,5), textos refeitos do anuncio.json, links com Sub ID refeitos (data AAMMDD do lote).
+- Zoom: A e C 1,03 passam no auditor; B precisou de 1,05 (aparador e bicicleta passaram; colchão, cabeceira e poltronas com aviso).
+  O 1,18 automático do entregar.sh cortava rodas e braços. Regra K22 criada (sem_cena.py + camera_codigo.py).
