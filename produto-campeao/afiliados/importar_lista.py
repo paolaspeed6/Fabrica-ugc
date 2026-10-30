@@ -11,6 +11,7 @@ sys.path.insert(0, str(B)); sys.path.insert(0, str(B.parent / 'vendas'))
 from varrer import miniatura
 from api import chamar
 from link_subid import link
+from largo import largo
 
 arq, dia = Path(sys.argv[1]), sys.argv[2]
 ja = {p.stem for p in Path(sys.argv[3]).glob('*.json')} if len(sys.argv) > 3 else set()
@@ -37,5 +38,5 @@ for n, nome, preco, vend, vdia, nota, url, loja, item in itens:
                vendas_dia=float(vdia or 0), nota=float(nota), link=url, link_afiliado=curto, sub_id=sub,
                comissao_pct=cpct, comissao_rs=round(float(nd.get('commission') or pr * cpct / 100), 2),
                foto=miniatura(nd['imageUrl']) if nd.get('imageUrl') else '', dia=dia, ordem=int(n),
-               pontos=round(10 - int(n) * 0.04, 2), novo=True, origem='lista da dona')
+               pontos=round(10 - int(n) * 0.04, 2), novo=True, origem='lista da dona', largo=largo(nd.get('productName') or nome))
     (out / f'{item}.json').write_text(json.dumps(doc, ensure_ascii=False)); print(n, item, curto, flush=True)

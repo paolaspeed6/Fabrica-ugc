@@ -8,6 +8,7 @@ Grátis (só a API oficial). Precisa de SHOPEE_APP_ID e SHOPEE_APP_SECRET.
 import argparse, hashlib, json, os, re, sys, time, unicodedata, urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent)); from largo import largo  # selo "largo" no Tinder (30/10)
 
 BASE = Path(__file__).resolve().parent
 SNAP = BASE / "snapshots"
@@ -179,7 +180,7 @@ def main():
             n += min(vdia / 3, 1) * 3                              # vendas subindo
         lista.append({"id": k, "nome": p["productName"], "loja": p["shopName"], "preco": preco,
                       "comissao_rs": round(com, 2), "comissao_pct": round(float(p["commissionRate"]) * 100, 1),
-                      "extra_vendedor": float(p["sellerCommissionRate"] or 0) > 0,
+                      "extra_vendedor": float(p["sellerCommissionRate"] or 0) > 0, "largo": largo(p["productName"]),
                       "vendidos": vendidos, "vendas_dia": vdia, "novo": int(k) >= ITEM_ID_RECENTE,
                       "nota": float(p["ratingStar"]), "foto": p["imageUrl"], "link": p["productLink"],
                       "parecidos": parecidos, "pontos": round(n, 2)})
