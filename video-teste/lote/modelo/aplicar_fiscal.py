@@ -6,6 +6,9 @@ B = Path(__file__).resolve().parent; (B / 'rejeitadas').mkdir(exist_ok=True)
 refazer, animar, falhou = [], [], []
 for p in sys.argv[1].split(','):
     ff = B / f'{p}-ficha.json'; f = json.loads(ff.read_text()); fi = json.loads((B / f'{p}-cenas/fiscal_imagem.json').read_text())
+    # produto largo cortado na borda quase nunca acerta na refação (28/10 B: 10 de 13 reprovadas de novo):
+    # com 2 cenas boas, a cena da borda não é refeita e o vídeo usa as outras (a dona, 30/10: menos desperdício, mesma qualidade)
+    boas = sum(1 for c in f['cenarios'] if c.get('estado') == 'animar' or fi.get(c['id'], {}).get('veredito', '').upper().startswith('APROV'))
     for c in f['cenarios']:
         k = c['id']; v = fi.get(k); img = B / f'{p}-cenas/{k}.jpg'
         if not v or not img.exists() or c.get('estado') in ('animar', 'falhou'): continue
@@ -17,7 +20,7 @@ for p in sys.argv[1].split(','):
             rj = B / f'{p}-cenas/reprovacoes.json'; rr = json.loads(rj.read_text()) if rj.exists() else []  # motivo vai para a dona na Conferir (27/10)
             rr.append(dict(cena=k, etapa=f'imagem {n}ª', motivo=(v.get('provas') or v.get('corrigir_prompt') or '')[:300], fiscal=v.get('fiscal', '')))
             rj.write_text(json.dumps(rr, ensure_ascii=False, indent=1))
-            if c.get('fix_img'): c['estado'] = 'falhou'; falhou.append(f'{p}{k}')
+            if c.get('fix_img') or (boas >= 2 and str(v.get('provas', '')).startswith('borda medida')): c['estado'] = 'falhou'; falhou.append(f'{p}{k}')
             else: c['fix_img'] = v.get('corrigir_prompt', ''); refazer.append(f'{p}{k}')
             fi.pop(k)  # a imagem refeita precisa de veredito novo (27/10: o antigo ficava e a refeita nunca era conferida)
     ff.write_text(json.dumps(f, ensure_ascii=False, indent=1))

@@ -133,6 +133,7 @@ function cartao(it,total){
   if(it.extra_vendedor) chips.append(el("span","chip","comissão extra"));
   if(it.nota) chips.append(el("span","chip","nota "+it.nota));
   if(it.possivel_duplicata) chips.append(el("span","chip dup","⚠ possível duplicata da mesma loja"));
+  if(it.largo) chips.append(el("span","chip dup","⚠ largo: a IA costuma cortar, gasta mais"));
   corpo.append(chips);
   const linha=el("div","linha");
   const a=el("a","abrir","Abrir no app"); a.href=it.link; a.target="_blank"; a.rel="noopener";

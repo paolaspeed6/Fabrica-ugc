@@ -26,3 +26,4 @@
 
 - 2026-10-26: Lista 25/10 A, Fiscal de imagem reprovou muito por borda, costas, escala, fundo com objetos e letra inventada. Viraram frases fixas no FIM do gerar.py (regra 17).
 - 2026-10-28: Lista 27/10 D, nos resgates o clipe de câmera fixa da IA pôs cachorro, vapor e marca d'água, e o Gemini deixou passar a marca d'água. Resgate passou a usar câmera por código sobre a imagem aceita (regra K19).
+- 2026-10-29: Lista 29/10 A, fase2 gerou clipes e parou na edição sem textos.json (textos.py esquecido). O produzir.sh passou a checar antes de gastar (regra K20).

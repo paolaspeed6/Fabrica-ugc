@@ -141,3 +141,8 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
 - A query do banco pagina (next_cursor): sempre seguir o cursor.
 - 28/10: a dona quer nas redes SEMPRE primeiro os produtos bonitos e funcionais (puffs, poltronas, penteadeira): chamam mais
   atenção. Listas ESTRELAS / BONITOS / FIM no meta/redes_diario.py; produto novo de decoração entra sozinho na frente.
+- 29/10: o segredo da Shopee está gravado como `shopee_APP_SECRET` (minúsculas). api.py aceita os dois nomes; nunca dizer
+  "falta a chave" sem olhar `env | cut -d= -f1`. Lista 29/10: 200 links, 17 já existiam, 183 cartões novos no Tinder.
+- 30/10: a dona viu muito desperdício na Conferência. Pediu "manter a qualidade e reduzir o desperdício". ~US$ 0,90 por lote
+  (15%) vai em refação de produto largo que falha de novo. Regra K21: selo "largo" no Tinder + sem refação de borda com 2 cenas boas.
+  Ideia em espera (precisa OK com teto ~US$ 0,05): imagem horizontal para produto largo e vídeo vertical montado dela.
