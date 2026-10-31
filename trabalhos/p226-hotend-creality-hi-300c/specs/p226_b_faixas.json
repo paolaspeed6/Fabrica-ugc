@@ -1,0 +1,314 @@
+{
+ "narr": null,
+ "narr_at": 0.4,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/fabrica-ugc/musicas/biblioteca/animada_05_piano_vibrafone.wav"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "warm": 0.015,
+  "contrast": 1.04,
+  "lift": 0.02,
+  "vign": 0.1,
+  "grain": 0.01,
+  "top": 0.1
+ },
+ "lift": 300,
+ "accent": [
+  200,
+  120,
+  60
+ ],
+ "segs": [
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 1.1,
+   "z": [
+    1.12,
+    1.0
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 1.1,
+   "dur": 1.1,
+   "z": [
+    1.12,
+    1.0
+   ]
+  },
+  {
+   "src": "C",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.12
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 2.2,
+   "dur": 1.1,
+   "z": [
+    1.12,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Hotend Creality Hi"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "Suporta até",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "300°C",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    200,
+    120,
+    60,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Bloco cerâmico 360°"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Hotend Creality Hi"
+   ],
+   "t0": 5.0,
+   "t1": 10.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "Potência",
+   "t0": 5.0,
+   "t1": 10.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "50 W",
+   "t0": 5.12,
+   "t1": 10.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    200,
+    120,
+    60,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Troca rápida de nozzle"
+   ],
+   "t0": 5.3,
+   "t1": 10.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Hotend Creality Hi"
+   ],
+   "t0": 10.0,
+   "t1": 15,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "Só",
+   "t0": 10.0,
+   "t1": 15,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "45 g",
+   "t0": 10.12,
+   "t1": 15,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    200,
+    120,
+    60,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": false
+  },
+  {
+   "kind": "button",
+   "text": "Toque no carrinho",
+   "t0": 10.4,
+   "t1": 15,
+   "y": 1604,
+   "x": 70,
+   "anim": "fade",
+   "out": false,
+   "style": "outline",
+   "icon": "cart",
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "fill": [
+    20,
+    18,
+    16,
+    70
+   ],
+   "lw": 2,
+   "base": "dm_md",
+   "size": 46,
+   "h": 110
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p226-hotend-creality-hi-300c/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p226-hotend-creality-hi-300c/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p226-hotend-creality-hi-300c/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p226-hotend-creality-hi-300c/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p226-hotend-creality-hi-300c/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p226-hotend-creality-hi-300c/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p226-hotend-creality-hi-300c/out2/p226_b_faixas.mp4",
+ "dur": 15.0,
+ "natural": 1,
+ "trans": [
+  [
+   5.0,
+   "whip"
+  ],
+  [
+   10.0,
+   "zoom"
+  ]
+ ]
+}

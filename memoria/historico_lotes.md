@@ -149,3 +149,10 @@ Se o Sonnet deixar passar defeito que o Opus pegou, voltar a Fiscal de confirma�
   casadas com o poster do cartão, diferença < 1,5), textos refeitos do anuncio.json, links com Sub ID refeitos (data AAMMDD do lote).
 - Zoom: A e C 1,03 passam no auditor; B precisou de 1,05 (aparador e bicicleta passaram; colchão, cabeceira e poltronas com aviso).
   O 1,18 automático do entregar.sh cortava rodas e braços. Regra K22 criada (sem_cena.py + camera_codigo.py).
+
+## Lote: Lista 30/10 B — ENTREGUE (31/10, ~02h30 UTC)
+- 15 produtos da Fila do Tinder, 45 vídeos (3010B-01..15, trabalhos p221-p235) na aba Conferir, pendentes. US$ 5,44 de 8
+  (54 imagens US$ 2,14 + 33 clipes US$ 3,30). Desperdício US$ 0,58. Nenhum pulado pelo Fichador.
+- K22 (sem_cena.py) no 1º lote real: p13 Lustre (A+C, B fora por defeito grave) e p15 Kit 2 Estantes (A, B, C só borda) montados
+  com câmera por código e aviso. K21 funcionou: p06A p09B p10A p14A sem refação (2 cenas boas).
+- Drive caiu na 1ª subida (Connection reset): drive_backup.py + entregar.sh rodados de novo à mão; conferir_docs saíram certos.

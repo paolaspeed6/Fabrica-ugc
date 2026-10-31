@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-10-30 (noite: resgates + regra K22). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-10-31 (Lista 30/10 B entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -23,7 +23,19 @@ Atualizado: 2026-10-30 (noite: resgates + regra K22). Histórico completo: memor
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
-## Estado atual (30/10, noite)
+## Estado atual (31/10, madrugada)
+- Lote 30/10 B (31/10 ~02h30 UTC): 15 produtos com A, B e C (45 vídeos, 3010B-01..15) na aba Conferir, pendentes. Gasto US$ 5,44 de 8
+  (54 imagens + 33 clipes). Nenhum pulado (reservas não usadas). Tinder: os 15 em `pronto`.
+- 1º lote real do sem_cena.py (K22): funcionou. 3010B-13 Lustre Corsalle (clipe A acendeu as lâmpadas; B era outro modelo e ficou fora:
+  vídeos com A e C) e 3010B-15 Kit 2 Estantes (A, B e C só por borda) foram montados com câmera por código e foram com o aviso
+  "cenas reprovadas pela fiscal: confira". A dona decide/descarta à mão.
+- Avisos para a dona: p04 Batedeira só tinha 1 foto (ambiente); p06 Hotend "ORIGINAL Creality" (foto 01 com logo, peça sem nome);
+  p02 Painel TV e p13 Lustre com 1 cena só aprovada (vídeo repete a cena).
+- Drive: a 1ª subida caiu (Connection reset) e o entregar.sh saiu sem conferir_docs; rodei drive_backup.py + entregar.sh de novo à mão.
+- Fila: aprovados livres agora são só as reservas 58217392854, 58215204667, 58203555197, 53018045160, 49217644309 (+ os 12 já pulados
+  e os outros aprovados do Tinder). Nenhum lote aberto.
+
+## Estado anterior (30/10, noite)
 - Resgates processados (30/10, US$ 0): 2810A-13 Colchão, 2810B-06 Cabeceira + Recamier, 2910A-09 Aparador Tekna, 2910A-10 Kit Poltronas
   Opala, 3010A-10 Bicicleta Tríade: 15 vídeos (A, B e C) na aba Conferir, pendentes, nos mesmos cartões (resgate_processado: true).
   Imagens do histórico da WaveSpeed (casadas pelo poster), textos refeitos do anúncio (pastas antigas não estavam no disco), câmera
