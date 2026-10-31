@@ -793,3 +793,30 @@ data,produto,cena,ambiente,piso,parede,paleta
 2026-10-30,L3010b p08 cadeira-escritorio-mesh-preta,A,home office apto manha mesa branca vazia janela voil,porcelanato cinza claro 90,bege areia liso,areia/cinza/branco
 2026-10-30,L3010b p08 cadeira-escritorio-mesh-preta,B,coworking tarde mesa carvalho comprida vazia,tabuas carvalho claro 20 cm,tijolo branco aparente + esquadria preta,tijolo branco/carvalho/preto
 2026-10-30,L3010b p08 cadeira-escritorio-mesh-preta,C,recepcao de clinica noite balcao branco vazio,porcelanato grafite polido,verde petroleo suave liso,petroleo/grafite/branco
+2026-10-31,L3110a p01 filamento-3d-sunlu (pular),A,estudio de impressao 3D apto manha mesa branca vazia janela voil,porcelanato areia 90,azul marinho liso,marinho/branco/areia
+2026-10-31,L3110a p01 filamento-3d-sunlu (pular),B,garagem casa moderna dia bancada carvalho pegboard vazio,epoxi cinza claro,branco liso,carvalho/cinza/branco
+2026-10-31,L3110a p01 filamento-3d-sunlu (pular),C,estudio maker noite mesa nogueira LED,concreto polido escuro,grafite liso,grafite/nogueira/turquesa
+2026-10-31,L3110a p02 cortina-voil-bordada,A,sala de estar apto manha sofa chumbo mesa carvalho vazia,porcelanato cimento cinza claro 90,branco gelo liso,branco gelo/dourado/chumbo
+2026-10-31,L3110a p02 cortina-voil-bordada,B,suite casal noite abajures acesos,vinilico cinza quente,verde azulado petroleo liso,teal/branco/dourado
+2026-10-31,L3110a p02 cortina-voil-bordada,C,sala de jantar envidracada tarde mesa nogueira vazia,cimento queimado polido,tijolo vermelho terracota liso,terracota/nogueira/dourado
+2026-10-31,L3110a p03 kit-2-banquetas-baixas,A,cozinha planejada manha ilha quartzo vazia,porcelanato cimento cinza claro 90,azul petroleo liso + armarios brancos,petroleo/branco/caramelo
+2026-10-31,L3110a p03 kit-2-banquetas-baixas,B,varanda gourmet tarde bancada granito preto vazia,deck porcelanato nogueira 20x120,concreto aparente claro,concreto/nogueira/preto
+2026-10-31,L3110a p03 kit-2-banquetas-baixas,C,closet penteadeira noite LED bancada branca vazia,carpete rosa bege,taupe quente liso,taupe/branco/rosa bege
+2026-10-31,L3110a p04 chave-impacto-hanabi-lp6005,A,garagem casa moderna manha bancada carvalho pegboard preto vazio,epoxi cinza quente,branco liso,carvalho/cinza/azul
+2026-10-31,L3110a p04 chave-impacto-hanabi-lp6005,B,oficina mecanica moderna tarde bancada aco,concreto polido,branco fosco + barra LED vazia,grafite/branco/aco
+2026-10-31,L3110a p04 chave-impacto-hanabi-lp6005,C,oficina hobby noite bancada nogueira LED,vinilico cinza,terracota escuro liso,terracota/nogueira/cinza
+2026-10-31,L3110a p05 gabinete-gamer-aquario-gb1796,A,quarto setup gamer noite mesa preta vazia LED frio,vinilico cinza escuro,indigo liso,indigo/preto/cinza
+2026-10-31,L3110a p05 gabinete-gamer-aquario-gb1796,B,home office dia mesa nogueira vazia janela voil,porcelanato bege quente 90,concreto cinza claro,nogueira/bege/cinza
+2026-10-31,L3110a p05 gabinete-gamer-aquario-gb1796,C,estudio criativo fim de tarde mesa laqueada branca,porcelanato cinza polido,marrom chocolate liso,chocolate/branco/carvalho
+2026-10-31,L3110a p06 kit-4-cadeiras-praia-roamex,A,gramado de jardim casa moderna manha banco de concreto vazio,grama verde,muro branco baixo + cerca viva,verde/branco/cinza
+2026-10-31,L3110a p06 kit-4-cadeiras-praia-roamex,B,deck de piscina casa moderna tarde degrau branco vazio,pavers de concreto cinza medio 40x80,cobogo branco + borda turquesa,cinza/branco/turquesa
+2026-10-31,L3110a p06 kit-4-cadeiras-praia-roamex,C,praia vazia golden hour passarela de madeira,areia clara fina,duna + capim de praia,areia/mel/azul mar
+2026-10-31,L3110a p07 dupla-banqueta-golden-75,A,cozinha planejada manha ilha quartzo vazia,porcelanato grafite 80,azul marinho liso,marinho/nogueira/branco
+2026-10-31,L3110a p07 dupla-banqueta-golden-75,B,varanda gourmet apto entardecer balcao granito preto vazio,cimento queimado claro,concreto aparente,concreto/preto/dourado
+2026-10-31,L3110a p07 dupla-banqueta-golden-75,C,cafeteria moderna tarde balcao freijo vazio,ladrilho hidraulico xadrez bege e branco,rosa blush liso,blush/freijo/bege
+2026-10-31,L3110a p08 estante-49-gaveteiros-vonder,A,garagem residencial manha bancada branca vazia,epoxi cinza claro,branco liso,branco/cinza/preto
+2026-10-31,L3110a p08 estante-49-gaveteiros-vonder,B,atelie de marcenaria edicula tarde bancada carvalho vazia,vinilico ipe claro,azul aco liso + esquadria preta,azul aco/ipe/carvalho
+2026-10-31,L3110a p08 estante-49-gaveteiros-vonder,C,oficina de eletronica noite LED bancada branca vazia,porcelanato preto fosco 60,azul marinho liso + painel perfurado branco,marinho/preto/branco
+2026-10-31,L3110a p09 autoclave-liz-painel-digital,A,sala de esterilizacao clinica de estetica manha bancada quartzo vazia,porcelanato branco polido 60,cinza perola + armario freijo,perola/branco/freijo
+2026-10-31,L3110a p09 autoclave-liz-painel-digital,B,estudio de unhas tarde bancada marmore vazia,porcelanato carrara 80,rosa blush liso,blush/branco/carrara
+2026-10-31,L3110a p09 autoclave-liz-painel-digital,C,barbearia e tatuagem noite bancada granito preto vazia,porcelanato preto fosco 60,concreto aparente cinza medio,concreto/preto/ambar
