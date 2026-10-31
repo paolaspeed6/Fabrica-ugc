@@ -156,3 +156,9 @@ Se o Sonnet deixar passar defeito que o Opus pegou, voltar a Fiscal de confirma�
 - K22 (sem_cena.py) no 1º lote real: p13 Lustre (A+C, B fora por defeito grave) e p15 Kit 2 Estantes (A, B, C só borda) montados
   com câmera por código e aviso. K21 funcionou: p06A p09B p10A p14A sem refação (2 cenas boas).
 - Drive caiu na 1ª subida (Connection reset): drive_backup.py + entregar.sh rodados de novo à mão; conferir_docs saíram certos.
+
+## Lista 31/10 A (31/10 ~21h UTC)
+- 8 produtos com A, B e C (24 vídeos, 3110A-02..09) na aba Conferir, pendentes. Gasto US$ 3,23 de 5 (36 imagens + 18 clipes).
+- Pulado pelo Fichador: p01 Filamento 3D SUNLU 58217392854 (foto 01 com logo YRYM HT, sem foto dos 10 rolos, cores misturadas; Tinder volta a `aprovado` com campo `pulado`).
+- 1º lote com K23 (cena com vida: sol dourado, plantas, decoração simples). Cenas com 1 só aprovada: p02 Cortina, p06 Cadeiras (A e C repetem a abertura); p03, p04, p07 com 2.
+- Avisos: p05 Gabinete (foto 01 mostra PC montado e 5 fans; anúncio diz 4; vídeo não fala a contagem); p08 Estante (título preto, foto 01 azul: fomos de preto, foto 07); p07 "75 cm" sem dizer se é assento ou total; p09 Autoclave sem medidas no anúncio.

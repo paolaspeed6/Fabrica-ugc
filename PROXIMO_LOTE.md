@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-10-31 (Lista 30/10 B entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-10-31 noite (Lista 31/10 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -25,7 +25,16 @@ Atualizado: 2026-10-31 (Lista 30/10 B entregue). Histórico completo: memoria/hi
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
-## Estado atual (31/10, madrugada)
+## Estado atual (31/10, noite)
+- Lote 31/10 A (31/10 ~21h UTC): 8 produtos com A, B e C (24 vídeos, 3110A-02..09) na aba Conferir, pendentes. Gasto US$ 3,23 de 5
+  (36 imagens + 18 clipes). Tinder: os 8 em `pronto`.
+- Pulado pelo Fichador: p01 Filamento 3D SUNLU 58217392854 (logo de outra marca na foto 01, sem foto dos 10 rolos). Tinder: `aprovado` + campo `pulado`.
+- 1º lote com K23 (cena com vida). p02 Cortina e p06 Cadeiras de praia com 1 cena só aprovada (vídeo repete a cena).
+- Avisos para a dona: p05 Gabinete (foto mostra PC montado, não vendido); p08 Estante preta (foto 01 do anúncio é azul); p07 "75 cm" ambíguo.
+- O produzir.sh usa /home/user/fabrica-ugc (minúsculo): numa conversa nova crie o atalho `ln -s /home/user/Fabrica-ugc /home/user/fabrica-ugc`.
+- Fila: aprovados livres agora só os 12 já pulados + p01 Filamento (pulado). Próximo lote precisa de mais "aprovados" no Tinder. Nenhum lote aberto.
+
+## Estado anterior (31/10, madrugada)
 - Lote 30/10 B (31/10 ~02h30 UTC): 15 produtos com A, B e C (45 vídeos, 3010B-01..15) na aba Conferir, pendentes. Gasto US$ 5,44 de 8
   (54 imagens + 33 clipes). Nenhum pulado (reservas não usadas). Tinder: os 15 em `pronto`.
 - 1º lote real do sem_cena.py (K22): funcionou. 3010B-13 Lustre Corsalle (clipe A acendeu as lâmpadas; B era outro modelo e ficou fora:

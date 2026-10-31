@@ -1,7 +1,7 @@
 {
  "_leia": "O que os dados das páginas não mostram. O Claude atualiza a cada passo do lote. lote: null quando nada está em produção; senão {nome, etapa (id de fluxo.js), produtos: [...], erro: null ou texto}. etapas: correção manual de uma casinha {estado, texto}.",
  "lote": null,
- "ultimo_lote": "Lista 25/10 A",
+ "ultimo_lote": "Lista 31/10 A",
  "lote_min": 15,
  "automaticas": {
   "varredura": {
