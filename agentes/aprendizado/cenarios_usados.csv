@@ -841,3 +841,27 @@ data,produto,cena,ambiente,piso,parede,paleta
 2026-11-01,L0111a p15 duas-cadeiras-olivia-madeira,A,sala de jantar tarde mesa redonda carvalho vazia,porcelanato bege acinzentado + tapete juta,branco quente liso,carvalho/bege/verde
 2026-11-01,L0111a p15 duas-cadeiras-olivia-madeira,B,cozinha gourmet manha ilha madeira clara vazia,ladrilho hexagonal cimento cinza quente,armarios verde salvia,salvia/madeira/branco
 2026-11-01,L0111a p15 duas-cadeiras-olivia-madeira,C,hall de entrada golden hour aparador carvalho vazio,espinha de peixe carvalho escuro + tapete lã,terracota reboco liso,terracota/carvalho escuro/creme
+2026-11-01,L0111a p01 prateleira-industrial-3-andares,A,sala de estar apto tarde sofa bouclé terracota mesa carvalho vazia,tabuas carvalho medio + tapete juta,creme quente liso (sol dourado, folhas),terracota/carvalho/creme
+2026-11-01,L0111a p01 prateleira-industrial-3-andares,B,hall de entrada casa moderna dia aparador carvalho vazio,porcelanato grafite cimento 80,terracota argila liso,terracota/grafite/juta
+2026-11-01,L0111a p01 prateleira-industrial-3-andares,C,quarto home office fim de tarde escrivaninha carvalho vazia,porcelanato microcimento claro 90,verde sálvia liso,sálvia/carvalho/branco
+2026-11-01,L0111a p02 cadeira-lille-corvin,A,sala de jantar apto manha mesa nogueira redonda vazia janela voil,espinha de peixe carvalho medio + tapete juta,verde oliva liso,oliva/nogueira/bege
+2026-11-01,L0111a p02 cadeira-lille-corvin,B,varanda gourmet casa tarde mesa bistro pedra vazia,porcelanato terracota hexagonal fosco,reboco branco liso + arco,terracota/branco/oliveira
+2026-11-01,L0111a p02 cadeira-lille-corvin,C,recepcao de loja boutique noite aparador travertino vazio luminaria,porcelanato grafite polido,painel ripado nogueira,nogueira/grafite/ambar
+2026-11-01,L0111a p03 coifa-fogatti-vidro-curvo,A,cozinha planejada manha bancada quartzo vazia janela folhas,tabuas carvalho medio,placas porcelanato marmore branco continuas,branco/carvalho/verde
+2026-11-01,L0111a p03 coifa-fogatti-vidro-curvo,B,cozinha gourmet tarde bancada granito preto vazia,porcelanato cimento queimado claro,terracota argila liso,terracota/preto/claro
+2026-11-01,L0111a p03 coifa-fogatti-vidro-curvo,C,cozinha apto fim de tarde bancada branca vazia,porcelanato cinza 90,verde sálvia liso,sálvia/cinza/branco
+2026-11-01,L0111a p04 churrasqueira-costela-de-chao,A,quintal casa moderna tarde pergolado banco carvalho vazio,porcelanato cinza claro 60x120 externo,reboco branco liso + pergolado,verde/branco/cinza
+2026-11-01,L0111a p04 churrasqueira-costela-de-chao,B,deck de piscina casa moderna tarde porta de vidro,deck madeira ipe 14 cm,reboco branco + esquadria preta,ipe/turquesa/branco
+2026-11-01,L0111a p04 churrasqueira-costela-de-chao,C,jardim casa moderna por do sol muro de basalto,lajes de concreto 1 m com grama,basalto escuro,basalto/verde/dourado
+2026-11-01,L0111a p05 balcao-itatiaia-cooktop-5-bocas,A,cozinha planejada manha balcao branco janela folhas pendente rattan,tabuas carvalho medio + passadeira juta,verde salvia liso,salvia/carvalho/branco
+2026-11-01,L0111a p05 balcao-itatiaia-cooktop-5-bocas,B,cozinha de apto tarde samambaia,porcelanato terracota 60,tijolo branco pintado,terracota/branco/verde
+2026-11-01,L0111a p05 balcao-itatiaia-cooktop-5-bocas,C,copa gourmet noite luminaria de chao,porcelanato cimento claro 90,azul petroleo liso,petroleo/cimento/ambar
+2026-11-01,L0111a p06 amortecedores-nakata-fiesta,A,garagem casa moderna manha porta aberta folhas,epoxi cinza claro lajes grandes,branco liso + pegboard preto,cinza/branco/verde
+2026-11-01,L0111a p06 amortecedores-nakata-fiesta,B,edicula oficina moderna tarde bancada carvalho vazia,concreto polido,painel ripado branco,carvalho/branco/concreto
+2026-11-01,L0111a p06 amortecedores-nakata-fiesta,C,oficina residencial fim de tarde bancada nogueira vazia,porcelanato grafite,azul acinzentado liso,nogueira/azul/grafite
+2026-11-01,L0111a p07 banco-bau-atria-caramelo,A,quarto casal apto tarde cama linho branco folhas,tabuas nogueira escura + tapete juta,verde salvia liso,salvia/nogueira/caramelo
+2026-11-01,L0111a p07 banco-bau-atria-caramelo,B,hall de entrada casa moderna dia porta lateral,porcelanato grafite 80,azul marinho liso,marinho/grafite/caramelo
+2026-11-01,L0111a p07 banco-bau-atria-caramelo,C,sala de estar apto fim de tarde poltrona bouclé terracota,espinha de peixe nogueira escura + tapete juta redondo,branco gelo cal liso,branco/nogueira/terracota
+2026-11-01,L0111a p08 chave-catraca-gmbear,A,oficina de moto custom edicula tarde bancada carvalho caixa de ferramentas vermelha,concreto polido,tijolo pintado cinza chumbo,chumbo/carvalho/vermelho
+2026-11-01,L0111a p08 chave-catraca-gmbear,B,garagem moderna dia bancada inox,epoxi claro,azulejo metro branco,branco/inox/verde
+2026-11-01,L0111a p08 chave-catraca-gmbear,C,oficina hobby por do sol bancada nogueira vazia,porcelanato grafite,azul acinzentado liso,azul/nogueira/grafite
