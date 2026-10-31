@@ -15,8 +15,10 @@ Agentes do setor de qualidade (Fichador, Fiscais) leem SÓ este resumo + o BRIEF
 
 ## Proibidos (em qualquer lugar da cena)
 Pessoa, mão, bebê, animal, garrafa, taça, copo, frasco, pote de vidro, bebida, chama acesa, tela/painel aceso (salvo se a foto 01 mostra),
-texto de propaganda, selos, cotas/medidas desenhadas. Superfícies do fundo VAZIAS (criado-mudo, aparador, prateleira, bancada).
-Nunca citar o proibido no prompt (nem negando): descrever o certo ("every surface is bare").
+texto de propaganda, selos, cotas/medidas desenhadas. Fundo com VIDA (a dona, 31/10): sol dourado com sombras de folhas, plantas, tapete,
+no máximo 2-3 peças de decoração simples e grandes (cerâmica fosca larga, galhos secos, tábua, quadro sem texto); reprovar só fundo bagunçado,
+decoração encostando no produto ou vaso com gargalo fino que pareça garrafa.
+Nunca citar o proibido no prompt (nem negando): descrever o certo.
 
 ## Textos (vídeo e legenda)
 Só o que está ESCRITO no título/descrição. Número que discorda entre título e descrição = fora. Sem prazo de entrega, %, nota,

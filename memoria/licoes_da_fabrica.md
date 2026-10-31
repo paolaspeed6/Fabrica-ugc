@@ -149,3 +149,6 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
 - (30/10, a dona, K22) Produto sem cena aprovada não para mais em resgate: a fábrica monta A, B e C com as imagens reprovadas só por
   borda/largura (câmera por código, grátis) e manda para a Conferir com "cenas reprovadas pela fiscal: confira"; ela descarta à mão.
   Defeito grave (pessoa, bebida, letra inventada, objeto proibido) continua fora. Os 5 resgates de 28-30/10 eram todos assim e ela aceitou todos.
+- 31/10: a dona achou as imagens sem "vida" e "personalidade" (mandou 3 exemplos dela: mesa com cadeiras de palha ao sol, banquetas de ferro,
+  banqueta de palha com costela-de-adão). Regra K23: sol dourado + sombras de folhas + plantas + decoração simples no fundo. Mesmo custo.
+  Acompanhar no 1º lote se aumenta reprovação (decoração surgindo no vídeo, vaso parecendo garrafa).

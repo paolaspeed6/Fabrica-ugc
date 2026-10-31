@@ -312,3 +312,9 @@ para não cortar as pontas; grátis, nunca clipe IA: K19) e o produto vai para a
 confira". Ela descarta à mão se não servir. Defeito grave (pessoa, mão, animal, bebida, garrafa/taça/copo, letra inventada, objeto
 proibido, produto diferente) continua fora: como a folha.py reprova antes da Fiscal, essas imagens passam por uma checagem só de defeito
 grave no Gemini (grátis). Sem nenhuma imagem aproveitável, o produto ainda vira cartão resgate (descartadas.py).
+
+## K23. Cena com vida e personalidade (a dona, 31/10)
+- As imagens que ela mesma fazia tinham mais "vida": sol dourado da janela com sombras de folhas, plantas grandes, tapete de juta,
+  madeira, cerâmica fosca, galhos secos, paleta quente e terrosa (`referencias/estilo_dona_3110/`). O padrão "superfícies vazias,
+  luz neutra" do gerar.py deixava tudo frio de catálogo. Agora: 2-3 peças de decoração simples e grandes no fundo, nunca encostando no
+  produto; fiscais reprovam só fundo bagunçado, decoração no produto ou vaso de gargalo fino (parece garrafa). Mesmo custo por imagem.

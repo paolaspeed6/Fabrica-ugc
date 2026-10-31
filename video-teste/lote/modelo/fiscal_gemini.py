@@ -21,7 +21,8 @@ com a FOTO DO ANÚNCIO (1ª imagem) e com a ficha abaixo. Reprove só o que uma 
 - letra inventada ou torta LEGÍVEL no produto (logo errado);
 - PROIBIDOS em qualquer lugar: pessoa, mão, bebê, animal, garrafa, taça, copo, frasco, pote de vidro, bebida, chama acesa,
   tela/painel aceso (exceto se a foto do anúncio mostra assim), texto de propaganda, selos, objetos que a ficha proíbe;
-- superfícies do fundo com objetos pequenos soltos (criado-mudo, aparador, prateleira, bancada).
+- fundo bagunçado (muitos objetos pequenos soltos) ou decoração encostando/em cima do produto. Decoração simples no fundo é PERMITIDA e desejada
+  (a dona, 31/10: plantas, tapete, cerâmica fosca larga, galhos secos, tábua de madeira, quadro sem texto, sol com sombras de folhas).
 Responda SÓ um JSON: {"veredito": "APROVADO" ou "REPROVADO", "provas": "o que você conferiu e o motivo, em português, curto",
 "corrigir_prompt": "se reprovado: frase em INGLÊS dizendo como a imagem deve ser (nunca cite o objeto proibido, descreva o certo, ex.: 'every surface is bare'); se aprovado: vazio",
 "risco_animacao": "se aprovado: aviso curto em português + uma frase em INGLÊS entre aspas duplas para o vídeo, ex.: \\"the camera stays at the same distance and drifts slowly a few centimeters to the left\\" (sem avanço se a folga for pequena); se reprovado: vazio"}"""
