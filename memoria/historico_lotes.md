@@ -157,6 +157,13 @@ Se o Sonnet deixar passar defeito que o Opus pegou, voltar a Fiscal de confirma�
   com câmera por código e aviso. K21 funcionou: p06A p09B p10A p14A sem refação (2 cenas boas).
 - Drive caiu na 1ª subida (Connection reset): drive_backup.py + entregar.sh rodados de novo à mão; conferir_docs saíram certos.
 
+## Lista 01/11 A (01/11 ~06h40 UTC)
+- 15 produtos com A, B e C (45 vídeos, 0111A-01..15) na aba Conferir, pendentes. Gasto US$ 5,33 de 8 (69 imagens + 26 clipes). Nenhum pulado (reserva Mesa Colméia 13843468905 não usada).
+- K22 (câmera por código, aviso "cenas reprovadas pela fiscal: confira"): p04 Churrasqueira, p10 Kit 2 Mesas de Cabeceira, p13 Mesa em L.
+- Teste K23: 1 cena reprovada por enfeite/fundo bagunçado (p12C, ferramentas soltas na bancada); nenhum clipe com enfeite surgindo ou mudando.
+- Cenas com 1 só aprovada: p03 Coifa (C), p12 Amortecedor (A), p15 Cadeiras Olivia (C).
+- Avisos: p08 GM Bear é chave de CATRACA (título diz impacto/berbequim; números de V/rpm discordam, fora dos textos); p09 Jump Starter foto 04 diz 1200A (fora); p14 título Maldivas, descrição Ibiza; p11 sem medidas no anúncio.
+
 ## Lista 31/10 A (31/10 ~21h UTC)
 - 8 produtos com A, B e C (24 vídeos, 3110A-02..09) na aba Conferir, pendentes. Gasto US$ 3,23 de 5 (36 imagens + 18 clipes).
 - Pulado pelo Fichador: p01 Filamento 3D SUNLU 58217392854 (foto 01 com logo YRYM HT, sem foto dos 10 rolos, cores misturadas; Tinder volta a `aprovado` com campo `pulado`).

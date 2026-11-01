@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-10-31 noite (Lista 31/10 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-01 manhã (Lista 01/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -25,7 +25,16 @@ Atualizado: 2026-10-31 noite (Lista 31/10 A entregue). Histórico completo: memo
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
-## Estado atual (31/10, noite)
+## Estado atual (01/11, manhã)
+- Lote 01/11 A (01/11 ~06h40 UTC): 15 produtos com A, B e C (45 vídeos, 0111A-01..15) na aba Conferir, pendentes. Gasto US$ 5,33 de 8
+  (69 imagens + 26 clipes). Tinder: os 15 em `pronto`. Nenhum pulado; reserva 13843468905 Mesa Colméia segue `aprovado` (livre).
+- K22 (câmera por código + aviso): p04 Churrasqueira, p10 Kit 2 Mesas de Cabeceira, p13 Mesa em L.
+- Teste K23 (2º lote): 1 cena reprovada por enfeite/fundo bagunçado (p12C ferramentas soltas). Nenhum clipe com enfeite mudando.
+- Avisos para a dona: p08 GM Bear é chave de catraca (título diz impacto); p14 Maldivas x Ibiza; p11 sem medidas.
+- Fila: aprovados livres só a Mesa Colméia + os 13 já pulados. Próximo lote precisa de mais "aprovados" no Tinder. Nenhum lote aberto.
+- O push para main: a conversa nova pode abrir em HEAD solto; use `git checkout -B main HEAD` antes do push.
+
+## Estado anterior (31/10, noite)
 - Lote 31/10 A (31/10 ~21h UTC): 8 produtos com A, B e C (24 vídeos, 3110A-02..09) na aba Conferir, pendentes. Gasto US$ 3,23 de 5
   (36 imagens + 18 clipes). Tinder: os 8 em `pronto`.
 - Pulado pelo Fichador: p01 Filamento 3D SUNLU 58217392854 (logo de outra marca na foto 01, sem foto dos 10 rolos). Tinder: `aprovado` + campo `pulado`.
