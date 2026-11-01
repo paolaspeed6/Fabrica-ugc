@@ -326,3 +326,8 @@ grave no Gemini (grátis). Sem nenhuma imagem aproveitável, o produto ainda vir
   (a mesma chamada de edição). Vale para produto com selo "largo" (largo.py) ou ficha com "largo": true.
 - Só com foto 01 boa (Fichador marca "foto01_boa"; mínimo 700 px): foto ruim e refação são criadas do zero (a dona, 01/11: "quero imagens perfeitas, realistas e com qualidade").
 - Recorte por rembg NÃO serve para a guia (no berço branco sobre papel de parede ele recortou a parede).
+
+## K25. Ganchos que param o dedo (a dona, 01/11)
+- Ganchos genéricos ("Sua sala merece mais conforto") não seguram. O Fichador segue `agentes/ganchos.md`: 9 fórmulas (achado,
+  transformação, emoção, POV, curiosidade, dor resolvida, desejo, prova social sem número, lista), uma diferente em A, B e C,
+  2 linhas de até 26 caracteres. Sem preço, %, frete, prazo, nota ou número de vendas.

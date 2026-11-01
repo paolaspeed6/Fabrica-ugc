@@ -154,3 +154,5 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
   Acompanhar no 1º lote se aumenta reprovação (decoração surgindo no vídeo, vaso parecendo garrafa).
 - 01/11: a dona não entendeu por que produto largo "dava bug": "é só criar a imagem na mesma posição que a referência e mudar o fundo".
   Feito (K24): guia 9:16 com a foto 01 no lugar certo, o Nano Banana só repinta o cômodo. 1º lote com isso: medir refação dos largos.
+- 01/11: a dona pediu ganchos mais atrativos. Guia novo agentes/ganchos.md (fórmulas + exemplos dela). Próximo passo sugerido:
+  Sub ID por layout para medir qual gancho/versão vende mais.
