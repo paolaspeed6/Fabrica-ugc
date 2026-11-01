@@ -931,3 +931,27 @@ data,produto,cena,ambiente,piso,parede,paleta
 2026-11-02,L0211a p16 cadeira-balanco-4-molas,A,varanda apto moderno manha deck ipe cobogo branco oliveira e palmeira,deck ipe + tapete juta,verde salvia liso,salvia/ipe/branco
 2026-11-02,L0211a p16 cadeira-balanco-4-molas,B,area de piscina casa moderna tarde pedra clara frangipani,travertino bege 60,muro branco caiado,travertino/branco/azul piscina
 2026-11-02,L0211a p16 cadeira-balanco-4-molas,C,sala de estar apto fim de tarde banco madeira vazio janela cortina linho,carvalho claro + tapete redondo juta,terracota argila liso,terracota/carvalho/juta
+2026-11-02,L0211b p01 freio-hidraulico-bucklos-ebike,A,oficina de bike eletrica edicula tarde bancada carvalho vazia roda de e-bike,cimento queimado claro,tijolo aparente caiado branco,branco/carvalho/preto
+2026-11-02,L0211b p01 freio-hidraulico-bucklos-ebike,B,loft estudio de e-bike manha bancada ipe banco mostarda,epoxi cinza claro lajes grandes,azul marinho liso,marinho/ipe/mostarda
+2026-11-02,L0211b p01 freio-hidraulico-bucklos-ebike,C,patio coberto quintal golden hour bancada concreto,tabuas claras madeira,rosa antigo liso,rosa/concreto/verde
+2026-11-02,L0211b p02 lustre-cristal-15-cabecas,A,sala de jantar apto tarde mesa redonda carvalho vazia,espinha de peixe carvalho claro + tapete juta,mostarda ocre liso + sanca gesso,mostarda/carvalho/dourado
+2026-11-02,L0211b p02 lustre-cristal-15-cabecas,B,sala de estar manha janela grande sofa linho,porcelanato claro + tapete juta redondo,azul marinho profundo,marinho/linho/dourado
+2026-11-02,L0211b p02 lustre-cristal-15-cabecas,C,quarto casal golden hour cama linho cabeceira ripada,carpete cinza claro,rosa antigo liso,rosa/linho/dourado
+2026-11-02,L0211b p03 lixeira-pedal-songmics-50l,A,cozinha planejada manha bancada quartzo vazia janela,porcelanato claro 90 + passadeira juta,armarios nogueira + parede branca,nogueira/branco/quartzo
+2026-11-02,L0211b p03 lixeira-pedal-songmics-50l,B,lavanderia moderna tarde bancada vazia janela voil,cimento claro,azulejo verde-agua brilhante 10x20,verde-agua/branco/madeira
+2026-11-02,L0211b p03 lixeira-pedal-songmics-50l,C,home office golden evening mesa branca vazia monstera,vinilico carvalho,mostarda ocre liso,mostarda/branco/carvalho
+2026-11-02,L0211b p04 kit-2-banquetas-kinney,A,cozinha apto manha ilha freijo vazia janela plantas,porcelanato off-white 90 + passadeira juta,zellige areia branco,freijo/areia/preto
+2026-11-02,L0211b p04 kit-2-banquetas-kinney,B,varanda gourmet apto tarde bancada pedra cinza vazia,deck porcelanato amadeirado cinza quente,concreto aparente claro + guarda-corpo vidro,cinza/concreto/verde
+2026-11-02,L0211b p04 kit-2-banquetas-kinney,C,bar em casa golden hour balcao nogueira vazio pendente latao,cimento queimado cinza quente + tapete juta redondo,azul petroleo liso,petroleo/nogueira/latao
+2026-11-02,L0211b p05 bicicleta-infantil-aro-16-verde,A,quintal casa moderna manha deck banco madeira vazio oliveira,deck madeira clara + gramado,estuque branco + porta vidro preta,branco/madeira/verde
+2026-11-02,L0211b p05 bicicleta-infantil-aro-16-verde,B,varanda gourmet coberta apto tarde tapete juta,porcelanato cimento claro,azul ceu liso,azul ceu/juta/verde
+2026-11-02,L0211b p05 bicicleta-infantil-aro-16-verde,C,sala de brinquedos tarde janela voil tapete redondo,carpete cinza claro,amarelo manteiga liso,manteiga/cinza/creme
+2026-11-02,L0211b p06 mesa-aco-inox-90x50-3-niveis,A,area gourmet externa tarde jardineira plantas,pavers porcelanato cimento 60,painel ripado madeira quente,madeira/cimento/verde
+2026-11-02,L0211b p06 mesa-aco-inox-90x50-3-niveis,B,cozinha profissional cafe manha prateleira madeira clara,ladrilho hexagonal cimento claro,azulejo verde bandeira 10x10,verde/cimento/madeira
+2026-11-02,L0211b p06 mesa-aco-inox-90x50-3-niveis,C,area de servico golden afternoon armario branco embutido,porcelanato claro 90,azul bebe liso,azul bebe/branco/verde
+2026-11-02,L0211b p07 filamento-petg-soleyin-preto,A,atelie maker apto tarde mesa carvalho claro vazia impressora 3D branca desligada,tabuas claras carvalho,azul acinzentado ardosia liso,ardosia/carvalho/branco
+2026-11-02,L0211b p07 filamento-petg-soleyin-preto,B,oficina prototipagem casa manha bancada branca frente carvalho,porcelanato cimento claro,branco quente liso + pegboard preto,branco/carvalho/preto
+2026-11-02,L0211b p07 filamento-petg-soleyin-preto,C,estudio criativo golden evening mesa nogueira vazia palmeira,espinha de peixe carvalho + tapete juta redondo,verde azulado suave liso,verde azulado/nogueira/carvalho
+2026-11-02,L0211b p08 pe-de-mesa-industrial-kit-2,A,sala de jantar apto tarde tampo carvalho liso vazio oliveira,espinha de peixe nogueira + tapete juta,cal off-white + janela grande,nogueira/carvalho/off-white
+2026-11-02,L0211b p08 pe-de-mesa-industrial-kit-2,B,home office casa manha tampo laca branca vazio,porcelanato cimento claro + tapete la,verde oliva acinzentado liso,oliva cinza/branco/creme
+2026-11-02,L0211b p08 pe-de-mesa-industrial-kit-2,C,sala varanda gourmet golden evening tampo nogueira vazio palmeira,porcelanato cinza claro,terracota laranja fosco liso,terracota/nogueira/cinza
