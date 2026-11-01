@@ -318,3 +318,10 @@ grave no Gemini (grátis). Sem nenhuma imagem aproveitável, o produto ainda vir
   madeira, cerâmica fosca, galhos secos, paleta quente e terrosa (`referencias/estilo_dona_3110/`). O padrão "superfícies vazias,
   luz neutra" do gerar.py deixava tudo frio de catálogo. Agora: 2-3 peças de decoração simples e grandes no fundo, nunca encostando no
   produto; fiscais reprovam só fundo bagunçado, decoração no produto ou vaso de gargalo fino (parece garrafa). Mesmo custo por imagem.
+
+## K24. Produto largo: mesma posição da foto do anúncio, só o cômodo muda (a dona, 01/11, berço com cômoda)
+- Antes o Nano Banana recebia só a foto e "enchia" o quadro vertical: produto largo saía cortado nas pontas (motivo nº 1 de
+  refação e resgate). Agora (gerar.py, `eh_largo` + `guia`): a foto 01 inteira vai numa tela 9:16 a 75% da largura (produto com
+  ~60% e folga dos lados) e é a imagem 1; o prompt manda manter o produto exatamente ali e repintar o cômodo em volta. Mesmo preço
+  (a mesma chamada de edição). Vale para produto com selo "largo" (largo.py) ou ficha com "largo": true.
+- Recorte por rembg NÃO serve para a guia (no berço branco sobre papel de parede ele recortou a parede).

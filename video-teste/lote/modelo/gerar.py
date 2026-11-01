@@ -87,14 +87,47 @@ def vdescr(f):
 def cena(f, c): return next(x for x in f["cenarios"] if x["id"] == c)
 
 
+def eh_largo(f):
+    """produto largo/kit (selo do Tinder): a dona, 01/11 (berço com cômoda): "é só criar a imagem na mesma posição que a
+    referência e mudar o fundo". Sem guia, o Nano Banana enche o quadro vertical e corta as pontas (motivo nº 1 de refação)."""
+    if "largo" in f: return bool(f["largo"])
+    try:
+        sys.path.insert(0, str(B.parents[2] / "produto-campeao" / "afiliados")); from largo import largo
+        return largo(f.get("nome_curto", "") + " " + " ".join(map(str, f.get("itens", []))))
+    except Exception: return False
+
+
+def guia(p, f):
+    """Tela 9:16 com a foto 01 do anúncio inteira, no enquadramento dela, a 75% da largura (o produto fica com ~60% e folga dos
+    lados), um pouco abaixo do meio. O Nano Banana repinta o cômodo e completa a tela em volta, sem mexer no produto (mesmo preço:
+    é a mesma chamada de edição). Recorte (rembg) não serve: no berço branco com papel de parede ele recortou a parede."""
+    g = B / f"{p}-cenas" / "guia.jpg"
+    if g.exists(): return g
+    from PIL import Image
+    fo = B / (f"{p}-fotos/{f['fotos_ref'][0]}" if "/" not in f["fotos_ref"][0] else f["fotos_ref"][0])
+    im = Image.open(fo).convert("RGB"); W, H = 1080, 1920; w = int(W * 0.75); h = int(im.height * w / im.width)
+    if h > H * 0.6: h = int(H * 0.6); w = int(im.width * h / im.height)
+    tela = Image.new("RGB", (W, H), (236, 233, 228)); tela.paste(im.resize((w, h)), ((W - w) // 2, int(H * 0.58) - h // 2))
+    tela.save(g, quality=92); return g
+
+
 def imagem(p, c):
     d = B / f"{p}-cenas"; d.mkdir(exist_ok=True); out = d / f"{c}.jpg"
     if out.exists(): return f"{p} {c}.jpg já existe"
     f = ficha(p); s = cena(f, c)
     if s.get("estado") == "falhou": return f"{p} {c} falhou 2x: não refaz (regra: só 1 refação)"
     cobrar(f"img {p}{c}", 0.0396)
-    txt = descr(f) + f" Image 1 is the exact product and color. Setting: {s['texto']} {s['scale']} {s['camera']}" + FIM + (" " + s["fix_img"] if s.get("fix_img") else "")
-    u = api("google/nano-banana-2.1/edit", {"prompt": txt, "images": [ref(f"{p}-fotos/{x}" if "/" not in x else x) for x in f["fotos_ref"]],
+    fotos = [ref(f"{p}-fotos/{x}" if "/" not in x else x) for x in f["fotos_ref"]]
+    if eh_largo(f):  # K24: produto largo fica onde a guia mostra; só o cômodo muda
+        g = guia(p, f); fotos = [ref(str(g.relative_to(B)))] + fotos
+        txt = (descr(f) + " Image 1 is a layout guide: the advertising photo placed inside a tall frame. The product stays exactly where it is in image 1, "
+               "with the same size, angle, framing and proportions. Repaint everything around the product as a new room that fills the whole tall frame "
+               "(new walls, floor continuing under the product, soft natural shadows); nothing of the old room, no plain borders. "
+               "The other images show the exact product details and color. "
+               f"Setting: {s['texto']}" + FIM + (" " + s["fix_img"] if s.get("fix_img") else ""))
+    else:
+        txt = descr(f) + f" Image 1 is the exact product and color. Setting: {s['texto']} {s['scale']} {s['camera']}" + FIM + (" " + s["fix_img"] if s.get("fix_img") else "")
+    u = api("google/nano-banana-2.1/edit", {"prompt": txt, "images": fotos,
                                              "aspect_ratio": "9:16", "resolution": "1k", "output_format": "jpeg"})
     baixar(u, out); (d / f"{c}.img.txt").write_text(txt); return f"{p} {c}.jpg ok"
 

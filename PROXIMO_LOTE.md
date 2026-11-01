@@ -9,6 +9,8 @@ Atualizado: 2026-11-01 manhã (Lista 01/11 A entregue). Histórico completo: mem
 - Pasta do lote: video-teste/lote/lista<DDMM><letra> (cópia de video-teste/lote/modelo). Passos: CHECKLIST.md.
 
 ## Regras que não podem falhar
+- TESTE K24 (01/11): produto "largo" usa a guia (foto 01 na posição certa, só o cômodo muda). No aviso final: quantas cenas largas
+  passaram de 1ª e se o Nano Banana manteve o produto igual à foto. Olhe a guia.jpg de 1 produto antes de gerar o resto.
 - TESTE K23 (a dona, 31/10): o 1º lote com cenas "com vida" (sol, plantas, enfeites simples) conta no aviso final quantas cenas foram
   reprovadas por enfeite (surgiu/mudou no vídeo, vaso parecendo garrafa). Se der problema, a dona quer VOLTAR ao fundo vazio (git revert f9d1011).
 - Nada pago sem OK da dona e teto em dólar. Refazer uma imagem ou clipe pago só UMA vez. Reprovou 2x: entender o motivo, não gerar de novo.

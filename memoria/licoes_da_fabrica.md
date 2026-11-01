@@ -152,3 +152,5 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
 - 31/10: a dona achou as imagens sem "vida" e "personalidade" (mandou 3 exemplos dela: mesa com cadeiras de palha ao sol, banquetas de ferro,
   banqueta de palha com costela-de-adão). Regra K23: sol dourado + sombras de folhas + plantas + decoração simples no fundo. Mesmo custo.
   Acompanhar no 1º lote se aumenta reprovação (decoração surgindo no vídeo, vaso parecendo garrafa).
+- 01/11: a dona não entendeu por que produto largo "dava bug": "é só criar a imagem na mesma posição que a referência e mudar o fundo".
+  Feito (K24): guia 9:16 com a foto 01 no lugar certo, o Nano Banana só repinta o cômodo. 1º lote com isso: medir refação dos largos.
