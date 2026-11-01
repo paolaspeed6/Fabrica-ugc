@@ -324,4 +324,5 @@ grave no Gemini (grátis). Sem nenhuma imagem aproveitável, o produto ainda vir
   refação e resgate). Agora (gerar.py, `eh_largo` + `guia`): a foto 01 inteira vai numa tela 9:16 a 75% da largura (produto com
   ~60% e folga dos lados) e é a imagem 1; o prompt manda manter o produto exatamente ali e repintar o cômodo em volta. Mesmo preço
   (a mesma chamada de edição). Vale para produto com selo "largo" (largo.py) ou ficha com "largo": true.
+- Só com foto 01 boa (Fichador marca "foto01_boa"; mínimo 700 px): foto ruim e refação são criadas do zero (a dona, 01/11: "quero imagens perfeitas, realistas e com qualidade").
 - Recorte por rembg NÃO serve para a guia (no berço branco sobre papel de parede ele recortou a parede).

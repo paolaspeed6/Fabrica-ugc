@@ -26,6 +26,7 @@ Ao terminar, releia a foto 01 e confira cada linha contra ela.
 - Em `partes`, diga onde cada peça funcional fica no corpo (em cima/embaixo, frente/trás), conferindo TODAS as fotos, inclusive as de outros ângulos. Ex.: "fuel tank and its cap at the BOTTOM of the engine, under the shroud; never on top".
 - Display ou painel: copie o texto e o layout que aparecem em qualquer foto (ex.: LCD com TIME, SPEED, DIST, CAL, PULSE).
 - Letras pequenas que ficam legíveis em outra foto vão em `letras` como texto exato; não marque como ilegível.
+- Marque `"foto01_boa": true` só se a foto 01 mostra o produto INTEIRO, nítido, foto real ou render realista, sem colagem, sem texto/selo/medida grande em cima e sem pessoa; senão `false`. Produto largo com foto 01 boa ganha a guia (mesma posição da foto, só o cômodo muda, K24); com foto ruim a cena é criada do zero.
 - Marque `"complexo": true` em máquina, motor, ferramenta a gasolina, eletrônico com painel ou produto com muitas letras. Esse produto recebe a foto 01 do anúncio colada no canto do vídeo final.
 
 ## Produto pequeno (até ~20 cm) (Kevin 2026-10-24, loja do amigo: 13 imagens jogadas fora)

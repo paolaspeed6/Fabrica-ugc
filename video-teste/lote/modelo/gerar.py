@@ -97,6 +97,16 @@ def eh_largo(f):
     except Exception: return False
 
 
+def foto_boa(p, f):
+    """A guia só usa a foto 01 se ela é boa: o Fichador marca "foto01_boa" (produto inteiro, foto real ou render realista, sem
+    colagem, sem texto/selo grande, sem pessoa) e a foto tem pelo menos 700 px no lado menor. Senão, a cena é criada do zero."""
+    if f.get("foto01_boa") is False: return False
+    try:
+        from PIL import Image
+        x = f["fotos_ref"][0]; im = Image.open(B / (f"{p}-fotos/{x}" if "/" not in x else x)); return min(im.size) >= 700
+    except Exception: return False
+
+
 def guia(p, f):
     """Tela 9:16 com a foto 01 do anúncio inteira, no enquadramento dela, a 75% da largura (o produto fica com ~60% e folga dos
     lados), um pouco abaixo do meio. O Nano Banana repinta o cômodo e completa a tela em volta, sem mexer no produto (mesmo preço:
@@ -118,7 +128,8 @@ def imagem(p, c):
     if s.get("estado") == "falhou": return f"{p} {c} falhou 2x: não refaz (regra: só 1 refação)"
     cobrar(f"img {p}{c}", 0.0396)
     fotos = [ref(f"{p}-fotos/{x}" if "/" not in x else x) for x in f["fotos_ref"]]
-    if eh_largo(f):  # K24: produto largo fica onde a guia mostra; só o cômodo muda
+    if eh_largo(f) and foto_boa(p, f) and not s.get("fix_img"):  # K24: produto largo fica onde a guia mostra; só o cômodo muda
+        # (a dona, 01/11: foto do anúncio ruim = cria do zero; e a refação de uma cena com guia também sai do zero)
         g = guia(p, f); fotos = [ref(str(g.relative_to(B)))] + fotos
         txt = (descr(f) + " Image 1 is a layout guide: the advertising photo placed inside a tall frame. The product stays exactly where it is in image 1, "
                "with the same size, angle, framing and proportions. Repaint everything around the product as a new room that fills the whole tall frame "

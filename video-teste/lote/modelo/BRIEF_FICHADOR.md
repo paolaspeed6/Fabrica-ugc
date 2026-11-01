@@ -38,6 +38,7 @@ Ao terminar cada produto, releia a foto 01 e confira a ficha contra ela. Respond
 - O Seedance avança mesmo quando se pede deslize (Lista 23/10 C): planeje cenas em que um avanço de 20 cm ainda deixa o produto inteiro no quadro.
 
 ### Bebê, casa, fitness, perfume (Lista 24/10 C)
+- K24: marque `"foto01_boa": true/false` (produto inteiro, nítido, sem colagem, sem texto/selo grande, sem pessoa).
 - Regra 14: descreva a POSIÇÃO de cada peça funcional (em cima/embaixo, frente/trás, esquerda/direita) usando TODAS as fotos; copie texto de display/painel/rótulo legível em qualquer foto. Marque `"complexo": true` (foto 01 colada no vídeo) em bike com monitor, carrinho de bebê/travel system com muitas peças, cozinha infantil com muitos itens, e em qualquer produto com muitas letras ou peças. Produto simples (tapete, mesa, prateleira, berço simples): `"complexo": false`.
 - Regra 15 (produto pequeno, perfumes 80-100 ml): siga a seção "Produto pequeno" do fichador.md AO PÉ DA LETRA (câmera 70-90 cm, produto 35-45% da largura, objeto bem maior encostado, sem "large in frame"/"close"). O frasco e a caixa (se a foto 01 mostrar a caixa, ela aparece) com as letras exatas do rótulo; letra miúda = "tiny markings, keep as in image 1".
 - Regra 13: nos campos `movimento` nada de proibidos nem textos de propaganda.
