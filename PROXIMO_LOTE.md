@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-02 madrugada (Listas 02/11 A e B entregues; 02/11 C roda em outra conversa). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-02 manhã (Listas 02/11 A, B e C entregues). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -26,6 +26,17 @@ Atualizado: 2026-11-02 madrugada (Listas 02/11 A e B entregues; 02/11 C roda em 
 - Postagens + Conferência: https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt (botão "Conferência →").
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
+
+## Lista 02/11 C (02/11 ~05h40 UTC)
+- 15 produtos com A, B e C (45 vídeos, 0211C-01..15) na aba Conferir, pendentes. Gasto US$ 5,48 de 8 (55 imagens + 33 clipes).
+  Nenhum pulado (reservas 58254629841, 58215886048, 58267293734 seguem `aprovado`, livres). Tinder: os 15 em `pronto`.
+- K24: 6 produtos largos (p01 cadeiras, p05 cômoda, p08 penteadeira, p10 banco baú, p11 rack, p12 escrivaninha) = 18 cenas; 7 passaram
+  de 1ª. Com guia (foto 01 boa) só p05 e p12: p05 0 de 3 de 1ª (1 aprovada na refação), p12 2 de 3. Os outros 4 foram do zero.
+- K23: nenhuma cena reprovada por enfeite. p09 B reprovada pela Fiscal Sonnet (brinquedos inventados na cadeirinha).
+- Emoji no gancho (K26): saiu ☒ em 8 produtos; tirei e re-renderizei (grátis). Cuidado: lote_auto.py com subconjunto renumera as pastas
+  (p05 virou p262) e o entregar.sh usa trabalhos_todos.json (mapa velho): atualize o trabalhos_todos.json antes de entregar de novo.
+- Avisos para a dona: p02 Eames (foto 1 cadeira, descrição "conjunto de 2"); p11 Rack (foto do anúncio com TV SONY, não vendida);
+  p15 Armário (anúncio vende 4, 5 ou 6 camadas; fiz 5); p06 Luminária (fotos com marca d'água LUZORA).
 
 ## Lista 02/11 B (02/11 ~02h UTC)
 - 15 produtos com A, B e C (45 vídeos, 0211B-01..10, 12..16) na aba Conferir, pendentes. Gasto US$ 5,06 de 8 (57 imagens + 28 clipes).

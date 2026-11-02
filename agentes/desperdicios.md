@@ -71,3 +71,5 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 ## 02/11 Lista 02/11 C: emoji no gancho virou quadradinho (US$ 0, só tempo de render)
 - 8 produtos (p01, p02, p03, p05, p06, p07, p13, p14) saíram com ☒ no gancho (🤍 ✨ 😍 que o ganchos.md permitia). Vi nas capas
   antes da Conferir; tirei os emojis e re-renderizei. Agora o textos.py tira emoji dos textos da tela e o ganchos.md proíbe.
+- Lista 02/11 C: 10 refações de imagem pagas (55 imagens para 45 cenas, ~US$ 0,40). Cenas largas que falharam 2x: p05 A e B, p11 B e C,
+  p12 C; outras: p03 B, p04 C, p08 B, p09 C, p10 B, p14 B (vídeo usa as cenas aprovadas). Sonnet reprovou p09 B (brinquedos inventados).
