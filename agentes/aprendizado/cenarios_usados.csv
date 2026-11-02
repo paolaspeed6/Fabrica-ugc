@@ -1000,3 +1000,48 @@ data,produto,cena,ambiente,piso,parede,paleta
 2026-11-02,L0211c p08 penteadeira-suspensa-eloa-110,A,quarto casal manha parede continua tela abstrata seringueira,tabuas carvalho palido + tapete la creme,verde agua suave liso,agua/carvalho/creme
 2026-11-02,L0211c p08 penteadeira-suspensa-eloa-110,B,closet moderno tarde modulo armario laca branca oliveira,tabuas carvalho claro + passadeira creme,cinza nuvem liso,cinza/carvalho/creme
 2026-11-02,L0211c p08 penteadeira-suspensa-eloa-110,C,canto de home office fim de tarde planta alta tela abstrata,porcelanato calcario claro + tapete juta redondo,lilas suave liso,lilas/calcario/juta
+2026-11-02,L0211d p09 barraca-hexagonal-sierra-8p,A,parque arborizado manha grama toras de madeira,grama aparada,arvores e folhagem,verde/madeira/dourado
+2026-11-02,L0211d p09 barraca-hexagonal-sierra-8p,B,duna costeira restinga fim de tarde esteira de palha tronco seco,areia clara firme,mar turquesa distante,areia/turquesa/palha
+2026-11-02,L0211d p09 barraca-hexagonal-sierra-8p,C,jardim de casa de campo tarde muro de pedra palmeiras banco teca,gramado,pedra natural + palmeiras,verde/pedra/terracota
+2026-11-02,L0211d p10 churrasqueira-movel-inox-niveis,A,varanda gourmet coberta fim de tarde banco ripado planta alta,porcelanato cinza quente grande,estuque off-white,inox/cinza/verde
+2026-11-02,L0211d p10 churrasqueira-movel-inox-niveis,B,quintal moderno hora dourada muro branco vaso terracota borda piscina,pavers concreto areia,branco + sebe verde,inox/areia/turquesa
+2026-11-02,L0211d p10 churrasqueira-movel-inox-niveis,C,edicula gourmet tijolo branco janela com sol seringueira,cimento queimado grafite,tijolo aparente branco,inox/grafite/branco
+2026-11-02,L0211d p11 kit-furadeira-serra-marmore,A,oficina na garagem manha bancada carvalho janela com sol planta alta,concreto epoxi cinza claro,tijolo pintado branco,amarelo/branco/carvalho
+2026-11-02,L0211d p11 kit-furadeira-serra-marmore,B,area de servico de apto em reforma tarde bancada branca samambaia vaso de galhos secos,porcelanato areia fosco grande,verde sage suave liso,areia/verde/branco
+2026-11-02,L0211d p11 kit-furadeira-serra-marmore,C,area de trabalho externa coberta fim de tarde bancada teca bananeira,deck de madeira escura,painel metal preto fosco,teca/preto/dourado
+2026-11-02,L0211d p12 cuba-gourmet-lisboa-70-inox,A,cozinha gourmet apto manha bancada quartzo travertino nogueira planta na janela,porcelanato bege grande,nogueira + azulejo claro,bege/nogueira/inox
+2026-11-02,L0211d p12 cuba-gourmet-lisboa-70-inox,B,cozinha casa de praia tarde tampo carvalho claro estuque creme plantas no parapeito,tabuas carvalho claro,estuque creme liso,creme/carvalho/verde
+2026-11-02,L0211d p12 cuba-gourmet-lisboa-70-inox,C,area gourmet externa coberta hora dourada bancada concreto vidro e metal preto palmeiras,cimento grafite,moldura de metal preto,grafite/preto/verde
+2026-11-02,L0211d p13 carrinho-container-372l-tampa,A,lavanderia de hotel boutique manha janela com sol vasos grandes mesa dobravel branca,porcelanato cinza claro,azulejo verde escuro brilhante 10x30,verde/cinza/branco
+2026-11-02,L0211d p13 carrinho-container-372l-tampa,B,area de servico de condominio tarde painel ripado palmeiras banco de madeira,concreto polido liso,painel ripado carvalho claro,carvalho/cinza/verde
+2026-11-02,L0211d p13 carrinho-container-372l-tampa,C,estoque de loja boutique fim de tarde claraboia prateleiras vazias planta grande,epoxi cinza claro fosco,terracota liso,terracota/cinza/verde
+2026-11-02,L0211d p14 kit-2-cadeiras-jantar-creme,A,sala de jantar apto manha cortina voil mesa carvalho vazia ficus,porcelanato branco quente + tapete la,verde sage liso,sage/carvalho/creme
+2026-11-02,L0211d p14 kit-2-cadeiras-jantar-creme,B,canto de home office tarde espelho escrivaninha nogueira seringueira,taco espinha de peixe escuro + tapete la cinza claro,terracota liso,terracota/nogueira/cinza
+2026-11-02,L0211d p14 kit-2-cadeiras-jantar-creme,C,cantinho de leitura sala fim de tarde console baixo capim dos pampas monstera,porcelanato terrazzo claro + tapete juta redondo,azul petroleo liso,petroleo/juta/terrazzo
+2026-11-02,L0211d p15 kit-2-mesas-cabeceira-freijo,A,quarto casal manha cortina de linho cabeceira estofada aveia plantas e vaso com galhos secos,tabuas carvalho claro + tapete la creme,verde sage palido liso,sage/aveia/carvalho
+2026-11-02,L0211d p15 kit-2-mesas-cabeceira-freijo,B,quarto de hospedes tarde painel ripado de madeira cama bouclé oliveira,taco espinha de peixe palido + tapete juta largo,terracota bege liso,terracota/areia/juta
+2026-11-02,L0211d p15 kit-2-mesas-cabeceira-freijo,C,suite moderna anoitecer fita LED painel ripado carvalho porta de vidro,porcelanato taupe quente + tapete creme,cinza grafite liso,grafite/taupe/carvalho
+2026-11-02,L0211d p01 colchao-luuna-blue-viscoelastico,A,quarto casal manha palmeira areca janela voal,cimento queimado claro + tapete juta,terracota suave liso,terracota/juta/areia
+2026-11-02,L0211d p01 colchao-luuna-blue-viscoelastico,B,suite tarde janela piso ao teto figueira lira,tabuas nogueira + tapete la creme,azul petroleo liso,petroleo/nogueira/creme
+2026-11-02,L0211d p01 colchao-luuna-blue-viscoelastico,C,quarto campo golden hour janela ferro preto oliveira,porcelanato calcario + tapete trancado,tijolo caiado branco,branco/calcario/verde
+2026-11-02,L0211d p02 bicicleta-aro-24-blunit-preta-azul,A,quintal casa moderna manha deck palmeira,deck carvalho claro,branco com trepadeira,branco/madeira/verde
+2026-11-02,L0211d p02 bicicleta-aro-24-blunit-preta-azul,B,garagem sobrado tarde banco madeira vasos,porcelanato cinza claro grande,tijolo caiado terracota,cinza/terracota/verde
+2026-11-02,L0211d p02 bicicleta-aro-24-blunit-preta-azul,C,patio casa moderna golden hour palmeira vaso argila,pedra cinza,verde salvia liso,cinza/salvia/argila
+2026-11-02,L0211d p03 impressora-termica-tatuagem-a4,A,estudio tatuagem tarde bancada laminado branco monstera,laminado branco + piso porcelanato cinza,verde salvia liso,salvia/branco/argila
+2026-11-02,L0211d p03 impressora-termica-tatuagem-a4,B,ateliê de desenho manha mesa carvalho palido caballete,mesa carvalho palido + piso madeira,terracota liso,terracota/carvalho/verde
+2026-11-02,L0211d p03 impressora-termica-tatuagem-a4,C,recepcao estudio golden hour balcao concreto,balcao concreto + piso cimento escuro,azul petroleo liso,petroleo/concreto/verde
+2026-11-02,L0211d p04 kit-2-cadeiras-alicia-capitone,A,sala de jantar manha janela voal oliveira mesa redonda,porcelanato claro + tapete la off-white,verde profundo liso,verde/carvalho/off-white
+2026-11-02,L0211d p04 kit-2-cadeiras-alicia-capitone,B,copa cozinha tarde armarios brancos balcao vazio samambaia,microcimento bege + tapete juta,terracota liso,terracota/bege/branco
+2026-11-02,L0211d p04 kit-2-cadeiras-alicia-capitone,C,sala jantar golden hour porta vidro preta monstera,tabuas nogueira largas + tapete creme,branco caiado,branco/nogueira/verde
+2026-11-02,L0211d p05 kit-cadeira-petala-puff-redondo-creme,A,canto da sala manha monstera cortina voal,porcelanato areia + tapete juta redondo,terracota suave liso,terracota/areia/juta
+2026-11-02,L0211d p05 kit-cadeira-petala-puff-redondo-creme,B,quarto tarde tela abstrata seringueira,tabuas nogueira + tapete la creme,azul petroleo liso,petroleo/nogueira/creme
+2026-11-02,L0211d p05 kit-cadeira-petala-puff-redondo-creme,C,recepcao salao golden hour painel ripado,microcimento cinza + tapete trancado,ripado madeira clara,cinza/madeira/verde
+2026-11-02,L0211d p06 base-mesa-elevatoria-eletrica-branca,A,home office manha janela voal seringueira,porcelanato cinza claro + tapete la creme redondo,verde oliva suave liso,oliva/cinza/creme
+2026-11-02,L0211d p06 base-mesa-elevatoria-eletrica-branca,B,sala de estudo tarde janela figueira banco,tabuas freijo + tapete juta,terracota claro liso,terracota/freijo/juta
+2026-11-02,L0211d p06 base-mesa-elevatoria-eletrica-branca,C,estudio criativo golden hour janela ferro preto oliveira,microcimento claro + tapete juta,tijolo caiado branco,branco/microcimento/verde
+2026-11-02,L0211d p07 kit-2-espreguicadeiras-keter-jaipur-grafite,A,terraco piscina manha palmeira vaso argila,porcelanato travertino grande,branco liso,travertino/branco/turquesa
+2026-11-02,L0211d p07 kit-2-espreguicadeiras-keter-jaipur-grafite,B,jardim tarde deck claro ipe gramado,deck madeira clara + grama,verde salvia com trepadeira,madeira/verde/salvia
+2026-11-02,L0211d p07 kit-2-espreguicadeiras-keter-jaipur-grafite,C,cobertura golden hour monstera vasos grandes,cimento queimado claro,ripado cedro,cedro/cimento/verde
+2026-11-02,L0211d p08 kit-mangueira-10m-snow-foam-wap-ousada,A,area de lavagem garagem manha bancada carvalho palmeira,porcelanato cinza claro grande,branco liso,branco/carvalho/verde
+2026-11-02,L0211d p08 kit-mangueira-10m-snow-foam-wap-ousada,B,area de servico quintal tarde mesa deck samambaia,pedra cinza,verde salvia liso,salvia/pedra/madeira
+2026-11-02,L0211d p08 kit-mangueira-10m-snow-foam-wap-ousada,C,abrigo carro golden hour banco cinza oliveira,concreto quente,tijolo caiado branco,concreto/branco/verde
