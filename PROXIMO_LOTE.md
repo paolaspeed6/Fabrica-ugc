@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-01 manhã (Lista 01/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-02 madrugada (Lista 02/11 A entregue; 02/11 B e C rodam em outras conversas). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -27,7 +27,22 @@ Atualizado: 2026-11-01 manhã (Lista 01/11 A entregue). Histórico completo: mem
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
-## Estado atual (01/11, manhã)
+## Lista 02/11 A (02/11 ~01h50 UTC)
+- 15 produtos com A, B e C (45 vídeos, 0211A-02..16) na aba Conferir, pendentes. Gasto US$ 5,86 de 8 (57 imagens + 36 clipes).
+  Tinder: os 15 em `pronto`.
+- Pulado pelo Fichador: p01 Mesa Colméia 13843468905 (foto 01 com 3 cores, sem dizer qual é vendida). Tinder: `aprovado` + `pulado`.
+  Entrou a reserva 58267850781 Cadeira de balanço 4 molas (p16). Reservas 58215062273 e 58216676221 seguem livres.
+- 1º lote com K24 (guia) e K25 (ganchos). Largos com guia: p09 Poltronas (1 de 3 de 1ª) e p15 Kit 3 Poltronas (3 de 3 de 1ª):
+  4 de 6 cenas largas passaram de 1ª. O Nano Banana manteve o produto igual (cor, peças), mas no p15 espalhou as 3 poltronas
+  em vez de manter a posição da guia. p03 Balcão (foto ruim, do zero): 1 de 3 de 1ª. A medição de borda (rembg) reprovou por engano
+  p09A e p03B (mediu planta/parede junto): aprovei à mão olhando a folha.
+- K23: 1 cena reprovada por enfeite (p05C cesto encostado na lixeira). Nenhum clipe com enfeite mudando.
+- Emoji no gancho saiu como quadradinho (5 vídeos A): refeito na edição; o textos.py agora tira emoji sozinho.
+- Avisos para a dona: p11 título diz "elétrica sem fio" mas a foto é só a chave de catraca com extensor; p10 foto 01 tinha carro
+  (não entrou); p05 Lixeira e p06 Poltrona com 1 cena só aprovada (vídeo repete a cena).
+- Os números de trabalhos/ (p259-p273) podem coincidir com os dos lotes B/C feitos ao mesmo tempo (nomes diferentes, sem conflito).
+
+## Estado anterior (01/11, manhã)
 - Lote 01/11 A (01/11 ~06h40 UTC): 15 produtos com A, B e C (45 vídeos, 0111A-01..15) na aba Conferir, pendentes. Gasto US$ 5,33 de 8
   (69 imagens + 26 clipes). Tinder: os 15 em `pronto`. Nenhum pulado; reserva 13843468905 Mesa Colméia segue `aprovado` (livre).
 - K22 (câmera por código + aviso): p04 Churrasqueira, p10 Kit 2 Mesas de Cabeceira, p13 Mesa em L.
