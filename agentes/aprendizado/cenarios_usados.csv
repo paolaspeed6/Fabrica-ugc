@@ -976,3 +976,27 @@ data,produto,cena,ambiente,piso,parede,paleta
 2026-11-02,L0211c p15 armario-organizador-modular-5-camadas,A,lavanderia apto moderna manha janela folhas,porcelanato claro grande,azul acinzentado claro liso,azul claro/branco/verde
 2026-11-02,L0211c p15 armario-organizador-modular-5-camadas,B,quarto infantil casa tarde cama branca desfocada,carvalho quente + tapete la redondo,amarelo mostarda suave liso,mostarda/carvalho/creme
 2026-11-02,L0211c p15 armario-organizador-modular-5-camadas,C,closet apto fim de tarde janela em arco,porcelanato claro + passadeira juta,terracota argila liso,terracota/juta/creme
+2026-11-02,L0211c p01 cadeiras-monalisa-suede-marrom,A,sala de jantar apto manha mesa carvalho vazia monstera,terrazzo off-white + tapete juta oval,lilas acinzentado liso,lilas/carvalho/off-white
+2026-11-02,L0211c p01 cadeiras-monalisa-suede-marrom,B,sala integrada tarde janela cortina linho mesa laca branca vazia oliveira,porcelanato marmorizado bege-rosado 90,cinza nuvem liso,cinza/rosado/branco
+2026-11-02,L0211c p01 cadeiras-monalisa-suede-marrom,C,recepcao de clinica boutique fim de tarde balcao madeira clara vazio figueira,calcario areia grande formato + tapete la,verde pinheiro profundo liso,pinheiro/areia/madeira clara
+2026-11-02,L0211c p02 cadeira-eames-arm-creme,A,canto de jantar apto manha mesa redonda branca vazia seringueira,tabuas carvalho mel + tapete juta redondo,pessego claro liso,pessego/mel/branco
+2026-11-02,L0211c p02 cadeira-eames-arm-creme,B,copa de cozinha tarde mesa carvalho vazia painel ripado oliveira,porcelanato cinza quente grande,cinza nuvem + painel ripado carvalho claro,cinza/carvalho/verde
+2026-11-02,L0211c p02 cadeira-eames-arm-creme,C,home office fim de tarde escrivaninha nogueira vazia planta alta,porcelanato calcario claro + tapete la cru,vinho bordo liso,bordo/nogueira/creme
+2026-11-02,L0211c p03 mesa-cabeceira-dubai-carvalho,A,quarto casal apto manha cama linho cabeceira branca,tabuas carvalho + tapete la creme grande,grafite quente liso,grafite/carvalho/creme
+2026-11-02,L0211c p03 mesa-cabeceira-dubai-carvalho,B,quarto sereno tarde cama linho cabeceira boucle oliveira,porcelanato cinza claro + tapete juta redondo,verde eucalipto liso,eucalipto/cinza/boucle
+2026-11-02,L0211c p03 mesa-cabeceira-dubai-carvalho,C,closet moderno fim de tarde modulo armario branco,porcelanato areia polido + passadeira la,off-white + painel palhinha,off-white/palhinha/areia
+2026-11-02,L0211c p04 banqueta-lua-preta-dourada,A,cozinha gourmet manha ilha quartzo branco vazia oliveira,terrazzo cinza claro + passadeira juta,off-white + painel ripado nogueira,off-white/nogueira/cinza
+2026-11-02,L0211c p04 banqueta-lua-preta-dourada,B,area gourmet externa tarde bancada concreto claro vazia palmeira,deck porcelanato cinza chumbo + tapete outdoor,estuque verde salvia claro + porta vidro preta,salvia/chumbo/preto
+2026-11-02,L0211c p04 banqueta-lua-preta-dourada,C,canto de bar em casa golden hour balcao nogueira vazio figueira,tabuas carvalho mel + tapete la redondo,azul jeans profundo liso,jeans/nogueira/mel
+2026-11-02,L0211c p05 comoda-california-8-gavetas,A,quarto casal manha cama linho ao fundo seringueira,tabuas carvalho cinza claro + tapete la cru,verde matcha claro liso,matcha/carvalho/creme
+2026-11-02,L0211c p05 comoda-california-8-gavetas,B,quarto sereno tarde janela cortina linho oliveira,porcelanato cinza claro 90 + tapete juta redondo,rosa quartzo + boiserie branca,quartzo/branco/cinza
+2026-11-02,L0211c p05 comoda-california-8-gavetas,C,quarto juvenil fim de tarde cama solteiro linho planta alta,vinilico carvalho palido + tapete redondo creme,azul aco liso,aco/carvalho/creme
+2026-11-02,L0211c p06 luminaria-rattan-bambu-boho,A,sala de jantar apto manha mesa redonda carvalho vazia figueira,porcelanato travertino claro + tapete juta redondo,estuque branco gelo + painel ripado cedro,gelo/cedro/travertino
+2026-11-02,L0211c p06 luminaria-rattan-bambu-boho,B,quarto sereno tarde cama linho oliveira,tabuas carvalho claro + tapete la creme,areia de linho liso,linho/carvalho/creme
+2026-11-02,L0211c p06 luminaria-rattan-bambu-boho,C,varanda coberta de pousada fim de tarde sofa palhinha forro madeira escura,porcelanato areia + tapete trancado,pedra calcaria bege,calcario/madeira escura/verde
+2026-11-02,L0211c p07 mesa-jantar-cone-90-madeira,A,sala de jantar apto manha janela cortina voil banco madeira,porcelanato cinza claro grande + tapete la off-white,azul ardosia liso,ardosia/mel/off-white
+2026-11-02,L0211c p07 mesa-jantar-cone-90-madeira,B,copa de cozinha tarde armarios brancos balcao vazio oliveira,tabuas carvalho claro + tapete juta,verde salvia liso,salvia/carvalho/branco
+2026-11-02,L0211c p07 mesa-jantar-cone-90-madeira,C,varanda gourmet coberta fim de tarde porta vidro preta biombo ripado,porcelanato areia grande + tapete outdoor trancado,estuque branco quente,branco/areia/preto
+2026-11-02,L0211c p08 penteadeira-suspensa-eloa-110,A,quarto casal manha parede continua tela abstrata seringueira,tabuas carvalho palido + tapete la creme,verde agua suave liso,agua/carvalho/creme
+2026-11-02,L0211c p08 penteadeira-suspensa-eloa-110,B,closet moderno tarde modulo armario laca branca oliveira,tabuas carvalho claro + passadeira creme,cinza nuvem liso,cinza/carvalho/creme
+2026-11-02,L0211c p08 penteadeira-suspensa-eloa-110,C,canto de home office fim de tarde planta alta tela abstrata,porcelanato calcario claro + tapete juta redondo,lilas suave liso,lilas/calcario/juta
