@@ -81,6 +81,12 @@ h1{font-family:var(--display);font-weight:800;font-size:1.6rem;margin:0;letter-s
 .cena img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:var(--line);border:3px solid transparent}
 .cena.sel img{border-color:var(--done)}
 .cena button,.cena a{font:700 .74rem var(--body)}
+.busca{position:relative;display:flex;align-items:center}
+.busca svg{position:absolute;left:12px;width:18px;height:18px;color:var(--muted);pointer-events:none}
+.busca input{width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:12px;padding:11px 38px 11px 40px;font:600 16px var(--body)}
+.busca input::-webkit-search-cancel-button{display:none;-webkit-appearance:none}
+.busca input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.busca button{position:absolute;right:6px;border:0;background:transparent;color:var(--muted);font:700 1.1rem var(--body);padding:6px 8px;cursor:pointer}
 button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){.b,.barra i,.video{transition:none}}
 </style>
@@ -95,6 +101,8 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
     <button class="tab" id="t-feitos" aria-pressed="false">Postados</button>
     <button class="tab" id="t-esg" aria-pressed="false">Esgotados</button>
   </div>
+  <label class="busca" id="busca-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+    <input id="busca" type="search" placeholder="Procurar produto" aria-label="Procurar produto" autocomplete="off"><button id="limpa" type="button" aria-label="Limpar busca" hidden>×</button></label>
   <main id="tela"><div class="vazio">Carregando os vídeos…</div></main>
 </div>
 
@@ -107,6 +115,13 @@ const $=s=>document.querySelector(s);
 const el=(t,c,x)=>{const e=document.createElement(t); if(c) e.className=c; if(x!=null) e.textContent=x; return e;};
 // a dona 27/10: dois lotes no mesmo dia (2710A e 2710B) se misturavam e cada produto aparecia com 1 vídeo só
 const loteDe=p=>(p._id||"").split(/[_-]/)[0];
+// a dona 02/11: o que entra por último em "Para postar" vai para o FIM da lista (hora do Ok; sem ela, a data do lote)
+const entrou=p=>p.liberado_em||p.dia||"";
+const porEntrada=(a,b)=>entrou(a).localeCompare(entrou(b))||(a.dia||"").localeCompare(b.dia||"")||loteDe(a).localeCompare(loteDe(b))||(a.ordem||0)-(b.ordem||0);
+// a dona 02/11: lupa para achar um produto (sem acento, sem maiúscula)
+const semAc=t=>(t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+let busca="";
+const acha=p=>!busca||semAc([p.produto,p.legenda,p.versao,p._id].join(" ")).includes(busca);
 const dataBR=d=>d?d.slice(0,10).split("-").reverse().join("/"):"";
 const hoje=()=>new Date().toISOString().slice(0,10);
 const mais30=()=>new Date(Date.now()+30*864e5).toISOString().slice(0,10);
@@ -121,12 +136,12 @@ async function marcarEsgotado(p){
 }
 async function voltouEstoque(e){
   const vs=e.posts&&e.posts.length? e.posts : Object.entries(e.drive_urls||{}).map(([v,u],i)=>({_id:e._id+"-"+v,versao:v,drive_url:u,ordem:i,auto:/reels/i.test(v)}));
-  for(const {_id,...x} of vs) await db.doc("posts/"+_id).set({produto:e.produto,dia:e.lote,link_produto:e.link_produto,poster:e.poster,...x,status:"pronto"});
+  for(const {_id,...x} of vs) await db.doc("posts/"+_id).set({produto:e.produto,dia:e.lote,link_produto:e.link_produto,poster:e.poster,...x,status:"pronto",liberado_em:new Date().toISOString()});
   await db.doc("esgotados/"+e._id).delete();
 }
 // Conferência dentro da Postagens (a dona, 27/10): Ok libera os vídeos do produto em "Para postar" na hora, sem o Claude
 async function aprovar(c){
-  for(const [id,x] of Object.entries(c.posts||{})) await db.doc("posts/"+id).set({...x,poster:x.poster||c.poster||"",status:"pronto"});
+  for(const [id,x] of Object.entries(c.posts||{})) await db.doc("posts/"+id).set({...x,poster:x.poster||c.poster||"",status:"pronto",liberado_em:new Date().toISOString()});
   await db.doc("conferir/"+c._id).update({status:"ok",decidido_em:new Date().toISOString()});
 }
 // Resgate (a dona 27/10): produto sem cena aprovada; ela olha as cenas reprovadas antes de perder as 3 gerações
@@ -199,7 +214,7 @@ function render(){
   const ehReels=p=>p.auto||/reels/i.test(p.versao||"");
   const reels=posts.filter(ehReels);
   const manuais=posts.filter(p=>!ehReels(p));
-  const fazer=manuais.filter(p=>p.status!=="postado").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||loteDe(a).localeCompare(loteDe(b))||(a.ordem||0)-(b.ordem||0));
+  const fazer=manuais.filter(p=>p.status!=="postado").sort(porEntrada);
   const feitos=manuais.filter(p=>p.status==="postado").sort((a,b)=>(b.postado_em||"").localeCompare(a.postado_em||""));
   const total=fazer.length+feitos.length;
   $("#cont").textContent= total? `${feitos.length} de ${total} postados`:"";
@@ -213,6 +228,7 @@ function render(){
   $("#t-conf").hidden=true; document.querySelector(".tabs").style.gridTemplateColumns="repeat(4,1fr)";
   $("#t-conf").textContent=pend.length?`Conferir (${pend.length})`:"Conferir"; $("#t-conf").setAttribute("aria-pressed",String(aba==="conf"));
   $("#t-fazer").setAttribute("aria-pressed",String(aba==="fazer")); $("#t-feitos").setAttribute("aria-pressed",String(aba==="feitos")); $("#t-reels").setAttribute("aria-pressed",String(aba==="reels")); $("#t-esg").setAttribute("aria-pressed",String(aba==="esg"));
+  $("#busca-box").hidden=MODO==="conf"||aba==="conf";
   const tela=$("#tela"); const y=scrollY; tela.replaceChildren();
   if(!db){ tela.append(el("div","vazio","Abra esta página no app do Claude, logado, para ver os vídeos.")); return; }
   const l=el("div","lista");
@@ -222,11 +238,13 @@ function render(){
     if(emEd.length){ const sp=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"O Claude refaz"),el("b",null,`${emEd.length} em edição`)); sp.append(tx); l.append(sp); emEd.forEach(c=>l.append(cardConferir(c))); }
     tela.append(l); scrollTo(0,y); return;
   }
+  if(busca){ const n=(aba==="feitos"?feitos:aba==="reels"?reels:aba==="esg"?esgotados:fazer).filter(acha).length;
+    const sp=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"Procurando “"+$("#busca").value.trim()+"”"),el("b",null,n?(n+(n===1?" vídeo encontrado":" vídeos encontrados")):"Nada encontrado")); sp.append(tx); l.append(sp); }
   if(aba==="reels"){
-    const fila=reels.filter(p=>p.status!=="postado").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||loteDe(a).localeCompare(loteDe(b))||(a.ordem||0)-(b.ordem||0));
+    const fila=reels.filter(p=>p.status!=="postado").sort(porEntrada);
     const ok=reels.filter(p=>p.status==="postado").sort((a,b)=>(b.postado_em||"").localeCompare(a.postado_em||""));
     const cab=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"Postagem automática"),el("b",null,`${fila.length} na fila · ${ok.length} postados`)); cab.append(tx); l.append(cab);
-    [...fila,...ok].forEach(p=>{ const d=el("div","item"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy";
+    [...fila,...ok].filter(acha).forEach(p=>{ const d=el("div","item"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy";
       const t=el("div","t",p.produto);
       if(p.status==="postado"){ t.append(el("span",null,"postado "+(p.postado_em?new Date(p.postado_em).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"")));
         const rs=el("div","redes"); Object.entries(p.redes||{}).forEach(([r,u])=>{ const a=el("a",null,{ig:"Instagram ↗",fb:"Facebook ↗",threads:"Threads ↗"}[r]||r+" ↗"); a.href=u; a.target="_blank"; a.rel="noopener"; rs.append(a); }); t.append(rs); }
@@ -239,7 +257,7 @@ function render(){
     const lista=[...esgotados].sort((a,b)=>(a.conferir_em||"").localeCompare(b.conferir_em||""));
     const vence=lista.filter(e=>(e.conferir_em||"")<=hoje()).length;
     const cab=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"Conferência mensal"),el("b",null,`${lista.length} esgotados · ${vence} para conferir hoje`)); cab.append(tx); l.append(cab);
-    lista.forEach(e=>{ const d=el("div","item"); const im=el("img"); if(e.poster) im.src=e.poster; im.alt=""; im.loading="lazy";
+    lista.filter(acha).forEach(e=>{ const d=el("div","item"); const im=el("img"); if(e.poster) im.src=e.poster; im.alt=""; im.loading="lazy";
       const t=el("div","t",e.produto); const venc=(e.conferir_em||"")<=hoje();
       t.append(el("span",null,`Lote ${dataBR(e.lote)} · esgotou ${dataBR(e.marcado_em)} · ${venc?"conferir agora":"conferir em "+dataBR(e.conferir_em)}`));
       const bs=el("div","redes"); const a=el("a",null,"Ver na Shopee ↗"); a.href=e.link_produto||"#"; a.target="_blank"; a.rel="noopener";
@@ -259,7 +277,7 @@ function render(){
     const nMes=comData.filter(p=>dia(p.postado_em).slice(0,7)===hj.slice(0,7)).length;
     const pl=el("div","placar"); [["Hoje",nHoje],["Semana",nSem],["Mês",nMes]].forEach(([r,n])=>{const c=el("div","num"); c.append(el("b",null,String(n)),el("span",null,r)); pl.append(c);}); l.append(pl);
     let diaAtual=null;
-    feitos.slice(0,300).forEach(p=>{
+    feitos.filter(acha).slice(0,300).forEach(p=>{
       const d0=p.postado_em?dia(p.postado_em):"";
       if(d0!==diaAtual){ diaAtual=d0; const n=feitos.filter(x=>(x.postado_em?dia(x.postado_em):"")===d0).length;
         const sp=el("div","sep"); const tx=el("div"); tx.append(el("span",null,d0===hj?"Hoje":dataBR(d0)||"Sem data"),el("b",null,n+(n===1?" vídeo postado":" vídeos postados"))); sp.append(tx); l.append(sp); } const d=el("div","item"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy";
@@ -271,7 +289,7 @@ function render(){
   }
   if(!fazer.length){ tela.append(el("div","vazio","Tudo postado. Os vídeos do próximo lote aparecem aqui sozinhos.")); return; }
   let atual=null;
-  fazer.forEach(p=>{
+  fazer.filter(acha).forEach(p=>{
     const chave=(p.dia||"")+"|"+p.produto; const novo=chave!==atual;
     if(novo){ atual=chave; const s=el("div","sep"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy";
       const tx=el("div"); tx.append(el("span",null,"Lote "+dataBR(p.dia)),el("b",null,p.produto)); s.append(im,tx); l.append(s); }
@@ -279,6 +297,8 @@ function render(){
   });
   tela.append(l); scrollTo(0,y);
 }
+$("#busca").oninput=e=>{ busca=semAc(e.target.value.trim()); $("#limpa").hidden=!busca; render(); };
+$("#limpa").onclick=()=>{ $("#busca").value=""; busca=""; $("#limpa").hidden=true; render(); $("#busca").focus(); };
 $("#t-conf").onclick=()=>{aba="conf";escolheu=true;render();}; $("#t-fazer").onclick=()=>{aba="fazer";escolheu=true;render();}; $("#t-feitos").onclick=()=>{aba="feitos";render();}; $("#t-reels").onclick=()=>{aba="reels";render();}; $("#t-esg").onclick=()=>{aba="esg";render();};
 (async()=>{
   db = await (window.claude?.use ? window.claude.use("db") : null);
