@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-02 madrugada (Lista 02/11 A entregue; 02/11 B e C rodam em outras conversas). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-02 madrugada (Listas 02/11 A e B entregues; 02/11 C roda em outra conversa). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -26,6 +26,21 @@ Atualizado: 2026-11-02 madrugada (Lista 02/11 A entregue; 02/11 B e C rodam em o
 - Postagens + Conferência: https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt (botão "Conferência →").
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
+
+## Lista 02/11 B (02/11 ~02h UTC)
+- 15 produtos com A, B e C (45 vídeos, 0211B-01..10, 12..16) na aba Conferir, pendentes. Gasto US$ 5,06 de 8 (57 imagens + 28 clipes).
+  Tinder: os 15 em `pronto`.
+- Pulado pelo Fichador: p11 Kit Camping 12 itens 58268825392 (só colagem, kit com frascos de cal). Tinder: `aprovado` + `pulado`.
+  Entrou a reserva 58269823326 Estante VONDER (p16). Reservas 58216811643 e 58270305535 (perfume Afeef) seguem livres.
+- K24: guia em p04 Banquetas (3 de 3 de 1ª) e p05 Bike infantil (1 de 3; A e C com 88-89% da largura: foto quadrada a 75% da guia
+  enche o quadro). 4 de 6 cenas com guia de 1ª; produto igual à foto nos dois. p13 Cabeceira e p14 Penteadeira: guia não usada
+  (cabeceira cortada na foto; pincéis em cima). p13 sem cena aprovada (borda) → K22 com aviso.
+- K23: 1 cena reprovada por enfeite (p12B caneca na mesinha, Fiscal Sonnet). Nenhum clipe com enfeite mudando.
+- Perfume Armaf Maleka (p09): não parece réplica (frasco/caixa Armaf), loja revendedora genérica.
+- Avisos para a dona: p10 é só a base (sem tampo); p07 título "Creality 10 kg" x foto 1 rolo Soleyin 1 kg (textos sem peso/marca);
+  p03 título "Marrom" x foto branca (fiz branca); p02 e p08 sem foto 100% limpa.
+- Os lotes A e B usaram os mesmos números de trabalho (p259-p273) com nomes diferentes: sem colisão de arquivo.
+- Atenção: `pgrep -f build_lux` dentro do mesmo comando acha a si mesmo (laço infinito); rodar 2 build_lux no mesmo vídeo corrompe o mp4.
 
 ## Lista 02/11 A (02/11 ~01h50 UTC)
 - 15 produtos com A, B e C (45 vídeos, 0211A-02..16) na aba Conferir, pendentes. Gasto US$ 5,86 de 8 (57 imagens + 36 clipes).
