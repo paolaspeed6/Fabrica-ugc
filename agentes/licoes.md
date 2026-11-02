@@ -28,3 +28,4 @@
 - 2026-10-28: Lista 27/10 D, nos resgates o clipe de câmera fixa da IA pôs cachorro, vapor e marca d'água, e o Gemini deixou passar a marca d'água. Resgate passou a usar câmera por código sobre a imagem aceita (regra K19).
 - 2026-10-29: Lista 29/10 A, fase2 gerou clipes e parou na edição sem textos.json (textos.py esquecido). O produzir.sh passou a checar antes de gastar (regra K20).
 - 2026-11-02: Lista 02/11 A, emoji no gancho virou quadradinho em 5 vídeos A (o layout não desenha emoji). textos.py tira emoji sozinho; ganchos.md sem emoji (K25).
+- 02/11 (Lista 02/11 C): emoji no gancho vira ☒ no vídeo (fonte sem emoji). Regra K26; textos.py limpa sozinho.
