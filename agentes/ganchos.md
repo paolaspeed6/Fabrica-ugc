@@ -12,7 +12,7 @@ pessoa real falando de um achado, como nos exemplos da dona: "Simplesmente as ca
   promessa de saúde ou resultado. Nada de "clique no link" no gancho.
 - Os 3 vídeos do mesmo produto (A, B, C) usam fórmulas DIFERENTES. Produtos seguidos não repetem a mesma fórmula.
 - Escreva 5 opções por produto, de fórmulas diferentes, e escolha as 3 que passam no teste "eu pararia o dedo?".
-- No máximo 1 emoji, no fim, e só 🤍 ✨ 😍 🔥 (o layout pode não desenhar emoji: se sumir na prévia, tire).
+- Sem emoji no gancho (02/11: o layout desenhou quadradinho em 5 vídeos da Lista 02/11 A; o textos.py agora tira sozinho). Emoji só nas legendas.
 
 ## Fórmulas (com exemplos)
 1. **Achado / segredo**: "Achei o *achado do ano*" · "Ninguém me contou *que existia isso*" · "O achado que *salvou minha cozinha*"

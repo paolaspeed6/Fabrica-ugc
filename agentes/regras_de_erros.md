@@ -331,3 +331,5 @@ grave no Gemini (grátis). Sem nenhuma imagem aproveitável, o produto ainda vir
 - Ganchos genéricos ("Sua sala merece mais conforto") não seguram. O Fichador segue `agentes/ganchos.md`: 9 fórmulas (achado,
   transformação, emoção, POV, curiosidade, dor resolvida, desejo, prova social sem número, lista), uma diferente em A, B e C,
   2 linhas de até 26 caracteres. Sem preço, %, frete, prazo, nota ou número de vendas.
+- 02/11 (Lista 02/11 A): emoji no gancho saiu como quadradinho na versão A de 5 produtos (refeito na edição, grátis). Gancho sem
+  emoji; o `textos.py` tira emoji dos textos do vídeo (legendas `leg_*` mantêm).
