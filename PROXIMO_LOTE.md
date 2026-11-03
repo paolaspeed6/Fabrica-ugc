@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-02 manhã (Listas 02/11 A, B e C entregues). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-03 madrugada (Listas 02/11 A, B, C e D entregues). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -26,6 +26,18 @@ Atualizado: 2026-11-02 manhã (Listas 02/11 A, B e C entregues). Histórico comp
 - Postagens + Conferência: https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt (botão "Conferência →").
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
+
+## Lista 02/11 D (03/11 ~01h50 UTC)
+- 15 produtos com A, B e C (45 vídeos, 0211D-01..15) na aba Conferir, pendentes. Gasto US$ 5,01 de 8 (66 imagens + 24 clipes).
+  Nenhum pulado (reservas 58216420941, 58218876924, 58267293734 seguem `aprovado`, livres). Tinder: os 15 em `pronto`.
+- K24: 12 produtos largos = 36 cenas; 14 passaram de 1ª. Com guia (foto 01 boa, 9 produtos): 12 de 27 de 1ª (p08 Mangueira 3/3;
+  p02, p06, p13 2/3; p05 Cadeira Pétala 0/3 e foi K22 com aviso). Do zero (p04, p11, p12): 2 de 9. Produto igual à foto nas cenas com guia.
+- K23: 1 cena reprovada por enfeite (p12B pote branco na janela, Fiscal Sonnet). Nenhum clipe com enfeite mudando.
+- Sonnet reprovou p10B e p12C já liberadas (aplicar_fiscal pula cena em estado `animar`: refiz à mão, 1 vez). p12C aprovada (aço claro);
+  p10B saiu 2x com laterais fechadas = falhou (p10 com 1 cena só).
+- Avisos para a dona: p06 Base de mesa (só a base, sem tampo; a Lista 02/11 B teve outra base parecida); p04 Cadeiras Alicia (foto 01
+  com cotas, medidas discordam, textos sem número); p03 Impressora (marca GENAI x "Tattoo Printer"); p01 Colchão (tamanho não dito,
+  queen estimado); p11 título "Similar a Makita" (corpo SONGHE); p14 foto 01 com 4 cadeiras, kit é de 2.
 
 ## Lista 02/11 C (02/11 ~05h40 UTC)
 - 15 produtos com A, B e C (45 vídeos, 0211C-01..15) na aba Conferir, pendentes. Gasto US$ 5,48 de 8 (55 imagens + 33 clipes).

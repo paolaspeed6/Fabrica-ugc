@@ -76,3 +76,4 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 
 ## Lista 02/11 D (03/11) — fase 1
 - Refações de imagem da fase 1 (borda/Gemini): ver gasto.json. p10 B churrasqueira: 2 imagens com laterais fechadas (estrutura aberta no anúncio), US$ 0,08 perdidos; p10 fica com 1 cena (A). p12 B cuba escura (Sonnet) e refação de C aprovada.
+- Lista 02/11 D fim: 66 imagens (45 de 1ª + 21 refações) e 24 clipes, US$ 5,01. p05 Cadeira Pétala: 6 imagens reprovadas por borda (guia a 75% + puff ao lado enche o quadro), foi K22.
