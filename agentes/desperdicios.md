@@ -73,3 +73,6 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
   antes da Conferir; tirei os emojis e re-renderizei. Agora o textos.py tira emoji dos textos da tela e o ganchos.md proíbe.
 - Lista 02/11 C: 10 refações de imagem pagas (55 imagens para 45 cenas, ~US$ 0,40). Cenas largas que falharam 2x: p05 A e B, p11 B e C,
   p12 C; outras: p03 B, p04 C, p08 B, p09 C, p10 B, p14 B (vídeo usa as cenas aprovadas). Sonnet reprovou p09 B (brinquedos inventados).
+
+## Lista 02/11 D (03/11) — fase 1
+- Refações de imagem da fase 1 (borda/Gemini): ver gasto.json. p10 B churrasqueira: 2 imagens com laterais fechadas (estrutura aberta no anúncio), US$ 0,08 perdidos; p10 fica com 1 cena (A). p12 B cuba escura (Sonnet) e refação de C aprovada.
