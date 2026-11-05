@@ -80,6 +80,7 @@ def trilha(video_id, conta='shopee'):
 COM_VOZ = os.environ.get('COM_VOZ') == '1'  # a dona, 2026-10-18: SEM voz por enquanto (a Kokoro soou estrangeira); só música
 
 
+VEL = float(os.environ.get('VELOCIDADE', '1.25'))  # a dona, 05/11: "acelerar um pouco e deixar com 12 s em vez de 15"
 NATURAL = os.environ.get('ESTILO', 'natural') == 'natural'  # a dona, 2026-10-21: sem filtro + transições
 
 
@@ -88,6 +89,7 @@ def _natural(nome, cuts, scrim=None):
     if not NATURAL: return
     f = f'{S}/specs/{nome}.json'; sp = json.load(open(f))
     sp['natural'] = 1; sp.pop('dips', None)
+    sp['vel'] = VEL; sp['mov'] = 1  # a dona, 05/11: 12 s (roteiro de 15 s acelerado 1,25) + mais movimento por código, pouco tremor
     if scrim: sp.setdefault('grade', {})['top'] = scrim  # cenário claro (parede branca): sombra do topo mais forte
     sp['trans'] = [[c, ('whip', 'zoom')[i % 2]] for i, c in enumerate(cuts[1:]) if 0 < c < 15]
     json.dump(sp, open(f, 'w'), ensure_ascii=False, indent=1)

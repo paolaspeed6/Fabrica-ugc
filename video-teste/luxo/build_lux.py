@@ -35,6 +35,9 @@ SRC = spec['src']
 INK = tuple(spec.get('ink', (255, 255, 255)))
 ACC = tuple(spec.get('accent', (214, 168, 120)))  # cor de destaque das palavras entre [ ]
 AUDIO_ONLY = os.environ.get('AUDIO_ONLY') == '1'
+VEL = float(spec.get('vel', 1.0))  # a dona, 05/11: vídeo um pouco mais rápido (1,25 = 15 s de roteiro em 12 s)
+MOV = bool(spec.get('mov'))  # a dona, 05/11: mais movimento de câmera por código, tremor bem leve
+DUR_OUT = round(float(spec.get('dur', 15.0)) / VEL, 3)
 
 
 _fcache = {}
@@ -552,14 +555,29 @@ enc = None if AUDIO_ONLY else subprocess.Popen(
      '-c:v', 'libx264', '-crf', '12' if NATURAL else '17', '-preset', 'medium', '-pix_fmt', 'yuv420p', spec['out'] + '.video.mp4'],
     stdin=subprocess.PIPE)
 t_cur = 0.0; fi = 0
-for sg in ([] if AUDIO_ONLY else segs):
-    n = int(round((t_cur + sg['dur']) * FPS)) - int(round(t_cur * FPS))
-    frames = read_seg(sg['src'], sg['ss'], n)
+for si, sg in enumerate([] if AUDIO_ONLY else segs):
+    # VEL: o roteiro é escrito em 15 s e sai acelerado (a dona, 05/11: 1,25 -> 12 s); textos e clipes andam juntos
+    n = int(round((t_cur + sg['dur']) / VEL * FPS)) - int(round(t_cur / VEL * FPS))
+    na = int(math.ceil(n * VEL)) + 1
+    frames = read_seg(sg['src'], sg['ss'], na)
     z0, z1 = sg.get('z', [1.0, 1.06]); c0 = sg.get('c0', [SW / 2, SH / 2]); c1 = sg.get('c1', c0)
+    if MOV and 'c0' not in sg:  # movimento por código (a dona, 05/11): avanço maior, deslize de lado, balanço de mão bem leve
+        zm = max(z0, z1)
+        if zm > 1.05:  # produto largo (zoom pequeno) fica só com o zoom dele, sem deslize
+            A = min(1.5, (zm - 1) / 0.06); lo, hi = 1 + 0.02 * A, 1 + 0.12 * A
+            z0, z1 = (lo, hi) if z1 >= z0 else (hi, lo)
+            lado = 1 if si % 2 == 0 else -1; dx = 0.03 * A * SW * lado
+            c0 = [SW / 2 - dx / 2, SH / 2]; c1 = [SW / 2 + dx / 2, SH / 2]
     for k in range(n):
         u = ease_io(k / max(1, n - 1)) * 0.6 + (k / max(1, n - 1)) * 0.4
-        t = fi / FPS
-        base = grade(encaixar(render_src(frames[k], lerp(z0, z1, u), lerp(c0[0], c1[0], u), lerp(c0[1], c1[1], u), sg.get('shiftx')), sg.get('quadro'), t), t).convert('RGBA')
+        t = fi / FPS * VEL
+        tt = fi / FPS
+        jx = jy = 0.0
+        if MOV:
+            jx = SW * 0.0008 * (math.sin(2 * math.pi * 0.35 * tt) + 0.5 * math.sin(2 * math.pi * 0.6 * tt + 1))
+            jy = SH * 0.0006 * (math.sin(2 * math.pi * 0.3 * tt + 2) + 0.5 * math.sin(2 * math.pi * 0.55 * tt))
+        fr = frames[min(int(round(k * VEL)), len(frames) - 1)]
+        base = grade(encaixar(render_src(fr, lerp(z0, z1, u), lerp(c0[0], c1[0], u) + jx, lerp(c0[1], c1[1], u) + jy, sg.get('shiftx')), sg.get('quadro'), t), t).convert('RGBA')
         compose(base, t); marca_on(base, t)
         enc.stdin.write(base.convert('RGB').tobytes())
         fi += 1
@@ -571,10 +589,10 @@ if enc:
 bed = spec['bed']
 if not spec.get('narr'):  # sem voz (a dona, 2026-10-18): só a música calma, mais alta, com fade
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', spec['out'] + '.video.mp4', '-i', SRC.get(bed[0], bed[0]), '-filter_complex',
-                    f'[1:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=in:d=0.8,afade=t=out:st={spec["dur"] - 1.8}:d=1.8,'
-                    f'apad,atrim=0:{spec["dur"]},loudnorm=I=-16:TP=-1.5:LRA=11[aout]', '-map', '0:v', '-map', '[aout]',
+                    f'[1:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=in:d=0.8,afade=t=out:st={DUR_OUT - 1.8}:d=1.8,'
+                    f'apad,atrim=0:{DUR_OUT},loudnorm=I=-16:TP=-1.5:LRA=11[aout]', '-map', '0:v', '-map', '[aout]',
                     '-c:v', 'libx264', *VBR, '-preset', 'slow', '-pix_fmt', 'yuv420p',
-                    '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-t', str(spec['dur']), spec['out']], check=True)
+                    '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-t', str(DUR_OUT), spec['out']], check=True)
     print('ok', spec['out']); sys.exit(0)
 inputs = ['-i', spec['out'] + '.video.mp4', '-i', spec['narr']]
 for b in bed:  # cena do próprio produto (letra) ou arquivo de trilha (caminho)
@@ -583,12 +601,12 @@ fc = [f'[{i + 2}:a]aresample=48000,aformat=channel_layouts=stereo[b{i}]' for i i
 cur = 'b0'
 for i in range(1, len(bed)):
     fc.append(f'[{cur}][b{i}]acrossfade=d={spec.get("xf", 1.5)}[x{i}]'); cur = f'x{i}'
-fc.append(f'[{cur}]afade=t=in:d=0.6,afade=t=out:st={spec["dur"] - 1.6}:d=1.6,volume={spec.get("amb_vol", 0.3)}[amb]')
+fc.append(f'[{cur}]afade=t=in:d=0.6,afade=t=out:st={DUR_OUT - 1.6}:d=1.6,volume={spec.get("amb_vol", 0.3)}[amb]')
 fc.append(f'[1:a]aresample=48000,aformat=channel_layouts=stereo,atempo={spec.get("tempo", 1.0)},'
           f'adelay={int(spec["narr_at"] * 1000)}:all=1,highpass=f=70,acompressor=threshold=-20dB:ratio=2.5:makeup=2[nar]')
-fc.append(f'[amb][nar]amix=inputs=2:normalize=0:duration=longest,apad,atrim=0:{spec["dur"]},'
+fc.append(f'[amb][nar]amix=inputs=2:normalize=0:duration=longest,apad,atrim=0:{DUR_OUT},'
           'loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[aout]')
 subprocess.run(['ffmpeg', '-v', 'error', '-y'] + inputs + ['-filter_complex', ';'.join(fc), '-map', '0:v', '-map', '[aout]',
                 '-c:v', 'libx264', *VBR, '-preset', 'slow', '-pix_fmt', 'yuv420p',
-                '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-t', str(spec['dur']), spec['out']], check=True)
+                '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-t', str(DUR_OUT), spec['out']], check=True)
 print('ok', spec['out'])

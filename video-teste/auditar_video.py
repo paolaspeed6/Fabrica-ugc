@@ -64,8 +64,8 @@ def auditar(v):
     info["formato"] = f'{vid["width"]}x{vid["height"]} {dur:.2f}s audio={"sim" if tem_audio else "não"}'
     if (vid["width"], vid["height"]) != (1080, 1920):
         falhas.append("resolução diferente de 1080x1920")
-    if not 14.9 <= dur <= 15.3:
-        falhas.append(f"duração {dur:.2f}s (alvo 15 s)")
+    if not (11.9 <= dur <= 12.3 or 14.9 <= dur <= 15.3):  # a dona, 05/11: vídeos novos com 12 s (os antigos têm 15)
+        falhas.append(f"duração {dur:.2f}s (alvo 12 s)")
     if not tem_audio:
         falhas.append("vídeo mudo: sem trilha (ver memoria/reference-videos-quality-bar.md)")
 
