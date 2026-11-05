@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-03 madrugada (Listas 02/11 A, B, C e D entregues). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-05 noite (Lista 05/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -26,6 +26,20 @@ Atualizado: 2026-11-03 madrugada (Listas 02/11 A, B, C e D entregues). Históric
 - Postagens + Conferência: https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt (botão "Conferência →").
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
+
+## Lista 05/11 A (05/11 ~23h20 UTC)
+- 15 produtos com A, B e C (45 vídeos, 0511A-01..15, trabalhos p289-p303, 1º lote com vídeos de 12 s) na aba Conferir, pendentes.
+  Gasto US$ 5,74 de 8 (54 imagens + 36 clipes). Tinder: os 15 em `pronto`.
+- Pulado: p09 Desumidificador Komeco 58219853250 (a Shopee não entregou o anúncio; Tinder volta a `aprovado` + `pulado`).
+  Entrou a reserva 58250028195 Banco de jardim (p09). Reservas 58263107666 e 58258967475 seguem livres.
+- K24: 6 produtos largos (p02, p06, p08, p09, p10, p12) = 18 cenas; 10 passaram de 1ª (+ p09 A reprovada por engano na borda, aprovada
+  à mão). Guia conferida no p09: produto igual à foto. p10 Anilhas (foto ruim): só C aprovada.
+- K23: 1 cena reprovada por enfeite (p14 A tigela no balcão, Sonnet; refeita e aprovada). Nenhum clipe com enfeite mudando.
+- Fiscal de vídeo: p15 A hélice pode girar (aviso no cartão). Quase todos os clipes "câmera parada" (a câmera por código compensa).
+- Avisos para a dona (nos cartões): p02 Bike (descrição "vermelha", fotos azuis); p08 Furadeira (foto 01 com 2 ferramentas, fiz 1);
+  p10 1 cena só; p15 capa com gancho em cima do ventilador; p07 Kappesberg medidas discordam (fotos 03 x 04).
+- Container reiniciou no meio da fase 2: os arquivos ficaram; re-render só dos que faltavam (render_lote.sh + entregar.sh à mão).
+  ffprobe falhando no entregar = mp4 cortado pelo reinício: apague e renderize de novo.
 
 ## Lista 02/11 D (03/11 ~01h50 UTC)
 - 15 produtos com A, B e C (45 vídeos, 0211D-01..15) na aba Conferir, pendentes. Gasto US$ 5,01 de 8 (66 imagens + 24 clipes).

@@ -77,3 +77,9 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 ## Lista 02/11 D (03/11) — fase 1
 - Refações de imagem da fase 1 (borda/Gemini): ver gasto.json. p10 B churrasqueira: 2 imagens com laterais fechadas (estrutura aberta no anúncio), US$ 0,08 perdidos; p10 fica com 1 cena (A). p12 B cuba escura (Sonnet) e refação de C aprovada.
 - Lista 02/11 D fim: 66 imagens (45 de 1ª + 21 refações) e 24 clipes, US$ 5,01. p05 Cadeira Pétala: 6 imagens reprovadas por borda (guia a 75% + puff ao lado enche o quadro), foi K22.
+
+## Lista 05/11 A (05/11)
+- 54 imagens (45 de 1ª + 9 refações) e 36 clipes, US$ 5,74 de 8. p10 Kit anilhas: A e B reprovadas 2x (peças/barras faltando), US$ 0,16 perdidos; p10 fica com 1 cena (C).
+- Refações perdidas por borda/fiscal: p01 B, p05 C, p06 B, p08 A, p11 B, p14 B, p15 B (falharam; vídeo usa as outras). p14 A refeita 1x (tigela no balcão, Sonnet) e aprovada.
+- Borda medida errada (rembg pegou vaso/planta): p09 A, p07 A, p12 B, p12 C aprovadas à mão olhando a folha (grátis).
+- Container reiniciou na fase 2 (render): p12 B e C corromperam; re-render grátis.
