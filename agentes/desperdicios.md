@@ -83,3 +83,7 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 - Refações perdidas por borda/fiscal: p01 B, p05 C, p06 B, p08 A, p11 B, p14 B, p15 B (falharam; vídeo usa as outras). p14 A refeita 1x (tigela no balcão, Sonnet) e aprovada.
 - Borda medida errada (rembg pegou vaso/planta): p09 A, p07 A, p12 B, p12 C aprovadas à mão olhando a folha (grátis).
 - Container reiniciou na fase 2 (render): p12 B e C corromperam; re-render grátis.
+
+## Lista 06/11 A (06/11)
+- 63 imagens (45 de 1ª + 18 refações) e 27 clipes, US$ 5,19 de 8. Refações que falharam de novo (~US$ 0,51): p02 A/B/C (borda, kit de 3 largo demais → K22),
+  p06 B, p07 A/B, p09 A/B, p11 B, p13 A, p14 B/C, p15 B (rótulo errado). Vídeos usam as outras cenas.

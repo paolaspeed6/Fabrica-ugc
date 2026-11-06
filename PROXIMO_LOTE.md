@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-05 noite (Lista 05/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-06 manhã (Lista 06/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -26,6 +26,18 @@ Atualizado: 2026-11-05 noite (Lista 05/11 A entregue). Histórico completo: memo
 - Postagens + Conferência: https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt (botão "Conferência →").
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
+
+## Lista 06/11 A (06/11 ~08h UTC)
+- 15 produtos com A, B e C (45 vídeos, 0611A-01..15, trabalhos p304-p318, 12 s) na aba Conferir, pendentes.
+  Gasto US$ 5,19 de 8 (63 imagens = 45 + 18 refações; 27 clipes). Nenhum pulado; reservas 58218204570, 58254802142, 58216811643 seguem livres.
+  Tinder: os 15 em `pronto`.
+- K24: 5 largos (p01 Gangorra, p02 Cadeiras Trida, p09 Poltronas Opalla, p12 Pneus, p14 Cômoda) = 15 cenas; 7 passaram de 1ª.
+  Guia conferida no p09: produto igual à foto. p02 sem cena aprovada (borda 94-97%) → K22 com aviso.
+- K23: nenhuma cena reprovada por enfeite. Nenhum clipe com enfeite mudando.
+- Fiscal Sonnet: p15 B reprovada (rótulo com letras erradas, falhou); p08 C reprovada pela cor, aprovei à mão (mesmo tom da A, luz quente).
+- Cenas que restaram: p07 e p09 com 1 cena só (C); p14 só A; p06 A e C. p03 A e p11 A usam só 2 s (deformação depois).
+- Avisos para a dona: p03 Kit MTG e p04 Chave ZRF só tinham fotos de propaganda; p06 Bosch vendida sem bateria (não parece réplica);
+  p14 Cômoda referência foto 05 (a 01 tem pelúcia/trocador); p11 Mesa "Taça" chamada de torneada; p12 etiqueta de eficiência discorda (não citada).
 
 ## Lista 05/11 A (05/11 ~23h20 UTC)
 - 15 produtos com A, B e C (45 vídeos, 0511A-01..15, trabalhos p289-p303, 1º lote com vídeos de 12 s) na aba Conferir, pendentes.
