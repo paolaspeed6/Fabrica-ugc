@@ -1,0 +1,197 @@
+{
+ "narr": null,
+ "narr_at": 0.5,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/Fabrica-ugc/musicas/biblioteca/animada_08_piano_marimba.wav"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "contrast": 0.98,
+  "lift": 0.03,
+  "vign": 0.22,
+  "grain": 0.02,
+  "top": 0.3,
+  "warm_ramp": [
+   [
+    0,
+    0.0,
+    1.0
+   ],
+   [
+    15,
+    0.0,
+    1.0
+   ]
+  ]
+ },
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.0,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 0.0,
+   "dur": 2.6,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.06
+   ]
+  },
+  {
+   "src": "B",
+   "ss": 2.6,
+   "dur": 0.3,
+   "z": [
+    1.06,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Lavabo com charme"
+   ],
+   "t0": 0,
+   "t1": 2.9,
+   "y": 250
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Me apaixonei de primeira",
+    "*lixeira dourada*"
+   ],
+   "t0": 0,
+   "t1": 2.9,
+   "y": 300
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Aço inox dourado"
+   ],
+   "t0": 3.2,
+   "t1": 5.5,
+   "y": 280,
+   "size": 84
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Abre com o pedal"
+   ],
+   "t0": 5.699999999999999,
+   "t1": 8.1,
+   "y": 280,
+   "size": 84
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "5 litros cada"
+   ],
+   "t0": 8.299999999999999,
+   "t1": 10.700000000000001,
+   "y": 280,
+   "size": 84
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Disponível no link"
+   ],
+   "t0": 10.9,
+   "t1": 15,
+   "y": 250,
+   "out": false
+  },
+  {
+   "kind": "title",
+   "lines": [
+    "Kit com",
+    "*2 lixeiras.*"
+   ],
+   "t0": 11.15,
+   "t1": 15,
+   "y": 300,
+   "out": false,
+   "anim": "wipe"
+  },
+  {
+   "kind": "line",
+   "len": 220,
+   "t0": 11.5,
+   "t1": 15,
+   "y": 574,
+   "anim": "draw",
+   "out": false
+  }
+ ],
+ "src": {
+  "A": "/home/user/Fabrica-ugc/trabalhos/p326-kit-2-lixeiras-inox-douradas-5l/src/A.mp4",
+  "B": "/home/user/Fabrica-ugc/trabalhos/p326-kit-2-lixeiras-inox-douradas-5l/src/B.mp4",
+  "C": "/home/user/Fabrica-ugc/trabalhos/p326-kit-2-lixeiras-inox-douradas-5l/src/C.mp4",
+  "D": "/home/user/Fabrica-ugc/trabalhos/p326-kit-2-lixeiras-inox-douradas-5l/src/D.mp4",
+  "E": "/home/user/Fabrica-ugc/trabalhos/p326-kit-2-lixeiras-inox-douradas-5l/src/E.mp4",
+  "F": "/home/user/Fabrica-ugc/trabalhos/p326-kit-2-lixeiras-inox-douradas-5l/src/F.mp4"
+ },
+ "out": "/home/user/Fabrica-ugc/trabalhos/p326-kit-2-lixeiras-inox-douradas-5l/out2/p326_a_umdia.mp4",
+ "dur": 15.0,
+ "natural": 1,
+ "vel": 1.25,
+ "mov": 1,
+ "trans": [
+  [
+   3.0,
+   "whip"
+  ],
+  [
+   5.6,
+   "zoom"
+  ],
+  [
+   8.2,
+   "whip"
+  ],
+  [
+   10.8,
+   "zoom"
+  ]
+ ]
+}

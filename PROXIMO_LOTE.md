@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-06 manhã (Lista 06/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-07 manhã (Lista 07/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -26,6 +26,20 @@ Atualizado: 2026-11-06 manhã (Lista 06/11 A entregue). Histórico completo: mem
 - Postagens + Conferência: https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt (botão "Conferência →").
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
+
+## Lista 07/11 A (07/11 ~06h40 UTC)
+- 11 produtos com A, B e C (33 vídeos, 0711A-01..08, 10..12, trabalhos p319-p329, 12 s) na aba Conferir, pendentes.
+  Gasto US$ 4,24 de 8 (49 imagens = 33 + 16 refações; 23 clipes). Tinder: os 11 em `pronto`.
+- Pulados pelo Fichador (Tinder volta a `aprovado` + `pulado`): p09 Tapete degrau 52462303951 (bebê e cachorro nas fotos limpas),
+  p13 Capas de cadeira 23497764752 (20 kits, cor não dita), p14 Papel fotográfico 58268060894 (foto 01 banner, 1000 folhas sem foto limpa).
+- K24: 4 largos (p04 Carrinho, p06 Barraca, p11 Base hidráulica, p12 Amortecedores) = 12 cenas; 5 passaram de 1ª.
+  Guia só no p11 (único largo com foto 01 boa): A e B de 1ª, produto igual à foto. p04, p06, p12 do zero (foto 01 com texto).
+- K23: 4 cenas reprovadas por enfeite encostando (Sonnet: p02 B, p10 A, p11 C, p12 C); refeitas 1 vez (p02 B e p10 A aprovadas;
+  p10 A aprovada à mão, a borda mediu o fio). Nenhum clipe com enfeite mudando.
+- Cenas que restaram: p04, p06 e p12 com 1 cena só; p01, p05, p08, p11 com 2.
+- Avisos para a dona: p05 é Lattafa Afeef (não parece réplica; foto 03 diz "feminino", descrição unissex: textos sem gênero);
+  p06 anúncio "2 ambientes" x foto "3" (textos sem número); p12 título 2002-2016 x descrição 2004-2016 (sem anos), peças revisadas
+  (sem "original"); p01, p02, p03 foto 01 com cena de bar/abajur/caixa: referência foi outra foto limpa.
 
 ## Lista 06/11 A (06/11 ~08h UTC)
 - 15 produtos com A, B e C (45 vídeos, 0611A-01..15, trabalhos p304-p318, 12 s) na aba Conferir, pendentes.

@@ -87,3 +87,7 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 ## Lista 06/11 A (06/11)
 - 63 imagens (45 de 1ª + 18 refações) e 27 clipes, US$ 5,19 de 8. Refações que falharam de novo (~US$ 0,51): p02 A/B/C (borda, kit de 3 largo demais → K22),
   p06 B, p07 A/B, p09 A/B, p11 B, p13 A, p14 B/C, p15 B (rótulo errado). Vídeos usam as outras cenas.
+
+## Lista 07/11 A (07/11)
+- 49 imagens (33 de 1ª + 16 refações) e 23 clipes, US$ 4,24 de 8. Refações que falharam de novo (~US$ 0,36): p01 C, p04 B/C (borda, carrinho largo),
+  p05 C, p06 A/B (barraca longe/cortada, toldo errado), p08 C, p11 C e p12 C (borda). Vídeos usam as outras cenas.
