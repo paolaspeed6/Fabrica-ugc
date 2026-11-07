@@ -70,4 +70,5 @@ a.update(json.load(open('trabalhos.json'))); json.dump(a,open('trabalhos_todos.j
 bash $R/video-teste/luxo/render_lote.sh $(python3 -c "import json;print(' '.join('$R/trabalhos/'+v for v in json.load(open('trabalhos.json')).values()))") >> produzir.log 2>&1
 find $R/trabalhos -name "*.video.mp4" -delete   # intermediários enchem o disco (26/10)
 bash $R/video-teste/lote/entregar.sh $L $PRE $DIA "$NOME" 99 $(echo $P | tr , ' ') >> produzir.log 2>&1
+python3 -I salvar_imagens.py $L $P --dia $DIA >> produzir.log 2>&1   # carrossel: só produtos aesthetic (nota >= 8) vão ao Drive (a dona, 07/11)
 log "FASE2_PRONTA gasto=$(python3 -c "import json;print(json.load(open('gasto.json'))['usd'])") conferir_docs=$(ls conferir_docs 2>/dev/null | wc -l)"

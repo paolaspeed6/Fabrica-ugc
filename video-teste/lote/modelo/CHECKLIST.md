@@ -39,6 +39,7 @@ Entrega (NUNCA pular; a dona 2026-10-24)
 - [ ] Jogo: metas, Mural (o que aconteceu no lote) e Gasto
 - [ ] Commit e push (mp4 finais em trabalhos/, spec, desperdícios, defeitos, vistos)
 - [ ] (opcional) página com botão de baixar
+- [ ] Carrossel: `salvar_imagens.py` (o produzir.sh já roda) manda ao Drive (Carrossel/<dia>/<ID>_<slug>/) só as cenas aprovadas dos produtos aesthetic (nota Gemini >= 8) com info.txt (nome, ID, link, 3 frases); peça de carro, ferramenta etc. fica fora
 - [ ] Nenhum produto sem versão: o entregar.sh refaz a versão reprovada com zoom maior (2x) e, se ainda falhar, entrega com `aviso` para a dona decidir
 - [ ] Produto sem cena aprovada (K22): `sem_cena.py` (o produzir.sh já roda) monta A, B e C com as reprovadas só por borda, câmera por código, aviso "cenas reprovadas pela fiscal: confira"; defeito grave fica fora. Sem imagem aproveitável: `descartadas.py` (o produzir.sh já roda) manda as cenas reprovadas para a aba Conferir (cartão "resgate"); nunca descartar sem ela ver
 - [ ] Começo do lote seguinte: `conferir` com status `resgatar` (campo escolha = cenas que ela aceitou) → imagens do histórico da WaveSpeed (grátis) → `camera_codigo.py pNN <escolha>` (K19) → lote_auto → render → entregar;
