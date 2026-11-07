@@ -156,3 +156,5 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
   Feito (K24): guia 9:16 com a foto 01 no lugar certo, o Nano Banana só repinta o cômodo. 1º lote com isso: medir refação dos largos.
 - 01/11: a dona pediu ganchos mais atrativos. Guia novo agentes/ganchos.md (fórmulas + exemplos dela). Próximo passo sugerido:
   Sub ID por layout para medir qual gancho/versão vende mais.
+
+- 07/11 (a dona): imagens para carrossel (Insta + TikTok) só de produtos estratégicos, aesthetic, que chamem atenção. Peça de carro, ferramenta e produto técnico não são guardados. O `salvar_imagens.py` (fim da fase2) usa nota Gemini >= 8 e manda ao Drive em Carrossel/<dia>/<ID>_<slug>/, com ID, link e 3 frases.
