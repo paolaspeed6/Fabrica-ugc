@@ -91,3 +91,4 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 ## Lista 07/11 A (07/11)
 - 49 imagens (33 de 1ª + 16 refações) e 23 clipes, US$ 4,24 de 8. Refações que falharam de novo (~US$ 0,36): p01 C, p04 B/C (borda, carrinho largo),
   p05 C, p06 A/B (barraca longe/cortada, toldo errado), p08 C, p11 C e p12 C (borda). Vídeos usam as outras cenas.
+- 2026-11-08 Lista 08/11 A p06 Base hidráulica: A e C reprovadas (cadeira/banquinho ao fundo), refeitas 1x (US$ 0,08); C repetiu o banquinho = falhou.
