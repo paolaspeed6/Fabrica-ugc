@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-08 manhã (Lista 08/11 B entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-08 manhã (Listas 08/11 A e B entregues, em conversas separadas). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -38,6 +38,18 @@ Atualizado: 2026-11-08 manhã (Lista 08/11 B entregue). Histórico completo: mem
   p04 marca DeWEN com visual parecido com DeWalt (sem marca nem "original"; 30 x 20 peças, sem número); p05 sem medidas no anúncio;
   p06 nenhuma foto mostra as 6 anilhas (feito 2 grupos de 3); p07 só a caixa, sem gerador.
 - O produzir.sh da lista B usou n0+51 para não colidir com a lista A.
+## Lista 08/11 A (08/11 ~09h50 UTC)
+- 7 produtos com A, B e C (21 vídeos, 0811A-01..07, trabalhos p330-p336, 12 s) na aba Conferir, pendentes.
+  Gasto US$ 2,91 de 4 (23 imagens = 21 + 2 refações; 20 clipes). Nenhum pulado. Tinder: os 7 em `pronto`.
+- Carrossel: 5 produtos no Drive (p01-p05, nota >= 8); fora p06 Base (1) e p07 Halteres (7).
+- K24: 3 largos (p02 Banquetas e p03 Baú com guia; p04 Cortina do zero, sem foto limpa) = 9 cenas; 9 passaram de 1ª. Produto igual à foto.
+- K23: nenhuma cena reprovada por enfeite. Nenhum clipe com enfeite mudando. p06 A e C reprovadas pela Sonnet (cadeira/banquinho
+  ao fundo); refeitas 1x: A aprovada, C repetiu o banquinho = falhou (p06 usa A e B).
+- O rembg não baixou o modelo (504 do GitHub) e a fase 1 rodou sem borda: baixei à mão (`mkdir -p ~/.u2net && curl -L -o ~/.u2net/u2net.onnx ...`)
+  e conferi a borda olhando. Sub ID: gerar_links.py usa AAMMDD com o ano 26 (261108), não 25.
+- Avisos para a dona: p01 anúncio com ~20 cores (fiz verde-sálvia, perto da foto 01); p04 largura 4 m ou 6 m não dita (textos sem
+  largura); p05 3 cores (fiz freijó/off-white da foto 01); p06 alturas discordam (textos sem altura); p07 descrição 4 anilhas de cada
+  peso x foto 3 por lado (fiz como a foto).
 
 ## Lista 07/11 A (07/11 ~06h40 UTC)
 - 11 produtos com A, B e C (33 vídeos, 0711A-01..08, 10..12, trabalhos p319-p329, 12 s) na aba Conferir, pendentes.
