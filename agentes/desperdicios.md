@@ -92,3 +92,8 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 - 49 imagens (33 de 1ª + 16 refações) e 23 clipes, US$ 4,24 de 8. Refações que falharam de novo (~US$ 0,36): p01 C, p04 B/C (borda, carrinho largo),
   p05 C, p06 A/B (barraca longe/cortada, toldo errado), p08 C, p11 C e p12 C (borda). Vídeos usam as outras cenas.
 - 2026-11-08 Lista 08/11 A p06 Base hidráulica: A e C reprovadas (cadeira/banquinho ao fundo), refeitas 1x (US$ 0,08); C repetiu o banquinho = falhou.
+
+## Lista 08/11 B (08/11)
+- 25 imagens (21 de 1ª + 2 refações + 2 que deram erro 400 da API na 1ª vez) e 17 clipes, US$ 2,69 de 4. Imagens perdidas (~US$ 0,16):
+  p04 B (planta encostando na maleta, acessórios flutuando), p04 C (borda 90%), p05 B (nobreak escondido no nicho), p07 B (oficina bagunçada,
+  vaso encostando). Vídeos usam as outras cenas. p03 A/B/C e p07 C reprovadas pela borda/Sonnet e aprovadas à mão (a borda mediu a mesa; cor era sombra).

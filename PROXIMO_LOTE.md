@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-07 manhã (Lista 07/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-08 manhã (Lista 08/11 B entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -26,6 +26,18 @@ Atualizado: 2026-11-07 manhã (Lista 07/11 A entregue). Histórico completo: mem
 - Postagens + Conferência: https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt (botão "Conferência →").
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
+
+## Lista 08/11 B (08/11 ~09h45 UTC; feita junto com a Lista 08/11 A, trabalhos p380-p386)
+- 7 produtos com A, B e C (21 vídeos, 0811B-01..07, 12 s) na aba Conferir, pendentes. Gasto US$ 2,69 de 4 (25 imagens + 17 clipes).
+  Nenhum pulado. Tinder: os 7 em `pronto`. Carrossel: 1 produto (p02 Impressora Y12, nota 9).
+- K24: 4 largos (p01 Barraca, p03 Furadeira Bosch, p04 Kit DeWEN, p06 Anilhas) = 12 cenas; 9 passaram de 1ª. Guia em p01 (foto 05) 3/3
+  e p04 (foto 06) 1/3; p03 e p06 do zero. p03: borda mediu a mesa, aprovei A/B/C à mão olhando a folha.
+- K23: 2 cenas reprovadas por enfeite (p04 B planta encostando na maleta; p07 B vaso encostando + oficina bagunçada). Nenhum clipe com enfeite mudando.
+- Cenas que restaram: p04 só A; p05 A e C; p07 A e C.
+- Avisos para a dona: p01 fotos não mostram "2 ambientes"/"2-16 pessoas" (textos sem número); p03 é Bosch de verdade (peso discorda, sem peso);
+  p04 marca DeWEN com visual parecido com DeWalt (sem marca nem "original"; 30 x 20 peças, sem número); p05 sem medidas no anúncio;
+  p06 nenhuma foto mostra as 6 anilhas (feito 2 grupos de 3); p07 só a caixa, sem gerador.
+- O produzir.sh da lista B usou n0+51 para não colidir com a lista A.
 
 ## Lista 07/11 A (07/11 ~06h40 UTC)
 - 11 produtos com A, B e C (33 vídeos, 0711A-01..08, 10..12, trabalhos p319-p329, 12 s) na aba Conferir, pendentes.
