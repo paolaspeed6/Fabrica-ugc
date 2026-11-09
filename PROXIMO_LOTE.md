@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-08 manhã (Listas 08/11 A e B entregues, em conversas separadas). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-09 madrugada (Lista 09/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -26,6 +26,20 @@ Atualizado: 2026-11-08 manhã (Listas 08/11 A e B entregues, em conversas separa
 - Postagens + Conferência: https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt (botão "Conferência →").
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
+
+## Lista 09/11 A (09/11 ~04h30 UTC)
+- 13 produtos com A, B e C (39 vídeos, 0911A-01..13, trabalhos p387-p399, 12 s) na aba Conferir, pendentes.
+  Gasto US$ 4,42 de 8 (51 imagens = 39 + 12 refações; 24 clipes). Nenhum pulado. Tinder: os 13 em `pronto`.
+- Carrossel: 11 produtos no Drive (nota >= 8); fora p11 Molinete (nota 1, fora do nicho) e p12 Escrivaninha (sem cena aprovada).
+- K24: 4 largos com guia (p01 Cadeiras Serena, p03 Sofá, p12 Escrivaninha, p13 Banquetas) = 12 cenas; 4 passaram de 1ª (p01 B, p13 A/B/C).
+  Produto igual à foto (conferi a guia do p01). p03 e p12: a guia a 75% enche o quadro (borda 85-96%). p12 sem cena → K22 com aviso.
+- K23: nenhuma cena reprovada por enfeite. p11 C reprovada pela Sonnet (bancada bagunçada). Nenhum clipe com enfeite mudando.
+- Cenas que restaram: p03 só B; p04 só B; p01, p02, p05, p06, p07, p09, p10, p11 com 2.
+- Avisos para a dona: cores da foto 01 (p01 caramelo, p02 verde-oliva, p03 bege, p04 branca, p05 nogueira apagado, p06 freijó aceso,
+  p07 preta, p08 caramelo, p09 branco, p11 vermelho, p12 branco/madeira, p13 caramelo); p02 e p07 referência foi outra foto (01 com
+  propaganda / com bebida; p07 com balde vazio da foto 02); p03 título "Nara" x descrição "Zarah" (sem nome); p10 fotos 01/02 mostram
+  outro frasco com caixa (usei 03/04, sem "Original"); p11 "2000 ou 3000" discorda (sem número); p08/p09 sem medidas no anúncio.
+- rembg instalado e u2net baixado à mão de novo (curl do release do GitHub funcionou).
 
 ## Lista 08/11 B (08/11 ~09h45 UTC; feita junto com a Lista 08/11 A, trabalhos p380-p386)
 - 7 produtos com A, B e C (21 vídeos, 0811B-01..07, 12 s) na aba Conferir, pendentes. Gasto US$ 2,69 de 4 (25 imagens + 17 clipes).

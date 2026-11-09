@@ -97,3 +97,8 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 - 25 imagens (21 de 1ª + 2 refações + 2 que deram erro 400 da API na 1ª vez) e 17 clipes, US$ 2,69 de 4. Imagens perdidas (~US$ 0,16):
   p04 B (planta encostando na maleta, acessórios flutuando), p04 C (borda 90%), p05 B (nobreak escondido no nicho), p07 B (oficina bagunçada,
   vaso encostando). Vídeos usam as outras cenas. p03 A/B/C e p07 C reprovadas pela borda/Sonnet e aprovadas à mão (a borda mediu a mesa; cor era sombra).
+
+## Lista 09/11 A (09/11)
+- 51 imagens (39 de 1ª + 12 refações) e 24 clipes, US$ 4,42 de 8. Refações perdidas (falharam 2x, US$ 0,36): p01 C, p03 A e C,
+  p04 A e C, p10 C (caixa voltou), p12 A, B e C (escrivaninha larga: guia enche o quadro, borda 86-96%). p12 foi K22 com aviso.
+- Borda na 1ª e não refeitas (produto já tinha 2 boas): p02 C, p05 C, p06 B, p07 A, p09 C (US$ 0,20). Sonnet reprovou p11 C (bancada bagunçada).
