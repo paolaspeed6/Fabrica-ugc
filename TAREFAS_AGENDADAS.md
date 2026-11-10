@@ -11,11 +11,11 @@ Texto da tarefa:
 > 1. Leia o banco da página Tinder (<URL do Tinder>, coleção candidatos). Se houver 10 ou mais decisões novas
 >    (aprovado/descartado desde a última rodada, ver produto-campeao/afiliados/ultima_rodada.json), compare aprovados x
 >    descartados, ajuste varrer.py/palavras.txt e anote o aprendizado em agentes/busca_poucos_videos.md.
-> 2. Rode a varredura destacada (pode passar de 2 h):
->    `cd produto-campeao/afiliados && setsid nohup bash -c 'timeout 10800 python3 varrer.py > varredura_diaria.log 2>&1; echo "exit=$?" > varredura_diaria.fim' &`
+> 2. Rode a varredura destacada (busca_diaria.py, ~65 min, 3 rodadas em paralelo com checkpoint; 10/11, leia afiliados/LEIA-ME_varredura.md):
+>    `cd produto-campeao/afiliados && setsid nohup bash -c 'timeout 10800 python3 busca_diaria.py > varredura_diaria.log 2>&1; echo "exit=$?" > varredura_diaria.fim' &`
 >    e espere o arquivo .fim (laço em segundo plano, no máximo 2 h por espera, rearmando). Apague o .fim no fim.
 > 3. Some TODOS os bons resultados novos no Tinder (status novo, campo dia = hoje), em lotes de no máximo 25 documentos.
->    Nunca repita itemId (vistos.json); parecido da mesma loja só ganha possivel_duplicata. Atualize vistos.json e ultima_rodada.json.
+>    Nunca repita itemId (vistos.json); parecido da mesma loja só ganha possivel_duplicata. Atualize vistos.json e ultima_rodada.json e apague ck_diaria_<data>/. Troca com o Kevin: afiliados/TROCA_EXCLUIDOS.md.
 > 4. Se a Fila (status aprovado) chegou ao lote_min de config/geral: avise "Lote DD/MM pronto, N produtos, custo estimado US$ X"
 >    e espere o OK. Nada pago nesta tarefa.
 
