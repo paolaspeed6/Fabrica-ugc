@@ -15,7 +15,7 @@ Texto da tarefa:
 >    `cd produto-campeao/afiliados && setsid nohup bash -c 'timeout 10800 python3 busca_diaria.py > varredura_diaria.log 2>&1; echo "exit=$?" > varredura_diaria.fim' &`
 >    e espere o arquivo .fim (laço em segundo plano, no máximo 2 h por espera, rearmando). Apague o .fim no fim.
 > 3. Some TODOS os bons resultados novos no Tinder (status novo, campo dia = hoje), em lotes de no máximo 25 documentos.
->    Nunca repita itemId (vistos.json); parecido da mesma loja só ganha possivel_duplicata. Atualize vistos.json e ultima_rodada.json e apague ck_diaria_<data>/. Troca com o Kevin: afiliados/TROCA_EXCLUIDOS.md.
+>    Nunca repita itemId (vistos.json); parecido da mesma loja só ganha possivel_duplicata. Atualize vistos.json e ultima_rodada.json e apague ck_diaria_<data>/. Troca com o Kevin (antes de varrer: juntar os excluidos_kevin_* novos; depois de semear: subir excluidos_esposa_<data>.json) na pasta do Drive 1cYV-TSkE_cFpWPrItY5L65JD5s5rcDi6: afiliados/TROCA_EXCLUIDOS.md.
 > 4. Se a Fila (status aprovado) chegou ao lote_min de config/geral: avise "Lote DD/MM pronto, N produtos, custo estimado US$ X"
 >    e espere o OK. Nada pago nesta tarefa.
 

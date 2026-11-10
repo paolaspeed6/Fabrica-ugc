@@ -1,5 +1,9 @@
 # Troca automática de excluídos com o Kevin (pasta do Drive "Horst Ads Excluídos")
 
+**Pasta: "Horst Ads Excluídos", id `1cYV-TSkE_cFpWPrItY5L65JD5s5rcDi6`** (https://drive.google.com/drive/folders/1cYV-TSkE_cFpWPrItY5L65JD5s5rcDi6), do Kevin, compartilhada com ela como editora (10/11).
+Ler/baixar com o conector Google Drive (search_files parentId = esse id); o GDRIVE_* da fábrica (escopo drive.file) não enxerga os arquivos do Kevin.
+Já juntados: `excluidos_juntados.txt`. 1ª troca feita em 10/11 (subido excluidos_esposa_2026-11-10_inicial.json, 1250 ids).
+
 O Kevin compartilha com ela a pasta "Horst Ads Excluídos" no Google Drive, como editora. Cada um sobe ali os produtos que pegou, e a rotina de cada um lê os do outro. Assim nenhum produto aparece pros dois.
 
 Na rotina diária dela, com o conector Google Drive ligado:
