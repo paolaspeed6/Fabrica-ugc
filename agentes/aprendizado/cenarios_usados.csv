@@ -1294,3 +1294,18 @@ data,produto,cena,ambiente,piso,parede,paleta
 2026-11-11,L1111a p15 aquecedor-agua-8800w,A,banheiro moderno meio-dia janela alta sol folhas bancada carvalho cuba redonda areca vaso bege,porcelanato areia,placas porcelanato 60x120 areia fosco,areia/carvalho/branco
 2026-11-11,L1111a p15 aquecedor-agua-8800w,B,cozinha de apto manha janela sol folhas bancada quartzo branco tigela gres manjericao prateleira carvalho,porcelanato claro,verde oliva liso,oliva/branco/carvalho
 2026-11-11,L1111a p15 aquecedor-agua-8800w,C,lavanderia tarde janela sol folhas monstera vaso fosco armarios laca branca tanque pedra,porcelanato cimento cinza,azul poeira + faixa azulejo branco,azul/branco/cinza
+2026-11-11,L1111b p01 plafon-retangular-80cm,A,corredor de apto manha janela lateral sol folhas painel ripado carvalho areca vaso creme console,porcelanato claro,painel ripado carvalho + branco,carvalho/branco/dourado
+2026-11-11,L1111b p01 plafon-retangular-80cm,B,suite quarto sol cortina fina cabeceira linho seringueira vaso pedra,parquet carvalho,verde musgo profundo,musgo/linho/carvalho
+2026-11-11,L1111b p01 plafon-retangular-80cm,C,sala de jantar golden hour mesa redonda nogueira janela arco tapete juta galhos secos figueira,madeira nogueira,cal rosa terracota,rosa/nogueira/verde
+2026-11-11,L1111b p02 mala-infantil-assento,A,sala de apto porta de varanda tarde sol folhas tapete juta monstera banco carvalho,microcimento cinza bege,azul ceu claro,azul/bege/limao
+2026-11-11,L1111b p02 mala-infantil-assento,B,deck coberto casa de campo golden hour gramado arvores sofa linho oliveira,deck cinza claro,vidro e arvores,verde/cinza/creme
+2026-11-11,L1111b p02 mala-infantil-assento,C,hall de entrada viagem janela alta sol banco carvalho espelho redondo capim dos pampas ceramica,porcelanato grafite fosco,mostarda ocre suave,ocre/grafite/limao
+2026-11-11,L1111b p03 kit-bolsas-selva,A,quarto de bebe janela sol folhas pufe boucle banco linho tapete juta ficus,tabuas carvalho natural,azul ceu bebe,azul/creme/carvalho
+2026-11-11,L1111b p03 kit-bolsas-selva,B,canto de leitura sala tarde sol palmeira poltrona linho mesa lateral carvalho monstera,carpete claro,verde musgo profundo,musgo/creme/carvalho
+2026-11-11,L1111b p03 kit-bolsas-selva,C,varanda entrada golden hour banco carvalho cesto seagrass areca vaso bege,porcelanato cimento cinza quente,ocre profundo,ocre/cinza/verde
+2026-11-11,L1111b p04 inversora-solda-mini-monstro,A,oficina moderna janela basculante sol folhas bancada aco tampo carvalho caixa ferramentas aco sansevieria,concreto polido cinza claro,bloco de concreto pintado cinza claro,cinza/carvalho/preto
+2026-11-11,L1111b p04 inversora-solda-mini-monstro,B,garagem de casa portao aberto dia bancada laminado branco caixote madeira seringueira,epoxi cinza claro,tijolo caiado + faixa azulejo preto,branco/cinza/preto
+2026-11-11,L1111b p04 inversora-solda-mini-monstro,C,serralheria atelier claraboia tarde bancada inox escovado caixa metal preta oliveira,porcelanato grafite fosco,tijolo aparente vermelho quente,tijolo/grafite/inox
+2026-11-11,L1111b p05 banheira-dobravel-mastela,A,banheiro suite janela sol folhas banco carvalho toalha creme areca vaso bege,microcimento cinza claro,azulejo 3D verde profundo,verde/cinza/carvalho
+2026-11-11,L1111b p05 banheira-dobravel-mastela,B,varanda coberta golden hour deck oliveira cadeira rattan tapete juta,deck madeira clara,tijolo caiado branco,madeira/branco/verde
+2026-11-11,L1111b p05 banheira-dobravel-mastela,C,lavanderia manha janela sol samambaia armarios laminado branco pia pedra monstera cesto seagrass,porcelanato grafite,amarelo manteiga suave,manteiga/grafite/branco
