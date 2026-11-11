@@ -1,2 +1,3 @@
 excluidos_kevin_2026-11-10.json
 excluidos_kevin_2026-11-10_inicial.json
+excluidos_kevin_2026-11-10_bonus.json

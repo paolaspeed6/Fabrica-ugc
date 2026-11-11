@@ -25,7 +25,7 @@ if cmd == "juntar":
         if d.get("de") == eu:
             continue
         chave = f'{d["de"]}_{d["data"]}_{d.get("tipo","dia")}'
-        exc[chave] = sorted(set(map(str, d["ids"])))
+        exc[chave] = sorted(set(exc.get(chave, [])) | set(map(str, d["ids"])))  # 11/11: soma, nunca apaga ids do mesmo dia
         print(f"{chave}: {len(exc[chave])} ids")
     EXC.write_text(json.dumps(exc))
 elif cmd == "gerar":

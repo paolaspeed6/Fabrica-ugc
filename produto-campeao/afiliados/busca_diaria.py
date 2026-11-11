@@ -19,7 +19,7 @@ def uma(i, r):
             prods[str(p["itemId"])] = p
         if not res["pageInfo"]["hasNextPage"]:
             break
-        time.sleep(0.5)
+        time.sleep(1.0)
     f.write_text(json.dumps(prods))
     print(f"rodada {i} {r.get('k','geral')}: {len(prods)}", flush=True)
     return prods
@@ -27,7 +27,7 @@ def uma(i, r):
 def varrer_ck(palavras):
     rodadas = [{"l": 0, "s": 2}, {"l": 2, "s": 2}] + [{"l": 0, "s": 2, "k": k} for k in palavras]
     produtos = {}
-    with ThreadPoolExecutor(3) as ex:
+    with ThreadPoolExecutor(2) as ex:
         for prods in ex.map(lambda a: uma(*a), enumerate(rodadas)):
             produtos.update(prods)
     print(f"total {len(produtos)}", flush=True)
