@@ -110,3 +110,8 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 - Sonnet reprovou 7 cenas já aprovadas pela Gemini: p03 B/C (detalhe inventado), p06 A, p10 A, p14 B, p15 B/C (enfeite/objeto proibido).
 - A máquina reiniciou no meio da fase 1 e o fiscal_gemini.py travou com resposta em lista da Gemini (corrigido). Edição renderizada
   2 vezes (grátis) para pegar a seta nova do botão "Ver o preço".
+
+## Lista 11/11 B (11/11)
+- 5 refações de imagem (US$ 0,20): p02 A (borda), p08 B e C (borda/enfeite), p09 A (xícara) e C (costura do encosto); p08 B/C e p09 A/C falharam de novo.
+- 1 clipe reprovado (US$ 0,10): p06 A (ventiladores giraram e distorceram). Sonnet reprovou p05 C (frascos) e p08 C (enfeite encostando).
+- Edição de p02 e p05 quebrou (texto vazio na 2ª linha grande do layout B); refeita grátis; trava nova no textos.py.

@@ -3,6 +3,21 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 11/11 B (11/11 ~08h40 UTC)
+- 9 produtos com A, B e C (27 vídeos, 1111B-01..09, trabalhos p415-p423, 12 s) na aba Conferir, pendentes.
+  Gasto US$ 3,17 de 5 (32 imagens = 27 + 5 refações; 19 clipes). Nenhum pulado. Tinder: os 9 em `pronto`. Saldo WaveSpeed US$ 22,64.
+- Carrossel: 7 produtos no Drive (nota >= 8: p01, p02, p03, p05, p07, p08, p09); fora p04 solda (2) e p06 ventiladores (5).
+- K24: 2 largos (p06 ventiladores do zero, foto 01 com propaganda; p07 tapete com guia) = 6 cenas; 4 passaram de 1ª (p06 A/C, p07 A/C);
+  p06 B e p07 B reprovadas pela borda. Guia do p07: o Nano Banana manteve o tapete igual à foto (listras, borda oliva). Clipe p06 A reprovado (pás giraram).
+- K23: 2 cenas reprovadas por enfeite (Sonnet: p05 C frascos na pia, p08 C enfeite encostando). Sonnet também reprovou p07 C (mesa de
+  jantar no tapete), mas a ficha pedia sala de jantar: o orquestrador voltou para aprovada.
+- Cenas que restaram: p05, p08 e p09 só 1 cena; p06 e p07 com 2 (p06 só C no vídeo); os demais com 3.
+- Avisos (cor da foto 01/referência): p01 plafon aceso (foto 01 acesa); p02 verde-limão (foto 01 com criança; refs 05/06; versão preta fora;
+  carga 100 x 50 kg: sem número); p03 creme com verde-escuro (outras cores fora); p04 branca/azul com óculos (máscara, luvas, cabos fora);
+  p06 pretos (números discordam: sem rpm/vazão); p07 creme listrado (outras cores); p08 branca (foto 01 com bebê; ref foto 07);
+  p09 preta (versão marrom fora; kg discordam: sem peso).
+- Erro novo: texto vazio na 2ª linha grande do layout B quebrou p02/p05 na edição; refeito grátis; textos.py agora trava antes.
+
 ## Lista 11/11 A (11/11 ~03h20 UTC)
 - 15 produtos com A, B e C (45 vídeos, 1111A-01..15, trabalhos p400-p414, 12 s, seta do "Ver o preço" para baixo) na aba Conferir, pendentes.
   Gasto US$ 5,41 de 8 (71 imagens = 45 + 26 refações; 26 clipes). Nenhum pulado. Tinder: os 15 em `pronto`.

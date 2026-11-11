@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-11 madrugada (Lista 11/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-11 manhã (Lista 11/11 B entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -29,8 +29,8 @@ Atualizado: 2026-11-11 madrugada (Lista 11/11 A entregue). Histórico completo: 
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
 ## Estado atual (11/11)
-- Último lote: Lista 11/11 A (45 vídeos na Conferir, US$ 5,41). Fila do Tinder: 3 aprovados ficaram para o próximo lote.
-- Saldo WaveSpeed: confira com `curl -s https://api.wavespeed.ai/api/v3/balance` (~US$ 25,8 em 11/11).
+- Último lote: Lista 11/11 B (27 vídeos na Conferir, US$ 3,17). Antes: Lista 11/11 A (45 vídeos, US$ 5,41). Fila do Tinder: vazia (os 9 aprovados foram produzidos).
+- Saldo WaveSpeed: confira com `curl -s https://api.wavespeed.ai/api/v3/balance` (~US$ 22,6 em 11/11).
 - Varredura diária nova (10/11): produto-campeao/afiliados/busca_diaria.py + troca de excluídos com o Kevin (TROCA_EXCLUIDOS.md).
 - Carrossel: salvar_imagens.py (fim da fase2) manda só produtos aesthetic (nota >= 8) ao Drive, Carrossel/<dia>/.
 - Botão "Ver o preço": seta para baixo (11/11). Faça git pull antes da fase2.

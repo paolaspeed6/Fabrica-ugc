@@ -333,3 +333,5 @@ grave no Gemini (grátis). Sem nenhuma imagem aproveitável, o produto ainda vir
   2 linhas de até 26 caracteres. Sem preço, %, frete, prazo, nota ou número de vendas.
 - 02/11 (Lista 02/11 A): emoji no gancho saiu como quadradinho na versão A de 5 produtos (refeito na edição, grátis). Gancho sem
   emoji; o `textos.py` tira emoji dos textos do vídeo (legendas `leg_*` mantêm).
+- 11/11 (Lista 11/11 B): texto vazio (null) na 2ª linha grande de uma faixa do layout B (`b.cenas[i][1]`) quebrou a edição de p02 e p05
+  (refeita grátis). Só a 3ª linha pode ser null; o `textos.py` agora trava antes dos clipes.

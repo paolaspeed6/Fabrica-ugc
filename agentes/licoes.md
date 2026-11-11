@@ -29,3 +29,5 @@
 - 2026-10-29: Lista 29/10 A, fase2 gerou clipes e parou na edição sem textos.json (textos.py esquecido). O produzir.sh passou a checar antes de gastar (regra K20).
 - 2026-11-02: Lista 02/11 A, emoji no gancho virou quadradinho em 5 vídeos A (o layout não desenha emoji). textos.py tira emoji sozinho; ganchos.md sem emoji (K25).
 - 02/11 (Lista 02/11 C): emoji no gancho vira ☒ no vídeo (fonte sem emoji). Regra K26; textos.py limpa sozinho.
+- 11/11 (Lista 11/11 B): texto vazio (null) na 2ª linha grande de uma faixa do layout B (`b.cenas[i][1]`) quebrou a edição de p02 e p05
+  (refeita grátis). Só a 3ª linha pode ser null; o `textos.py` agora trava antes dos clipes.
