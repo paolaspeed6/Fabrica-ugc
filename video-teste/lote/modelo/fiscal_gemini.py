@@ -72,7 +72,9 @@ if __name__ == '__main__':
     for pk in sys.argv[1].split(','):
         p, k = pk[:3], pk[3:]
         if not (B / f'{p}-cenas/{k}.jpg').exists(): print(pk, 'SEM IMAGEM'); continue
-        try: v = fiscal(p, k)
+        try:
+            v = fiscal(p, k)
+            if isinstance(v, list): v = v[0]  # a Gemini às vezes devolve [{...}] (11/11)
         except Exception as e: print(pk, 'FALHOU', e, flush=True); continue
         fj = B / f'{p}-cenas/fiscal_imagem.json'; d = json.loads(fj.read_text()) if fj.exists() else {}
         v['fiscal'] = f'gemini ({MOD})'; d[k] = v; fj.write_text(json.dumps(d, ensure_ascii=False, indent=1))
