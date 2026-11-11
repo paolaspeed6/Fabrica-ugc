@@ -102,3 +102,11 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 - 51 imagens (39 de 1ª + 12 refações) e 24 clipes, US$ 4,42 de 8. Refações perdidas (falharam 2x, US$ 0,36): p01 C, p03 A e C,
   p04 A e C, p10 C (caixa voltou), p12 A, B e C (escrivaninha larga: guia enche o quadro, borda 86-96%). p12 foi K22 com aviso.
 - Borda na 1ª e não refeitas (produto já tinha 2 boas): p02 C, p05 C, p06 B, p07 A, p09 C (US$ 0,20). Sonnet reprovou p11 C (bancada bagunçada).
+
+## Lista 11/11 A (11/11)
+- 71 imagens (45 de 1ª + 26 refações) e 26 clipes, US$ 5,41 de 8. Refações perdidas (falharam 2x, ~US$ 0,67): p01 A, p03 B e C (grade com
+  hastes cromadas inventadas), p04 A, B e C (cama enche o quadro), p07 B e C, p09 B e C (espelho com guia: borda 90-95%), p12 A e B,
+  p14 A, B e C (freezer encostando na borda), p15 B (garrafas de óleo na bancada) e C (frasco de sabonete na pia). p04, p14, p15 = K22 com aviso.
+- Sonnet reprovou 7 cenas já aprovadas pela Gemini: p03 B/C (detalhe inventado), p06 A, p10 A, p14 B, p15 B/C (enfeite/objeto proibido).
+- A máquina reiniciou no meio da fase 1 e o fiscal_gemini.py travou com resposta em lista da Gemini (corrigido). Edição renderizada
+  2 vezes (grátis) para pegar a seta nova do botão "Ver o preço".

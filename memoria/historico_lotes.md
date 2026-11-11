@@ -3,6 +3,24 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 11/11 A (11/11 ~03h20 UTC)
+- 15 produtos com A, B e C (45 vídeos, 1111A-01..15, trabalhos p400-p414, 12 s, seta do "Ver o preço" para baixo) na aba Conferir, pendentes.
+  Gasto US$ 5,41 de 8 (71 imagens = 45 + 26 refações; 26 clipes). Nenhum pulado. Tinder: os 15 em `pronto`.
+- Carrossel: 8 produtos no Drive (nota >= 8: p02, p06, p07, p08, p09, p11, p12, p13); fora p01 (7), p03, p05, p10 (técnicos), p04, p14, p15.
+- K24: 6 largos (p01, p07, p08, p09, p12, p14) = 18 cenas; 4 passaram de 1ª (p01 C, p07 A, p08 B, p12 C). Guia em p08, p09, p14
+  (foto 01 boa): 1 de 9 de 1ª; o Nano Banana manteve o produto igual à foto (cor, palhinha, assento azul do p08), mas a guia
+  enche o quadro (p09 B/C borda 90-95%, p14 encostando). p01, p07, p12 do zero (foto 01 com texto/cortada).
+- K23: 5 cenas reprovadas por enfeite/objeto (Sonnet: p06 A, p10 A, p14 B, p15 B, p15 C); refeitas 1x: p06 A e p10 A aprovadas,
+  p14 B (borda), p15 B (garrafas) e p15 C (frasco) falharam. Nenhum clipe com enfeite mudando (Fiscal de vídeo aprovou os 32).
+- K22 com aviso "cenas reprovadas pela fiscal: confira": p04 Peseira (A, B, C), p14 Freezer (A, C), p15 Aquecedor (só A).
+- Cenas que restaram: p03, p07, p09, p12 só 1 cena; p01 (B, C) e p02 (A, C) com 2; os demais com 3.
+- Avisos para a dona (cor da foto 01 / referência): p01 pretas (ref foto 07; título 150 kg x foto 120 kg: sem peso); p02 preta (foto 01
+  colagem, refs 02-04); p03 aro e grade pretos com corpo inox (foto 01 cartaz); p04 marrom mocha (10 cores; 4 tamanhos, sem medida);
+  p05 cobre (só 2 fotos, ref 02); p06 rosa com estrutura preta (foto 01 com mulher e bebê; ref 02); p07 cru com borda caramelo;
+  p08 assento AZUL-claro da foto 01 (título diz linho bege); p09 cinamomo, na horizontal; p10 inox (torneiras com manípulo diferente
+  do anúncio, detalhe miúdo); p11 cinza-grafite (todas as fotos com propaganda: do zero); p12 creme-areia (anúncio tem outras cores);
+  p13 rosa pink (outras cores fora); p14 cinza-aço; p15 preto (ref foto 07; medidas discordam: sem número).
+
 ## Lista 09/11 A (09/11 ~04h30 UTC)
 - 13 produtos com A, B e C (39 vídeos, 0911A-01..13, trabalhos p387-p399, 12 s) na aba Conferir, pendentes.
   Gasto US$ 4,42 de 8 (51 imagens = 39 + 12 refações; 24 clipes). Nenhum pulado. Tinder: os 13 em `pronto`.
