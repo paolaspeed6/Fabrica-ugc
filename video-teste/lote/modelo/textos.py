@@ -11,6 +11,7 @@ for f in sorted(B.glob('p??-textos.json')):
     T[k] = dict(slug=p['slug'], nome=p['nome'], link=LINKS[k[1:]], links=L[k], ac=p['ac'], a=p['a'], b=p['b'], r=p['r'], en=p['en'], ext=p['ext'],
                 letras=p.get('letras', False), c=p['c'], leg_a=p['leg_a'], leg_b=p['leg_b'], leg_c=p['leg_c'], leg_r=leg_r)
     for v in 'abc': assert len(T[k][f'leg_{v}']) < 150, (k, v, len(T[k][f'leg_{v}']))
+    for i, c in enumerate(p['b']['cenas']): assert c[0] and c[1], (k, 'b.cenas', i, 'linha grande vazia: o layout B quebra (Lista 11/11 B)')
 import re  # 02/11: o layout desenha emoji como quadradinho (5 ganchos da Lista 02/11 A); tira emoji dos textos do vídeo
 _e = re.compile(r'\s*[\U0001F300-\U0001FAFF\u2600-\u27BF]\ufe0f?')
 def _sem(x, k=''):
