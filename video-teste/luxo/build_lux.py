@@ -177,9 +177,10 @@ def _make(el):
             x0 += iw
         d.text((x0, h / 2), txt, font=f, fill=tc, anchor='lm')
         if icon == 'arrow':
-            ax = x0 + tw + 22; ay = h / 2; lw = max(3, h // 30)
-            d.line([(ax, ay), (ax + 30, ay)], fill=tc, width=lw)
-            d.line([(ax + 18, ay - 11), (ax + 30, ay), (ax + 18, ay + 11)], fill=tc, width=lw, joint='curve')
+            # seta PARA BAIXO depois do texto: o carrinho do app fica embaixo (a dona, 11/11: "a flecha pra baixo, onde o carrinho está")
+            ax = x0 + tw + 34; ay = h / 2 - 16; lw = max(3, h // 30)
+            d.line([(ax, ay), (ax, ay + 32)], fill=tc, width=lw)
+            d.line([(ax - 12, ay + 20), (ax, ay + 32), (ax + 12, ay + 20)], fill=tc, width=lw, joint='curve')
         if estilo == 'link':  # sublinhado fino
             d.line([(0, h / 2 + el.get('size', 46) * .72), (w - (0 if icon != 'arrow' else 0), h / 2 + el.get('size', 46) * .72)], fill=tc, width=2)
         img.alpha_composite(b, (40, 40))

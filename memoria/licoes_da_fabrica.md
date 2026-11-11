@@ -158,3 +158,5 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
   Sub ID por layout para medir qual gancho/versão vende mais.
 
 - 07/11 (a dona): imagens para carrossel (Insta + TikTok) só de produtos estratégicos, aesthetic, que chamem atenção. Peça de carro, ferramenta e produto técnico não são guardados. O `salvar_imagens.py` (fim da fase2) usa nota Gemini >= 8 e manda ao Drive em Carrossel/<dia>/<ID>_<slug>/, com ID, link e 3 frases.
+
+- 11/11: no botão "Ver o preço" a seta aponta PARA BAIXO (o carrinho do app fica embaixo), nunca para o lado. Feito em video-teste/luxo/build_lux.py (ícone arrow).
