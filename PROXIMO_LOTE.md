@@ -28,12 +28,13 @@ Atualizado: 2026-11-11 manhã (Lista 11/11 B entregue). Histórico completo: mem
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
-## Estado atual (11/11)
-- Último lote: Lista 11/11 B (27 vídeos na Conferir, US$ 3,17). Antes: Lista 11/11 A (45 vídeos, US$ 5,41). Fila do Tinder: vazia (os 9 aprovados foram produzidos).
-- Saldo WaveSpeed: confira com `curl -s https://api.wavespeed.ai/api/v3/balance` (~US$ 22,6 em 11/11).
-- Varredura diária nova (10/11): produto-campeao/afiliados/busca_diaria.py + troca de excluídos com o Kevin (TROCA_EXCLUIDOS.md).
+## Estado atual (12/11)
+- Último lote: Lista 12/11 B (45 vídeos na Conferir, US$ 4,93, 15 produtos, nenhum pulado), feito junto com a Lista 12/11 A (outra conversa).
+  Antes: Lista 11/11 B (27 vídeos) e 11/11 A (45). Fila do Tinder: aprovados 1-30 produzidos pelos lotes 12/11 A e B.
+- Saldo WaveSpeed: confira com `curl -s https://api.wavespeed.ai/api/v3/balance` (~US$ 12,1 em 12/11 após o lote B).
+- Varredura diária (10/11): produto-campeao/afiliados/busca_diaria.py + troca de excluídos com o Kevin (TROCA_EXCLUIDOS.md).
 - Carrossel: salvar_imagens.py (fim da fase2) manda só produtos aesthetic (nota >= 8) ao Drive, Carrossel/<dia>/.
-- Botão "Ver o preço": seta para baixo (11/11). Faça git pull antes da fase2.
+- Dois lotes ao mesmo tempo: use N0=<nº> no produzir.sh (fase2) para não repetir pNNN; gerar_links pode dar "Rate limit" (repetir com pausa).
 - O que cada lote anterior fez (pulados, avisos, K22-K25): memoria/historico_lotes.md (topo). Só leia se precisar.
 
 ## Redes sociais (Reels automático): PENDENTE

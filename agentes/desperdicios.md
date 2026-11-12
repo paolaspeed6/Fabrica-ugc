@@ -115,3 +115,9 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 - 5 refações de imagem (US$ 0,20): p02 A (borda), p08 B e C (borda/enfeite), p09 A (xícara) e C (costura do encosto); p08 B/C e p09 A/C falharam de novo.
 - 1 clipe reprovado (US$ 0,10): p06 A (ventiladores giraram e distorceram). Sonnet reprovou p05 C (frascos) e p08 C (enfeite encostando).
 - Edição de p02 e p05 quebrou (texto vazio na 2ª linha grande do layout B); refeita grátis; trava nova no textos.py.
+
+## Lista 12/11 B (12/11)
+- 19 refações de imagem (US$ 0,75): p01 B C, p02 A B C, p04 B, p05 A C, p07 B C, p08 B C, p09 A B, p10 A C, p13 B C, p14 C (borda/Gemini); 14 falharam de novo
+  (p01 B, p02 A B, p04 B, p05 A C, p07 C, p08 B C, p09 A B, p10 A C, p13 B). p03 A e p06 C falharam na 1ª rodada (sem refação).
+- Sonnet reprovou 6 cenas já liberadas (sem 3ª imagem): p01 A (frascos ao fundo), p03 C (cadeira encostando), p04 B (braçadeira inventada),
+  p04 C (luvas parecendo mãos), p12 B (poltronas fundidas), p14 A (vaso de vidro). Nenhum clipe reprovado (24 de 24).

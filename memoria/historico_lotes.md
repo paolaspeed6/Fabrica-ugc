@@ -3,6 +3,19 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 12/11 B (12/11 ~07h UTC; feita ao mesmo tempo que a Lista 12/11 A, trabalhos p440-p454)
+- 15 produtos com A, B e C (45 vídeos, 1211B-01..15, 12 s) na aba Conferir, pendentes. Gasto US$ 4,93 de 8 (64 imagens = 45 + 19 refações;
+  24 clipes, todos aprovados). Nenhum pulado. Tinder: os 15 em `pronto`. Saldo WaveSpeed US$ 12,12 (depois dos 2 lotes andando).
+- Carrossel: 9 produtos no Drive (nota >= 8: p02, p03, p07, p09, p11, p12, p13, p14, p15); fora p01, p04, p05, p06, p08 (técnicos/estética), p10 (nota 4).
+- K24: 7 largos (p02, p03, p05, p09, p10, p11, p12) = 21 cenas; 9 passaram de 1ª (Gemini + Sonnet). Com guia (p03, p09, p11, p12): 7 de 12,
+  produto igual à foto (conferi as 4 guias). Do zero (p02, p05, p10: foto 01 com objetos/infográfico/colagem): 2 de 9.
+- K23: 4 cenas reprovadas por enfeite/objeto pela Sonnet (p01 A frascos, p03 C cadeira encostando, p04 C luvas, p14 A vaso de vidro). Nenhum clipe com enfeite mudando.
+- Cenas que restaram: p01, p02, p03, p04, p05, p08, p09, p10 só 1 cena; p06, p07, p12, p13, p14 com 2; p11 e p15 com 3. Aviso: p09 C cena quase parada.
+- Cores (foto 01/referência): p01 inox com painel preto (mini incubadora fora: tubos); p02 nature/off-white (tampo vazio); p07 veludo marinho
+  e base dourada; p08 roxa; p09 rosa; p10 preta; p11 off-white; p12 pretas; p14 bouclê cinza; p15 bege.
+- p06 Bosch: corpo Bosch real, mas anúncio diz "Original" e potência discorda (850/980/1200 W): textos sem potência; a dona decide.
+- Erro novo: nenhum. Shopee deu "Rate limit" no gerar_links (2 lotes ao mesmo tempo): repetir com pausa de 90 s resolveu. N0=440 no produzir.sh do lote para não repetir pNNN do lote A.
+
 ## Lista 11/11 B (11/11 ~08h40 UTC)
 - 9 produtos com A, B e C (27 vídeos, 1111B-01..09, trabalhos p415-p423, 12 s) na aba Conferir, pendentes.
   Gasto US$ 3,17 de 5 (32 imagens = 27 + 5 refações; 19 clipes). Nenhum pulado. Tinder: os 9 em `pronto`. Saldo WaveSpeed US$ 22,64.
