@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-11 manhã (Lista 11/11 B entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-12 manhã (Listas 12/11 A e B entregues). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -29,12 +29,14 @@ Atualizado: 2026-11-11 manhã (Lista 11/11 B entregue). Histórico completo: mem
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
 ## Estado atual (12/11)
-- Último lote: Lista 12/11 B (45 vídeos na Conferir, US$ 4,93, 15 produtos, nenhum pulado), feito junto com a Lista 12/11 A (outra conversa).
+- Últimos lotes: Lista 12/11 A (45 vídeos na Conferir, US$ 5,60) e Lista 12/11 B (45 vídeos, US$ 4,93), feitos ao mesmo tempo, 15 produtos cada, nenhum pulado.
   Antes: Lista 11/11 B (27 vídeos) e 11/11 A (45). Fila do Tinder: aprovados 1-30 produzidos pelos lotes 12/11 A e B.
-- Saldo WaveSpeed: confira com `curl -s https://api.wavespeed.ai/api/v3/balance` (~US$ 12,1 em 12/11 após o lote B).
+- Saldo WaveSpeed: confira com `curl -s https://api.wavespeed.ai/api/v3/balance` (~US$ 12,1 em 12/11 após os dois lotes).
 - Varredura diária (10/11): produto-campeao/afiliados/busca_diaria.py + troca de excluídos com o Kevin (TROCA_EXCLUIDOS.md).
 - Carrossel: salvar_imagens.py (fim da fase2) manda só produtos aesthetic (nota >= 8) ao Drive, Carrossel/<dia>/.
 - Dois lotes ao mesmo tempo: use N0=<nº> no produzir.sh (fase2) para não repetir pNNN; gerar_links pode dar "Rate limit" (repetir com pausa).
+- Botão "Ver o preço": seta para baixo (11/11). Faça git pull antes da fase2.
+- produzir.sh usa /home/user/fabrica-ugc (minúsculo): se a pasta for Fabrica-ugc, crie o link: ln -s /home/user/Fabrica-ugc /home/user/fabrica-ugc.
 - O que cada lote anterior fez (pulados, avisos, K22-K25): memoria/historico_lotes.md (topo). Só leia se precisar.
 
 ## Redes sociais (Reels automático): PENDENTE

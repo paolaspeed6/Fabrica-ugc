@@ -15,6 +15,20 @@
   e base dourada; p08 roxa; p09 rosa; p10 preta; p11 off-white; p12 pretas; p14 bouclê cinza; p15 bege.
 - p06 Bosch: corpo Bosch real, mas anúncio diz "Original" e potência discorda (850/980/1200 W): textos sem potência; a dona decide.
 - Erro novo: nenhum. Shopee deu "Rate limit" no gerar_links (2 lotes ao mesmo tempo): repetir com pausa de 90 s resolveu. N0=440 no produzir.sh do lote para não repetir pNNN do lote A.
+## Lista 12/11 A (12/11 ~07h UTC)
+- 15 produtos com A, B e C (45 vídeos, 1211A-01..15, trabalhos p424-p438, 12 s) na aba Conferir, pendentes.
+  Gasto US$ 5,60 de 8 (58 imagens = 45 + 13 refações; 33 clipes, todos aprovados). Nenhum pulado. Tinder: os 15 em `pronto`.
+- Carrossel: 10 produtos no Drive (nota >= 8: p01, p03, p04, p05, p07, p10, p12, p13, p14, p15); fora p02, p06, p08, p09 (6), p11.
+- K24: 5 largos (p01, p03, p09, p10, p12, todos com guia) = 15 cenas; 9 passaram de 1ª (p01 A/B, p03 B/C, p09 A/B, p10 A, p12 A/C).
+  Guia do p01: o Nano Banana manteve as banquetas iguais à foto (losangos, aro preto). Reprovações dos largos: borda (guia enche o quadro) e p10 B/C fundo.
+- K23: 5 cenas reprovadas por enfeite/fundo (Gemini: p04 A, p06 B, p10 B, p10 C; Sonnet: p15 B). p04 A e p06 B refeitas e aprovadas. Nenhum clipe com enfeite mudando.
+- K22: nenhum. Cenas que restaram: p08 e p10 só 1 (B / A); p01, p02, p03, p05, p09, p12, p13, p15 com 2; os demais com 3.
+- Recortes de referência: p07 01c (texto da propaganda tirado), p08 03c (colagem: só a fileira das 4 ferramentas), p13 01c (sem círculos com mulher).
+- Avisos (cor da foto 01/referência): p01 taupe (3 alturas no anúncio, usei 70 cm); p02 inox/preto, ref foto 06 (foto 01 com tubos e texto), sem medida;
+  p03 palha, sem medidas; p05 cinza (outras cores fora); p06 laranja, ref foto 02; p07 caramelo (fotos 05-11 são outro modelo);
+  p08 amarelo/preto, 4 baterias nas fotos x 2 no texto; p09 azul royal; p10 mel com roupa de cama verde; p11 preto (foto 01 colagem, refs 02/04);
+  p12 caramelo; p13 mel; p14 rosa; p15 bege (2 almofadas tratadas como adereço; foto 01 com quadro "Beleza").
+- Erro de ambiente: a pasta veio como /home/user/Fabrica-ugc; o produzir.sh usa /home/user/fabrica-ugc (criei o link).
 
 ## Lista 11/11 B (11/11 ~08h40 UTC)
 - 9 produtos com A, B e C (27 vídeos, 1111B-01..09, trabalhos p415-p423, 12 s) na aba Conferir, pendentes.

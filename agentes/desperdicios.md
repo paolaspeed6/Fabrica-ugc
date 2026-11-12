@@ -121,3 +121,6 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
   (p01 B, p02 A B, p04 B, p05 A C, p07 C, p08 B C, p09 A B, p10 A C, p13 B). p03 A e p06 C falharam na 1ª rodada (sem refação).
 - Sonnet reprovou 6 cenas já liberadas (sem 3ª imagem): p01 A (frascos ao fundo), p03 C (cadeira encostando), p04 B (braçadeira inventada),
   p04 C (luvas parecendo mãos), p12 B (poltronas fundidas), p14 A (vaso de vidro). Nenhum clipe reprovado (24 de 24).
+## Lista 12/11 A (12/11)
+- 13 refações de imagem (US$ 0,51); falharam de novo: p05 B, p08 A e C (borda), p10 B e C (sapatos/bolsa no fundo, borda); p15 B (Sonnet: arara de roupas) deu erro na refação (timeout).
+- Nenhum clipe reprovado (33 aprovados).
