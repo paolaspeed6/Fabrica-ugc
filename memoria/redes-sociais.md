@@ -35,3 +35,9 @@ Cenários e imagens do carrossel seguem isso.
 - E_cozinha_branca (produto-campeao/redes/cenarios/E_cozinha_branca.jpg): cozinha branca romântica, bancada de mármore branco,
   vaso branco com peônias rosa, armários creme com puxador dourado, janela em arco, lustre de cristal, tapete floral rosa.
   Toda foto de produto do carrossel nasce desse cenário (mesma bancada, mesma luz).
+
+## Filtro estratégico da varredura de carrossel (a dona, 13/11)
+"Quero produtos estratégicos, com bons preços e benefícios; um papai noel de 300 reais é inviável."
+- Preço R$ 15 a R$ 90 (pontua mais até R$ 50), nota ≥ 4,7, 50+ vendidos, comissão ≥ 10% e ≥ R$ 2.
+- Gemini recebe o preço e dá "vale_o_preco" (≥ 7 para entrar) e o "benefício" que vende; tira o que não é de casa
+  (folheto, embalagem, caixa de doces, lembrancinha).

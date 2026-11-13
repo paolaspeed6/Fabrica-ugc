@@ -159,6 +159,7 @@ function cartao(it,total){
   if(it.possivel_duplicata) chips.append(el("span","chip dup","⚠ possível duplicata da mesma loja"));
   if(it.largo) chips.append(el("span","chip dup","⚠ largo: a IA costuma cortar, gasta mais"));
   corpo.append(chips);
+  if(it.beneficio) corpo.append(el("div","troque","💡 "+it.beneficio));
   if(it.troque_isso){ const tq=el("div","troque"); tq.append(el("span",null,"Troque isso: "+it.troque_isso+" → "),el("b",null,"por isso!")); corpo.append(tq); }
   const linha=el("div","linha");
   const a=el("a","abrir","Abrir no app"); a.href=it.link; a.target="_blank"; a.rel="noopener";
