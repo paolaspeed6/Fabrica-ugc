@@ -44,6 +44,6 @@ Cenários e imagens do carrossel seguem isso.
 
 ## Filtro estratégico da varredura de carrossel (a dona, 13/11)
 "Quero produtos estratégicos, com bons preços e benefícios; um papai noel de 300 reais é inviável."
-- Preço R$ 15 a R$ 90 (pontua mais até R$ 50), nota >= 4,7, 50+ vendidos, comissão >= 10% e >= R$ 2.
+- Preço R$ 30 a R$ 150 (pontua mais até R$ 80), nota >= 4,7, 50+ vendidos, comissão >= 10% e NO MÍNIMO R$ 10 por venda (a dona, 13/11).
 - Gemini recebe o preço e dá "vale_o_preco" (>= 7 para entrar) e o "benefício" que vende; tira o que não é de casa
   (folheto, embalagem, caixa de doces, lembrancinha).

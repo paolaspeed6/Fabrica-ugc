@@ -21,7 +21,7 @@ Para cada foto numerada, devolva um JSON: lista de {"n": número, "beleza": 0-10
 "troque_isso": "o item comum e sem graça que este produto substitui, curto, em português (ex.: 'potinhos brancos lisos')",
 "problema": "vazio, ou o que atrapalha (foto com texto/montagem, produto feio, não é de casa, parece barato)"}.
 Cada foto vem com o PREÇO. Dê também "vale_o_preco": 0-10 (o que a pessoa leva pelo preço: kit com várias peças, uso o ano todo,
-qualidade aparente, compra por impulso fácil; um papai noel de R$ 300 é inviável = nota baixa) e "beneficio": frase curta em português
+qualidade aparente, compra por impulso fácil; um papai noel de R$ 300 é inviável = nota baixa; até R$ 150 só se for kit grande ou peça que dura anos) e "beneficio": frase curta em português
 com o benefício que vende (ex.: 'kit com 8 bolas pelo preço de 2', 'serve na mesa e na árvore'). Produto que não é de casa
 (embalagem, folheto, lembrancinha, caixa de doces, festa infantil) = problema "não é de casa".
 Notas altas só para o que uma garota de 25 anos salvaria E compraria sem pensar duas vezes."""
@@ -61,10 +61,11 @@ def main():
         preco, vend, nota = float(p['priceMin'] or 0), int(p['sales'] or 0), float(p['ratingStar'] or 0)
         com = float(p['commission'] or 0)
         # a dona, 13/11: "produtos estratégicos, com bons preços e benefícios; um papai noel de 300 reais é inviável".
-        if k in fora or not (15 <= preco <= 90) or nota < 4.7 or vend < 50: continue
-        if float(p['commissionRate']) < 0.10 or com < 2: continue
+        # a dona, 13/11 (2ª): "e que também tenha no mínimo 10 reais de comissão" -> preço sobe para até R$ 150 (R$ 10 a 15% = R$ 67+).
+        if k in fora or not (30 <= preco <= 150) or nota < 4.7 or vend < 50: continue
+        if float(p['commissionRate']) < 0.10 or com < 10: continue
         if any(w in V.plano(p['productName']) for w in V.PROIBIDO): continue
-        n = min(com / 8, 1) * 3 + min(float(p['commissionRate']) / 0.2, 1) * 2 + min(math.log10(vend + 1) / 4, 1) * 3 + (1.5 if preco <= 50 else 0.5 if preco <= 70 else 0)
+        n = min(com / 8, 1) * 3 + min(float(p['commissionRate']) / 0.2, 1) * 2 + min(math.log10(vend + 1) / 4, 1) * 3 + (1.5 if preco <= 80 else 0.5 if preco <= 110 else 0) + min((com - 10) / 15, 1) * 2
         n += 1 if float(p['sellerCommissionRate'] or 0) > 0 else 0
         lista.append((n, k, p))
     lista.sort(reverse=True); lista = lista[:a.top * 3]
