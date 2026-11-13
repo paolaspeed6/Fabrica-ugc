@@ -24,3 +24,9 @@
 - Estilo 1 "Elegante": branco com sombra suave; linha pequena em Cormorant Garamond itálico, linha principal em Cormorant
   Garamond 600 MAIÚSCULA grande, fecho em Great Vibes cursiva (ex.: "Parece de / LOJA CARA, / mas é da Shopee").
   Assinatura "aguiiar lar" pequena embaixo. Modelo: produto-campeao/redes/capas/teste.html (#c1). Fontes em video-teste/fontes/redes/.
+
+## Referência de casa que ela mandou (13/11): "esse é o estilo de casa que eu gosto"
+Cozinha americana clássica: armários brancos ou off-white estilo shaker com puxadores pretos ou dourados, armários de vidro,
+bancada de MADEIRA (butcher block) ou mármore branco, azulejo metrô branco, flores rosa (tulipas, peônias, rosas) em vaso branco,
+tapete xadrez bege ou floral rosa, cesta de vime, banquinho de madeira, chaleira esmaltada branca, tábuas de madeira, luz quente e suave.
+Cenários e imagens do carrossel seguem isso.
