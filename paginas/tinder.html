@@ -27,6 +27,7 @@ h1 em{font-style:normal;color:var(--accent)}
 .sub{color:var(--muted);margin:4px 0 0;font-size:.9rem;font-weight:600;line-height:1.4}
 .tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:4px;background:var(--soft);border-radius:14px}
 .tab{min-width:0;border:0;background:transparent;color:var(--muted);border-radius:10px;padding:7px 2px;font:700 .8rem var(--body);line-height:1.2;cursor:pointer;font-variant-numeric:tabular-nums;transition:background .16s ease,color .16s ease}
+.tab i{font-style:normal}
 .tab span{display:block;font-weight:800;font-size:1rem;color:var(--fg)}
 .tab[aria-pressed="true"]{background:var(--card);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.12)}
 .palco{position:relative}
@@ -78,6 +79,14 @@ input[type=number]{width:96px;font:800 1rem var(--body);padding:11px 10px;border
 h2{font:800 1.05rem var(--display);margin:8px 0 0}
 .vazio{color:var(--muted);font-weight:700;text-align:center;padding:32px 12px;border:2px dashed var(--line);border-radius:18px;line-height:1.5}
 button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.modos{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.modo{border:2px solid var(--line);background:var(--card);color:var(--fg);border-radius:14px;padding:11px 6px;font:800 .95rem var(--body);cursor:pointer}
+.modo[aria-pressed="true"]{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,var(--card));color:var(--accent)}
+body.redes{--accent:#d6457a;--accent-fg:#fff}
+.chip.rosa{background:color-mix(in srgb,#d6457a 14%,transparent);color:#c0306a}
+.troque{background:var(--soft);border-radius:14px;padding:10px 12px;font-size:.9rem;line-height:1.35}
+.troque b{color:var(--accent)}
+.item.sel{outline:3px solid var(--accent)}
 @media (prefers-reduced-motion:reduce){.swipe.volta,.swipe.sai,.btn,.leve,.barra i{transition:none}}
 </style>
 
@@ -86,23 +95,36 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
     <h1>Tinder <em>Shopee</em></h1>
     <p class="sub" id="sub">Produtos novos todo dia às 7h. Aprove os que valem vídeo.</p>
   </header>
+  <div class="modos" role="group" aria-label="Área">
+    <button class="modo" id="m-shopee" aria-pressed="true">🛍️ Shopee Vídeo</button>
+    <button class="modo" id="m-redes" aria-pressed="false">💗 REDES SOCIAIS</button>
+  </div>
   <div class="tabs" role="group" aria-label="Abas">
     <button class="tab" id="t-escolher" aria-pressed="true">Escolher <span id="n-escolher"></span></button>
-    <button class="tab" id="t-fila" aria-pressed="false">Fila <span id="n-fila"></span></button>
-    <button class="tab" id="t-producao" aria-pressed="false">Produção <span id="n-producao"></span></button>
+    <button class="tab" id="t-fila" aria-pressed="false"><i id="l-fila">Fila</i> <span id="n-fila"></span></button>
+    <button class="tab" id="t-producao" aria-pressed="false"><i id="l-producao">Produção</i> <span id="n-producao"></span></button>
     <button class="tab" id="t-descartados" aria-pressed="false">Descartados <span id="n-descartados"></span></button>
   </div>
   <main id="tela"><div class="vazio">Carregando os produtos…</div></main>
 </div>
 
 <script>
-let db=null, itens=[], aba="escolher", loteMin=15, ultimo=null, confirmarTodos=false;
+let db=null, itens=[], itensS=[], itensR=[], modo="shopee", diaS="", diaR="", aba="escolher", loteMin=15, ultimo=null, confirmarTodos=false;
 const $=s=>document.querySelector(s);
 const brl=v=>"R$ "+Number(v).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
 const el=(tag,cls,txt)=>{const e=document.createElement(tag); if(cls) e.className=cls; if(txt!=null) e.textContent=txt; return e;};
 const st=it=>it.status||"novo";
+const COL=()=>modo==="redes"?"carrossel":"candidatos";
 function grupos(){
+  itens=modo==="redes"?itensR:itensS;
   const g={escolher:[],fila:[],producao:[],descartados:[]};
+  if(modo==="redes"){
+    for(const it of itens){ const s=st(it);
+      if(s==="novo") g.escolher.push(it); else if(s==="descartado") g.descartados.push(it); else g.fila.push(it); }
+    g.producao=itensS.filter(i=>st(i)==="pronto"||i.combo).sort((a,b)=>(b.combo?1:0)-(a.combo?1:0)||(b.comissao_rs||0)-(a.comissao_rs||0));
+    g.escolher.sort((a,b)=>(b.dia||"").localeCompare(a.dia||"")||b.pontos-a.pontos);
+    return g;
+  }
   for(const it of itens){ const s=st(it);
     if(s==="novo") g.escolher.push(it); else if(s==="aprovado") g.fila.push(it);
     else if(s==="descartado") g.descartados.push(it); else g.producao.push(it); }
@@ -110,7 +132,7 @@ function grupos(){
   g.fila.sort((a,b)=>(a.decidido_em||"").localeCompare(b.decidido_em||""));
   return g;
 }
-async function salvar(it,dados){ if(!db) return; try{ await db.doc("candidatos/"+it._id).update(dados); }catch(e){ $("#sub").textContent="Não salvou. Confira a conexão e tente de novo."; } }
+async function salvar(it,dados){ if(!db) return; try{ await db.doc((it._col||COL())+"/"+it._id).update(dados); }catch(e){ $("#sub").textContent="Não salvou. Confira a conexão e tente de novo."; } }
 async function decidir(it,status){
   const inp=$("#videos"); const dados={status,decidido_em:new Date().toISOString()};
   if(inp&&inp.value.trim()!=="") dados.afiliados=Number(inp.value);
@@ -128,6 +150,8 @@ function cartao(it,total){
     .forEach(([k,v,cl])=>{const n=el("div","num"+(cl?" "+cl:"")); n.append(el("small",null,k),el("b",null,String(v))); nums.append(n);});
   corpo.append(nums);
   const chips=el("div","chips");
+  if(it.tema) chips.append(el("span","chip rosa",(it.tema==="Natal"?"🎄 ":"🌸 ")+it.tema));
+  if(it.beleza!=null) chips.append(el("span","chip rosa","beleza "+it.beleza+"/10"));
   if(it.parecidos!=null&&it.parecidos<=5) chips.append(el("span","chip top","nome raro"));
   if(it.novo) chips.append(el("span","chip top","anúncio novo"));
   if(it.extra_vendedor) chips.append(el("span","chip","comissão extra"));
@@ -135,11 +159,12 @@ function cartao(it,total){
   if(it.possivel_duplicata) chips.append(el("span","chip dup","⚠ possível duplicata da mesma loja"));
   if(it.largo) chips.append(el("span","chip dup","⚠ largo: a IA costuma cortar, gasta mais"));
   corpo.append(chips);
+  if(it.troque_isso){ const tq=el("div","troque"); tq.append(el("span",null,"Troque isso: "+it.troque_isso+" → "),el("b",null,"por isso!")); corpo.append(tq); }
   const linha=el("div","linha");
   const a=el("a","abrir","Abrir no app"); a.href=it.link; a.target="_blank"; a.rel="noopener";
   const inp=el("input"); inp.type="number"; inp.min="0"; inp.inputMode="numeric"; inp.id="videos"; inp.placeholder="Vídeos"; inp.setAttribute("aria-label","Vídeos de criadores (opcional)");
   if(it.afiliados!=null) inp.value=it.afiliados;
-  linha.append(a,inp); corpo.append(linha); c.append(corpo); palco.append(c); box.append(palco);
+  linha.append(a); if(modo!=="redes") linha.append(inp); corpo.append(linha); c.append(corpo); palco.append(c); box.append(palco);
   const reduz=matchMedia("(prefers-reduced-motion: reduce)").matches;
   // cor do arraste: verde à direita, vermelho à esquerda, mais forte quanto mais longe
   const pintar=dx=>{ const f=Math.min(Math.abs(dx)/140,1);
@@ -192,9 +217,33 @@ function render(){
   for(const k in g){ $("#n-"+k).textContent=g[k].length; $("#t-"+k).setAttribute("aria-pressed",String(k===aba)); }
   const tela=$("#tela"); tela.replaceChildren();
   if(!db){ tela.append(el("div","vazio","Abra esta página no app do Claude, logado, para ver os produtos.")); return; }
+  $("#l-fila").textContent=modo==="redes"?"Por tema":"Fila"; $("#l-producao").textContent=modo==="redes"?"Vídeos":"Produção";
+  const dia=modo==="redes"?diaR:diaS;
+  $("#sub").textContent=modo==="redes"
+    ? (dia?"Varredura de carrossel: "+dia+". ":"")+"Produtos fofos e bonitos para carrossel, no estilo da casa: romântico, branco com madeira, plantas, rosa e flores. Aprove os que entram."
+    : (dia?"Última busca: "+dia+". Arraste para a direita para aprovar, para a esquerda para descartar.":"Produtos novos todo dia às 7h. Aprove os que valem vídeo.");
   if(aba==="escolher"){
-    if(!g.escolher.length){ tela.append(el("div","vazio","Tudo escolhido. Os próximos chegam amanhã às 7h.")); return; }
+    if(!g.escolher.length){ tela.append(el("div","vazio",modo==="redes"?"Nenhum produto de carrossel para escolher. A próxima varredura de carrossel chega em breve.":"Tudo escolhido. Os próximos chegam amanhã às 7h.")); return; }
     tela.append(cartao(g.escolher[0],g.escolher.length)); return;
+  }
+  if(modo==="redes"&&aba==="fila"){
+    const box=el("div","list"); const temas={};
+    g.fila.forEach(it=>{ (temas[it.tema||"Outros"] ||= []).push(it); });
+    Object.keys(temas).sort((a,b)=>temas[b].length-temas[a].length).forEach(t=>{ const l=temas[t];
+      box.append(el("h2",null,(t==="Natal"?"🎄 ":"🌸 ")+t+" · "+l.length+(l.length>=4?" · pronto para carrossel ✓":" · faltam "+(4-l.length)+" para um carrossel")));
+      l.forEach(it=>{ const v=el("button","leve","Tirar"); v.onclick=()=>salvar(it,{status:"novo"});
+        box.append(linhaItem(it,brl(it.preco)+" · comissão "+brl(it.comissao_rs)+(it.status==="pronto"?" · postado":""),v)); }); });
+    if(!g.fila.length) box.append(el("div","vazio","Nenhum aprovado ainda. Com 4 do mesmo tema já dá um carrossel."));
+    tela.append(box); return;
+  }
+  if(modo==="redes"&&aba==="producao"){
+    const box=el("div","list"); const sel=g.producao.filter(i=>i.combo).length;
+    box.append(el("div","aviso",sel?`${sel} escolhidos para vídeos com vários produtos. Toque para tirar ou pôr.`:"Toque nos produtos que já têm vídeo para juntar num vídeo com vários produtos (3 a 5 por vídeo)."));
+    g.producao.forEach(it=>{ const b=el("button","leve"+(it.combo?" forte":""),it.combo?"✓ No vídeo":"Pôr no vídeo");
+      b.onclick=()=>salvar({...it,_col:"candidatos"},{combo:!it.combo});
+      const d=linhaItem(it,brl(it.preco)+" · comissão "+brl(it.comissao_rs||0),b); if(it.combo) d.classList.add("sel"); box.append(d); });
+    if(!g.producao.length) box.append(el("div","vazio","Nenhum produto com vídeo pronto ainda."));
+    tela.append(box); return;
   }
   if(aba==="fila"){
     const box=el("div","list"); const n=g.fila.length;
@@ -220,15 +269,21 @@ function render(){
   tela.append(box);
 }
 ["escolher","fila","producao","descartados"].forEach(k=>$("#t-"+k).onclick=()=>{aba=k;confirmarTodos=false;render();});
+function trocarModo(m){ modo=m; aba="escolher"; ultimo=null; confirmarTodos=false; document.body.classList.toggle("redes",m==="redes");
+  $("#m-shopee").setAttribute("aria-pressed",String(m==="shopee")); $("#m-redes").setAttribute("aria-pressed",String(m==="redes"));
+  try{localStorage.setItem("modo",m);}catch(_){} render(); }
+$("#m-shopee").onclick=()=>trocarModo("shopee"); $("#m-redes").onclick=()=>trocarModo("redes");
+try{ if(localStorage.getItem("modo")==="redes") trocarModo("redes"); }catch(_){}
+const ultDia=l=>{ const d=[...new Set(l.map(i=>i.dia).filter(Boolean))].sort(); return d.length?d.at(-1).split("-").reverse().join("/"):""; };
 (async()=>{
   db = await (window.claude?.use ? window.claude.use("db") : null);
   if(!db){ render(); return; }
   db.doc("config/geral").onSnapshot(s=>{ const d=s.exists?s.data():null; if(d&&d.lote_min) { loteMin=d.lote_min; render(); } });
   db.collection("candidatos").onSnapshot(s=>{
-    itens=s.docs.map(d=>({...d.data(),_id:d.id}));
-    const dias=[...new Set(itens.map(i=>i.dia).filter(Boolean))].sort();
-    if(dias.length) $("#sub").textContent="Última busca: "+dias.at(-1).split("-").reverse().join("/")+". Arraste para a direita para aprovar, para a esquerda para descartar.";
-    render();
+    itensS=s.docs.map(d=>({...d.data(),_id:d.id,_col:"candidatos"})); diaS=ultDia(itensS); render();
+  }, ()=>render());
+  db.collection("carrossel").onSnapshot(s=>{
+    itensR=s.docs.map(d=>({...d.data(),_id:d.id,_col:"carrossel"})); diaR=ultDia(itensR); render();
   }, ()=>render());
 })();
 </script>
