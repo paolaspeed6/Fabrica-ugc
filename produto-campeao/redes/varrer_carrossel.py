@@ -20,7 +20,11 @@ Para cada foto numerada, devolva um JSON: lista de {"n": número, "beleza": 0-10
 "estilo": 0-10 (quão combina com a identidade romântica (branco, madeira, plantas, rosa, flores) ou Natal fofo), "tema": um de ["Natal","Cozinha fofa","Café da manhã","Mesa posta","Quarto","Banheiro","Sala","Enxoval"],
 "troque_isso": "o item comum e sem graça que este produto substitui, curto, em português (ex.: 'potinhos brancos lisos')",
 "problema": "vazio, ou o que atrapalha (foto com texto/montagem, produto feio, não é de casa, parece barato)"}.
-Notas altas só para o que uma garota de 25 anos salvaria."""
+Cada foto vem com o PREÇO. Dê também "vale_o_preco": 0-10 (o que a pessoa leva pelo preço: kit com várias peças, uso o ano todo,
+qualidade aparente, compra por impulso fácil; um papai noel de R$ 300 é inviável = nota baixa) e "beneficio": frase curta em português
+com o benefício que vende (ex.: 'kit com 8 bolas pelo preço de 2', 'serve na mesa e na árvore'). Produto que não é de casa
+(embalagem, folheto, lembrancinha, caixa de doces, festa infantil) = problema "não é de casa".
+Notas altas só para o que uma garota de 25 anos salvaria E compraria sem pensar duas vezes."""
 
 def busca(i, k):
     f = CK / f'r{i:03d}.json'
@@ -56,9 +60,11 @@ def main():
     for k, p in prods.items():
         preco, vend, nota = float(p['priceMin'] or 0), int(p['sales'] or 0), float(p['ratingStar'] or 0)
         com = float(p['commission'] or 0)
-        if k in fora or not (12 <= preco <= 250) or nota < 4.6 or vend < 20: continue
+        # a dona, 13/11: "produtos estratégicos, com bons preços e benefícios; um papai noel de 300 reais é inviável".
+        if k in fora or not (15 <= preco <= 90) or nota < 4.7 or vend < 50: continue
+        if float(p['commissionRate']) < 0.10 or com < 2: continue
         if any(w in V.plano(p['productName']) for w in V.PROIBIDO): continue
-        n = min(com / 15, 1) * 4 + (1 if float(p['commissionRate']) >= 0.1 else 0) + min(math.log10(vend + 1) / 4, 1) * 2
+        n = min(com / 8, 1) * 3 + min(float(p['commissionRate']) / 0.2, 1) * 2 + min(math.log10(vend + 1) / 4, 1) * 3 + (1.5 if preco <= 50 else 0.5 if preco <= 70 else 0)
         n += 1 if float(p['sellerCommissionRate'] or 0) > 0 else 0
         lista.append((n, k, p))
     lista.sort(reverse=True); lista = lista[:a.top * 3]
@@ -68,18 +74,18 @@ def main():
         bloco = lista[i:i + 12]; fotos = [foto(p['imageUrl']) for _, _, p in bloco]
         partes = [{'text': ESTILO}]
         for j, ((_, k, p), f) in enumerate(zip(bloco, fotos)):
-            if f: partes += [{'text': f'Foto {j}: {p["productName"][:90]}'}, {'inline_data': {'mime_type': 'image/jpeg', 'data': f}}]
+            if f: partes += [{'text': f'Foto {j}: {p["productName"][:90]} | preço R$ {float(p["priceMin"]):.2f}'}, {'inline_data': {'mime_type': 'image/jpeg', 'data': f}}]
         try: notas = {int(x['n']): x for x in G.chamar(partes)}
         except Exception as e: print('gemini falhou', e); continue
         for j, (n, k, p) in enumerate(bloco):
             x = notas.get(j)
-            if not x or x.get('problema') or x['beleza'] < 7 or x['estilo'] < 6: continue
+            if not x or x.get('problema') or x['beleza'] < 7 or x['estilo'] < 6 or x.get('vale_o_preco', 0) < 7: continue
             com = float(p['commission'] or 0)
             saida.append({'id': k, 'nome': p['productName'], 'loja': p['shopName'], 'preco': float(p['priceMin']),
                           'comissao_rs': round(com, 2), 'comissao_pct': round(float(p['commissionRate']) * 100, 1),
                           'vendidos': int(p['sales']), 'nota': float(p['ratingStar']), 'link': p['productLink'], 'foto_url': p['imageUrl'],
-                          'tema': x['tema'], 'beleza': x['beleza'], 'estilo': x['estilo'], 'troque_isso': x.get('troque_isso', ''),
-                          'busca': p['_k'], 'pontos': round(n + x['beleza'] * 0.6 + x['estilo'] * 0.6, 2)})
+                          'tema': x['tema'], 'beleza': x['beleza'], 'estilo': x['estilo'], 'troque_isso': x.get('troque_isso', ''), 'vale_o_preco': x.get('vale_o_preco'), 'beneficio': x.get('beneficio', ''),
+                          'busca': p['_k'], 'pontos': round(n + x['beleza'] * 0.5 + x['estilo'] * 0.5 + x.get('vale_o_preco', 0) * 0.6, 2)})
         print(f'beleza {i + len(bloco)}/{len(lista)}: {len(saida)} aprovados', flush=True)
     saida.sort(key=lambda x: x['pontos'], reverse=True); saida = saida[:a.top]
     for x in saida: x['foto'] = V.miniatura(x['foto_url'])
