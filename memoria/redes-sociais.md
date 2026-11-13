@@ -19,3 +19,8 @@
    Script: produto-campeao/redes/varrer_carrossel.py (palavras_natal.txt, palavras_romantico.txt; nota de beleza pelo Gemini, grátis).
 3. Vídeos com vários produtos: usam os NOSSOS vídeos já feitos, escolhendo os produtos mais estratégicos.
 4. Instagram automático pode postar carrossel; TikTok ela posta no app (música em alta só pelo app).
+
+## Letra das capas (a dona escolheu em 13/11)
+- Estilo 1 "Elegante": branco com sombra suave; linha pequena em Cormorant Garamond itálico, linha principal em Cormorant
+  Garamond 600 MAIÚSCULA grande, fecho em Great Vibes cursiva (ex.: "Parece de / LOJA CARA, / mas é da Shopee").
+  Assinatura "aguiiar lar" pequena embaixo. Modelo: produto-campeao/redes/capas/teste.html (#c1). Fontes em video-teste/fontes/redes/.
