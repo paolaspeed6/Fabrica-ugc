@@ -1,5 +1,5 @@
 {
- "usd": 0.1188,
+ "usd": 0.198,
  "itens": [
   [
    "cenario A_bancada",
@@ -11,6 +11,14 @@
   ],
   [
    "cenario B_aparador",
+   0.0396
+  ],
+  [
+   "cenario D_cozinha_madeira",
+   0.0396
+  ],
+  [
+   "cenario E_cozinha_branca",
    0.0396
   ]
  ]

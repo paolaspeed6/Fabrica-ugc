@@ -27,6 +27,13 @@ CENARIOS = {
               "a pink rose bouquet at the back left, a large potted olive tree to the right on the floor, soft window light from the left.",
  'C_mesa': CASA + "Dining nook: a light oak wooden table with a white linen tablecloth corner, a window with sheer white curtains behind, "
               "a small ceramic vase with pink garden roses at the back, eucalyptus sprigs, soft morning light.",
+ 'D_cozinha_madeira': CASA + "Classic American farmhouse kitchen like a Pinterest photo: white shaker cabinets with black knobs, glass-front upper cabinet with white mugs, "
+              "warm oak butcher-block wooden countertop seen from a slightly high angle with its front part empty and clear, white subway tile backsplash, "
+              "a round white ceramic vase with pink tulips and baby's breath at the far left back, a white enamel kettle and wooden cutting boards at the back right, "
+              "beige gingham rug and a wicker basket on a small wooden stool in the soft background, warm cozy light.",
+ 'E_cozinha_branca': CASA + "Elegant romantic white kitchen: cream-white paneled cabinets with brass handles, white marble countertop seen from a slightly high angle with its front part empty, "
+              "white marble backsplash, a large white urn vase of pink peonies and roses at the far left back, a crystal pendant light, "
+              "a soft pink floral runner rug on light wood floor in the background, arched window with bright soft daylight.",
 }
 
 def cenario(n):
