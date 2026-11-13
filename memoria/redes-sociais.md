@@ -63,3 +63,4 @@ Cenários e imagens do carrossel seguem isso.
   com toalhas rosa e cesto de palha, estante clara com caixas rosa, potes xadrez rosa com dourado, copo fosco de gatinho).
 - `varrer_carrossel.py --refs referencias_paty --max-tipo 2`: o Gemini vê as referências, dá "parece_refs" (precisa >= 7) e o "tipo";
   no máximo 2 do mesmo tipo (chega de 10 xícaras). Palavras em `palavras_paty.txt`. Varreduras pequenas (20) até achar o filtro certo.
+- Móveis no mesmo estilo (a dona, 13/11): penteadeira, banquetas, racks… `palavras_paty_moveis.txt`, `--preco-max 600` (comissão ≥ R$ 10 continua).
