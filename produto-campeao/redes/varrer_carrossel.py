@@ -60,7 +60,9 @@ def main():
     ap.add_argument('--max-tipo', type=int, default=0, help='no máximo N produtos do mesmo tipo (0 = sem limite)')
     ap.add_argument('--preco-max', type=float, default=150, help='móveis (a dona, 13/11): até R$ 600')
     ap.add_argument('--com-min', type=float, default=10, help='objetos de decoração paty (a dona, 13/11 "pode"): R$ 5')
+    ap.add_argument('--isca', action='store_true', help='a dona, 13/11 "sim": iscas de R$ 3+ de comissão, só beleza e parece_refs 9-10, até R$ 80')
     a = ap.parse_args()
+    if a.isca: a.com_min, a.preco_max = 3, 80
     refs = []
     if a.refs:
         for f in sorted((B / a.refs).glob('*.jpg')):
@@ -98,6 +100,7 @@ def main():
             x = notas.get(j)
             if not x or x.get('problema') or x['beleza'] < 7 or x['estilo'] < 6 or x.get('vale_o_preco', 0) < 7: continue
             if refs and x.get('parece_refs', 0) < 7: continue
+            if a.isca and (x['beleza'] < 9 or x.get('parece_refs', 0) < 9): continue
             com = float(p['commission'] or 0)
             saida.append({'id': k, 'nome': p['productName'], 'loja': p['shopName'], 'preco': float(p['priceMin']),
                           'comissao_rs': round(com, 2), 'comissao_pct': round(float(p['commissionRate']) * 100, 1),
@@ -114,8 +117,10 @@ def main():
             if cont.get(t, 0) < a.max_tipo: filt.append(x); cont[t] = cont.get(t, 0) + 1
         saida = filt
     saida = saida[:a.top]
-    for x in saida: x['foto'] = V.miniatura(x['foto_url'])
-    out = B / f'candidatos_carrossel-{time.strftime("%Y-%m-%d")}{os.environ.get("TAG", "")}.json'
+    for x in saida:
+        x['foto'] = V.miniatura(x['foto_url'])
+        if a.isca: x['isca'] = True
+    out = B / f'candidatos_carrossel-{time.strftime("%Y-%m-%d")}{os.environ.get("TAG", "")}{"_isca" if a.isca else ""}.json'
     out.write_text(json.dumps(saida, ensure_ascii=False, indent=1))
     from collections import Counter
     print(len(saida), '->', out, dict(Counter(x['tema'] for x in saida)))
