@@ -56,3 +56,10 @@ Cenários e imagens do carrossel seguem isso.
   O pedido vai para a coleção `montagens` {videos, produtos, gancho, voz, status: pedido|montando|conferir}.
 - Montagem: grátis (edição). Trechos dos vídeos já prontos + gancho com as letras do estilo 1 + CTA "comenta EU QUERO". Sempre para a Conferir.
 - A dona (13/11): quer narrar os vídeos ou usar "uma voz bem bonita".
+
+## Filtro "casa das paty" (13/11, 3ª conversa de estilo)
+- A dona: "está tendo muitas xícaras que não têm nada a ver; gosto de coisas lindas e irresistíveis, quero uma casa bem das paty".
+- Fotos dela em `produto-campeao/redes/referencias_paty/` (armário branco com louça rosa e caneca de bolinhas, escada de madeira
+  com toalhas rosa e cesto de palha, estante clara com caixas rosa, potes xadrez rosa com dourado, copo fosco de gatinho).
+- `varrer_carrossel.py --refs referencias_paty --max-tipo 2`: o Gemini vê as referências, dá "parece_refs" (precisa >= 7) e o "tipo";
+  no máximo 2 do mesmo tipo (chega de 10 xícaras). Palavras em `palavras_paty.txt`. Varreduras pequenas (20) até achar o filtro certo.

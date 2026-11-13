@@ -26,6 +26,14 @@ com o benefício que vende (ex.: 'kit com 8 bolas pelo preço de 2', 'serve na m
 (embalagem, folheto, lembrancinha, caixa de doces, festa infantil) = problema "não é de casa".
 Notas altas só para o que uma garota de 25 anos salvaria E compraria sem pensar duas vezes."""
 
+# a dona, 13/11 (3ª): "está tendo muitas xícaras que não têm nada a ver; gosto de coisas lindas e irresistíveis, uma casa bem das paty".
+# Com --refs, as fotos dela vão junto e o Gemini compara cada produto com elas.
+REFS = """ANTES das fotos numeradas vêm as FOTOS DE REFERÊNCIA da dona (o que ela AMA): casa "das paty" — rosa bebê, laços,
+xadrez rosa e branco com dourado, vidro ondulado/bolha, cerâmica com bolinhas, palha e madeira com rosa, toalhas felpudas rosa,
+peônias, tudo delicado, feminino e irresistível. Para cada foto numerada dê também "parece_refs": 0-10 (quanto parece que saiu
+da mesma casa das referências; xícara comum, frase escrita, vermelho forte, rústico pesado, colorido infantil ou peça genérica = nota baixa)
+e "tipo": o tipo de objeto em 1 ou 2 palavras (ex.: "xícara", "pote", "toalha", "prateleira", "copo")."""
+
 def busca(i, k):
     f = CK / f'r{i:03d}.json'
     if f.exists(): return json.loads(f.read_text())
@@ -48,7 +56,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--palavras', default='palavras_natal.txt,palavras_romantico.txt')
     ap.add_argument('--top', type=int, default=60)
+    ap.add_argument('--refs', help='pasta com as fotos de referência da dona (ex.: referencias_paty)')
+    ap.add_argument('--max-tipo', type=int, default=0, help='no máximo N produtos do mesmo tipo (0 = sem limite)')
     a = ap.parse_args()
+    refs = []
+    if a.refs:
+        for f in sorted((B / a.refs).glob('*.jpg')):
+            refs += [{'text': 'Referência da dona:'}, {'inline_data': {'mime_type': 'image/jpeg', 'data': base64.b64encode(f.read_bytes()).decode()}}]
     pal = [l.strip() for f in a.palavras.split(',') for l in (B / f).read_text().splitlines() if l.strip() and not l.startswith('#')]
     prods = {}
     with ThreadPoolExecutor(2) as ex:
@@ -73,7 +87,7 @@ def main():
     saida = []
     for i in range(0, len(lista), 12):
         bloco = lista[i:i + 12]; fotos = [foto(p['imageUrl']) for _, _, p in bloco]
-        partes = [{'text': ESTILO}]
+        partes = [{'text': ESTILO + ('\n' + REFS if refs else '')}] + refs
         for j, ((_, k, p), f) in enumerate(zip(bloco, fotos)):
             if f: partes += [{'text': f'Foto {j}: {p["productName"][:90]} | preço R$ {float(p["priceMin"]):.2f}'}, {'inline_data': {'mime_type': 'image/jpeg', 'data': f}}]
         try: notas = {int(x['n']): x for x in G.chamar(partes)}
@@ -81,14 +95,23 @@ def main():
         for j, (n, k, p) in enumerate(bloco):
             x = notas.get(j)
             if not x or x.get('problema') or x['beleza'] < 7 or x['estilo'] < 6 or x.get('vale_o_preco', 0) < 7: continue
+            if refs and x.get('parece_refs', 0) < 7: continue
             com = float(p['commission'] or 0)
             saida.append({'id': k, 'nome': p['productName'], 'loja': p['shopName'], 'preco': float(p['priceMin']),
                           'comissao_rs': round(com, 2), 'comissao_pct': round(float(p['commissionRate']) * 100, 1),
                           'vendidos': int(p['sales']), 'nota': float(p['ratingStar']), 'link': p['productLink'], 'foto_url': p['imageUrl'],
                           'tema': x['tema'], 'beleza': x['beleza'], 'estilo': x['estilo'], 'troque_isso': x.get('troque_isso', ''), 'vale_o_preco': x.get('vale_o_preco'), 'beneficio': x.get('beneficio', ''),
-                          'busca': p['_k'], 'pontos': round(n + x['beleza'] * 0.5 + x['estilo'] * 0.5 + x.get('vale_o_preco', 0) * 0.6, 2)})
+                          'busca': p['_k'], 'tipo': x.get('tipo', ''), 'parece_refs': x.get('parece_refs'),
+                          'pontos': round(n + x['beleza'] * 0.5 + x['estilo'] * 0.5 + x.get('vale_o_preco', 0) * 0.6 + x.get('parece_refs', 0) * 0.8, 2)})
         print(f'beleza {i + len(bloco)}/{len(lista)}: {len(saida)} aprovados', flush=True)
-    saida.sort(key=lambda x: x['pontos'], reverse=True); saida = saida[:a.top]
+    saida.sort(key=lambda x: x['pontos'], reverse=True)
+    if a.max_tipo:
+        cont, filt = {}, []
+        for x in saida:
+            t = V.plano(x.get('tipo') or '').strip()
+            if cont.get(t, 0) < a.max_tipo: filt.append(x); cont[t] = cont.get(t, 0) + 1
+        saida = filt
+    saida = saida[:a.top]
     for x in saida: x['foto'] = V.miniatura(x['foto_url'])
     out = B / f'candidatos_carrossel-{time.strftime("%Y-%m-%d")}{os.environ.get("TAG", "")}.json'
     out.write_text(json.dumps(saida, ensure_ascii=False, indent=1))
