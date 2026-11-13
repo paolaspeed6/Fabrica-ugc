@@ -3,7 +3,7 @@
  "narr_at": 0.5,
  "tempo": 1.0,
  "bed": [
-  "/home/user/Fabrica-ugc/musicas/biblioteca/animada_01_rhodes_vibrafone.wav"
+  "/home/user/fabrica-ugc/musicas/biblioteca/animada_01_rhodes_vibrafone.wav"
  ],
  "grade": {
   "sat": 0.92,
@@ -164,18 +164,19 @@
   }
  ],
  "src": {
-  "A": "/home/user/Fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/A.mp4",
-  "B": "/home/user/Fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/B.mp4",
-  "C": "/home/user/Fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/C.mp4",
-  "D": "/home/user/Fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/D.mp4",
-  "E": "/home/user/Fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/E.mp4",
-  "F": "/home/user/Fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/F.mp4"
+  "A": "/home/user/fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/src/F.mp4"
  },
- "out": "/home/user/Fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/out2/p415_a_umdia.mp4",
+ "out": "/home/user/fabrica-ugc/trabalhos/p415-plafon-retangular-80cm/out2/p415_a_umdia.mp4",
  "dur": 15.0,
  "natural": 1,
  "vel": 1.25,
  "mov": 1,
+ "texto_baixo": 870,
  "trans": [
   [
    3.0,

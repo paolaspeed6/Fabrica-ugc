@@ -84,12 +84,13 @@ VEL = float(os.environ.get('VELOCIDADE', '1.25'))  # a dona, 05/11: "acelerar um
 NATURAL = os.environ.get('ESTILO', 'natural') == 'natural'  # a dona, 2026-10-21: sem filtro + transições
 
 
-def _natural(nome, cuts, scrim=None):
+def _natural(nome, cuts, scrim=None, baixo=0):
     """estilo 2026-10-21: sem filtro (resolução cheia), sem mergulho ao preto, transição whip/zoom em cada virada."""
     if not NATURAL: return
     f = f'{S}/specs/{nome}.json'; sp = json.load(open(f))
     sp['natural'] = 1; sp.pop('dips', None)
     sp['vel'] = VEL; sp['mov'] = 1  # a dona, 05/11: 12 s (roteiro de 15 s acelerado 1,25) + mais movimento por código, pouco tremor
+    if baixo: sp['texto_baixo'] = baixo  # a dona, 13/11: produto no topo (lustre/luz) -> textos de A e C embaixo
     if scrim: sp.setdefault('grade', {})['top'] = scrim  # cenário claro (parede branca): sombra do topo mais forte
     sp['trans'] = [[c, ('whip', 'zoom')[i % 2]] for i, c in enumerate(cuts[1:]) if 0 < c < 15]
     json.dump(sp, open(f, 'w'), ensure_ascii=False, indent=1)
@@ -103,17 +104,17 @@ def sem_voz(cfg):
     cuts = (0, 3.0, 5.6, 8.2, 10.8)
     opcao_a(f'{pid}_a_umdia', dict(eyebrow=A['eyebrow'], gancho=A['gancho'], momentos=A['momentos'], **{k: A[k] for k in ('sem_horario', 'cta') if A.get(k)}, **comum),
             _segs(cuts + (15,), cfg['tomadas']['a'], cfg['clips']), None, bed=[trilha(f'{pid}_a_umdia')], cuts=cuts)
-    _natural(f'{pid}_a_umdia', cuts, cfg.get('scrim'))
+    _natural(f'{pid}_a_umdia', cuts, cfg.get('scrim'), cfg.get('texto_baixo', 0))
     cuts = (0, 5.0, 10.0, 15)
     opcao_b_faixas(f'{pid}_b_faixas', dict(kicker=B['kicker'], cenas=B['cenas'], cta='Toque no carrinho', lift=cfg.get('lift', 300), **comum),
                    _segs(cuts, cfg['tomadas']['b'], cfg['clips']), None, bed=[trilha(f'{pid}_b_faixas')], cuts=cuts)
-    _natural(f'{pid}_b_faixas', cuts, cfg.get('scrim'))
+    _natural(f'{pid}_b_faixas', cuts, cfg.get('scrim'), cfg.get('texto_baixo', 0))
     cuts = (0, 3.2, 9.0, 11.6, 15)
     opcao_d(f'{pid}_c_direto', dict(eyebrow=C['eyebrow'], gancho=C['gancho'], itens=C['itens'], onde=C['onde'],
             tem=cfg.get('tem', '*ela tem:*'), itens_t=[4.3, 5.9, 7.5], esq=cfg.get('esq', False),
             **({'escala': cfg['escala'], 'item_size': cfg['item_size']} if cfg.get('esq') else {}), **comum),
             _segs(cuts, cfg['tomadas']['c'], cfg['clips']), None, bed=[trilha(f'{pid}_c_direto')], cuts=cuts)
-    _natural(f'{pid}_c_direto', cuts, cfg.get('scrim'))
+    _natural(f'{pid}_c_direto', cuts, cfg.get('scrim'), cfg.get('texto_baixo', 0))
     return [f'{pid}_a_umdia', f'{pid}_b_faixas', f'{pid}_c_direto']
 
 

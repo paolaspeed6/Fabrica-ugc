@@ -47,6 +47,29 @@ def zoom_codigo(d):
     return {'a': 1.03, 'b': 1.05, 'c': 1.03} if fv and all('câmera por código' in (x.get('origem') or '') for x in fv.values()) else None
 
 
+TETO_PALAVRAS = ('lustre', 'plafon', 'pendente', 'luminária', 'luminaria', 'arandela', 'spot', 'lâmpada', 'lampada', 'ventilador de teto')
+
+
+def texto_baixo(nome, srcs):
+    """a dona, 13/11: "nunca deixe as legendas em cima do produto" (lustres e luzes ficam no topo do quadro). A e C escrevem no topo
+    (y 150-770 de 1920); quando o produto ocupa mais o topo que a faixa de baixo, os textos descem (+870 px, build_lux 'texto_baixo').
+    Mede 1 quadro (1 s) de cada cena limpa com o rembg da folha.py (grátis); produto de teto pelo nome desce sempre."""
+    if any(w in nome.lower() for w in TETO_PALAVRAS): return True
+    try:
+        sys.path.insert(0, str(RAIZ / 'video-teste' / 'lote' / 'modelo')); from folha import mascara
+        from PIL import Image; import io
+        cima = baixo = 0.0
+        for f in srcs:
+            jpg = subprocess.run(['ffmpeg', '-v', 'error', '-ss', '1', '-i', str(f), '-frames:v', '1', '-f', 'image2pipe', '-vcodec', 'mjpeg', '-'],
+                                 capture_output=True).stdout
+            if not jpg: continue
+            m = mascara(Image.open(io.BytesIO(jpg)).convert('RGB')); H = m.shape[0]
+            cima += m[int(H * 0.06):int(H * 0.40)].mean(); baixo += m[int(H * 0.55):int(H * 0.84)].mean()
+        return cima > 0.03 * len(srcs) and cima > baixo
+    except Exception as e:
+        print('texto_baixo: sem medir', e); return False
+
+
 def cfg(k, n):
     t = T[k]; d = L / f'{k}-cenas'
     if not (d / 'aprovado.json').exists(): return None, None  # nenhuma cena aprovada (aprovar.py: SEM CENA APROVADA)
@@ -64,7 +87,8 @@ def cfg(k, n):
     A.setdefault('eyebrow', t['nome'])
     C.setdefault('eyebrow', t['b'].get('kicker') or t['nome']); C.setdefault('onde', A.get('cta') or ['Leve pra casa.'])
     kit = any(w in t['nome'].lower() for w in ('kit', 'cadeiras', 'banquetas', 'bancos'))
-    return dict(id=pid, accent=tuple(t.get('ac') or (200, 160, 120)), clips=lens, leve='o seu' if kit else 'a sua',
+    tb = texto_baixo(t['nome'], [W / 'src' / f'{c}.mp4' for c in cenas])
+    return dict(id=pid, texto_baixo=870 if tb else 0, accent=tuple(t.get('ac') or (200, 160, 120)), clips=lens, leve='o seu' if kit else 'a sua',
                 tem='*o kit tem:*' if kit else '*ele tem:*', a=A, b=dict(t['b']), c=C, tomadas=tomadas(cenas, lens, zoom_codigo(d))), W
 
 

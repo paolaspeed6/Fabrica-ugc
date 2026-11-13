@@ -325,6 +325,8 @@ VIG = 1 - G.get('vign', 0.15) * np.clip(((xx - W / 2) / (W * 0.62)) ** 2 + ((yy 
 TOPG = 1 - G.get('top', 0.28) * np.clip(1 - yy / 900, 0, 1) ** 1.5  # escurece o topo p/ o texto
 SHADE = (VIG * TOPG)[..., None]
 TOPN = 1 - max(G.get('top', 0.28), 0.5) * np.clip(1 - yy / 1000, 0, 1) ** 1.4  # natural: sombra de leitura no topo
+if spec.get('texto_baixo'):  # a dona, 13/11: texto nunca em cima do produto (lustre/luz fica no topo): sombra de leitura vai para baixo
+    TOPG, TOPN = TOPG[::-1].copy(), TOPN[::-1].copy(); SHADE = (VIG * TOPG)[..., None]
 rng = np.random.default_rng(7)
 
 
@@ -418,6 +420,9 @@ def grade(img, t):
 
 layers = []
 YT = spec.get('ytop', 0)
+if spec.get('texto_baixo'):  # a dona, 13/11: produto no topo do quadro -> textos de cima (A e C) descem para a faixa de baixo
+    for el in spec['texts']:
+        if el.get('kind') != 'bars' and el.get('y', 2000) < 960: el['y'] = el['y'] + int(spec['texto_baixo'])
 for el in spec['texts']:
     el['img'], el['pad'] = make(el)
     layers.append(el)

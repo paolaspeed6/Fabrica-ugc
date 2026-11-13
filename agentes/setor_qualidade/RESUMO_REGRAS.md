@@ -23,7 +23,7 @@ Nunca citar o proibido no prompt (nem negando): descrever o certo.
 ## Textos (vídeo e legenda)
 Só o que está ESCRITO no título/descrição. Número que discorda entre título e descrição = fora. Sem prazo de entrega, %, nota,
 número de avaliações, bebida. Cor, formato, "linhas retas" não são qualidade. Gancho: pergunta ou problema; horário só se combinar.
-Legendas < 150 caracteres, 4 hashtags de nicho.
+Legendas Shopee < 150 caracteres: só palavras-chave de busca do produto (tipo, sinônimo, material, cor, medida, uso), sem frase; 4 hashtags que são palavras-chave do produto (a dona, 13/11).
 
 ## Produto que não dá para fazer (Fichador descarta ANTES de gastar)
 Nenhuma foto com o produto limpo (pessoa/bebê cobrindo peças), réplica de marca ("Original" com outro nome no corpo),

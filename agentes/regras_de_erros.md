@@ -335,3 +335,13 @@ grave no Gemini (grátis). Sem nenhuma imagem aproveitável, o produto ainda vir
   emoji; o `textos.py` tira emoji dos textos do vídeo (legendas `leg_*` mantêm).
 - 11/11 (Lista 11/11 B): texto vazio (null) na 2ª linha grande de uma faixa do layout B (`b.cenas[i][1]`) quebrou a edição de p02 e p05
   (refeita grátis). Só a 3ª linha pode ser null; o `textos.py` agora trava antes dos clipes.
+
+## K28. Texto nunca em cima do produto (a dona, 13/11, Plafon 1111B-01 e lustres/luzes)
+Os layouts A e C escrevem no topo; lustre, plafon, pendente e luminária ficam no topo do quadro e o texto cobria o produto.
+Agora o `lote_auto.py` (`texto_baixo`) mede 1 quadro de cada cena com o rembg (grátis): se o produto ocupa mais o topo que a faixa
+de baixo, ou o nome é de produto de teto, os textos de A e C descem +870 px e a sombra de leitura vai para baixo (`build_lux.py`).
+Edição manual: ponha `"texto_baixo": 870` no `_cfg.json` e refaça os specs.
+
+## K29. Legenda Shopee = só palavras-chave de busca (a dona, 13/11)
+`leg_a/leg_b/leg_c`: tipo do produto + sinônimos + material + cor + medida + cômodo/uso, sem frase nem adjetivo vazio; 4 hashtags
+que também são palavras-chave do produto (#plafonled, nunca #decor #amei). Detalhe em `BRIEF_FICHADOR.md`.

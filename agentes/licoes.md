@@ -31,3 +31,5 @@
 - 02/11 (Lista 02/11 C): emoji no gancho vira ☒ no vídeo (fonte sem emoji). Regra K26; textos.py limpa sozinho.
 - 11/11 (Lista 11/11 B): texto vazio (null) na 2ª linha grande de uma faixa do layout B (`b.cenas[i][1]`) quebrou a edição de p02 e p05
   (refeita grátis). Só a 3ª linha pode ser null; o `textos.py` agora trava antes dos clipes.
+- 13/11: texto dos layouts A e C cobria lustres e plafons (produto no topo). Regra K28; o editor mede e desce o texto sozinho.
+- 13/11: a dona quer legenda da Shopee só com palavras-chave de busca e hashtags do produto. Regra K29.
