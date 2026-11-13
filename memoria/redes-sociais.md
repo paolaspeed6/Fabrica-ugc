@@ -30,3 +30,8 @@ Cozinha americana clássica: armários brancos ou off-white estilo shaker com pu
 bancada de MADEIRA (butcher block) ou mármore branco, azulejo metrô branco, flores rosa (tulipas, peônias, rosas) em vaso branco,
 tapete xadrez bege ou floral rosa, cesta de vime, banquinho de madeira, chaleira esmaltada branca, tábuas de madeira, luz quente e suave.
 Cenários e imagens do carrossel seguem isso.
+
+## Cenário fixo (a dona escolheu em 13/11)
+- E_cozinha_branca (produto-campeao/redes/cenarios/E_cozinha_branca.jpg): cozinha branca romântica, bancada de mármore branco,
+  vaso branco com peônias rosa, armários creme com puxador dourado, janela em arco, lustre de cristal, tapete floral rosa.
+  Toda foto de produto do carrossel nasce desse cenário (mesma bancada, mesma luz).
