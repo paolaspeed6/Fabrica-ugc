@@ -64,3 +64,5 @@ Cenários e imagens do carrossel seguem isso.
 - `varrer_carrossel.py --refs referencias_paty --max-tipo 2`: o Gemini vê as referências, dá "parece_refs" (precisa >= 7) e o "tipo";
   no máximo 2 do mesmo tipo (chega de 10 xícaras). Palavras em `palavras_paty.txt`. Varreduras pequenas (20) até achar o filtro certo.
 - Móveis no mesmo estilo (a dona, 13/11): penteadeira, banquetas, racks… `palavras_paty_moveis.txt`, `--preco-max 600` (comissão ≥ R$ 10 continua).
+- A dona (13/11): "pode" R$ 5 de comissão mínima para OBJETOS (móveis seguem R$ 10). Ganchos escolhidos por ela estão na aba (tinder.html GANCHOS).
+- A dona (13/11): quer TUDO para casa no estilo paty (cozinha, panelas, pratos, banheiro, quarto, sala) para fazer "achadinhos que mudaram meu banheiro/quarto/sala". `palavras_paty_casa.txt`; fila em `fila_paty.sh`.

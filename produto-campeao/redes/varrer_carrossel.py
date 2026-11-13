@@ -59,6 +59,7 @@ def main():
     ap.add_argument('--refs', help='pasta com as fotos de referência da dona (ex.: referencias_paty)')
     ap.add_argument('--max-tipo', type=int, default=0, help='no máximo N produtos do mesmo tipo (0 = sem limite)')
     ap.add_argument('--preco-max', type=float, default=150, help='móveis (a dona, 13/11): até R$ 600')
+    ap.add_argument('--com-min', type=float, default=10, help='objetos de decoração paty (a dona, 13/11 "pode"): R$ 5')
     a = ap.parse_args()
     refs = []
     if a.refs:
@@ -78,9 +79,9 @@ def main():
         # a dona, 13/11: "produtos estratégicos, com bons preços e benefícios; um papai noel de 300 reais é inviável".
         # a dona, 13/11 (2ª): "e que também tenha no mínimo 10 reais de comissão" -> preço sobe para até R$ 150 (R$ 10 a 15% = R$ 67+).
         if k in fora or not (30 <= preco <= a.preco_max) or nota < 4.7 or vend < 50: continue
-        if float(p['commissionRate']) < 0.10 or com < 10: continue
+        if float(p['commissionRate']) < 0.10 or com < a.com_min: continue
         if any(w in V.plano(p['productName']) for w in V.PROIBIDO): continue
-        n = min(com / 8, 1) * 3 + min(float(p['commissionRate']) / 0.2, 1) * 2 + min(math.log10(vend + 1) / 4, 1) * 3 + (1.5 if preco <= a.preco_max * 0.53 else 0.5 if preco <= a.preco_max * 0.73 else 0) + min((com - 10) / 15, 1) * 2
+        n = min(com / 8, 1) * 3 + min(float(p['commissionRate']) / 0.2, 1) * 2 + min(math.log10(vend + 1) / 4, 1) * 3 + (1.5 if preco <= a.preco_max * 0.53 else 0.5 if preco <= a.preco_max * 0.73 else 0) + max(min((com - a.com_min) / 15, 1), 0) * 2
         n += 1 if float(p['sellerCommissionRate'] or 0) > 0 else 0
         lista.append((n, k, p))
     lista.sort(reverse=True); lista = lista[:a.top * 3]

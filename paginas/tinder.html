@@ -232,7 +232,7 @@ function linhaItem(it,extra,botao){
   const t=el("div","t",it.nome.slice(0,70)); t.append(el("span",null,extra));
   d.append(img,t,botao||el("span")); return d;
 }
-const GANCHOS=["Parece de loja cara, mas é da Shopee","Achadinhos que deixaram minha casa mais chique","Troque isso… por isso!","Coisas de casa que eu compraria de novo","Achadinhos de casa até R$ 100","Montando meu cantinho de Natal","Minha casa ficou outra com isso","O que eu comprei na Shopee esse mês"];
+const GANCHOS=["As lojas de decoração não querem que você veja isso","Antes de comprar móvel, assiste isso","O segredo das casas de Pinterest","Isso parece caro, mas não é","4 achadinhos que salvaram minha decoração","Casa de rica com preço de Shopee","A cozinha mais linda que eu já montei","Parece de loja cara, mas é da Shopee"];
 const VOZES=[["bonita","🎙️ Voz bonita"],["minha","🎤 Minha voz"],["musica","🎵 Só música"]];
 const TEMAS=["Todos","⭐ Mais bonitos","Cozinha","Decoração","Sala e móveis","Quarto","Organização","Banheiro","Jardim e varanda","Natal","Fitness","Outros"];
 try{ vSel=JSON.parse(localStorage.getItem("vSel")||"[]"); }catch(_){}
