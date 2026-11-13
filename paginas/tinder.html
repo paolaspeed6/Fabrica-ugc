@@ -87,6 +87,24 @@ body.redes{--accent:#d6457a;--accent-fg:#fff}
 .troque{background:var(--soft);border-radius:14px;padding:10px 12px;font-size:.9rem;line-height:1.35}
 .troque b{color:var(--accent)}
 .item.sel{outline:3px solid var(--accent)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.chips button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:7px 12px;font:800 .8rem var(--body);cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.busca{width:100%;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:12px;padding:10px 12px;font:600 .95rem var(--body)}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.vcard{position:relative;border:0;padding:0;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:var(--shadow);cursor:pointer;text-align:left;color:var(--fg)}
+.vcard img{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:var(--soft)}
+.vcard .vt{padding:6px 7px 8px;font:700 .72rem/1.25 var(--body);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vcard .vc{display:block;padding:0 7px 7px;color:var(--good);font:800 .7rem var(--body)}
+.vcard[aria-pressed=true]{outline:3px solid var(--accent)}
+.vcard .num{position:absolute;top:6px;right:6px;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--accent-fg);display:grid;place-items:center;font:900 .85rem var(--body)}
+.painel{position:sticky;bottom:8px;background:var(--card);box-shadow:var(--shadow);border-radius:16px;padding:12px;display:flex;flex-direction:column;gap:10px;border:2px solid var(--accent)}
+.painel .mini{display:flex;gap:6px;overflow-x:auto;justify-content:flex-start}
+.painel .mini img{width:44px!important;max-width:44px;height:78px;object-fit:cover;border-radius:8px;flex:none}
+.painel select,.painel input{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:10px;padding:9px 10px;font:600 .9rem var(--body)}
+.painel label{font:800 .8rem var(--body);color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.vozes{display:flex;gap:6px;flex-wrap:wrap}
+
 @media (prefers-reduced-motion:reduce){.swipe.volta,.swipe.sai,.btn,.leve,.barra i{transition:none}}
 </style>
 
@@ -109,7 +127,7 @@ body.redes{--accent:#d6457a;--accent-fg:#fff}
 </div>
 
 <script>
-let db=null, itens=[], itensS=[], itensR=[], modo="shopee", diaS="", diaR="", aba="escolher", loteMin=15, ultimo=null, confirmarTodos=false;
+let db=null, vids=[], peds=[], vTema="Todos", vBusca="", vMax=60, vSel=[], vGancho="", vVoz="bonita", itens=[], itensS=[], itensR=[], modo="shopee", diaS="", diaR="", aba="escolher", loteMin=15, ultimo=null, confirmarTodos=false;
 const $=s=>document.querySelector(s);
 const brl=v=>"R$ "+Number(v).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
 const el=(tag,cls,txt)=>{const e=document.createElement(tag); if(cls) e.className=cls; if(txt!=null) e.textContent=txt; return e;};
@@ -121,7 +139,7 @@ function grupos(){
   if(modo==="redes"){
     for(const it of itens){ const s=st(it);
       if(s==="novo") g.escolher.push(it); else if(s==="descartado") g.descartados.push(it); else g.fila.push(it); }
-    g.producao=itensS.filter(i=>st(i)==="pronto"||i.combo).sort((a,b)=>(b.combo?1:0)-(a.combo?1:0)||(b.comissao_rs||0)-(a.comissao_rs||0));
+    g.producao=vids;
     g.escolher.sort((a,b)=>(b.dia||"").localeCompare(a.dia||"")||b.pontos-a.pontos);
     return g;
   }
@@ -214,12 +232,77 @@ function linhaItem(it,extra,botao){
   const t=el("div","t",it.nome.slice(0,70)); t.append(el("span",null,extra));
   d.append(img,t,botao||el("span")); return d;
 }
+const GANCHOS=["Parece de loja cara, mas é da Shopee","Achadinhos que deixaram minha casa mais chique","Troque isso… por isso!","Coisas de casa que eu compraria de novo","Achadinhos de casa até R$ 100","Montando meu cantinho de Natal","Minha casa ficou outra com isso","O que eu comprei na Shopee esse mês"];
+const VOZES=[["bonita","🎙️ Voz bonita"],["minha","🎤 Minha voz"],["musica","🎵 Só música"]];
+const TEMAS=["Todos","⭐ Mais bonitos","Cozinha","Decoração","Sala e móveis","Quarto","Organização","Banheiro","Jardim e varanda","Natal","Fitness","Outros"];
+try{ vSel=JSON.parse(localStorage.getItem("vSel")||"[]"); }catch(_){}
+const guardaSel=()=>{ try{localStorage.setItem("vSel",JSON.stringify(vSel));}catch(_){} };
+const semAcento=t=>(t||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+function filtrados(){
+  let l=vids;
+  if(vTema==="⭐ Mais bonitos") l=l.filter(v=>(v.charme||0)>=7); else if(vTema!=="Todos") l=l.filter(v=>v.tema===vTema);
+  if(vBusca) { const q=semAcento(vBusca); l=l.filter(v=>semAcento(v.produto).includes(q)); }
+  return l.slice().sort((a,b)=>(b.charme||0)-(a.charme||0)||(b.comissao_rs||0)-(a.comissao_rs||0)||(b.dia||"").localeCompare(a.dia||""));
+}
+function telaVideos(tela){
+  const box=el("div","list");
+  box.append(el("div","aviso","Toque em 3 a 5 vídeos para juntar num vídeo só. A ordem do toque é a ordem no vídeo."));
+  const ch=el("div","chips");
+  TEMAS.forEach(t=>{ const n=t==="Todos"?vids.length:t==="⭐ Mais bonitos"?vids.filter(v=>(v.charme||0)>=7).length:vids.filter(v=>v.tema===t).length; if(!n) return;
+    const b=el("button",null,t+" "+n); b.setAttribute("aria-pressed",String(t===vTema)); b.onclick=()=>{vTema=t;vMax=60;render();}; ch.append(b); });
+  const busca=el("input","busca"); busca.type="search"; busca.placeholder="Buscar produto (ex.: tapete, panela)"; busca.value=vBusca; busca.setAttribute("aria-label","Buscar produto");
+  const grade=el("div","grade"); const mais=el("div"); const painel=el("div");
+  const desenhar=()=>{ const l=filtrados(); grade.replaceChildren(); mais.replaceChildren();
+    l.slice(0,vMax).forEach(v=>{ const b=el("button","vcard"); const i=vSel.indexOf(v._id); b.setAttribute("aria-pressed",String(i>=0));
+      const im=el("img"); im.src=v.poster||""; im.alt=""; im.loading="lazy"; b.append(im,el("span","vt",v.produto));
+      if(v.comissao_rs) b.append(el("span","vc","comissão "+brl(v.comissao_rs)));
+      if(i>=0) b.append(el("span","num",String(i+1)));
+      b.onclick=()=>{ const k=vSel.indexOf(v._id); if(k>=0) vSel.splice(k,1); else if(vSel.length<5) vSel.push(v._id); guardaSel(); desenhar(); };
+      grade.append(b); });
+    if(!l.length) grade.append(el("div","vazio","Nenhum vídeo aqui."));
+    if(l.length>vMax){ const m=el("button","leve","Ver mais ("+(l.length-vMax)+")"); m.onclick=()=>{vMax+=60;desenhar();}; mais.append(m); }
+    desenharPainel(painel); };
+  busca.oninput=()=>{ vBusca=busca.value; vMax=60; desenhar(); };
+  box.append(ch,busca,grade,mais,painel); desenhar();
+  if(peds.length){ box.append(el("h2",null,"Seus pedidos")); 
+    peds.slice().sort((a,b)=>(b.criado_em||"").localeCompare(a.criado_em||"")).forEach(p=>{
+      const ST={pedido:"Na fila para montar",montando:"Montando",conferir:"Pronto na Conferir ✓"}[p.status]||p.status;
+      const d=el("div","item"); const im=el("img"); im.src=(vids.find(v=>v._id===(p.videos||[])[0])||{}).poster||""; im.alt="";
+      const t=el("div","t","“"+(p.gancho||"")+"”"); t.append(el("span",null,(p.videos||[]).length+" produtos · "+(VOZES.find(x=>x[0]===p.voz)||[,""])[1]+" · "+ST));
+      let bt=el("span"); if(p.status==="pedido"){ bt=el("button","leve","Cancelar"); bt.onclick=async()=>{ try{ await db.doc("montagens/"+p._id).delete(); }catch(e){} }; }
+      d.append(im,t,bt); box.append(d); }); }
+  tela.append(box);
+}
+function desenharPainel(painel){
+  painel.replaceChildren(); painel.className=""; if(!vSel.length) return; painel.className="painel";
+  const mini=el("div","mini"); vSel.forEach(id=>{ const v=vids.find(x=>x._id===id); if(!v) return; const im=el("img"); im.src=v.poster||""; im.alt=v.produto; mini.append(im); });
+  const ok=vSel.length>=3&&vSel.length<=5;
+  const lg=el("label",null,"Gancho (o texto dos 2 primeiros segundos)"); const sg=el("select");
+  [...GANCHOS,"✍️ Escrever o meu"].forEach(g=>{ const o=el("option",null,g); o.value=g; sg.append(o); });
+  const meu=el("input"); meu.placeholder="Escreva seu gancho"; meu.maxLength=70;
+  if(vGancho&&!GANCHOS.includes(vGancho)){ sg.value="✍️ Escrever o meu"; meu.value=vGancho; } else { sg.value=vGancho||GANCHOS[0]; meu.hidden=true; }
+  sg.onchange=()=>{ meu.hidden=sg.value!=="✍️ Escrever o meu"; vGancho=meu.hidden?sg.value:meu.value; };
+  meu.oninput=()=>{ vGancho=meu.value; };
+  lg.append(sg,meu);
+  const lv=el("label",null,"Voz"); const vz=el("div","vozes");
+  VOZES.forEach(([k,n])=>{ const b=el("button","leve"+(vVoz===k?" forte":""),n); b.onclick=()=>{vVoz=k;desenharPainel(painel);}; vz.append(b); }); lv.append(vz);
+  const linha=el("div","vozes");
+  const limpar=el("button","leve","Limpar"); limpar.onclick=()=>{ vSel=[]; guardaSel(); render(); };
+  const pedir=el("button","leve forte",ok?"Pedir este vídeo ("+vSel.length+")":"Escolha de 3 a 5 ("+vSel.length+")"); pedir.disabled=!ok;
+  pedir.onclick=async()=>{ const g=(sg.value==="✍️ Escrever o meu"?meu.value:sg.value).trim(); if(!g){ meu.focus(); return; }
+    pedir.disabled=true; const id="m"+Date.now();
+    try{ await db.doc("montagens/"+id).set({videos:vSel.slice(),produtos:vSel.map(i=>(vids.find(v=>v._id===i)||{}).produto||""),gancho:g,voz:vVoz,status:"pedido",criado_em:new Date().toISOString()});
+      vSel=[]; vGancho=""; guardaSel(); $("#sub").textContent="Pedido feito! Eu monto e ele aparece na Conferir."; render();
+    }catch(e){ pedir.disabled=false; $("#sub").textContent="Não salvou. Confira a conexão e tente de novo."; } };
+  linha.append(limpar,pedir);
+  painel.append(el("div","aviso",vSel.length+" escolhidos"),mini,lg,lv,linha);
+}
 function render(){
   const g=grupos();
   for(const k in g){ $("#n-"+k).textContent=g[k].length; $("#t-"+k).setAttribute("aria-pressed",String(k===aba)); }
   const tela=$("#tela"); tela.replaceChildren();
   if(!db){ tela.append(el("div","vazio","Abra esta página no app do Claude, logado, para ver os produtos.")); return; }
-  $("#l-fila").textContent=modo==="redes"?"Por tema":"Fila"; $("#l-producao").textContent=modo==="redes"?"Vídeos":"Produção";
+  $("#l-fila").textContent=modo==="redes"?"Por tema":"Fila"; $("#l-producao").textContent=modo==="redes"?"🎬 Montar vídeo":"Produção";
   const dia=modo==="redes"?diaR:diaS;
   $("#sub").textContent=modo==="redes"
     ? (dia?"Varredura de carrossel: "+dia+". ":"")+"Produtos fofos e bonitos para carrossel, no estilo da casa: romântico, branco com madeira, plantas, rosa e flores. Aprove os que entram."
@@ -238,15 +321,7 @@ function render(){
     if(!g.fila.length) box.append(el("div","vazio","Nenhum aprovado ainda. Com 4 do mesmo tema já dá um carrossel."));
     tela.append(box); return;
   }
-  if(modo==="redes"&&aba==="producao"){
-    const box=el("div","list"); const sel=g.producao.filter(i=>i.combo).length;
-    box.append(el("div","aviso",sel?`${sel} escolhidos para vídeos com vários produtos. Toque para tirar ou pôr.`:"Toque nos produtos que já têm vídeo para juntar num vídeo com vários produtos (3 a 5 por vídeo)."));
-    g.producao.forEach(it=>{ const b=el("button","leve"+(it.combo?" forte":""),it.combo?"✓ No vídeo":"Pôr no vídeo");
-      b.onclick=()=>salvar({...it,_col:"candidatos"},{combo:!it.combo});
-      const d=linhaItem(it,brl(it.preco)+" · comissão "+brl(it.comissao_rs||0),b); if(it.combo) d.classList.add("sel"); box.append(d); });
-    if(!g.producao.length) box.append(el("div","vazio","Nenhum produto com vídeo pronto ainda."));
-    tela.append(box); return;
-  }
+  if(modo==="redes"&&aba==="producao"){ telaVideos(tela); return; }
   if(aba==="fila"){
     const box=el("div","list"); const n=g.fila.length;
     box.append(el("div","aviso",n>=loteMin?`Fila cheia: ${n} produtos. O próximo lote está pronto para produzir.`:`${n} de ${loteMin} para fechar o próximo lote.`));
@@ -284,6 +359,8 @@ const ultDia=l=>{ const d=[...new Set(l.map(i=>i.dia).filter(Boolean))].sort(); 
   db.collection("candidatos").onSnapshot(s=>{
     itensS=s.docs.map(d=>({...d.data(),_id:d.id,_col:"candidatos"})); diaS=ultDia(itensS); render();
   }, ()=>render());
+  db.collection("videos").onSnapshot(s=>{ vids=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>render());
+  db.collection("montagens").onSnapshot(s=>{ peds=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>render());
   db.collection("carrossel").onSnapshot(s=>{
     itensR=s.docs.map(d=>({...d.data(),_id:d.id,_col:"carrossel"})); diaR=ultDia(itensR); render();
   }, ()=>render());

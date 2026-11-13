@@ -47,3 +47,12 @@ Cenários e imagens do carrossel seguem isso.
 - Preço R$ 30 a R$ 150 (pontua mais até R$ 80), nota >= 4,7, 50+ vendidos, comissão >= 10% e NO MÍNIMO R$ 10 por venda (a dona, 13/11).
 - Gemini recebe o preço e dá "vale_o_preco" (>= 7 para entrar) e o "benefício" que vende; tira o que não é de casa
   (folheto, embalagem, caixa de doces, lembrancinha).
+
+## Aba "🎬 Montar vídeo" (Tinder > REDES SOCIAIS, 13/11)
+- A dona: "quero criar com os vídeos já criados, ganchos estratégicos, produtos bons" + "uma aba onde eu possa escolher os vídeos".
+- Coleção `videos` (Tinder): 1 doc por produto já aprovado na Conferir (id = id da Conferir, ex. 1211A-03), com poster, drive_urls A/B/C,
+  links, tema e charme (Gemini), preço/comissão quando conhecidos. Gerado por `produto-campeao/redes/montar_videos_docs.py`.
+- Ela toca 3 a 5 vídeos (ordem do toque = ordem no vídeo), escolhe gancho e voz (voz bonita / minha voz / só música) e pede.
+  O pedido vai para a coleção `montagens` {videos, produtos, gancho, voz, status: pedido|montando|conferir}.
+- Montagem: grátis (edição). Trechos dos vídeos já prontos + gancho com as letras do estilo 1 + CTA "comenta EU QUERO". Sempre para a Conferir.
+- A dona (13/11): quer narrar os vídeos ou usar "uma voz bem bonita".
