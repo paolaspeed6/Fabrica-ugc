@@ -10,7 +10,7 @@ B = Path(__file__).resolve().parent
 AF = B.parent / 'afiliados'
 sys.path.insert(0, str(AF)); import varrer as V
 sys.path.insert(0, str(B.parents[1] / 'video-teste' / 'lote' / 'modelo')); import fiscal_gemini as G
-CK = B / ('ck_carrossel_' + time.strftime('%Y-%m-%d')); CK.mkdir(exist_ok=True)
+CK = B / ('ck_carrossel_' + time.strftime('%Y-%m-%d') + os.environ.get('TAG', '')); CK.mkdir(exist_ok=True)
 VISTOS = B / 'vistos_carrossel.json'
 
 ESTILO = """Você escolhe produtos da Shopee para CARROSSEIS de foto no TikTok/Instagram da loja Aguiiar Lar.
@@ -83,7 +83,7 @@ def main():
         print(f'beleza {i + len(bloco)}/{len(lista)}: {len(saida)} aprovados', flush=True)
     saida.sort(key=lambda x: x['pontos'], reverse=True); saida = saida[:a.top]
     for x in saida: x['foto'] = V.miniatura(x['foto_url'])
-    out = B / f'candidatos_carrossel-{time.strftime("%Y-%m-%d")}.json'
+    out = B / f'candidatos_carrossel-{time.strftime("%Y-%m-%d")}{os.environ.get("TAG", "")}.json'
     out.write_text(json.dumps(saida, ensure_ascii=False, indent=1))
     from collections import Counter
     print(len(saida), '->', out, dict(Counter(x['tema'] for x in saida)))
