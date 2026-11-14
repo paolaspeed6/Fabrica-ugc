@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-12 manhã (Listas 12/11 A e B entregues). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-14 noite (Lista 14/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -28,10 +28,10 @@ Atualizado: 2026-11-12 manhã (Listas 12/11 A e B entregues). Histórico complet
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
-## Estado atual (12/11)
-- Últimos lotes: Lista 12/11 A (45 vídeos na Conferir, US$ 5,60) e Lista 12/11 B (45 vídeos, US$ 4,93), feitos ao mesmo tempo, 15 produtos cada, nenhum pulado.
-  Antes: Lista 11/11 B (27 vídeos) e 11/11 A (45). Fila do Tinder: aprovados 1-30 produzidos pelos lotes 12/11 A e B.
-- Saldo WaveSpeed: confira com `curl -s https://api.wavespeed.ai/api/v3/balance` (~US$ 12,1 em 12/11 após os dois lotes).
+## Estado atual (14/11)
+- Último lote: Lista 14/11 A (45 vídeos na Conferir, US$ 5,37), 15 produtos, nenhum pulado. Antes: Listas 12/11 A e B (45 cada).
+  Fila do Tinder: sobram 6 aprovados (58259308476, 58218756349, 58210756936, 58221762657, 58271537523, 23793262701).
+- Saldo WaveSpeed: confira com `curl -s https://api.wavespeed.ai/api/v3/balance` (US$ 6,35 em 14/11 após a Lista 14/11 A).
 - Varredura diária (10/11): produto-campeao/afiliados/busca_diaria.py + troca de excluídos com o Kevin (TROCA_EXCLUIDOS.md).
 - Carrossel: salvar_imagens.py (fim da fase2) manda só produtos aesthetic (nota >= 8) ao Drive, Carrossel/<dia>/.
 - Dois lotes ao mesmo tempo: use N0=<nº> no produzir.sh (fase2) para não repetir pNNN; gerar_links pode dar "Rate limit" (repetir com pausa).

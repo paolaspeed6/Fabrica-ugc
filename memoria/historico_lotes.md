@@ -3,6 +3,19 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 14/11 A (14/11 ~22h30 UTC; trabalhos p455-p469)
+- 15 produtos com A, B e C (45 vídeos, 1411A-01..15, 12 s) na aba Conferir, pendentes. Gasto US$ 5,37 de 8 (65 imagens = 45 + 20 refações, US$ 2,57;
+  28 clipes, todos aprovados, US$ 2,80). Nenhum pulado. Tinder: os 15 em `pronto`. Saldo WaveSpeed US$ 6,35.
+- Carrossel: 9 produtos no Drive (nota >= 8: p01, p06, p07, p08, p09, p10, p13, p14, p15); fora p02, p03, p04, p05, p11 (2), p12.
+- K24: 8 largos (p02, p03, p04, p07, p09, p10, p13, p15) = 24 cenas; 9 passaram de 1ª. Com guia (p07, p13): 3 de 6, produto igual à foto
+  (conferi a guia do p07). Do zero (foto 01 com colagem/selos/banner): 6 de 18. p09 todas reprovadas de 1ª (borda/espelhamento).
+- K23: 3 reprovações por enfeite/objeto (Sonnet: p08 B e C vaso de gargalo fino; p07 C copo; Gemini: p08 B brinquedos). Nenhum clipe com enfeite mudando.
+- Cenas que restaram: p03, p08, p09, p10, p15 só 1; p01, p02, p04, p06, p07, p11, p13 com 2; p05, p12, p14 com 3.
+- Avisos: p02 e p03 são a MESMA tenda (mesma loja, mesmas fotos, marca KALA no teto): vídeos parecidos, a dona escolhe um.
+  p04 ref = foto 03 (01 com selos). p08 sem foto limpa, 5 andares madeira clara (anúncio vende 3-6 andares). p11 potência discorda (3200/3800 W):
+  textos sem potência; refs 02/03/05. p12 gaiola vazia (todas as fotos com ave). p14 sem medidas (estimadas). p15 "Kit 2/4/6": feito kit de 4 pretas.
+- Erro novo: nenhum. gerar_links passou de 1ª (sem Rate limit) mesmo com a varredura do dia.
+
 ## Lista 12/11 B (12/11 ~07h UTC; feita ao mesmo tempo que a Lista 12/11 A, trabalhos p440-p454)
 - 15 produtos com A, B e C (45 vídeos, 1211B-01..15, 12 s) na aba Conferir, pendentes. Gasto US$ 4,93 de 8 (64 imagens = 45 + 19 refações;
   24 clipes, todos aprovados). Nenhum pulado. Tinder: os 15 em `pronto`. Saldo WaveSpeed US$ 12,12 (depois dos 2 lotes andando).

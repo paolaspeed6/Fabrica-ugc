@@ -124,3 +124,6 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 ## Lista 12/11 A (12/11)
 - 13 refações de imagem (US$ 0,51); falharam de novo: p05 B, p08 A e C (borda), p10 B e C (sapatos/bolsa no fundo, borda); p15 B (Sonnet: arara de roupas) deu erro na refação (timeout).
 - Nenhum clipe reprovado (33 aprovados).
+## Lista 14/11 A (14/11)
+- 20 refações de imagem (US$ 0,79); falharam de novo: p02 C, p03 B e C, p09 B e C, p10 A e C, p11 A, p15 C (borda); p06 C (Sonnet: sem grelha), p07 C (Sonnet: copo), p08 B (Sonnet: vaso tipo garrafa).
+- Sonnet reprovou 2 cenas já liberadas (sem 3ª imagem): p08 C (vaso tipo garrafa), p15 A (5 cadeiras cortadas). Nenhum clipe reprovado (28 de 28).
