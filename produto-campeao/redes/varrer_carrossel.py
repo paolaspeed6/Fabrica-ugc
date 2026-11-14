@@ -34,6 +34,17 @@ peônias, tudo delicado, feminino e irresistível. Para cada foto numerada dê t
 da mesma casa das referências; xícara comum, frase escrita, vermelho forte, rústico pesado, colorido infantil ou peça genérica = nota baixa)
 e "tipo": o tipo de objeto em 1 ou 2 palavras (ex.: "xícara", "pote", "toalha", "prateleira", "copo")."""
 
+# a dona, 14/11 (Tinder carrossel: 17 aprovados, 72 descartados). Descartou TODAS as xícaras/canecas, árvore e saia de árvore branca,
+# cortina de LED, enfeites/bolas douradas, espelho de LED, tábua, panela/frigideira, cesta de pão, cabeceira, tapete, toalha de banho.
+# Aprovou: rosa fofo, Natal ROSA (papai noel rosa, capa de almofada natal rosa, toalha de mesa natal), casinhas de Natal com LED,
+# potes de vidro com tampa de bambu, puff bouclê, peseira de tricô, peônia, porta-joias de laço, porta-ovos galinha, bandeja espelhada.
+NAO_QUER = ['xicara', 'caneca', 'saia p/ arvore', 'saia para arvore', 'saia de arvore', 'cortina led', 'cortina de led', 'cortina 300',
+            'cortina cascata', 'espelho led', 'espelho de led', 'tabua', 'panela', 'frigideira', 'cacarola', 'cesta de pao', 'cabeceira',
+            'infantil', 'bebe', 'gratidao', 'toalha de banho', 'toalha banho']
+REFS += """ Nesta casa NÃO entram: xícara/caneca, árvore ou enfeite de Natal branco/dourado comum, LED de festa, espelho de LED,
+utensílio de cozinha comum (tábua, panela). ENTRAM com nota alta: peça fofa e delicada que vira enfeite (rosa, laço, bouclê, tricô,
+peônia, cerâmica pintada, vidro com bambu), Natal ROSA, casinha iluminada."""
+
 def busca(i, k):
     f = CK / f'r{i:03d}.json'
     if f.exists(): return json.loads(f.read_text())
@@ -83,6 +94,7 @@ def main():
         if k in fora or not (30 <= preco <= a.preco_max) or nota < 4.7 or vend < 50: continue
         if float(p['commissionRate']) < 0.10 or com < a.com_min: continue
         if any(w in V.plano(p['productName']) for w in V.PROIBIDO): continue
+        if any(w in V.plano(p['productName']) for w in NAO_QUER): continue
         n = min(com / 8, 1) * 3 + min(float(p['commissionRate']) / 0.2, 1) * 2 + min(math.log10(vend + 1) / 4, 1) * 3 + (1.5 if preco <= a.preco_max * 0.53 else 0.5 if preco <= a.preco_max * 0.73 else 0) + max(min((com - a.com_min) / 15, 1), 0) * 2
         n += 1 if float(p['sellerCommissionRate'] or 0) > 0 else 0
         lista.append((n, k, p))
