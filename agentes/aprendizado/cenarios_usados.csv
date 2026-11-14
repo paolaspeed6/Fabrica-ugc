@@ -1411,3 +1411,27 @@ data,produto,cena,ambiente,piso,parede,paleta
 2026-11-12,L1211b p08 manta-termica-thermozine,A,clinica de estetica manha janela alta sol folhas seringueira carrinho laqueado tampo carvalho tapete juta,porcelanato areia grande,estuque off-white + ripado carvalho,off-white/carvalho/ameixa
 2026-11-12,L1211b p08 manta-termica-thermozine,B,sala de relaxamento spa tarde janela lateral sol folhas bambu banco nogueira,tabuas carvalho,estuque verde musgo liso,musgo/nogueira/linho
 2026-11-12,L1211b p08 manta-termica-thermozine,C,suite de estetica golden hour janela alta nicho arco vasos ceramica strelitzia console travertino,microcimento quente,azul petroleo liso,petroleo/travertino/ameixa
+2026-11-14,L1411a p01 poltrona-vera-linho,A,quarto moderno manha janela alta sol folhas figueira lyrata tapete rattan banco baixo,tabuas freixo claro,estuque azul acinzentado claro,azul acinzentado/freixo/creme
+2026-11-14,L1411a p01 poltrona-vera-linho,B,hall de leitura golden hour espelho arco palmeira areca vaso terracota tapete juta,porcelanato concreto claro,branco quente + ripado freijo claro,branco/freijo/terracota
+2026-11-14,L1411a p01 poltrona-vera-linho,C,recepcao de clinica tarde janela cortina voil seringueira quadro sem texto tapete la,terrazzo claro,estuque verde sage claro,sage/terrazzo/branco
+2026-11-14,L1411a p02 tenda-gazebo-3x3-pratiko,A,quintal piscina tarde dourada oliveiras buxinho tapete juta mesa teca,pavers porcelanato 60x120 cinza claro,muro estuque branco + sebe buxinho,branco/cinza/verde
+2026-11-14,L1411a p02 tenda-gazebo-3x3-pratiko,B,gramado casa de campo manha ipe florido sofa rattan tapete juta redondo,grama,pergolado pinus claro,verde/pinus/rattan
+2026-11-14,L1411a p02 tenda-gazebo-3x3-pratiko,C,deck casa de praia golden hour coqueiros cestos capim dourado,deck composto cinza claro,muro estuque branco,areia/branco/azul mar
+2026-11-14,L1411a p03 tenda-gazebo-3x3-dobravel,A,jardim chale lago manha hortensias branca bétula muro de pedra,pavers concreto bege claro,muro de pedra baixo,bege/branco/verde
+2026-11-14,L1411a p03 tenda-gazebo-3x3-dobravel,B,rooftop predio golden hour capim ornamental almofadas tapete natural,deck porcelanato amadeirado cinza claro,guarda-corpo vidro,cinza/dourado/capim
+2026-11-14,L1411a p03 tenda-gazebo-3x3-dobravel,C,quintal de sitio tarde mangueira bananeira banco rustico cerca branca,grama,cerca madeira branca,verde/branco/terracota
+2026-11-14,L1411a p04 cama-camping-aluminio,A,glamping eco lodge manha pinheiros tenda lona samambaia tapete juta,deck carvalho palido,lona linho natural,linho/carvalho/pinus
+2026-11-14,L1411a p04 cama-camping-aluminio,B,varanda chale montanha tarde porta vidro colinas monstera tapete la areia,cimento queimado grafite,ripado cedro claro,grafite/cedro/areia
+2026-11-14,L1411a p04 cama-camping-aluminio,C,acampamento beira de lago golden hour juncos tenda sino cáqui pedras lisas,plataforma madeira natural,tenda lona cáqui,caqui/madeira/azul lago
+2026-11-14,L1411a p05 churrasqueira-tambor-bafo-80l,A,area gourmet tarde figueira lyrata limoeiro banco madeira,porcelanato off-white 90x90,paineis concreto aparente cinza claro,off-white/concreto/verde
+2026-11-14,L1411a p05 churrasqueira-tambor-bafo-80l,B,quintal casa de campo manha bananeiras primavera mesa rustica,pedra cinza claro,tijolo branco pintado,branco/pedra/rosa bougainville
+2026-11-14,L1411a p05 churrasqueira-tambor-bafo-80l,C,varanda chale golden hour oliveira tapete la porta vidro,tabuas madeira escura,ripado nogueira,nogueira/creme/oliva
+2026-11-14,L1411a p06 churrasqueira-aluminio-pe-alto,A,canto gourmet jardim manha limoeiro capim banco madeira,pavers calcario claro,muro tijolo branco baixo,calcario/branco/limao
+2026-11-14,L1411a p06 churrasqueira-aluminio-pe-alto,B,quintal casa de campo tarde mangueira hortensia mesa rustica bananeira vaso,grama,hortensia branca,verde/branco/terracota
+2026-11-14,L1411a p06 churrasqueira-aluminio-pe-alto,C,varanda apartamento golden hour guarda-corpo vidro seringueira tapete la redondo,porcelanato amadeirado cinza quente,revestimento ceramico 3D branco,branco/cinza quente/verde
+2026-11-14,L1411a p07 banqueta-palha-dourada,A,ilha gourmet manha janela arqueada sol folhas seringueira tigela ceramica creme ilha quartzo cascata,carvalho espinha de peixe,estuque rosa argila liso,rosa argila/palha/dourado
+2026-11-14,L1411a p07 banqueta-palha-dourada,B,varanda gourmet golden hour balcao freijo palmeira pendente cupula,porcelanato carvao grande,estuque verde petroleo suave,teal suave/freijo/dourado
+2026-11-14,L1411a p07 banqueta-palha-dourada,C,breakfast bar loft tarde janela voil oliveira balcao terrazzo claro tapete juta,concreto polido,tijolo branco pintado,branco/terrazzo/palha
+2026-11-14,L1411a p08 estante-giratoria-360,A,sala moderna tarde janela oliveira sofa linho tapete la creme,tabuas carvalho palido,branco quente liso,branco quente/carvalho/oliva
+2026-11-14,L1411a p08 estante-giratoria-360,B,quarto infantil manha cortina linho monstera banco branco tapete la redondo azul acinzentado,bétula clara,estuque lilas acinzentado,lilas acinzentado/betula/azul
+2026-11-14,L1411a p08 estante-giratoria-360,C,home office golden hour mesa nogueira cadeira rattan figueira lyrata,microcimento cinza quente,verde sage escuro liso,sage escuro/nogueira/rattan
