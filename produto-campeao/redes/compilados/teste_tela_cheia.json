@@ -1,0 +1,8 @@
+{"gancho": "Isso parece caro, mas não é", "fim": ["Comenta", "EU QUERO", "que eu te mando o link"],
+ "itens": [
+  {"mp4": "/home/user/fabrica-ugc/video-teste/lote/lista2510a/p16-cenas/C.mp4", "ini": 0.4, "dur": 4.2, "nome": "Cadeira pérola e dourado"},
+  {"mp4": "/home/user/fabrica-ugc/video-teste/lote/lista2510a/p18-cenas/C.mp4", "ini": 0.4, "dur": 3.8, "nome": "Poltrona bouclê"},
+  {"mp4": "/home/user/fabrica-ugc/video-teste/lote/lista2510a/p45-cenas/A.mp4", "ini": 0.4, "dur": 3.8, "nome": "Cadeiras de palhinha"},
+  {"mp4": "/home/user/fabrica-ugc/video-teste/lote/lista2510a/p13-cenas/B.mp4", "ini": 0.4, "dur": 4.6, "nome": "Poltrona orgânica"}
+ ],
+ "musica": "/home/user/fabrica-ugc/musicas/biblioteca_calmas/calma_original_02_piano.wav"}
