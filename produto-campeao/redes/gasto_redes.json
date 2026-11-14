@@ -1,5 +1,5 @@
 {
- "usd": 0.198,
+ "usd": 0.396,
  "itens": [
   [
    "cenario A_bancada",
@@ -19,6 +19,26 @@
   ],
   [
    "cenario E_cozinha_branca",
+   0.0396
+  ],
+  [
+   "carrossel 19498330969",
+   0.0396
+  ],
+  [
+   "carrossel 58264071422",
+   0.0396
+  ],
+  [
+   "carrossel 20197118188",
+   0.0396
+  ],
+  [
+   "carrossel 54761727360",
+   0.0396
+  ],
+  [
+   "carrossel 58218201282",
    0.0396
   ]
  ]
