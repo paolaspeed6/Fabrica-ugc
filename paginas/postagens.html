@@ -31,6 +31,8 @@ h1{font-family:var(--display);font-weight:800;font-size:1.6rem;margin:0;letter-s
 .tab{border:0;background:transparent;color:var(--muted);border-radius:9px;padding:9px 4px;font:700 .8rem var(--body);cursor:pointer}
 .tab[aria-pressed="true"]{background:var(--card);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.1)}
 .lista{display:flex;flex-direction:column;gap:8px}
+.rodizio{display:flex;flex-direction:column;gap:3px;background:var(--card);border:1.5px solid var(--accent);border-radius:14px;padding:12px 14px;margin:6px 0 4px;box-shadow:var(--shadow)}
+.rodizio b{font:800 18px/1.2 var(--display);color:var(--accent)}.rodizio span{font-size:14px;color:var(--fg)}.rodizio small{font-size:13px;color:var(--muted)}
 .sep{display:flex;align-items:center;gap:10px;margin:14px 2px 2px}
 .sep:first-child{margin-top:4px}
 .sep img{width:34px;height:34px;border-radius:9px;object-fit:cover;background:var(--line);flex:none}
@@ -87,6 +89,23 @@ h1{font-family:var(--display);font-weight:800;font-size:1.6rem;margin:0;letter-s
 .busca input::-webkit-search-cancel-button{display:none;-webkit-appearance:none}
 .busca input:focus{outline:2px solid var(--accent);outline-offset:1px}
 .busca button{position:absolute;right:6px;border:0;background:transparent;color:var(--muted);font:700 1.1rem var(--body);padding:6px 8px;cursor:pointer}
+.tab{line-height:1.15}
+@media (max-width:420px){.tab{font-size:.72rem;padding:8px 2px}}
+.conf>video{width:64px;height:114px;object-fit:cover;border-radius:10px;background:var(--line)}
+.tts-form{grid-template-columns:1fr;gap:8px}
+.tts-form input[type=url],.tts-form input[type=text]{width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:10px;padding:10px;font:600 16px var(--body);background:var(--soft);color:var(--fg)}
+.tts-form textarea{font-size:16px}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.slot{display:flex;align-items:center;justify-content:center;text-align:center;min-height:64px;padding:8px 4px;border:2px dashed var(--line);border-radius:12px;font:700 .78rem var(--body);color:var(--muted);cursor:pointer}
+.slot.ok{border-style:solid;border-color:var(--done);background:var(--done-bg);color:var(--done)}
+.slot.grande{border-color:var(--accent);background:transparent;color:var(--accent)}
+.criativos{grid-column:1/-1;display:flex;flex-direction:column;gap:8px}
+.criativo{display:grid;grid-template-columns:56px 1fr;gap:10px;align-items:start;background:var(--soft);border-radius:12px;padding:8px}
+.criativo.feito{opacity:.6}
+.criativo>img{width:56px;height:100px;object-fit:cover;border-radius:8px;background:var(--line)}
+.criativo .b{background:var(--card)}
+.criativo .b.ok{background:var(--done-bg)}
+.criativo .b.postei{background:var(--accent)}
 button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){.b,.barra i,.video{transition:none}}
 </style>
@@ -100,6 +119,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
     <button class="tab" id="t-reels" aria-pressed="false">Reels auto</button>
     <button class="tab" id="t-feitos" aria-pressed="false">Postados</button>
     <button class="tab" id="t-esg" aria-pressed="false">Esgotados</button>
+    <button class="tab" id="t-tts" aria-pressed="false">TikTok Shop</button>
   </div>
   <label class="busca" id="busca-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
     <input id="busca" type="search" placeholder="Procurar produto" aria-label="Procurar produto" autocomplete="off"><button id="limpa" type="button" aria-label="Limpar busca" hidden>×</button></label>
@@ -124,6 +144,13 @@ let busca="";
 const acha=p=>!busca||semAc([p.produto,p.legenda,p.versao,p._id].join(" ")).includes(busca);
 const dataBR=d=>d?d.slice(0,10).split("-").reverse().join("/"):"";
 const hoje=()=>new Date().toISOString().slice(0,10);
+const NOMES={A:"Um dia com ela",B:"Faixas",C:"Direto ao ponto"};
+function rodizio(){ // dia local; ciclo de 6 dias a partir de 15/11/2026 (A)
+  const d=new Date(), t0=Date.UTC(2026,10,15), t=Date.UTC(d.getFullYear(),d.getMonth(),d.getDate());
+  const n=Math.floor((t-t0)/864e5), k=((Math.floor(n/2)%3)+3)%3, L="ABC", ini=n-(((n%2)+2)%2);
+  const br=x=>{const z=new Date(t0+x*864e5); return String(z.getUTCDate()).padStart(2,"0")+"/"+String(z.getUTCMonth()+1).padStart(2,"0");};
+  return {hoje:L[k], ultimo:n!==ini, prox:[[L[(k+1)%3],br(ini+2)],[L[(k+2)%3],br(ini+4)]]};
+}
 const mais30=()=>new Date(Date.now()+30*864e5).toISOString().slice(0,10);
 // Esgotado (Kevin 23/10): o produto sai da fila com todos os vídeos e vai para conferência mensal
 async function marcarEsgotado(p){
@@ -225,7 +252,8 @@ function render(){
   $("#h1").textContent=MODO==="conf"?"Conferência":"Postagens";
   const tr=$("#troca"); tr.href=MODO==="conf"?"index.html":"conferencia.html"; tr.textContent=MODO==="conf"?"Ir para Postagens →":(pend.length?`Conferência (${pend.length}) →`:"Conferência →");
   document.querySelector(".tabs").hidden=MODO==="conf"; document.querySelector(".barra").hidden=MODO==="conf"; $("#cont").hidden=MODO==="conf";
-  $("#t-conf").hidden=true; document.querySelector(".tabs").style.gridTemplateColumns="repeat(4,1fr)";
+  $("#t-conf").hidden=true; document.querySelector(".tabs").style.gridTemplateColumns="repeat(5,1fr)";
+  $("#t-tts").setAttribute("aria-pressed",String(aba==="tts"));
   $("#t-conf").textContent=pend.length?`Conferir (${pend.length})`:"Conferir"; $("#t-conf").setAttribute("aria-pressed",String(aba==="conf"));
   $("#t-fazer").setAttribute("aria-pressed",String(aba==="fazer")); $("#t-feitos").setAttribute("aria-pressed",String(aba==="feitos")); $("#t-reels").setAttribute("aria-pressed",String(aba==="reels")); $("#t-esg").setAttribute("aria-pressed",String(aba==="esg"));
   $("#busca-box").hidden=MODO==="conf"||aba==="conf";
@@ -240,6 +268,7 @@ function render(){
   }
   if(busca){ const n=(aba==="feitos"?feitos:aba==="reels"?reels:aba==="esg"?esgotados:fazer).filter(acha).length;
     const sp=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"Procurando “"+$("#busca").value.trim()+"”"),el("b",null,n?(n+(n===1?" vídeo encontrado":" vídeos encontrados")):"Nada encontrado")); sp.append(tx); l.append(sp); }
+  if(aba==="tts"){ renderTTS(l); tela.append(l); scrollTo(0,y); return; }
   if(aba==="reels"){
     const fila=reels.filter(p=>p.status!=="postado").sort(porEntrada);
     const ok=reels.filter(p=>p.status==="postado").sort((a,b)=>(b.postado_em||"").localeCompare(a.postado_em||""));
@@ -288,14 +317,173 @@ function render(){
     tela.append(l); scrollTo(0,y); return;
   }
   if(!fazer.length){ tela.append(el("div","vazio","Tudo postado. Os vídeos do próximo lote aparecem aqui sozinhos.")); return; }
+  // a dona 15/11: um modelo por vez, 2 dias cada (A 15-16/11, B 17-18, C 19-20, A de novo...), para uma punição não pegar os 3 vídeos do produto
+  const R=rodizio(); const letra=p=>((p.versao||"").trim()[0]||"").toUpperCase();
+  const daVez=fazer.filter(p=>!"ABC".includes(letra(p))||letra(p)===R.hoje);
+  const depois=fazer.filter(p=>"ABC".includes(letra(p))&&letra(p)!==R.hoje);
+  { const b=el("div","rodizio"); b.append(el("b",null,`Hoje é dia do Modelo ${R.hoje} · ${NOMES[R.hoje]}`),
+      el("span",null,`${R.ultimo?"último dia":"até amanhã"} · depois: ${R.prox[0][0]} em ${R.prox[0][1]}, ${R.prox[1][0]} em ${R.prox[1][1]}`));
+    const ct={}; depois.forEach(p=>ct[letra(p)]=(ct[letra(p)]||0)+1);
+    if(depois.length) b.append(el("small",null,"Guardados para os próximos dias: "+Object.keys(ct).sort().map(k=>`${ct[k]} do ${k}`).join(", ")));
+    l.append(b); }
+  if(!daVez.length) l.append(el("div","vazio",`Nenhum vídeo ${R.hoje} para postar hoje. Os ${R.prox[0][0]} aparecem em ${R.prox[0][1]}.`));
   let atual=null;
-  fazer.filter(acha).forEach(p=>{
+  daVez.filter(acha).forEach(p=>{
     const chave=(p.dia||"")+"|"+p.produto; const novo=chave!==atual;
     if(novo){ atual=chave; const s=el("div","sep"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy";
       const tx=el("div"); tx.append(el("span",null,"Lote "+dataBR(p.dia)),el("b",null,p.produto)); s.append(im,tx); l.append(s); }
     l.append(linhaVideo(p,novo));
   });
   tela.append(l); scrollTo(0,y);
+}
+$("#t-tts").onclick=()=>{aba="tts";render();};
+// ===== Aba TikTok Shop (a dona 02/11): ela manda até 3 clipes + link do produto; o Claude edita 3 criativos de 13 s e devolve aqui =====
+let tts=[], assets=null, downloads=null, espaco="", formTTS=null;
+const blob=id=>id?"/_blob/"+id:"";
+const MB=n=>(n/1048576).toFixed(n<10485760?1:0).replace(".",",")+" MB";
+async function medirEspaco(){ if(!assets) return; try{ const r=await assets.list(); espaco=`Espaço usado: ${MB(r.usage.bytes)} de ${MB(r.usage.maxBytes)}`; render(); }catch(e){} }
+const ESTADO={aguardando:"Na fila",editando:"Editando",ajuste:"Ajuste pedido",pronto:"Pronto"};
+function montaForm(){
+  const f=el("form","conf tts-form"); f.noValidate=true;
+  const cab=el("div","info"); cab.style.gridColumn="1/-1";
+  cab.append(el("div","tit","Novo pedido"),el("div","nota","Cole o link do produto e escolha os 3 clipes de 8 s. O Claude devolve 3 criativos de 13 s aqui mesmo."));
+  const link=el("input"); link.type="url"; link.placeholder="Link do produto (TikTok Shop ou Shopee)"; link.autocomplete="off";
+  const cor=el("input"); cor.type="text"; cor.placeholder="Cor ou variação (opcional)";
+  const obs=el("textarea"); obs.placeholder="Observação (opcional)";
+  const slots=el("div","slots"); const ins=[];
+  ["A","B","C"].forEach(n=>{ const lab=el("label","slot"); const i=el("input"); i.type="file"; i.accept="video/*"; i.hidden=true;
+    const t=el("span",null,"+ Clipe "+n); lab.append(i,t);
+    i.onchange=()=>{ const fl=i.files[0]; lab.classList.toggle("ok",!!fl); lab.classList.toggle("grande",!!fl&&fl.size>20*1048576);
+      t.textContent=fl?(`Clipe ${n} · ${MB(fl.size)}`+(fl.size>20*1048576?" · grande demais":"")):"+ Clipe "+n; };
+    ins.push(i); slots.append(lab); });
+  const msg=el("div","nota"); const env=el("button","b postei","Enviar para edição"); env.type="submit";
+  f.append(cab,link,cor,slots,obs,env,msg);
+  f.onsubmit=async ev=>{ ev.preventDefault();
+    const arqs=ins.map(i=>i.files[0]).filter(Boolean);
+    if(!/^https?:\/\//.test(link.value.trim())){ msg.textContent="Cole o link do produto."; link.focus(); return; }
+    if(!arqs.length){ msg.textContent="Escolha pelo menos 1 clipe (o ideal são 3)."; return; }
+    if(arqs.some(a=>a.size>20*1048576)){ msg.textContent="Cada clipe pode ter até 20 MB. Exporte em 1080p e tente de novo."; return; }
+    if(!assets){ msg.textContent="Envio indisponível nesta tela. Abra a página no app do Claude, logada como dona."; return; }
+    env.disabled=true; const clipes=[];
+    try{
+      for(let k=0;k<arqs.length;k++){ msg.textContent=`Enviando clipe ${k+1} de ${arqs.length}…`;
+        // .mov do iPhone (video/quicktime) não está na lista aceita; o contêiner é o mesmo do MP4, então vai marcado como mp4
+        const tipo=/^video\/(mp4|webm)$/.test(arqs[k].type)?arqs[k].type:"video/mp4";
+        const r=await assets.upload(arqs[k],{type:tipo}); clipes.push({id:r.id,nome:arqs[k].name,bytes:r.sizeBytes}); }
+      msg.textContent="Salvando pedido…";
+      await db.collection("tiktokshop").add({link:link.value.trim(),cor:cor.value.trim(),obs:obs.value.trim(),clipes,status:"aguardando",criado_em:new Date().toISOString()});
+      f.reset(); ins.forEach(i=>i.onchange()); msg.textContent="Pedido enviado. Agora é só pedir ao Claude no chat: “edita o TikTok Shop”."; medirEspaco();
+    }catch(e){ const c=e&&e.code;
+      msg.textContent=c==="too_large"?"Um clipe passou de 20 MB.":c==="quota_or_state"?"Espaço da página cheio: apague os clipes brutos de pedidos já postados.":c==="unsupported_type"?"Formato de vídeo não aceito. Use MP4 ou MOV.":"Não enviou, toque de novo.";
+      // clipes que subiram antes do erro não ficam órfãos
+      for(const x of clipes){ try{ await assets.delete(x.id); }catch(_){} }
+    }
+    env.disabled=false; };
+  return f;
+}
+function miniatura(p){
+  const c=(p.criativos||[])[0];
+  if(p.poster||c&&c.poster){ const im=el("img"); im.src=blob(p.poster||c.poster); im.alt=""; im.loading="lazy"; return im; }
+  const v=el("video"); v.muted=true; v.playsInline=true; v.preload="metadata"; if(p.clipes&&p.clipes[0]) v.src=blob(p.clipes[0].id)+"#t=0.5"; return v;
+}
+async function apagarClipes(p,tudo){
+  for(const x of p.clipes||[]) await assets.delete(x.id);
+  if(tudo){ for(const c of p.criativos||[]){ if(c.video) await assets.delete(c.video); if(c.poster) await assets.delete(c.poster); } await db.doc("tiktokshop/"+p._id).delete(); }
+  else await db.doc("tiktokshop/"+p._id).update({clipes:[],clipes_apagados:true});
+  medirEspaco();
+}
+// Sobe o vídeo (asset da página) para a pasta "TikTok Shop - Vídeos prontos" do Drive dela, pelo conector Google Drive
+const PASTA_DRIVE="1ilZO80jPrp7w-HZFkH2LW-yvIGE-sEos";
+async function enviarDrive(c){
+  const mcp=await (window.claude?.use?window.claude.use("mcp"):null);
+  if(!mcp) throw {msg:"Abra no app do Claude"};
+  const lt=await mcp.listTools().catch(()=>({}));
+  if(!lt.fileArgs) throw {msg:"Atualize o app do Claude"};
+  const r=await fetch(blob(c.video)); if(!r.ok) throw {msg:"Vídeo não carregou, toque de novo"};
+  const dado=await r.blob(); const nome=(c.arquivo||"criativo")+".mp4";
+  // nome do conector e da ferramenta como o app da dona lista (pode diferir do que o Claude vê)
+  const sv=(lt.servers||[]).find(s=>/drive/i.test(s.server)); const srv=sv?sv.server:"Google Drive";
+  const tl=sv&&(sv.tools||[]).find(t=>/create_file/i.test(t.name||t)); const tool=tl?(tl.name||tl):"create_file";
+  // a dona 03/11: o app só aceita alguns tipos no $file (vídeo não). O tipo do $file só serve para a passagem;
+  // o Drive grava como vídeo por contentMimeType + título .mp4. Tenta mp4 e, se recusar, um tipo da lista aceita.
+  const EXT={"application/octet-stream":"bin","application/zip":"zip","application/pdf":"pdf","text/plain":"txt","application/json":"json","text/csv":"csv",
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation":"pptx","application/vnd.openxmlformats-officedocument.wordprocessingml.document":"docx",
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet":"xlsx","image/png":"png","image/jpeg":"jpg"};
+  const PREF=["application/octet-stream","application/zip","application/pdf","application/vnd.openxmlformats-officedocument.presentationml.presentation","application/vnd.openxmlformats-officedocument.wordprocessingml.document","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","text/plain","image/png","image/jpeg"];
+  const chamar=(tipo,arq)=>mcp.callTool(srv,tool,{title:nome,parentId:PASTA_DRIVE,contentMimeType:"video/mp4",disableConversionToGoogleType:true,
+    base64Content:{$file:{data:dado,name:arq,type:tipo}}});
+  let res=null, ultimo=null, tipos=["video/mp4"], tentados=new Set();
+  while(tipos.length&&!res){ const tipo=tipos.shift(); if(tentados.has(tipo)) continue; tentados.add(tipo);
+    const arq=tipo==="video/mp4"?nome:(c.arquivo||"criativo")+"."+(EXT[tipo]||"bin");
+    try{ res=await chamar(tipo,arq); }
+    catch(e){ ultimo=e; const m=String(e&&e.message||"");
+      if(e&&e.code==="bad_request"&&/must be one of/i.test(m)){
+        const lista=(m.split(/one of:?/i)[1]||"").split(/[,\s]+/).map(s=>s.replace(/[.;]$/,"")).filter(s=>s.includes("/"));
+        tipos=[...PREF.filter(t=>lista.includes(t)),...lista.filter(t=>!PREF.includes(t)&&EXT[t])].filter(t=>!tentados.has(t)); }
+      else break; } }
+  if(!res){ const e=ultimo||{}; const cd=e.code||"?";
+    throw {msg:cd==="server_not_connected"?"Conecte o Google Drive no claude.ai":"Erro: "+cd+(e.message?" · "+String(e.message).slice(0,140):"")}; }
+  const pl=res.payload||{}; let id=pl.id||(pl.file&&pl.file.id);
+  if(!id){ const m=JSON.stringify(res).match(/"id"\s*:\s*"([\w-]{20,})"/); id=m&&m[1]; }
+  if(!id) throw {msg:"Enviou, mas não achei o link"};
+  return "https://drive.google.com/file/d/"+id+"/view";
+}
+function cardTTS(p){
+  const v=el("article","conf"); v.append(miniatura(p));
+  const info=el("div","info"); const st=p.status||"aguardando";
+  const topo=el("div","topo-v"); const t=el("div","tit",p.produto||"Produto sem nome ainda");
+  t.append(el("small",null,`${dataBR(p.criado_em)} · ${(p.clipes||[]).length||"sem"} clipe(s)${p.cor?" · "+p.cor:""}`));
+  topo.append(t,el("span","estado"+(st==="pronto"?" ok":""),ESTADO[st]||st)); info.append(topo);
+  const bs=el("div","botoes"); const a=el("a","b","Abrir produto ↗"); a.href=p.link||"#"; a.target="_blank"; a.rel="noopener"; bs.append(a);
+  info.append(bs);
+  if(p.obs) info.append(el("div","nota","Obs.: "+p.obs));
+  if(st==="aguardando"&&assets){ const cx=el("button","leve","Cancelar pedido"); cx.onclick=async()=>{ cx.disabled=true; cx.textContent="Apagando…";
+    try{ await apagarClipes(p,true); }catch(e){ cx.disabled=false; cx.textContent="Não apagou, toque de novo"; } }; bs.append(cx); }
+  if(st==="aguardando") info.append(el("div","nota","Na fila. Peça ao Claude no chat: “edita o TikTok Shop”."));
+  if(st==="ajuste"||st==="editando") info.append(el("div","nota",st==="ajuste"?"Ajuste pedido: "+(p.nota||""):"O Claude está montando os 3 criativos."));
+  if(p.aviso) info.append(el("div","aviso","Atenção: "+p.aviso));
+  v.append(info);
+  if(st==="pronto"){
+    const lista=el("div","criativos");
+    (p.criativos||[]).forEach((c,k)=>{
+      const row=el("div","criativo"+(c.postado_em?" feito":"")); const im=el("img"); im.src=blob(c.poster); im.alt=""; im.loading="lazy";
+      const tx=el("div","info"); const tt=el("div","tit",c.nome||"Criativo "+(k+1)); if(c.gancho) tt.append(el("small",null,"“"+c.gancho+"”")); tx.append(tt);
+      const b=el("div","botoes");
+      // a dona 03/11: salvar igual às postagens da Shopee = abrir no app do Drive (⋯ > Enviar uma cópia > Salvar vídeo)
+      let sv;
+      if(c.drive_url){ sv=link("Salvar vídeo (Drive)",c.drive_url,false,()=>{}); }
+      else{ sv=el("button","b","Enviar ao Drive");
+        sv.onclick=async()=>{ sv.disabled=true; sv.textContent="Enviando…";
+          try{ const url=await enviarDrive(c); const arr=(p.criativos||[]).map((x,j)=>j===k?{...x,drive_url:url}:x);
+            await db.doc("tiktokshop/"+p._id).update({criativos:arr}); }
+          catch(e){ sv.disabled=false; sv.textContent=e&&e.msg?e.msg:"Erro: "+String(e&&(e.code||e.message)||e).slice(0,80); sv.style.fontSize=".7rem"; } }; }
+      const cp=el("button","b","Copiar legenda"); const caixa=el("div","legenda",c.legenda||""); caixa.hidden=true;
+      cp.onclick=async()=>{ try{ await navigator.clipboard.writeText(c.legenda||""); cp.textContent="✓ Copiada"; cp.classList.add("ok"); }catch(e){ caixa.hidden=false; } };
+      const po=el("button","b"+(c.postado_em?" ok":" postei"),c.postado_em?"✓ Postado · desfazer":"Postei"); po.style.gridColumn="1/-1";
+      po.onclick=async()=>{ po.disabled=true; const arr=(p.criativos||[]).map((x,j)=>j===k?{...x,postado_em:x.postado_em?null:new Date().toISOString()}:x);
+        try{ await db.doc("tiktokshop/"+p._id).update({criativos:arr}); }catch(e){ po.disabled=false; po.textContent="Não salvou, toque de novo"; } };
+      b.append(sv,cp,po,caixa); tx.append(b); row.append(im,tx); lista.append(row); });
+    v.append(lista);
+    const ed=el("button","b editar","Pedir ajuste"); const area=el("textarea"); area.placeholder="O que mudar nos criativos"; area.hidden=true;
+    ed.onclick=async()=>{ if(area.hidden){ area.hidden=false; area.focus(); ed.textContent="Enviar ajuste"; return; }
+      ed.disabled=true; try{ await db.doc("tiktokshop/"+p._id).update({status:"ajuste",nota:area.value,pedido_em:new Date().toISOString()}); }catch(e){ ed.disabled=false; ed.textContent="Não salvou, toque de novo"; } };
+    const b2=el("div","botoes"); b2.style.gridColumn="1/-1"; b2.append(ed);
+    if(assets&&(p.clipes||[]).length){ const ap=el("button","b editar","Apagar clipes brutos"); ap.onclick=async()=>{ ap.disabled=true; ap.textContent="Apagando…";
+      try{ await apagarClipes(p,false); }catch(e){ ap.disabled=false; ap.textContent="Não apagou, toque de novo"; } }; b2.append(ap); }
+    b2.append(area); v.append(b2);
+  }
+  return v;
+}
+function renderTTS(l){
+  if(assets){ if(!formTTS) formTTS=montaForm(); l.append(formTTS); }
+  else l.append(el("div","vazio","Para enviar clipes, abra esta página no app do Claude logada como dona."));
+  if(espaco) l.append(el("div","nota",espaco));
+  const achaT=p=>!busca||semAc([p.produto,p.link,p.cor].join(" ")).includes(busca);
+  const todos=tts.filter(achaT).sort((a,b)=>(a.criado_em||"").localeCompare(b.criado_em||""));
+  const fim=p=>p.status==="pronto"&&(p.criativos||[]).length&&(p.criativos||[]).every(c=>c.postado_em);
+  const grupos=[["Para postar",todos.filter(p=>p.status==="pronto"&&!fim(p))],["Em edição",todos.filter(p=>p.status!=="pronto")],["Todos postados",todos.filter(fim).reverse()]];
+  grupos.forEach(([nome,g])=>{ if(!g.length) return; const sp=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"TikTok Shop"),el("b",null,`${nome} · ${g.length}`)); sp.append(tx); l.append(sp); g.forEach(p=>l.append(cardTTS(p))); });
+  if(!tts.length) l.append(el("div","vazio","Nenhum pedido ainda. Os criativos prontos aparecem aqui."));
 }
 $("#busca").oninput=e=>{ busca=semAc(e.target.value.trim()); $("#limpa").hidden=!busca; render(); };
 $("#limpa").onclick=()=>{ $("#busca").value=""; busca=""; $("#limpa").hidden=true; render(); $("#busca").focus(); };
@@ -306,6 +494,9 @@ $("#t-conf").onclick=()=>{aba="conf";escolheu=true;render();}; $("#t-fazer").onc
   db.collection("posts").onSnapshot(s=>{ posts=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>render());
   db.collection("conferir").onSnapshot(s=>{ conferir=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>{});
   db.collection("esgotados").onSnapshot(s=>{ esgotados=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>{});
+  db.collection("tiktokshop").onSnapshot(s=>{ tts=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>{});
+  assets = await (window.claude?.use ? window.claude.use("assets") : null);
+  downloads = await (window.claude?.use ? window.claude.use("downloads") : null);
+  medirEspaco();
 })();
 </script>
-
