@@ -3,6 +3,20 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 15/11 A (15/11 ~10h30 UTC; trabalhos p470-p482; 1ª com K30 e K31)
+- 13 produtos com A, B e C (39 vídeos, 1511A-01..15) + p02 Solda ESAB como cartão "resgate" na aba Conferir, pendentes. p11 Luminária de piso
+  58271209891 pulada pelo Fichador (anúncio mistura 3 modelos, foto 01 colagem): Tinder `aprovado` + `pulado`. Tinder: os outros 14 em `pronto`.
+- Gasto US$ 4,63 de 8: 74 imagens (42 + 32 refações, US$ 2,93) + 17 clipes (US$ 1,70). Saldo WaveSpeed US$ 1,73 (RECARREGAR antes do próximo lote).
+- Pausa da conversa principal (09:00-09:20) para achar a causa dos produtos diferentes da foto: K31 (refs_variante.py tirou 4 fotos de outra
+  variante: p06 04, p07 04, p10 05, p12 04).
+- K30/K31: 23 cenas diferentes reprovadas ao menos uma vez por detalhe do produto (Gemini + Sonnet com lupa); a Sonnet pegou o que o Gemini
+  aprovou (p02 alça e letras BANTAM, p07 estofado brilhante, p10 molduras, p15 tom). Gasto extra de refação US$ 1,27.
+- Fiscal final Sonnet (folhas_finais): 31 OK, 8 AVISO (p03B tom, p04 A/B/C sem frasco de espuma, p06 B/C creme, p14B tom, p15B tom), 0 descartar.
+  Com aviso K22 "cenas reprovadas pela fiscal": p04, p07 (só cena B), p13 (borda). Vídeos com aviso no cartão: 14 de 39.
+- Edições pedidas pela dona (grátis): 0911A_05 e 0911A_06 (A) com texto embaixo (K28), de volta a `pronto` na Postagens.
+- Refs: p04 foto 06 (01 com pessoa), p07 02 (pretas), p08 04 (par mel; marrom = foto 03), p13 02 (01 com pessoa), p15 07 (creme sem texto).
+- Erro novo: nenhum além do K31 (já corrigido no main pela conversa principal).
+
 ## Lista 14/11 A (14/11 ~22h30 UTC; trabalhos p455-p469)
 - 15 produtos com A, B e C (45 vídeos, 1411A-01..15, 12 s) na aba Conferir, pendentes. Gasto US$ 5,37 de 8 (65 imagens = 45 + 20 refações, US$ 2,57;
   28 clipes, todos aprovados, US$ 2,80). Nenhum pulado. Tinder: os 15 em `pronto`. Saldo WaveSpeed US$ 6,35.

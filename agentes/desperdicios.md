@@ -127,3 +127,4 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 ## Lista 14/11 A (14/11)
 - 20 refações de imagem (US$ 0,79); falharam de novo: p02 C, p03 B e C, p09 B e C, p10 A e C, p11 A, p15 C (borda); p06 C (Sonnet: sem grelha), p07 C (Sonnet: copo), p08 B (Sonnet: vaso tipo garrafa).
 - Sonnet reprovou 2 cenas já liberadas (sem 3ª imagem): p08 C (vaso tipo garrafa), p15 A (5 cadeiras cortadas). Nenhum clipe reprovado (28 de 28).
+| 2026-11-15 | 14 produtos (p01-p15 sem p11) | Lista 15/11 A | 1,27 | 7,22 | 32 imagens refeitas (refação única): K30/K31 (detalhe diferente da foto 01), borda e objeto proibido; p02 ESAB sem cena aprovada (cartão resgate) |

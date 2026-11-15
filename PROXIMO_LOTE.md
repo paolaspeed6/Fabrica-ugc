@@ -1,6 +1,6 @@
 # Próximo lote: o essencial (leia só isto ao começar uma conversa nova)
 
-Atualizado: 2026-11-14 noite (Lista 14/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
+Atualizado: 2026-11-15 (Lista 15/11 A entregue). Histórico completo: memoria/historico_lotes.md. Regras: CLAUDE.md. Lições: memoria/licoes_da_fabrica.md.
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
@@ -30,16 +30,15 @@ Atualizado: 2026-11-14 noite (Lista 14/11 A entregue). Histórico completo: memo
 - Tinder: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
-## Estado atual (14/11)
-- Último lote: Lista 14/11 A (45 vídeos na Conferir, US$ 5,37), 15 produtos, nenhum pulado. Antes: Listas 12/11 A e B (45 cada).
-  Fila do Tinder: sobram 6 aprovados (58259308476, 58218756349, 58210756936, 58221762657, 58271537523, 23793262701).
-- Saldo WaveSpeed: confira com `curl -s https://api.wavespeed.ai/api/v3/balance` (US$ 6,35 em 14/11 após a Lista 14/11 A).
-- Varredura diária (10/11): produto-campeao/afiliados/busca_diaria.py + troca de excluídos com o Kevin (TROCA_EXCLUIDOS.md).
-- Carrossel: salvar_imagens.py (fim da fase2) manda só produtos aesthetic (nota >= 8) ao Drive, Carrossel/<dia>/.
+## Estado atual (15/11)
+- Último lote: Lista 15/11 A (39 vídeos + 1 resgate na Conferir, US$ 4,63; p11 pulado). Antes: 14/11 A (45). Detalhe: memoria/historico_lotes.md (topo).
+- Saldo WaveSpeed: ~US$ 1,73 em 15/11 (NÃO dá um lote de 15; recarregar). Confira com `curl -s https://api.wavespeed.ai/api/v3/balance`.
+- K30 + K31 (15/11): refs_variante.py tira foto de outra variante (fase1 já roda); Fiscal Sonnet olha TODAS as cenas com lupa; depois do
+  entregar.sh, Fiscal final Sonnet (PROMPT_FISCAL_FINAL.md) nas folhas_finais e avisos nos cartões da Conferir antes de avisar.
+- Pedidos de edição da dona: `posts` com status `editar` (agentes/postagens_formato.md). Texto em cima de produto de teto: `texto_baixo: 870` no spec A.
+- Varredura: 2x por dia (05:41 e 16:41); carrossel pausado.
 - Dois lotes ao mesmo tempo: use N0=<nº> no produzir.sh (fase2) para não repetir pNNN; gerar_links pode dar "Rate limit" (repetir com pausa).
-- Botão "Ver o preço": seta para baixo (11/11). Faça git pull antes da fase2.
 - produzir.sh usa /home/user/fabrica-ugc (minúsculo): se a pasta for Fabrica-ugc, crie o link: ln -s /home/user/Fabrica-ugc /home/user/fabrica-ugc.
-- O que cada lote anterior fez (pulados, avisos, K22-K25): memoria/historico_lotes.md (topo). Só leia se precisar.
 
 ## Redes sociais (Reels automático): PENDENTE
 - Facebook e Instagram: funcionando (postar.py conferir).
