@@ -1,7 +1,7 @@
 """Varredura diária -> docs do Tinder (coleção candidatos) com link de afiliado Vp.
 uso: python3 semear_diaria.py AAAA-MM-DD [tarde]   (lê candidatos-<data>.json, grava listas/<DDMM>_varredura_docs/)
 2 varreduras por dia (a dona, 15/11): a da tarde continua a numeração do Sub ID e grava os ids em <DDMM>_varredura_docs_tarde.ids.json."""
-import json, sys, time, glob, os
+import json, sys, time, glob, os, base64, io
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'vendas'))
 from link_subid import link
 tarde = len(sys.argv) > 2 and sys.argv[2] == 'tarde'
@@ -23,6 +23,13 @@ for x in d:
         except Exception: time.sleep(10 * (t + 1))
     if not url: n -= 1; print('sem link', x['id']); continue
     doc = {k: v for k, v in x.items() if k != 'id'}
+    f = doc.get('foto') or ''
+    if f.startswith('data:image') and len(f) > 25000:  # 15/11: fotos grandes encheram o banco do Tinder (a lista parou de carregar)
+        try:
+            from PIL import Image
+            im = Image.open(io.BytesIO(base64.b64decode(f.split(',', 1)[1]))).convert('RGB'); im.thumbnail((420, 420))
+            b = io.BytesIO(); im.save(b, 'JPEG', quality=62); doc['foto'] = 'data:image/jpeg;base64,' + base64.b64encode(b.getvalue()).decode()
+        except Exception: pass
     doc.update(link_afiliado=url, sub_id=s, dia=dia, ordem=n, origem='varredura')
     json.dump(doc, open(f'{pasta}/{x["id"]}.json', 'w'), ensure_ascii=False); ok.append(str(x['id']))
 print(len(ok), 'semeados;', fo, 'fora (Kevin/repetidos)')

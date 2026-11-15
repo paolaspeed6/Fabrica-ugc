@@ -578,9 +578,19 @@ const ultDia=l=>{ const d=[...new Set(l.map(i=>i.dia).filter(Boolean))].sort(); 
   if(!db){ render(); return; }
   db.doc("central/painel").onSnapshot(s=>{ ligado=true; painel=s.exists?s.data():null; render(); }, ()=>{ ligado=false; render(); });
   db.doc("config/geral").onSnapshot(s=>{ const d=s.exists?s.data():null; if(d&&d.lote_min) { loteMin=d.lote_min; render(); } });
-  db.collection("candidatos").onSnapshot(s=>{
-    itensS=s.docs.map(d=>({...d.data(),_id:d.id,_col:"candidatos"})); diaS=ultDia(itensS); render();
-  }, ()=>render());
+  // 15/11: com mais de 2.000 produtos a coleção inteira não carrega mais de uma vez (a tela ficava zerada).
+  // Carrega por partes: os mais recentes (Escolher e decisões recentes), a Fila, a Produção e os descartados mais novos.
+  const partes={}, juntar=()=>{ const m=new Map(); for(const k in partes) for(const it of partes[k]) m.set(it._id,it);
+    itensS=[...m.values()]; diaS=ultDia(itensS); render(); };
+  const C=db.collection("candidatos"), ouvir=(k,q)=>q.onSnapshot(s=>{ partes[k]=s.docs.map(d=>({...d.data(),_id:d.id,_col:"candidatos"})); juntar(); },
+    e=>{ console.warn("candidatos",k,e&&e.code); if(!itensS.length) $("#sub").textContent="Não carregou a lista ("+(e&&e.code||"erro")+"). Feche e abra a página."; });
+  // sem orderBy: a coleção ficou grande demais para ordenar (resource_exhausted). Só filtros simples.
+  const dias=[]; for(let i=0;i<10;i++){ const d=new Date(Date.now()-i*864e5); dias.push(d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")); }
+  ouvir("recentes",C.where("dia","in",dias));                       // últimos 10 dias (Escolher)
+  ouvir("novos",C.where("status","==","novo"));                     // "novo" gravado (Voltar/Tirar)
+  ouvir("fila",C.where("status","==","aprovado"));
+  ouvir("producao",C.where("status","not-in",["novo","aprovado","descartado"]));
+  ouvir("descartados",C.where("status","==","descartado").limit(300));
   db.collection("videos").onSnapshot(s=>{ vids=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>render());
   db.collection("montagens").onSnapshot(s=>{ peds=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>render());
   db.collection("carrossel").onSnapshot(s=>{
