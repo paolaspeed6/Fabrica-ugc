@@ -22,7 +22,7 @@ lotes.sort(key=lambda l: ("2026-%s-%s" % (l["nome"][3:5], l["nome"][:2]), l["nom
 
 # Posts (Postagens)
 st = collections.Counter(); por_dia = collections.Counter(); por_lote = {}
-pronto_mod = collections.Counter()
+pronto_mod = collections.Counter(); ultimos = []
 for f in glob.glob(os.path.join(pasta, "posts", "*.json")):
     j = json.load(open(f)); j = j.get("data", j); s = j.get("status"); st[s] += 1
     cod = os.path.basename(f)[:5]  # ex. 1211B
@@ -31,6 +31,7 @@ for f in glob.glob(os.path.join(pasta, "posts", "*.json")):
     pl["liberados"] += 1
     if s == "postado":
         pl["postados"] += 1; por_dia[str(j.get("postado_em", ""))[:10]] += 1
+        ultimos.append((str(j.get("postado_em", "")), j.get("produto", ""), (j.get("versao") or "?")[0], j.get("poster", "")))
     elif s == "pronto":
         pronto_mod[(j.get("versao") or "?")[0]] += 1
 for l in lotes:
@@ -39,6 +40,10 @@ for l in lotes:
 hoje = datetime.date.today()
 dias = [(hoje - datetime.timedelta(days=i)).isoformat() for i in range(29, -1, -1)]
 mes = hoje.strftime("%m")
+ultimos.sort(reverse=True)
+ult = [{"em": u[0], "produto": u[1][:60], "modelo": u[2], "poster": u[3] if len(u[3]) < 40000 else ""} for u in ultimos[:8]]
+sem = sum(n for d, n in por_dia.items() if d >= (hoje - datetime.timedelta(days=6)).isoformat())
+mesp = sum(n for d, n in por_dia.items() if d[5:7] == hoje.strftime("%m") and d[:4] == str(hoje.year))
 usd_mes = round(sum(l["usd"] or 0 for l in lotes if l["nome"][3:5] == mes), 2)
 
 # Varredura (último arquivo de ids semeados)
@@ -51,12 +56,13 @@ if ids:
     varr = {"dia": n[:2] + "/" + n[2:], "novos": q}
 
 out = {
-    "atualizado_em": datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+    "atualizado_em": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     "gasto": {"total_usd": round(sum(l["usd"] or 0 for l in lotes), 2), "mes_usd": usd_mes,
               "teto_lote_usd": 8, "teto_produto_brl": 3},
     "videos": {"produzidos": sum(l["videos"] for l in lotes), "liberados": sum(st.values()),
                "para_postar": st.get("pronto", 0), "postados": st.get("postado", 0),
-               "para_postar_modelo": dict(pronto_mod)},
+               "para_postar_modelo": dict(pronto_mod), "semana": sem, "mes": mesp},
+    "ultimos": ult,
     "postados_dia": [[d, por_dia.get(d, 0)] for d in dias],
     "lotes": lotes[-14:][::-1],
     "varredura": varr,
