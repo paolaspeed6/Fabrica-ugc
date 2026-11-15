@@ -105,25 +105,79 @@ body.redes{--accent:#d6457a;--accent-fg:#fff}
 .painel label{font:800 .8rem var(--body);color:var(--muted);display:flex;flex-direction:column;gap:4px}
 .vozes{display:flex;gap:6px;flex-wrap:wrap}
 
+/* Central: painel da fábrica (aba de cima, fora do Tinder) */
+.topo{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;background:var(--soft);border-radius:16px}
+.topo button{border:0;background:transparent;color:var(--muted);border-radius:12px;padding:10px 4px;font:800 .95rem var(--body);cursor:pointer}
+.topo button[aria-pressed="true"]{background:var(--card);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+body.ver-central .wrap{max-width:1040px}
+body.ver-central .so-tinder{display:none!important}
+body:not(.ver-central) #central{display:none}
+#central{display:flex;flex-direction:column;gap:12px}
+.cgrid{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:760px){.cgrid{grid-template-columns:1fr 1fr}.cgrid .largo{grid-column:1/-1}}
+.cx{background:var(--card);box-shadow:var(--shadow);border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.cx h3{margin:0;font:800 .78rem var(--body);text-transform:uppercase;letter-spacing:.07em;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:760px){.kpis{grid-template-columns:repeat(4,1fr)}}
+.kpi{background:var(--card);box-shadow:var(--shadow);border-radius:18px;padding:12px 14px;min-width:0}
+.kpi small{display:block;color:var(--muted);font:800 .7rem var(--body);text-transform:uppercase;letter-spacing:.06em}
+.kpi b{display:block;font:800 clamp(1.4rem,6vw,1.9rem) var(--display);font-variant-numeric:tabular-nums;margin-top:2px;letter-spacing:-.02em}
+.kpi span{display:block;color:var(--muted);font-size:.8rem;font-weight:700;margin-top:2px}
+.alerta{border:2px solid var(--accent);background:color-mix(in srgb,var(--accent) 7%,var(--card))}
+.alerta ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.alerta li{display:flex;gap:10px;align-items:flex-start;line-height:1.35;font-size:.95rem}
+.alerta li i{font-style:normal;flex:none}
+.ok-tudo{color:var(--good)}
+.colunas{display:flex;align-items:flex-end;gap:3px;height:84px}
+.colunas div{flex:1;min-width:0;background:var(--accent);border-radius:3px 3px 0 0;min-height:2px;opacity:.85}
+.colunas div.zero{background:var(--line)}
+.eixo{display:flex;justify-content:space-between;color:var(--muted);font-size:.72rem;font-weight:700}
+.etapas{display:flex;flex-direction:column}
+.etapa{display:grid;grid-template-columns:14px 1fr auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.etapa:last-child{border-bottom:0}
+.etapa .bol{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.etapa .bol.vai{background:var(--good)} .etapa .bol.voce{background:var(--accent)}
+.etapa em{font-style:normal;color:var(--muted);font-size:.82rem;text-align:right}
+.prod{display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center;text-decoration:none;color:var(--fg);padding:4px 0}
+.prod img{width:44px;height:44px;border-radius:10px;object-fit:contain;background:#fff}
+.prod .t{min-width:0;font-size:.86rem;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.prod b{color:var(--good);font-size:.86rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.lote{display:grid;grid-template-columns:62px 1fr auto;gap:10px;align-items:center;font-size:.86rem;font-variant-numeric:tabular-nums}
+.lote .bar{height:10px;background:var(--soft);border-radius:99px;overflow:hidden;display:flex}
+.lote .bar i{display:block;height:100%}
+.lote .bar .p{background:var(--good)} .lote .bar .l{background:color-mix(in srgb,var(--good) 35%,var(--soft))}
+.lote em{font-style:normal;color:var(--muted);white-space:nowrap}
+.leg{display:flex;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:.76rem;font-weight:700}
+.leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+.rod{display:flex;gap:8px;flex-wrap:wrap}
+.rod span{padding:8px 12px;border-radius:12px;background:var(--soft);font-size:.86rem}
+.rod span.hoje{background:var(--accent);color:var(--accent-fg)}
+.nota{color:var(--muted);font-size:.8rem;line-height:1.4;font-weight:600}
+
 @media (prefers-reduced-motion:reduce){.swipe.volta,.swipe.sai,.btn,.leve,.barra i{transition:none}}
 </style>
 
 <div class="wrap">
-  <header>
+  <div class="topo" role="group" aria-label="Páginas">
+    <button id="v-central" aria-pressed="false">📊 Central</button>
+    <button id="v-tinder" aria-pressed="true">❤️ Tinder</button>
+  </div>
+  <section id="central" aria-live="polite"></section>
+  <header class="so-tinder">
     <h1>Tinder <em>Shopee</em></h1>
     <p class="sub" id="sub">Produtos novos todo dia às 7h. Aprove os que valem vídeo.</p>
   </header>
-  <div class="modos" role="group" aria-label="Área">
+  <div class="modos so-tinder" role="group" aria-label="Área">
     <button class="modo" id="m-shopee" aria-pressed="true">🛍️ Shopee Vídeo</button>
     <button class="modo" id="m-redes" aria-pressed="false">💗 REDES SOCIAIS</button>
   </div>
-  <div class="tabs" role="group" aria-label="Abas">
+  <div class="tabs so-tinder" role="group" aria-label="Abas">
     <button class="tab" id="t-escolher" aria-pressed="true">Escolher <span id="n-escolher"></span></button>
     <button class="tab" id="t-fila" aria-pressed="false"><i id="l-fila">Fila</i> <span id="n-fila"></span></button>
     <button class="tab" id="t-producao" aria-pressed="false"><i id="l-producao">Produção</i> <span id="n-producao"></span></button>
     <button class="tab" id="t-descartados" aria-pressed="false">Descartados <span id="n-descartados"></span></button>
   </div>
-  <main id="tela"><div class="vazio">Carregando os produtos…</div></main>
+  <main id="tela" class="so-tinder"><div class="vazio">Carregando os produtos…</div></main>
 </div>
 
 <script>
@@ -177,7 +231,6 @@ function cartao(it,total){
   if(it.possivel_duplicata) chips.append(el("span","chip dup","⚠ possível duplicata da mesma loja"));
   if(it.largo) chips.append(el("span","chip dup","⚠ largo: a IA costuma cortar, gasta mais"));
   corpo.append(chips);
-  if(it.beneficio) corpo.append(el("div","troque","💡 "+it.beneficio));
   if(it.beneficio) corpo.append(el("div","troque","💡 "+it.beneficio));
   if(it.troque_isso){ const tq=el("div","troque"); tq.append(el("span",null,"Troque isso: "+it.troque_isso+" → "),el("b",null,"por isso!")); corpo.append(tq); }
   const linha=el("div","linha");
@@ -298,6 +351,7 @@ function desenharPainel(painel){
   painel.append(el("div","aviso",vSel.length+" escolhidos"),mini,lg,lv,linha);
 }
 function render(){
+  if(verCentral){ renderCentral(); return; }
   const g=grupos();
   for(const k in g){ $("#n-"+k).textContent=g[k].length; $("#t-"+k).setAttribute("aria-pressed",String(k===aba)); }
   const tela=$("#tela"); tela.replaceChildren();
@@ -351,10 +405,99 @@ function trocarModo(m){ modo=m; aba="escolher"; ultimo=null; confirmarTodos=fals
   try{localStorage.setItem("modo",m);}catch(_){} render(); }
 $("#m-shopee").onclick=()=>trocarModo("shopee"); $("#m-redes").onclick=()=>trocarModo("redes");
 try{ if(localStorage.getItem("modo")==="redes") trocarModo("redes"); }catch(_){}
+
+// ===== Central =====
+let painel=null, verCentral=false;
+const usd=v=>"US$ "+Number(v||0).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
+function rodizio(){ // mesmo rodízio da Postagens: 2 dias cada modelo, ciclo A→B→C a partir de 15/11/2026
+  const d=new Date(), t0=Date.UTC(2026,10,15), t=Date.UTC(d.getFullYear(),d.getMonth(),d.getDate());
+  const n=Math.floor((t-t0)/864e5), k=((Math.floor(n/2)%3)+3)%3, L="ABC", ini=n-(((n%2)+2)%2);
+  const br=x=>{const z=new Date(t0+x*864e5); return String(z.getUTCDate()).padStart(2,"0")+"/"+String(z.getUTCMonth()+1).padStart(2,"0");};
+  return {hoje:L[k], ultimo:n!==ini, prox:[[L[(k+1)%3],br(ini+2)],[L[(k+2)%3],br(ini+4)]]};
+}
+const NOMES={A:"Um dia com ela",B:"Faixas",C:"Direto ao ponto"};
+function caixa(titulo,dir,cls){ const c=el("div","cx"+(cls?" "+cls:"")); const h=el("h3",null,titulo); if(dir) h.append(el("span",null,dir)); c.append(h); return c; }
+function kpi(k,v,sub){ const d=el("div","kpi"); d.append(el("small",null,k),el("b",null,v)); if(sub) d.append(el("span",null,sub)); return d; }
+function renderCentral(){
+  const C=$("#central"); if(!verCentral) return; C.replaceChildren();
+  const P=painel||{}, V=P.videos||{}, G=P.gasto||{}, R=rodizio();
+  const cab=el("div"); cab.append(el("h1",null,"Central "),el("p","sub",P.atualizado_em?"Números da fábrica · atualizado em "+new Date(P.atualizado_em).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}):"Números da fábrica"));
+  cab.firstChild.append(el("em",null,"Aguiiar Lar")); C.append(cab);
+  if(!db){ C.append(el("div","vazio","Abra esta página no app do Claude, logado, para ver a Central.")); return; }
+  const novos=itensS.filter(i=>st(i)==="novo"), fila=itensS.filter(i=>st(i)==="aprovado");
+  const prontoHoje=(V.para_postar_modelo||{})[R.hoje]||0;
+  // Precisa de você
+  const av=[];
+  if(novos.length) av.push(["🛍️",novos.length+" produtos esperando você no Tinder (aba Escolher)."]);
+  if(fila.length>=loteMin) av.push(["🎬","Fila cheia: "+fila.length+" produtos. Peça o próximo lote (teto US$ 8)."]);
+  else if(fila.length) av.push(["⏳","Fila: "+fila.length+" de "+loteMin+" para fechar o próximo lote."]);
+  (P.lotes||[]).filter(l=>!l.liberados).forEach(l=>av.push(["👀","Lista "+l.nome+": "+l.videos+" vídeos esperando seu Ok na Conferir."]));
+  if(prontoHoje) av.push(["📲","Hoje é dia do Modelo "+R.hoje+": "+prontoHoje+" vídeos prontos para postar."]);
+  const a=caixa("Precisa de você",av.length?String(av.length):"","alerta"); const ul=el("ul");
+  if(!av.length) ul.append(el("li","ok-tudo","✓ Nada travado agora."));
+  av.forEach(([i,t])=>{ const li=el("li"); li.append(el("i",null,i),el("span",null,t)); ul.append(li); }); a.append(ul); C.append(a);
+  // KPIs
+  const k=el("div","kpis");
+  k.append(kpi("Para postar",String(V.para_postar??"–"),"liberados por você"),
+    kpi("Postados",String(V.postados??"–"),"desde 27/10"),
+    kpi("Gasto de IA no mês",G.mes_usd!=null?usd(G.mes_usd):"–",G.total_usd!=null?"total "+usd(G.total_usd):""),
+    kpi("Vídeos feitos",String(V.produzidos??"–"),V.produzidos&&G.total_usd?"~"+usd(G.total_usd/V.produzidos)+" cada":""));
+  C.append(k);
+  const g=el("div","cgrid"); C.append(g);
+  // Rodízio
+  const r=caixa("Rodízio de postagem",R.ultimo?"último dia":"até amanhã"); const rd=el("div","rod");
+  const h=el("span","hoje","Hoje: Modelo "+R.hoje+" · "+NOMES[R.hoje]); rd.append(h);
+  R.prox.forEach(([L,d])=>rd.append(el("span",null,d+": Modelo "+L)));
+  r.append(rd,el("p","nota","Prontos para postar: "+["A","B","C"].map(L=>L+" "+((V.para_postar_modelo||{})[L]||0)).join(" · ")+". Um modelo por vez: se vier punição, pega só um."));
+  g.append(r);
+  // Postados por dia
+  const pd=P.postados_dia||[]; const sp=caixa("Postados por dia",pd.length?"30 dias":"");
+  if(pd.length){ const mx=Math.max(1,...pd.map(x=>x[1])); const col=el("div","colunas");
+    pd.forEach(([d,n])=>{ const b=el("div",n?null:"zero"); b.style.height=Math.max(2,n/mx*100)+"%"; b.title=d.slice(8)+"/"+d.slice(5,7)+": "+n; col.append(b); });
+    const ex=el("div","eixo"); ex.append(el("span",null,pd[0][0].slice(8)+"/"+pd[0][0].slice(5,7)),el("span",null,"hoje: "+pd.at(-1)[1]));
+    sp.append(col,ex); } else sp.append(el("p","nota","Sem dados ainda."));
+  g.append(sp);
+  // Linha do dia
+  const lz=caixa("Linha do dia"); const et=el("div","etapas");
+  const V2=P.varredura;
+  [["Busca", V2?V2.novos+" novos em "+V2.dia:"–", V2?"vai":""],
+   ["Tinder", novos.length?novos.length+" para escolher":"tudo escolhido", novos.length?"voce":"vai"],
+   ["Fila", fila.length+" de "+loteMin, fila.length>=loteMin?"voce":""],
+   ["Produção", (P.lotes||[])[0]?"último: "+P.lotes[0].nome:"–", "vai"],
+   ["Conferir", (P.lotes||[]).filter(l=>!l.liberados).reduce((s,l)=>s+l.videos,0)+" esperando seu Ok", (P.lotes||[]).some(l=>!l.liberados)?"voce":"vai"],
+   ["Postar", "Modelo "+R.hoje+" hoje", prontoHoje?"voce":""]].forEach(([n,t,c])=>{
+     const e=el("div","etapa"); e.append(el("span","bol "+c),el("span",null,n),el("em",null,t)); et.append(e); });
+  lz.append(et,el("p","nota","Agenda: "+(P.agenda||[]).map(x=>x[0]+" "+x[1]).join(" · ")));
+  g.append(lz);
+  // Produtos de hoje
+  const pr=caixa("Produtos de hoje",diaS); const top=novos.slice().sort((a,b)=>(b.comissao_rs||0)-(a.comissao_rs||0)).slice(0,6);
+  if(!top.length) pr.append(el("p","nota","Nenhum produto novo esperando. Os próximos chegam amanhã cedo."));
+  top.forEach(it=>{ const a=el("a","prod"); a.href=it.link||"#"; a.target="_blank"; a.rel="noopener";
+    const im=el("img"); im.src=it.foto||""; im.alt=""; im.loading="lazy";
+    a.append(im,el("span","t",it.nome),el("b",null,brl(it.comissao_rs||0))); pr.append(a); });
+  if(top.length){ const b=el("button","leve forte","Escolher no Tinder"); b.onclick=()=>verPagina(false); pr.append(b); }
+  g.append(pr);
+  // Lotes
+  const lt=caixa("Lotes","vídeos · gasto","largo"); const lg=el("div","leg");
+  [["var(--good)","postados"],["color-mix(in srgb,var(--good) 35%,var(--soft))","liberados"],["var(--soft)","na Conferir ou recusados"]].forEach(([c,t])=>{ const s=el("span"); const i=el("i"); i.style.background=c; s.append(i,document.createTextNode(t)); lg.append(s); });
+  lt.append(lg);
+  (P.lotes||[]).forEach(l=>{ const d=el("div","lote"); const b=el("div","bar");
+    const p=el("i","p"); p.style.width=(l.postados/l.videos*100)+"%"; const q=el("i","l"); q.style.width=(Math.max(0,l.liberados-l.postados)/l.videos*100)+"%"; b.append(p,q);
+    d.append(el("span",null,l.nome),b,el("em",null,l.videos+" · "+(l.usd!=null?usd(l.usd):"–"))); lt.append(d); });
+  if(!(P.lotes||[]).length) lt.append(el("p","nota","Os números dos lotes aparecem quando o Claude atualizar a Central."));
+  g.append(lt);
+  if((P.nao_medido||[]).length) C.append(el("p","nota","Ainda não medido: "+P.nao_medido.join("; ")+"."));
+}
+function verPagina(c){ verCentral=c; document.body.classList.toggle("ver-central",c);
+  $("#v-central").setAttribute("aria-pressed",String(c)); $("#v-tinder").setAttribute("aria-pressed",String(!c));
+  try{localStorage.setItem("pagina",c?"central":"tinder");}catch(_){} if(c) renderCentral(); else render(); scrollTo(0,0); }
+$("#v-central").onclick=()=>verPagina(true); $("#v-tinder").onclick=()=>verPagina(false);
+try{ if(localStorage.getItem("pagina")==="central") verPagina(true); }catch(_){}
 const ultDia=l=>{ const d=[...new Set(l.map(i=>i.dia).filter(Boolean))].sort(); return d.length?d.at(-1).split("-").reverse().join("/"):""; };
 (async()=>{
   db = await (window.claude?.use ? window.claude.use("db") : null);
   if(!db){ render(); return; }
+  db.doc("central/painel").onSnapshot(s=>{ painel=s.exists?s.data():null; render(); }, ()=>{});
   db.doc("config/geral").onSnapshot(s=>{ const d=s.exists?s.data():null; if(d&&d.lote_min) { loteMin=d.lote_min; render(); } });
   db.collection("candidatos").onSnapshot(s=>{
     itensS=s.docs.map(d=>({...d.data(),_id:d.id,_col:"candidatos"})); diaS=ultDia(itensS); render();

@@ -2,7 +2,7 @@
 
 ## Páginas da fábrica (fixe no celular)
 - Jogo da fábrica, "Reino Encantado das Divas" (desde 25/10): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd  (fonte paginas/reino/, leia paginas/reino/LEIA.md; banco: reino/estado, metas, mural, gastos, postagens_resumo)
-- Tinder Shopee: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni  (banco: candidatos, config/geral lote_min 15)
+- Tinder Shopee: https://claude.ai/artifact/U1eK13L3ufz213GvJcXkni  (banco: candidatos, config/geral lote_min 15, central/painel). Aba "📊 Central" no topo (15/11): painel da fábrica. Atualizar: baixar posts da Postagens (ArtifactData list out_dir) → python3 -I paginas/central/montar.py <pasta> > central.json → ArtifactData set central/painel.
 - Conferência (triagem): https://claude.ai/artifact/6An95qPxcauMJb3p1umWXk  (banco: conferir)
 - Postagens: https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt  (banco: posts, esgotados)
 - Mural: cada correção nova vira um doc em `mural` no Olimpo {data, tipo: pedido|prompt|geracao|layout|regra|sistema, titulo, citacao, texto, status: feito|a_fazer}.
