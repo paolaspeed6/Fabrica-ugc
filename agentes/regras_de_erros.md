@@ -354,3 +354,12 @@ que também são palavras-chave do produto (#plafonled, nunca #decor #amei). Det
 - Fiscal Sonnet: compara com lupa (recorte ampliado) a foto 01 e a cena; na dúvida, reprova.
 - Refação continua 1 vez só (custo US$ 0,04 por imagem); reprovou de novo = outra cena/K22.
 
+
+## K31. Só fotos da MESMA variante da foto 01 + última trava antes da Conferir (a dona, 15/11)
+"Os produtos muito diferentes das imagens de referência, alguns com outras variações do anúncio e outros com detalhes que nem existem."
+Investigação (45 vídeos postados em 15/11, quadros x fotos do anúncio): `fotos_ref` levava foto de OUTRA variante (ex.: Cadeiras Savana
+0911A-02: foto 01 com pés dourados, fotos 02/03/05 com pés pretos ou outra cor -> vídeo com pés pretos). O Nano Banana mistura tudo o que recebe,
+e a fiscal só comparava com a foto 01 de forma branda (antes da K30). Cada vídeo usa 3 imagens geradas separadas: basta uma errada.
+- `refs_variante.py` (fase1, grátis): tira de fotos_ref toda foto que não é exatamente a mesma variante da foto 01 (na dúvida, tira).
+- `gerar.py`: se outra referência discorda da foto do anúncio, segue a foto do anúncio.
+- `conferir_produto.py` (entregar.sh, grátis): 3 quadros de cada vídeo final x foto 01; produto diferente vira AVISO no cartão da Conferir.

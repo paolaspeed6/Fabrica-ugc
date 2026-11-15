@@ -165,3 +165,5 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
 
 
 - 15/11 (a dona): varredura da Shopee Vídeo 2x por dia (05:41 e 16:41, tarefa "Varredura do Tinder 2x por dia"); a da tarde usa `semear_diaria.py <data> tarde`. Carrossel pausado.
+
+- 15/11 (a dona: "estou queimando dinheiro à toa"): vídeos postados com produto diferente do anúncio. Causa: fotos de outra variante em fotos_ref + fiscal branda. Regra K31: filtro de variante antes de gerar (refs_variante.py) e trava final quadro x foto 01 (conferir_produto.py) com aviso na Conferir.

@@ -22,7 +22,8 @@ gemini(){ x=$(sem_veredito); [ -n "$x" ] || return 0
   x=$(sem_veredito); [ -n "$x" ] && python3 -I fiscal_gemini.py $x >> produzir.log 2>&1
   python3 -I folha.py $P >> produzir.log 2>&1; }  # folha final com os vereditos
 if [ "$F" = fase1 ]; then
-  log "fase1 $P"; python3 -I gerar.py imagens $P >> produzir.log 2>&1; gemini
+  log "fase1 $P"; python3 -I refs_variante.py $P >> produzir.log 2>&1   # K31 (15/11): só fotos da MESMA variante da foto 01
+  python3 -I gerar.py imagens $P >> produzir.log 2>&1; gemini
   python3 -I aplicar_fiscal.py $P | tee -a produzir.log
   python3 -I gerar.py imagens $P >> produzir.log 2>&1; gemini   # refação única
   log "FASE1_PRONTA gasto=$(python3 -c "import json;print(json.load(open('gasto.json'))['usd'])")"

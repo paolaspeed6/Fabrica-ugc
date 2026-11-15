@@ -23,5 +23,6 @@ json.dump(d,open(p,'w'),ensure_ascii=False)"; }
   done; [ $boas = 0 ] && continue
   echo "$k -> $w ok"; n=$((n+1)); [ $n -ge $MAX ] && break
 done
+[ -f $L/conferir_produto.py ] && python3 -I $L/conferir_produto.py $L | tail -20   # K31 (15/11): produto diferente da foto 01 vira aviso na Conferir
 python3 $R/video-teste/drive_backup.py $L/final --dia $DIA | tail -2
 cd $L && python3 -I conferencia.py "$NOME" $DIA | tail -1; echo "ENTREGUES=$n"

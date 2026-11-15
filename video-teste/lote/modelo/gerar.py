@@ -60,7 +60,8 @@ FIEL = ("The product must be an exact copy of the product in the advertising pho
         "identical proportions between parts, identical color hue and shade, identical material, texture and finish (matte or glossy, wood grain, "
         "fabric weave, boucle, metal), identical seams, tufting, piping and buttons, identical legs, base, feet, arms, handles, knobs, hinges and "
         "hardware (same shape, thickness, color and count), identical lettering and logos. Do not redesign, simplify, modernize, recolor or improve "
-        "any detail; if a detail is unclear, copy it as it looks in image 1. Only the room around the product is new. ")
+        "any detail; if a detail is unclear, copy it as it looks in image 1. If any other reference image disagrees with the advertising photo "
+        "(another color, another leg or metal color, another fabric, another model), ignore it and follow the advertising photo. Only the room around the product is new. ")
 
 
 def descr(f):

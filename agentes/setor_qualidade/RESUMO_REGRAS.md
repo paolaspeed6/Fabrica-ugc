@@ -36,3 +36,4 @@ Só UMA. Reprovou de novo = cena "falhou" e o produto usa outra cena aprovada. T
 Todo produto sai com A, B e C (versão reprovada é refeita, não pulada). Produto sem cena aprovada (K22, 30/10): a fábrica monta A, B e C com as imagens reprovadas só por borda (câmera por código) e manda com aviso; defeito grave fica fora. Sem imagem aproveitável = "resgate", nunca descartado direto.
 K30 (a dona, 15/11): produto IDÊNTICO à foto 01 do anúncio nos detalhes (forma, tom da cor, material, textura, acabamento, costuras, botões, pés, base, braços, alças, ferragens, contagem, letras). Qualquer diferença no produto = reprova; na dúvida, reprova.
 
+K31 (a dona, 15/11): fotos_ref só com a MESMA variante da foto 01 (cor, cor dos pés/metal, tecido, modelo); foto de outra variante nunca vai para o Nano Banana. Vídeo final com produto diferente da foto 01 vai com aviso na Conferir.
