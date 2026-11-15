@@ -1,8 +1,10 @@
 """Varredura diária -> docs do Tinder (coleção candidatos) com link de afiliado Vp.
-uso: python3 semear_diaria.py AAAA-MM-DD   (lê candidatos-<data>.json, grava listas/<DDMM>_varredura_docs/)"""
+uso: python3 semear_diaria.py AAAA-MM-DD [tarde]   (lê candidatos-<data>.json, grava listas/<DDMM>_varredura_docs/)
+2 varreduras por dia (a dona, 15/11): a da tarde continua a numeração do Sub ID e grava os ids em <DDMM>_varredura_docs_tarde.ids.json."""
 import json, sys, time, glob, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'vendas'))
 from link_subid import link
+tarde = len(sys.argv) > 2 and sys.argv[2] == 'tarde'
 dia = sys.argv[1]; aa, mm, dd = dia[2:4], dia[5:7], dia[8:10]
 d = json.load(open(f'candidatos-{dia}.json'))
 fora = set()
@@ -11,7 +13,8 @@ for v in E.values(): fora |= set(map(str, v))
 fora |= set(map(str, json.load(open('vistos.json'))))
 for f in glob.glob('listas/*_docs/*.json'): fora.add(os.path.basename(f)[:-5])
 pasta = f'listas/{dd}{mm}_varredura_docs'; os.makedirs(pasta, exist_ok=True)
-ok, n, fo = [], 0, 0
+ok, fo = [], 0
+n = len(glob.glob(f'{pasta}/*.json'))  # continua a numeração (Vp) da varredura da manhã
 for x in d:
     if str(x['id']) in fora: fo += 1; continue
     n += 1; url = None
@@ -23,4 +26,4 @@ for x in d:
     doc.update(link_afiliado=url, sub_id=s, dia=dia, ordem=n, origem='varredura')
     json.dump(doc, open(f'{pasta}/{x["id"]}.json', 'w'), ensure_ascii=False); ok.append(str(x['id']))
 print(len(ok), 'semeados;', fo, 'fora (Kevin/repetidos)')
-json.dump(ok, open(f'{pasta}.ids.json', 'w'))
+json.dump(ok, open(f'{pasta}_tarde.ids.json' if tarde else f'{pasta}.ids.json', 'w'))

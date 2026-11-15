@@ -66,7 +66,7 @@ out = {
     "postados_dia": [[d, por_dia.get(d, 0)] for d in dias],
     "lotes": lotes[-14:][::-1],
     "varredura": varr,
-    "agenda": [["05:41", "Varredura do Tinder (produtos novos)"], ["23:55", "Contador de postados"]],
+    "agenda": [["05:41 e 16:41", "Varredura do Tinder (produtos novos)"], ["23:55", "Contador de postados"]],
     "nao_medido": ["Comissão e vendas (falta ligar o relatório de conversões da Shopee)", "Saldo da WaveSpeed"],
 }
 print(json.dumps(out, ensure_ascii=False))

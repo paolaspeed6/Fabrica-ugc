@@ -68,3 +68,6 @@ Cenários e imagens do carrossel seguem isso.
 - A dona (13/11): quer TUDO para casa no estilo paty (cozinha, panelas, pratos, banheiro, quarto, sala) para fazer "achadinhos que mudaram meu banheiro/quarto/sala". `palavras_paty_casa.txt`; fila em `fila_paty.sh`.
 - Iscas (a dona, 13/11 "sim"): `--isca` = comissão R$ 3+, até R$ 80, só beleza e parece_refs 9-10; 1 ou 2 por carrossel, o resto R$ 7+.
 - Casa por cômodo 13/11: Gemini deixou passar item infantil/bebê e 5 jogos de talheres; tirei à mão. Próximo ajuste: excluir "infantil/baby" no filtro e agrupar tipo por palavra-chave.
+
+## PAUSA do carrossel (a dona, 15/11): "vou dar um tempo"
+Não rodar `varrer_carrossel.py` nem semear a coleção carrossel até ela pedir de novo. A aba Redes Sociais do Tinder fica como está.
