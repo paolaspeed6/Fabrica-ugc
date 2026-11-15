@@ -4,6 +4,7 @@ Atualizado: 2026-11-14 noite (Lista 14/11 A entregue). Histórico completo: memo
 
 ## Como começar
 - Conversa nova, no mesmo projeto. Ela não lembra de conversas antigas: só o que está nos arquivos.
+- Observação da dona (15/11): cada produto do Tinder pode ter o campo `observacao` (botão 📝). Leia antes do Fichador e siga (cor certa, detalhe, cena); vale mais que a ficha.
 - Antes do lote: ver na Postagens os posts com status "editar" (pedidos de edição da dona) e "descartado" (agentes/postagens_formato.md, 15/11).
 - Lote novo: a dona manda "Lote do dia: 15 produtos da Fila, teto US$ 8". Crie a conversa com model claude-opus-5-5.
 - Agentes de conferência (Fichador, fiscais): model sonnet.

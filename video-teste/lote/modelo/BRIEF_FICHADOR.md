@@ -12,6 +12,7 @@ Leia antes (obrigatório):
 Abra TODAS as fotos (mosaicos com PIL para ler rápido; abra em tamanho cheio as que têm letras, medidas ou detalhes funcionais).
 
 ## Saída 1: `pNN-ficha.json` (mesmos campos do exemplo)
+Se o produto tiver `observacao` da dona no Tinder (a dona, 15/11), ela manda: siga o que ela escreveu e anote em `nota_dona` na ficha.
 `fotos_ref` com caminhos relativos à pasta do lote, ex. "pNN-fotos/01.jpg" (01 sempre primeiro; 2-4 fotos; nunca foto com pessoa, mão, colagem, texto grande de propaganda ou outra cor).
 Cada cenário tem `id` (A, B, C), `texto`, `scale`, `camera`, `movimento`. Diretrizes novas (Kevin 2026-10-23):
 1. **Sem zoom em letra pequena** (Kevin 11:18): a câmera nunca termina em close de painel, rótulo, logo pequeno ou tela. Termina em plano médio com o produto inteiro. Mas tem que ser vídeo UGC de verdade, agregando valor (ambiente de uso real, luz bonita, profundidade, câmera andando), não a foto do anúncio parada.

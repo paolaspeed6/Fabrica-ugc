@@ -186,6 +186,12 @@ body.ver-central .wrap{max-width:1180px;gap:10px}
 @media (max-width:560px){.big small{display:block;margin:4px 0 0}.k4 .pn h3 .tag{display:none}.tbl th:nth-child(3),.tbl td:nth-child(3),.tbl th:nth-child(5),.tbl td:nth-child(5){display:none}}
 @media (max-width:420px){.thumbs{grid-template-columns:repeat(4,minmax(0,1fr))}.tl div{grid-template-columns:12px 78px 1fr}.tl em{display:none}}
 
+.obs{display:flex;flex-direction:column;gap:6px}
+.obs[hidden]{display:none}
+.obs textarea{width:100%;min-height:70px;box-sizing:border-box;border:2px solid var(--line);border-radius:12px;padding:10px;font:600 .95rem var(--body);background:var(--card);color:var(--fg)}
+.obs .linha{justify-content:flex-end}
+.obs-txt{background:color-mix(in srgb,#d97706 12%,var(--card));border-radius:12px;padding:8px 10px;font-size:.88rem;line-height:1.35}
+.obs-txt b{color:#b45309}
 @media (prefers-reduced-motion:reduce){.swipe.volta,.swipe.sai,.btn,.leve,.barra i{transition:none}}
 </style>
 
@@ -242,6 +248,19 @@ async function decidir(it,status){
   if(inp&&inp.value.trim()!=="") dados.afiliados=Number(inp.value);
   ultimo={it,antes:st(it)}; await salvar(it,dados);
 }
+// a dona 15/11: botão "Observação" para escrever o que quiser sobre o produto (o Claude lê no lote)
+function obsUI(it,compacto){
+  const box=el("div","obs-wrap"); const tem=(it.observacao||"").trim();
+  const mostra=el("div","obs-txt"); if(tem){ mostra.append(el("b",null,"📝 "),document.createTextNode(tem)); }
+  const bt=el("button","leve",tem?"📝 Editar observação":"📝 Observação");
+  const ed=el("div","obs"); ed.hidden=true; const ta=el("textarea"); ta.value=tem; ta.placeholder="Escreva o que quiser sobre este produto (cor certa, detalhe, ideia de cena…)"; ta.setAttribute("aria-label","Observação");
+  const l=el("div","linha"); const c=el("button","leve","Cancelar"), ok=el("button","leve forte","Salvar");
+  c.onclick=()=>{ ed.hidden=true; }; bt.onclick=()=>{ ed.hidden=!ed.hidden; if(!ed.hidden) ta.focus(); };
+  ok.onclick=async()=>{ ok.disabled=true; await salvar(it,{observacao:ta.value.trim(),observacao_em:new Date().toISOString()}); ok.disabled=false; ed.hidden=true; };
+  l.append(c,ok); ed.append(ta,l);
+  if(tem&&!compacto) box.append(mostra); box.append(bt,ed); if(tem&&compacto){ box.prepend(mostra); }
+  box.style.display="flex"; box.style.flexDirection="column"; box.style.gap="6px"; return box;
+}
 function cartao(it,total){
   const box=el("div","list");
   const palco=el("div","palco");
@@ -269,7 +288,7 @@ function cartao(it,total){
   const a=el("a","abrir","Abrir no app"); a.href=it.link; a.target="_blank"; a.rel="noopener";
   const inp=el("input"); inp.type="number"; inp.min="0"; inp.inputMode="numeric"; inp.id="videos"; inp.placeholder="Vídeos"; inp.setAttribute("aria-label","Vídeos de criadores (opcional)");
   if(it.afiliados!=null) inp.value=it.afiliados;
-  linha.append(a); if(modo!=="redes") linha.append(inp); corpo.append(linha); c.append(corpo); palco.append(c); box.append(palco);
+  linha.append(a); if(modo!=="redes") linha.append(inp); corpo.append(linha); corpo.append(obsUI(it)); c.append(corpo); palco.append(c); box.append(palco);
   const reduz=matchMedia("(prefers-reduced-motion: reduce)").matches;
   // cor do arraste: verde à direita, vermelho à esquerda, mais forte quanto mais longe
   const pintar=dx=>{ const f=Math.min(Math.abs(dx)/140,1);
@@ -286,7 +305,7 @@ function cartao(it,total){
   acoes.append(n,s); box.append(acoes);
   // iPhone: captura o dedo, um dedo só, decide pela distância ou por um peteleco rápido
   let x0=null, dx=0, t0=0, dedo=null;
-  c.addEventListener("pointerdown",e=>{ if(dedo!=null||e.target.closest("a,input")) return; dedo=e.pointerId; x0=e.clientX; dx=0; t0=Date.now();
+  c.addEventListener("pointerdown",e=>{ if(dedo!=null||e.target.closest("a,input,textarea,button")) return; dedo=e.pointerId; x0=e.clientX; dx=0; t0=Date.now();
     c.className="swipe"; try{c.setPointerCapture(e.pointerId);}catch(_){} });
   c.addEventListener("pointermove",e=>{ if(x0==null||e.pointerId!==dedo) return; dx=e.clientX-x0;
     c.style.transform=`translateX(${dx}px) rotate(${dx/22}deg)`; pintar(dx); });
@@ -413,7 +432,7 @@ function render(){
     box.append(el("div","aviso",n>=loteMin?`Fila cheia: ${n} produtos. O próximo lote está pronto para produzir.`:`${n} de ${loteMin} para fechar o próximo lote.`));
     const b=el("div","barra"); const i=el("i"); i.style.width=Math.min(100,n/loteMin*100)+"%"; b.append(i); box.append(b);
     g.fila.forEach(it=>{ const v=el("button","leve","Tirar"); v.onclick=()=>salvar(it,{status:"novo"});
-      box.append(linhaItem(it,brl(it.preco)+(it.afiliados!=null?" · "+it.afiliados+" vídeos":""),v)); });
+      box.append(linhaItem(it,brl(it.preco)+(it.afiliados!=null?" · "+it.afiliados+" vídeos":""),v)); box.append(obsUI(it,true)); });
     if(!n) box.append(el("div","vazio","Nenhum aprovado ainda. Aprove na aba Escolher."));
     tela.append(box); return;
   }
@@ -421,7 +440,7 @@ function render(){
     const box=el("div","list"); const lotes={};
     g.producao.forEach(it=>{ (lotes[it.lote||"Sem lote"] ||= []).push(it); });
     Object.keys(lotes).sort().reverse().forEach(l=>{ box.append(el("h2",null,l+" · "+lotes[l].length+" produtos"));
-      lotes[l].forEach(it=>box.append(linhaItem(it,st(it)==="pronto"?"Pronto":"Em produção"))); });
+      lotes[l].forEach(it=>{ box.append(linhaItem(it,st(it)==="pronto"?"Pronto":"Em produção")); box.append(obsUI(it,true)); }); });
     if(!g.producao.length) box.append(el("div","vazio","Nenhum lote em produção."));
     tela.append(box); return;
   }
