@@ -13,7 +13,12 @@ URL = 'https://generativelanguage.googleapis.com/v1beta/models/{}:generateConten
 REGRAS = (B.parents[2] / 'agentes' / 'regras_de_erros.md')
 
 PEDIDO = """Você é a FISCAL DE IMAGEM de uma fábrica de vídeos de produtos da Shopee (loja Aguiiar Lar). Compare a IMAGEM GERADA (2ª imagem)
-com a FOTO DO ANÚNCIO (1ª imagem) e com a ficha abaixo. Reprove só o que uma cliente veria no celular. Reprove se houver:
+com a FOTO DO ANÚNCIO (1ª imagem) e com a ficha abaixo. REGRA DA DONA (15/11): o produto da imagem gerada tem que ser IDÊNTICO ao
+da foto do anúncio, nos detalhes. Confira peça por peça, como quem compara duas fotos com lupa, e preencha "checagem" item por item.
+Qualquer diferença visível no PRODUTO (não no cômodo) = REPROVADO. Na dúvida, REPROVADO. Reprove se houver:
+- detalhe diferente da foto: formato dos pés/base/braços/alças/puxadores/encosto, espessura das peças, costuras, capitonê, frisos,
+  botões, ferragens, dobradiças, textura do tecido ou da madeira, acabamento fosco/brilhante, tom da cor (mesmo levemente diferente),
+  desenho/estampa, cantos retos x arredondados, peça simplificada ou "modernizada";
 - produto diferente da foto do anúncio: forma, proporção, cor (desbotada ou outro tom), peças a mais ou a menos, contagem errada
   (kit de N = N itens inteiros; pernas, travessas, botões, rodas, acessórios), item virado de costas ou fora da posição da foto;
 - tamanho irreal em relação ao cômodo (gigante ou miniatura);
@@ -23,8 +28,10 @@ com a FOTO DO ANÚNCIO (1ª imagem) e com a ficha abaixo. Reprove só o que uma 
   tela/painel aceso (exceto se a foto do anúncio mostra assim), texto de propaganda, selos, objetos que a ficha proíbe;
 - fundo bagunçado (muitos objetos pequenos soltos) ou decoração encostando/em cima do produto. Decoração simples no fundo é PERMITIDA e desejada
   (a dona, 31/10: plantas, tapete, cerâmica fosca larga, galhos secos, tábua de madeira, quadro sem texto, sol com sombras de folhas).
-Responda SÓ um JSON: {"veredito": "APROVADO" ou "REPROVADO", "provas": "o que você conferiu e o motivo, em português, curto",
-"corrigir_prompt": "se reprovado: frase em INGLÊS dizendo como a imagem deve ser (nunca cite o objeto proibido, descreva o certo, ex.: 'every surface is bare'); se aprovado: vazio",
+Responda SÓ um JSON: {"checagem": {"forma_proporcao": "igual|diferente: ...", "cor_tom": "...", "material_textura_acabamento": "...",
+"pes_base_bracos_alcas": "...", "costuras_botoes_ferragens": "...", "contagem_pecas": "...", "letras_logo": "...", "posicao_orientacao": "...",
+"tamanho_no_comodo": "...", "borda_folga": "...", "proibidos_fundo": "..."}, "veredito": "APROVADO" (só se TODOS estão "igual"/ok) ou "REPROVADO", "provas": "o que você conferiu e o motivo, em português, curto",
+"corrigir_prompt": "se reprovado: frase em INGLÊS descrevendo o detalhe CERTO como está na foto do anúncio (ex.: 'the legs are thin black metal hairpin legs, exactly as in image 1') (nunca cite o objeto proibido, descreva o certo, ex.: 'every surface is bare'); se aprovado: vazio",
 "risco_animacao": "se aprovado: aviso curto em português + uma frase em INGLÊS entre aspas duplas para o vídeo, ex.: \\"the camera stays at the same distance and drifts slowly a few centimeters to the left\\" (sem avanço se a folga for pequena); se reprovado: vazio"}"""
 
 
@@ -34,7 +41,7 @@ def b64(p):
 
 def chamar(partes, tent=6):
     global MOD
-    corpo = json.dumps({'contents': [{'parts': partes}], 'generationConfig': {'temperature': 0.1, 'responseMimeType': 'application/json'}}).encode()
+    corpo = json.dumps({'contents': [{'parts': partes}], 'generationConfig': {'temperature': 0.0, 'responseMimeType': 'application/json'}}).encode()
     for i in range(tent):
         for m in MODELOS:
             try:
@@ -76,6 +83,9 @@ if __name__ == '__main__':
             v = fiscal(p, k)
             if isinstance(v, list): v = v[0]  # a Gemini às vezes devolve [{...}] (11/11)
         except Exception as e: print(pk, 'FALHOU', e, flush=True); continue
+        dif = [k2 for k2, x in (v.get('checagem') or {}).items() if str(x).lower().startswith('diferente')]
+        if dif and v.get('veredito') == 'APROVADO':  # K30: diferença no produto = reprova, sem exceção
+            v['veredito'] = 'REPROVADO'; v['provas'] = 'K30 detalhe diferente da foto 01: ' + ', '.join(dif) + '. ' + v.get('provas', '')
         fj = B / f'{p}-cenas/fiscal_imagem.json'; d = json.loads(fj.read_text()) if fj.exists() else {}
         v['fiscal'] = f'gemini ({MOD})'; d[k] = v; fj.write_text(json.dumps(d, ensure_ascii=False, indent=1))
         print(pk, v['veredito'], '|', v.get('provas', '')[:160].replace('\n', ' '), flush=True)

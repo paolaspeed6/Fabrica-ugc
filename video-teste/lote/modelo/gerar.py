@@ -55,6 +55,14 @@ def ficha(p): return json.loads((B / f"{p}-ficha.json").read_text())
 def j(v): return v if isinstance(v, str) else json.dumps(v, ensure_ascii=False)
 
 
+# K30 (a dona, 15/11: "sempre idêntico à imagem 1 do anúncio, mais rigoroso nos detalhes"): fidelidade vem PRIMEIRO no prompt.
+FIEL = ("The product must be an exact copy of the product in the advertising photo (image 1 below shows it): identical shape and silhouette, "
+        "identical proportions between parts, identical color hue and shade, identical material, texture and finish (matte or glossy, wood grain, "
+        "fabric weave, boucle, metal), identical seams, tufting, piping and buttons, identical legs, base, feet, arms, handles, knobs, hinges and "
+        "hardware (same shape, thickness, color and count), identical lettering and logos. Do not redesign, simplify, modernize, recolor or improve "
+        "any detail; if a detail is unclear, copy it as it looks in image 1. Only the room around the product is new. ")
+
+
 def descr(f):
     return (f"The product: {j(f['nome_curto'])}. Variant: {j(f['variante'])}. Items: {j(f['itens'])}. Parts: {j(f['partes'])}. "
             f"Lettering exactly: {j(f['letras'])}. Real size: {j(f['tamanho_real'])}. Count: {j(f.get('contagem', ''))}. Never show: {j(f['proibidos'])}.")
@@ -131,13 +139,13 @@ def imagem(p, c):
     if eh_largo(f) and foto_boa(p, f) and not s.get("fix_img"):  # K24: produto largo fica onde a guia mostra; só o cômodo muda
         # (a dona, 01/11: foto do anúncio ruim = cria do zero; e a refação de uma cena com guia também sai do zero)
         g = guia(p, f); fotos = [ref(str(g.relative_to(B)))] + fotos
-        txt = (descr(f) + " Image 1 is a layout guide: the advertising photo placed inside a tall frame. The product stays exactly where it is in image 1, "
+        txt = (FIEL.replace("image 1 below shows it", "the 2nd image shows it; image 1 is a layout guide with the same photo") + descr(f) + " Image 1 is a layout guide: the advertising photo placed inside a tall frame. The product stays exactly where it is in image 1, "
                "with the same size, angle, framing and proportions. Repaint everything around the product as a new room that fills the whole tall frame "
                "(new walls, floor continuing under the product, soft natural shadows); nothing of the old room, no plain borders. "
                "The other images show the exact product details and color. "
                f"Setting: {s['texto']}" + FIM + (" " + s["fix_img"] if s.get("fix_img") else ""))
     else:
-        txt = descr(f) + f" Image 1 is the exact product and color. Setting: {s['texto']} {s['scale']} {s['camera']}" + FIM + (" " + s["fix_img"] if s.get("fix_img") else "")
+        txt = FIEL + descr(f) + f" Image 1 is the exact product and color. Setting: {s['texto']} {s['scale']} {s['camera']}" + FIM + (" " + s["fix_img"] if s.get("fix_img") else "")
     u = api("google/nano-banana-2.1/edit", {"prompt": txt, "images": fotos,
                                              "aspect_ratio": "9:16", "resolution": "1k", "output_format": "jpeg"})
     baixar(u, out); (d / f"{c}.img.txt").write_text(txt); return f"{p} {c}.jpg ok"

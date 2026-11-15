@@ -345,3 +345,12 @@ Edição manual: ponha `"texto_baixo": 870` no `_cfg.json` e refaça os specs.
 ## K29. Legenda Shopee = só palavras-chave de busca (a dona, 13/11)
 `leg_a/leg_b/leg_c`: tipo do produto + sinônimos + material + cor + medida + cômodo/uso, sem frase nem adjetivo vazio; 4 hashtags
 que também são palavras-chave do produto (#plafonled, nunca #decor #amei). Detalhe em `BRIEF_FICHADOR.md`.
+
+## K30. Produto idêntico à foto 01 do anúncio, nos detalhes (a dona, 15/11)
+"Ando percebendo que você anda errando alguns detalhes na hora de criar as imagens; sempre idêntico à imagem 1 do anúncio, seja mais rigoroso."
+- Prompt: `gerar.py` abre com o bloco FIEL (cópia exata: forma, proporção, tom, material, textura, acabamento, costuras, botões, pés, base,
+  braços, alças, ferragens, letras; não redesenhar, simplificar nem "modernizar"). O cômodo é o único que muda.
+- Fiscal Gemini: preenche "checagem" item por item; qualquer item "diferente" vira REPROVADO pelo código, mesmo se o modelo aprovar.
+- Fiscal Sonnet: compara com lupa (recorte ampliado) a foto 01 e a cena; na dúvida, reprova.
+- Refação continua 1 vez só (custo US$ 0,04 por imagem); reprovou de novo = outra cena/K22.
+

@@ -160,3 +160,6 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
 - 07/11 (a dona): imagens para carrossel (Insta + TikTok) só de produtos estratégicos, aesthetic, que chamem atenção. Peça de carro, ferramenta e produto técnico não são guardados. O `salvar_imagens.py` (fim da fase2) usa nota Gemini >= 8 e manda ao Drive em Carrossel/<dia>/<ID>_<slug>/, com ID, link e 3 frases.
 
 - 11/11: no botão "Ver o preço" a seta aponta PARA BAIXO (o carrinho do app fica embaixo), nunca para o lado. Feito em video-teste/luxo/build_lux.py (ícone arrow).
+
+- 15/11 (a dona): as imagens estavam errando detalhes do produto. Regra K30: idêntico à foto 01 do anúncio, peça por peça; o prompt começa pela fidelidade e as duas fiscais reprovam qualquer diferença no produto (na dúvida, reprova).
+
