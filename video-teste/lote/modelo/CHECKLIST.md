@@ -13,6 +13,7 @@ Geração + edição + entrega num comando (a dona 27/10): Bash em segundo plano
 - [ ] `TETO_USD=<teto> bash produzir.sh fase1 <lote> p01,...` (imagens, borda, Gemini, 1 refação)
 - [ ] 1 agente Sonnet nas folhas (PROMPT_FISCAL_SONNET.md)
 - [ ] `TETO_USD=<teto> bash produzir.sh fase2 <lote> p01,... <PRE> <AAAA-MM-DD> "Lista DD/MM X"` (clipes, Fiscal de vídeo, edição, render, Drive, conferir_docs)
+- [ ] K31 (15/11): Fiscal final Sonnet nas folhas_finais (PROMPT_FISCAL_FINAL.md) e aviso nos cartões da Conferir — obrigatório
 - [ ] ArtifactData batch dos conferir_docs na coleção `conferir` da página POSTAGENS (aba Conferir) + Tinder `pronto` + commit — e pronto
 O que o produzir.sh faz por dentro (só para conferir/consertar):
 - [ ] `TETO_USD=<teto> python3 -I gerar.py imagens p01,...`

@@ -28,6 +28,13 @@ for mp4 in sorted((L / 'final').glob('*_[ABC].mp4')):
             q = Path(td) / f'{i}.jpg'
             subprocess.run(['ffmpeg', '-v', 'error', '-y', '-ss', str(t), '-i', str(mp4), '-frames:v', '1', '-vf', 'scale=540:-2', str(q)])
             if q.exists(): qs.append(q)
+        # folha para a Fiscal final (Sonnet): foto 01 + 3 cenas, lado a lado (o Gemini sozinho deixou passar exaustor quadrado e tapete errado, 15/11)
+        from PIL import Image
+        ims = [Image.open(x).convert('RGB') for x in [um] + qs]; H = 640
+        ims = [i.resize((max(1, int(i.width * H / i.height)), H)) for i in ims]
+        fo = Image.new('RGB', (sum(i.width for i in ims) + 8 * len(ims), H), 'white'); x0 = 0
+        for i in ims: fo.paste(i, (x0, 0)); x0 += i.width + 8
+        (L / 'folhas_finais').mkdir(exist_ok=True); fo.save(L / 'folhas_finais' / f'{p}{v}.jpg', quality=85)
         try:
             r = chamar([{'text': PEDIDO}, {'inline_data': {'mime_type': 'image/jpeg', 'data': b64(um)}}] +
                        [{'inline_data': {'mime_type': 'image/jpeg', 'data': b64(q)}} for q in qs])

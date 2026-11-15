@@ -363,3 +363,4 @@ e a fiscal só comparava com a foto 01 de forma branda (antes da K30). Cada víd
 - `refs_variante.py` (fase1, grátis): tira de fotos_ref toda foto que não é exatamente a mesma variante da foto 01 (na dúvida, tira).
 - `gerar.py`: se outra referência discorda da foto do anúncio, segue a foto do anúncio.
 - `conferir_produto.py` (entregar.sh, grátis): 3 quadros de cada vídeo final x foto 01; produto diferente vira AVISO no cartão da Conferir.
+- Fiscal final Sonnet (PROMPT_FISCAL_FINAL.md) nas folhas_finais: a última palavra. O Gemini sozinho deixou passar exaustor quadrado, tapete trocado, painel com ripado inventado (15/11).
