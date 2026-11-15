@@ -52,6 +52,13 @@ h1{font-family:var(--display);font-weight:800;font-size:1.6rem;margin:0;letter-s
 .topo-v .tit{flex:1}
 .acoes{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex:none}
 .b.postei{grid-column:1/-1}
+.b.pedir{background:var(--card);color:var(--fg);box-shadow:inset 0 0 0 1.5px var(--line)}
+.b.lixo{background:var(--card);color:#d6453d;box-shadow:inset 0 0 0 1.5px color-mix(in srgb,#d6453d 45%,transparent)}
+.pedido[hidden]{display:none}
+.pedido{grid-column:1/-1;display:flex;flex-direction:column;gap:6px;background:var(--soft);border-radius:10px;padding:8px}
+.pedido textarea{width:100%;min-height:64px;border:1.5px solid var(--line);border-radius:8px;padding:8px;font:600 .9rem var(--body);background:var(--card);color:var(--fg);box-sizing:border-box}
+.pedido .linha2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.estado-ed{font-size:.78rem;font-weight:700;color:var(--muted);margin-top:2px}
 .tit{font-weight:700;font-size:.92rem}
 .tit small{display:block;color:var(--muted);font-weight:600;font-size:.78rem;margin-top:1px}
 .botoes{display:grid;grid-template-columns:1fr 1fr;gap:6px}
@@ -234,16 +241,39 @@ function linhaVideo(p,primeiro){
   leg.onclick=async()=>{ try{ await navigator.clipboard.writeText(p.legenda||""); f.legenda=true; render(); }catch(e){ caixa.hidden=false; } };
   const ok=botao("Postei",false,"postei");
   ok.onclick=async()=>{ ok.disabled=true; try{ await db.doc("posts/"+p._id).update({status:"postado",postado_em:new Date().toISOString()}); }catch(e){ ok.disabled=false; ok.textContent="Não salvou, toque de novo"; } };
-  bs.append(leg,ok,caixa); info.append(bs); v.append(info); return v;
+  // a dona 15/11: "Pedir edição" (diz o que mudar; o vídeo sai da fila até o Claude refazer) e "Descartar" (vídeo muito bugado)
+  const pe=botao("✏️ Pedir edição",false,"pedir"), dc=botao("🗑️ Descartar",false,"lixo");
+  const caixaEd=el("div","pedido"); caixaEd.hidden=true;
+  const ta=el("textarea"); ta.placeholder="O que mudar? Ex.: tirar o vaso, cor do sofá errada, texto em cima do produto…"; ta.setAttribute("aria-label","O que mudar neste vídeo");
+  const l2=el("div","linha2"); const env=botao("Enviar pedido",false,"postei"), canc=botao("Cancelar");
+  canc.onclick=()=>{ caixaEd.hidden=true; }; pe.onclick=()=>{ caixaEd.hidden=!caixaEd.hidden; if(!caixaEd.hidden) ta.focus(); };
+  env.onclick=async()=>{ const txt=ta.value.trim(); if(!txt){ ta.focus(); return; } env.disabled=true;
+    try{ await db.doc("posts/"+p._id).update({status:"editar",pedido_edicao:txt,pedido_em:new Date().toISOString()}); }catch(e){ env.disabled=false; env.textContent="Não salvou, toque de novo"; } };
+  l2.append(canc,env); caixaEd.append(ta,l2);
+  dc.onclick=async()=>{ if(dc.dataset.conf!=="1"){ dc.dataset.conf="1"; dc.textContent="Toque de novo para descartar"; setTimeout(()=>{ if(dc.isConnected){ dc.dataset.conf=""; dc.textContent="🗑️ Descartar"; } },4000); return; }
+    dc.disabled=true; try{ await db.doc("posts/"+p._id).update({status:"descartado",descartado_em:new Date().toISOString()}); }catch(e){ dc.disabled=false; dc.textContent="Não salvou, toque de novo"; } };
+  bs.append(leg,ok,pe,dc,caixaEd,caixa); info.append(bs); v.append(info); return v;
+}
+// vídeos com edição pedida ou descartados (a dona 15/11): ficam numa lista no fim, com desfazer
+function linhaPedido(p){
+  const d=el("div","item"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy";
+  const t=el("div","t",p.produto+" · "+(p.versao||""));
+  t.append(el("div","estado-ed",p.status==="editar"?"✏️ Pedido: "+(p.pedido_edicao||""):p.status==="editando"?"✏️ Editando: "+(p.pedido_edicao||""):"🗑️ Descartado"));
+  const vo=el("button","leve",p.status==="descartado"?"Desfazer":"Cancelar");
+  vo.onclick=async()=>{ vo.disabled=true; try{ await db.doc("posts/"+p._id).update({status:"pronto"}); }catch(e){ vo.disabled=false; } };
+  d.append(im,t,p.status==="editando"?el("span"):vo); return d;
 }
 function render(){
   // Reels saem da fila manual: o Postador Meta posta sozinho (Kevin 23/10)
   const ehReels=p=>p.auto||/reels/i.test(p.versao||"");
   const reels=posts.filter(ehReels);
   const manuais=posts.filter(p=>!ehReels(p));
-  const fazer=manuais.filter(p=>p.status!=="postado").sort(porEntrada);
+  const FORA=["postado","editar","editando","descartado"];
+  const fazer=manuais.filter(p=>!FORA.includes(p.status)).sort(porEntrada);
+  const pedidos=manuais.filter(p=>p.status==="editar"||p.status==="editando").sort(porEntrada);
+  const lixo=manuais.filter(p=>p.status==="descartado").sort((a,b)=>(b.descartado_em||"").localeCompare(a.descartado_em||""));
   const feitos=manuais.filter(p=>p.status==="postado").sort((a,b)=>(b.postado_em||"").localeCompare(a.postado_em||""));
-  const total=fazer.length+feitos.length;
+  const total=fazer.length+feitos.length+pedidos.length;
   $("#cont").textContent= total? `${feitos.length} de ${total} postados`:"";
   $("#prog").style.width= total? (feitos.length/total*100)+"%":"0%";
   const pend=conferir.filter(c=>c.status==="pendente").sort((a,b)=>(a.dia||"").localeCompare(b.dia||"")||loteDe(a).localeCompare(loteDe(b))||(a.ordem||0)-(b.ordem||0));
@@ -316,7 +346,9 @@ function render(){
     if(!feitos.length) l.append(el("div","vazio","Nada postado ainda."));
     tela.append(l); scrollTo(0,y); return;
   }
-  if(!fazer.length){ tela.append(el("div","vazio","Tudo postado. Os vídeos do próximo lote aparecem aqui sozinhos.")); return; }
+  const fim=()=>{ if(pedidos.length){ const s=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"O Claude refaz"),el("b",null,`✏️ Edição pedida (${pedidos.length})`)); s.append(tx); l.append(s); pedidos.forEach(p=>l.append(linhaPedido(p))); }
+    if(lixo.length){ const dt=el("details","nota"); dt.append(el("summary",null,`🗑️ Descartados (${lixo.length})`)); lixo.slice(0,60).forEach(p=>dt.append(linhaPedido(p))); l.append(dt); } };
+  if(!fazer.length){ l.append(el("div","vazio","Tudo postado. Os vídeos do próximo lote aparecem aqui sozinhos.")); fim(); tela.append(l); return; }
   // a dona 15/11: um modelo por vez, 2 dias cada (A 15-16/11, B 17-18, C 19-20, A de novo...), para uma punição não pegar os 3 vídeos do produto
   const R=rodizio(); const letra=p=>((p.versao||"").trim()[0]||"").toUpperCase();
   const daVez=fazer.filter(p=>!"ABC".includes(letra(p))||letra(p)===R.hoje);
@@ -334,7 +366,7 @@ function render(){
       const tx=el("div"); tx.append(el("span",null,"Lote "+dataBR(p.dia)),el("b",null,p.produto)); s.append(im,tx); l.append(s); }
     l.append(linhaVideo(p,novo));
   });
-  tela.append(l); scrollTo(0,y);
+  fim(); tela.append(l); scrollTo(0,y);
 }
 $("#t-tts").onclick=()=>{aba="tts";render();};
 // ===== Aba TikTok Shop (a dona 02/11): ela manda até 3 clipes + link do produto; o Claude edita 3 criativos de 13 s e devolve aqui =====

@@ -25,3 +25,11 @@ O Kevin não posta mais Reels à mão. Na página Postagens, os Reels ficam só 
 - Na Postagens: botão "Esgotado" ao lado de "Abrir e favoritar" (só no vídeo A) move todos os vídeos não postados do produto (inclusive o Reels da fila) para `esgotados`.
 - Aba "Esgotados": ordenada por conferir_em; "Voltou ao estoque" recria os posts com status pronto (usa `posts` ou, se faltar, drive_urls) e apaga o esgotado; "Ainda esgotado" adia +30 dias.
 - Páginas de revisão de lote gravam só em `esgotados`, nunca em posts.
+
+## Pedir edição e Descartar (a dona, 15/11)
+Cada vídeo de "Para postar" tem dois botões novos:
+- **✏️ Pedir edição**: o doc `posts/<id>` vira `status: "editar"`, com `pedido_edicao` (texto dela) e `pedido_em`. Sai da fila e aparece em "Edição pedida".
+  O Claude (conversa de lote ou quando ela pedir) lê `posts` com status editar, põe `status: "editando"`, refaz o vídeo pelo pedido,
+  sobe no Drive, troca `drive_url`/`poster` e volta `status: "pronto"` (tira `pedido_edicao`). Edição é grátis; se precisar gerar cena nova, pedir OK com teto.
+- **🗑️ Descartar** (dois toques): `status: "descartado"` + `descartado_em`. Some da fila, fica em "Descartados" com "Desfazer".
+  Vídeo descartado entra em agentes/desperdicios.md no próximo lote (motivo: bugado).
