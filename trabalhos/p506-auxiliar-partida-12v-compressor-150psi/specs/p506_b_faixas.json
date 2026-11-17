@@ -1,0 +1,316 @@
+{
+ "narr": null,
+ "narr_at": 0.4,
+ "tempo": 1.0,
+ "bed": [
+  "/home/user/Fabrica-ugc/musicas/biblioteca/animada_11_piano_flauta.wav"
+ ],
+ "grade": {
+  "sat": 0.92,
+  "warm": 0.015,
+  "contrast": 1.04,
+  "lift": 0.02,
+  "vign": 0.1,
+  "grain": 0.01,
+  "top": 0.1
+ },
+ "lift": 300,
+ "accent": [
+  210,
+  40,
+  40
+ ],
+ "segs": [
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 1.1,
+   "z": [
+    1.05,
+    1.0
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 1.1,
+   "z": [
+    1.05,
+    1.0
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 3.9,
+   "z": [
+    1.0,
+    1.05
+   ]
+  },
+  {
+   "src": "A",
+   "ss": 0.0,
+   "dur": 1.1,
+   "z": [
+    1.05,
+    1.0
+   ]
+  }
+ ],
+ "texts": [
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Todo motorista precisa ter"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "10000A",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "de partida",
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    210,
+    40,
+    40,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Para veículos 12V"
+   ],
+   "t0": 0,
+   "t1": 5.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Todo motorista precisa ter"
+   ],
+   "t0": 5.0,
+   "t1": 10.0,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "150 PSI",
+   "t0": 5.0,
+   "t1": 10.0,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": true
+  },
+  {
+   "kind": "band",
+   "text": "compressor de ar",
+   "t0": 5.12,
+   "t1": 10.0,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    210,
+    40,
+    40,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": true
+  },
+  {
+   "kind": "body",
+   "lines": [
+    "Enche pneu a 20 PSI em 2 min"
+   ],
+   "t0": 5.3,
+   "t1": 10.0,
+   "y": 1600,
+   "base": "pop_r",
+   "it": "pop_r",
+   "size": 38,
+   "x": 82
+  },
+  {
+   "kind": "eyebrow",
+   "lines": [
+    "Todo motorista precisa ter"
+   ],
+   "t0": 10.0,
+   "t1": 15,
+   "y": 1300,
+   "base": "pop_sb",
+   "size": 28,
+   "track": 7,
+   "x": 78,
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "30000",
+   "t0": 10.0,
+   "t1": 15,
+   "y": 1362,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    22,
+    20,
+    18,
+    238
+   ],
+   "out": false
+  },
+  {
+   "kind": "band",
+   "text": "mAh power bank",
+   "t0": 10.12,
+   "t1": 15,
+   "y": 1466,
+   "x": 70,
+   "rotate": 2,
+   "size": 66,
+   "fill": [
+    210,
+    40,
+    40,
+    255
+   ],
+   "color": [
+    26,
+    22,
+    18
+   ],
+   "out": false
+  },
+  {
+   "kind": "button",
+   "text": "Toque no carrinho",
+   "t0": 10.4,
+   "t1": 15,
+   "y": 1604,
+   "x": 70,
+   "anim": "fade",
+   "out": false,
+   "style": "outline",
+   "icon": "cart",
+   "text_color": [
+    255,
+    255,
+    255
+   ],
+   "fill": [
+    20,
+    18,
+    16,
+    70
+   ],
+   "lw": 2,
+   "base": "dm_md",
+   "size": 46,
+   "h": 110
+  }
+ ],
+ "src": {
+  "A": "/home/user/fabrica-ugc/trabalhos/p506-auxiliar-partida-12v-compressor-150psi/src/A.mp4",
+  "B": "/home/user/fabrica-ugc/trabalhos/p506-auxiliar-partida-12v-compressor-150psi/src/B.mp4",
+  "C": "/home/user/fabrica-ugc/trabalhos/p506-auxiliar-partida-12v-compressor-150psi/src/C.mp4",
+  "D": "/home/user/fabrica-ugc/trabalhos/p506-auxiliar-partida-12v-compressor-150psi/src/D.mp4",
+  "E": "/home/user/fabrica-ugc/trabalhos/p506-auxiliar-partida-12v-compressor-150psi/src/E.mp4",
+  "F": "/home/user/fabrica-ugc/trabalhos/p506-auxiliar-partida-12v-compressor-150psi/src/F.mp4"
+ },
+ "out": "/home/user/fabrica-ugc/trabalhos/p506-auxiliar-partida-12v-compressor-150psi/out2/p506_b_faixas.mp4",
+ "dur": 15.0,
+ "natural": 1,
+ "vel": 1.25,
+ "mov": 1,
+ "trans": [
+  [
+   5.0,
+   "whip"
+  ],
+  [
+   10.0,
+   "zoom"
+  ]
+ ]
+}
