@@ -3,6 +3,20 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 17/11 B (17/11 ~11h30-13h30 UTC; feita ao mesmo tempo que a Lista 17/11 A; trabalhos p500-p514, N0=500)
+- Fila do Tinder: itens 17-31 por decidido_em (o 1º da fila é o p11 pulado de 15/11, então peguei 17-31 para não repetir com a A em nenhuma contagem).
+  O item 16 (Flybb berço 58262036234) ficou na Fila para o próximo lote.
+- 15 produtos com A, B e C (45 vídeos, 1711B-01..15) na aba Conferir, pendentes. Nenhum pulado. Tinder: os 15 em `pronto`.
+- Gasto US$ 5,37 de 8: 65 imagens (45 + 20 refações, US$ 2,57) + 28 clipes (US$ 2,80), todos aprovados. Saldo WaveSpeed US$ 41,72 (com a A andando).
+- K22 (sem cena aprovada, câmera por código + aviso): p05 luminária arco (formato do arco), p07 auxiliar de partida (objetos no fundo), p11 poltrona Lívia (capitonê).
+- Fiscal final Sonnet: 39 OK, 6 AVISO (p04 A/B/C vermelho mais escuro e encosto sem vivo; p11 A/B/C capitonê mais gordo), 0 descartar. p15 C com aviso (planta).
+- K23: 3 reprovações por enfeite/objeto (Sonnet: p07 A ferramentas/frascos, p07 C lampião de vidro, p13 B prateleira cheia). Nenhum clipe com enfeite mudando.
+- K24: nenhuma guia (largos com foto 01 ruim; p04/p08/p10/p11/p14/p15 com foto boa, mas o código não os marcou largos).
+- Carrossel: 8 produtos no Drive (p01, p03, p04, p08, p12, p13, p14, p15).
+- Avisos: p06 Starlink: antena NÃO inclusa mas aparece (como nas fotos do anúncio); legendas dizem "antena não inclusa"; placa "EVER FISHING". p02 largura 60/70 discorda (sem largura nos textos).
+  p12 e p13 são a mesma cuba (60/70 cm); p14 e p15 mesma loja de vasos. p15 altura discorda (115 x 95 cm): textos sem altura. p07 complexo (foto 01 colada).
+- Erro novo: nenhum. gerar_links passou de 1ª. produzir.sh do lote ganhou a linha `[ -n "${N0:-}" ] && n0=$N0`.
+
 ## Lista 15/11 A (15/11 ~10h30 UTC; trabalhos p470-p482; 1ª com K30 e K31)
 - 13 produtos com A, B e C (39 vídeos, 1511A-01..15) + p02 Solda ESAB como cartão "resgate" na aba Conferir, pendentes. p11 Luminária de piso
   58271209891 pulada pelo Fichador (anúncio mistura 3 modelos, foto 01 colagem): Tinder `aprovado` + `pulado`. Tinder: os outros 14 em `pronto`.

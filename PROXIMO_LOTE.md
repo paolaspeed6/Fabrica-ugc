@@ -32,6 +32,7 @@ Atualizado: 2026-11-15 (Lista 15/11 A entregue). Histórico completo: memoria/hi
 
 ## Estado atual (15/11)
 - Último lote: Lista 15/11 A (39 vídeos + 1 resgate na Conferir, US$ 4,63; p11 pulado). Antes: 14/11 A (45). Detalhe: memoria/historico_lotes.md (topo).
+- Lista 17/11 B (feita junto com a A): 45 vídeos na Conferir (15 produtos, p500-p514), US$ 5,37; saldo WaveSpeed US$ 41,72. Item 16 da Fila (Flybb berço) ficou para o próximo lote.
 - Saldo WaveSpeed: ~US$ 1,73 em 15/11 (NÃO dá um lote de 15; recarregar). Confira com `curl -s https://api.wavespeed.ai/api/v3/balance`.
 - K30 + K31 (15/11): refs_variante.py tira foto de outra variante (fase1 já roda); Fiscal Sonnet olha TODAS as cenas com lupa; depois do
   entregar.sh, Fiscal final Sonnet (PROMPT_FISCAL_FINAL.md) nas folhas_finais e avisos nos cartões da Conferir antes de avisar.
