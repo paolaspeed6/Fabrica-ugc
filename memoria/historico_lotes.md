@@ -3,6 +3,19 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 17/11 A (17/11 ~11h20-13h50 UTC; feita junto com a 17/11 B; trabalhos p483-p494, N0=483)
+- Fila do Tinder: itens 1-15 por decidido_em. Pulados pelo Fichador (sem foto limpa): p01 Luminária de piso 58271209891 (de novo; colagem de 3 modelos),
+  p04 Base box 58264944224 (fotos com colchão, 3 cores, única limpa é a preta com caixa), p12 Kit vara rosa 50519166203 (14 fotos = mesma colagem). Tinder: `aprovado` + `pulado`.
+- 12 produtos com A, B e C (36 vídeos, 1711A-02..15) na aba Conferir, pendentes. Tinder: os 12 em `pronto`.
+- Gasto US$ 4,66 de 8: 42 imagens (36 + 6 refações, US$ 1,66) + 30 clipes (US$ 3,00). Saldo WaveSpeed ~US$ 41,7 (depois dos 2 lotes).
+- Refs trocadas por mim antes de gerar: p06 só foto 04 (02 tem comida), p09 só foto 06 (01 é colagem redondo + quadrado).
+- p03 Poltrona do papai: A e C reprovadas 2x (borda); os 3 vídeos usam a cena B (câmera quase parada).
+- K24: guia só em p03 e p05 (foto 01 boa e largo). K23: 0 reprovações por enfeite (Sonnet).
+- Fiscal Sonnet das folhas: 0 reprovações novas. Fiscal final: 32 OK, 4 AVISO (p02 B pés mais escuros; p05 A/B/C tampo de vidro, o anúncio vende só a base), 0 descartar.
+  Avisos falsos do auditor Gemini (comparou com a foto 01 colagem) tirados de p02 e p06; p11 B ficou com aviso leve.
+- Pendente: resgate 1511A-02 (Solda ESAB, escolha B,A,C) na aba Conferir: não feito (a pasta lista1511a não está no Git; precisa das imagens da WaveSpeed).
+- Erro novo: nenhum. Dica: o auditor do entregar.sh compara com a foto 01 mesmo quando a ref é outra (gera aviso falso).
+
 ## Lista 17/11 B (17/11 ~11h30-13h30 UTC; feita ao mesmo tempo que a Lista 17/11 A; trabalhos p500-p514, N0=500)
 - Fila do Tinder: itens 17-31 por decidido_em (o 1º da fila é o p11 pulado de 15/11, então peguei 17-31 para não repetir com a A em nenhuma contagem).
   O item 16 (Flybb berço 58262036234) ficou na Fila para o próximo lote.

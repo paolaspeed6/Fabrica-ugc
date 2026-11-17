@@ -129,3 +129,6 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 - Sonnet reprovou 2 cenas já liberadas (sem 3ª imagem): p08 C (vaso tipo garrafa), p15 A (5 cadeiras cortadas). Nenhum clipe reprovado (28 de 28).
 | 2026-11-15 | 14 produtos (p01-p15 sem p11) | Lista 15/11 A | 1,27 | 7,22 | 32 imagens refeitas (refação única): K30/K31 (detalhe diferente da foto 01), borda e objeto proibido; p02 ESAB sem cena aprovada (cartão resgate) |
 | 2026-11-17 | 15 produtos (p01-p15) | Lista 17/11 B | 0,79 | 5,37 | 20 imagens refeitas (refação única); falharam de novo: p01 A, p02 A e B, p03 A, p04 B, p05 B e C, p08 B, p12 A. Sonnet reprovou 7 já liberadas (sem 3ª imagem): p04 B (tom), p05 A (arco), p07 A e C (objetos/lampião), p11 A e B (capitonê), p13 B (prateleira cheia). p05, p07, p11 sem cena aprovada (K22, câmera por código, grátis). Nenhum clipe reprovado (28 de 28). |
+
+## Lista 17/11 A (17/11)
+- 6 refações de imagem (US$ 0,24); falharam de novo: p03 A e C (borda). Nenhum clipe reprovado (30 de 30).
