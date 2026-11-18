@@ -242,7 +242,13 @@ function grupos(){
   g.fila.sort((a,b)=>(a.decidido_em||"").localeCompare(b.decidido_em||""));
   return g;
 }
-async function salvar(it,dados){ if(!db) return; try{ await db.doc((it._col||COL())+"/"+it._id).update(dados); }catch(e){ $("#sub").textContent="Não salvou. Confira a conexão e tente de novo."; } }
+// 18/11: a tela muda NA HORA (a dona: "não muda o produto"); o banco confirma depois. Com 2.000+ produtos o aviso do banco atrasava.
+const localMud={};
+async function salvar(it,dados){ if(!db) return; const id=it._id;
+  localMud[id]={...(localMud[id]||{}),...dados}; Object.assign(it,dados); juntarLocal(); render();
+  try{ await db.doc((it._col||COL())+"/"+id).update(dados); }catch(e){ delete localMud[id]; $("#sub").textContent="Não salvou. Confira a conexão e tente de novo."; } }
+function juntarLocal(){ for(const it of itensS){ const m=localMud[it._id]; if(!m) continue;
+  if(Object.keys(m).every(k=>it[k]===m[k])){ delete localMud[it._id]; continue; } Object.assign(it,m); } }
 async function decidir(it,status){
   const inp=$("#videos"); const dados={status,decidido_em:new Date().toISOString()};
   if(inp&&inp.value.trim()!=="") dados.afiliados=Number(inp.value);
@@ -581,12 +587,12 @@ const ultDia=l=>{ const d=[...new Set(l.map(i=>i.dia).filter(Boolean))].sort(); 
   // 15/11: com mais de 2.000 produtos a coleção inteira não carrega mais de uma vez (a tela ficava zerada).
   // Carrega por partes: os mais recentes (Escolher e decisões recentes), a Fila, a Produção e os descartados mais novos.
   const partes={}, juntar=()=>{ const m=new Map(); for(const k in partes) for(const it of partes[k]) m.set(it._id,it);
-    itensS=[...m.values()]; diaS=ultDia(itensS); render(); };
+    itensS=[...m.values()]; juntarLocal(); diaS=ultDia(itensS); render(); };
   const C=db.collection("candidatos"), ouvir=(k,q)=>q.onSnapshot(s=>{ partes[k]=s.docs.map(d=>({...d.data(),_id:d.id,_col:"candidatos"})); juntar(); },
     e=>{ console.warn("candidatos",k,e&&e.code); if(!itensS.length) $("#sub").textContent="Não carregou a lista ("+(e&&e.code||"erro")+"). Feche e abra a página."; });
   // sem orderBy: a coleção ficou grande demais para ordenar (resource_exhausted). Só filtros simples.
-  const dias=[]; for(let i=0;i<10;i++){ const d=new Date(Date.now()-i*864e5); dias.push(d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")); }
-  ouvir("recentes",C.where("dia","in",dias));                       // últimos 10 dias (Escolher)
+  const dias=[]; for(let i=0;i<4;i++){ const d=new Date(Date.now()-i*864e5); dias.push(d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")); }
+  ouvir("recentes",C.where("dia","in",dias));                       // últimos 4 dias (Escolher; 10 dias ficou pesado demais, 18/11)
   ouvir("novos",C.where("status","==","novo"));                     // "novo" gravado (Voltar/Tirar)
   ouvir("fila",C.where("status","==","aprovado"));
   ouvir("producao",C.where("status","not-in",["novo","aprovado","descartado"]));
