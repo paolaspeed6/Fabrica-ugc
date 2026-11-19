@@ -12,6 +12,8 @@ Atualizado: 2026-11-15 (Lista 15/11 A entregue). Histórico completo: memoria/hi
 - No fim do lote: atualize só a seção "Estado atual" daqui (curta). O detalhe do lote (pulados, avisos, K22-K25) vai no TOPO de memoria/historico_lotes.md, não aqui (a dona, 10/11: menos contexto).
 
 ## Regras que não podem falhar
+- A dona, 19/11: no PRÓXIMO lote, comece pelas DECORAÇÕES DE NATAL aprovadas no Tinder (campo `natal: true`), depois o resto da Fila.
+- A dona, 19/11: modelo B novo "Gancho + ficha" (MODELO_DE_CRIACAO.md): gancho forte no topo + 3 informações do produto. O `b.kicker` do Fichador agora é o GANCHO GRANDE do B (forte e atrativo) e `b.cenas` = 3 fatos [fato curto grande, o que é, detalhe].
 - TESTE K24 (01/11): produto "largo" usa a guia (foto 01 na posição certa, só o cômodo muda). No aviso final: quantas cenas largas
   passaram de 1ª e se o Nano Banana manteve o produto igual à foto. Olhe a guia.jpg de 1 produto antes de gerar o resto.
 - TESTE K23 (a dona, 31/10): o 1º lote com cenas "com vida" (sol, plantas, enfeites simples) conta no aviso final quantas cenas foram

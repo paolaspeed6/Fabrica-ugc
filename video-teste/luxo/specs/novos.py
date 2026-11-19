@@ -171,3 +171,35 @@ def opcao_a(nome, p, segs, narr, narr_at=0.5, bed=None, tempo=1.0, cuts=(0, 2.9,
            dict(kind='line', len=220, t0=e + 0.7, t1=15, y=300 + len(lines) * 122 + 30, anim='draw', out=False)]
     save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], dips=[c, d],
           grade=dict(FMT_A, warm_ramp=ramp), segs=segs, texts=tx, **({'shiftx': p['shiftx']} if p.get('shiftx') else {}))
+
+
+def _duas_linhas(txt):
+    """gancho de 1 linha -> 2 linhas equilibradas; a 2ª na cor do produto (destaque)."""
+    txt = txt.replace('[', '').replace(']', '').replace('*', '').strip()
+    p = txt.split()
+    if len(p) < 3: return [txt]
+    melhor = min(range(1, len(p)), key=lambda k: abs(len(' '.join(p[:k])) - len(' '.join(p[k:]))))
+    return [' '.join(p[:melhor]), '[' + ' '.join(p[melhor:]) + ']']
+
+
+def opcao_b_gancho(nome, p, segs, narr, narr_at=0.4, bed=None, cuts=(0, 3.2, 6.0, 8.8, 11.6, 15), tempo=1.0):
+    """B novo (a dona, 19/11: "mude o modelo B para um parecido com o A e o C, com gancho forte e atrativo e, ao decorrer do
+    vídeo, informações importantes sobre o produto"). Vídeo em tela cheia (sem subir 300 px), textos no TOPO como A e C,
+    Poppins (diferente da serifa do A e da DM do C):
+      gancho grande em 2 linhas (2ª na cor do produto) -> 3 fichas "01 / 03": número/fato grande na cor + o que é + detalhe
+      -> "Toque no carrinho / e veja o preço." + botão. p: eyebrow, kicker (gancho), cenas=[(grande1, grande2, sub)]*3, accent."""
+    a, i1, i2, i3, e, fim = cuts
+    lado = dict(align='center', x='c')
+    tx = [_txt('eyebrow', p.get('eyebrow', ''), a, i1, 150, base='pop_sb', size=30, track=7, **lado),
+          _txt('title', _duas_linhas(p['kicker']), a, i1, 200, base='pop_b', it='pop_b', size=104, spacing=1.06, **lado),
+          dict(kind='line', len=160, t0=a + 0.3, t1=i1, y=470, x='c', anim='draw')]
+    for k, ((g1, g2, sub), t0, t1) in enumerate(zip(p['cenas'], (i1, i2, i3), (i2, i3, e))):
+        tx += [_txt('eyebrow', f'0{k + 1}  /  03', t0, t1, 150, base='pop_sb', size=28, track=8, **lado),
+               _txt('title', ['[' + g1.replace('[', '').replace(']', '') + ']'], t0, t1, 196, base='pop_b', it='pop_b', size=150, **lado),
+               _txt('title', [g2.replace('[', '').replace(']', '')], t0 + 0.15, t1, 376, base='pop_sb', it='pop_sb', size=68, **lado)]
+        if sub:
+            tx.append(_txt('body', [sub], t0 + 0.35, t1, 480, base='pop_r', it='pop_r', size=40, color=SUAVE, **lado))
+    tx += [_txt('title', ['Toque no carrinho', '[e veja o preço.]'], e, fim, 170, base='pop_b', it='pop_b', size=92, spacing=1.06, out=False, **lado),
+           dict(kind='button', text='Ver o preço', t0=e + 0.4, t1=fim, y=420, x='c', anim='fade', out=False, **CTA_MODERNO)]
+    save2(nome, narr=narr, narr_at=narr_at, tempo=tempo, bed=bed or [], grade=FMT_D, accent=p['accent'], segs=segs, texts=tx,
+          **({'shiftx': p['shiftx']} if p.get('shiftx') else {}))

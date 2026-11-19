@@ -105,9 +105,17 @@ def sem_voz(cfg):
     opcao_a(f'{pid}_a_umdia', dict(eyebrow=A['eyebrow'], gancho=A['gancho'], momentos=A['momentos'], **{k: A[k] for k in ('sem_horario', 'cta') if A.get(k)}, **comum),
             _segs(cuts + (15,), cfg['tomadas']['a'], cfg['clips']), None, bed=[trilha(f'{pid}_a_umdia')], cuts=cuts)
     _natural(f'{pid}_a_umdia', cuts, cfg.get('scrim'), cfg.get('texto_baixo', 0))
-    cuts = (0, 5.0, 10.0, 15)
-    opcao_b_faixas(f'{pid}_b_faixas', dict(kicker=B['kicker'], cenas=B['cenas'], cta='Toque no carrinho', lift=cfg.get('lift', 300), **comum),
-                   _segs(cuts, cfg['tomadas']['b'], cfg['clips']), None, bed=[trilha(f'{pid}_b_faixas')], cuts=cuts)
+    if os.environ.get('B_ANTIGO') == '1':  # modelo B antigo (faixas embaixo), só se a dona pedir de volta
+        cuts = (0, 5.0, 10.0, 15)
+        opcao_b_faixas(f'{pid}_b_faixas', dict(kicker=B['kicker'], cenas=B['cenas'], cta='Toque no carrinho', lift=cfg.get('lift', 300), **comum),
+                       _segs(cuts, cfg['tomadas']['b'], cfg['clips']), None, bed=[trilha(f'{pid}_b_faixas')], cuts=cuts)
+    else:  # a dona, 19/11: B novo "Gancho + ficha" (textos no topo como A e C; o arquivo mantém o nome _b_faixas para o resto da fábrica)
+        cuts = (0, 3.2, 6.0, 8.8, 11.6, 15)
+        tb = cfg['tomadas']['b']
+        if len(tb) == 3:  # tomadas do lote_auto vêm em 3 blocos (0-5, 5-10, 10-15): redistribui pelos 5 blocos novos
+            tb = [tb[0], tb[1], tb[1], tb[2], tb[2]]
+        opcao_b_gancho(f'{pid}_b_faixas', dict(eyebrow=A.get('eyebrow', ''), kicker=B['kicker'], cenas=B['cenas'], **comum),
+                       _segs(cuts, tb, cfg['clips']), None, bed=[trilha(f'{pid}_b_faixas')], cuts=cuts)
     _natural(f'{pid}_b_faixas', cuts, cfg.get('scrim'), cfg.get('texto_baixo', 0))
     cuts = (0, 3.2, 9.0, 11.6, 15)
     opcao_d(f'{pid}_c_direto', dict(eyebrow=C['eyebrow'], gancho=C['gancho'], itens=C['itens'], onde=C['onde'],

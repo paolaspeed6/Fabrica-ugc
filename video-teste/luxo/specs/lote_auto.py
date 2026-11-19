@@ -10,7 +10,7 @@ T = json.loads((L / 'textos.json').read_text())
 so = sys.argv[3].split(',') if len(sys.argv) > 3 else sorted(T)
 RAIZ = Path(__file__).resolve().parents[3]
 
-CUTS = {'a': (0, 3.0, 5.6, 8.2, 10.8, 15), 'b': (0, 5.0, 10.0, 15), 'c': (0, 3.2, 9.0, 11.6, 15)}
+CUTS = {'a': (0, 3.0, 5.6, 8.2, 10.8, 15), 'b': (0, 3.2, 6.0, 8.8, 11.6, 15), 'c': (0, 3.2, 9.0, 11.6, 15)}
 ABRE = {'a': 0, 'b': 1, 'c': 2}  # índice da cena que abre cada versão (rodízio do take inicial, regra 12)
 
 
