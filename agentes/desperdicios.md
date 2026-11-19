@@ -132,3 +132,7 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 
 ## Lista 17/11 A (17/11)
 - 6 refações de imagem (US$ 0,24); falharam de novo: p03 A e C (borda). Nenhum clipe reprovado (30 de 30).
+
+## Lista 19/11 A (19/11)
+- 16 refações de imagem (US$ 0,63); falharam de novo: p05 C, p07 A e C, p10 B, p12 A e C, p13 C, p15 B; mais p02 C e p11 B sem imagem (falhou na geração).
+- Sonnet reprovou 6 cenas já liberadas (sem 3ª imagem): p01 B e C (base sem arco de balanço), p10 B (grelhas viraram bandejas), p11 C (letras/logo inventados, broca prateada), p14 B (letras extras no frasco), p15 C (borda larga). Nenhum clipe reprovado (18 de 18).

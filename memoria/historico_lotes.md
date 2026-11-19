@@ -3,6 +3,17 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 19/11 A (19/11 ~07h50-09h20 UTC; trabalhos p515-p525)
+- Fila do Tinder: 15 primeiros não pulados por decidido_em (Flybb berço ... Tapete sisal 3x3). Nenhum do Kevin (excluidos_juntados).
+- Pulados pelo Fichador: p06 Furadeira Bosch 1200W 50367613911 e p09 Bosch GSB 16 RE 58210652875 (loja genérica, fotos de IA: possível réplica),
+  p08 Manta térmica 58252717639 (só banners), p04 Cama pet 58270625780 (cachorro em todas as fotos; pulei eu). Tinder: `aprovado` + `pulado`.
+- 11 produtos com A, B e C (33 vídeos, 1911A-01..15) na aba Conferir, pendentes. Tinder: os 11 em `pronto`.
+- Gasto US$ 3,74 de 8: 49 imagens (33 + 16 refações, US$ 1,94) + 18 clipes (US$ 1,80). Saldo WaveSpeed US$ 38,03.
+- p01 berço: todas as fotos são banners; ref = berço recortado da 03 (p01-fotos/03_recorte.jpg). p12 ref 09 (foto 01 tem taças). p15 refs_variante tirou a 11 (tom).
+- K23: 0 reprovações por enfeite. K24: nenhuma guia (nenhum marcado largo). Fiscal final Sonnet: 33 OK, 0 aviso, 0 descartar.
+  Aviso falso do auditor Gemini no p15 B (comparou com a foto 01 sala) tirado. Carrossel: 7 produtos no Drive.
+- Erro novo: nenhum. Item 16+ da Fila (tapete persa, mesa cone 45, aparador, cadeiras) fica para o próximo lote.
+
 ## Lista 17/11 A (17/11 ~11h20-13h50 UTC; feita junto com a 17/11 B; trabalhos p483-p494, N0=483)
 - Fila do Tinder: itens 1-15 por decidido_em. Pulados pelo Fichador (sem foto limpa): p01 Luminária de piso 58271209891 (de novo; colagem de 3 modelos),
   p04 Base box 58264944224 (fotos com colchão, 3 cores, única limpa é a preta com caixa), p12 Kit vara rosa 50519166203 (14 fotos = mesma colagem). Tinder: `aprovado` + `pulado`.
