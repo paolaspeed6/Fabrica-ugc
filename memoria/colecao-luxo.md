@@ -94,3 +94,6 @@ Voz: Kore (a "primeira de todas", preferida). Grátis = 10 narrações/dia POR m
 - Olimpo tem Metas (nível Ninfa → Deusa do Olimpo), Mural das correções com data (coleção mural; toda correção nova entra lá) e Jogos (Julgamento de Atena, Memória do Olimpo, Oráculo de Delfos).
 - Teste das chaves: Drive OK; Shopee responde, mas o segredo está como shopee_APP_SECRET (renomear); META_PAGE_TOKEN é o token pessoal (trocar pelo da Página); THREADS_TOKEN não responde; faltam MARCA_NOME e DRIVE_PASTA.
 - Jogo voltou ao design do Kevin (grama, estrada, robozinhos), versão feminina: rosa e lilás, robôs com cílios, laço e coroa (pedido da dona 24/10).
+
+## 2026-11-19 — Modelo B novo aprovado
+A dona pediu o B parecido com A e C (gancho forte + informações do produto ao longo do vídeo). Feito o "Gancho + ficha" (opcao_b_gancho em novos.py): tela cheia, textos no topo, gancho em 2 linhas, 3 fichas 01/03 com fato grande na cor, CTA "Ver o preço". Testado na mesa cone p523; ela respondeu "gostei, pode ser assim". Faixas antigas só com B_ANTIGO=1.
