@@ -28,7 +28,8 @@ FESTA = ["reveillon", "ano novo", "2027", "festa", "balao", "baloes", "metaliz",
 NAO_DECOR = ["fantasia", "roupa", "camiseta", "pijama", "vestido", "chinelo", "brinquedo", "chocolate", "kit beleza", "perfume",
              "maquiagem", "caneca", "bone ", "gorro", "meia calca", "champanhe", "champagne", "espumante", "vinho", "cerveja", "drink",
              "whisky", "balde de gelo", "brinde", "fogos", "rojao", "bombinha", "oculos", "colar", "brinco", "pulseira", "unha",
-             "cabelo", "natal", "natalin", "noel", "presepio", "infantil", "cha de bebe", "aniversario infantil"]
+             "cabelo", "natal",
+             "blackout", "blecaute", "persiana", "menorah", "judaico", "formei", "formand", "formatura", "bride", "noiva", "acai", "sorvete", "look", "casamento", "casa comigo", "preciosa", "sonhos", "vida e doce", "banheiro", "potes", "personaliz", "aniversario", "limao", "halloween", "expositor", "quadros", "escultura", "seja luz", "qual o seu desejo", "recepcao", "lavabo", "natalin", "noel", "presepio", "infantil", "cha de bebe", "aniversario infantil"]
 
 def uma(r):
     out = {}
