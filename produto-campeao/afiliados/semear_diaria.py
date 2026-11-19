@@ -12,11 +12,19 @@ E = json.load(open('excluidos.json'))
 for v in E.values(): fora |= set(map(str, v))
 fora |= set(map(str, json.load(open('vistos.json'))))
 for f in glob.glob('listas/*_docs/*.json'): fora.add(os.path.basename(f)[:-5])
+# 19/11 (a dona: "itens que já aprovei se repetindo"): o mesmo produto em OUTRO anúncio (outro itemId) passava.
+# decididos.json = aprovados/prontos do Tinder (id -> nome). Nome quase igual (>= 80% das palavras) fica fora.
+import re, unicodedata
+def _tok(t): return set(w for w in re.findall(r'[a-z0-9]+', unicodedata.normalize('NFKD', (t or '').lower()).encode('ascii', 'ignore').decode()) if len(w) > 2)
+DEC = [_tok(v['nome']) for v in json.load(open('decididos.json')).values()] if os.path.exists('decididos.json') else []
+def repetido(nome):
+    t = _tok(nome)
+    return bool(t) and any(u and len(t & u) / len(t | u) >= 0.8 for u in DEC)
 pasta = f'listas/{dd}{mm}_varredura_docs'; os.makedirs(pasta, exist_ok=True)
 ok, fo = [], 0
 n = len(glob.glob(f'{pasta}/*.json'))  # continua a numeração (Vp) da varredura da manhã
 for x in d:
-    if str(x['id']) in fora: fo += 1; continue
+    if str(x['id']) in fora or repetido(x.get('nome')): fo += 1; continue
     n += 1; url = None
     for t in range(6):
         try: s, url = link(x['link'], f'Vp{n:03d}', '', f'{aa}{mm}{dd}'); break
