@@ -12,6 +12,10 @@ E = json.load(open('excluidos.json'))
 for v in E.values(): fora |= set(map(str, v))
 fora |= set(map(str, json.load(open('vistos.json'))))
 for f in glob.glob('listas/*_docs/*.json'): fora.add(os.path.basename(f)[:-5])
+# 19/11: o vistos.json tinha perdido ids antigos (Tinder repetiu produto de 01/11); junta tudo que ela já semeou
+for f in glob.glob('excluidos_esposa_*.json'): fora |= set(map(str, json.load(open(f)).get('ids', [])))
+for f in glob.glob('listas/*.ids.json'):
+    if not f.startswith(f'listas/{dd}{mm}_'): fora |= set(map(str, json.load(open(f))))
 # 19/11 (a dona: "itens que já aprovei se repetindo"): o mesmo produto em OUTRO anúncio (outro itemId) passava.
 # decididos.json = aprovados/prontos do Tinder (id -> nome). Nome quase igual (>= 80% das palavras) fica fora.
 import re, unicodedata
