@@ -238,8 +238,8 @@ function grupos(){
   for(const it of itens){ const s=st(it);
     if(s==="novo") g.escolher.push(it); else if(s==="aprovado") g.fila.push(it);
     else if(s==="descartado") g.descartados.push(it); else g.producao.push(it); }
-  // 19/11 (a dona): produtos de Natal (natal:true) ficam no início do Escolher.
-  g.escolher.sort((a,b)=>(b.natal?1:0)-(a.natal?1:0)||(b.dia||"").localeCompare(a.dia||"")||b.pontos-a.pontos);
+  // 19/11 (a dona): produtos de Natal (natal:true) ficam no início do Escolher; Réveillon (reveillon:true) logo depois.
+  g.escolher.sort((a,b)=>(b.natal?1:0)-(a.natal?1:0)||(b.reveillon?1:0)-(a.reveillon?1:0)||(b.dia||"").localeCompare(a.dia||"")||b.pontos-a.pontos);
   g.fila.sort((a,b)=>(a.decidido_em||"").localeCompare(b.decidido_em||""));
   return g;
 }
@@ -288,6 +288,7 @@ function cartao(it,total){
   if(it.nota) chips.append(el("span","chip","nota "+it.nota));
   if(it.possivel_duplicata) chips.append(el("span","chip dup","⚠ possível duplicata da mesma loja"));
   if(it.natal) chips.append(el("span","chip","🎄 Natal"));
+  if(it.reveillon) chips.append(el("span","chip","🎆 Réveillon"));
   if(it.largo) chips.append(el("span","chip dup","⚠ largo: a IA costuma cortar, gasta mais"));
   corpo.append(chips);
   if(it.beneficio) corpo.append(el("div","troque","💡 "+it.beneficio));
