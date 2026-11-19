@@ -240,7 +240,8 @@ function grupos(){
     else if(s==="descartado") g.descartados.push(it); else g.producao.push(it); }
   // 19/11 (a dona): produtos de Natal (natal:true) ficam no início do Escolher; Réveillon (reveillon:true) logo depois.
   g.escolher.sort((a,b)=>(b.natal?1:0)-(a.natal?1:0)||(b.reveillon?1:0)-(a.reveillon?1:0)||(b.dia||"").localeCompare(a.dia||"")||b.pontos-a.pontos);
-  g.fila.sort((a,b)=>(a.decidido_em||"").localeCompare(b.decidido_em||""));
+  // 19/11 (a dona: "aprovo e não vai pra fila"): a Fila tinha os mais antigos no topo e os recém-aprovados sumiam lá embaixo. Agora o mais novo vem primeiro.
+  g.fila.sort((a,b)=>(b.decidido_em||"").localeCompare(a.decidido_em||""));
   return g;
 }
 // 18/11: a tela muda NA HORA (a dona: "não muda o produto"); o banco confirma depois. Com 2.000+ produtos o aviso do banco atrasava.
@@ -253,7 +254,9 @@ function juntarLocal(){ for(const it of itensS){ const m=localMud[it._id]; if(!m
 async function decidir(it,status){
   const inp=$("#videos"); const dados={status,decidido_em:new Date().toISOString()};
   if(inp&&inp.value.trim()!=="") dados.afiliados=Number(inp.value);
-  ultimo={it,antes:st(it)}; await salvar(it,dados);
+  ultimo={it,antes:st(it)};
+  if(status==="aprovado"){ window._aviso={txt:"✓ Foi para a Fila: "+(it.nome||"").slice(0,40),ate:Date.now()+4000}; clearTimeout(decidir.t); decidir.t=setTimeout(()=>render(),4100); }
+  await salvar(it,dados);
 }
 // a dona 15/11: botão "Observação" para escrever o que quiser sobre o produto (o Claude lê no lote)
 function obsUI(it,compacto){
@@ -418,7 +421,7 @@ function render(){
   if(!db){ tela.append(el("div","vazio","Abra esta página no app do Claude, logado, para ver os produtos.")); return; }
   $("#l-fila").textContent=modo==="redes"?"Por tema":"Fila"; $("#l-producao").textContent=modo==="redes"?"🎬 Montar vídeo":"Produção";
   const dia=modo==="redes"?diaR:diaS;
-  $("#sub").textContent=modo==="redes"
+  if(window._aviso&&Date.now()<window._aviso.ate) $("#sub").textContent=window._aviso.txt; else $("#sub").textContent=modo==="redes"
     ? (dia?"Varredura de carrossel: "+dia+". ":"")+"Produtos fofos e bonitos para carrossel, no estilo da casa: romântico, branco com madeira, plantas, rosa e flores. Aprove os que entram."
     : (dia?"Última busca: "+dia+". Arraste para a direita para aprovar, para a esquerda para descartar.":"Produtos novos todo dia às 7h. Aprove os que valem vídeo.");
   if(aba==="escolher"){
@@ -440,7 +443,11 @@ function render(){
     const box=el("div","list"); const n=g.fila.length;
     box.append(el("div","aviso",n>=loteMin?`Fila cheia: ${n} produtos. O próximo lote está pronto para produzir.`:`${n} de ${loteMin} para fechar o próximo lote.`));
     const b=el("div","barra"); const i=el("i"); i.style.width=Math.min(100,n/loteMin*100)+"%"; b.append(i); box.append(b);
+    const hoje=new Date().toISOString().slice(0,10); let hj=0, cab=false;
+    for(const it of g.fila) if((it.decidido_em||"").slice(0,10)===hoje) hj++;
+    if(hj) box.append(el("div","aviso","✓ "+hj+" aprovado"+(hj>1?"s":"")+" hoje (no topo da lista)"));
     g.fila.forEach(it=>{ const v=el("button","leve","Tirar"); v.onclick=()=>salvar(it,{status:"novo"});
+      if(hj&&!cab&&(it.decidido_em||"").slice(0,10)!==hoje){ cab=true; box.append(el("div","aviso","Aprovados antes")); }
       box.append(linhaItem(it,brl(it.preco)+(it.afiliados!=null?" · "+it.afiliados+" vídeos":""),v)); box.append(obsUI(it,true)); });
     if(!n) box.append(el("div","vazio","Nenhum aprovado ainda. Aprove na aba Escolher."));
     tela.append(box); return;
@@ -591,13 +598,15 @@ const ultDia=l=>{ const d=[...new Set(l.map(i=>i.dia).filter(Boolean))].sort(); 
   // Carrega por partes: os mais recentes (Escolher e decisões recentes), a Fila, a Produção e os descartados mais novos.
   const partes={}, juntar=()=>{ const m=new Map(); for(const k in partes) for(const it of partes[k]) m.set(it._id,it);
     itensS=[...m.values()]; juntarLocal(); diaS=ultDia(itensS); render(); };
-  const C=db.collection("candidatos"), ouvir=(k,q)=>q.onSnapshot(s=>{ partes[k]=s.docs.map(d=>({...d.data(),_id:d.id,_col:"candidatos"})); juntar(); },
-    e=>{ console.warn("candidatos",k,e&&e.code); if(!itensS.length) $("#sub").textContent="Não carregou a lista ("+(e&&e.code||"erro")+"). Feche e abra a página."; });
+  const C=db.collection("candidatos"), ouvir=(k,q,reserva)=>q.onSnapshot(s=>{ partes[k]=s.docs.map(d=>({...d.data(),_id:d.id,_col:"candidatos"})); juntar(); },
+    e=>{ console.warn("candidatos",k,e&&e.code);
+      if(reserva){ ouvir(k,reserva); return; }  // 19/11: a Fila grande falhava calada; tenta de novo menor
+      if(!itensS.length||k==="fila") $("#sub").textContent="Não carregou "+(k==="fila"?"a Fila":"a lista")+" ("+(e&&e.code||"erro")+"). Feche e abra a página."; });
   // sem orderBy: a coleção ficou grande demais para ordenar (resource_exhausted). Só filtros simples.
   const dias=[]; for(let i=0;i<4;i++){ const d=new Date(Date.now()-i*864e5); dias.push(d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")); }
   ouvir("recentes",C.where("dia","in",dias));                       // últimos 4 dias (Escolher; 10 dias ficou pesado demais, 18/11)
   ouvir("novos",C.where("status","==","novo"));                     // "novo" gravado (Voltar/Tirar)
-  ouvir("fila",C.where("status","==","aprovado"));
+  ouvir("fila",C.where("status","==","aprovado"),C.where("status","==","aprovado").limit(150));
   ouvir("producao",C.where("status","not-in",["novo","aprovado","descartado"]));
   ouvir("descartados",C.where("status","==","descartado").limit(300));
   db.collection("videos").onSnapshot(s=>{ vids=s.docs.map(d=>({...d.data(),_id:d.id})); render(); }, ()=>render());
