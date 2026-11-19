@@ -3,6 +3,17 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 19/11 C (19/11 ~11h-13h UTC; Réveillon + Fila; trabalhos p560-p573, N0=560 por rodar junto com a 19/11 B)
+- Escolha: 10 decorações de Réveillon aprovadas (reveillon: true) + 5 mais antigas da Fila sem lote (luminária piso 2 em 1, base box dobrável, kit pesca, tapete persa 280x185, mesa cone 45). Nenhuma de Natal, nenhuma do Kevin.
+- Pulado pelo Fichador: p05 Kit painel redondo + romano + capas 54970095614 (taças impressas na arte; só capas). Tinder: `aprovado` + `pulado`.
+- 14 produtos com A, B e C (42 vídeos, 1911C-01..15) na aba Conferir, pendentes. Tinder: os 14 em `pronto`. Modelo B "Gancho + ficha".
+- Gasto US$ 4,98 de 8: 55 imagens (42 + 13 refações, US$ 2,18) + 28 clipes (US$ 2,80). Saldo WaveSpeed US$ 27,33.
+- Ajustes meus: p03/p07 complexo false (foto 01 com mão e celular); p13 complexo false (pessoa no canto da foto 01); p14 ref = foto 10 (a 01 tem taças); p11 ref = foto 06 (foto 01 é colagem de 3 modelos; fichado só o de mesa redonda).
+- p02 balões: as 3 cenas reprovadas (contagem); montado pelo sem_cena com aviso, mas a Fiscal final achou os 3 vídeos OK (20 balões + 2027).
+- K23: 1 cena reprovada por enfeite (p06 A garrafa/taças no fundo). K24: largo só p12; A falhou 2x; guia não conferida.
+- Fiscal final Sonnet: 40 OK, 2 AVISO (p09 A e C: vaso mais alto e estreito que 15x15x10), 0 descartar. Avisos falsos do auditor no p12 (base dobrada parece cabeceira) e p14 (mesa da foto 01) explicados no cartão.
+- Erro novo: nenhum.
+
 ## Lista 19/11 B (19/11; Natal; 15 decorações aprovadas com natal: true, maior comissão)
 - Pulados pelo Fichador: p03 22398946805 e p07 arco inflável 41036503215 (sem foto limpa). Tinder: `aprovado` + `pulado`. Entraram p16 Saia cone 58268056444 e p17 Carruagem 58220434846.
 - 15 produtos com A, B e C (45 vídeos, 1911B-01..17) na aba Conferir, pendentes. Tinder: os 15 em `pronto`. Modelo B novo "Gancho + ficha".

@@ -139,3 +139,7 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 
 ## Lista 19/11 B (19/11)
 - 14 refações de imagem (US$ 0,55); a Sonnet reprovou 5 já liberadas (p01 B e C, p06 A, p09 C, p15 C) e refez. Falharam de novo: p01 B, p02 B, p08 B e C, p12 A e B, p15 A e B. Nenhum clipe reprovado (34 de 34).
+
+## Lista 19/11 C (19/11)
+- 13 refações de imagem (US$ 0,51); falharam de novo: p02 A e C, p10 B, p11 A, p14 A e C, p15 A; p03 A, p04 A e p12 A falharam 2x. A Sonnet reprovou 4 já liberadas sem 3ª imagem (p02 B contagem de balões, p06 A garrafa/taças no fundo, p10 C "2027" fantasma, p13 B letras do carretel). 28 clipes (US$ 2,80).
+
