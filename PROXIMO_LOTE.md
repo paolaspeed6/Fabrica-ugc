@@ -33,6 +33,7 @@ Atualizado: 2026-11-15 (Lista 15/11 A entregue). Histórico completo: memoria/hi
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
 ## Estado atual (19/11)
+- Lista 19/11 B (Natal): 45 vídeos na Conferir (15 produtos, 1911B-01..17), US$ 5,74; pulados p03 e p07. Fiscal final: 31 OK, 14 AVISO. Saldo WaveSpeed US$ 27,33. Detalhe: memoria/historico_lotes.md (topo).
 - Lista 19/11 A: 33 vídeos na Conferir (11 produtos, p515-p525), US$ 3,74; pulados p04, p06, p08, p09. Saldo WaveSpeed US$ 38,03. Detalhe: memoria/historico_lotes.md (topo).
 - Último lote: Lista 15/11 A (39 vídeos + 1 resgate na Conferir, US$ 4,63; p11 pulado). Antes: 14/11 A (45). Detalhe: memoria/historico_lotes.md (topo).
 - Lista 17/11 A: 36 vídeos na Conferir (12 produtos, p483-p494), US$ 4,66; pulados p01, p04, p12 (sem foto limpa). Resgate 1511A-02 ainda pendente.

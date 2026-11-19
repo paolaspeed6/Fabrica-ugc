@@ -3,6 +3,16 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 19/11 B (19/11; Natal; 15 decorações aprovadas com natal: true, maior comissão)
+- Pulados pelo Fichador: p03 22398946805 e p07 arco inflável 41036503215 (sem foto limpa). Tinder: `aprovado` + `pulado`. Entraram p16 Saia cone 58268056444 e p17 Carruagem 58220434846.
+- 15 produtos com A, B e C (45 vídeos, 1911B-01..17) na aba Conferir, pendentes. Tinder: os 15 em `pronto`. Modelo B novo "Gancho + ficha".
+- Gasto US$ 5,74 de 8: 59 imagens (45 + 14 refações, US$ 2,34) + 34 clipes (US$ 3,40). Saldo WaveSpeed US$ 27,33.
+- Refs recortadas por mim: p01 (01_recorte), p04 (07_recorte), p10 (01_recorte), p14 (05_recorte). p13 e p14: anúncio mistura 2 variantes/estilos.
+- K23: 2 cenas reprovadas por enfeite (p01 B bandeja sob o presépio; p06 A boneco de neve sumiu do globo). K24: largos p02, p08, p14; guia não conferida.
+- Fiscal final Sonnet: 31 OK, 14 AVISO, 0 descartar. Avisos: p02 A/B/C (ursos mais brancos, argola, ~11 ursos), p09 B/C (anjo na mesa com saia estreita),
+  p12 A/B/C (borda com lóbulos), p14 A/B/C (árvore mais escura e cheia; C com pisca-pisca), p15 A/B/C (bolas quase todas vermelhas, verde apagado).
+- Dica: para refazer cena já em `animar` reprovada pela Fiscal Sonnet, tirar `estado` da cena na ficha e rodar aplicar_fiscal.py de novo.
+
 ## Lista 19/11 A (19/11 ~07h50-09h20 UTC; trabalhos p515-p525)
 - Fila do Tinder: 15 primeiros não pulados por decidido_em (Flybb berço ... Tapete sisal 3x3). Nenhum do Kevin (excluidos_juntados).
 - Pulados pelo Fichador: p06 Furadeira Bosch 1200W 50367613911 e p09 Bosch GSB 16 RE 58210652875 (loja genérica, fotos de IA: possível réplica),
