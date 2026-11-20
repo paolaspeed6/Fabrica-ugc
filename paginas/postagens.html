@@ -237,10 +237,19 @@ function cardConferir(c){
   const b2=el("div","botoes"); b2.append(ok,ed,tx); info.append(b2); v.append(info); return v;
 }
 function botao(txt,ok,cls){ const b=el("button","b"+(ok?" ok":"")+(cls?" "+cls:""),(ok?"✓ ":"")+txt); return b; }
-function link(txt,href,ok,marcar){ const a=el("a","b"+(ok?" ok":""),(ok?"✓ ":"")+txt); a.href=href||"#"; a.target="_blank"; a.rel="noopener"; a.onclick=()=>{marcar();setTimeout(render,300);}; return a; }
+// a dona 20/11: tocar em "favoritar" jogava a página para o topo; agora só o botão muda (sem redesenhar a lista)
+// e a posição fica guardada: se o app recarregar a página na volta da Shopee/Drive, ela rola de volta para o mesmo vídeo
+const guardarPos=id=>{ try{ if(id) localStorage.setItem("pos_volta",JSON.stringify({id,t:Date.now()})); }catch(e){} };
+let voltou=false;
+function voltarPos(){ if(voltou) return; let s=null; try{ s=JSON.parse(localStorage.getItem("pos_volta")||"null"); }catch(e){}
+  if(!s||Date.now()-s.t>30*60e3){ voltou=true; return; }
+  const alvo=document.getElementById(s.id); if(!alvo) return;
+  voltou=true; alvo.scrollIntoView({block:"center"}); try{ localStorage.removeItem("pos_volta"); }catch(e){} }
+function link(txt,href,ok,marcar){ const a=el("a","b"+(ok?" ok":""),(ok?"✓ ":"")+txt); a.href=href||"#"; a.target="_blank"; a.rel="noopener";
+  a.onclick=()=>{ marcar(); a.classList.add("ok"); a.textContent="✓ "+txt; const art=a.closest("article"); guardarPos(art&&art.id); }; return a; }
 function linhaVideo(p,primeiro){
   const f=feito[p._id]||(feito[p._id]={});
-  const v=el("article","video"); const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy"; v.append(im);
+  const v=el("article","video"); v.id="v-"+p._id; const im=el("img"); if(p.poster) im.src=p.poster; im.alt=""; im.loading="lazy"; v.append(im);
   const info=el("div","info"); const t=el("div","tit",`Vídeo ${p.versao||""}`); t.append(el("small",null,`postar em: ${p.conta||"—"}`));
   const topo=el("div","topo-v"); topo.append(t);
   // favoritar só uma vez por produto, ao lado do título do primeiro vídeo (o A); os outros botões ficam iguais em todos
@@ -384,7 +393,7 @@ function render(){
       const tx=el("div"); tx.append(el("span",null,"Lote "+dataBR(p.dia)),el("b",null,p.produto)); s.append(im,tx); l.append(s); }
     l.append(linhaVideo(p,novo));
   });
-  fim(); tela.append(l); scrollTo(0,y);
+  fim(); tela.append(l); scrollTo(0,y); voltarPos();
 }
 $("#t-tts").onclick=()=>{aba="tts";render();};
 // ===== Aba TikTok Shop (a dona 02/11): ela manda até 3 clipes + link do produto; o Claude edita 3 criativos de 12 s e devolve aqui =====
