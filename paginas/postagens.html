@@ -149,6 +149,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
 <script>
 // a dona 27/10: Conferência e Postagens são páginas separadas no MESMO endereço (mesmo banco): o Ok na Conferência já cai em Postagens
 const MODO=/conferencia/.test(location.pathname)?"conf":"post";
+const otim={}; // mudanças feitas na tela antes do banco confirmar
 let db=null, posts=[], esgotados=[], conferir=[], aba=MODO==="conf"?"conf":"fazer", feito={}, escolheu=false;
 if(MODO==="conf"){ document.title="Conferência"; }
 const $=s=>document.querySelector(s);
@@ -253,7 +254,11 @@ function linhaVideo(p,primeiro){
   const leg=botao("Copiar legenda",f.legenda); const caixa=el("div","legenda",p.legenda||""); caixa.hidden=true;
   leg.onclick=async()=>{ try{ await navigator.clipboard.writeText(p.legenda||""); f.legenda=true; render(); }catch(e){ caixa.hidden=false; } };
   const ok=botao("Postei",false,"postei");
-  ok.onclick=async()=>{ ok.disabled=true; try{ await db.doc("posts/"+p._id).update({status:"postado",postado_em:new Date().toISOString()}); }catch(e){ ok.disabled=false; ok.textContent="Não salvou, toque de novo"; } };
+  // a dona 20/11: "Postei" demorava para sumir; agora o vídeo sai da lista na hora e o salvamento roda por trás (volta se falhar)
+  ok.onclick=async()=>{ ok.disabled=true; const t=new Date().toISOString(); otim[p._id]={status:"postado",postado_em:t};
+    posts=posts.map(x=>x._id===p._id?{...x,...otim[p._id]}:x); render();
+    try{ await db.doc("posts/"+p._id).update({status:"postado",postado_em:t}); }
+    catch(e){ delete otim[p._id]; posts=posts.map(x=>x._id===p._id?{...x,status:"pronto",postado_em:null}:x); render(); alert("Não salvou o Postei de “"+(p.produto||"")+"”. Toque de novo."); } };
   // a dona 15/11: "Pedir edição" (diz o que mudar; o vídeo sai da fila até o Claude refazer) e "Descartar" (vídeo muito bugado)
   const pe=botao("✏️ Pedir edição",false,"pedir"), dc=botao("🗑️ Descartar",false,"lixo");
   const caixaEd=el("div","pedido"); caixaEd.hidden=true;
@@ -571,7 +576,8 @@ $("#t-conf").onclick=()=>{aba="conf";escolheu=true;render();}; $("#t-fazer").onc
   db = await (window.claude?.use ? window.claude.use("db") : null);
   if(!db){ render(); return; }
   // 20/11: a coleção posts ficou grande demais para ouvir inteira e "Para postar" vinha vazio; agora ouve em partes, com reserva menor se falhar
-  const P=db.collection("posts"), partes={}, juntar=()=>{ const m=new Map(); Object.values(partes).flat().forEach(x=>m.set(x._id,x)); posts=[...m.values()]; render(); };
+  const P=db.collection("posts"), partes={}, juntar=()=>{ const m=new Map(); Object.values(partes).flat().forEach(x=>m.set(x._id,x));
+    posts=[...m.values()].map(x=>{ const o=otim[x._id]; if(!o) return x; if(x.status===o.status){ delete otim[x._id]; return x; } return {...x,...o}; }); render(); };
   const ouvir=(k,q,reserva)=>q.onSnapshot(s=>{ partes[k]=s.docs.map(d=>({...d.data(),_id:d.id})); juntar(); }, ()=>{ if(reserva) ouvir(k,reserva); else render(); });
   ouvir("ativos",P.where("status","not-in",["postado","descartado"]),P.where("status","==","pronto").limit(120));
   ouvir("postados",P.where("status","==","postado").limit(200),P.where("status","==","postado").limit(60));
