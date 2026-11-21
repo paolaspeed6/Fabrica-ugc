@@ -173,3 +173,4 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
 - 21/11 (a dona): "diminua um pouco o tamanho das letras, está quase ficando pra fora da tela". Feito no build_lux.py (escala 0,88 + margem 80) para valer em todos os layouts de uma vez.
 - 21/11 (2ª vez): "menor ainda, e quero que diminua dos três modelos" -> escala 0,75; o modelo A não encolhia porque os textos dele usam o tamanho padrão (sem size): corrigido.
 - 21/11: no modelo B a 2ª linha grande ("no mesmo kit") estava sem graça; agora é frase atrativa do benefício (BRIEF_FICHADOR: grande2), ex. "4 banquetas / pra receber todo mundo".
+- 21/11: a assinatura "Aguiiar Lar" saía cortada nas laterais; agora fica 120 px da borda esquerda e 200 px da direita (build_lux.py marca_on).

@@ -532,8 +532,10 @@ def marca_on(base, t):
         _marca_cache['p'] = soft_shadow(pq, 8, 90, 2)
         _marca_cache['plano'] = [] if spec.get('marca_fixa') else _marca_plano()
     m = _marca_cache['p']
-    pos = {'topo': ((W - m.width) // 2, spec.get('marca_y', 30)), 'esq_alto': (24, 760), 'dir_alto': (W - m.width - 24, 820),
-           'esq_meio': (24, 1010), 'dir_meio': (W - m.width - 24, 1080), 'esq_baixo': (24, 1150), 'dir_baixo': (W - m.width - 24, 1120)}
+    # a dona, 21/11: nas laterais a assinatura saía cortada; mais para dentro (esq. 120 px; dir. 200 px, longe dos botões da Shopee)
+    E, D = 120, W - m.width - 200
+    pos = {'topo': ((W - m.width) // 2, spec.get('marca_y', 30)), 'esq_alto': (E, 760), 'dir_alto': (D, 820),
+           'esq_meio': (E, 1010), 'dir_meio': (D, 1080), 'esq_baixo': (E, 1150), 'dir_baixo': (D, 1120)}
     trecho = next((p for p in _marca_cache['plano'] if p[0] <= t < p[1]), None)
     if not trecho:
         base.alpha_composite(m, pos['topo']); return
