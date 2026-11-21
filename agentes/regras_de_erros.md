@@ -364,3 +364,7 @@ e a fiscal só comparava com a foto 01 de forma branda (antes da K30). Cada víd
 - `gerar.py`: se outra referência discorda da foto do anúncio, segue a foto do anúncio.
 - `conferir_produto.py` (entregar.sh, grátis): 3 quadros de cada vídeo final x foto 01; produto diferente vira AVISO no cartão da Conferir.
 - Fiscal final Sonnet (PROMPT_FISCAL_FINAL.md) nas folhas_finais: a última palavra. O Gemini sozinho deixou passar exaustor quadrado, tapete trocado, painel com ripado inventado (15/11).
+
+## Regra da dona 21/11: letras menores (quase saindo da tela)
+- `video-teste/luxo/build_lux.py`: `ESCALA_TEXTO = 0.88` (todo título, corpo, sobretítulo, botão, faixa e item 12% menor) e `MARGEM = 80` (era 56).
+- Não aumentar `size` nos specs para compensar. Vale para todo vídeo renderizado daqui para frente; os já prontos não mudam.

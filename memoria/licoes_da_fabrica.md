@@ -169,3 +169,5 @@ Ela abria a "Conferência" fixada antiga (outro banco, sem os lotes novos) e ach
 - 15/11 (a dona: "estou queimando dinheiro à toa"): vídeos postados com produto diferente do anúncio. Causa: fotos de outra variante em fotos_ref + fiscal branda. Regra K31: filtro de variante antes de gerar (refs_variante.py) e trava final quadro x foto 01 (conferir_produto.py) com aviso na Conferir.
 
 - 15/11: o Tinder ficou zerado. A coleção candidatos passou de 2.000 docs com foto base64 (~40 KB cada) e o banco recusou carregar/ordenar tudo ("too much data to sort"). A página agora carrega por filtros simples (dia dos últimos 10 dias, status), sem orderBy; o semear_diaria.py reduz a foto (420 px). Não usar orderBy nessa coleção.
+
+- 21/11 (a dona): "diminua um pouco o tamanho das letras, está quase ficando pra fora da tela". Feito no build_lux.py (escala 0,88 + margem 80) para valer em todos os layouts de uma vez.

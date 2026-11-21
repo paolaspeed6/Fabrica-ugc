@@ -118,13 +118,17 @@ def text_block(lines, size, align='left', spacing=1.06, color=INK, base='serif',
     return (soft_shadow(img) if shadow else img), pad
 
 
-MARGEM = 56  # a dona, 26/10 (lote 25/10 A): letras grandes saíram para fora da tela; nada passa desta margem
+MARGEM = 80  # a dona, 26/10 (lote 25/10 A): letras grandes saíram para fora da tela; nada passa desta margem (21/11: 56 -> 80)
+ESCALA_TEXTO = 0.88  # a dona, 21/11: letras quase saindo da tela; todo texto 12% menor daqui para frente
 
 
 def make(el):
     """desenha o elemento; texto mais largo que a tela encolhe sozinho até caber (título, corpo, sobretítulo, botão, faixa, item)."""
     k = el['kind']
     if k in ('title', 'body', 'eyebrow', 'button', 'band', 'check') and el.get('size'):
+        if not el.get('_esc'):
+            el['size'] = max(18, int(el['size'] * ESCALA_TEXTO)); el['_esc'] = True
+            if k == 'button' and el.get('h'): el['h'] = int(el['h'] * ESCALA_TEXTO)
         x = el.get('x', 84)
         maxw = W - 2 * MARGEM if x == 'c' else W - MARGEM - max(int(x), MARGEM)
         if el.get('rotate'): maxw -= 40
