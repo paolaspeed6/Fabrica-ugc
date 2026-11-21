@@ -366,5 +366,5 @@ e a fiscal só comparava com a foto 01 de forma branda (antes da K30). Cada víd
 - Fiscal final Sonnet (PROMPT_FISCAL_FINAL.md) nas folhas_finais: a última palavra. O Gemini sozinho deixou passar exaustor quadrado, tapete trocado, painel com ripado inventado (15/11).
 
 ## Regra da dona 21/11: letras menores (quase saindo da tela)
-- `video-teste/luxo/build_lux.py`: `ESCALA_TEXTO = 0.88` (todo título, corpo, sobretítulo, botão, faixa e item 12% menor) e `MARGEM = 80` (era 56).
+- `video-teste/luxo/build_lux.py`: `ESCALA_TEXTO = 0.75` (a dona pediu "menor ainda" nos 3 modelos: título, corpo, sobretítulo, botão, faixa, item e o relógio do A, inclusive textos sem `size` = tamanho padrão) e `MARGEM = 80` (era 56).
 - Não aumentar `size` nos specs para compensar. Vale para todo vídeo renderizado daqui para frente; os já prontos não mudam.

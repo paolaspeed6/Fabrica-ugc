@@ -119,12 +119,14 @@ def text_block(lines, size, align='left', spacing=1.06, color=INK, base='serif',
 
 
 MARGEM = 80  # a dona, 26/10 (lote 25/10 A): letras grandes saíram para fora da tela; nada passa desta margem (21/11: 56 -> 80)
-ESCALA_TEXTO = 0.88  # a dona, 21/11: letras quase saindo da tela; todo texto 12% menor daqui para frente
+ESCALA_TEXTO = 0.75  # a dona, 21/11: letras quase saindo da tela; 0,88 e depois "menor ainda" -> 25% menor, nos 3 modelos (inclui o relógio do A)
 
 
 def make(el):
     """desenha o elemento; texto mais largo que a tela encolhe sozinho até caber (título, corpo, sobretítulo, botão, faixa, item)."""
     k = el['kind']
+    PADRAO = {'title': 118, 'body': 88, 'eyebrow': 34, 'button': 46, 'band': 76, 'check': 52}  # tamanhos padrão de _make
+    if k in PADRAO and not el.get('size'): el['size'] = PADRAO[k]  # o modelo A usa o tamanho padrão: também encolhe
     if k in ('title', 'body', 'eyebrow', 'button', 'band', 'check') and el.get('size'):
         if not el.get('_esc'):
             el['size'] = max(18, int(el['size'] * ESCALA_TEXTO)); el['_esc'] = True
@@ -455,7 +457,7 @@ def compose(base, t):
                     txt = f'{m // 60:02d}:{(m % 60) // 5 * 5:02d}'
                 elif t >= ta: txt = sa
             if txt not in clock_cache:
-                clock_cache[txt] = clock_img(txt, el.get('size', 190))
+                clock_cache[txt] = clock_img(txt, int(el.get('size', 190) * ESCALA_TEXTO))
             img = clock_cache[txt]
             pad = 40
         else:
