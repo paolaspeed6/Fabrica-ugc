@@ -33,3 +33,11 @@ Veja TROCA_EXCLUIDOS.md (pasta do Drive compartilhada; substitui o excluidos_kev
 2. Se ≥ 70% dos descartes de uma categoria se repetem (ex.: 5 de 7 berços), ponha a palavra sem acento em `POUCO_ESCOLHIDOS` (-1 ponto, continua na busca).
 3. Se um padrão numérico aparece nos descartes (ex.: comissão baixa), ajuste o peso no varrer.py, com um comentário dizendo a data e o motivo.
 4. Nunca use decisões de outra pessoa como se fossem dela.
+
+## Espaço do Tinder (a dona, 21/11: "pode apagar produtos que já recusei")
+O banco do Tinder tem limite de 100 MB (cada produto guarda a foto). Em TODA rodada, antes do batch dos novos:
+1. ArtifactData query na coleção `candidatos` com `where status == "descartado"`, `limit 1000`, `out_dir` no scratchpad (vem ~75 por página).
+2. Guarde nome/link/loja de cada um em `listas/tinder_descartados_apagados.json` (backup leve, sem foto).
+3. ArtifactData batch `delete` (até 50 por batch, `if_version` = versão listada). Apague 2 páginas por rodada.
+Os ids continuam em `vistos.json`, então não voltam para o Tinder. Nunca apague status novo/aprovado/producao/pronto.
+Se o batch dos novos der `quota_exceeded`, apague mais uma página de descartados e tente de novo.
