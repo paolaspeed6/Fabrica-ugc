@@ -1,0 +1,15 @@
+{
+ "_comentario": "Régua do filtro de afiliados (Kevin 10/11). Mude os números aqui; vale para conferências a partir de valida_desde.",
+ "valida_desde": "2026-11-10 12:30",
+ "max_videos_aprovado": 6,
+ "max_videos_prioridade": 1,
+ "views_video_vencedor": 10000,
+ "comissao_min": 20.0,
+ "vendas_min": 10,
+ "comissao_min_taxa_alta": 15.0,
+ "taxa_alta_pct": 10,
+ "_comissao": "mínimo R$ comissao_min; com taxa > taxa_alta_pct % do preço E venda na semana (v7 > 0), aceita a partir de comissao_min_taxa_alta",
+ "meta_aprovados": 0,
+ "exigir_venda_semana": false,
+ "_perfis": "perfis prontos em perfis_filtro.json (sobrescrevem estes campos); meta_aprovados 0 = sem limite"
+}

@@ -32,6 +32,7 @@ Não repita nenhum erro listado.
 
 ## Dinheiro (regra dura)
 - Nada pago sem o OK da dona no chat, com teto em dólar: quantos produtos, custo por produto e total.
+  Vale como OK (a dona, 23/11): pedido do botão "Iniciar produção" da Central do PC (`Central Esposa/ordem_producao.json`, ver `pc-esposa/LEIA_PAOLA.md`): até 15 produtos, teto `teto_usd` do pedido.
 - Preços medidos (WaveSpeed, out/2026): Nano Banana 2.1 Edit US$ 0,0396 por imagem; Seedance 1.5 Pro Fast i2v 5 s 720p sem áudio
   US$ 0,10 por clipe; Veo 3.1 Lite 4 s US$ 0,20. Por produto: 3 imagens + 3 clipes = ~US$ 0,42 (+ refações). Teto: R$ 3 por produto.
 - O `video-teste/lote/modelo/gerar.py` para sozinho no teto (`TETO_USD`, gasto em `gasto.json`). Refazer só UMA vez; reprovou de novo = outra cena.
@@ -94,7 +95,7 @@ pausas.json, usadas.json, desperdicios.md, defeitos.csv, MINHAS_PAGINAS.md, memo
 até o Drive estar ligado). Nada de intermediários (*.video.mp4, prévias) no Git.
 
 ## Nunca
-- Burlar captcha, automatizar login da Shopee ou usar robô no app (a conta de afiliada é renda da família).
+- Burlar captcha ou automatizar login da Shopee. Robôs no app só os do pacote do Kevin em `pc-esposa/` (a dona liberou 23/11): postagem SÓ na conta nova, filtro na conta já conectada, assistir só assiste; travas do Kevin intactas (8-12 min, 08h-22h, 1 versão por produto por dia).
 - Bebida alcoólica, taças ou garrafas em cena; promessa de entrega, % de desconto, nota exata ou número de avaliações.
 - Mão ou pessoa na capa; produto se mexendo; objeto sem nexo; detalhe, letra ou qualidade inventada ("linhas retas" não é qualidade).
 - Subir chave, token, link de afiliado ou Sub ID para repositório público (este é privado).

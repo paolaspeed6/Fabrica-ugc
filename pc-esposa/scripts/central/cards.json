@@ -1,0 +1,27 @@
+[
+ {
+  "id": "tablet",
+  "title": "Tablet",
+  "tipo": "tablet",
+  "dispositivo": "tablet",
+  "lock_fila": "C:\\horst\\tablet\\rodar_fila.lock",
+  "lock_robo": "C:\\horst\\tablet\\afiliados\\conferir.lock",
+  "captcha_log": "C:\\horst\\tablet\\captcha_log.csv"
+ },
+ {
+  "id": "shopee",
+  "title": "Postagens Shopee",
+  "tipo": "shopee",
+  "pasta": "C:\\horst\\tablet",
+  "parar": "C:\\horst\\tablet\\PARAR"
+ },
+ {
+  "id": "afiliados",
+  "title": "Afiliados (filtro automático)",
+  "tipo": "generico",
+  "detail": "Robô de checagem de afiliados",
+  "status": "C:\\horst\\tablet\\afiliados\\status.json",
+  "parar": "C:\\horst\\tablet\\afiliados\\PARAR",
+  "iniciar": "C:\\horst\\tablet\\afiliados\\ligar_afiliados.cmd"
+ }
+]

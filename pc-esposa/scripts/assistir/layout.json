@@ -1,0 +1,20 @@
+{
+  "watch_min": 15,
+  "watch_max": 32,
+  "profile_name": "<NOME EXIBIDO DO PERFIL DELA>",
+  "search_query": "<usuario_do_perfil_dela_sem_arroba>",
+  "swipe_ms": 280,
+  "swipe_x": 200,
+  "swipe_y_from": 720,
+  "swipe_y_to": 260,
+  "caption": {"x": 8, "y": 1268, "w": 560, "h": 60},
+  "live_tab": {"x": 360, "y": 1456, "text": "Live e Vídeo"},
+  "profile_icon": {"x": 52, "y": 132, "desc": "click me page icon"},
+  "search_icon": {"x": 120, "y": 132, "desc": "click search icon"},
+  "cells": [[120, 420], [360, 420], [600, 420], [120, 730], [360, 730], [600, 730]],
+  "oldest_cells": [[600, 1200], [360, 1200], [120, 1200], [600, 900], [360, 900], [120, 900]],
+  "phones": {
+    "<SERIAL_ADB_DO_CELULAR_SECUNDARIO>": {"label": "celular-secundario", "mode": "buscar_nome", "id_central": "celular2"}
+  },
+  "_comentario": "Coordenadas vieram de um celular 720x1600 do Kevin. O Claude dela deve recalibrar cells, oldest_cells, profile_icon, search_icon e live_tab com prints do aparelho dela. mode: perfil_conectado (a conta tem perfil proprio, abre pelo icone) ou buscar_nome (digita search_query). grade_baixa: true se o cabecalho do perfil for alto."
+}

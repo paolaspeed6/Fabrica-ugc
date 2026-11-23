@@ -1,0 +1,12 @@
+{
+ "celular1": {
+  "usb": "<SERIAL_CELULAR1>",
+  "wifi": "<IP_DO_CELULAR1>:5555",
+  "nome": "Celular 1 (conta principal: postagens)"
+ },
+ "celular2": {
+  "usb": "<SERIAL_CELULAR2>",
+  "wifi": "<IP_DO_CELULAR2>:5555",
+  "nome": "Celular 2 (conta secundária: filtro e curtidas)"
+ }
+}

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Central Aguiiar Lar</title>
+<style>
+:root{--bg:#0a0c11;--card:#12151d;--soft:#1a1e28;--line:#232836;--fg:#e9ecf3;--muted:#8b94a7;--amb:#f5b83d;--amb-fg:#1b1405;
+  --ok:#34d399;--ok2:#1f6f52;--red:#ff5d5d;--blue:#5aa9ff;color-scheme:dark;--body:system-ui,"Segoe UI",sans-serif;--display:"Segoe UI",system-ui,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.4 var(--body);font-variant-numeric:tabular-nums}
+.wrap{max-width:1180px;margin:0 auto;padding:12px 16px 40px;display:flex;flex-direction:column;gap:10px}
+.barra-topo{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:4px 2px}
+.marca{display:flex;align-items:center;gap:8px;font:800 .95rem ui-monospace,Menlo,monospace;letter-spacing:.12em}
+.marca i{font-style:normal;width:26px;height:26px;border-radius:7px;background:var(--amb);color:var(--amb-fg);display:grid;place-items:center;font:900 .9rem var(--display);letter-spacing:0}
+.marca span{color:var(--muted)}
+.vivo{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:99px;padding:4px 10px;font-size:.76rem;font-weight:800;color:var(--ok)}
+.vivo b{width:7px;height:7px;border-radius:50%;background:currentColor;animation:pulso 2s infinite}
+.vivo.off{color:var(--muted)}.vivo.off b{animation:none}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(52,211,153,.55)}70%{box-shadow:0 0 0 8px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+.relogio{color:var(--muted);font:700 .8rem ui-monospace,Menlo,monospace;margin-left:auto}
+nav{display:flex;gap:4px;padding:4px;background:var(--soft);border-radius:14px;overflow-x:auto}
+nav button{flex:1 0 auto;border:0;background:transparent;color:var(--muted);border-radius:10px;padding:9px 12px;font:800 .88rem var(--body);cursor:pointer;white-space:nowrap}
+nav button[aria-selected=true]{background:var(--card);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.3)}
+nav em{font-style:normal;background:var(--amb);color:var(--amb-fg);border-radius:99px;padding:0 7px;margin-left:6px;font-size:.72rem}
+.alarme{border:1px solid color-mix(in srgb,var(--red) 60%,transparent);background:linear-gradient(90deg,color-mix(in srgb,var(--red) 16%,var(--card)),var(--card) 70%);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:6px}
+.alarme.calmo{border-color:color-mix(in srgb,var(--ok) 45%,transparent);background:linear-gradient(90deg,color-mix(in srgb,var(--ok) 12%,var(--card)),var(--card) 70%)}
+.alarme h3{margin:0;font:800 .74rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
+.alarme.calmo h3{color:var(--ok)}
+.al{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;font-size:.9rem}
+.al small{display:block;color:var(--muted);font-size:.74rem;font-weight:700}
+.bt{border:1px solid var(--line);background:var(--soft);color:var(--fg);border-radius:9px;padding:8px 12px;font:800 .8rem var(--body);cursor:pointer;white-space:nowrap}
+.bt:disabled{opacity:.45;cursor:default}
+.bt.am{background:var(--amb);color:var(--amb-fg);border-color:var(--amb)}
+.bt.ok{background:var(--ok);color:#06140e;border-color:var(--ok)}
+.bt.ve{border-color:color-mix(in srgb,var(--red) 60%,transparent);color:var(--red)}
+.k4{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:860px){.k4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.pn{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:9px;min-width:0}
+.pn h3{margin:0;display:flex;align-items:center;gap:8px;font:800 .78rem var(--body)}
+.tag{margin-left:auto;font-size:.68rem;font-weight:800;border:1px solid var(--line);border-radius:7px;padding:2px 7px;color:var(--muted)}
+.tag.ok{color:var(--ok);border-color:color-mix(in srgb,var(--ok) 40%,transparent)}
+.tag.am{color:var(--amb);border-color:color-mix(in srgb,var(--amb) 40%,transparent)}
+.tag.vm{color:var(--red);border-color:color-mix(in srgb,var(--red) 40%,transparent)}
+.big{font:800 clamp(1.7rem,7vw,2.3rem)/1 var(--display);letter-spacing:-.02em}
+.big small{font:700 .8rem var(--body);color:var(--muted);margin-left:6px;letter-spacing:0}
+.mut{color:var(--muted);font-size:.8rem;font-weight:700;line-height:1.35}
+.spark{display:flex;align-items:flex-end;gap:2px;height:34px}
+.spark i{flex:1;background:var(--ok);border-radius:2px 2px 0 0;min-height:2px}
+.spark i.z{background:var(--line)}.spark i.hj{background:var(--amb)}
+.g3{display:grid;grid-template-columns:1fr;gap:10px}
+@media (min-width:860px){.g3{grid-template-columns:repeat(3,1fr)}}
+.tl div{display:grid;grid-template-columns:12px 92px 1fr;gap:8px;align-items:center;padding:7px 0;border-bottom:1px dashed var(--line);font-size:.86rem}
+.tl div:last-child{border-bottom:0}
+.tl b{width:9px;height:9px;border-radius:50%;background:var(--line)}.tl b.ok{background:var(--ok)}.tl b.am{background:var(--amb)}.tl b.vm{background:var(--red)}
+.tl span{color:var(--muted);font-weight:700}
+.tbl{width:100%;border-collapse:collapse;font-size:.84rem}
+.tbl th{text-align:left;color:var(--muted);font:800 .66rem var(--body);text-transform:uppercase;letter-spacing:.06em;padding:0 6px 6px}
+.tbl td{padding:7px 6px;font-weight:700;border-top:1px solid var(--line);vertical-align:middle}
+.vazio{padding:28px;text-align:center;color:var(--muted);font-weight:700}
+/* Tinder */
+.swipe{max-width:420px;margin:12px auto 0;width:100%}
+.cartao{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:10px;transition:transform .25s,opacity .25s}
+.cartao.sai-d{transform:translateX(120%) rotate(12deg);opacity:0}.cartao.sai-e{transform:translateX(-120%) rotate(-12deg);opacity:0}
+.cartao h2{margin:0;font:800 1.1rem var(--display);line-height:1.3}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.nums div{background:var(--soft);border-radius:10px;padding:10px;text-align:center}
+.nums b{display:block;font:900 1.3rem var(--display)}.nums span{font-size:.7rem;color:var(--muted);font-weight:800}
+.acoes{display:flex;justify-content:center;gap:22px;margin-top:6px}
+.redondo{width:68px;height:68px;border-radius:50%;border:2px solid var(--line);background:var(--card);font-size:28px;cursor:pointer}
+.redondo.s{border-color:var(--red);color:var(--red)}.redondo.n{border-color:var(--ok);color:var(--ok)}
+/* Conferir */
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px}
+.vers{display:flex;gap:8px;overflow-x:auto}
+.v{flex:0 0 auto;width:150px}
+.v video,.v .sem{width:150px;height:266px;background:#000;border-radius:10px;object-fit:cover;display:grid;place-items:center;color:var(--muted);font-size:.75rem;text-align:center}
+.v label{display:flex;gap:6px;align-items:center;font-size:.8rem;font-weight:800;margin-top:4px}
+.leg{font-size:.74rem;color:var(--muted);max-height:48px;overflow:hidden}
+.aviso{background:color-mix(in srgb,var(--amb) 14%,var(--card));border-radius:8px;padding:6px 8px;font-size:.8rem}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.robo{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.luz{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--line);margin-right:6px}.luz.on{background:var(--ok);box-shadow:0 0 8px var(--ok)}
+#msg{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:10px 16px;border-radius:10px;display:none;max-width:90vw;font-weight:700}
+@media (max-width:560px){.big small{display:block;margin:4px 0 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="barra-topo"><div class="marca"><i>A</i>AGUIIAR<span>/CENTRAL</span></div><span class="vivo off" id="vivo"><b></b><span>Conectando</span></span><span class="relogio" id="rel"></span></div>
+  <nav id="abas" role="tablist"></nav>
+  <main id="m"><div class="vazio">Carregando…</div></main>
+</div>
+<div id="msg" role="status"></div>
+<script>
+const ABAS=[["central","📊 Central"],["tinder","🏭 Produção"],["conferir","✔ Conferir"],["fila","Fila"],["postados","Postados"],["robos","🤖 Robôs"]];
+const TETO=0.60;
+let ABA="central",E=null,TI=0,ocupado=false;
+try{ABA=localStorage.getItem("aba_esposa")||ABA}catch(e){}
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const usd=v=>"US$ "+Number(v||0).toFixed(2).replace(".",",");
+const hm=t=>{try{return new Date(t).toLocaleString("pt-BR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})}catch(e){return ""}};
+function aviso(t){const m=document.getElementById("msg");m.textContent=t;m.style.display="block";clearTimeout(m._t);m._t=setTimeout(()=>m.style.display="none",4500)}
+async function post(url,corpo){try{const r=await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(corpo)});return await r.json()}catch(e){return{ok:false,msg:"A Central não respondeu."}}}
+async function carregar(){try{E=await (await fetch("/api/esposa",{cache:"no-store"})).json()}catch(e){E=null}
+  const v=document.getElementById("vivo");v.className="vivo"+(E?"":" off");v.lastChild.textContent=E?"Ao vivo":"Sem conexão";desenhar()}
+const fila_prod=()=>(E?.producao?.aprovados||[]).filter(x=>x.tinder==="gostei");
+const tinder_novos=()=>[];
+function abas(){const n={tinder:fila_prod().length,conferir:(E?.conferir||[]).length};
+  document.getElementById("abas").innerHTML=ABAS.map(([k,t])=>`<button role="tab" aria-selected="${k===ABA}" data-aba="${k}">${t}${n[k]?`<em>${n[k]}</em>`:""}</button>`).join("")}
+function desenhar(){if(ocupado)return;abas();const m=document.getElementById("m");
+  if(!E){m.innerHTML='<div class="vazio">A Central não respondeu. Feche e abra de novo pelo atalho da área de trabalho.</div>';return}
+  if(!E.drive&&ABA!=="robos"){m.innerHTML='<div class="vazio">Não achei a pasta "Central Esposa" no Google Drive deste PC. Abra o Google Drive para desktop e espere sincronizar.</div>';return}
+  if(ABA==="conferir"&&m.querySelector("video:not([paused])")&&[...m.querySelectorAll("video")].some(v=>!v.paused))return;
+  m.innerHTML={central,tinder,conferir,fila,postados,robos}[ABA]()}
+function pn(t,tag,tc,corpo){return `<section class="pn"><h3>${t}${tag?`<span class="tag ${tc||""}">${tag}</span>`:""}</h3>${corpo}</section>`}
+function central(){const R=E.robos||{},P=E.producao||{},pd=E.postados_dia||[],hoje=pd.length?pd[pd.length-1][1]:0,sem=pd.slice(-7).reduce((s,x)=>s+x[1],0);
+  const al=[];
+  if(E.erro_fila)al.push(["A fila de postagem parou com erro","Robôs › veja o painel completo","robos"]);
+  if((E.conferir||[]).length)al.push([E.conferir.length+" produto(s) esperando seu Ok","Conferir · a fábrica entregou","conferir"]);
+  if(tinder_novos().length)al.push([tinder_novos().length+" produto(s) aprovados pelo filtro para escolher","Tinder · ❤ manda para a produção","tinder"]);
+  if(fila_prod().length)al.push(["Fila de produção: "+fila_prod().length+" produto(s) aprovados pelo filtro","Produção › Iniciar produção (sua ordem)","tinder"]);
+  const mx=Math.max(1,...pd.map(x=>x[1]));
+  const sp=`<div class="spark">${pd.map(([d,n],i)=>`<i class="${i===pd.length-1?"hj":(n?"":"z")}" style="height:${Math.max(6,n/mx*100)}%" title="${d.slice(8)}/${d.slice(5,7)}: ${n}"></i>`).join("")}</div>`;
+  const ped=P.pedidos||[],ab=ped.filter(p=>!/conclu|entregue/i.test(p.estado||""));
+  const bola=(on,a)=>on?"ok":a?"am":"";
+  return `<section class="alarme${al.length?"":" calmo"}"><h3>${al.length?"⚠ Precisa de você":"✓ Tudo em dia"}</h3>${al.map(([t,s,a])=>`<div class="al"><div>${esc(t)}<small>${esc(s)}</small></div><button class="bt am" data-aba="${a}">Abrir</button></div>`).join("")||'<div class="mut">Nada travado. Os robôs seguem sozinhos.</div>'}</section>
+  <div class="k4">${pn("Postados hoje","14 d","ok",`<div class="big">${hoje}<small>semana ${sem} · total ${E.postados_total||0}</small></div>${sp}`)}
+  ${pn("Fila de postagem",R.shopee?"postando":"parada",R.shopee?"ok":"",`<div class="big">${(E.fila||[]).length}<small>vídeos esperando</small></div><div class="mut">1 por produto por dia · 8-12 min · 08h-22h</div>`)}
+  ${pn("Para conferir",(E.conferir||[]).length?"seu Ok":"em dia",(E.conferir||[]).length?"am":"ok",`<div class="big">${(E.conferir||[]).length}<small>produtos</small></div><div class="mut">${(E.na_fila_conferidos||[]).length} aceitos ainda postando</div>`)}
+  ${pn("Produção",ab.length?ab.length+" pedido(s) abertos":"livre",ab.length?"am":"ok",`<div class="big">${fila_prod().length}<small>na fila de produção</small></div><div class="mut">aprovados pelo filtro, esperando sua ordem</div>`)}</div>
+  <div class="g3">${pn("Linha do dia","agora","",`<div class="tl">
+    <div><b class="${bola(R.afiliados,tinder_novos().length)}"></b><strong>Filtro</strong><span>${R.afiliados?"filtrando agora":"parado"}</span></div>
+    <div><b class="${fila_prod().length?"am":"ok"}"></b><strong>Produção</strong><span>${fila_prod().length} na fila, esperando sua ordem</span></div>
+    <div><b class="${ab.length?"am":"ok"}"></b><strong>Fábrica</strong><span>${ab.length?esc(ab[0].estado):"sem pedido aberto"}</span></div>
+    <div><b class="${(E.conferir||[]).length?"vm":"ok"}"></b><strong>Conferir</strong><span>${(E.conferir||[]).length?(E.conferir.length+" esperando seu Ok"):"em dia"}</span></div>
+    <div><b class="${bola(R.shopee,(E.fila||[]).length)}"></b><strong>Postagem</strong><span>${R.shopee?"postando":"parada"} · ${(E.fila||[]).length} na fila</span></div>
+    <div><b class="${R.assistir?"ok":""}"></b><strong>Assistir</strong><span>${R.assistir?"assistindo seus vídeos":"parado"}</span></div></div>`)}
+  ${pn("Últimos postados",E.postados_total?E.postados_total+" no total":"","ok",(E.postados||[]).slice(0,6).map(p=>`<div class="al"><div>${esc(p.produto||p.doc)}<small>${hm(p.em)} · ${esc(p.doc.slice(-1))}</small></div></div>`).join("")||'<div class="mut">Nenhum post ainda.</div>')}
+  ${pn("Pedidos à fábrica",ped.length?ped.length+"":"","",ped.slice(0,6).map(p=>`<div class="al"><div>${p.n} produto(s) · teto ${usd(p.teto_usd)}<small>${hm(p.em)} · ${esc(p.estado)}${p.gasto_usd!=null?" · gasto "+usd(p.gasto_usd):""}</small></div></div>`).join("")||'<div class="mut">Nenhum pedido ainda.</div>')}</div>`}
+function tinder(){const F=fila_prod().slice(0,60);
+  if(!F.length)return '<div class="vazio">Nenhum produto aprovado pelo filtro ainda. Quando o robô de filtro aprovar, entra aqui sozinho.</div>';
+  const n=Math.min(15,F.length);
+  return pn("Fila de produção",F.length+" aprovados pelo filtro","am",`<div class="mut">O filtro do celular já aprovou pelos seus requisitos. Os ${n} primeiros vão no próximo pedido (máximo 15). ✕ tira da fila.</div>
+   <div class="row"><button class="bt am" data-produzir>Iniciar produção · ${n} produto(s) · teto ${usd(n*TETO)}</button></div>
+   <table class="tbl"><tr><th>#</th><th>Produto</th><th>Vídeos</th><th>Vendas</th><th>Comissão</th><th></th></tr>${F.map((x,i)=>`<tr${i<15?"":' style="opacity:.55"'}><td>${i+1}</td><td>${x.link?`<a href="${esc(x.link)}" target="_blank" rel="noopener" style="color:inherit">${esc(x.nome)}</a>`:esc(x.nome)}<div class="mut">${esc(x.motivo)}</div></td><td>${esc(x.videos)}</td><td>${esc(x.vendas)}</td><td>R$ ${esc(x.comissao_rs)}</td><td><button class="bt ve" data-t="nao" data-id="${esc(x.itemId)}" aria-label="Tirar da fila">✕</button></td></tr>`).join("")}</table>`)}
+function conferir(){const L=E.conferir||[];if(!L.length)return '<div class="vazio">Nada para conferir. Os vídeos novos da fábrica aparecem aqui sozinhos.</div>';
+  return '<div class="cgrid">'+L.map(c=>`<section class="pn" data-id="${esc(c.id)}"><h3>${esc(c.produto)}<span class="tag">${esc(c.lote)}</span></h3>
+   ${c.aviso?`<div class="aviso">⚠ ${esc(c.aviso)}</div>`:""}
+   <div class="vers">${c.posts.map(p=>`<div class="v">${p.tem_video?`<video src="/video/${encodeURIComponent(p.doc)}" controls preload="metadata" playsinline></video>`:'<div class="sem">vídeo ainda<br>sincronizando no Drive</div>'}
+     <label><input type="checkbox" data-v="${esc(p.doc)}" checked> ${esc(p.versao)}</label><div class="leg">${esc(p.legenda)}</div></div>`).join("")}</div>
+   <div class="row"><button class="bt ok" data-ok>Ok, vai para a fila</button><button class="bt ve" data-no>Recusar</button></div></section>`).join("")+'</div>'}
+function fila(){const L=E.fila||[];if(!L.length)return '<div class="vazio">Fila de postagem vazia.</div>';
+  return pn("Fila de postagem",L.length+" vídeos","",`<div class="mut">O robô posta nesta ordem. Postou, sai sozinho daqui e vai para Postados.</div><table class="tbl"><tr><th>#</th><th>Vídeo</th><th>Produto</th></tr>${L.map((i,n)=>`<tr><td>${n+1}</td><td>${esc(i.doc)}</td><td>${esc(i.produto)}</td></tr>`).join("")}</table>`)}
+function postados(){const L=E.postados||[];if(!L.length)return '<div class="vazio">Nada postado ainda.</div>';
+  return pn("Postados",E.postados_total+" no total","ok",`<table class="tbl"><tr><th>Quando</th><th>Vídeo</th><th>Produto</th></tr>${L.map(p=>`<tr><td>${hm(p.em)}</td><td>${esc(p.doc)}</td><td>${esc(p.produto)}</td></tr>`).join("")}</table>`)}
+function robos(){const R=E.robos||{},C=E.captcha||{};
+  const L=[["shopee","Postagem","posta a fila na conta nova"],["afiliados","Filtro de produtos","só olha: vídeos, vendas e comissão"],["assistir","Assistir meus vídeos","só assiste, sem curtir, comentar ou postar"]];
+  return `<div class="mut">Um robô por vez no celular. Captcha ou login: o robô para e apita, e você resolve com a mão.${C.captchas_hoje?` Captchas hoje: ${C.captchas_hoje}.`:""}</div>
+  <div class="g3">${L.map(([k,t,d])=>`<section class="pn robo"><div><h3><span class="luz ${R[k]?"on":""}"></span>${t}</h3><div class="mut">${d}</div></div><div class="row"><button class="bt ok" data-robo="${k}" data-a="ligar" ${R[k]?"disabled":""}>Ligar</button><button class="bt" data-robo="${k}" data-a="desligar" ${R[k]?"":"disabled"}>Parar</button></div></section>`).join("")}</div>
+  <div class="row"><a class="bt" href="/kevin" style="text-decoration:none">Painel completo (avançado)</a></div>`}
+document.addEventListener("click",async ev=>{const b=ev.target.closest("button,input");if(!b)return;
+  if(b.dataset.aba){ABA=b.dataset.aba;try{localStorage.setItem("aba_esposa",ABA)}catch(e){};ocupado=false;return desenhar()}
+  const card=b.closest("[data-id]");
+  if(b.dataset.t){b.disabled=true;const r=await post("/api/esposa",{acao:b.dataset.t,id:b.dataset.id});aviso(r.msg==="Descartado."?"Tirado da fila de produção.":r.msg);return carregar()}
+  if(b.hasAttribute("data-produzir")){const n=Math.min(15,fila_prod().length);if(!confirm(`Iniciar a produção de ${n} produto(s)?\nTeto de gasto: ${usd(n*TETO)} (estimado ${usd(n*0.42)}).`))return;
+    b.disabled=true;const r=await post("/api/esposa",{acao:"produzir"});aviso(r.msg);return carregar()}
+  if(b.hasAttribute("data-ok")){const vs=[...card.querySelectorAll("[data-v]:checked")].map(x=>x.dataset.v);b.disabled=true;const r=await post("/api/esposa",{acao:"ok",id:card.dataset.id,versoes:vs});aviso(r.msg);return carregar()}
+  if(b.hasAttribute("data-no")){if(!confirm("Recusar este produto?"))return;const r=await post("/api/esposa",{acao:"recusar",id:card.dataset.id});aviso(r.msg);return carregar()}
+  if(b.dataset.robo){b.disabled=true;const r=await post("/api/acao",{card:b.dataset.robo,acao:b.dataset.a});aviso(r.msg||"ok");setTimeout(carregar,1500)}
+});
+setInterval(()=>{document.getElementById("rel").textContent=new Date().toLocaleString("pt-BR",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})},1000);
+carregar();setInterval(carregar,20000);
+</script>
+</body>
+</html>

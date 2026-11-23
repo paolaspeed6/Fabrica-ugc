@@ -1,0 +1,51 @@
+BOTÕES DA CENTRAL E COMO DESTRAVAR  (em português simples; nada aqui precisa do Claude)
+=====================================================================================
+
+A) DESTRAVAR A FILA DE POSTAGEM
+-------------------------------
+A fila "trava" quando algo pede a sua atenção: um erro, um captcha (resolva no próprio celular), o celular que sumiu do
+cabo/Wi-Fi, ou um arquivo "PARAR" esquecido. Para voltar a postar existem 3 jeitos:
+
+1) Botão "Destravar fila" (cartão "Postagens Shopee" da Central) - SEMPRE visível.
+   Abre um painel com o motivo, a escolha do celular (Poco azul / Poco verde; o que estiver ocupado por outro robô aparece
+   desabilitado, com o nome do robô) e o botão "Destravar e ligar". Ele: guarda o erro numa pasta (gravacao), apaga o arquivo
+   PARAR, zera o contador de travamentos, remove "trancas" de filas que já morreram, solta vídeos reservados por uma fila que
+   não existe mais e liga a fila no celular escolhido. NUNCA desliga um robô que esteja funcionando (filtro, Assistir,
+   Interagir curtidas). Se "Ligar" ou "Retomar" falharem, esse mesmo painel abre sozinho com o motivo em texto.
+
+2) Botões "Retomar" / "Pular este post" / "Ver erro" (aparecem no cartão quando há erro).
+   Retomar = arquiva o erro e liga de novo; Pular = tira o item com problema da fila e segue; Ver erro = mostra o que houve.
+
+3) Atalho "9 Destravar fila" (pasta "Projeto Horst" na Área de Trabalho) ou o arquivo destravar_fila.bat (pasta tablet).
+   Para quando a Central nem abre. Pergunta o celular (A = azul, V = verde; só Enter = azul), faz o mesmo que o botão acima
+   e escreve na tela o que fez.
+
+B) PARAR DEPOIS DE N POSTS (cartão "Postagens Shopee" > "⚙ Parar após N posts")
+------------------------------------------------------------------------------
+Digite N (0 = sem limite) e saia do campo: salva sozinho (aparece "salvo"). A fila conta os posts concluídos desde que foi
+ligada e, ao chegar em N, termina sozinha ENTRE dois posts, mostrando "concluído: N posts". O progresso aparece como "x / N".
+Fica em tablet\config_fila.json (meta_posts); pode mudar com a fila rodando.
+
+C) FILA MANUAL DE POSTAGEM (botão "Abrir fila", no mesmo "⚙" do cartão Postagens)
+---------------------------------------------------------------------------------
+Abre tablet\fila_manual.txt no Bloco de Notas. Uma linha por vídeo:   VÍDEO | LINK DO PRODUTO | LEGENDA (opcional)
+VÍDEO = caminho de um .mp4 deste PC ou link do arquivo no Google Drive. A fila lê o arquivo a cada post: linha boa entra na
+fila (mesmas regras: sem repetir, uma versão por produto por dia) e vai para fila_manual_importados.txt; linha com problema
+fica no arquivo com "# ERRO: motivo" por cima e NÃO trava nada. As instruções estão no topo do arquivo.
+
+D) FILTRO DE AFILIADOS (cartão "Filtro de afiliados" > "⚙ Opções do filtro")
+----------------------------------------------------------------------------
+- Perfil / Máx. vídeos por produto / Parar após N aprovados: salvam sozinhos (vale no próximo lote ou ao ligar o filtro).
+- "Abrir links do filtro": abre afiliados\fila_manual_filtro.txt: cole um link da Shopee por linha e salve.
+- "Importar": põe esses links na lista do filtro (afiliados\fila_filtro.json) de forma segura; não entram repetidos nem os da lista
+  da esposa; os importados vão para fila_manual_filtro_importados.txt; link ruim fica com "# ERRO". Não reinicia o filtro.
+- "Produtos do Tinder": mostra os candidatos do Tinder já no PC (nome, vendas, comissão, link), com caixinha. Marque e clique
+  "Mandar pro filtro" (usa o mesmo "Importar").
+
+E) "0 VÍDEOS - ESCOLHER PARA PRODUZIR" (botão "0 vídeos · N" no painel "Produtos de hoje")
+------------------------------------------------------------------------------------------
+Lista os aprovados com 0 vídeos. Marque e clique "Enviar para produção": grava escolhidos_producao_<data>.json (também no Drive)
+e o produto some da lista.
+
+SE NADA FUNCIONAR: confira o cabo USB, desbloqueie a tela, resolva captcha/login no celular (o robô nunca faz isso por você) e
+rode de novo o atalho "9 Destravar fila".

@@ -368,3 +368,10 @@ e a fiscal só comparava com a foto 01 de forma branda (antes da K30). Cada víd
 ## Regra da dona 21/11: letras menores (quase saindo da tela)
 - `video-teste/luxo/build_lux.py`: `ESCALA_TEXTO = 0.75` (a dona pediu "menor ainda" nos 3 modelos: título, corpo, sobretítulo, botão, faixa, item e o relógio do A, inclusive textos sem `size` = tamanho padrão) e `MARGEM = 80` (era 56).
 - Não aumentar `size` nos specs para compensar. Vale para todo vídeo renderizado daqui para frente; os já prontos não mudam.
+
+## Regra da dona 23/11: Central do PC sem depender do Claude (pacote do Kevin em `pc-esposa/`)
+- Robôs liberados: postagem SÓ na conta nova; filtro na conta já conectada; assistir só assiste (sem curtir/comentar/postar).
+- Ligação pelo Drive (`Central Esposa/`, script `produto-campeao/afiliados/central_drive.py`): busca → `candidatos-<dia>[_tarde].json` → filtro do celular → aprovado entra direto na fila de produção → botão "Iniciar produção" (ordem com teto) → fábrica → `conferir/<LOTE-NN>.json` → Ok no PC → `fila.json` → robô posta → sai sozinho da fila e da Conferência → `postados_pc_nuvem.json`.
+- Toda lista nova (manhã e tarde): `central_drive.py candidatos <dia> [tarde]` e `central_drive.py pular`. Todo lote entregue: `central_drive.py conferir <lote>` (além da Conferência da Postagens).
+- Sem repetidos: `pular_afiliados.json` = produzidos (decididos.json + producao_status), Kevin (excluidos.json) e descartados do Tinder.
+- Limpeza automática no PC (1x/dia): vídeos postados há 2 dias, recusados e versões não escolhidas saem do Drive; prints > 15 dias; backups > 7 dias.

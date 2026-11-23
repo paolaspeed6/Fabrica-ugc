@@ -1,0 +1,19 @@
+{
+ "_comentario": "Perfis do filtro de afiliados (Kevin 21/11). perfil_ativo vale quando o robô é ligado sem escolher perfil. Cada perfil sobrescreve só os campos que tiver em regua_filtro.json.",
+ "perfil_ativo": "zero_videos",
+ "perfis": {
+  "normal": {
+   "max_videos_aprovado": 6,
+   "meta_aprovados": 0,
+   "exigir_venda_semana": false
+  },
+  "zero_videos": {
+   "max_videos_aprovado": 3,
+   "meta_aprovados": 0,
+   "exigir_venda_semana": true
+  }
+ },
+ "_meta_aprovados": "0 = não para sozinho; N = para limpo ao chegar em N aprovados (soma dos 2 celulares desde que ligou)",
+ "_como_escolher": "troque perfil_ativo, ou ligue um aparelho com: afiliados\\ligar_perfil.cmd celular1 zero_videos",
+ "_zero_videos": "aprova até 3 vídeos; os de 0 vídeos ficam separados em aprovados_zero_videos.csv (coluna zero_videos=sim)"
+}
