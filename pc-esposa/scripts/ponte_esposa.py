@@ -427,3 +427,112 @@ def loop():
 
 def iniciar():
     threading.Thread(target=loop, daemon=True).start()
+
+
+# ------------------------------------------------------------------ Ajustes (a dona, 23/11: configurar sem o Claude)
+REGUA = os.path.join(TABLET, 'afiliados', 'regua_filtro.json')
+PERFIS = os.path.join(TABLET, 'afiliados', 'perfis_filtro.json')
+LAYOUT = os.path.join(TABLET, 'assistir', 'layout.json')
+APARELHOS = os.path.join(TABLET, 'aparelhos.json')
+CONFIG_FILA = os.path.join(TABLET, 'config_fila.json')
+CAMPOS_REGUA = {  # campo: (tipo, mínimo, máximo, texto)
+    'max_videos_aprovado': (int, 0, 30, 'Máximo de vídeos de criadores no produto'),
+    'views_video_vencedor': (int, 0, 10_000_000, 'Descarta se algum vídeo tiver estas views ou mais'),
+    'comissao_min': (float, 0, 1000, 'Comissão mínima (R$)'),
+    'comissao_min_taxa_alta': (float, 0, 1000, 'Comissão mínima quando a taxa é alta (R$)'),
+    'taxa_alta_pct': (float, 0, 100, 'Taxa alta = comissão acima de (% do preço)'),
+    'vendas_min': (int, 0, 100000, 'Vendas mínimas no total'),
+    'exigir_venda_semana': (bool, 0, 1, 'Exigir venda nesta semana'),
+    'meta_aprovados': (int, 0, 5000, 'Parar o filtro após N aprovados (0 = sem limite)'),
+}
+NO_PERFIL = ('max_videos_aprovado', 'meta_aprovados', 'exigir_venda_semana')  # o perfil ativo vence a régua
+
+
+def _gravar_json(caminho, dados):
+    tmp = caminho + '.tmp'
+    with open(tmp, 'w', encoding='utf-8') as f:
+        json.dump(dados, f, ensure_ascii=False, indent=1)
+    json.load(open(tmp, encoding='utf-8'))
+    os.replace(tmp, caminho)
+
+
+def ajustes():
+    rg, pf = ler(REGUA, {}), ler(PERFIS, {})
+    perfis = pf.get('perfis') or {}
+    ativo = pf.get('perfil_ativo') if pf.get('perfil_ativo') in perfis else (next(iter(perfis), ''))
+    ef = {**rg, **(perfis.get(ativo) or {})}
+    lay, ap, cf = ler(LAYOUT, {}), ler(APARELHOS, {}), ler(CONFIG_FILA, {})
+    serial = (ap.get('celular1') or {}).get('usb', '')
+    return {'filtro': {'perfil_ativo': ativo, 'perfis': list(perfis),
+                       'campos': [{'k': k, 'tipo': t.__name__, 'min': a, 'max': b, 'txt': x, 'v': ef.get(k)}
+                                  for k, (t, a, b, x) in CAMPOS_REGUA.items()]},
+            'postagem': {'meta_posts': int(cf.get('meta_posts', 0) or 0)},
+            'assistir': {'profile_name': lay.get('profile_name', ''), 'search_query': lay.get('search_query', ''),
+                         'watch_min': lay.get('watch_min', 15), 'watch_max': lay.get('watch_max', 32)},
+            'celular': {'serial': '' if serial.startswith('<') else serial}}
+
+
+def gravar_ajustes(d):
+    d = d if isinstance(d, dict) else {}
+    msgs = []
+    with TRAVA:
+        f = d.get('filtro')
+        if isinstance(f, dict):
+            rg, pf = ler(REGUA, {}), ler(PERFIS, {})
+            perfis = pf.setdefault('perfis', {})
+            if f.get('perfil_ativo') in perfis:
+                pf['perfil_ativo'] = f['perfil_ativo']
+            alvo = perfis.setdefault(pf.get('perfil_ativo') or 'normal', {})
+            for k, (t, a, b, _x) in CAMPOS_REGUA.items():
+                if k not in f:
+                    continue
+                try:
+                    v = (str(f[k]).lower() in ('1', 'true', 'sim', 'on')) if t is bool else t(str(f[k]).replace(',', '.'))
+                except ValueError:
+                    return False, f'Valor inválido em "{CAMPOS_REGUA[k][3]}".'
+                if t is not bool and not a <= v <= b:
+                    return False, f'"{CAMPOS_REGUA[k][3]}" deve ficar entre {a} e {b}.'
+                (alvo if k in NO_PERFIL else rg)[k] = v
+            rg['valida_desde'] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M')
+            _gravar_json(REGUA, rg)
+            _gravar_json(PERFIS, pf)
+            msgs.append('filtro (vale na próxima vez que ligar o filtro)')
+        p = d.get('postagem')
+        if isinstance(p, dict) and 'meta_posts' in p:
+            try:
+                n = int(p['meta_posts'])
+                assert 0 <= n <= 5000
+            except Exception:
+                return False, 'Quantidade de posts: um número de 0 a 5000 (0 = sem limite).'
+            cf = ler(CONFIG_FILA, {})
+            cf['meta_posts'] = n
+            _gravar_json(CONFIG_FILA, cf)
+            msgs.append('postagem')
+        a = d.get('assistir')
+        if isinstance(a, dict):
+            lay = ler(LAYOUT, None)
+            if not isinstance(lay, dict):
+                return False, 'Não achei assistir\\layout.json.'
+            for k in ('profile_name', 'search_query'):
+                if k in a:
+                    lay[k] = str(a[k]).strip().lstrip('@')[:80]
+            for k in ('watch_min', 'watch_max'):
+                if k in a:
+                    lay[k] = max(3, min(300, int(a[k])))
+            _gravar_json(LAYOUT, lay)
+            msgs.append('assistir')
+        c = d.get('celular')
+        if isinstance(c, dict) and str(c.get('serial', '')).strip():
+            s = re.sub(r'[^A-Za-z0-9:._-]', '', str(c['serial']))[:64]
+            ap = ler(APARELHOS, {})
+            for nome in ('celular1', 'celular2'):  # um celular só: as duas contas revezam no mesmo aparelho
+                ap.setdefault(nome, {})['usb'] = s
+            _gravar_json(APARELHOS, ap)
+            lay = ler(LAYOUT, None)
+            if isinstance(lay, dict):
+                ph = {k: v for k, v in (lay.get('phones') or {}).items() if not k.startswith('<')}
+                ph[s] = {'label': 'POCO', 'mode': (lay.get('phones') or {}).get(s, {}).get('mode', 'buscar_nome'), 'id_central': 'celular1'}
+                lay['phones'] = ph
+                _gravar_json(LAYOUT, lay)
+            msgs.append('celular')
+    return (True, 'Salvo: ' + ', '.join(msgs) + '.') if msgs else (False, 'Nada para salvar.')

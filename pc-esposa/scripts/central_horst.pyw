@@ -2822,6 +2822,19 @@ class H(BaseHTTPRequestHandler):
                 est['robos'] = {'shopee': bool(at.get('postando')), 'afiliados': bool(at.get('conferindo')),
                                 'assistir': bool(assistir_pid())}
                 est['erro_fila'] = os.path.exists(F['erro'])
+                try:  # avisos e produtos em dúvida, com botões na tela dela
+                    full = montar_estado()
+                    est['atencao'] = full.get('atencao') or []
+                    est['pendentes'] = full.get('pendentes_aprovacao') or []
+                except Exception as e:
+                    est['atencao'] = [{'id': 'central_erro', 'texto': f'A Central não conseguiu ler o estado dos robôs: {e}'}]
+                    est['pendentes'] = []
+                try:
+                    est['erro_txt'] = open(F['erro'], encoding='utf-8', errors='replace').read()[:600] if est['erro_fila'] else ''
+                except OSError:
+                    est['erro_txt'] = ''
+                est['ponte_erros'] = [l for l in open(ponte_esposa.LOG, encoding='utf-8', errors='replace').read().splitlines()
+                                      if 'erro' in l.lower() or 'não' in l][-5:] if os.path.exists(ponte_esposa.LOG) else []
                 est['captcha'] = captchas()
                 return self._resp(200, est)
             except Exception as e:
@@ -2927,6 +2940,10 @@ class H(BaseHTTPRequestHandler):
                     ok, msg = ponte_esposa.tinder(str(b.get('id')), q == 'gostei')
                 elif q == 'desfazer':
                     ok, msg = ponte_esposa.desfazer_tinder(str(b.get('id')))
+                elif q == 'ajustes_ler':
+                    return self._resp(200, {'ok': True, 'ajustes': ponte_esposa.ajustes()})
+                elif q == 'ajustes':
+                    ok, msg = ponte_esposa.gravar_ajustes(b.get('dados'))
                 elif q == 'produzir':
                     ok, msg = ponte_esposa.produzir(b.get('ids'))
                 else:

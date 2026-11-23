@@ -135,6 +135,32 @@ def conferir(tk, lote):
     print(n, 'produto(s) na aba Conferir do PC')
 
 
+def desperdicio(arq):
+    """Soma o agentes/desperdicios.md: linhas da tabela (coluna US$) e "refações de imagem (US$ x)" das seções de lote."""
+    import re, datetime
+    mes_atual = datetime.date.today().isoformat()[:7]
+    tot = mes = 0.0
+    casos, sec_data, sec = [], None, ''
+    for l in open(arq, encoding='utf-8').read().splitlines():
+        m = re.match(r'\| (\d{4}-\d\d-\d\d) \| ([^|]*)\| ([^|]*)\| ([\d,]+) \|[^|]*\|([^|]*)\|', l)
+        if m:
+            v = float(m[4].replace(',', '.'))
+            tot += v
+            mes += v if m[1][:7] == mes_atual else 0
+            casos.append({'data': m[1], 'lote': m[3].strip(), 'usd': v, 'motivo': m[5].strip()[:120]})
+            continue
+        h = re.match(r'## (.*) \((\d\d)/(\d\d)\)', l)
+        if h:
+            sec_data, sec = f'{mes_atual[:4]}-{h[3]}-{h[2]}', h[1]
+            continue
+        for x in re.findall(r'refa\w+ de \w+ \(US\$ ([\d,]+)\)', l):
+            v = float(x.replace(',', '.'))
+            tot += v
+            mes += v if (sec_data or '')[:7] == mes_atual else 0
+            casos.append({'data': sec_data, 'lote': sec, 'usd': v, 'motivo': l.strip('- ')[:120]})
+    return {'total_usd': round(tot, 2), 'mes_usd': round(mes, 2), 'ultimos': casos[-6:][::-1]}
+
+
 def painel(tk):
     """Números da fábrica para a Central do PC: gasto do mês/total, lotes (vídeos e US$), última busca."""
     import subprocess, tempfile
@@ -146,6 +172,7 @@ def painel(tk):
     p = json.loads(out)
     dados = {k: p.get(k) for k in ('gasto', 'lotes', 'varredura', 'atualizado_em', 'nao_medido')}
     dados['lotes'] = [{k: l.get(k) for k in ('nome', 'produtos', 'videos', 'usd')} for l in (dados['lotes'] or [])]
+    dados['desperdicio'] = desperdicio(os.path.join(raiz, 'agentes', 'desperdicios.md'))
     c, _ = central(tk)
     gravar(tk, 'painel.json', c, dados)
     print('painel.json: mês US$', dados['gasto'].get('mes_usd'), '·', len(dados['lotes']), 'lotes')

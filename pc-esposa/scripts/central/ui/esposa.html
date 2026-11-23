@@ -92,7 +92,7 @@ nav em{font-style:normal;background:var(--amb);color:var(--amb-fg);border-radius
 </div>
 <div id="msg" role="status"></div>
 <script>
-const ABAS=[["central","📊 Central"],["tinder","🏭 Produção"],["conferir","✔ Conferir"],["fila","Fila"],["postados","Postados"],["robos","🤖 Robôs"]];
+const ABAS=[["central","📊 Central"],["tinder","🏭 Produção"],["conferir","✔ Conferir"],["aprovar","⚠ Aprovar"],["fila","Fila"],["postados","Postados"],["robos","🤖 Robôs"],["ajustes","⚙ Ajustes"]];
 const TETO=0.60;
 let ABA="central",E=null,TI=0,ocupado=false;
 try{ABA=localStorage.getItem("aba_esposa")||ABA}catch(e){}
@@ -105,17 +105,20 @@ async function carregar(){try{E=await (await fetch("/api/esposa",{cache:"no-stor
   const v=document.getElementById("vivo");v.className="vivo"+(E?"":" off");v.lastChild.textContent=E?"Ao vivo":"Sem conexão";desenhar()}
 const fila_prod=()=>(E?.producao?.aprovados||[]).filter(x=>x.tinder==="gostei");
 const tinder_novos=()=>[];
-function abas(){const n={tinder:fila_prod().length,conferir:(E?.conferir||[]).length};
+function abas(){const n={aprovar:(E?.pendentes||[]).length,tinder:fila_prod().length,conferir:(E?.conferir||[]).length};
   document.getElementById("abas").innerHTML=ABAS.map(([k,t])=>`<button role="tab" aria-selected="${k===ABA}" data-aba="${k}">${t}${n[k]?`<em>${n[k]}</em>`:""}</button>`).join("")}
 function desenhar(){if(ocupado)return;abas();const m=document.getElementById("m");
   if(!E){m.innerHTML='<div class="vazio">A Central não respondeu. Feche e abra de novo pelo atalho da área de trabalho.</div>';return}
   if(!E.drive&&ABA!=="robos"){m.innerHTML='<div class="vazio">Não achei a pasta "Central Esposa" no Google Drive deste PC. Abra o Google Drive para desktop e espere sincronizar.</div>';return}
   if(ABA==="conferir"&&m.querySelector("video:not([paused])")&&[...m.querySelectorAll("video")].some(v=>!v.paused))return;
-  m.innerHTML={central,tinder,conferir,fila,postados,robos}[ABA]()}
+  if(ABA==="ajustes"){if(!document.getElementById("fAj"))ajustesCarregar();return}
+  m.innerHTML={central,tinder,conferir,aprovar,fila,postados,robos}[ABA]()}
 function pn(t,tag,tc,corpo){return `<section class="pn"><h3>${t}${tag?`<span class="tag ${tc||""}">${tag}</span>`:""}</h3>${corpo}</section>`}
 function central(){const R=E.robos||{},P=E.producao||{},pd=E.postados_dia||[],hoje=pd.length?pd[pd.length-1][1]:0,sem=pd.slice(-7).reduce((s,x)=>s+x[1],0);
   const al=[];
-  if(E.erro_fila)al.push(["A fila de postagem parou com erro","Robôs › veja o painel completo","robos"]);
+  (E.atencao||[]).forEach(x=>al.push([x.texto,"desde "+(x.desde||"agora"),null,x.id]));
+  if((E.pendentes||[]).length)al.push([E.pendentes.length+" produto(s) em dúvida antes de postar","O robô não teve certeza do produto: você confere e aprova","aprovar"]);
+  if(E.erro_fila&&!(E.atencao||[]).some(x=>/fila/.test(x.id)))al.push(["A fila de postagem parou: "+(E.erro_txt||"").split("\n").slice(0,2).join(" ").slice(0,140),"Robôs","robos","erro_fila"]);
   if((E.conferir||[]).length)al.push([E.conferir.length+" produto(s) esperando seu Ok","Conferir · a fábrica entregou","conferir"]);
   if(tinder_novos().length)al.push([tinder_novos().length+" produto(s) aprovados pelo filtro para escolher","Tinder · ❤ manda para a produção","tinder"]);
   if(fila_prod().length)al.push(["Fila de produção: "+fila_prod().length+" produto(s) aprovados pelo filtro","Produção › Iniciar produção (sua ordem)","tinder"]);
@@ -123,13 +126,13 @@ function central(){const R=E.robos||{},P=E.producao||{},pd=E.postados_dia||[],ho
   const sp=`<div class="spark">${pd.map(([d,n],i)=>`<i class="${i===pd.length-1?"hj":(n?"":"z")}" style="height:${Math.max(6,n/mx*100)}%" title="${d.slice(8)}/${d.slice(5,7)}: ${n}"></i>`).join("")}</div>`;
   const ped=P.pedidos||[],ab=ped.filter(p=>!/conclu|entregue/i.test(p.estado||""));
   const bola=(on,a)=>on?"ok":a?"am":"";
-  return `<section class="alarme${al.length?"":" calmo"}"><h3>${al.length?"⚠ Precisa de você":"✓ Tudo em dia"}</h3>${al.map(([t,s,a])=>`<div class="al"><div>${esc(t)}<small>${esc(s)}</small></div><button class="bt am" data-aba="${a}">Abrir</button></div>`).join("")||'<div class="mut">Nada travado. Os robôs seguem sozinhos.</div>'}</section>
+  return `<section class="alarme${al.length?"":" calmo"}"><h3>${al.length?"⚠ Precisa de você":"✓ Tudo em dia"}</h3>${al.map(([t,s,a,id])=>`<div class="al"><div>${esc(t)}<small>${esc(s)}</small></div><div class="row">${a?`<button class="bt am" data-aba="${a}">Abrir</button>`:""}${id&&/fila|erro/.test(id)?`<button class="bt am" data-destravar>Destravar e continuar</button>`:""}${id&&id!=="erro_fila"?`<button class="bt" data-aviso="${esc(id)}">Resolvido</button>`:""}</div></div>`).join("")||'<div class="mut">Nada travado. Os robôs seguem sozinhos.</div>'}</section>
   <div class="k4">${pn("Postados hoje","14 d","ok",`<div class="big">${hoje}<small>semana ${sem} · total ${E.postados_total||0}</small></div>${sp}`)}
   ${pn("Fila de postagem",R.shopee?"postando":"parada",R.shopee?"ok":"",`<div class="big">${(E.fila||[]).length}<small>vídeos esperando</small></div><div class="mut">1 por produto por dia · 8-12 min · 08h-22h</div>`)}
   ${pn("Para conferir",(E.conferir||[]).length?"seu Ok":"em dia",(E.conferir||[]).length?"am":"ok",`<div class="big">${(E.conferir||[]).length}<small>produtos</small></div><div class="mut">${(E.na_fila_conferidos||[]).length} aceitos ainda postando</div>`)}
   ${pn("Produção",ab.length?ab.length+" pedido(s) abertos":"livre",ab.length?"am":"ok",`<div class="big">${fila_prod().length}<small>na fila de produção</small></div><div class="mut">aprovados pelo filtro, esperando sua ordem</div>`)}</div>
   ${fabrica()}
-  <div class="g3">${pn("Linha do dia","agora","",`<div class="tl">
+  <div class="k4">${pn("Linha do dia","agora","",`<div class="tl">
     <div><b class="${bola(R.afiliados,tinder_novos().length)}"></b><strong>Filtro</strong><span>${R.afiliados?"filtrando agora":"parado"}</span></div>
     <div><b class="${fila_prod().length?"am":"ok"}"></b><strong>Produção</strong><span>${fila_prod().length} na fila, esperando sua ordem</span></div>
     <div><b class="${ab.length?"am":"ok"}"></b><strong>Fábrica</strong><span>${ab.length?esc(ab[0].estado):"sem pedido aberto"}</span></div>
@@ -137,14 +140,16 @@ function central(){const R=E.robos||{},P=E.producao||{},pd=E.postados_dia||[],ho
     <div><b class="${bola(R.shopee,(E.fila||[]).length)}"></b><strong>Postagem</strong><span>${R.shopee?"postando":"parada"} · ${(E.fila||[]).length} na fila</span></div>
     <div><b class="${R.assistir?"ok":""}"></b><strong>Assistir</strong><span>${R.assistir?"assistindo seus vídeos":"parado"}</span></div></div>`)}
   ${pn("Últimos postados",E.postados_total?E.postados_total+" no total":"","ok",(E.postados||[]).slice(0,6).map(p=>`<div class="al"><div>${esc(p.produto||p.doc)}<small>${hm(p.em)} · ${esc(p.doc.slice(-1))}</small></div></div>`).join("")||'<div class="mut">Nenhum post ainda.</div>')}
-  ${pn("Pedidos à fábrica",ped.length?ped.length+"":"","",ped.slice(0,6).map(p=>`<div class="al"><div>${p.n} produto(s) · teto ${usd(p.teto_usd)}<small>${hm(p.em)} · ${esc(p.estado)}${p.gasto_usd!=null?" · gasto "+usd(p.gasto_usd):""}</small></div></div>`).join("")||'<div class="mut">Nenhum pedido ainda.</div>')}</div>`}
+  ${pn("Pedidos à fábrica",ped.length?ped.length+"":"","",ped.slice(0,6).map(p=>`<div class="al"><div>${p.n} produto(s) · teto ${usd(p.teto_usd)}<small>${hm(p.em)} · ${esc(p.estado)}${p.gasto_usd!=null?" · gasto "+usd(p.gasto_usd):""}</small></div></div>`).join("")||'<div class="mut">Nenhum pedido ainda.</div>')}${lotesPn()}</div>`}
 function fabrica(){const F=E.fabrica||{},G=F.gasto||{},L=(F.lotes||[]).slice(0,8),V=F.varredura||{};
   if(!G.mes_usd&&!L.length)return "";
   const mx=Math.max(1,...L.map(l=>l.usd||0));
   return `<div class="k4">${pn("Gasto de IA no mês","teto US$ "+(G.teto_lote_usd||8)+"/lote","am",`<div class="big">${usd(G.mes_usd)}<small>total ${usd(G.total_usd)}</small></div><div class="spark">${L.slice().reverse().map(l=>`<i style="height:${Math.max(6,(l.usd||0)/mx*100)}%;background:var(--amb)" title="${esc(l.nome)}: ${usd(l.usd)}"></i>`).join("")}</div>`)}
    ${pn("Vídeos feitos",L[0]?"últ. "+esc(L[0].nome):"","",`<div class="big">${(F.lotes||[]).reduce((s,l)=>s+(l.videos||0),0)}<small>${(F.lotes||[]).length} lotes</small></div><div class="mut">média ${usd((F.lotes||[]).reduce((s,l)=>s+(l.usd||0),0)/Math.max(1,(F.lotes||[]).length))} por lote</div>`)}
+   ${pn("Desperdício","refações pagas",(F.desperdicio||{}).mes_usd?"vm":"ok",`<div class="big">${usd((F.desperdicio||{}).mes_usd)}<small>no mês · total ${usd((F.desperdicio||{}).total_usd)}</small></div>${((F.desperdicio||{}).ultimos||[]).slice(0,2).map(c=>`<div class="mut">${esc(c.lote)} · ${usd(c.usd)}</div>`).join("")}`)}
    ${pn("Última busca",V.dia||"","ok",`<div class="big">${V.novos??"–"}<small>produtos novos</small></div><div class="mut">05:41 e 16:41 · vão para o filtro do celular</div>`)}
-   ${pn("Lotes recentes","","",L.slice(0,4).map(l=>`<div class="al"><div>${esc(l.nome)}<small>${l.produtos} produtos · ${l.videos} vídeos</small></div><b style="color:var(--amb)">${usd(l.usd)}</b></div>`).join("")||'<div class="mut">–</div>')}</div>`}
+  </div>`}
+function lotesPn(){const L=((E.fabrica||{}).lotes||[]).slice(0,4);return pn("Lotes recentes","","",L.slice(0,4).map(l=>`<div class="al"><div>${esc(l.nome)}<small>${l.produtos} produtos · ${l.videos} vídeos</small></div><b style="color:var(--amb)">${usd(l.usd)}</b></div>`).join("")||'<div class="mut">–</div>')}
 function tinder(){const F=fila_prod().slice(0,60);
   if(!F.length)return '<div class="vazio">Nenhum produto aprovado pelo filtro ainda. Quando o robô de filtro aprovar, entra aqui sozinho.</div>';
   const n=Math.min(15,F.length);
@@ -157,6 +162,33 @@ function conferir(){const L=E.conferir||[];if(!L.length)return '<div class="vazi
    <div class="vers">${c.posts.map(p=>`<div class="v">${p.tem_video?`<video src="/video/${encodeURIComponent(p.doc)}" controls preload="metadata" playsinline></video>`:'<div class="sem">vídeo ainda<br>sincronizando no Drive</div>'}
      <label><input type="checkbox" data-v="${esc(p.doc)}" checked> ${esc(p.versao)}</label><div class="leg">${esc(p.legenda)}</div></div>`).join("")}</div>
    <div class="row"><button class="bt ok" data-ok>Ok, vai para a fila</button><button class="bt ve" data-no>Recusar</button></div></section>`).join("")+'</div>'}
+function aprovar(){const L=E.pendentes||[];if(!L.length)return '<div class="vazio">Nenhum produto em dúvida. Quando o robô não tiver certeza do produto antes de postar, ele para aqui e espera você.</div>';
+  return '<div class="cgrid">'+L.map(p=>`<section class="pn" data-pid="${esc(p.id)}"><h3>${esc(p.produto||p.esperado||p.doc)}<span class="tag am">${esc(p.hora||"")}</span></h3>
+   <div class="aviso">${esc(p.motivo||"O robô não teve certeza do produto.")}</div>
+   ${p.print?`<img src="${esc(p.print)}" alt="Tela do celular" style="width:100%;max-height:420px;object-fit:contain;border-radius:10px;background:#000">`:""}
+   <div class="mut">Esperado: ${esc(p.esperado||p.produto||"")}</div>
+   ${(p.linhas_vistas||[]).length?`<div class="mut">Qual linha é o produto certo?</div>${p.linhas_vistas.map((l,i)=>`<label class="mut" style="display:flex;gap:6px"><input type="radio" name="l_${esc(p.id)}" value="${esc(l)}" ${String(p.sugestao||"")===String(l)?"checked":""}> ${esc(l)}</label>`).join("")}`:""}
+   <div class="row">${(p.linhas_vistas||[]).length?`<button class="bt ok" data-pend="aprovar">Aprovar e postar</button>`:""}<button class="bt" data-pend="tentar">Tentar de novo</button><button class="bt" data-pend="esgotado">Esgotado</button><button class="bt ve" data-pend="recusar">Recusar</button></div></section>`).join("")+'</div>'}
+async function ajustesCarregar(){const m=document.getElementById("m");m.innerHTML='<div class="vazio">Carregando ajustes…</div>';
+  const r=await post("/api/esposa",{acao:"ajustes_ler"});const A=r.ajustes;if(!A){m.innerHTML='<div class="vazio">Não consegui ler os ajustes.</div>';return}
+  const inp=(k,v,t,extra="")=>t==="bool"?`<input type="checkbox" name="${k}" ${v?"checked":""}>`:`<input name="${k}" value="${esc(v??"")}" inputmode="${t==="str"?"text":"decimal"}" ${extra} style="width:130px;background:var(--soft);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:7px">`;
+  const lin=(txt,html)=>`<label class="al" style="grid-template-columns:1fr auto"><div>${esc(txt)}</div>${html}</label>`;
+  const F=A.filtro;
+  m.innerHTML=`<form id="fAj" class="g3" onsubmit="return false">
+  ${pn("Filtro de produtos","régua","am",`${lin("Perfil",`<select name="perfil_ativo" style="background:var(--soft);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:7px">${F.perfis.map(p=>`<option ${p===F.perfil_ativo?"selected":""}>${esc(p)}</option>`).join("")}</select>`)}
+    ${F.campos.map(c=>lin(c.txt,inp("f_"+c.k,c.v,c.tipo))).join("")}<button class="bt am" data-salvar="filtro">Salvar filtro</button>`)}
+  ${pn("Postagem","conta nova","",`${lin("Parar após quantos posts (0 = sem limite)",inp("meta_posts",A.postagem.meta_posts,"int"))}
+    <div class="mut">O ritmo fica sempre 8 a 12 min entre posts, das 08h às 22h, 1 versão por produto por dia (trava de segurança).</div><button class="bt am" data-salvar="postagem">Salvar postagem</button>`)}
+  ${pn("Assistir meus vídeos","só assiste","",`${lin("Nome do seu perfil (como aparece)",inp("profile_name",A.assistir.profile_name,"str"))}${lin("Seu @ (sem arroba)",inp("search_query",A.assistir.search_query,"str"))}
+    ${lin("Assistir cada vídeo no mínimo (s)",inp("watch_min",A.assistir.watch_min,"int"))}${lin("No máximo (s)",inp("watch_max",A.assistir.watch_max,"int"))}<button class="bt am" data-salvar="assistir">Salvar assistir</button>`)}
+  ${pn("Celular","POCO","",`${lin("Serial do celular (o que aparece no adb devices)",inp("serial",A.celular.serial,"str"))}<button class="bt am" data-salvar="celular">Salvar celular</button>`)}
+  </form>`}
+async function ajustesSalvar(q){const f=document.getElementById("fAj"),g=n=>f.elements[n];let d={};
+  if(q==="filtro"){d.filtro={perfil_ativo:g("perfil_ativo").value};[...f.elements].filter(e=>e.name&&e.name.startsWith("f_")).forEach(e=>d.filtro[e.name.slice(2)]=e.type==="checkbox"?e.checked:e.value)}
+  if(q==="postagem")d.postagem={meta_posts:g("meta_posts").value};
+  if(q==="assistir")d.assistir={profile_name:g("profile_name").value,search_query:g("search_query").value,watch_min:g("watch_min").value,watch_max:g("watch_max").value};
+  if(q==="celular")d.celular={serial:g("serial").value};
+  const r=await post("/api/esposa",{acao:"ajustes",dados:d});aviso(r.msg)}
 function fila(){const L=E.fila||[];if(!L.length)return '<div class="vazio">Fila de postagem vazia.</div>';
   return pn("Fila de postagem",L.length+" vídeos","",`<div class="mut">O robô posta nesta ordem. Postou, sai sozinho daqui e vai para Postados.</div><table class="tbl"><tr><th>#</th><th>Vídeo</th><th>Produto</th></tr>${L.map((i,n)=>`<tr><td>${n+1}</td><td>${esc(i.doc)}</td><td>${esc(i.produto)}</td></tr>`).join("")}</table>`)}
 function postados(){const L=E.postados||[];if(!L.length)return '<div class="vazio">Nada postado ainda.</div>';
@@ -165,6 +197,8 @@ function robos(){const R=E.robos||{},C=E.captcha||{};
   const L=[["shopee","Postagem","posta a fila na conta nova"],["afiliados","Filtro de produtos","só olha: vídeos, vendas e comissão"],["assistir","Assistir meus vídeos","só assiste, sem curtir, comentar ou postar"]];
   return `<div class="mut">Um robô por vez no celular. Captcha ou login: o robô para e apita, e você resolve com a mão.${C.captchas_hoje?` Captchas hoje: ${C.captchas_hoje}.`:""}</div>
   <div class="g3">${L.map(([k,t,d])=>`<section class="pn robo"><div><h3><span class="luz ${R[k]?"on":""}"></span>${t}</h3><div class="mut">${d}</div></div><div class="row"><button class="bt ok" data-robo="${k}" data-a="ligar" ${R[k]?"disabled":""}>Ligar</button><button class="bt" data-robo="${k}" data-a="desligar" ${R[k]?"":"disabled"}>Parar</button></div></section>`).join("")}</div>
+  ${E.erro_fila?pn("Erro da fila de postagem","parada","vm",`<pre class="mut" style="white-space:pre-wrap;margin:0">${esc(E.erro_txt)}</pre><div class="row"><button class="bt am" data-destravar>Destravar e continuar</button></div>`):""}
+  ${(E.ponte_erros||[]).length?pn("Avisos da ligação com a fábrica","","am",`<pre class="mut" style="white-space:pre-wrap;margin:0">${esc(E.ponte_erros.join("\n"))}</pre>`):""}
   <div class="row"><a class="bt" href="/kevin" style="text-decoration:none">Painel completo (avançado)</a></div>`}
 document.addEventListener("click",async ev=>{const b=ev.target.closest("button,input");if(!b)return;
   if(b.dataset.aba){ABA=b.dataset.aba;try{localStorage.setItem("aba_esposa",ABA)}catch(e){};ocupado=false;return desenhar()}
@@ -174,6 +208,13 @@ document.addEventListener("click",async ev=>{const b=ev.target.closest("button,i
     b.disabled=true;const r=await post("/api/esposa",{acao:"produzir"});aviso(r.msg);return carregar()}
   if(b.hasAttribute("data-ok")){const vs=[...card.querySelectorAll("[data-v]:checked")].map(x=>x.dataset.v);b.disabled=true;const r=await post("/api/esposa",{acao:"ok",id:card.dataset.id,versoes:vs});aviso(r.msg);return carregar()}
   if(b.hasAttribute("data-no")){if(!confirm("Recusar este produto?"))return;const r=await post("/api/esposa",{acao:"recusar",id:card.dataset.id});aviso(r.msg);return carregar()}
+  if(b.hasAttribute("data-destravar")){if(!confirm("Destravar a fila e continuar postando?"))return;b.disabled=true;const r=await post("/api/acao",{card:"shopee",acao:"destravar"});aviso(r.msg);return carregar()}
+  if(b.dataset.aviso){b.disabled=true;const r=await post("/api/acao",{card:"aviso:"+b.dataset.aviso,acao:"resolver"});aviso(r.msg||"ok");return carregar()}
+  if(b.dataset.pend){const c=b.closest("[data-pid]"),id=c.dataset.pid,q=b.dataset.pend;let corpo={card:"pendentes",acao:q,ids:[id]};
+    if(q==="aprovar"){const r=c.querySelector("input[type=radio]:checked");if(!r){aviso("Escolha a linha certa primeiro.");return}corpo={card:"pendentes",acao:"aprovar",escolhas:{[id]:r.value}}}
+    if(q==="recusar"&&!confirm("Recusar este produto? Ele sai da fila."))return;
+    b.disabled=true;const r=await post("/api/acao",corpo);aviso(r.msg);return carregar()}
+  if(b.dataset.salvar){b.disabled=true;await ajustesSalvar(b.dataset.salvar);b.disabled=false;return}
   if(b.dataset.robo){b.disabled=true;const r=await post("/api/acao",{card:b.dataset.robo,acao:b.dataset.a});aviso(r.msg||"ok");setTimeout(carregar,1500)}
 });
 setInterval(()=>{document.getElementById("rel").textContent=new Date().toLocaleString("pt-BR",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"})},1000);
