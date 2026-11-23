@@ -525,8 +525,14 @@ def gravar_ajustes(d):
         if isinstance(c, dict) and str(c.get('serial', '')).strip():
             s = re.sub(r'[^A-Za-z0-9:._-]', '', str(c['serial']))[:64]
             ap = ler(APARELHOS, {})
-            for nome in ('celular1', 'celular2'):  # um celular só: as duas contas revezam no mesmo aparelho
-                ap.setdefault(nome, {})['usb'] = s
+            # um celular só (POCO): fica como celular1; as contas revezam no mesmo aparelho (PC 23/11)
+            c1 = ap.setdefault('celular1', {})
+            c1['usb'] = s
+            if not c1.get('nome') or c1['nome'].startswith('Celular 1 ('):
+                c1['nome'] = 'POCO'
+            c2 = ap.get('celular2') or {}
+            if str(c2.get('usb') or '') in (s, '') or str(c2.get('usb') or '').startswith('<'):
+                ap.pop('celular2', None)
             _gravar_json(APARELHOS, ap)
             lay = ler(LAYOUT, None)
             if isinstance(lay, dict):

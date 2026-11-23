@@ -250,7 +250,9 @@ def aparelhos_cfg():
     for nome in ('tablet', 'celular1', 'celular2'):
         c = d.get(nome) if isinstance(d, dict) else None
         c = {**APARELHOS_BASE.get(nome, {}), **(c if isinstance(c, dict) else {})}
-        if c:
+        # PC Paola 23/11: aparelho sem endereço real (só placeholder <...>) não aparece na Central
+        reais = [str(c.get(k) or '') for k in ('usb', 'wifi')]
+        if c and any(v and not v.startswith('<') for v in reais):
             out.append((nome, c))
     return out
 
