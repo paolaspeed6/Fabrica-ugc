@@ -112,6 +112,7 @@ function desenhar(){if(ocupado)return;abas();const m=document.getElementById("m"
   if(!E.drive&&ABA!=="robos"){m.innerHTML='<div class="vazio">Não achei a pasta "Central Esposa" no Google Drive deste PC. Abra o Google Drive para desktop e espere sincronizar.</div>';return}
   if(ABA==="conferir"&&m.querySelector("video:not([paused])")&&[...m.querySelectorAll("video")].some(v=>!v.paused))return;
   if(ABA==="ajustes"){if(!document.getElementById("fAj"))ajustesCarregar();return}
+  if(ABA==="robos"&&document.querySelector("#m iframe"))return;
   m.innerHTML={central,tinder,conferir,aprovar,fila,postados,robos}[ABA]()}
 function pn(t,tag,tc,corpo){return `<section class="pn"><h3>${t}${tag?`<span class="tag ${tc||""}">${tag}</span>`:""}</h3>${corpo}</section>`}
 function central(){const R=E.robos||{},P=E.producao||{},pd=E.postados_dia||[],hoje=pd.length?pd[pd.length-1][1]:0,sem=pd.slice(-7).reduce((s,x)=>s+x[1],0);
@@ -193,13 +194,10 @@ function fila(){const L=E.fila||[];if(!L.length)return '<div class="vazio">Fila 
   return pn("Fila de postagem",L.length+" vídeos","",`<div class="mut">O robô posta nesta ordem. Postou, sai sozinho daqui e vai para Postados.</div><table class="tbl"><tr><th>#</th><th>Vídeo</th><th>Produto</th></tr>${L.map((i,n)=>`<tr><td>${n+1}</td><td>${esc(i.doc)}</td><td>${esc(i.produto)}</td></tr>`).join("")}</table>`)}
 function postados(){const L=E.postados||[];if(!L.length)return '<div class="vazio">Nada postado ainda.</div>';
   return pn("Postados",E.postados_total+" no total","ok",`<table class="tbl"><tr><th>Quando</th><th>Vídeo</th><th>Produto</th></tr>${L.map(p=>`<tr><td>${hm(p.em)}</td><td>${esc(p.doc)}</td><td>${esc(p.produto)}</td></tr>`).join("")}</table>`)}
-function robos(){const R=E.robos||{},C=E.captcha||{};
-  const L=[["shopee","Postagem","posta a fila na conta nova"],["afiliados","Filtro de produtos","só olha: vídeos, vendas e comissão"],["assistir","Assistir meus vídeos","só assiste, sem curtir, comentar ou postar"]];
-  return `<div class="mut">Um robô por vez no celular. Captcha ou login: o robô para e apita, e você resolve com a mão.${C.captchas_hoje?` Captchas hoje: ${C.captchas_hoje}.`:""}</div>
-  <div class="g3">${L.map(([k,t,d])=>`<section class="pn robo"><div><h3><span class="luz ${R[k]?"on":""}"></span>${t}</h3><div class="mut">${d}</div></div><div class="row"><button class="bt ok" data-robo="${k}" data-a="ligar" ${R[k]?"disabled":""}>Ligar</button><button class="bt" data-robo="${k}" data-a="desligar" ${R[k]?"":"disabled"}>Parar</button></div></section>`).join("")}</div>
-  ${E.erro_fila?pn("Erro da fila de postagem","parada","vm",`<pre class="mut" style="white-space:pre-wrap;margin:0">${esc(E.erro_txt)}</pre><div class="row"><button class="bt am" data-destravar>Destravar e continuar</button></div>`):""}
+function robos(){ /* os mesmos cartões de robôs da Central do Kevin (já prontos), só eles */
+  return `${E.erro_fila?pn("Erro da fila de postagem","parada","vm",`<pre class="mut" style="white-space:pre-wrap;margin:0">${esc(E.erro_txt)}</pre><div class="row"><button class="bt am" data-destravar>Destravar e continuar</button></div>`):""}
   ${(E.ponte_erros||[]).length?pn("Avisos da ligação com a fábrica","","am",`<pre class="mut" style="white-space:pre-wrap;margin:0">${esc(E.ponte_erros.join("\n"))}</pre>`):""}
-`}
+  <iframe src="/kevin?so=robos" title="Robôs" style="width:100%;height:calc(100vh - 150px);min-height:640px;border:0;border-radius:12px;background:var(--card)"></iframe>`}
 document.addEventListener("click",async ev=>{const b=ev.target.closest("button,input");if(!b)return;
   if(b.dataset.aba){ABA=b.dataset.aba;try{localStorage.setItem("aba_esposa",ABA)}catch(e){};ocupado=false;return desenhar()}
   const card=b.closest("[data-id]");
