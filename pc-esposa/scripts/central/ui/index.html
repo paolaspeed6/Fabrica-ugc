@@ -828,8 +828,13 @@ dialog#dlg::backdrop{background:rgba(0,0,0,.55)}
 <symbol id="i-troca" viewBox="0 0 16 16"><path d="M2.5 5.5h10.5L10.6 3M13.5 10.5H3l2.4 2.5"/></symbol>
 </defs></svg>
 <style>/* Paola 23/11: ?so=robos mostra só os cartões dos robôs (aba Robôs da Central dela) */
-.so-robos #topo,.so-robos #pulso,.so-robos #linha,.so-robos #baixo,.so-robos #rodape,.so-robos #cCurtidas{display:none!important}
-.so-robos .corpo{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))!important}</style>
+.so-robos #topo,.so-robos #pulso,.so-robos #linha,.so-robos #baixo,.so-robos #rodape{display:none!important}
+.so-robos .corpo{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))!important}
+/* PC 23/11: sem o resto, a grade do #app espremia os cartões em ~30px; aqui eles crescem e a página rola */
+.so-robos body{overflow:auto!important;height:auto!important}
+.so-robos #app{display:flex!important;flex-direction:column;gap:12px;height:auto!important;min-height:100vh;grid-template-rows:none!important}
+.so-robos .corpo{height:auto!important;grid-template-columns:repeat(auto-fit,minmax(420px,1fr))!important;grid-template-rows:auto!important;grid-auto-rows:minmax(460px,auto)!important;align-items:stretch}
+.so-robos .corpo>.card{height:auto!important;min-height:460px;grid-row:auto!important;grid-column:auto!important}</style>
 <script>if(/[?&]so=robos/.test(location.search))document.documentElement.classList.add("so-robos")</script>
 <div class="app" id="app">
   <header class="top" id="topo">
