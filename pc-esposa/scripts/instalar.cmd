@@ -28,6 +28,13 @@ if not exist "%PYBASE%\Python312\pythonw.exe" (
       )
     )
   )
+  rem gerenciador novo do python.org instala em %LOCALAPPDATA%\Python\pythoncore-3.xx-64 (Paola, 23/11: 3.15)
+  for /f "delims=" %%P in ('dir /b /ad /o-n "%LOCALAPPDATA%\Python\pythoncore-3*" 2^>nul') do (
+    if not exist "%PYBASE%\Python312\pythonw.exe" if exist "%LOCALAPPDATA%\Python\%%P\pythonw.exe" (
+      if not exist "%PYBASE%" mkdir "%PYBASE%"
+      mklink /J "%PYBASE%\Python312" "%LOCALAPPDATA%\Python\%%P" >nul && echo Python encontrado: %%P
+    )
+  )
   for /f "delims=" %%P in ('dir /b /ad /o-n "%PYBASE%\Python3*" 2^>nul') do (
     if not exist "%PYBASE%\Python312\pythonw.exe" if exist "%PYBASE%\%%P\pythonw.exe" (
       if exist "%PYBASE%\Python312" rmdir "%PYBASE%\Python312" 2>nul
