@@ -15,7 +15,7 @@ LISTA = next((f'{l}:\\{r}\\Central Esposa\\candidatos_afiliados.json' for l in '
 FILA_LOCAL = r'C:\horst\tablet\afiliados\fila_filtro.json'  # 10/11: busca de hoje + restantes; tem prioridade sobre a lista do Drive
 CSV = os.path.join(PASTA, 'conferidos.csv')
 PARAR = os.path.join(PASTA, 'PARAR')
-META, LOTE = 150, 50
+META, LOTE = 150, 100000  # a dona, 23/11: confere a lista toda de uma vez (era lotes de 50)
 sys.path.insert(0, BASE)
 import aparelho_atual as ap  # noqa: E402
 ID_APARELHO = ap.id_aparelho()  # um robô por aparelho (HORST_ADB_SERIAL)

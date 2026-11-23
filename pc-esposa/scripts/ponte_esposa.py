@@ -412,6 +412,91 @@ def faxina():
     return n
 
 
+# ------------------------------------------------------------------ Filtro automático (a dona, 23/11: "fez a varredura,
+# já tem que ir pra fila do filtro"). Sem Claude: roda dentro da Central, a cada 60 s.
+AFI = os.path.join(TABLET, 'afiliados')
+_AUTO = {'ult': 0, 'msg': ''}
+
+
+def _candidatos_novos():
+    """Produtos da fila do filtro ainda não conferidos, com comissão ok e fora da lista de pulados."""
+    fila = ler(os.path.join(AFI, 'fila_filtro.json'), [])
+    try:
+        linhas = list(csv.DictReader(open(CONFERIDOS, encoding='utf-8-sig'), delimiter=';'))
+    except Exception:
+        linhas = []
+    feitos = {_id(l.get('itemId')) for l in linhas if l.get('decisao') != 'erro'}
+    hoje, erros = f'{datetime.date.today():%Y-%m-%d}', {}
+    for l in linhas:  # 2 erros no mesmo produto hoje = pula (igual ao robô)
+        if l.get('decisao') == 'erro' and str(l.get('data', '')).startswith(hoje):
+            erros[_id(l.get('itemId'))] = erros.get(_id(l.get('itemId')), 0) + 1
+    feitos |= {k for k, n in erros.items() if n >= 2}
+    try:
+        import pular_afiliados
+        feitos |= pular_afiliados.ids()
+    except Exception:
+        pass
+    rg = ler(os.path.join(AFI, 'regua_filtro.json'), {})
+    try:
+        minimo = float(rg.get('comissao_min_taxa_alta') or rg.get('comissao_min') or 0)
+    except Exception:
+        minimo = 0
+    out = []
+    for c in fila if isinstance(fila, list) else []:
+        k = _id(c.get('itemId'))
+        try:
+            com = c.get('comissao_rs')
+            baixa = com not in (None, '') and float(com) < minimo
+        except Exception:
+            baixa = False
+        if k and k not in feitos and not baixa:
+            out.append(k)
+    return out
+
+
+def auto_filtro():
+    import sys
+    if AFI not in sys.path:
+        sys.path.insert(0, AFI)
+    try:
+        import ponte_candidatos
+        n = ponte_candidatos.importar()  # candidatos-AAAA-MM-DD.json da varredura -> afiliados\fila_filtro.json
+        if n:
+            log(f'filtro automático: +{n} produtos da varredura na fila do filtro')
+    except Exception as e:
+        log(f'filtro automático: importar falhou {e!r}')
+    ap = ler(APARELHOS, {})
+    cel = [k for k in ('celular1', 'celular2') if not str((ap.get(k) or {}).get('usb') or '<').startswith('<')]
+    if not cel:
+        return
+    cid = cel[0]
+    if os.path.exists(os.path.join(AFI, 'PARAR')) or os.path.exists(os.path.join(AFI, f'PARAR_{cid}')):
+        return  # ela desligou o filtro: não religa sozinho
+    try:
+        parada = open(os.path.join(AFI, f'parada_{cid}.txt'), encoding='utf-8').read().strip()
+    except OSError:
+        parada = ''
+    if parada and not parada.startswith('normal: lista acabou'):
+        return  # parou por captcha/login/erro/meta: espera ela
+    if time.time() - _AUTO['ult'] < 10 * 60:
+        return  # não fica tentando a cada minuto se o celular estiver ocupado
+    novos = _candidatos_novos()
+    if not novos:
+        return
+    _AUTO['ult'] = time.time()
+    try:
+        import urllib.request
+        corpo = json.dumps({'card': 'afiliados', 'acao': 'ligar', 'dispositivos': [cid]}).encode('utf-8')
+        req = urllib.request.Request('http://127.0.0.1:8765/api/acao', data=corpo, headers={'Content-Type': 'application/json'})
+        r = json.loads(urllib.request.urlopen(req, timeout=30).read().decode('utf-8'))
+        msg = r.get('msg') or ''
+    except Exception as e:
+        msg = f'erro {e!r}'
+    if msg != _AUTO['msg'] or 'Filtro no' in msg:
+        log(f'filtro automático: {len(novos)} produtos novos -> {msg}')
+    _AUTO['msg'] = msg
+
+
 def loop():
     ult_faxina = 0
     while True:
@@ -422,6 +507,10 @@ def loop():
                 faxina()
         except Exception as e:
             log(f'loop: {e!r}')
+        try:
+            auto_filtro()
+        except Exception as e:
+            log(f'auto_filtro: {e!r}')
         time.sleep(60)
 
 

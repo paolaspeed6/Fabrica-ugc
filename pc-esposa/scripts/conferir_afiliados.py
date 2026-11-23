@@ -970,7 +970,8 @@ def decidir_1011(r):
     if vmax is not None and vmax >= VIEWS_VENCEDOR:
         return 'descarta', f'já tem vídeo vencedor ({vmax} visualizações)'
     sem_views = ' · views não lidas' if v > 0 and vmax is None else ''
-    if EXIGIR_V7 and not (v7 or 0) > 0:  # perfil exige venda na semana
+    sem_fonte_v7 = v7 is None and not _VR  # PC Paola 23/11: sem vendas_recentes.json não há como exigir; decide pelo resto
+    if EXIGIR_V7 and not (v7 or 0) > 0 and not sem_fonte_v7:  # perfil exige venda na semana
         if v7 is None:
             return 'revisar', f'{v} vídeos · venda da semana desconhecida (perfil {PERFIL_NOME} exige)'
         return 'descarta', f'{v} vídeos · sem venda na semana (perfil {PERFIL_NOME} exige)'
