@@ -1,6 +1,6 @@
 @echo off
 cd /d C:\horst\tablet
-if not defined HORST_ADB_SERIAL set HORST_ADB_SERIAL=<IP_DO_CELULAR1>:5555
+if not defined HORST_ADB_SERIAL set "HORST_ADB_SERIAL=<IP_DO_CELULAR1>:5555"
 if not defined HORST_ID if "%HORST_ADB_SERIAL%"=="<SERIAL_CELULAR2>" (set HORST_ID=celular2) else set HORST_ID=celular1
 if not defined HORST_ID set HORST_ID=celular1
 set PYTHONPATH=C:\horst\tablet\pylibs

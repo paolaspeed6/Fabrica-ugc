@@ -5,8 +5,8 @@ cd /d C:\horst\tablet
 set PYTHONPATH=C:\horst\tablet\pylibs
 set PYTHONIOENCODING=utf-8
 rem A Central ja manda HORST_ADB_SERIAL; o argumento so vale quando rodar na mao
-if not defined HORST_ADB_SERIAL if /i "%~1"=="celular2" set HORST_ADB_SERIAL=<SERIAL_CELULAR2>
-if not defined HORST_ADB_SERIAL set HORST_ADB_SERIAL=<IP_DO_CELULAR1>:5555
+if not defined HORST_ADB_SERIAL if /i "%~1"=="celular2" set "HORST_ADB_SERIAL=<SERIAL_CELULAR2>"
+if not defined HORST_ADB_SERIAL set "HORST_ADB_SERIAL=<IP_DO_CELULAR1>:5555"
 if exist PARAR_curtidas del /q PARAR_curtidas
 if /i "%~1"=="celular1" if exist PARAR_curtidas_celular1 del /q PARAR_curtidas_celular1
 if /i "%~1"=="celular2" if exist PARAR_curtidas_celular2 del /q PARAR_curtidas_celular2

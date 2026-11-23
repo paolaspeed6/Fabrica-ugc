@@ -7,8 +7,8 @@ if /i not "%~1"=="celular1" if /i not "%~1"=="celular2" (
   echo Use: ligar_aparelho.cmd celular1 ou celular2
   exit /b 1
 )
-if not defined HORST_ADB_SERIAL if /i "%~1"=="celular1" set HORST_ADB_SERIAL=<IP_DO_CELULAR1>:5555
-if not defined HORST_ADB_SERIAL if /i "%~1"=="celular2" set HORST_ADB_SERIAL=<SERIAL_CELULAR2>
+if not defined HORST_ADB_SERIAL if /i "%~1"=="celular1" set "HORST_ADB_SERIAL=<IP_DO_CELULAR1>:5555"
+if not defined HORST_ADB_SERIAL if /i "%~1"=="celular2" set "HORST_ADB_SERIAL=<SERIAL_CELULAR2>"
 set HORST_ID=%~1
 if exist C:\horst\tablet\afiliados\PARAR_%~1 del /q C:\horst\tablet\afiliados\PARAR_%~1
 call C:\horst\tablet\afiliados\ligar_afiliados.cmd
