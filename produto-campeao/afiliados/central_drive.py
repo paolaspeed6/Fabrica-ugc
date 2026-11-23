@@ -6,6 +6,7 @@ uso:
   python3 -I central_drive.py candidatos AAAA-MM-DD [tarde]   produtos da varredura -> filtro do PC (candidatos-<dia>[_tarde].json)
   python3 -I central_drive.py pular                   lista anti-repetido do filtro (produzidos, Kevin, descartados)
   python3 -I central_drive.py conferir <pasta_do_lote>      conferir_docs/*.json -> Central Esposa/conferir/ (aba Conferir do PC)
+  python3 -I central_drive.py painel                  números da fábrica (gasto, lotes) para a Central do PC
   python3 -I central_drive.py ler                     imprime ordens de produção, decisões da Conferência e postados do PC
   python3 -I central_drive.py status <arquivo.json>   grava producao_status.json (andamento e gasto dos pedidos)
 
@@ -134,6 +135,22 @@ def conferir(tk, lote):
     print(n, 'produto(s) na aba Conferir do PC')
 
 
+def painel(tk):
+    """Números da fábrica para a Central do PC: gasto do mês/total, lotes (vídeos e US$), última busca."""
+    import subprocess, tempfile
+    raiz = os.path.join(AQUI, '..', '..')
+    with tempfile.TemporaryDirectory() as t:
+        os.makedirs(os.path.join(t, 'posts'))
+        out = subprocess.run([sys.executable, '-I', os.path.join(raiz, 'paginas', 'central', 'montar.py'), t],
+                             capture_output=True, text=True, check=True).stdout
+    p = json.loads(out)
+    dados = {k: p.get(k) for k in ('gasto', 'lotes', 'varredura', 'atualizado_em', 'nao_medido')}
+    dados['lotes'] = [{k: l.get(k) for k in ('nome', 'produtos', 'videos', 'usd')} for l in (dados['lotes'] or [])]
+    c, _ = central(tk)
+    gravar(tk, 'painel.json', c, dados)
+    print('painel.json: mês US$', dados['gasto'].get('mes_usd'), '·', len(dados['lotes']), 'lotes')
+
+
 def ler(tk):
     c, _ = central(tk)
     print(json.dumps({k: baixar(tk, k, c, {}) for k in ('ordem_producao.json', 'producao_status.json',
@@ -154,6 +171,8 @@ def main():
         pular(tk)
     elif a[0] == 'conferir':
         conferir(tk, a[1])
+    elif a[0] == 'painel':
+        painel(tk)
     elif a[0] == 'ler':
         ler(tk)
     elif a[0] == 'status':

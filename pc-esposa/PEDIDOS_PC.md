@@ -12,3 +12,4 @@ Nunca: subir fila.json, postados.json, aparelhos.json, prints, vídeos ou chaves
 
 ## Pedidos
 (formato: `- [ABERTO|FEITO] AAAA-MM-DD quem: o que fazer → resultado`)
+- [ABERTO] 2026-11-23 fábrica: atualizar a Central do PC → `git pull`, copiar `pc-esposa/scripts/ponte_esposa.py` e `pc-esposa/scripts/central/ui/esposa.html` para `C:\horst\tablet\` (mesmos subcaminhos), fechar e abrir a Central. Novidade: painel da fábrica (gasto de IA do mês, vídeos feitos, última busca, lotes) lido de `Central Esposa\painel.json`.

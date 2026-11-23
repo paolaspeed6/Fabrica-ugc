@@ -128,6 +128,7 @@ function central(){const R=E.robos||{},P=E.producao||{},pd=E.postados_dia||[],ho
   ${pn("Fila de postagem",R.shopee?"postando":"parada",R.shopee?"ok":"",`<div class="big">${(E.fila||[]).length}<small>vídeos esperando</small></div><div class="mut">1 por produto por dia · 8-12 min · 08h-22h</div>`)}
   ${pn("Para conferir",(E.conferir||[]).length?"seu Ok":"em dia",(E.conferir||[]).length?"am":"ok",`<div class="big">${(E.conferir||[]).length}<small>produtos</small></div><div class="mut">${(E.na_fila_conferidos||[]).length} aceitos ainda postando</div>`)}
   ${pn("Produção",ab.length?ab.length+" pedido(s) abertos":"livre",ab.length?"am":"ok",`<div class="big">${fila_prod().length}<small>na fila de produção</small></div><div class="mut">aprovados pelo filtro, esperando sua ordem</div>`)}</div>
+  ${fabrica()}
   <div class="g3">${pn("Linha do dia","agora","",`<div class="tl">
     <div><b class="${bola(R.afiliados,tinder_novos().length)}"></b><strong>Filtro</strong><span>${R.afiliados?"filtrando agora":"parado"}</span></div>
     <div><b class="${fila_prod().length?"am":"ok"}"></b><strong>Produção</strong><span>${fila_prod().length} na fila, esperando sua ordem</span></div>
@@ -137,6 +138,13 @@ function central(){const R=E.robos||{},P=E.producao||{},pd=E.postados_dia||[],ho
     <div><b class="${R.assistir?"ok":""}"></b><strong>Assistir</strong><span>${R.assistir?"assistindo seus vídeos":"parado"}</span></div></div>`)}
   ${pn("Últimos postados",E.postados_total?E.postados_total+" no total":"","ok",(E.postados||[]).slice(0,6).map(p=>`<div class="al"><div>${esc(p.produto||p.doc)}<small>${hm(p.em)} · ${esc(p.doc.slice(-1))}</small></div></div>`).join("")||'<div class="mut">Nenhum post ainda.</div>')}
   ${pn("Pedidos à fábrica",ped.length?ped.length+"":"","",ped.slice(0,6).map(p=>`<div class="al"><div>${p.n} produto(s) · teto ${usd(p.teto_usd)}<small>${hm(p.em)} · ${esc(p.estado)}${p.gasto_usd!=null?" · gasto "+usd(p.gasto_usd):""}</small></div></div>`).join("")||'<div class="mut">Nenhum pedido ainda.</div>')}</div>`}
+function fabrica(){const F=E.fabrica||{},G=F.gasto||{},L=(F.lotes||[]).slice(0,8),V=F.varredura||{};
+  if(!G.mes_usd&&!L.length)return "";
+  const mx=Math.max(1,...L.map(l=>l.usd||0));
+  return `<div class="k4">${pn("Gasto de IA no mês","teto US$ "+(G.teto_lote_usd||8)+"/lote","am",`<div class="big">${usd(G.mes_usd)}<small>total ${usd(G.total_usd)}</small></div><div class="spark">${L.slice().reverse().map(l=>`<i style="height:${Math.max(6,(l.usd||0)/mx*100)}%;background:var(--amb)" title="${esc(l.nome)}: ${usd(l.usd)}"></i>`).join("")}</div>`)}
+   ${pn("Vídeos feitos",L[0]?"últ. "+esc(L[0].nome):"","",`<div class="big">${(F.lotes||[]).reduce((s,l)=>s+(l.videos||0),0)}<small>${(F.lotes||[]).length} lotes</small></div><div class="mut">média ${usd((F.lotes||[]).reduce((s,l)=>s+(l.usd||0),0)/Math.max(1,(F.lotes||[]).length))} por lote</div>`)}
+   ${pn("Última busca",V.dia||"","ok",`<div class="big">${V.novos??"–"}<small>produtos novos</small></div><div class="mut">05:41 e 16:41 · vão para o filtro do celular</div>`)}
+   ${pn("Lotes recentes","","",L.slice(0,4).map(l=>`<div class="al"><div>${esc(l.nome)}<small>${l.produtos} produtos · ${l.videos} vídeos</small></div><b style="color:var(--amb)">${usd(l.usd)}</b></div>`).join("")||'<div class="mut">–</div>')}</div>`}
 function tinder(){const F=fila_prod().slice(0,60);
   if(!F.length)return '<div class="vazio">Nenhum produto aprovado pelo filtro ainda. Quando o robô de filtro aprovar, entra aqui sozinho.</div>';
   const n=Math.min(15,F.length);

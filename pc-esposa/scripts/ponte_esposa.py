@@ -345,7 +345,8 @@ def estado():
             'fila': [{'doc': i.get('doc'), 'produto': i.get('produto') or ''} for i in fila if i.get('doc') not in post][:200],
             'postados': [{'doc': d, **v} for d, v in ult], 'postados_total': len(post),
             'postados_dia': [[d, por_dia.get(d, 0)] for d in dias],
-            'producao': producao_estado()}
+            'producao': producao_estado(),
+            'fabrica': ler(os.path.join(central(), 'painel.json'), {}) if central() else {}}
 
 
 def faxina():
