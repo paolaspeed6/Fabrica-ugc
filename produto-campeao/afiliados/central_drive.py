@@ -97,6 +97,13 @@ def candidatos(tk, dia, tarde):
         return
     criar(tk, nome, c, out)
     print(nome, len(out), 'produtos para o filtro do PC')
+    # Drive limpo (a dona, 23/11): listas de candidatos com mais de 3 dias saem (o PC já importou)
+    import datetime
+    limite = (datetime.date.fromisoformat(dia) - datetime.timedelta(days=3)).isoformat()
+    for f in d.listar(tk, f"name contains 'candidatos-' and '{c}' in parents and trashed = false"):
+        if f['name'][11:21] < limite:
+            d.chamar(tk, 'DELETE', f"{d.API}/files/{f['id']}")
+            print('apagado do Drive:', f['name'])
 
 
 def pular(tk):
