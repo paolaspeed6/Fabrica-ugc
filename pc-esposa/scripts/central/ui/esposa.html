@@ -199,7 +199,7 @@ function robos(){const R=E.robos||{},C=E.captcha||{};
   <div class="g3">${L.map(([k,t,d])=>`<section class="pn robo"><div><h3><span class="luz ${R[k]?"on":""}"></span>${t}</h3><div class="mut">${d}</div></div><div class="row"><button class="bt ok" data-robo="${k}" data-a="ligar" ${R[k]?"disabled":""}>Ligar</button><button class="bt" data-robo="${k}" data-a="desligar" ${R[k]?"":"disabled"}>Parar</button></div></section>`).join("")}</div>
   ${E.erro_fila?pn("Erro da fila de postagem","parada","vm",`<pre class="mut" style="white-space:pre-wrap;margin:0">${esc(E.erro_txt)}</pre><div class="row"><button class="bt am" data-destravar>Destravar e continuar</button></div>`):""}
   ${(E.ponte_erros||[]).length?pn("Avisos da ligação com a fábrica","","am",`<pre class="mut" style="white-space:pre-wrap;margin:0">${esc(E.ponte_erros.join("\n"))}</pre>`):""}
-  <div class="row"><a class="bt" href="/kevin" style="text-decoration:none">Painel completo (avançado)</a></div>`}
+`}
 document.addEventListener("click",async ev=>{const b=ev.target.closest("button,input");if(!b)return;
   if(b.dataset.aba){ABA=b.dataset.aba;try{localStorage.setItem("aba_esposa",ABA)}catch(e){};ocupado=false;return desenhar()}
   const card=b.closest("[data-id]");
