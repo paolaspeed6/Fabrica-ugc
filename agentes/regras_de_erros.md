@@ -377,3 +377,12 @@ e a fiscal só comparava com a foto 01 de forma branda (antes da K30). Cada víd
 - Limpeza automática no PC (1x/dia): vídeos postados há 2 dias, recusados e versões não escolhidas saem do Drive; prints > 15 dias; backups > 7 dias.
 - (PC, 23/11) Em .cmd/.bat, placeholder com `<...>` só dentro de `set "VAR=valor"` ou entre aspas: sem aspas o `<`/`>` vira redirecionamento e o cmd.exe recusa o arquivo inteiro (nenhum robô ligava).
 - (PC, 23/11) O PC não se atualiza sozinho: toda mudança em `pc-esposa/scripts/` vira pedido [ABERTO] em `pc-esposa/PEDIDOS_PC.md` com a lista exata de arquivos e se reinicia a Central. Nunca copiar os dados/ajustes dela (aparelhos.json, assistir\layout.json, fila.json, postados.json, afiliados\conferidos.csv, perfis_filtro.json, regua_filtro.json). Testar o caminho inteiro (botão → robô rodando), não só compilar.
+
+## Regra da dona 25/11: "jamais sugerir produto repetido para mim e para o Kevin" (trava Kevin)
+Erro: de 10/11 a 25/11 a rotina procurava os `excluidos_kevin_*` com o token GDRIVE_* (escopo drive.file), que NÃO enxerga
+arquivos do Kevin -> "nada novo" por 15 dias; 34 produtos dele entraram no Tinder dela (3 viraram vídeo) e 1 entrou num lote pago.
+- A pasta do Kevin (1cYV-TSkE_cFpWPrItY5L65JD5s5rcDi6) só se lê com o **conector Google Drive** (search_files parentId=... title contains 'kevin').
+- Toda varredura: listar com o conector -> títulos num .txt -> baixar os não juntados -> `python3 trava_kevin.py registrar <txt> <baixados>`
+  -> `python3 trava_kevin.py cruzar` (o que sair: marcar no Tinder status "descartado", motivo "kevin", e somar em kevin_tirados_do_tinder.json).
+- `semear_diaria.py` NÃO roda sem checagem do Kevin com menos de 8 h (kevin_checado.json). `gerar.py` pula sozinho pNN do Kevin (link do anuncio.json).
+- Lote novo: rodar `trava_kevin.py lote <pasta>` antes de gastar. Produto "pronto" já feito não se apaga (avisar a dona).

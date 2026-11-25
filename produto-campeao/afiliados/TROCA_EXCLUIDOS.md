@@ -8,9 +8,10 @@ O Kevin compartilha com ela a pasta "Horst Ads Excluídos" no Google Drive, como
 
 Na rotina diária dela, com o conector Google Drive ligado:
 
-**Antes de varrer**
+**Antes de varrer** (25/11: obrigatório; sem isso o `semear_diaria.py` recusa)
+0. NUNCA use o token GDRIVE_*/central_drive para isso (não vê os arquivos do Kevin). Só o conector Google Drive.
 1. Procure na pasta "Horst Ads Excluídos" (compartilhada com ela) os arquivos com título `excluidos_kevin_*.json`. Baixe só os que ainda não foram juntados; anote os títulos já juntados em `excluidos_juntados.txt`.
-2. Rode `python3 trocar_excluidos.py juntar esposa <arquivos baixados>` e acrescente os títulos ao `excluidos_juntados.txt`.
+2. Grave TODOS os títulos vistos num .txt e rode `python3 trava_kevin.py registrar <txt> <arquivos baixados>` (junta, anota em excluidos_juntados.txt e grava kevin_checado.json). Depois `python3 trava_kevin.py cruzar` e tire do Tinder o que sair.
 
 **Depois de semear o Tinder**
 3. Rode `python3 trocar_excluidos.py gerar esposa candidatos-<data>.json excluidos_esposa_<data>.json`, com os ids que ela semeou hoje.

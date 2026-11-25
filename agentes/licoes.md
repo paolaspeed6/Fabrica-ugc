@@ -33,3 +33,4 @@
   (refeita grátis). Só a 3ª linha pode ser null; o `textos.py` agora trava antes dos clipes.
 - 13/11: texto dos layouts A e C cobria lustres e plafons (produto no topo). Regra K28; o editor mede e desce o texto sozinho.
 - 13/11: a dona quer legenda da Shopee só com palavras-chave de busca e hashtags do produto. Regra K29.
+- 25/11: a troca com o Kevin ficou 15 dias cega (token sem acesso aos arquivos dele) e eu reportava "nada novo". Agora há trava em código (trava_kevin.py) que impede semear e gerar sem a checagem pelo conector.

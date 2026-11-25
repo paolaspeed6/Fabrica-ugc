@@ -193,6 +193,15 @@ if __name__ == "__main__":
     tarefas = [t for t in tarefas if t] or [(p, c) for p in ps for c in cenas]
     tarefas = [t for t in tarefas if t[1]] if all(len(p) == 4 for p in ps if p) else [(p, c) for p in ps for c in cenas]
 
+    # 25/11 (a dona): produto do Kevin nunca vira vídeo dela. Confere o link do anúncio de cada pNN contra excluidos.json.
+    sys.path.insert(0, str(B.parents[2] / "produto-campeao" / "afiliados")); import trava_kevin
+    kev = trava_kevin.kevin_ids(); proibidos = set()
+    for p in {t[0] for t in tarefas}:
+        a = B / f"{p}-fotos" / "anuncio.json"
+        if a.exists() and trava_kevin.item_de_link(json.loads(a.read_text()).get("link")) in kev: proibidos.add(p)
+    if proibidos: print("PULADO (produto do Kevin):", sorted(proibidos), flush=True)
+    tarefas = [t for t in tarefas if t[0] not in proibidos]
+
     def run(pc):
         try: return fn(*pc)
         except Exception as e: return f"{pc} ERRO {e}"
