@@ -1,11 +1,18 @@
 {
- "quando": "2026-11-25T14:29:08.612483+00:00",
- "epoch": 1795616948.612496,
+ "quando": "2026-11-25T21:56:45.800734+00:00",
+ "epoch": 1795643805.8007512,
  "titulos": [
   "excluidos_kevin_2026-11-25.json",
   "excluidos_kevin_2026-11-24.json",
   "excluidos_kevin_2026-11-10_bonus.json",
   "excluidos_kevin_2026-11-10.json",
   "excluidos_kevin_2026-11-10_inicial.json"
- ]
+ ],
+ "mods": {
+  "excluidos_kevin_2026-11-25.json": "2026-11-25T21:51:13.087Z",
+  "excluidos_kevin_2026-11-24.json": "2026-11-25T02:04:53.175Z",
+  "excluidos_kevin_2026-11-10_bonus.json": "2026-11-10T21:30:12.960Z",
+  "excluidos_kevin_2026-11-10.json": "2026-11-10T19:29:30.604Z",
+  "excluidos_kevin_2026-11-10_inicial.json": "2026-11-10T16:10:17.452Z"
+ }
 }

@@ -391,3 +391,5 @@ arquivos do Kevin -> "nada novo" por 15 dias; 34 produtos dele entraram no Tinde
 O filtro de afiliados do PC só recebia produtos (Drive → PC) e o resultado não voltava: o Tinder mostrava produtos que o PC já tinha dado como "fora".
 Agora: o PC grava `Central Esposa\filtro_resultado.json` (`pc-esposa/scripts/afiliados/resultado_drive.py`); a rotina 2x/dia baixa com o CONECTOR
 Google Drive → `central_drive.py filtro <arquivo>` → ArtifactData set `config/filtro_pc`. A página do Tinder tira os "fora", sobe os aprovados (⭐) e esconde os do Kevin.
+- 25/11 (tarde): o Kevin REGRAVA o `excluidos_kevin_<data>.json` do dia (mesmo nome, +41 ids às 18:51). Checar só o título deixava esses de fora.
+  Agora o .txt do `trava_kevin.py registrar` leva `título<TAB>modifiedTime` e a trava recusa se um arquivo mudou e não foi baixado de novo.
