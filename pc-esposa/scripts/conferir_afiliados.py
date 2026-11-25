@@ -1417,6 +1417,11 @@ def main():
             r['prioridade'] = prioridade(r)
             salvar_fim(r.get('itemId'))
             gravar(r)
+            try:  # 25/11 (a dona): resultado do filtro vai para o Drive -> Tinder
+                sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'afiliados'))
+                import resultado_drive; resultado_drive.exportar()
+            except Exception as e:
+                log(f'(resultado para o Tinder falhou: {e!r})')
             if r.get('decisao') in ('erro', 'erro_carregar'):
                 ap.liberar(r.get('itemId'))  # libera a reserva (Kevin 21/11)
             if r.get('decisao') == 'aprovado':

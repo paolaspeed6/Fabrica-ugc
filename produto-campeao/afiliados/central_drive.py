@@ -3,6 +3,7 @@
 
 uso:
   python3 -I central_drive.py semear                  cria a pasta e os arquivos que o PC reescreve no lugar (1x; idempotente)
+  python3 -I central_drive.py filtro [filtro_resultado.json baixado pelo conector]  filtro do PC -> Tinder (config/filtro_pc)
   python3 -I central_drive.py candidatos AAAA-MM-DD [tarde]   produtos da varredura -> filtro do PC (candidatos-<dia>[_tarde].json)
   python3 -I central_drive.py pular                   lista anti-repetido do filtro (produzidos, Kevin, descartados)
   python3 -I central_drive.py conferir <pasta_do_lote>      conferir_docs/*.json -> Central Esposa/conferir/ (aba Conferir do PC)
@@ -185,6 +186,30 @@ def ler(tk):
                      ensure_ascii=False, indent=1))
 
 
+def filtro(tk, arq=None):
+    """25/11 (a dona): resultado do filtro do PC -> Tinder. O PC grava filtro_resultado.json na Central Esposa
+    (afiliados\\resultado_drive.py). Arquivo criado pelo PC: o token drive.file pode não enxergar -> baixe com o
+    CONECTOR Google Drive e passe o caminho. Grava filtro_pc_doc.json = doc config/filtro_pc do Tinder
+    {r: só ids do Tinder, k: ids do Kevin que estão no Tinder} (a página tira "descarta" e os do Kevin, sobe os aprovados)."""
+    import glob
+    if arq:
+        dados = json.load(open(arq, encoding='utf-8-sig'))
+    else:
+        c, _ = central(tk)
+        dados = baixar(tk, 'filtro_resultado.json', c, {})
+    meus = set()
+    for f in glob.glob(os.path.join(AQUI, 'listas', '*.ids.json')):
+        meus |= set(map(str, json.load(open(f))))
+    r = {i: v[:4] for i, v in (dados.get('r') or {}).items() if i in meus}
+    import trava_kevin
+    k = sorted(meus & trava_kevin.kevin_ids())
+    doc = {'quando': dados.get('quando', ''), 'r': r, 'k': k}
+    json.dump(doc, open(os.path.join(AQUI, 'filtro_pc_doc.json'), 'w'), ensure_ascii=False)
+    n = lambda x: sum(1 for v in r.values() if v[0] == x)
+    print(f"filtro do PC ({doc['quando'] or 'sem arquivo'}): {n('aprovado')} aprovados, {n('descarta')} fora, "
+          f"{n('revisar')} revisar no Tinder; {len(k)} do Kevin escondidos -> filtro_pc_doc.json (ArtifactData set config/filtro_pc)")
+
+
 def main():
     a = sys.argv[1:]
     if not a:
@@ -198,6 +223,8 @@ def main():
         pular(tk)
     elif a[0] == 'conferir':
         conferir(tk, a[1])
+    elif a[0] == 'filtro':
+        filtro(tk, a[1] if len(a) > 1 else None)
     elif a[0] == 'painel':
         painel(tk)
     elif a[0] == 'ler':

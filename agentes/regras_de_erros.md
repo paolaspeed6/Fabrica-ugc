@@ -386,3 +386,8 @@ arquivos do Kevin -> "nada novo" por 15 dias; 34 produtos dele entraram no Tinde
   -> `python3 trava_kevin.py cruzar` (o que sair: marcar no Tinder status "descartado", motivo "kevin", e somar em kevin_tirados_do_tinder.json).
 - `semear_diaria.py` NÃO roda sem checagem do Kevin com menos de 8 h (kevin_checado.json). `gerar.py` pula sozinho pNN do Kevin (link do anuncio.json).
 - Lote novo: rodar `trava_kevin.py lote <pasta>` antes de gastar. Produto "pronto" já feito não se apaga (avisar a dona).
+
+## Regra da dona 25/11: filtro do PC sincronizado com o Tinder
+O filtro de afiliados do PC só recebia produtos (Drive → PC) e o resultado não voltava: o Tinder mostrava produtos que o PC já tinha dado como "fora".
+Agora: o PC grava `Central Esposa\filtro_resultado.json` (`pc-esposa/scripts/afiliados/resultado_drive.py`); a rotina 2x/dia baixa com o CONECTOR
+Google Drive → `central_drive.py filtro <arquivo>` → ArtifactData set `config/filtro_pc`. A página do Tinder tira os "fora", sobe os aprovados (⭐) e esconde os do Kevin.

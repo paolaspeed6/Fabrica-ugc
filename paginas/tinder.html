@@ -236,10 +236,16 @@ function grupos(){
     return g;
   }
   for(const it of itens){ const s=st(it);
+    // 25/11: produto do Kevin nunca aparece para escolher nem na Fila (a dona: nada repetido com o Kevin)
+    if(kevinSet.has(String(it._id))&&(s==="novo"||s==="aprovado")) continue;
+    // 25/11: o filtro do PC disse "fora" -> sai do Escolher
+    const f=fpc.r[String(it._id)];
+    if(s==="novo"&&f&&f[0]==="descarta"){ g.descartados.push(it); continue; }
     if(s==="novo") g.escolher.push(it); else if(s==="aprovado") g.fila.push(it);
     else if(s==="descartado") g.descartados.push(it); else g.producao.push(it); }
   // 19/11 (a dona): produtos de Natal (natal:true) ficam no início do Escolher; Réveillon (reveillon:true) logo depois.
-  g.escolher.sort((a,b)=>(b.natal?1:0)-(a.natal?1:0)||(b.reveillon?1:0)-(a.reveillon?1:0)||(b.dia||"").localeCompare(a.dia||"")||b.pontos-a.pontos);
+  const rk=it=>{const f=fpc.r[String(it._id)]; return !f?0:f[0]!=='aprovado'?0:f[1]==='sim'?2:1;};
+  g.escolher.sort((a,b)=>rk(b)-rk(a)||(b.natal?1:0)-(a.natal?1:0)||(b.reveillon?1:0)-(a.reveillon?1:0)||(b.dia||"").localeCompare(a.dia||"")||b.pontos-a.pontos);
   // 19/11 (a dona: "aprovo e não vai pra fila"): a Fila tinha os mais antigos no topo e os recém-aprovados sumiam lá embaixo. Agora o mais novo vem primeiro.
   g.fila.sort((a,b)=>(b.decidido_em||"").localeCompare(a.decidido_em||""));
   return g;
@@ -290,6 +296,7 @@ function cartao(it,total){
   if(it.extra_vendedor) chips.append(el("span","chip","comissão extra"));
   if(it.nota) chips.append(el("span","chip","nota "+it.nota));
   if(it.possivel_duplicata) chips.append(el("span","chip dup","⚠ possível duplicata da mesma loja"));
+  { const f=fpc.r[String(it._id)]; if(f&&f[0]==="aprovado") chips.append(el("span","chip top",(f[1]==="sim"?"⭐ ":"✓ ")+"aprovado no PC"+(f[2]!==""&&f[2]!=null?" · "+f[2]+" vídeos":""))); else if(f&&f[0]==="revisar") chips.append(el("span","chip","PC: revisar")); }
   if(it.natal) chips.append(el("span","chip","🎄 Natal"));
   if(it.reveillon) chips.append(el("span","chip","🎆 Réveillon"));
   if(it.largo) chips.append(el("span","chip dup","⚠ largo: a IA costuma cortar, gasta mais"));
@@ -475,6 +482,8 @@ try{ if(localStorage.getItem("modo")==="redes") trocarModo("redes"); }catch(_){}
 
 // ===== Central (central de comando) =====
 let painel=null, verCentral=false, ligado=false;
+// 25/11 (a dona): filtro do PC -> Tinder. config/filtro_pc = {r:{id:[decisao,prioridade,videos,vendas]}, k:[ids do Kevin]}
+let fpc={r:{},k:[]}, kevinSet=new Set();
 const POSTAGENS="https://claude.ai/artifact/7HYeGG32XBtjXTcMMoffJt";
 const usd=v=>"US$ "+Number(v||0).toLocaleString("pt-BR",{minimumFractionDigits:2,maximumFractionDigits:2});
 const nf=v=>Number(v||0).toLocaleString("pt-BR");
@@ -593,6 +602,7 @@ const ultDia=l=>{ const d=[...new Set(l.map(i=>i.dia).filter(Boolean))].sort(); 
   db = await (window.claude?.use ? window.claude.use("db") : null);
   if(!db){ render(); return; }
   db.doc("central/painel").onSnapshot(s=>{ ligado=true; painel=s.exists?s.data():null; render(); }, ()=>{ ligado=false; render(); });
+  db.doc("config/filtro_pc").onSnapshot(s=>{ const d=s.exists?s.data():null; fpc={r:(d&&d.r)||{},k:(d&&d.k)||[]}; kevinSet=new Set(fpc.k.map(String)); render(); }, ()=>{});
   db.doc("config/geral").onSnapshot(s=>{ const d=s.exists?s.data():null; if(d&&d.lote_min) { loteMin=d.lote_min; render(); } });
   // 15/11: com mais de 2.000 produtos a coleção inteira não carrega mais de uma vez (a tela ficava zerada).
   // Carrega por partes: os mais recentes (Escolher e decisões recentes), a Fila, a Produção e os descartados mais novos.
