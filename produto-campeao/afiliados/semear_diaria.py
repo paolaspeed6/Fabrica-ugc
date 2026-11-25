@@ -4,6 +4,7 @@ uso: python3 semear_diaria.py AAAA-MM-DD [tarde]   (lê candidatos-<data>.json, 
 import json, sys, time, glob, os, base64, io
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'vendas'))
 from link_subid import link
+import sys as _s, os as _o; _s.path.insert(0, _o.path.dirname(_o.path.abspath(__file__)))
 import trava_kevin; trava_kevin.trava()  # 25/11: sem checar o Drive do Kevin com o conector, não semeia
 tarde = len(sys.argv) > 2 and sys.argv[2] == 'tarde'
 dia = sys.argv[1]; aa, mm, dd = dia[2:4], dia[5:7], dia[8:10]

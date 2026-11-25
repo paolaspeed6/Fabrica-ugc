@@ -201,7 +201,7 @@ def filtro(tk, arq=None):
     for f in glob.glob(os.path.join(AQUI, 'listas', '*.ids.json')):
         meus |= set(map(str, json.load(open(f))))
     r = {i: v[:4] for i, v in (dados.get('r') or {}).items() if i in meus}
-    import trava_kevin
+    sys.path.insert(0, AQUI); import trava_kevin
     k = sorted(meus & trava_kevin.kevin_ids())
     doc = {'quando': dados.get('quando', ''), 'r': r, 'k': k}
     json.dump(doc, open(os.path.join(AQUI, 'filtro_pc_doc.json'), 'w'), ensure_ascii=False)
