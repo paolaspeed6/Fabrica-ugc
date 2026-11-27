@@ -3,6 +3,12 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 25/11 B (27/11 UTC; pedido do botão 20261125-112411, teto US$ 3; trabalhos p600-p603, N0=600 por rodar junto com a 27/11 A)
+- 5 itens do pedido; nenhum do Kevin. Pulado p05 Mesa Gamer em L 58218292222 (Shopee não entregou fotos, 4 tentativas).
+- 4 produtos com A, B e C (12 vídeos, 2511B-01..04) na aba Conferir, pendentes. Tinder: os 4 em `pronto`. producao_status: pronto.
+- Gasto US$ 1,55 de 3: 19 imagens (12 + 7 refações, US$ 0,75) + 8 clipes (US$ 0,80).
+- p03 radiador: foto 01 é colagem com carros; refs = fotos 02/03. Fiscal final: 9 OK, 3 AVISO (p04 A/B/C: células da colmeia com tamanhos diferentes).
+
 ## Lista 19/11 C (19/11 ~11h-13h UTC; Réveillon + Fila; trabalhos p560-p573, N0=560 por rodar junto com a 19/11 B)
 - Escolha: 10 decorações de Réveillon aprovadas (reveillon: true) + 5 mais antigas da Fila sem lote (luminária piso 2 em 1, base box dobrável, kit pesca, tapete persa 280x185, mesa cone 45). Nenhuma de Natal, nenhuma do Kevin.
 - Pulado pelo Fichador: p05 Kit painel redondo + romano + capas 54970095614 (taças impressas na arte; só capas). Tinder: `aprovado` + `pulado`.

@@ -8500,5 +8500,77 @@
 "conta": "shopee",
 "trilha": "animada_08_piano_marimba.wav",
 "quando": "2026-11-19 12:11"
+},
+{
+"video": "p600_a_umdia",
+"conta": "shopee",
+"trilha": "animada_05_piano_vibrafone.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p600_b_faixas",
+"conta": "shopee",
+"trilha": "animada_03_piano_sinos.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p600_c_direto",
+"conta": "shopee",
+"trilha": "animada_04_rhodes_violao.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p601_a_umdia",
+"conta": "shopee",
+"trilha": "animada_06_violao_celesta.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p601_b_faixas",
+"conta": "shopee",
+"trilha": "animada_11_piano_flauta.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p601_c_direto",
+"conta": "shopee",
+"trilha": "animada_02_violao_flauta.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p602_a_umdia",
+"conta": "shopee",
+"trilha": "animada_07_rhodes_flauta.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p602_b_faixas",
+"conta": "shopee",
+"trilha": "animada_12_violao_vibrafone.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p602_c_direto",
+"conta": "shopee",
+"trilha": "animada_01_rhodes_vibrafone.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p603_a_umdia",
+"conta": "shopee",
+"trilha": "animada_09_guitarra_vibrafone.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p603_b_faixas",
+"conta": "shopee",
+"trilha": "animada_10_rhodes_sinos.wav",
+"quando": "2026-11-27 15:59"
+},
+{
+"video": "p603_c_direto",
+"conta": "shopee",
+"trilha": "animada_08_piano_marimba.wav",
+"quando": "2026-11-27 15:59"
 }
 ]

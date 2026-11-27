@@ -143,3 +143,7 @@ Problemas de qualidade sem perda (vídeo postado mesmo assim):
 ## Lista 19/11 C (19/11)
 - 13 refações de imagem (US$ 0,51); falharam de novo: p02 A e C, p10 B, p11 A, p14 A e C, p15 A; p03 A, p04 A e p12 A falharam 2x. A Sonnet reprovou 4 já liberadas sem 3ª imagem (p02 B contagem de balões, p06 A garrafa/taças no fundo, p10 C "2027" fantasma, p13 B letras do carretel). 28 clipes (US$ 2,80).
 
+
+## Lista 25/11 B (27/11; pedido 20261125-112411)
+- 7 refações de imagem (US$ 0,28); falharam 2x por borda: p01 A, p04 A. A Sonnet reprovou p04 C (colmeia deformada) sem 3ª imagem. p02 C sem imagem válida.
+- p04 (colmeia LED): o Nano Banana deixa as 5 células com tamanhos diferentes; os 3 vídeos foram com AVISO. p05 Mesa Gamer pulada (Shopee não entregou fotos).
