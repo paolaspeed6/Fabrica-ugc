@@ -158,6 +158,8 @@ const el=(t,c,x)=>{const e=document.createElement(t); if(c) e.className=c; if(x!
 const loteDe=p=>(p._id||"").split(/[_-]/)[0];
 // a dona 02/11: o que entra por último em "Para postar" vai para o FIM da lista (hora do Ok; sem ela, a data do lote)
 const entrou=p=>p.liberado_em||p.dia||"";
+// a dona 27/11: "deixe os produtos que fiz por primeiro": ordem do lote (dia em que o vídeo foi feito), depois a hora do Ok
+const porFeito=(a,b)=>(a.dia||"").localeCompare(b.dia||"")||loteDe(a).localeCompare(loteDe(b))||entrou(a).localeCompare(entrou(b))||(a.ordem||0)-(b.ordem||0);
 const porEntrada=(a,b)=>entrou(a).localeCompare(entrou(b))||(a.dia||"").localeCompare(b.dia||"")||loteDe(a).localeCompare(loteDe(b))||(a.ordem||0)-(b.ordem||0);
 // a dona 02/11: lupa para achar um produto (sem acento, sem maiúscula)
 const semAc=t=>(t||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
@@ -376,16 +378,8 @@ function render(){
   const fim=()=>{ if(pedidos.length){ const s=el("div","sep"); const tx=el("div"); tx.append(el("span",null,"O Claude refaz"),el("b",null,`✏️ Edição pedida (${pedidos.length})`)); s.append(tx); l.append(s); pedidos.forEach(p=>l.append(linhaPedido(p))); }
     if(lixo.length){ const dt=el("details","nota"); dt.append(el("summary",null,`🗑️ Descartados (${lixo.length})`)); lixo.slice(0,60).forEach(p=>dt.append(linhaPedido(p))); l.append(dt); } };
   if(!fazer.length){ l.append(el("div","vazio","Tudo postado. Os vídeos do próximo lote aparecem aqui sozinhos.")); fim(); tela.append(l); return; }
-  // a dona 15/11: um modelo por vez, 2 dias cada (A 15-16/11, B 17-18, C 19-20, A de novo...), para uma punição não pegar os 3 vídeos do produto
-  const R=rodizio(); const letra=p=>((p.versao||"").trim()[0]||"").toUpperCase();
-  const daVez=fazer.filter(p=>!"ABC".includes(letra(p))||letra(p)===R.hoje);
-  const depois=fazer.filter(p=>"ABC".includes(letra(p))&&letra(p)!==R.hoje);
-  { const b=el("div","rodizio"); b.append(el("b",null,`Hoje é dia do Modelo ${R.hoje} · ${NOMES[R.hoje]}`),
-      el("span",null,`${R.ultimo?"último dia":"até amanhã"} · depois: ${R.prox[0][0]} em ${R.prox[0][1]}, ${R.prox[1][0]} em ${R.prox[1][1]}`));
-    const ct={}; depois.forEach(p=>ct[letra(p)]=(ct[letra(p)]||0)+1);
-    if(depois.length) b.append(el("small",null,"Guardados para os próximos dias: "+Object.keys(ct).sort().map(k=>`${ct[k]} do ${k}`).join(", ")));
-    l.append(b); }
-  if(!daVez.length) l.append(el("div","vazio",`Nenhum vídeo ${R.hoje} para postar hoje. Os ${R.prox[0][0]} aparecem em ${R.prox[0][1]}.`));
+  // a dona 27/11: o rodízio de um modelo por dia (15/11) não mudou nada; A, B e C voltam juntos, produtos mais antigos primeiro
+  const daVez=[...fazer].sort(porFeito);
   let atual=null;
   daVez.filter(acha).forEach(p=>{
     const chave=(p.dia||"")+"|"+p.produto; const novo=chave!==atual;
@@ -411,7 +405,7 @@ const TIPOS=["Salto alto","Babuche","Bota texana","Sapatilha","Tênis","Sandáli
 function montaForm(){
   const f=el("form","conf tts-form"); f.noValidate=true;
   const cab=el("div","info"); cab.style.gridColumn="1/-1";
-  cab.append(el("div","tit","Novo pedido"),el("div","nota","Escolha quantos vídeos quiser e, se quiser, cole o link do produto. O Claude devolve 5 criativos de 12 s aqui mesmo."));
+  cab.append(el("div","tit","Novo pedido"),el("div","nota","Escolha quantos criativos quer (1 a 5) e mande pelo menos esse número de vídeos. Cada criativo começa com um vídeo diferente, nunca repetido. Se quiser, cole o link do produto."));
   const link=el("input"); link.type="url"; link.placeholder="Link do produto (opcional)"; link.autocomplete="off";
   const cor=el("input"); cor.type="text"; cor.placeholder="Cor ou variação (opcional)";
   const obs=el("textarea"); obs.placeholder="Observação (opcional)";
@@ -433,24 +427,44 @@ function montaForm(){
   // escolher o gancho de cada vídeo (opcional): "Claude escolhe", um da lista do modelo, ou escrever outro
   // a dona 17/11: primeiro o tipo de calçado; depois os ganchos daquele calçado (5 vídeos: modelos 1, 2, 3, 1, 3)
   const tipoW=el("label","gsel"); tipoW.append(el("span",null,"👠 Qual calçado é? (obrigatório)"));
-  const tipo=el("select"); tipo.append(new Option("Escolha o calçado…","")); TIPOS.forEach(t=>tipo.append(new Option(t,t))); tipoW.append(tipo);
+  const tipo=el("select"); tipo.append(new Option("Escolha o calçado…","")); TIPOS.forEach(t=>tipo.append(new Option(t,t))); tipo.append(new Option("✏️ Outro (escrever)","__outro")); tipoW.append(tipo);
+  // a dona 25/11: escrever o calçado quando ele não está na lista; os ganchos trocam a palavra pela que ela escreveu
+  const outroNome=el("input"); outroNome.type="text"; outroNome.placeholder="Qual é o calçado? Ex.: mule, chinelo, scarpin"; outroNome.hidden=true;
+  const outroGen=el("select"); outroGen.hidden=true; outroGen.append(new Option("o / esse / um (ex.: o mule)","m"),new Option("a / essa / uma (ex.: a bota)","f"));
+  tipoW.append(outroNome,outroGen);
+  // a dona 25/11: escolher quantos criativos produzir (1 a 5); cada um abre com um vídeo diferente
+  // a dona 25/11: título do produto escrito por ela (o Claude não inventa nome)
+  const titW=el("label","gsel"); titW.append(el("span",null,"✍️ Título do vídeo (obrigatório)"));
+  const titulo=el("input"); titulo.type="text"; titulo.maxLength=18; titulo.placeholder="Ex.: Salto Anos 2000 (até 18 letras)"; titW.append(titulo);
+  const qtdW=el("label","gsel"); qtdW.append(el("span",null,"🎬 Quantos vídeos produzir?"));
+  const qtd=el("select"); [5,4,3,2,1].forEach(n=>qtd.append(new Option(n+(n==1?" vídeo":" vídeos"),String(n)))); qtdW.append(qtd);
+  const calcadoEscolhido=()=>tipo.value==="__outro"?outroNome.value.trim():tipo.value;
+  const ganchosOutro=()=>{ const nome=outroNome.value.trim().toLowerCase(); if(!nome) return null;
+    const fem=outroGen.value==="f"; const base=GANCHOS_TIPO[fem?"Sapatilha":"Tênis"]; const re=fem?/sapatilha/gi:/tênis/gi;
+    return base.map(l=>l.map(g=>g.replace(re,nome))); };
   const gbox=el("details","ganchos"); gbox.hidden=true;
   let gsel=[];
   const montaGanchos=()=>{ gbox.replaceChildren(el("summary",null,"✍️ Escolher os ganchos (opcional)")); gsel=[];
-    const t=tipo.value; gbox.hidden=!t; if(!t) return;
-    gsel=[0,1,2,0,2].map((m,k)=>{ const lista=GANCHOS_TIPO[t][m]; const w=el("label","gsel"); w.append(el("span",null,`Vídeo ${k+1} · ${GANCHOS[m][0]}`));
+    const t=tipo.value; outroNome.hidden=outroGen.hidden=t!=="__outro";
+    const listas=t==="__outro"?ganchosOutro():GANCHOS_TIPO[t]; gbox.hidden=!listas; if(!listas) return;
+    gsel=[0,1,2,0,2].slice(0,+qtd.value).map((m,k)=>{ const lista=listas[m]; const w=el("label","gsel"); w.append(el("span",null,`Vídeo ${k+1} · ${GANCHOS[m][0]}`));
       const s=el("select"); s.append(new Option("Claude escolhe","")); lista.forEach(g=>s.append(new Option(g,g))); s.append(new Option("✏️ Escrever outro…","__outro"));
       const o=el("input"); o.type="text"; o.placeholder="Escreva o gancho"; o.hidden=true; s.onchange=()=>{ o.hidden=s.value!=="__outro"; if(!o.hidden) o.focus(); };
       w.append(s,o); gbox.append(w); return ()=>s.value==="__outro"?o.value.trim():s.value; });
     gbox.append(el("div","nota","Os ganchos já vêm com a palavra do calçado escolhido.")); };
-  tipo.onchange=montaGanchos;
+  tipo.onchange=()=>{ montaGanchos(); if(tipo.value==="__outro") outroNome.focus(); }; outroNome.onchange=montaGanchos; qtd.onchange=()=>{ delete f.dataset.confirmouPoucos; montaGanchos(); }; outroGen.onchange=montaGanchos;
   const msg=el("div","nota"); const env=el("button","b postei","Enviar para edição"); env.type="submit";
-  f.append(cab,tipoW,link,cor,btnEsc,pick,slots,gbox,obs,env,msg);
+  f.append(cab,tipoW,titW,qtdW,link,cor,btnEsc,pick,slots,gbox,obs,env,msg);
   f.onsubmit=async ev=>{ ev.preventDefault();
     const arqs=escolhidos.slice();
     if(!tipo.value){ msg.textContent="Escolha primeiro qual é o calçado."; tipo.focus(); return; }
+    if(!titulo.value.trim()){ msg.textContent="Escreva o título do vídeo (ex.: Salto Anos 2000)."; titulo.focus(); return; }
+    if(tipo.value==="__outro"&&!outroNome.value.trim()){ msg.textContent="Escreva qual é o calçado."; outroNome.focus(); return; }
     if(link.value.trim()&&!/^https?:\/\//.test(link.value.trim())){ msg.textContent="O link precisa começar com https://"; link.focus(); return; } // a dona 15/11: link opcional
-    if(!arqs.length){ msg.textContent="Escolha pelo menos 1 vídeo ou foto (o ideal são 3 ou mais)."; return; }
+    if(!arqs.length){ msg.textContent="Escolha pelo menos 1 vídeo (o ideal são 5 ou mais)."; return; }
+    // a dona 25/11: cada criativo começa com um vídeo diferente, nunca repetido; com menos de 5 vídeos sai 1 criativo por vídeo
+    const N=+qtd.value;
+    if(arqs.length<N&&!f.dataset.confirmouPoucos){ f.dataset.confirmouPoucos="1"; msg.textContent=`Você pediu ${N} vídeos, mas mandou ${arqs.length}. Cada um começa com um vídeo diferente, então saem ${arqs.length}. Adicione mais vídeos ou toque em Enviar de novo para mandar assim.`; return; }
     if(arqs.some(a=>a.size>20*1048576)){ msg.textContent="Cada clipe pode ter até 20 MB. Exporte em 1080p e tente de novo."; return; }
     if(!assets){ msg.textContent="Envio indisponível nesta tela. Abra a página no app do Claude, logada como dona."; return; }
     env.disabled=true; const clipes=[];
@@ -461,8 +475,8 @@ function montaForm(){
         const tipo=foto?(/^image\/(png|webp)$/.test(arqs[k].type)?arqs[k].type:"image/jpeg"):/^video\/(mp4|webm)$/.test(arqs[k].type)?arqs[k].type:"video/mp4";
         const r=await assets.upload(arqs[k],{type:tipo}); clipes.push({id:r.id,nome:arqs[k].name,bytes:r.sizeBytes,...(foto?{foto:true}:{})}); }
       msg.textContent="Salvando pedido…";
-      const ganchos=gsel.map(g=>g()); await db.collection("tiktokshop").add({calcado:tipo.value,link:link.value.trim(),cor:cor.value.trim(),obs:obs.value.trim(),clipes,ganchos,status:"aguardando",criado_em:new Date().toISOString()});
-      f.reset(); montaGanchos(); escolhidos=[]; desenha(); msg.textContent="Pedido enviado. Agora é só pedir ao Claude no chat: “edita o TikTok Shop”."; medirEspaco();
+      const ganchos=gsel.map(g=>g()); await db.collection("tiktokshop").add({titulo:titulo.value.trim(),quantidade:+qtd.value,calcado:calcadoEscolhido(),calcado_outro:tipo.value==="__outro",calcado_genero:tipo.value==="__outro"?outroGen.value:null,link:link.value.trim(),cor:cor.value.trim(),obs:obs.value.trim(),clipes,ganchos,status:"aguardando",criado_em:new Date().toISOString()});
+      f.reset(); delete f.dataset.confirmouPoucos; montaGanchos(); escolhidos=[]; desenha(); msg.textContent="Pedido enviado. Agora é só pedir ao Claude no chat: “edita o TikTok Shop”."; medirEspaco();
     }catch(e){ const c=e&&e.code;
       msg.textContent=c==="too_large"?"Um clipe passou de 20 MB.":c==="quota_or_state"?"Espaço da página cheio: apague os clipes brutos de pedidos já postados.":c==="unsupported_type"?"Formato não aceito. Use MP4, MOV, JPG ou PNG.":"Não enviou, toque de novo.";
       // clipes que subiram antes do erro não ficam órfãos
