@@ -1,5 +1,12 @@
 # Músicas (OPCIONAL: a dona decide)
 
+**27/11 (a dona): "dez tipos de músicas diferentes, alegres, comerciais, sons bonitos; está muito repetitivo".**
+`biblioteca/` agora tem 10 ESTILOS: lounge (as 12 animadas) + 9 novos com 4 trilhas cada (`gerador/estilos.py`, .flac):
+pop_alegre, comercial, tropical, ukulele_feliz, funk_groove, bossa_nova, piano_bonito, cinematico, eletronico_chill.
+`escolher.py` gira por ESTILO (o usado há mais tempo, nunca um dos 5 últimos da conta), depois a trilha. Amostra: `amostra/amostra_10_estilos.mp4`.
+Para gerar mais: `cat gerador/GeneralUser-GS.sf2.parte0* > /tmp/GU.sf2; pip install --no-deps tinysoundfont;
+python3 -I gerador/estilos.py /tmp/GU.sf2 SAIDA [prefixo]` e converta para .flac em `biblioteca/`.
+
 **27/10 (a dona):** "mais animadas, ainda sofisticadas, menos melancólicas". `biblioteca/` agora tem 12 trilhas animadas
 (lounge/bossa, 104-120 bpm, tom maior, bateria leve; `gerador/animadas.py`). As 10 calmas foram para `biblioteca_calmas/`
 (fora do rodízio; volte com elas só se ela pedir).
