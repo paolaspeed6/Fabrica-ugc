@@ -41,3 +41,7 @@ O banco do Tinder tem limite de 100 MB (cada produto guarda a foto). Em TODA rod
 3. ArtifactData batch `delete` (até 50 por batch, `if_version` = versão listada). Apague 2 páginas por rodada.
 Os ids continuam em `vistos.json`, então não voltam para o Tinder. Nunca apague status novo/aprovado/producao/pronto.
 Se o batch dos novos der `quota_exceeded`, apague mais uma página de descartados e tente de novo.
+
+## 27/11: Tinder desligado (a dona)
+Quem escolhe os produtos agora é só a Central do PC (o celular confere a lista da busca). A rotina NÃO semeia mais no Tinder
+(ele encheu: 100 MB). A busca continua 2x por dia mandando candidatos-<data>[_tarde].json para o Drive (Central Esposa).
