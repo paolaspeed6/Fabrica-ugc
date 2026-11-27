@@ -94,6 +94,12 @@ def candidatos(tk, dia, tarde):
                     'vendas_dia': x.get('vendas_dia')})
     out.sort(key=lambda x: float(x.get('pontos') or 0), reverse=True)
     nome = f'candidatos-{dia}{"_tarde" if tarde else ""}.json'
+    if not out:  # 27/11: pasta _varredura_docs movida antes da hora -> subiu lista vazia; nunca subir vazio
+        sys.exit(f'{nome}: 0 produtos (a pasta listas/{dd}{mm}_varredura_docs sumiu?) — nada enviado')
+    if len(sys.argv) > 4 and sys.argv[4] == 'regravar':
+        gravar(tk, nome, c, out)
+        print(nome, len(out), 'produtos regravados no Drive')
+        return
     if achar(tk, nome, c):
         print(nome, 'já está no Drive')
         return
