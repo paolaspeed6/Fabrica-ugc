@@ -8,6 +8,13 @@
 - 4 produtos com A, B e C (12 vídeos, 2511B-01..04) na aba Conferir, pendentes. Tinder: os 4 em `pronto`. producao_status: pronto.
 - Gasto US$ 1,55 de 3: 19 imagens (12 + 7 refações, US$ 0,75) + 8 clipes (US$ 0,80).
 - p03 radiador: foto 01 é colagem com carros; refs = fotos 02/03. Fiscal final: 9 OK, 3 AVISO (p04 A/B/C: células da colmeia com tamanhos diferentes).
+## Lista 27/11 A (27/11; pedido 20261127-122655 do botão "Iniciar produção" da Central do PC; trabalhos p574-p584)
+- 15 pedidos; 11 produzidos (2711A-01..15), 33 vídeos na Conferir (Postagens + aba Conferir do PC), pendentes. Nenhum do Kevin.
+- Pulados antes de gastar: p04 velas (frasco de vidro, mão, aromas misturados), p05 cortina (cor/altura misturadas), p08 máquina de cera (jarra de vidro e pessoa em todas as fotos; specs 6/10 L e 120/220 V conflitantes), p11 parafusadeira "Bosch" 48V (réplica).
+- Refs recortadas por mim (grátis): p07 01c, p15 01c; p02 refs 05+06 (04 era infográfico).
+- Gasto US$ 3,38 de 9: 50 imagens (33 + 17 refações, US$ 1,98) + 14 clipes (US$ 1,40). Saldo WaveSpeed US$ 16,79 (outra conversa gastou junto).
+- Fiscal final Sonnet: 24 OK, 7 AVISO (p10 A/B/C trama e conexões prateadas; p14 A/B/C tom do frasco; p15 A pás fumê), 2 DESCARTAR (p15 B e C: LED inventado na pá). Avisos nos cartões.
+- Sem cena aprovada (sem_cena, com aviso): p03 cooktop e p14 perfume Ra'ed.
 
 ## Lista 19/11 C (19/11 ~11h-13h UTC; Réveillon + Fila; trabalhos p560-p573, N0=560 por rodar junto com a 19/11 B)
 - Escolha: 10 decorações de Réveillon aprovadas (reveillon: true) + 5 mais antigas da Fila sem lote (luminária piso 2 em 1, base box dobrável, kit pesca, tapete persa 280x185, mesa cone 45). Nenhuma de Natal, nenhuma do Kevin.
