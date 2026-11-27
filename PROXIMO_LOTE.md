@@ -33,6 +33,7 @@ Atualizado: 2026-11-15 (Lista 15/11 A entregue). Histórico completo: memoria/hi
 - Jogo (Reino Encantado): https://claude.ai/artifact/XZAgnZ6G94M1vYAqo8hFAd
 
 ## Estado atual (27/11)
+- Lista 27/11 B (pedido da Central do PC 20261127-161944): 36 vídeos na Conferir (12 produtos, 2711B, p604-p615), US$ 4,12 de 9; pulados p06, p07, p08. Fiscal final: 23 OK, 13 AVISO. Saldo WaveSpeed US$ 12,71. Detalhe: memoria/historico_lotes.md (topo).
 - Lista 25/11 B (pedido 20261125-112411): 12 vídeos na Conferir (4 produtos, 2511B-01..04, p600-p603), US$ 1,55; pulado p05 (sem fotos). Fiscal final: 9 OK, 3 AVISO (p04). Detalhe: memoria/historico_lotes.md (topo).
 - Lista 27/11 A (pedido da Central do PC 20261127-122655): 33 vídeos na Conferir (11 produtos, 2711A, p574-p584), US$ 3,38 de 9; pulados p04, p05, p08, p11. Fiscal final: 24 OK, 7 AVISO, 2 DESCARTAR (p15 B/C). Saldo WaveSpeed US$ 16,79. Detalhe: memoria/historico_lotes.md (topo).
 - Lista 19/11 C (Réveillon + Fila): 42 vídeos na Conferir (14 produtos, 1911C-01..15, trabalhos p560-p573), US$ 4,98; pulado p05 (taças na arte). Fiscal final: 40 OK, 2 AVISO (p09 A/C). p02 sem cena aprovada (montado com aviso). Saldo WaveSpeed US$ 27,33. Detalhe: memoria/historico_lotes.md (topo).

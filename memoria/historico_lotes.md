@@ -3,6 +3,14 @@
 
 # Detalhe por lote (movido do PROXIMO_LOTE.md em 10/11, o mais novo primeiro)
 
+## Lista 27/11 B (27/11 ~19h30-21h UTC; pedido 20261127-161944 do botão "Iniciar produção" da Central do PC, teto US$ 9; trabalhos p604-p615)
+- 15 pedidos; nenhum do Kevin (conferido também com a lista dele de 27/11). Pulados pelo Fichador antes de gastar: p06 trilhos + suportes (só infográfico/colagem), p07 banqueta Mila (variantes misturadas), p08 combo furadeira UTOSL (1 foto, arte de propaganda).
+- 12 produtos com A, B e C (36 vídeos, 2711B-01..15) na aba Conferir (Postagens + aba Conferir do PC), pendentes. producao_status: pronto (os outros pedidos mantidos).
+- Gasto US$ 4,12 de 9: 56 imagens (US$ 2,22) + 19 clipes (US$ 1,90). Saldo WaveSpeed US$ 12,71.
+- Sem cena aprovada (sem_cena, com aviso): p01 banquetas (contagem 5 em vez de 6) e p05 cadeiras (contagem).
+- Fiscal final Sonnet: 23 OK, 13 AVISO (p03 A/B/C tom laranja; p12 B/C madeira mais laranja; p13 A/B/C frasco/medalhão; p14 A/C tecido mais escuro; p15 A/B/C coifa de ilha x foto 01 de parede), 0 descartar. Avisos nos cartões.
+- Músicas: biblioteca nova de 10 estilos (main).
+
 ## Lista 25/11 B (27/11 UTC; pedido do botão 20261125-112411, teto US$ 3; trabalhos p600-p603, N0=600 por rodar junto com a 27/11 A)
 - 5 itens do pedido; nenhum do Kevin. Pulado p05 Mesa Gamer em L 58218292222 (Shopee não entregou fotos, 4 tentativas).
 - 4 produtos com A, B e C (12 vídeos, 2511B-01..04) na aba Conferir, pendentes. Tinder: os 4 em `pronto`. producao_status: pronto.
